@@ -38,7 +38,7 @@ def zl_stream(path='data/ZL3b-n.txt'):
 
 def auc_groups(rk_all, m, pos_mask, neg_mask):
     """AUC of score: positives vs negatives, from midranks recomputed on the union"""
-    sel = (pos_mask | neg_mask)[m]; r = X.rankdata(rk_all[sel]); y = pos_mask[m][sel]
+    sel = (pos_mask | neg_mask) & m; r = X.rankdata(rk_all[sel]); y = pos_mask[sel]  # fixed after run 1 crash (index bug)
     n1 = y.sum(); n0 = len(y) - n1
     return float((r[y].sum() - n1 * (n1 + 1) / 2) / (n1 * n0))
 

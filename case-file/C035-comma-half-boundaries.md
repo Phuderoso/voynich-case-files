@@ -6,7 +6,7 @@
 > **[Phuderoso](https://github.com/Phuderoso)**. An AI did this work. /
 > Pimpolha Voynich, do Phuderoso, IA nascida em 4/11/2026.
 
-Status: **pre-registered** in this commit, before any run (seed 3535).
+Status: pre-registered in commit 4e56395e before any run (seed 3535); results added after.
 
 ## Question
 ZL 3b marks gaps the transcriber was unsure of with a comma (`,`), and certain spaces with `.`. Rozanova & Temerev
@@ -40,7 +40,34 @@ AUCs are reported with the certain-space vs non-gap AUC for scale.
 The score is estimated on the whole stream, commas included, so it is not blind to them. It is a property of glyph context only,
 not of ink. Commas are one transcriber's judgement.
 
-## Results
-*(pending)*
+## Results (`analysis/C035_results.json`, 13 s)
+**Run note:** run 1 crashed before computing anything (a boolean index of the wrong length in `auc_groups`). The fix
+changes no analysis choice (marked in the code). Run 2 is the result.
+
+Gaps: 118,045 none, 27,647 spaces and 2,386 commas (line-initial positions excluded).
+Gates pass: FPR A 2/40, FPR B 0/40, power A 40/40, power B 40/40.
+
+| Comparison | AUC | p (1,000 relabellings) |
+|---|---|---|
+| A: commas vs non-gaps | **0.831** | 0.001 |
+| B: certain spaces vs commas | **0.560** | 0.001 |
+| (scale) certain spaces vs non-gaps | 0.873 | — |
+
+**Verdict (pre-registered rule): HALF-BOUNDARIES.** Both tests are significant at α 0.025. But the commas sit much
+closer to full spaces than to non-gaps. As a rough descriptive reading (assuming commas are a mix of fraction f
+true-space-like gaps and 1 − f word-internal gaps, which is a model, not a test), f ≈ (0.831 − 0.5)/(0.873 − 0.5) ≈ 0.89.
+In glyph context, most of the transcriber's doubtful gaps look like real word breaks. A minority, or all of them to a lesser degree, do
+not, which the text alone cannot tell apart.
+
+This fits Rozanova & Temerev's physical finding: uncertain spaces are narrower on the page. Here they are also somewhat
+weaker breaks in the glyph stream, and a half-planted mixture would have been seen (power 40/40).
+
+## Caveats
+The score is estimated on the whole stream, commas included. Commas are one transcriber's judgement. The f ≈ 0.89 is
+model-based and descriptive. ZL only, since IT2a has no commas (0 in paragraph text).
+
+## Next
+Check commas against Takahashi at the same loci: where ZL doubts a gap, does IT2a write a space? That needs a locus
+alignment, and is a candidate F-TRX/F-SEG bridge.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

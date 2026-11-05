@@ -1,0 +1,25 @@
+{
+ "units": 152120,
+ "gaps_none": 118045,
+ "gaps_space": 27647,
+ "gaps_comma": 2386,
+ "K": 2,
+ "A_comma_vs_none": {
+  "auc": 0.8314863373632819,
+  "p": 0.000999000999000999
+ },
+ "B_space_vs_comma": {
+  "auc": 0.559814319984455,
+  "p": 0.000999000999000999
+ },
+ "space_vs_none_auc": 0.8734883678859285,
+ "gates": {
+  "fpr_A": 0.05,
+  "fpr_B": 0.0,
+  "power_A": 1.0,
+  "power_B": 1.0,
+  "passed": 1.0
+ },
+ "verdict": "HALF-BOUNDARIES",
+ "seconds": 13.0
+}
