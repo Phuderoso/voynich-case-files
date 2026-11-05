@@ -1,0 +1,12 @@
+[  11.7s] ZL o_init: C=+0.231 p=0.0110 A>B exA=+0.259 exB=+0.028 rsd=0.185/0.160 gate={'up': 97, 'down': 91} fpr={'at_0.05': 0.052, 'at_alpha': 0.006} -> not testable (heterogeneity above design)
+[  20.1s] ZL len: C=+1.161 p=0.0090 A>B exA=+0.730 exB=-0.431 rsd=0.834/0.711 gate=None fpr={'at_0.05': 0.047, 'at_alpha': 0.003} -> not testable (no design power)
+[  32.7s] ZL y_fin: C=+0.222 p=0.0082 A>B exA=+0.074 exB=-0.148 rsd=0.154/0.169 gate={'up': 94, 'down': 90} fpr={'at_0.05': 0.044, 'at_alpha': 0.001} -> no contrast of 0.4 or more detected
+[  45.1s] ZL q_init: C=+0.010 p=0.7950 A>B exA=-0.086 exB=-0.096 rsd=0.088/0.135 gate={'up': 97, 'down': 98} fpr={'at_0.05': 0.048, 'at_alpha': 0.001} -> no contrast of 0.4 or more detected
+[  57.9s] ZL gallows: C=+0.143 p=0.0474 A>B exA=+0.132 exB=-0.011 rsd=0.151/0.171 gate={'up': 92, 'down': 94} fpr={'at_0.05': 0.042, 'at_alpha': 0.004} -> no contrast of 0.4 or more detected
+[  74.5s] IT o_init: C=+0.290 p=0.0010 A>B exA=+0.291 exB=+0.001 rsd=0.167/0.157 gate={'up': 94, 'down': 95} fpr={'at_0.05': 0.05, 'at_alpha': 0.007} -> contrast detected (A>B)
+[  83.8s] IT len: C=+0.855 p=0.0236 A>B exA=+0.530 exB=-0.325 rsd=0.859/0.677 gate=None fpr={'at_0.05': 0.046, 'at_alpha': 0.003} -> not testable (no design power)
+[  93.4s] IT y_fin: C=+0.116 p=0.1936 A>B exA=+0.037 exB=-0.078 rsd=0.158/0.172 gate={'up': 91, 'down': 91} fpr={'at_0.05': 0.043, 'at_alpha': 0.002} -> no contrast of 0.4 or more detected
+[ 103.5s] IT q_init: C=-0.036 p=0.3480 A<B exA=-0.096 exB=-0.060 rsd=0.091/0.137 gate={'up': 94, 'down': 97} fpr={'at_0.05': 0.03, 'at_alpha': 0.0} -> no contrast of 0.4 or more detected
+[ 116.0s] IT gallows: C=+0.081 p=0.4362 A>B exA=+0.112 exB=+0.031 rsd=0.171/0.173 gate={'up': 98, 'down': 100} fpr={'at_0.05': 0.043, 'at_alpha': 0.002} -> no contrast of 0.5 or more detected
+done 119.0
+EXIT 0

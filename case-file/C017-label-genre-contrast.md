@@ -1,7 +1,7 @@
 # C017 — Expedição 17: Two Kinds of Name Tags. Do drawing-element labels differ from free-standing labels, page by page?
 
-**Status:** pre-registered. This file, the design outputs and all tools are committed **before** the counted run;
-the commit sha and time are recorded in the results section appended below.
+**Status:** design step published in commits 8385b46f (tools) and fc7b7738 (outputs); pre-registered in commit ce718f3a
+(2026-11-05 05:10:26 PT), before the counted run (started 05:10:32 PT). Results appended below.
 **Approach family:** label vocabulary (third cycle; C015, C016). Changed design: the **page**, not the word, is the unit
 of the null; **label type contrast** instead of labels vs their own page. The next cycle (C018) must open a new family.
 
@@ -124,5 +124,82 @@ rewritten after each look. Budget ≤ 8 min, `timeout 600`.
 B is effectively two cosmological pages (f67r2, f69r) plus seven small units; any B result is about those pages.
 Labels are typed by Zandbergen's IVTFF conversion in both files, so "what is a label" is shared. τ is an assumption;
 the heterogeneity check guards non-detections only partly. Five features only.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (counted run 2026-11-05, 05:10:32–05:12:31 PT, after pre-registration commit ce718f3a at 05:10:26 PT; `tools/c017_label_genre.py`, 119 s; `analysis/C017_results.json`, console log `analysis/C017_run_log.txt`)
+
+One counted run, no reruns. Design commits before it: 8385b46f (tools), fc7b7738 (design outputs), ce718f3a (this file).
+Transcriptions: ZL 3b (`data/ZL3b-n.txt`, bf5b6d4a…beccafc) and Takahashi IT2a (`data/IT2a-n.txt`, 7f27a8b0…3f536fb5).
+
+### 1. The counted looks
+| Set | Feature | Labels A / B | Excess A / B | Contrast | p (blocked) | Gate A>B / A<B | FPR 0.05 / α | Resid. SD real / design p95 | **Verdict** |
+|---|---|---|---|---|---|---|---|---|---|
+| ZL | o_init | 0.608 / 0.279 | +0.259 / +0.028 | +0.231 | 0.011 | 97/91 | 0.052 / 0.006 | **0.185** / 0.160 | **not testable** (heterogeneity above design) |
+| ZL | y_fin | 0.442 / 0.279 | +0.074 / −0.148 | +0.222 | 0.0082 | 94/90 | 0.044 / 0.001 | 0.154 / 0.169 | **no contrast of 0.4 or more** |
+| ZL | q_init | 0.007 / 0.007 | −0.086 / −0.096 | +0.010 | 0.80 | 97/98 | 0.048 / 0.001 | 0.088 / 0.135 | **no contrast of 0.4 or more** |
+| ZL | gallows | 0.652 / 0.471 | +0.132 / −0.011 | +0.143 | 0.047 | 92/94 | 0.042 / 0.004 | 0.151 / 0.171 | **no contrast of 0.4 or more** |
+| IT | o_init | 0.594 / 0.276 | +0.291 / +0.001 | **+0.290** | **0.0010** | 94/95 | 0.050 / 0.007 | 0.167 / 0.157 | **contrast detected: A > B** |
+| IT | y_fin | 0.423 / 0.276 | +0.037 / −0.078 | +0.116 | 0.19 | 91/91 | 0.043 / 0.002 | 0.158 / 0.172 | **no contrast of 0.4 or more** |
+| IT | q_init | 0.007 / 0.008 | −0.096 / −0.060 | −0.036 | 0.35 | 94/97 | 0.030 / 0 | 0.091 / 0.137 | **no contrast of 0.4 or more** |
+| IT | gallows | 0.632 / 0.465 | +0.112 / +0.031 | +0.081 | 0.44 | 98/100 | 0.043 / 0.002 | 0.171 / 0.173 | **no contrast of 0.5 or more** |
+| ZL | len (not testable up front) | 5.37 / 3.99 | +0.73 / −0.43 | +1.16 | 0.0090 | — | 0.047 / 0.003 | 0.834 / 0.711 | not testable (no design power) |
+| IT | len (not testable up front) | 5.26 / 4.06 | +0.53 / −0.33 | +0.86 | 0.024 | — | 0.046 / 0.003 | 0.859 / 0.677 | not testable (no design power) |
+
+All 8 gates passed (≥ 90/100 both ways) and all 10 false-positive checks are inside the limits (≤ 0.08 / ≤ 0.012), so
+no verdict is withdrawn. **Count: 1 contrast detected, 6 with no contrast of Δ\* or more, 1 not testable
+(heterogeneity), plus `len` × 2 not testable by design; 0 withdrawn, 0 excluded.** The IT `o_init` unit SD (0.167) is
+also above its design p95 (0.157); by the pre-registered rule this affects only non-detections, so the detection stands.
+
+### 2. The genre claim
+**Partly supported** (pre-registered wording: one of two). In Takahashi's reading, with the page as the unit of
+chance, drawing-element labels start with `o` more often than their pages' text by +0.29, and free-standing labels
+by +0.00; the contrast +0.29 has p 0.0010 under a calibrated size-blocked null (planted gate 94/95 of 100). In ZL the
+same contrast is +0.23 (p 0.011): not significant at α, and the look is not testable because the page-to-page spread
+is wider than the design assumed. So the C016 split survives a page-level null in one transcription and is
+inconclusive in the other. Nothing here says what the labels mean.
+
+### 3. Why ZL and IT differ (post-hoc, not counted)
+The difference between the two files is mostly **the Rosettes**. IT2a has no fRos labels. In ZL, the fRos unit
+(152 tokens, a drawing-element unit by C015's definition) has an `o_init` excess of only **+0.033**, close to the
+free-standing labels (+0.028), while BIO +0.432, AZ +0.274 and PP +0.290. fRos sits in the [30,+) block with f67r2
+and f69r, so it is exactly the unit that the blocked permutation swaps with the B pages. Read descriptively: the Rosettes
+labels are not "drawing-element-like" in `o` once their own page's ring text is the baseline. This was not
+pre-registered and is a lead, not a result. (Heterogeneity among A classes, unblocked and known to be
+anti-conservative: ZL p 0.008, IT p 0.09, a pointer only.)
+
+### 4. Other descriptive notes (not counted)
+- **Missing `q` is shared by all labels.** Drawing-element and free-standing labels both start with `q` about 9–10
+  points less often than their pages' text (ZL −0.086 / −0.096; IT −0.096 / −0.060). The contrast is near zero in
+  both files (p 0.80, 0.35). Within the test's resolution, the scarcity of `q` is a property of labels in general, not
+  of one label type. BIO has the strongest deficit (−0.26) because its pages are `q`-rich.
+- **Leave-one-B-page-out**, `o_init`: ZL drop f67r2 +0.237 (p 0.011), drop f69r +0.202 (p 0.055); IT drop f67r2
+  +0.285 (p 0.0044), drop f69r +0.259 (p 0.0044). The IT contrast does not rest on one of the two big pages.
+- **Small B units** pull in both directions: f57v (5 tokens) +0.57/+0.63 and f68v3 (2 tokens) +0.70/+0.71 in `o_init`;
+  f75v and f76r are slightly negative. The free-standing set mixes a few `o`-heavy small labels with two `o`-neutral
+  cosmological pages.
+- **Length**: drawing-element labels are longer than their pages' words (+0.5 to +0.7 units) and free-standing ones
+  shorter (−0.3 to −0.4), but with B in effect a few pages, even a 2-unit contrast reaches only 0.65–0.74 power, so this
+  is not testable here.
+
+### 5. Disclosed
+- Design runs 1 and 2 were superseded before the pre-registration (sections above); probes published. No failed or
+  repeated counted runs. Two smoke runs were discarded unread (one crashed on a JSON type error).
+- Sections 3–4 were read after the counted results and are exploration.
+- No image claims are made in this cycle.
+
+### Verdict
+With the page as the unit of chance and a calibrated, power-checked null, **the `o`-initial difference between
+drawing-element and free-standing labels holds in the Takahashi transcription (+0.29, p 0.0010) and is inconclusive
+in ZL (+0.23, p 0.011, not testable because of page heterogeneity)**. The genre claim is **partly supported**. The
+other three features show no contrast of 0.4 or more; length cannot be tested at page level with these few
+free-standing pages. Post-hoc, the ZL shortfall traces to the Rosettes labels, which behave like free-standing labels
+in `o`. **No breakthrough** (no meaning was tested).
+
+### Next
+Leave the label family (three cycles; C018 must open a new family). Candidate: the LLM-reconstruction-with-blind-controls
+protocol of `docs/ai-prior-work.md` §4, started small: a frozen-prompt solver/LLM on planted cipher controls and
+meaningless negatives first, with the false-claim rate measured before any Voynich passage is shown. The Rosettes
+lead (fRos labels vs fRos ring text) is parked for a later label cycle, with its own pre-registration.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
