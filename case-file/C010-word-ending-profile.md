@@ -59,3 +59,7 @@ Next: a search that optimises D directly under the four constraints (pre-registe
 the generator unable to match.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+### Audit note (added in C011)
+The best-distance figure above (0.038) comes from one seed. On held-out seeds 8001–8010 the same configuration averages
+D = 0.064 (C011). The verdict is unchanged; read "best 0.038" as a single-seed minimum.
