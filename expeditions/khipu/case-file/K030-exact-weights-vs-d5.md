@@ -35,3 +35,40 @@ value exceeds 20 000 are *not computed* (13 in K029).
 
 ## Results
 (Written after the run, below this line.)
+
+Run 2026-11-05 ~10:20 PT, `python3 tools/k030_exact_weights_vs_d5.py ../khipu.db` (30 s; no time cap was hit, so all
+444 computable khipus were scored in both stages). Output is in [`analysis/k030_results.json`](../analysis/k030_results.json).
+The same 13 khipus as in K029 were *not computed* (a value above 20 000).
+
+**Stage 1, development (seed 3030, K = 300).**
+
+| Candidate | FPR | Spec A | Spec B | Mean | Eligible (FPR ≤ 0.05) |
+|---|---|---|---|---|---|
+| D5 (baseline) | 0.047 | 0.67 | 0.52 | 0.60 | (baseline) |
+| D7 (K029's W) | 0.054 | 0.48 | 0.52 | 0.50 | no |
+| D8 (exact per-hit odds, summed) | 0.052 | 0.52 | 0.52 | 0.52 | no |
+| D9 (exact per-hit odds, per-k min-p) | 0.050 | 0.64 | 0.45 | 0.54 | **yes, chosen** |
+
+**Stage 2, evaluation (fresh seed 3031, K = 500, paired).**
+
+| Detector | FPR | Spec A | Spec B | Mean |
+|---|---|---|---|---|
+| D5 | 0.038 | **0.68** | **0.55** | **0.61** |
+| D9 | 0.034 | 0.60 | 0.47 | 0.54 |
+
+Paired plant outcomes: 22 found only by D9, 79 found only by D5. Exact McNemar **p 1.0 × 10⁻⁸**, gain −0.076.
+
+**Decision: not adopted. D5 stays the line-1 detector.** This is a clean negative. Exact per-hit odds are a worse
+weighting than log10(v), and significantly so. K003's bar (A ≥ 0.80, B ≥ 0.60) is not met by either detector.
+
+### Reading
+- Exactness doesn't buy power here. K029's win over raw counting reflects counting being a poor score, not exact
+  odds being a good one. Once the baseline is D5, the exact weights lose on both plant specs.
+- A plausible mechanism, offered as a hunch and not tested: the planted sums are built from the khipu's own values,
+  so they sit at ordinary sizes. Exact odds put the most weight on rare large-value coincidences, while log10(v) is
+  smoother. The plant therefore resembles the "typical-size" case D5 handles well.
+- **Line 1 status.** Re-weighting per hit is now explored in three forms (K002 log-weights, K029/K030 exact odds), and
+  D5 remains best. The remaining gap is large khipus, where chance sums crowd the signal (K003: 0.56 on the largest
+  third). A different lever is needed there, such as restricting to within-group windows, rather than new weights.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
