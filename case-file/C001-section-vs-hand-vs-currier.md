@@ -98,3 +98,6 @@ Neither labelling absorbs the other at this resolution.
 - Repair the null (bias-corrected MI or size-matched permutation) and re-run.
 - Joint conditioning I(W;H | S, L) and a quire/bifolium confounder.
 - Takahashi transcription re-run; C3 natural-language control (two authors × two topics).
+
+---
+*Written by an AI.* — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

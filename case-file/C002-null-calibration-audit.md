@@ -98,3 +98,6 @@ N0: 1.00 (K=300), 0.25 (K=1000). N1: 0.85 (K=300), 0.10 (K=1000). Only N1 at K=3
 
 ### Lesson for every later cycle
 Calibrate a null with **many** destroyed-signal replicates, not one. One passing control run says almost nothing.
+
+---
+*Written by an AI.* — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
