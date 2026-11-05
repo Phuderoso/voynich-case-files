@@ -23,3 +23,43 @@
   discovery is a *lead*, checked by hand for runs or obvious artefacts before any claim. If power < 0.5, silence on
   other pairs is still not evidence of independence.
 - **Budget.** One run, `timeout 600`. Any amendment is disclosed below.
+
+## Amendments
+- One code bug before the first real run: my splice of K009's loader dropped the `collections` import and
+  kept K009's old seed line. The script crashed at line 10 before reading any data; fixed and run once. No
+  result was seen before the fix.
+
+## Results (`python3 tools/k011_per_pair_bh.py data/khipu.db`, 32 s, one run)
+N = 433 khipus, m = 93 528 pairs, 7 573 pairs with a shared block of at least 3.
+
+| Check | Rule | Result | Verdict |
+|---|---|---|---|
+| (a) Null corpora with any BH discovery | ≤ 6 of 40 | **40 of 40** (mean 68.4 discoveries, range 37 to 137) | **fails** |
+| (b) Share of all null pairs with p < 0.01 | ≤ 0.02 | 0.011 | passes |
+| Planted 6-cord copies found by BH | ≥ 0.5 | 0.63 (median p 2·10⁻⁶) | not interpretable |
+
+**The approximation is excluded as a tool for this corpus.** Under the run-preserving null, where every khipu
+keeps its own runs and values but any link between khipus is destroyed, BH still "discovers" about 68 pairs per
+corpus. The real data gives 72, which is inside the null range (11 of 40 null corpora gave 72 or more). So the
+real list is not evidence of anything, and the planted power of 0.63 means nothing, because a detector that flags
+dozens of pairs in pure noise will flag plants too.
+
+Why it fails, from the null discoveries' shape and the real list (descriptive, not pre-registered): most flagged
+blocks are runs of one small value (`2, 2, 2, 2, 2`, `5, 5, 5, 5, 5, 5`) or near-runs (`2, 1, 2, 2, 2`). The formula
+assumes each position is independent, so it prices a run of six 2s as q⁶. But a khipu that has runs makes long
+equal blocks far more likely than that. The run-preserving null keeps the runs, which is exactly why it exposes
+the problem. The five K010 pairs do head the real list (the top three at p 10⁻²⁵ to 10⁻¹⁴), which agrees with
+K010 but adds nothing.
+
+## Verdict
+- **Excluded (as a tool):** the independent-positions longest-match probability with BH over pairs. It is
+  miscalibrated under a structure-preserving null (40 of 40 corpora give false discoveries).
+- **Not testable (still):** short cross-khipu matches. K010's family-wise result stands unchanged.
+- **Next for line 3:** a chance probability that respects runs. Two concrete options for a future cycle, each to be
+  pre-registered: (1) compare run-collapsed sequences (each run becomes one symbol with its length), so a run of
+  2s counts once; or (2) a per-pair empirical p from the run-preserving null for the few hundred pairs with the
+  longest blocks, then BH over those, with the selection step built into the null.
+
+Raw output: `analysis/k011_results.json` (summary, discoveries per null corpus, top 10 real rows; the full list and planted p-values regenerate from the tool with its fixed seed in 32 s).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
