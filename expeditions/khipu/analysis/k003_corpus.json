@@ -1,0 +1,4605 @@
+{
+ "summary": {
+  "detector": "D5",
+  "n": 457,
+  "n_p01": 26,
+  "n_bh": 20,
+  "k002_detections": 16,
+  "k002_also_flagged": 14,
+  "new_not_in_k002": [
+   "KH0143/AS128",
+   "KH0218/AS200",
+   "KH0395/UR155",
+   "KH0424/UR186",
+   "KH0428/UR190",
+   "KH0478/UR242"
+  ],
+  "lost_from_k002": [
+   "KH0068/UR1057",
+   "KH0502/UR266"
+  ],
+  "ur_flagged": 17,
+  "ur_total": 304,
+  "size_quintile_cuts": [
+   22.0,
+   34.0,
+   62.0,
+   108.0
+  ],
+  "ur_size_matched_p": 0.1751282487175128,
+  "ur_expected_size_matched": null,
+  "seconds": 67.2
+ },
+ "rows": [
+  {
+   "khipu_id": 1000002,
+   "okr": "KH0256",
+   "inv": "UR020",
+   "n_pend": 24,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000003,
+   "okr": "KH0254",
+   "inv": "UR018",
+   "n_pend": 31,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000004,
+   "okr": "KH0246",
+   "inv": "UR010",
+   "n_pend": 159,
+   "p_stage1": 0.3016983016983017,
+   "p": 0.3016983016983017,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000005,
+   "okr": "KH0241",
+   "inv": "UR005",
+   "n_pend": 49,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000006,
+   "okr": "KH0243",
+   "inv": "UR007",
+   "n_pend": 45,
+   "p_stage1": 0.13086913086913088,
+   "p": 0.13086913086913088,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000007,
+   "okr": "KH0247",
+   "inv": "UR011",
+   "n_pend": 176,
+   "p_stage1": 0.12387612387612387,
+   "p": 0.12387612387612387,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000008,
+   "okr": "KH0249",
+   "inv": "UR013",
+   "n_pend": 24,
+   "p_stage1": 0.08091908091908091,
+   "p": 0.08091908091908091,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000009,
+   "okr": "KH0248",
+   "inv": "UR012",
+   "n_pend": 50,
+   "p_stage1": 0.1878121878121878,
+   "p": 0.1878121878121878,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000010,
+   "okr": "KH0251",
+   "inv": "UR015",
+   "n_pend": 65,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000011,
+   "okr": "KH0250",
+   "inv": "UR014",
+   "n_pend": 23,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000012,
+   "okr": "KH0238",
+   "inv": "UR002",
+   "n_pend": 72,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000014,
+   "okr": "KH0221",
+   "inv": "AS203",
+   "n_pend": 37,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000015,
+   "okr": "KH0224",
+   "inv": "AS206",
+   "n_pend": 30,
+   "p_stage1": 0.04195804195804196,
+   "p": 0.04195804195804196,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000017,
+   "okr": "KH0230",
+   "inv": "AS210",
+   "n_pend": 30,
+   "p_stage1": 0.25274725274725274,
+   "p": 0.25274725274725274,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000018,
+   "okr": "KH0252",
+   "inv": "UR016",
+   "n_pend": 222,
+   "p_stage1": 0.6903096903096904,
+   "p": 0.6903096903096904,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000019,
+   "okr": "KH0245",
+   "inv": "UR009",
+   "n_pend": 149,
+   "p_stage1": 0.16983016983016982,
+   "p": 0.16983016983016982,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000020,
+   "okr": "KH0239",
+   "inv": "UR003",
+   "n_pend": 281,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000021,
+   "okr": "KH0253",
+   "inv": "UR017",
+   "n_pend": 95,
+   "p_stage1": 0.31868131868131866,
+   "p": 0.31868131868131866,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000022,
+   "okr": "KH0257",
+   "inv": "UR021",
+   "n_pend": 136,
+   "p_stage1": 0.7332667332667333,
+   "p": 0.7332667332667333,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000023,
+   "okr": "KH0237",
+   "inv": "UR001",
+   "n_pend": 406,
+   "p_stage1": 0.34865134865134867,
+   "p": 0.34865134865134867,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000024,
+   "okr": "KH0240",
+   "inv": "UR004",
+   "n_pend": 472,
+   "p_stage1": 0.9920079920079921,
+   "p": 0.9920079920079921,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000025,
+   "okr": "KH0242",
+   "inv": "UR006",
+   "n_pend": 570,
+   "p_stage1": 0.23376623376623376,
+   "p": 0.23376623376623376,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000026,
+   "okr": "KH0219",
+   "inv": "AS201",
+   "n_pend": 10,
+   "p_stage1": 0.3856143856143856,
+   "p": 0.3856143856143856,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000029,
+   "okr": "KH0225",
+   "inv": "AS207A",
+   "n_pend": 201,
+   "p_stage1": 0.16383616383616384,
+   "p": 0.16383616383616384,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000030,
+   "okr": "KH0226",
+   "inv": "AS207B",
+   "n_pend": 17,
+   "p_stage1": 0.4025974025974026,
+   "p": 0.4025974025974026,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000031,
+   "okr": "KH0227",
+   "inv": "AS207C",
+   "n_pend": 14,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000032,
+   "okr": "KH0229",
+   "inv": "AS209",
+   "n_pend": 56,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000033,
+   "okr": "KH0231",
+   "inv": "AS211",
+   "n_pend": 50,
+   "p_stage1": 0.24075924075924077,
+   "p": 0.24075924075924077,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000034,
+   "okr": "KH0232",
+   "inv": "AS212",
+   "n_pend": 65,
+   "p_stage1": 0.04395604395604396,
+   "p": 0.04395604395604396,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000035,
+   "okr": "KH0233",
+   "inv": "AS213",
+   "n_pend": 18,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000036,
+   "okr": "KH0234",
+   "inv": "AS214",
+   "n_pend": 20,
+   "p_stage1": 0.44155844155844154,
+   "p": 0.44155844155844154,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000037,
+   "okr": "KH0235",
+   "inv": "AS215",
+   "n_pend": 27,
+   "p_stage1": 0.5404595404595405,
+   "p": 0.5404595404595405,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000039,
+   "okr": "KH0110",
+   "inv": "UR1097",
+   "n_pend": 64,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000040,
+   "okr": "KH0111",
+   "inv": "UR1098",
+   "n_pend": 80,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000041,
+   "okr": "KH0112",
+   "inv": "UR1099",
+   "n_pend": 48,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000042,
+   "okr": "KH0113",
+   "inv": "UR1100",
+   "n_pend": 66,
+   "p_stage1": 0.06893106893106893,
+   "p": 0.06893106893106893,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000044,
+   "okr": "KH0115",
+   "inv": "AS101 - Part 2",
+   "n_pend": 16,
+   "p_stage1": 0.5294705294705294,
+   "p": 0.5294705294705294,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000045,
+   "okr": "KH0258",
+   "inv": "UR022",
+   "n_pend": 266,
+   "p_stage1": 0.8501498501498501,
+   "p": 0.8501498501498501,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000046,
+   "okr": "KH0116",
+   "inv": "UR1102",
+   "n_pend": 18,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000047,
+   "okr": "KH0117",
+   "inv": "UR1103",
+   "n_pend": 43,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000048,
+   "okr": "KH0118",
+   "inv": "UR1104",
+   "n_pend": 21,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000049,
+   "okr": "KH0119",
+   "inv": "UR1105",
+   "n_pend": 12,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000050,
+   "okr": "KH0120",
+   "inv": "UR1106",
+   "n_pend": 49,
+   "p_stage1": 0.07792207792207792,
+   "p": 0.07792207792207792,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000051,
+   "okr": "KH0121",
+   "inv": "UR1107",
+   "n_pend": 29,
+   "p_stage1": 0.16083916083916083,
+   "p": 0.16083916083916083,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000052,
+   "okr": "KH0122",
+   "inv": "UR1108",
+   "n_pend": 34,
+   "p_stage1": 0.18281718281718282,
+   "p": 0.18281718281718282,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000053,
+   "okr": "KH0123",
+   "inv": "UR1109",
+   "n_pend": 287,
+   "p_stage1": 0.3386613386613387,
+   "p": 0.3386613386613387,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000054,
+   "okr": "KH0124",
+   "inv": "AS110",
+   "n_pend": 20,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000057,
+   "okr": "KH0127",
+   "inv": "UR1113",
+   "n_pend": 163,
+   "p_stage1": 0.11988011988011989,
+   "p": 0.11988011988011989,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000058,
+   "okr": "KH0175",
+   "inv": "AS159",
+   "n_pend": 35,
+   "p_stage1": 0.23176823176823177,
+   "p": 0.23176823176823177,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000059,
+   "okr": "KH0190",
+   "inv": "AS173",
+   "n_pend": 13,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000060,
+   "okr": "KH0191",
+   "inv": "AS174",
+   "n_pend": 13,
+   "p_stage1": 0.2947052947052947,
+   "p": 0.2947052947052947,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000063,
+   "okr": "KH0128",
+   "inv": "UR1114",
+   "n_pend": 339,
+   "p_stage1": 0.1888111888111888,
+   "p": 0.1888111888111888,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000064,
+   "okr": "KH0176",
+   "inv": "AS160",
+   "n_pend": 23,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000067,
+   "okr": "KH0210",
+   "inv": "AS192",
+   "n_pend": 10,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000071,
+   "okr": "KH0129",
+   "inv": "AS115",
+   "n_pend": 48,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000072,
+   "okr": "KH0130",
+   "inv": "UR1116",
+   "n_pend": 13,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000073,
+   "okr": "KH0131",
+   "inv": "UR1117",
+   "n_pend": 11,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000074,
+   "okr": "KH0132",
+   "inv": "UR1118",
+   "n_pend": 15,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000076,
+   "okr": "KH0134",
+   "inv": "UR1120",
+   "n_pend": 32,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000077,
+   "okr": "KH0135",
+   "inv": "UR1121",
+   "n_pend": 280,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000079,
+   "okr": "KH0137",
+   "inv": "UR1123",
+   "n_pend": 70,
+   "p_stage1": 0.008991008991008992,
+   "p": 0.010249487525623718,
+   "K2": 20000,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000080,
+   "okr": "KH0138",
+   "inv": "UR1124",
+   "n_pend": 35,
+   "p_stage1": 0.4935064935064935,
+   "p": 0.4935064935064935,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000081,
+   "okr": "KH0139",
+   "inv": "UR1124 Detail 1",
+   "n_pend": 23,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000082,
+   "okr": "KH0140",
+   "inv": "AS125",
+   "n_pend": 16,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000083,
+   "okr": "KH0141",
+   "inv": "UR1126",
+   "n_pend": 104,
+   "p_stage1": 0.7872127872127872,
+   "p": 0.7872127872127872,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000085,
+   "okr": "KH0143",
+   "inv": "AS128",
+   "n_pend": 269,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000086,
+   "okr": "KH0144",
+   "inv": "AS129",
+   "n_pend": 14,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000087,
+   "okr": "KH0145",
+   "inv": "UR1130",
+   "n_pend": 16,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000089,
+   "okr": "KH0147",
+   "inv": "UR1131",
+   "n_pend": 146,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000091,
+   "okr": "KH0149",
+   "inv": "AS133",
+   "n_pend": 47,
+   "p_stage1": 0.17582417582417584,
+   "p": 0.17582417582417584,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000093,
+   "okr": "KH0151",
+   "inv": "UR1135",
+   "n_pend": 22,
+   "p_stage1": 0.11588411588411589,
+   "p": 0.11588411588411589,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000094,
+   "okr": "KH0152",
+   "inv": "UR1136",
+   "n_pend": 181,
+   "p_stage1": 0.9600399600399601,
+   "p": 0.9600399600399601,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000096,
+   "okr": "KH0082",
+   "inv": "AS069",
+   "n_pend": 1650,
+   "p_stage1": 0.08091908091908091,
+   "p": 0.08091908091908091,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000097,
+   "okr": "KH0033",
+   "inv": "AS031/UR1031/UR044",
+   "n_pend": 54,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000099,
+   "okr": "KH0273",
+   "inv": "UR041",
+   "n_pend": 43,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000100,
+   "okr": "KH0274",
+   "inv": "UR042",
+   "n_pend": 25,
+   "p_stage1": 0.11688311688311688,
+   "p": 0.11688311688311688,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000101,
+   "okr": "KH0032",
+   "inv": "AS030/UR043",
+   "n_pend": 22,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000103,
+   "okr": "KH0034",
+   "inv": "UR1032",
+   "n_pend": 415,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000106,
+   "okr": "KH0036",
+   "inv": "UR1033B",
+   "n_pend": 18,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000107,
+   "okr": "KH0037",
+   "inv": "UR1033C",
+   "n_pend": 15,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000108,
+   "okr": "KH0038",
+   "inv": "UR1033D",
+   "n_pend": 25,
+   "p_stage1": 0.03996003996003996,
+   "p": 0.03996003996003996,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000110,
+   "okr": "KH0040",
+   "inv": "UR1033F",
+   "n_pend": 21,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000113,
+   "okr": "KH0154",
+   "inv": "UR1138",
+   "n_pend": 35,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000114,
+   "okr": "KH0155",
+   "inv": "AS139",
+   "n_pend": 13,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000115,
+   "okr": "KH0156",
+   "inv": "UR1140",
+   "n_pend": 180,
+   "p_stage1": 0.8431568431568431,
+   "p": 0.8431568431568431,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000116,
+   "okr": "KH0157",
+   "inv": "UR1141",
+   "n_pend": 20,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000117,
+   "okr": "KH0158",
+   "inv": "AS142",
+   "n_pend": 12,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000118,
+   "okr": "KH0159",
+   "inv": "UR1143",
+   "n_pend": 30,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000119,
+   "okr": "KH0160",
+   "inv": "UR1144",
+   "n_pend": 62,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000120,
+   "okr": "KH0161",
+   "inv": "UR1145",
+   "n_pend": 88,
+   "p_stage1": 0.057942057942057944,
+   "p": 0.057942057942057944,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000121,
+   "okr": "KH0162",
+   "inv": "UR1146",
+   "n_pend": 110,
+   "p_stage1": 0.5354645354645354,
+   "p": 0.5354645354645354,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000122,
+   "okr": "KH0163",
+   "inv": "UR1147",
+   "n_pend": 18,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000123,
+   "okr": "KH0164",
+   "inv": "UR1148",
+   "n_pend": 20,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000124,
+   "okr": "KH0165",
+   "inv": "UR1149",
+   "n_pend": 112,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000125,
+   "okr": "KH0166",
+   "inv": "UR1150",
+   "n_pend": 27,
+   "p_stage1": 0.3046953046953047,
+   "p": 0.3046953046953047,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000126,
+   "okr": "KH0167",
+   "inv": "UR1151",
+   "n_pend": 23,
+   "p_stage1": 0.3776223776223776,
+   "p": 0.3776223776223776,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000127,
+   "okr": "KH0168",
+   "inv": "UR1152",
+   "n_pend": 80,
+   "p_stage1": 0.000999000999000999,
+   "p": 0.00119994000299985,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000128,
+   "okr": "KH0169",
+   "inv": "AS153",
+   "n_pend": 21,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000131,
+   "okr": "KH0172",
+   "inv": "AS156",
+   "n_pend": 65,
+   "p_stage1": 0.8621378621378621,
+   "p": 0.8621378621378621,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000132,
+   "okr": "KH0173",
+   "inv": "AS157",
+   "n_pend": 18,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000133,
+   "okr": "KH0174",
+   "inv": "AS158",
+   "n_pend": 18,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000135,
+   "okr": "KH0178",
+   "inv": "UR1162A",
+   "n_pend": 16,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000137,
+   "okr": "KH0180",
+   "inv": "UR1163",
+   "n_pend": 26,
+   "p_stage1": 0.32167832167832167,
+   "p": 0.32167832167832167,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000138,
+   "okr": "KH0181",
+   "inv": "AS164",
+   "n_pend": 22,
+   "p_stage1": 0.4245754245754246,
+   "p": 0.4245754245754246,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000139,
+   "okr": "KH0182",
+   "inv": "UR1165",
+   "n_pend": 19,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000140,
+   "okr": "KH0183",
+   "inv": "UR1166",
+   "n_pend": 222,
+   "p_stage1": 0.6683316683316683,
+   "p": 0.6683316683316683,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000142,
+   "okr": "KH0185",
+   "inv": "AS168",
+   "n_pend": 18,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000143,
+   "okr": "KH0186",
+   "inv": "AS169",
+   "n_pend": 30,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000144,
+   "okr": "KH0187",
+   "inv": "AS170",
+   "n_pend": 101,
+   "p_stage1": 0.09090909090909091,
+   "p": 0.09090909090909091,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000145,
+   "okr": "KH0188",
+   "inv": "AS171",
+   "n_pend": 23,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000146,
+   "okr": "KH0189",
+   "inv": "AS172",
+   "n_pend": 32,
+   "p_stage1": 0.17682317682317683,
+   "p": 0.17682317682317683,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000147,
+   "okr": "KH0192",
+   "inv": "UR1175",
+   "n_pend": 224,
+   "p_stage1": 0.3786213786213786,
+   "p": 0.3786213786213786,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000148,
+   "okr": "KH0193",
+   "inv": "UR1176",
+   "n_pend": 219,
+   "p_stage1": 0.11988011988011989,
+   "p": 0.11988011988011989,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000149,
+   "okr": "KH0194",
+   "inv": "AS177",
+   "n_pend": 15,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000150,
+   "okr": "KH0195",
+   "inv": "AS178",
+   "n_pend": 29,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000151,
+   "okr": "KH0196",
+   "inv": "UR1179",
+   "n_pend": 27,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000152,
+   "okr": "KH0197",
+   "inv": "UR1180",
+   "n_pend": 27,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000158,
+   "okr": "KH0203",
+   "inv": "AS185",
+   "n_pend": 23,
+   "p_stage1": 0.0959040959040959,
+   "p": 0.0959040959040959,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000159,
+   "okr": "KH0204",
+   "inv": "AS186",
+   "n_pend": 32,
+   "p_stage1": 0.2647352647352647,
+   "p": 0.2647352647352647,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000161,
+   "okr": "KH0206",
+   "inv": "AS188",
+   "n_pend": 12,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000162,
+   "okr": "KH0207",
+   "inv": "AS189",
+   "n_pend": 23,
+   "p_stage1": 0.08091908091908091,
+   "p": 0.08091908091908091,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000163,
+   "okr": "KH0216",
+   "inv": "AS198",
+   "n_pend": 19,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000164,
+   "okr": "KH0217",
+   "inv": "AS199",
+   "n_pend": 73,
+   "p_stage1": 0.14185814185814186,
+   "p": 0.14185814185814186,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000165,
+   "okr": "KH0218",
+   "inv": "AS200",
+   "n_pend": 37,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000166,
+   "okr": "KH0011",
+   "inv": "AS010",
+   "n_pend": 25,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000167,
+   "okr": "KH0012",
+   "inv": "AS011",
+   "n_pend": 15,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000169,
+   "okr": "KH0064",
+   "inv": "UR1053",
+   "n_pend": 20,
+   "p_stage1": 0.2997002997002997,
+   "p": 0.2997002997002997,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000170,
+   "okr": "KH0063",
+   "inv": "UR1052",
+   "n_pend": 20,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000171,
+   "okr": "KH0071",
+   "inv": "AS060",
+   "n_pend": 15,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000172,
+   "okr": "KH0091",
+   "inv": "AS078",
+   "n_pend": 27,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000176,
+   "okr": "KH0069",
+   "inv": "UR1058",
+   "n_pend": 38,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000178,
+   "okr": "KH0073",
+   "inv": "AS062",
+   "n_pend": 16,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000179,
+   "okr": "KH0065",
+   "inv": "AS054",
+   "n_pend": 21,
+   "p_stage1": 0.10589410589410589,
+   "p": 0.10589410589410589,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000180,
+   "okr": "KH0013",
+   "inv": "AS012",
+   "n_pend": 85,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000183,
+   "okr": "KH0068",
+   "inv": "UR1057",
+   "n_pend": 557,
+   "p_stage1": 0.054945054945054944,
+   "p": 0.054945054945054944,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000184,
+   "okr": "KH0014",
+   "inv": "AS013",
+   "n_pend": 89,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000185,
+   "okr": "KH0015",
+   "inv": "AS014",
+   "n_pend": 42,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000188,
+   "okr": "KH0018",
+   "inv": "AS017",
+   "n_pend": 20,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000191,
+   "okr": "KH0021",
+   "inv": "AS020",
+   "n_pend": 10,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000192,
+   "okr": "KH0022",
+   "inv": "AS021",
+   "n_pend": 54,
+   "p_stage1": 0.24775224775224775,
+   "p": 0.24775224775224775,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000197,
+   "okr": "KH0027",
+   "inv": "AS026A",
+   "n_pend": 54,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000198,
+   "okr": "KH0028",
+   "inv": "AS026B",
+   "n_pend": 105,
+   "p_stage1": 0.5474525474525475,
+   "p": 0.5474525474525475,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000199,
+   "okr": "KH0029",
+   "inv": "AS027",
+   "n_pend": 19,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000200,
+   "okr": "KH0030",
+   "inv": "AS028",
+   "n_pend": 49,
+   "p_stage1": 0.2127872127872128,
+   "p": 0.2127872127872128,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000201,
+   "okr": "KH0031",
+   "inv": "AS029",
+   "n_pend": 87,
+   "p_stage1": 0.2967032967032967,
+   "p": 0.2967032967032967,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000207,
+   "okr": "KH0046",
+   "inv": "AS035D",
+   "n_pend": 37,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000208,
+   "okr": "KH0051",
+   "inv": "UR1040",
+   "n_pend": 27,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000209,
+   "okr": "KH0052",
+   "inv": "AS041",
+   "n_pend": 32,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000211,
+   "okr": "KH0054",
+   "inv": "AS043",
+   "n_pend": 27,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000212,
+   "okr": "KH0056",
+   "inv": "AS045",
+   "n_pend": 40,
+   "p_stage1": 0.5314685314685315,
+   "p": 0.5314685314685315,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000213,
+   "okr": "KH0050",
+   "inv": "AS039",
+   "n_pend": 36,
+   "p_stage1": 0.04795204795204795,
+   "p": 0.04795204795204795,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000214,
+   "okr": "KH0062",
+   "inv": "UR1051",
+   "n_pend": 30,
+   "p_stage1": 0.14385614385614387,
+   "p": 0.14385614385614387,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000220,
+   "okr": "KH0089",
+   "inv": "AS076",
+   "n_pend": 15,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000221,
+   "okr": "KH0090",
+   "inv": "AS077",
+   "n_pend": 33,
+   "p_stage1": 0.6943056943056943,
+   "p": 0.6943056943056943,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000222,
+   "okr": "KH0093",
+   "inv": "AS080",
+   "n_pend": 16,
+   "p_stage1": 0.08091908091908091,
+   "p": 0.08091908091908091,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000223,
+   "okr": "KH0075",
+   "inv": "AS063B",
+   "n_pend": 24,
+   "p_stage1": 0.15484515484515485,
+   "p": 0.15484515484515485,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000228,
+   "okr": "KH0099",
+   "inv": "AS086",
+   "n_pend": 45,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000229,
+   "okr": "KH0059",
+   "inv": "AS048",
+   "n_pend": 52,
+   "p_stage1": 0.4995004995004995,
+   "p": 0.4995004995004995,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000230,
+   "okr": "KH0060",
+   "inv": "UR1049",
+   "n_pend": 61,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000233,
+   "okr": "KH0103",
+   "inv": "AS090/N2",
+   "n_pend": 56,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000234,
+   "okr": "KH0105",
+   "inv": "AS092",
+   "n_pend": 56,
+   "p_stage1": 0.5704295704295704,
+   "p": 0.5704295704295704,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000235,
+   "okr": "KH0047",
+   "inv": "AS036",
+   "n_pend": 74,
+   "p_stage1": 0.15784215784215785,
+   "p": 0.15784215784215785,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000236,
+   "okr": "KH0048",
+   "inv": "AS037",
+   "n_pend": 78,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000238,
+   "okr": "KH0279",
+   "inv": "UR049",
+   "n_pend": 238,
+   "p_stage1": 0.25074925074925075,
+   "p": 0.25074925074925075,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000239,
+   "okr": "KH0278",
+   "inv": "UR048",
+   "n_pend": 45,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000240,
+   "okr": "KH0277",
+   "inv": "UR047",
+   "n_pend": 43,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000243,
+   "okr": "KH0299",
+   "inv": "UR062",
+   "n_pend": 22,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000245,
+   "okr": "KH0306",
+   "inv": "UR069",
+   "n_pend": 32,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000246,
+   "okr": "KH0298",
+   "inv": "UR061",
+   "n_pend": 41,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000249,
+   "okr": "KH0309",
+   "inv": "UR072",
+   "n_pend": 61,
+   "p_stage1": 0.14085914085914086,
+   "p": 0.14085914085914086,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000250,
+   "okr": "KH0310",
+   "inv": "UR073",
+   "n_pend": 74,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000251,
+   "okr": "KH0311",
+   "inv": "UR074",
+   "n_pend": 66,
+   "p_stage1": 0.19880119880119881,
+   "p": 0.19880119880119881,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000252,
+   "okr": "KH0312",
+   "inv": "UR075",
+   "n_pend": 13,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000253,
+   "okr": "KH0313",
+   "inv": "UR076",
+   "n_pend": 24,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000255,
+   "okr": "KH0316",
+   "inv": "UR079",
+   "n_pend": 30,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000259,
+   "okr": "KH0300",
+   "inv": "UR063",
+   "n_pend": 111,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000260,
+   "okr": "KH0304",
+   "inv": "UR067",
+   "n_pend": 32,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000261,
+   "okr": "KH0303",
+   "inv": "UR066",
+   "n_pend": 32,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000262,
+   "okr": "KH0305",
+   "inv": "UR068",
+   "n_pend": 73,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000263,
+   "okr": "KH0301",
+   "inv": "UR064",
+   "n_pend": 71,
+   "p_stage1": 0.5564435564435565,
+   "p": 0.5564435564435565,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000264,
+   "okr": "KH0297",
+   "inv": "UR060",
+   "n_pend": 112,
+   "p_stage1": 0.03496503496503497,
+   "p": 0.03496503496503497,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000265,
+   "okr": "KH0283",
+   "inv": "UR053A",
+   "n_pend": 49,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000266,
+   "okr": "KH0284",
+   "inv": "UR053B",
+   "n_pend": 36,
+   "p_stage1": 0.42157842157842157,
+   "p": 0.42157842157842157,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000267,
+   "okr": "KH0285",
+   "inv": "UR053C",
+   "n_pend": 61,
+   "p_stage1": 0.8221778221778222,
+   "p": 0.8221778221778222,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000268,
+   "okr": "KH0286",
+   "inv": "UR053D",
+   "n_pend": 72,
+   "p_stage1": 0.2007992007992008,
+   "p": 0.2007992007992008,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000269,
+   "okr": "KH0287",
+   "inv": "UR053E",
+   "n_pend": 70,
+   "p_stage1": 0.8821178821178821,
+   "p": 0.8821178821178821,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000270,
+   "okr": "KH0324",
+   "inv": "UR088",
+   "n_pend": 54,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000271,
+   "okr": "KH0327",
+   "inv": "UR091",
+   "n_pend": 90,
+   "p_stage1": 0.6883116883116883,
+   "p": 0.6883116883116883,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000272,
+   "okr": "KH0328",
+   "inv": "UR092",
+   "n_pend": 60,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000273,
+   "okr": "KH0323",
+   "inv": "UR087",
+   "n_pend": 306,
+   "p_stage1": 0.15384615384615385,
+   "p": 0.15384615384615385,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000274,
+   "okr": "KH0326",
+   "inv": "UR090",
+   "n_pend": 108,
+   "p_stage1": 0.34865134865134867,
+   "p": 0.34865134865134867,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000275,
+   "okr": "KH0325",
+   "inv": "UR089",
+   "n_pend": 206,
+   "p_stage1": 0.975024975024975,
+   "p": 0.975024975024975,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000277,
+   "okr": "KH0270",
+   "inv": "UR038",
+   "n_pend": 39,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000279,
+   "okr": "KH0083",
+   "inv": "AS070/UR035",
+   "n_pend": 88,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000280,
+   "okr": "KH0321",
+   "inv": "UR085",
+   "n_pend": 152,
+   "p_stage1": 0.4275724275724276,
+   "p": 0.4275724275724276,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000283,
+   "okr": "KH0353",
+   "inv": "UR116B",
+   "n_pend": 22,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000285,
+   "okr": "KH0352",
+   "inv": "UR116A",
+   "n_pend": 80,
+   "p_stage1": 0.011988011988011988,
+   "p": 0.011988011988011988,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000287,
+   "okr": "KH0350",
+   "inv": "UR114",
+   "n_pend": 219,
+   "p_stage1": 0.07792207792207792,
+   "p": 0.07792207792207792,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000291,
+   "okr": "KH0357",
+   "inv": "UR117D",
+   "n_pend": 24,
+   "p_stage1": 0.37362637362637363,
+   "p": 0.37362637362637363,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000292,
+   "okr": "KH0349",
+   "inv": "UR113",
+   "n_pend": 332,
+   "p_stage1": 0.23376623376623376,
+   "p": 0.23376623376623376,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000293,
+   "okr": "KH0358",
+   "inv": "UR118",
+   "n_pend": 145,
+   "p_stage1": 0.45354645354645357,
+   "p": 0.45354645354645357,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000295,
+   "okr": "KH0290",
+   "inv": "UR056A",
+   "n_pend": 28,
+   "p_stage1": 0.23676323676323677,
+   "p": 0.23676323676323677,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000296,
+   "okr": "KH0291",
+   "inv": "UR056B",
+   "n_pend": 38,
+   "p_stage1": 0.3436563436563437,
+   "p": 0.3436563436563437,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000297,
+   "okr": "KH0292",
+   "inv": "UR056C",
+   "n_pend": 24,
+   "p_stage1": 0.059940059940059943,
+   "p": 0.059940059940059943,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000298,
+   "okr": "KH0294",
+   "inv": "UR058A",
+   "n_pend": 58,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000299,
+   "okr": "KH0295",
+   "inv": "UR058B",
+   "n_pend": 48,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000300,
+   "okr": "KH0370",
+   "inv": "UR131A",
+   "n_pend": 56,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000301,
+   "okr": "KH0371",
+   "inv": "UR131B",
+   "n_pend": 66,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000302,
+   "okr": "KH0372",
+   "inv": "UR131C",
+   "n_pend": 59,
+   "p_stage1": 0.1848151848151848,
+   "p": 0.1848151848151848,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000303,
+   "okr": "KH0262",
+   "inv": "UR027",
+   "n_pend": 14,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000304,
+   "okr": "KH0263",
+   "inv": "UR028",
+   "n_pend": 76,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000305,
+   "okr": "KH0264",
+   "inv": "UR029",
+   "n_pend": 35,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000309,
+   "okr": "KH0293",
+   "inv": "UR057",
+   "n_pend": 21,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000310,
+   "okr": "KH0100",
+   "inv": "UR1087",
+   "n_pend": 89,
+   "p_stage1": 0.5654345654345654,
+   "p": 0.5654345654345654,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000312,
+   "okr": "KH0104",
+   "inv": "UR1091",
+   "n_pend": 89,
+   "p_stage1": 0.022977022977022976,
+   "p": 0.022977022977022976,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000313,
+   "okr": "KH0101",
+   "inv": "UR1088",
+   "n_pend": 87,
+   "p_stage1": 0.8171828171828172,
+   "p": 0.8171828171828172,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000314,
+   "okr": "KH0108",
+   "inv": "UR1095",
+   "n_pend": 146,
+   "p_stage1": 0.8891108891108891,
+   "p": 0.8891108891108891,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000315,
+   "okr": "KH0109",
+   "inv": "UR1096",
+   "n_pend": 66,
+   "p_stage1": 0.01898101898101898,
+   "p": 0.01898101898101898,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000316,
+   "okr": "KH0369",
+   "inv": "UR130",
+   "n_pend": 59,
+   "p_stage1": 0.18281718281718282,
+   "p": 0.18281718281718282,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000320,
+   "okr": "KH0360",
+   "inv": "UR120",
+   "n_pend": 69,
+   "p_stage1": 0.42857142857142855,
+   "p": 0.42857142857142855,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000321,
+   "okr": "KH0329",
+   "inv": "UR093",
+   "n_pend": 223,
+   "p_stage1": 0.5384615384615384,
+   "p": 0.5384615384615384,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000322,
+   "okr": "KH0361",
+   "inv": "UR121",
+   "n_pend": 23,
+   "p_stage1": 0.21678321678321677,
+   "p": 0.21678321678321677,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000323,
+   "okr": "KH0362",
+   "inv": "UR122",
+   "n_pend": 72,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000324,
+   "okr": "KH0363",
+   "inv": "UR123",
+   "n_pend": 61,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000327,
+   "okr": "KH0351",
+   "inv": "UR115/UR126",
+   "n_pend": 29,
+   "p_stage1": 0.2907092907092907,
+   "p": 0.2907092907092907,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000328,
+   "okr": "KH0366",
+   "inv": "UR127",
+   "n_pend": 22,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000329,
+   "okr": "KH0359",
+   "inv": "UR119",
+   "n_pend": 173,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000330,
+   "okr": "KH0265",
+   "inv": "UR032",
+   "n_pend": 38,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000331,
+   "okr": "KH0269",
+   "inv": "UR037",
+   "n_pend": 167,
+   "p_stage1": 0.7822177822177823,
+   "p": 0.7822177822177823,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000332,
+   "okr": "KH0275",
+   "inv": "UR045",
+   "n_pend": 123,
+   "p_stage1": 0.12087912087912088,
+   "p": 0.12087912087912088,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000333,
+   "okr": "KH0042",
+   "inv": "UR1034",
+   "n_pend": 108,
+   "p_stage1": 0.24875124875124874,
+   "p": 0.24875124875124874,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000335,
+   "okr": "KH0261",
+   "inv": "UR026",
+   "n_pend": 46,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000336,
+   "okr": "KH0322",
+   "inv": "UR086",
+   "n_pend": 107,
+   "p_stage1": 0.011988011988011988,
+   "p": 0.011988011988011988,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000337,
+   "okr": "KH0330",
+   "inv": "UR094",
+   "n_pend": 25,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000338,
+   "okr": "KH0331",
+   "inv": "UR095",
+   "n_pend": 26,
+   "p_stage1": 0.5054945054945055,
+   "p": 0.5054945054945055,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000340,
+   "okr": "KH0333",
+   "inv": "UR097",
+   "n_pend": 81,
+   "p_stage1": 0.17282717282717283,
+   "p": 0.17282717282717283,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000342,
+   "okr": "KH0088",
+   "inv": "AS075",
+   "n_pend": 186,
+   "p_stage1": 0.5724275724275725,
+   "p": 0.5724275724275725,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000344,
+   "okr": "KH0097",
+   "inv": "UR1084",
+   "n_pend": 319,
+   "p_stage1": 0.8781218781218781,
+   "p": 0.8781218781218781,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000345,
+   "okr": "KH0055",
+   "inv": "AS044",
+   "n_pend": 87,
+   "p_stage1": 0.16183816183816183,
+   "p": 0.16183816183816183,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000346,
+   "okr": "KH0092",
+   "inv": "AS079",
+   "n_pend": 74,
+   "p_stage1": 0.11488511488511488,
+   "p": 0.11488511488511488,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000351,
+   "okr": "KH0338",
+   "inv": "UR102",
+   "n_pend": 63,
+   "p_stage1": 0.6083916083916084,
+   "p": 0.6083916083916084,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000353,
+   "okr": "KH0340",
+   "inv": "UR104",
+   "n_pend": 16,
+   "p_stage1": 0.21978021978021978,
+   "p": 0.21978021978021978,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000356,
+   "okr": "KH0343",
+   "inv": "UR107",
+   "n_pend": 25,
+   "p_stage1": 0.15684315684315683,
+   "p": 0.15684315684315683,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000359,
+   "okr": "KH0347",
+   "inv": "UR111",
+   "n_pend": 149,
+   "p_stage1": 0.6833166833166833,
+   "p": 0.6833166833166833,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000361,
+   "okr": "KH0061",
+   "inv": "AS050",
+   "n_pend": 313,
+   "p_stage1": 0.23976023976023977,
+   "p": 0.23976023976023977,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000363,
+   "okr": "KH0280",
+   "inv": "UR050",
+   "n_pend": 164,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000365,
+   "okr": "KH0106",
+   "inv": "AS093",
+   "n_pend": 70,
+   "p_stage1": 0.7002997002997003,
+   "p": 0.7002997002997003,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000366,
+   "okr": "KH0087",
+   "inv": "AS074",
+   "n_pend": 93,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000368,
+   "okr": "KH0084",
+   "inv": "AS071",
+   "n_pend": 252,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000369,
+   "okr": "KH0079",
+   "inv": "AS066",
+   "n_pend": 147,
+   "p_stage1": 0.7702297702297702,
+   "p": 0.7702297702297702,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000371,
+   "okr": "KH0080",
+   "inv": "AS067/MA029",
+   "n_pend": 140,
+   "p_stage1": 0.0959040959040959,
+   "p": 0.0959040959040959,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000374,
+   "okr": "KH0271",
+   "inv": "UR039",
+   "n_pend": 91,
+   "p_stage1": 0.11288711288711288,
+   "p": 0.11288711288711288,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000375,
+   "okr": "KH0281",
+   "inv": "UR051",
+   "n_pend": 93,
+   "p_stage1": 0.47652347652347654,
+   "p": 0.47652347652347654,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000376,
+   "okr": "KH0289",
+   "inv": "UR055",
+   "n_pend": 180,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000377,
+   "okr": "KH0367",
+   "inv": "UR128",
+   "n_pend": 41,
+   "p_stage1": 0.10989010989010989,
+   "p": 0.10989010989010989,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000378,
+   "okr": "KH0368",
+   "inv": "UR129",
+   "n_pend": 14,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000380,
+   "okr": "KH0267",
+   "inv": "UR034",
+   "n_pend": 87,
+   "p_stage1": 0.5144855144855145,
+   "p": 0.5144855144855145,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000381,
+   "okr": "KH0346",
+   "inv": "UR110",
+   "n_pend": 89,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000382,
+   "okr": "KH0348",
+   "inv": "UR112",
+   "n_pend": 76,
+   "p_stage1": 0.25274725274725274,
+   "p": 0.25274725274725274,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000383,
+   "okr": "KH0288",
+   "inv": "UR054",
+   "n_pend": 115,
+   "p_stage1": 0.3026973026973027,
+   "p": 0.3026973026973027,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000385,
+   "okr": "KH0282",
+   "inv": "UR052",
+   "n_pend": 98,
+   "p_stage1": 0.3956043956043956,
+   "p": 0.3956043956043956,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000386,
+   "okr": "KH0378",
+   "inv": "UR138",
+   "n_pend": 22,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000387,
+   "okr": "KH0377",
+   "inv": "UR137",
+   "n_pend": 21,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000390,
+   "okr": "KH0296",
+   "inv": "UR059",
+   "n_pend": 133,
+   "p_stage1": 0.6093906093906094,
+   "p": 0.6093906093906094,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000393,
+   "okr": "KH0402",
+   "inv": "UR162",
+   "n_pend": 17,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000395,
+   "okr": "KH0401",
+   "inv": "UR161",
+   "n_pend": 15,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000396,
+   "okr": "KH0228",
+   "inv": "AS208/UR083",
+   "n_pend": 168,
+   "p_stage1": 0.7582417582417582,
+   "p": 0.7582417582417582,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000397,
+   "okr": "KH0400",
+   "inv": "UR160",
+   "n_pend": 18,
+   "p_stage1": 0.22777222777222778,
+   "p": 0.22777222777222778,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000398,
+   "okr": "KH0395",
+   "inv": "UR155",
+   "n_pend": 30,
+   "p_stage1": 0.000999000999000999,
+   "p": 0.0014499275036248187,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000399,
+   "okr": "KH0394",
+   "inv": "UR154",
+   "n_pend": 20,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000400,
+   "okr": "KH0387",
+   "inv": "UR147",
+   "n_pend": 43,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000401,
+   "okr": "KH0383",
+   "inv": "UR143",
+   "n_pend": 22,
+   "p_stage1": 0.11488511488511488,
+   "p": 0.11488511488511488,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000402,
+   "okr": "KH0392",
+   "inv": "UR152",
+   "n_pend": 24,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000403,
+   "okr": "KH0393",
+   "inv": "UR153",
+   "n_pend": 51,
+   "p_stage1": 0.15684315684315683,
+   "p": 0.15684315684315683,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000404,
+   "okr": "KH0391",
+   "inv": "UR151",
+   "n_pend": 12,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000405,
+   "okr": "KH0390",
+   "inv": "UR150",
+   "n_pend": 17,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000406,
+   "okr": "KH0382",
+   "inv": "UR142",
+   "n_pend": 21,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000407,
+   "okr": "KH0379",
+   "inv": "UR139",
+   "n_pend": 102,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000408,
+   "okr": "KH0380",
+   "inv": "UR140",
+   "n_pend": 38,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000409,
+   "okr": "KH0381",
+   "inv": "UR141",
+   "n_pend": 24,
+   "p_stage1": 0.19080919080919082,
+   "p": 0.19080919080919082,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000413,
+   "okr": "KH0389",
+   "inv": "UR149",
+   "n_pend": 148,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000415,
+   "okr": "KH0385",
+   "inv": "UR145",
+   "n_pend": 32,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000416,
+   "okr": "KH0397",
+   "inv": "UR157",
+   "n_pend": 10,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000418,
+   "okr": "KH0386",
+   "inv": "UR146",
+   "n_pend": 46,
+   "p_stage1": 0.13386613386613386,
+   "p": 0.13386613386613386,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000419,
+   "okr": "KH0384",
+   "inv": "UR144",
+   "n_pend": 96,
+   "p_stage1": 0.7442557442557443,
+   "p": 0.7442557442557443,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000420,
+   "okr": "KH0533",
+   "inv": "HP001",
+   "n_pend": 14,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000421,
+   "okr": "KH0534",
+   "inv": "HP002",
+   "n_pend": 30,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000422,
+   "okr": "KH0535",
+   "inv": "HP003",
+   "n_pend": 80,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000423,
+   "okr": "KH0536",
+   "inv": "HP004",
+   "n_pend": 13,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000424,
+   "okr": "KH0537",
+   "inv": "HP005",
+   "n_pend": 21,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000426,
+   "okr": "KH0539",
+   "inv": "HP007",
+   "n_pend": 24,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000427,
+   "okr": "KH0540",
+   "inv": "HP008",
+   "n_pend": 12,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000429,
+   "okr": "KH0542",
+   "inv": "HP010",
+   "n_pend": 27,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000430,
+   "okr": "KH0543",
+   "inv": "HP011",
+   "n_pend": 28,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000431,
+   "okr": "KH0544",
+   "inv": "HP012",
+   "n_pend": 51,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000433,
+   "okr": "KH0546",
+   "inv": "HP014",
+   "n_pend": 59,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000436,
+   "okr": "KH0549",
+   "inv": "HP017",
+   "n_pend": 100,
+   "p_stage1": 0.5034965034965035,
+   "p": 0.5034965034965035,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000437,
+   "okr": "KH0550",
+   "inv": "HP018",
+   "n_pend": 28,
+   "p_stage1": 0.13286713286713286,
+   "p": 0.13286713286713286,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000438,
+   "okr": "KH0551",
+   "inv": "HP019",
+   "n_pend": 22,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000439,
+   "okr": "KH0552",
+   "inv": "HP020",
+   "n_pend": 26,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000441,
+   "okr": "KH0554",
+   "inv": "HP022",
+   "n_pend": 18,
+   "p_stage1": 0.3276723276723277,
+   "p": 0.3276723276723277,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000442,
+   "okr": "KH0555",
+   "inv": "HP023",
+   "n_pend": 20,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000446,
+   "okr": "KH0559",
+   "inv": "HP027",
+   "n_pend": 53,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000448,
+   "okr": "KH0561",
+   "inv": "HP029",
+   "n_pend": 63,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000449,
+   "okr": "KH0562",
+   "inv": "HP030",
+   "n_pend": 107,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000450,
+   "okr": "KH0563",
+   "inv": "HP031",
+   "n_pend": 43,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000451,
+   "okr": "KH0564",
+   "inv": "HP032",
+   "n_pend": 15,
+   "p_stage1": 0.006993006993006993,
+   "p": 0.004699765011749413,
+   "K2": 20000,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000452,
+   "okr": "KH0374",
+   "inv": "UR134",
+   "n_pend": 12,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000454,
+   "okr": "KH0591",
+   "inv": "QU03",
+   "n_pend": 39,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000455,
+   "okr": "KH0590",
+   "inv": "QU02",
+   "n_pend": 85,
+   "p_stage1": 0.5094905094905094,
+   "p": 0.5094905094905094,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000472,
+   "okr": "KH0404",
+   "inv": "UR165",
+   "n_pend": 85,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000474,
+   "okr": "KH0406",
+   "inv": "UR167",
+   "n_pend": 37,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000475,
+   "okr": "KH0407",
+   "inv": "UR168",
+   "n_pend": 17,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000477,
+   "okr": "KH0408",
+   "inv": "UR169",
+   "n_pend": 41,
+   "p_stage1": 0.0979020979020979,
+   "p": 0.0979020979020979,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000478,
+   "okr": "KH0410",
+   "inv": "UR171",
+   "n_pend": 40,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000479,
+   "okr": "KH0411",
+   "inv": "UR172",
+   "n_pend": 28,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000482,
+   "okr": "KH0420",
+   "inv": "UR182",
+   "n_pend": 30,
+   "p_stage1": 0.022977022977022976,
+   "p": 0.022977022977022976,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000485,
+   "okr": "KH0416",
+   "inv": "UR178",
+   "n_pend": 14,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000487,
+   "okr": "KH0421",
+   "inv": "UR183",
+   "n_pend": 33,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000488,
+   "okr": "KH0422",
+   "inv": "UR184",
+   "n_pend": 21,
+   "p_stage1": 0.0959040959040959,
+   "p": 0.0959040959040959,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000492,
+   "okr": "KH0409",
+   "inv": "UR170",
+   "n_pend": 68,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000493,
+   "okr": "KH0001",
+   "inv": "LL01/UR176",
+   "n_pend": 96,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000494,
+   "okr": "KH0415",
+   "inv": "UR177",
+   "n_pend": 31,
+   "p_stage1": 0.016983016983016984,
+   "p": 0.016983016983016984,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000495,
+   "okr": "KH0425",
+   "inv": "UR187",
+   "n_pend": 54,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000496,
+   "okr": "KH0405",
+   "inv": "UR166",
+   "n_pend": 30,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000497,
+   "okr": "KH0424",
+   "inv": "UR186",
+   "n_pend": 58,
+   "p_stage1": 0.000999000999000999,
+   "p": 0.0014999250037498126,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000499,
+   "okr": "KH0426",
+   "inv": "UR188",
+   "n_pend": 64,
+   "p_stage1": 0.00999000999000999,
+   "p": 0.010899455027248638,
+   "K2": 20000,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000500,
+   "okr": "KH0427",
+   "inv": "Ur189",
+   "n_pend": 49,
+   "p_stage1": 0.47652347652347654,
+   "p": 0.47652347652347654,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000501,
+   "okr": "KH0428",
+   "inv": "UR190",
+   "n_pend": 395,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000502,
+   "okr": "KH0429",
+   "inv": "UR191",
+   "n_pend": 23,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000503,
+   "okr": "KH0430",
+   "inv": "UR192",
+   "n_pend": 59,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000504,
+   "okr": "KH0431",
+   "inv": "UR193",
+   "n_pend": 99,
+   "p_stage1": 0.6483516483516484,
+   "p": 0.6483516483516484,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000505,
+   "okr": "KH0432",
+   "inv": "UR194",
+   "n_pend": 35,
+   "p_stage1": 0.6023976023976024,
+   "p": 0.6023976023976024,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000506,
+   "okr": "KH0433",
+   "inv": "UR195",
+   "n_pend": 134,
+   "p_stage1": 0.7342657342657343,
+   "p": 0.7342657342657343,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000507,
+   "okr": "KH0434",
+   "inv": "UR196",
+   "n_pend": 78,
+   "p_stage1": 0.47952047952047955,
+   "p": 0.47952047952047955,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000508,
+   "okr": "KH0435",
+   "inv": "UR197",
+   "n_pend": 216,
+   "p_stage1": 0.7282717282717283,
+   "p": 0.7282717282717283,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000509,
+   "okr": "KH0436",
+   "inv": "UR198",
+   "n_pend": 257,
+   "p_stage1": 0.12187812187812187,
+   "p": 0.12187812187812187,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000510,
+   "okr": "KH0437",
+   "inv": "UR199",
+   "n_pend": 126,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000511,
+   "okr": "KH0438",
+   "inv": "UR200",
+   "n_pend": 86,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000512,
+   "okr": "KH0439",
+   "inv": "UR201",
+   "n_pend": 110,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000513,
+   "okr": "KH0440",
+   "inv": "UR202",
+   "n_pend": 77,
+   "p_stage1": 0.5654345654345654,
+   "p": 0.5654345654345654,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000514,
+   "okr": "KH0441",
+   "inv": "UR203",
+   "n_pend": 113,
+   "p_stage1": 0.8191808191808192,
+   "p": 0.8191808191808192,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000515,
+   "okr": "KH0442",
+   "inv": "UR204",
+   "n_pend": 30,
+   "p_stage1": 0.5394605394605395,
+   "p": 0.5394605394605395,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000516,
+   "okr": "KH0443",
+   "inv": "UR205",
+   "n_pend": 21,
+   "p_stage1": 0.5854145854145855,
+   "p": 0.5854145854145855,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000518,
+   "okr": "KH0445",
+   "inv": "UR207",
+   "n_pend": 117,
+   "p_stage1": 0.46853146853146854,
+   "p": 0.46853146853146854,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000519,
+   "okr": "KH0446",
+   "inv": "UR208",
+   "n_pend": 148,
+   "p_stage1": 0.000999000999000999,
+   "p": 0.011099445027748612,
+   "K2": 20000,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000520,
+   "okr": "KH0447",
+   "inv": "UR209",
+   "n_pend": 71,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000521,
+   "okr": "KH0448",
+   "inv": "UR210",
+   "n_pend": 70,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000522,
+   "okr": "KH0449",
+   "inv": "UR211",
+   "n_pend": 95,
+   "p_stage1": 0.7832167832167832,
+   "p": 0.7832167832167832,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000523,
+   "okr": "KH0450",
+   "inv": "UR212",
+   "n_pend": 195,
+   "p_stage1": 0.17882117882117882,
+   "p": 0.17882117882117882,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000524,
+   "okr": "KH0451",
+   "inv": "UR213",
+   "n_pend": 102,
+   "p_stage1": 0.4855144855144855,
+   "p": 0.4855144855144855,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000525,
+   "okr": "KH0452",
+   "inv": "UR214",
+   "n_pend": 17,
+   "p_stage1": 0.0899100899100899,
+   "p": 0.0899100899100899,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000526,
+   "okr": "KH0453",
+   "inv": "UR215",
+   "n_pend": 137,
+   "p_stage1": 0.5994005994005994,
+   "p": 0.5994005994005994,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000528,
+   "okr": "KH0455",
+   "inv": "UR217",
+   "n_pend": 87,
+   "p_stage1": 0.08691308691308691,
+   "p": 0.08691308691308691,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000529,
+   "okr": "KH0456",
+   "inv": "UR218",
+   "n_pend": 62,
+   "p_stage1": 0.15884115884115885,
+   "p": 0.15884115884115885,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000530,
+   "okr": "KH0457",
+   "inv": "UR219",
+   "n_pend": 65,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000533,
+   "okr": "KH0460",
+   "inv": "UR222",
+   "n_pend": 44,
+   "p_stage1": 0.33166833166833165,
+   "p": 0.33166833166833165,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000534,
+   "okr": "KH0461",
+   "inv": "UR223",
+   "n_pend": 80,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000535,
+   "okr": "KH0462",
+   "inv": "UR225",
+   "n_pend": 23,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000536,
+   "okr": "KH0463",
+   "inv": "UR226",
+   "n_pend": 36,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000537,
+   "okr": "KH0464",
+   "inv": "UR227",
+   "n_pend": 24,
+   "p_stage1": 0.29270729270729273,
+   "p": 0.29270729270729273,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000538,
+   "okr": "KH0465",
+   "inv": "UR228",
+   "n_pend": 75,
+   "p_stage1": 0.05194805194805195,
+   "p": 0.05194805194805195,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000539,
+   "okr": "KH0466",
+   "inv": "UR229",
+   "n_pend": 189,
+   "p_stage1": 0.054945054945054944,
+   "p": 0.054945054945054944,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000540,
+   "okr": "KH0467",
+   "inv": "UR230",
+   "n_pend": 36,
+   "p_stage1": 0.013986013986013986,
+   "p": 0.013986013986013986,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000541,
+   "okr": "KH0468",
+   "inv": "UR231",
+   "n_pend": 864,
+   "p_stage1": 0.3936063936063936,
+   "p": 0.3936063936063936,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000542,
+   "okr": "KH0469",
+   "inv": "UR232",
+   "n_pend": 125,
+   "p_stage1": 0.3306693306693307,
+   "p": 0.3306693306693307,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000543,
+   "okr": "KH0470",
+   "inv": "UR233",
+   "n_pend": 126,
+   "p_stage1": 0.25674325674325676,
+   "p": 0.25674325674325676,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000544,
+   "okr": "KH0471",
+   "inv": "UR234",
+   "n_pend": 98,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000545,
+   "okr": "KH0472",
+   "inv": "UR235",
+   "n_pend": 130,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000546,
+   "okr": "KH0198",
+   "inv": "AS181/UR236",
+   "n_pend": 41,
+   "p_stage1": 0.059940059940059943,
+   "p": 0.059940059940059943,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000547,
+   "okr": "KH0478",
+   "inv": "UR242",
+   "n_pend": 206,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000548,
+   "okr": "KH0479",
+   "inv": "UR243",
+   "n_pend": 28,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000549,
+   "okr": "KH0477",
+   "inv": "UR241",
+   "n_pend": 44,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000551,
+   "okr": "KH0473",
+   "inv": "UR237",
+   "n_pend": 30,
+   "p_stage1": 0.24075924075924077,
+   "p": 0.24075924075924077,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000552,
+   "okr": "KH0474",
+   "inv": "UR238",
+   "n_pend": 38,
+   "p_stage1": 0.1968031968031968,
+   "p": 0.1968031968031968,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000553,
+   "okr": "KH0475",
+   "inv": "UR239",
+   "n_pend": 50,
+   "p_stage1": 0.1998001998001998,
+   "p": 0.1998001998001998,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000554,
+   "okr": "KH0476",
+   "inv": "UR240",
+   "n_pend": 67,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000555,
+   "okr": "KH0480",
+   "inv": "UR244",
+   "n_pend": 72,
+   "p_stage1": 0.1928071928071928,
+   "p": 0.1928071928071928,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000556,
+   "okr": "KH0482",
+   "inv": "UR246",
+   "n_pend": 34,
+   "p_stage1": 0.03996003996003996,
+   "p": 0.03996003996003996,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000558,
+   "okr": "KH0483",
+   "inv": "UR247",
+   "n_pend": 15,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000559,
+   "okr": "KH0484",
+   "inv": "UR248",
+   "n_pend": 21,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000560,
+   "okr": "KH0485",
+   "inv": "UR249",
+   "n_pend": 14,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000561,
+   "okr": "KH0486",
+   "inv": "UR250",
+   "n_pend": 19,
+   "p_stage1": 0.011988011988011988,
+   "p": 0.011988011988011988,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000562,
+   "okr": "KH0565",
+   "inv": "HP033",
+   "n_pend": 24,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000563,
+   "okr": "KH0566",
+   "inv": "HP034",
+   "n_pend": 82,
+   "p_stage1": 0.13886113886113885,
+   "p": 0.13886113886113885,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000564,
+   "okr": "KH0058",
+   "inv": "AS047/HP035",
+   "n_pend": 81,
+   "p_stage1": 0.1848151848151848,
+   "p": 0.1848151848151848,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000565,
+   "okr": "KH0049",
+   "inv": "AS038/HP036",
+   "n_pend": 108,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000566,
+   "okr": "KH0567",
+   "inv": "HP037",
+   "n_pend": 26,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000569,
+   "okr": "KH0570",
+   "inv": "HP040",
+   "n_pend": 22,
+   "p_stage1": 0.13586413586413587,
+   "p": 0.13586413586413587,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000570,
+   "okr": "KH0057",
+   "inv": "AS046/HP041",
+   "n_pend": 79,
+   "p_stage1": 0.6043956043956044,
+   "p": 0.6043956043956044,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000572,
+   "okr": "KH0572",
+   "inv": "HP043",
+   "n_pend": 11,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000573,
+   "okr": "KH0573",
+   "inv": "HP044",
+   "n_pend": 15,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000574,
+   "okr": "KH0574",
+   "inv": "HP045",
+   "n_pend": 51,
+   "p_stage1": 0.03696303696303696,
+   "p": 0.03696303696303696,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000575,
+   "okr": "KH0575",
+   "inv": "HP046 A",
+   "n_pend": 54,
+   "p_stage1": 0.04095904095904096,
+   "p": 0.04095904095904096,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000576,
+   "okr": "KH0576",
+   "inv": "HP046 B",
+   "n_pend": 61,
+   "p_stage1": 0.6393606393606394,
+   "p": 0.6393606393606394,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000577,
+   "okr": "KH0577",
+   "inv": "HP047",
+   "n_pend": 32,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000580,
+   "okr": "KH0580",
+   "inv": "HP050",
+   "n_pend": 20,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000581,
+   "okr": "KH0581",
+   "inv": "HP051 A",
+   "n_pend": 32,
+   "p_stage1": 0.22377622377622378,
+   "p": 0.22377622377622378,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000582,
+   "okr": "KH0582",
+   "inv": "HP051 B",
+   "n_pend": 34,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000583,
+   "okr": "KH0583",
+   "inv": "HP052",
+   "n_pend": 40,
+   "p_stage1": 0.8511488511488512,
+   "p": 0.8511488511488512,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000584,
+   "okr": "KH0584",
+   "inv": "HP053",
+   "n_pend": 50,
+   "p_stage1": 0.4835164835164835,
+   "p": 0.4835164835164835,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000585,
+   "okr": "KH0585",
+   "inv": "HP054",
+   "n_pend": 19,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000586,
+   "okr": "KH0587",
+   "inv": "HP056",
+   "n_pend": 162,
+   "p_stage1": 0.9120879120879121,
+   "p": 0.9120879120879121,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000587,
+   "okr": "KH0588",
+   "inv": "HP057",
+   "n_pend": 32,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000588,
+   "okr": "KH0586",
+   "inv": "HP055",
+   "n_pend": 189,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000589,
+   "okr": "KH0487",
+   "inv": "UR251",
+   "n_pend": 30,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000590,
+   "okr": "KH0488",
+   "inv": "UR252",
+   "n_pend": 62,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000591,
+   "okr": "KH0489",
+   "inv": "UR253",
+   "n_pend": 59,
+   "p_stage1": 0.6573426573426573,
+   "p": 0.6573426573426573,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000593,
+   "okr": "KH0569",
+   "inv": "HP039",
+   "n_pend": 100,
+   "p_stage1": 0.2987012987012987,
+   "p": 0.2987012987012987,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000595,
+   "okr": "KH0493",
+   "inv": "UR257",
+   "n_pend": 10,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000597,
+   "okr": "KH0491",
+   "inv": "UR255",
+   "n_pend": 86,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000598,
+   "okr": "KH0492",
+   "inv": "UR256",
+   "n_pend": 118,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000599,
+   "okr": "KH0494",
+   "inv": "UR258",
+   "n_pend": 41,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000600,
+   "okr": "KH0495",
+   "inv": "UR259",
+   "n_pend": 13,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000601,
+   "okr": "KH0496",
+   "inv": "UR260",
+   "n_pend": 24,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000603,
+   "okr": "KH0498",
+   "inv": "UR262",
+   "n_pend": 138,
+   "p_stage1": 0.059940059940059943,
+   "p": 0.059940059940059943,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000604,
+   "okr": "KH0499",
+   "inv": "UR263",
+   "n_pend": 236,
+   "p_stage1": 0.9100899100899101,
+   "p": 0.9100899100899101,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000605,
+   "okr": "KH0500",
+   "inv": "UR264",
+   "n_pend": 211,
+   "p_stage1": 0.6443556443556444,
+   "p": 0.6443556443556444,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000606,
+   "okr": "KH0501",
+   "inv": "UR265",
+   "n_pend": 14,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000607,
+   "okr": "KH0502",
+   "inv": "UR266",
+   "n_pend": 132,
+   "p_stage1": 0.000999000999000999,
+   "p": 0.007299635018249088,
+   "K2": 20000,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000608,
+   "okr": "KH0503",
+   "inv": "UR267A",
+   "n_pend": 82,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000609,
+   "okr": "KH0504",
+   "inv": "UR267B",
+   "n_pend": 103,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000610,
+   "okr": "KH0505",
+   "inv": "UR268",
+   "n_pend": 131,
+   "p_stage1": 0.028971028971028972,
+   "p": 0.028971028971028972,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000611,
+   "okr": "KH0506",
+   "inv": "UR269",
+   "n_pend": 289,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000612,
+   "okr": "KH0507",
+   "inv": "UR270",
+   "n_pend": 162,
+   "p_stage1": 0.000999000999000999,
+   "p": 0.00024998750062496874,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000613,
+   "okr": "KH0508",
+   "inv": "UR271",
+   "n_pend": 32,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000614,
+   "okr": "KH0509",
+   "inv": "UR272",
+   "n_pend": 173,
+   "p_stage1": 0.06993006993006994,
+   "p": 0.06993006993006994,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000615,
+   "okr": "KH0510",
+   "inv": "UR273A",
+   "n_pend": 83,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000616,
+   "okr": "KH0511",
+   "inv": "UR273B",
+   "n_pend": 114,
+   "p_stage1": 0.000999000999000999,
+   "p": 0.007749612519374031,
+   "K2": 20000,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000617,
+   "okr": "KH0512",
+   "inv": "UR274A",
+   "n_pend": 93,
+   "p_stage1": 0.09490509490509491,
+   "p": 0.09490509490509491,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000618,
+   "okr": "KH0513",
+   "inv": "UR274B",
+   "n_pend": 101,
+   "p_stage1": 0.000999000999000999,
+   "p": 0.0012999350032498376,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000619,
+   "okr": "KH0514",
+   "inv": "UR275",
+   "n_pend": 112,
+   "p_stage1": 0.000999000999000999,
+   "p": 4.999750012499375e-05,
+   "K2": 20000,
+   "bh_sig": true
+  },
+  {
+   "khipu_id": 1000621,
+   "okr": "KH0518",
+   "inv": "UR279",
+   "n_pend": 12,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000622,
+   "okr": "KH0516",
+   "inv": "UR277",
+   "n_pend": 150,
+   "p_stage1": 0.8651348651348651,
+   "p": 0.8651348651348651,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000623,
+   "okr": "KH0517",
+   "inv": "UR278",
+   "n_pend": 298,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000624,
+   "okr": "KH0519",
+   "inv": "UR280",
+   "n_pend": 37,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000625,
+   "okr": "KH0608",
+   "inv": "JC001",
+   "n_pend": 36,
+   "p_stage1": 0.11488511488511488,
+   "p": 0.11488511488511488,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000628,
+   "okr": "KH0611",
+   "inv": "JC004",
+   "n_pend": 18,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000629,
+   "okr": "KH0612",
+   "inv": "JC005",
+   "n_pend": 149,
+   "p_stage1": 0.42657342657342656,
+   "p": 0.42657342657342656,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000630,
+   "okr": "KH0613",
+   "inv": "JC006",
+   "n_pend": 12,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000633,
+   "okr": "KH0616",
+   "inv": "JC009",
+   "n_pend": 76,
+   "p_stage1": 0.7092907092907093,
+   "p": 0.7092907092907093,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000634,
+   "okr": "KH0617",
+   "inv": "JC010",
+   "n_pend": 160,
+   "p_stage1": 0.15184815184815184,
+   "p": 0.15184815184815184,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000635,
+   "okr": "KH0618",
+   "inv": "JC011",
+   "n_pend": 87,
+   "p_stage1": 0.22877122877122877,
+   "p": 0.22877122877122877,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000636,
+   "okr": "KH0619",
+   "inv": "JC012",
+   "n_pend": 30,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000637,
+   "okr": "KH0620",
+   "inv": "JC013",
+   "n_pend": 59,
+   "p_stage1": 0.07292707292707293,
+   "p": 0.07292707292707293,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000638,
+   "okr": "KH0621",
+   "inv": "JC014",
+   "n_pend": 10,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000647,
+   "okr": "KH0630",
+   "inv": "JC023",
+   "n_pend": 33,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000648,
+   "okr": "KH0081",
+   "inv": "AS068/UR281",
+   "n_pend": 215,
+   "p_stage1": 0.4385614385614386,
+   "p": 0.4385614385614386,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000649,
+   "okr": "KH0520",
+   "inv": "UR282",
+   "n_pend": 32,
+   "p_stage1": 0.21978021978021978,
+   "p": 0.21978021978021978,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000650,
+   "okr": "KH0521",
+   "inv": "UR283",
+   "n_pend": 183,
+   "p_stage1": 0.5024975024975025,
+   "p": 0.5024975024975025,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000651,
+   "okr": "KH0522",
+   "inv": "UR284",
+   "n_pend": 22,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000652,
+   "okr": "KH0523",
+   "inv": "UR285",
+   "n_pend": 14,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000654,
+   "okr": "KH0525",
+   "inv": "UR287",
+   "n_pend": 55,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000655,
+   "okr": "KH0526",
+   "inv": "UR288",
+   "n_pend": 29,
+   "p_stage1": 0.7502497502497503,
+   "p": 0.7502497502497503,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000656,
+   "okr": "KH0527",
+   "inv": "UR289",
+   "n_pend": 35,
+   "p_stage1": 1.0,
+   "p": 1.0,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000658,
+   "okr": "KH0529",
+   "inv": "UR291A",
+   "n_pend": 166,
+   "p_stage1": 0.31368631368631367,
+   "p": 0.31368631368631367,
+   "K2": null,
+   "bh_sig": false
+  },
+  {
+   "khipu_id": 1000659,
+   "okr": "KH0530",
+   "inv": "UR292A",
+   "n_pend": 53,
+   "p_stage1": 0.1108891108891109,
+   "p": 0.1108891108891109,
+   "K2": null,
+   "bh_sig": false
+  }
+ ]
+}
