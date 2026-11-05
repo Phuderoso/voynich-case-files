@@ -1,0 +1,253 @@
+{
+ "planted_ok": "8/10",
+ "bar": -4.370141015781533,
+ "null_S": {
+  "min": -4.7222662037641365,
+  "median": -4.609593772637261,
+  "max": -4.370141015781533
+ },
+ "voynich_S": [
+  -4.509748049702949,
+  -4.551752727935557,
+  -4.471538089165408,
+  -4.434098716760451,
+  -4.637998691213674
+ ],
+ "voynich_median": -4.509748049702949,
+ "plain_latin_ceiling": -4.322004490008349,
+ "planted_S": [
+  -4.093666317188465,
+  -4.093666317188465,
+  -4.118934560316119,
+  -4.118934560316119,
+  -4.342648587267783,
+  -4.458483180273593,
+  -4.050359663268843,
+  -4.050359663268843,
+  -4.13358433744413,
+  -4.13358433744413
+ ],
+ "verdict": "not testable",
+ "runs": [
+  {
+   "kind": "P1",
+   "k": 0,
+   "n_symbols": 23,
+   "S": -4.093666317188465,
+   "accuracy": 0.9713701431492843,
+   "excerpt": "quam ea quae dormienti occurrunt imo etiam soc nisil mutat nam certe quamvis somnia rem si quid intellectui meo sit evidens illud omnino est verum"
+  },
+  {
+   "kind": "P2",
+   "k": 0,
+   "n_symbols": 31,
+   "S": -4.093666317188465,
+   "accuracy": 0.9713701431492843,
+   "excerpt": "quam ea quae dormienti occurrunt imo etiam soc nisil mutat nam certe quamvis somnia rem si quid intellectui meo sit evidens illud omnino est verum"
+  },
+  {
+   "kind": "P1",
+   "k": 1,
+   "n_symbols": 23,
+   "S": -4.118934560316119,
+   "accuracy": 0.9710293552108704,
+   "excerpt": "ettensio est itnota nam in cera liquescente pit maior maior in perventi maiorque rursus si calor auteatur nec recte iudicarem quid sit cera nisi putarem"
+  },
+  {
+   "kind": "P2",
+   "k": 1,
+   "n_symbols": 31,
+   "S": -4.118934560316119,
+   "accuracy": 0.9710293552108704,
+   "excerpt": "ettensio est itnota nam in cera liquescente pit maior maior in perventi maiorque rursus si calor auteatur nec recte iudicarem quid sit cera nisi putarem"
+  },
+  {
+   "kind": "P1",
+   "k": 2,
+   "n_symbols": 23,
+   "S": -4.342648587267783,
+   "accuracy": 0.20906321401370906,
+   "excerpt": "esees se esse diee se sessese sseesesse sessesses ses sesse sesess ssises sesse seises sesseeses es se esseseessis sessissesse es er ise esees iseis es"
+  },
+  {
+   "kind": "P2",
+   "k": 2,
+   "n_symbols": 31,
+   "S": -4.458483180273593,
+   "accuracy": 0.5111703478040112,
+   "excerpt": "eties te isse diee se testere treesenti sensertet nes rinri tetest tsires rerte seises tertieses et se errisientis sensirrisse et et ine itees iniis et"
+  },
+  {
+   "kind": "P1",
+   "k": 3,
+   "n_symbols": 22,
+   "S": -4.050359663268843,
+   "accuracy": 0.9847979236188358,
+   "excerpt": "omnium certissimis habuisse iam vero si ex eo solo quod alicuius rei ideam possim ex cotitatione mea depromere sequitur ea omnia quae ad illam rem"
+  },
+  {
+   "kind": "P2",
+   "k": 3,
+   "n_symbols": 30,
+   "S": -4.050359663268843,
+   "accuracy": 0.9847979236188358,
+   "excerpt": "omnium certissimis habuisse iam vero si ex eo solo quod alicuius rei ideam possim ex cotitatione mea depromere sequitur ea omnia quae ad illam rem"
+  },
+  {
+   "kind": "P1",
+   "k": 4,
+   "n_symbols": 23,
+   "S": -4.13358433744413,
+   "accuracy": 0.9728415559772297,
+   "excerpt": "sorte occurrent dissicultates quae postea in responsione ad obiectiones resolventur ac denique ostenditur quo pacto verum sit ipsarum teometricarum demonstrationum certitudinem a cotnitione dei pendere"
+  },
+  {
+   "kind": "P2",
+   "k": 4,
+   "n_symbols": 31,
+   "S": -4.13358433744413,
+   "accuracy": 0.9728415559772297,
+   "excerpt": "sorte occurrent dissicultates quae postea in responsione ad obiectiones resolventur ac denique ostenditur quo pacto verum sit ipsarum teometricarum demonstrationum certitudinem a cotnitione dei pendere"
+  },
+  {
+   "kind": "null-G0",
+   "k": 1,
+   "n_symbols": 21,
+   "S": -4.665917199746209,
+   "excerpt": "eire rre rteiat terte teris rrat eirat eteirat etere etere aris teriis tere it arie it tete rrearis teria rrra tearis teris etere re trrat"
+  },
+  {
+   "kind": "null-G0",
+   "k": 2,
+   "n_symbols": 21,
+   "S": -4.435237736717137,
+   "excerpt": "sses ses setsti erset erese ssti sssti serssti seret sessti esses ses sessti serese irest iresst essti iresst tesst essti eses rese esse eses ses"
+  },
+  {
+   "kind": "null-G0",
+   "k": 3,
+   "n_symbols": 19,
+   "S": -4.423836176668886,
+   "excerpt": "sses ses sitsse iteit itese sese ssese mitsese mitet sesses sesse etese tsese seese sese sese see etsest sisses etsesse itesse ee seese sesse sesse"
+  },
+  {
+   "kind": "null-G0",
+   "k": 4,
+   "n_symbols": 23,
+   "S": -4.5498507873847664,
+   "excerpt": "pese ese ereere rsare rssum eare peare erseare ersse essuum eseese erssum essum ere ere ere erssum ere essuum rsuum eaare erssum ereere erssum ese"
+  },
+  {
+   "kind": "null-G0",
+   "k": 5,
+   "n_symbols": 23,
+   "S": -4.509336710816934,
+   "excerpt": "ites tes tittis iusit iuese tsis itsis distsis diset ittis diuese iese istis diuit iuesse tsi tis disit sittis iesse isese is tis iues sittis"
+  },
+  {
+   "kind": "null-G*",
+   "k": 6001,
+   "n_symbols": 23,
+   "S": -4.536621478251413,
+   "excerpt": "tiiium ris stiistis etis petiis petum riis srium iuis etis petiis petum tiis etum situm tiis triium siitum triiium iiis iium etum tiiiium etiis petis"
+  },
+  {
+   "kind": "null-G*",
+   "k": 6002,
+   "n_symbols": 23,
+   "S": -4.6731754776997185,
+   "excerpt": "reiium eit trietret erit periit perum eiit teium iura eiiit iemit ium iurit eret eiiit eiura peiura teium teium eium meret erura eriit eit eiium"
+  },
+  {
+   "kind": "null-G*",
+   "k": 6003,
+   "n_symbols": 23,
+   "S": -4.370141015781533,
+   "excerpt": "iiitum its siiisiis tiis etiiis etium iits situm tuam situm tiiis tium iiis etiis iiiis iitum etiiis itum etium etiiis iiitum etium iiits tiiis iis"
+  },
+  {
+   "kind": "null-G*",
+   "k": 6004,
+   "n_symbols": 22,
+   "S": -4.4223427175733,
+   "excerpt": "iiiium iis siiisiis tiis etiiis etium iiis siium iunt iiiium iiis iiium tium iiiis tiis etium iiiium ium iiiis iutis ium iiis iiiium iium iiiis"
+  },
+  {
+   "kind": "null-G*",
+   "k": 6005,
+   "n_symbols": 23,
+   "S": -4.609593772637261,
+   "excerpt": "etiius sis seitsets seis eseiis eseus siis ssius iunt seusis ssis seus issis iutis tiius tis sessis tiis stius tiusis sius ssis issis tiiius eseus"
+  },
+  {
+   "kind": "null-iid",
+   "k": 0,
+   "n_symbols": 28,
+   "S": -4.708486966866598,
+   "excerpt": "ii iiii iii iiiiiii iiiii i iii iiiii iiii iiiiiii iiii iiiii iiiii iii iii iiiiiiiii iii iiiiii iiiii iiiii iii iiii iii iiii iiiii"
+  },
+  {
+   "kind": "null-iid",
+   "k": 1,
+   "n_symbols": 29,
+   "S": -4.7222662037641365,
+   "excerpt": "iiiii iiii iiiiii iiiii iii iii i iiiiiii iiiiii iiiii iiiii iiiiiii iiii iiiii iiiis iiii iiiii iiii iiiiii iiii ii iiiiii iii iiiii iii"
+  },
+  {
+   "kind": "null-iid",
+   "k": 2,
+   "n_symbols": 27,
+   "S": -4.705067946216813,
+   "excerpt": "i iiiiii iiii iiiiiii iiiiii ii iii iii iiiii iiiii iiii i iii iiii iii iiiiii iiiiii iiiiiii iiii iiiii iiiiii iii iiii iiiiii iiii"
+  },
+  {
+   "kind": "null-iid",
+   "k": 3,
+   "n_symbols": 27,
+   "S": -4.710663830714793,
+   "excerpt": "iiiii iiiii iiiiiiii iiiii iii iiiii iiiii ii iiiii iiiiii iiiiii iiiii iiiiiii iiii iiiiiii ii iiiiii iiiiiii iiiiiiii iiii ii iii iiiii iiiiii iiiiiiii"
+  },
+  {
+   "kind": "null-iid",
+   "k": 4,
+   "n_symbols": 27,
+   "S": -4.7137485959891245,
+   "excerpt": "iii ii iiiii iiiiiiii iiiiiiiiiii iii iiii iiii iiii iiiiii ii iii iiiiiii iiii iiiiii iii iiii i iiiii ii iiiii iiii ii iiiiii iiiii"
+  },
+  {
+   "kind": "Voynich",
+   "k": 13415,
+   "n_symbols": 26,
+   "S": -4.509748049702949,
+   "excerpt": "erestaet erter eretat erere etete erer ereret ertte rte rterer aerere er ater er esse erte resse aerer erte eresse erere rer erere rerare atrttte"
+  },
+  {
+   "kind": "Voynich",
+   "k": 4125,
+   "n_symbols": 27,
+   "S": -4.551752727935557,
+   "excerpt": "ear eart etaree are teat at e are et e art erisare ere eart errre ereart are retat eret ereart ere e t at eart"
+  },
+  {
+   "kind": "Voynich",
+   "k": 34833,
+   "n_symbols": 26,
+   "S": -4.471538089165408,
+   "excerpt": "ditesse esise ditsse dinese stet et es is eessse isesse esiet ditesse estes inet eis esse ese esi itis esse esse sit esi esse inssis"
+  },
+  {
+   "kind": "Voynich",
+   "k": 1546,
+   "n_symbols": 28,
+   "S": -4.434098716760451,
+   "excerpt": "sii nstisi sisiseseinsi sisini si sit sit insi sesseinetsitsest sisse sesse sinsi tinisseti sesse si nit sini setiinitsi ini nsit sit si nini isit ssini"
+  },
+  {
+   "kind": "Voynich",
+   "k": 30728,
+   "n_symbols": 25,
+   "S": -4.637998691213674,
+   "excerpt": "iniii finiiti iniii ciii finiuum is is nisid citi tniuum cli lii cii inis cii niiisium iniii iniuum citis iniiti inis ini idius iniii ciitium"
+  }
+ ]
+}

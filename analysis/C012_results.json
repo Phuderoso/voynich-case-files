@@ -1,0 +1,313 @@
+{
+ "planted_ok": "10/10",
+ "bar": -4.283763998307555,
+ "null_S": {
+  "min": -4.7222662037641365,
+  "median": -4.458592387368442,
+  "max": -4.283763998307555
+ },
+ "voynich_S": [
+  -4.455603439594344,
+  -4.352906960864025,
+  -4.356222486582628,
+  -4.114293096492573,
+  -4.382256391763557
+ ],
+ "voynich_median": -4.356222486582628,
+ "plain_latin_ceiling": -4.322004490008349,
+ "planted_S": [
+  -4.093666317188465,
+  -4.093666317188465,
+  -4.118934560316119,
+  -4.118934560316119,
+  -4.080281968950286,
+  -4.080281968950286,
+  -4.050359663268843,
+  -4.050359663268843,
+  -4.13358433744413,
+  -4.13358433744413
+ ],
+ "verdict": "no more Latin than meaningless text under this solver",
+ "runs": [
+  {
+   "kind": "P1",
+   "k": 0,
+   "n_symbols": 23,
+   "S": -4.093666317188465,
+   "accuracy": 0.9713701431492843,
+   "excerpt": "quam ea quae dormienti occurrunt imo etiam soc nisil mutat nam certe quamvis somnia rem si quid intellectui meo sit evidens illud omnino est verum",
+   "lex_rate": 0.45239968528717545,
+   "lex_types": 229
+  },
+  {
+   "kind": "P2",
+   "k": 0,
+   "n_symbols": 31,
+   "S": -4.093666317188465,
+   "accuracy": 0.9713701431492843,
+   "excerpt": "quam ea quae dormienti occurrunt imo etiam soc nisil mutat nam certe quamvis somnia rem si quid intellectui meo sit evidens illud omnino est verum",
+   "lex_rate": 0.45239968528717545,
+   "lex_types": 229
+  },
+  {
+   "kind": "P1",
+   "k": 1,
+   "n_symbols": 23,
+   "S": -4.118934560316119,
+   "accuracy": 0.9710293552108704,
+   "excerpt": "ettensio est itnota nam in cera liquescente pit maior maior in perventi maiorque rursus si calor auteatur nec recte iudicarem quid sit cera nisi putarem",
+   "lex_rate": 0.52660406885759,
+   "lex_types": 224
+  },
+  {
+   "kind": "P2",
+   "k": 1,
+   "n_symbols": 31,
+   "S": -4.118934560316119,
+   "accuracy": 0.9710293552108704,
+   "excerpt": "ettensio est itnota nam in cera liquescente pit maior maior in perventi maiorque rursus si calor auteatur nec recte iudicarem quid sit cera nisi putarem",
+   "lex_rate": 0.52660406885759,
+   "lex_types": 224
+  },
+  {
+   "kind": "P1",
+   "k": 2,
+   "n_symbols": 23,
+   "S": -4.080281968950286,
+   "accuracy": 0.9968266057374968,
+   "excerpt": "etiam de illa quae me tempore praesenti conservat nec fingi potest plures forte causas partiales ad me efficiendum concurrisse et ab una ideam unius ex",
+   "lex_rate": 0.5399841646872525,
+   "lex_types": 246
+  },
+  {
+   "kind": "P2",
+   "k": 2,
+   "n_symbols": 31,
+   "S": -4.080281968950286,
+   "accuracy": 0.9968266057374968,
+   "excerpt": "etiam de illa quae me tempore praesenti conservat nec fingi potest plures forte causas partiales ad me efficiendum concurrisse et ab una ideam unius ex",
+   "lex_rate": 0.5399841646872525,
+   "lex_types": 246
+  },
+  {
+   "kind": "P1",
+   "k": 3,
+   "n_symbols": 22,
+   "S": -4.050359663268843,
+   "accuracy": 0.9847979236188358,
+   "excerpt": "omnium certissimis habuisse iam vero si ex eo solo quod alicuius rei ideam possim ex cotitatione mea depromere sequitur ea omnia quae ad illam rem",
+   "lex_rate": 0.5165767154973014,
+   "lex_types": 221
+  },
+  {
+   "kind": "P2",
+   "k": 3,
+   "n_symbols": 30,
+   "S": -4.050359663268843,
+   "accuracy": 0.9847979236188358,
+   "excerpt": "omnium certissimis habuisse iam vero si ex eo solo quod alicuius rei ideam possim ex cotitatione mea depromere sequitur ea omnia quae ad illam rem",
+   "lex_rate": 0.5165767154973014,
+   "lex_types": 221
+  },
+  {
+   "kind": "P1",
+   "k": 4,
+   "n_symbols": 23,
+   "S": -4.13358433744413,
+   "accuracy": 0.9728415559772297,
+   "excerpt": "sorte occurrent dissicultates quae postea in responsione ad obiectiones resolventur ac denique ostenditur quo pacto verum sit ipsarum teometricarum demonstrationum certitudinem a cotnitione dei pendere",
+   "lex_rate": 0.4762622456669179,
+   "lex_types": 243
+  },
+  {
+   "kind": "P2",
+   "k": 4,
+   "n_symbols": 31,
+   "S": -4.13358433744413,
+   "accuracy": 0.9728415559772297,
+   "excerpt": "sorte occurrent dissicultates quae postea in responsione ad obiectiones resolventur ac denique ostenditur quo pacto verum sit ipsarum teometricarum demonstrationum certitudinem a cotnitione dei pendere",
+   "lex_rate": 0.4762622456669179,
+   "lex_types": 243
+  },
+  {
+   "kind": "null-G0",
+   "k": 1,
+   "n_symbols": 21,
+   "S": -4.394818384678934,
+   "excerpt": "sses ses setsse ereet erese sese ssese sessese seset seret sese eresse eret se sest se eses sessese esest sees essese erese seret et esese",
+   "lex_rate": 0.1505922165820643,
+   "lex_types": 5
+  },
+  {
+   "kind": "null-G0",
+   "k": 2,
+   "n_symbols": 21,
+   "S": -4.283763998307555,
+   "excerpt": "rret ret retrat erret erese rrat rrrat perrrat peret retrat etret ret retrat perese trest tresst etrat tresst aesst etrat eret rese esse eret ret",
+   "lex_rate": 0.072768192048012,
+   "lex_types": 4
+  },
+  {
+   "kind": "null-G0",
+   "k": 3,
+   "n_symbols": 19,
+   "S": -4.423836176668886,
+   "excerpt": "sses ses sitsse iteit itese sese ssese mitsese mitet sesses sesse etese tsese seese sese sese see etsest sisses etsesse itesse ee seese sesse sesse",
+   "lex_rate": 0.1667936024371668,
+   "lex_types": 6
+  },
+  {
+   "kind": "null-G0",
+   "k": 4,
+   "n_symbols": 23,
+   "S": -4.458592387368442,
+   "excerpt": "erat rat retret erret erant rret erret perrret perat trannt ratrat perant trant ret ret ret perant ret trannt eannt rrret perant retret perant rat",
+   "lex_rate": 0.012583271650629163,
+   "lex_types": 2
+  },
+  {
+   "kind": "null-G0",
+   "k": 5,
+   "n_symbols": 23,
+   "S": -4.335130216087794,
+   "excerpt": "ares res retrat earet eaese rrat arrat pearrat peaet etrat peaese aese esrat peaet eaesse rra res peaet aetres aesse eaese es rat eaes aetres",
+   "lex_rate": 0.16029962546816479,
+   "lex_types": 5
+  },
+  {
+   "kind": "null-G*",
+   "k": 6001,
+   "n_symbols": 23,
+   "S": -4.334439090124674,
+   "excerpt": "essent set tesstest sest esesst esent sset tsent enum sest esesst esent esst sent tsent esst essent tssent esssent ssst sent sent esssent sesst esest",
+   "lex_rate": 0.12830957230142567,
+   "lex_types": 3
+  },
+  {
+   "kind": "null-G*",
+   "k": 6002,
+   "n_symbols": 23,
+   "S": -4.5448941199018424,
+   "excerpt": "niiiis iis sniisnis inis finiis finis iiis siiis iiit iiiis iisis iis iinis inis iiiis iiiit fiiiit siiis siiis iiis sinis iniit iniis iis iiiis",
+   "lex_rate": 0.048109965635738834,
+   "lex_types": 2
+  },
+  {
+   "kind": "null-G*",
+   "k": 6003,
+   "n_symbols": 23,
+   "S": -4.3517299657991355,
+   "excerpt": "essare sae eesseese sese esesse esere ssae esare arte esare sesse sere esse esese essse ssare esesse sare esere esesse sssare esere sssae sesse ese",
+   "lex_rate": 0.06594153636981645,
+   "lex_types": 3
+  },
+  {
+   "kind": "null-G*",
+   "k": 6004,
+   "n_symbols": 22,
+   "S": -4.4223427175733,
+   "excerpt": "iiiium iis siiisiis tiis etiiis etium iiis siium iunt iiiium iiis iiium tium iiiis tiis etium iiiium ium iiiis iutis ium iiis iiiium iium iiiis",
+   "lex_rate": 0.09404600811907984,
+   "lex_types": 2
+  },
+  {
+   "kind": "null-G*",
+   "k": 6005,
+   "n_symbols": 23,
+   "S": -4.474525395110149,
+   "excerpt": "dessis ise edseedee edse redsse redis isse eisis siie edisse eise edis sesse sisse essis ese edesse esse eesis esisse isis eise sesse esssis redis",
+   "lex_rate": 0.03583502366463827,
+   "lex_types": 3
+  },
+  {
+   "kind": "null-iid",
+   "k": 0,
+   "n_symbols": 28,
+   "S": -4.708486966866598,
+   "excerpt": "ii iiii iii iiiiiii iiiii i iii iiiii iiii iiiiiii iiii iiiii iiiii iii iii iiiiiiiii iii iiiiii iiiii iiiii iii iiii iii iiii iiiii",
+   "lex_rate": 0.43455497382198954,
+   "lex_types": 3
+  },
+  {
+   "kind": "null-iid",
+   "k": 1,
+   "n_symbols": 29,
+   "S": -4.7222662037641365,
+   "excerpt": "iiiii iiii iiiiii iiiii iii iii i iiiiiii iiiiii iiiii iiiii iiiiiii iiii iiiii iiiis iiii iiiii iiii iiiiii iiii ii iiiiii iii iiiii iii",
+   "lex_rate": 0.437984496124031,
+   "lex_types": 3
+  },
+  {
+   "kind": "null-iid",
+   "k": 2,
+   "n_symbols": 27,
+   "S": -4.705067946216813,
+   "excerpt": "i iiiiii iiii iiiiiii iiiiii ii iii iii iiiii iiiii iiii i iii iiii iii iiiiii iiiiii iiiiiii iiii iiiii iiiiii iii iiii iiiiii iiii",
+   "lex_rate": 0.4143605086013463,
+   "lex_types": 4
+  },
+  {
+   "kind": "null-iid",
+   "k": 3,
+   "n_symbols": 27,
+   "S": -4.710663830714793,
+   "excerpt": "iiiii iiiii iiiiiiii iiiii iii iiiii iiiii ii iiiii iiiiii iiiiii iiiii iiiiiii iiii iiiiiii ii iiiiii iiiiiii iiiiiiii iiii ii iii iiiii iiiiii iiiiiiii",
+   "lex_rate": 0.42387146136189746,
+   "lex_types": 2
+  },
+  {
+   "kind": "null-iid",
+   "k": 4,
+   "n_symbols": 27,
+   "S": -4.7137485959891245,
+   "excerpt": "iii ii iiiii iiiiiiii iiiiiiiiiii iii iiii iiii iiii iiiiii ii iii iiiiiii iiii iiiiii iii iiii i iiiii ii iiiii iiii ii iiiiii iiiii",
+   "lex_rate": 0.45214770158251694,
+   "lex_types": 3
+  },
+  {
+   "kind": "Voynich",
+   "k": 13415,
+   "n_symbols": 26,
+   "S": -4.455603439594344,
+   "excerpt": "eresseet erses esesas erese esese eres eseset essse sse sseses eerese es eses es esse esse sesse eeres esse esesse esese ses erese sesese essssse",
+   "lex_rate": 0.11634756995581738,
+   "lex_types": 4
+  },
+  {
+   "kind": "Voynich",
+   "k": 4125,
+   "n_symbols": 27,
+   "S": -4.352906960864025,
+   "excerpt": "sse ssse sesess set esse se s ses se s sse seseses ses ssse ssses sessse ses esese sese sessse sss s e se ssse",
+   "lex_rate": 0.10505529225908374,
+   "lex_types": 4
+  },
+  {
+   "kind": "Voynich",
+   "k": 34833,
+   "n_symbols": 26,
+   "S": -4.356222486582628,
+   "excerpt": "peratre arere pertre perete tret et et es eattre esesse ateet peresse atret eret aes esse are are eret atre atre set ate atte erttes",
+   "lex_rate": 0.04772393538913363,
+   "lex_types": 7
+  },
+  {
+   "kind": "Voynich",
+   "k": 1546,
+   "n_symbols": 28,
+   "S": -4.114293096492573,
+   "excerpt": "see sssese seseseseesse sesese se ses ses ssse sesseesessetsest sesse sesse sesse tesessese sesse se set sese seteesesse ese sses ses se sese eset ssese",
+   "lex_rate": 0.1417260490894695,
+   "lex_types": 4
+  },
+  {
+   "kind": "Voynich",
+   "k": 30728,
+   "n_symbols": 25,
+   "S": -4.382256391763557,
+   "excerpt": "eriit periint eriit siit peresse et et retes sint nresse sit iit sit eret sit riitsese eriie eresse sines eriint eret ert tsess eriit sienese",
+   "lex_rate": 0.11803041274438812,
+   "lex_types": 10
+  }
+ ]
+}

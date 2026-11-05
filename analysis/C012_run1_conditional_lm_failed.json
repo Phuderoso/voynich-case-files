@@ -1,0 +1,253 @@
+{
+ "planted_ok": "0/10",
+ "bar": -1.099291923471613,
+ "null_S": {
+  "min": -1.4263900706366535,
+  "median": -1.2056505359723964,
+  "max": -1.099291923471613
+ },
+ "voynich_S": [
+  -1.188013198189311,
+  -1.206572279001845,
+  -1.2115516965883393,
+  -1.2324941077382587,
+  -1.2807015616714468
+ ],
+ "voynich_median": -1.2115516965883393,
+ "plain_latin_ceiling": NaN,
+ "planted_S": [
+  -1.1733293815484944,
+  -1.3371454006859225,
+  -1.180159011410433,
+  -1.3220263641008732,
+  -1.3288133775494473,
+  -1.3277252980653442,
+  -1.3324172535272618,
+  -1.3324172535272618,
+  -1.3377097954043682,
+  -1.4092438015467026
+ ],
+ "verdict": "not testable",
+ "runs": [
+  {
+   "kind": "P1",
+   "k": 0,
+   "n_symbols": 23,
+   "S": -1.1733293815484944,
+   "accuracy": 0.028750150366895225,
+   "excerpt": "cccc cc cccc ccccccccc ccccccccc ccc ccccc ccc ccccc ccccc ccc ccccc ccccccc cccccc ccc cc cccc ccccccccccc ccc ccc ccccccc ccccc cccccc ccc ccccc"
+  },
+  {
+   "kind": "P2",
+   "k": 0,
+   "n_symbols": 31,
+   "S": -1.3371454006859225,
+   "accuracy": 0.0,
+   "excerpt": "xxxx xx xxxx xxxvxxxxx xxxxxxxxx xxx xxxxx xxx xxxxx vxxxx xxx xxxxx xxxvxxx xxvxxx xxx xx xxxx xxxxxxxxxxx vxx xxx xxxxxxx xxxxx xvxxxx xxx xxxxv"
+  },
+  {
+   "kind": "P1",
+   "k": 1,
+   "n_symbols": 23,
+   "S": -1.180159011410433,
+   "accuracy": 0.038712985514677604,
+   "excerpt": "cccccccc ccc cccccc ccc cc cccc ccccccccccc ccc ccccc ccccc cc cccccccc cccccccc cccccc cc ccccc cccccccc ccc ccccc ccccccccc cccc ccc cccc cccc ccccccc"
+  },
+  {
+   "kind": "P2",
+   "k": 1,
+   "n_symbols": 31,
+   "S": -1.3220263641008732,
+   "accuracy": 0.005640302525317267,
+   "excerpt": "xxxxxxxx xxx xixxxx xxx xx xxxx xxcxxxxxxxx cxx xxxxx xxxxx xx cxxxxxxx xxxxxcxx xxxxxx xx xxxxx xxixxxxx xxx xxxxx xxxxxxxxx cxxx xxx xxxx xxxx cxxxxxx"
+  },
+  {
+   "kind": "P1",
+   "k": 2,
+   "n_symbols": 23,
+   "S": -1.3288133775494473,
+   "accuracy": 0.0,
+   "excerpt": "xxxxv xx xxxx xxxx vx xxvcxxx cxxxxxxxx xxxxxxxxx xxx cxxix cxxxxx cxxxxx cxxxx xxxxxx cxxxxxxxx xx vx xccxxxxxxxv xxxxxxxxxxx xx xx xxx xxxxv xxxxx xl"
+  },
+  {
+   "kind": "P2",
+   "k": 2,
+   "n_symbols": 31,
+   "S": -1.3277252980653442,
+   "accuracy": 0.0,
+   "excerpt": "xxxxv xx xxxx xxxx xx xxxcxxx cxxxxxxxx xxxxxxxxx xxx cxxix cxxxxx cxxxxx cxxxx xxxxxx cxxxxxxxx xx xx xccxxxxxxxv xxxxxxxxxxx xx xv xxx xxxxv xxxxx xl"
+  },
+  {
+   "kind": "P1",
+   "k": 3,
+   "n_symbols": 22,
+   "S": -1.3324172535272618,
+   "accuracy": 0.0,
+   "excerpt": "xxxxxx xxxxxxxxxxx xxxxxxxx xxx xxxx xx xl xx xxxx cxxx xxxxxxxx xxx xxxxx cxxxxx xl xxcxxxxxxxx xxx xxcxxxxxx xxcxxxxx xx xxxxx cxxx xx xxxxx xxx"
+  },
+  {
+   "kind": "P2",
+   "k": 3,
+   "n_symbols": 30,
+   "S": -1.3324172535272618,
+   "accuracy": 0.0,
+   "excerpt": "xxxxxx xxxxxxxxxxx xxxxxxxx xxx xxxx xx xl xx xxxx cxxx xxxxxxxx xxx xxxxx cxxxxx xl xxcxxxxxxxx xxx xxcxxxxxx xxcxxxxx xx xxxxx cxxx xx xxxxx xxx"
+  },
+  {
+   "kind": "P1",
+   "k": 4,
+   "n_symbols": 23,
+   "S": -1.3377097954043682,
+   "accuracy": 0.004388045540796964,
+   "excerpt": "cxxxx xxxxxxxxx xxccxxxxxxxxx xxxx cxxxxx xx xxxcxxxxxxx xx xvxxxxxxxxx xxxxxxxxxxx xx xxxxxxx xxxxxxxxxx xxx cxxxx xxxxv xxx xcxxxxv xxxvxxxxxxxxv xxvxxxxxxxxxxxv xxxxxxxxxxxv x xxxxxxxxxx xxx cxxxxxx"
+  },
+  {
+   "kind": "P2",
+   "k": 4,
+   "n_symbols": 31,
+   "S": -1.4092438015467026,
+   "accuracy": 0.0023719165085388993,
+   "excerpt": "juyyb ujjbyybjy yjjjjjbjybyby jbbb juyybb jj ybyjujyjujb by uyjbjyjujby ybyujjbjyby bj ybjjjbb uyybjyjyby jbu jbjyu jbyby yjy jjybyby jbuybyyjjbyby ybyujyyybyjujby jbyyjybyjjby b jujjjyjujb ybj jbjybyb"
+  },
+  {
+   "kind": "null-G0",
+   "k": 1,
+   "n_symbols": 21,
+   "S": -1.1997033487410398,
+   "excerpt": "inum num numnne unoum unuli none inone susnone susum sunum nuli enulli enum nu nulm ne umum numnuli esulm noon umnuli unuli sunum um unone"
+  },
+  {
+   "kind": "null-G0",
+   "k": 2,
+   "n_symbols": 21,
+   "S": -1.2056505359723964,
+   "excerpt": "cccc ccc cccccc ccccc ccccc cccc ccccc ccccccc ccccc cccccc ccccc ccc cccccc cccccc ccccc cccccc ccccc cccccc ccccc ccccc cccc cccc cccc cccc ccc"
+  },
+  {
+   "kind": "null-G0",
+   "k": 3,
+   "n_symbols": 19,
+   "S": -1.165047267340495,
+   "excerpt": "nnis nis nitnst inoit inint nost nnost sinnost sinit nisnis sinnt tnint nnost noost sint nost sit itsint nisnis itsinnt ininnt it noost sinnt sinnt"
+  },
+  {
+   "kind": "null-G0",
+   "k": 4,
+   "n_symbols": 23,
+   "S": -1.199358799410212,
+   "excerpt": "acle cle cracum rirra rillo crum acrum procrum prola milllo clecle prillo millo cra cum cre prollo cra milllo ulllo crrum prollo cracum prillo cla"
+  },
+  {
+   "kind": "null-G0",
+   "k": 5,
+   "n_symbols": 23,
+   "S": -1.2089894630048903,
+   "excerpt": "cccc ccc cccccc ccccc ccccc cccc ccccc ccccccc ccccc ccccc cccccc cccc ccccc ccccc cccccc ccc ccc ccccc cccccc ccccc ccccc cc ccc cccc cccccc"
+  },
+  {
+   "kind": "null-G*",
+   "k": 6001,
+   "n_symbols": 23,
+   "S": -1.1418683551386326,
+   "excerpt": "dictum ito odciodio edco redcco redum icto oitum tubi edco redcco redum dcco edum oitum dico dictum occtum dicctum icco ctum edum dicctum edcco redco"
+  },
+  {
+   "kind": "null-G*",
+   "k": 6002,
+   "n_symbols": 23,
+   "S": -1.1872740737787386,
+   "excerpt": "cccccc ccc cccccccc cccc cccccc ccccc cccc ccccc cccc ccccc ccccc ccc ccccc cccc ccccc ccccc cccccc ccccc ccccc cccc ccccc ccccc ccccc ccc ccccc"
+  },
+  {
+   "kind": "null-G*",
+   "k": 6003,
+   "n_symbols": 23,
+   "S": -1.231346159431263,
+   "excerpt": "nulati uam mnlumnum onlm conllm conti ulam muati atia muati onllm onti nulm conlm nullm ulati conllm uata conti conllm ullati conti ullam onllm num"
+  },
+  {
+   "kind": "null-G*",
+   "k": 6004,
+   "n_symbols": 22,
+   "S": -1.130936219862433,
+   "excerpt": "iitere nes sitisiis nits initts inire ntes snere erre intere itts itere nire nttes nnes inire intere ire nites erees ere nies intere iere nttes"
+  },
+  {
+   "kind": "null-G*",
+   "k": 6005,
+   "n_symbols": 23,
+   "S": -1.099291923471613,
+   "excerpt": "xiiiii iii iiiiixii xiii exiiii exiii iiii iiiii iium xiiiii iiii xiii ixiii iiiii iiiii iii xvxiii iiii iiiii iiiiii iiii iiii ixiii iiiiii exvii"
+  },
+  {
+   "kind": "null-iid",
+   "k": 0,
+   "n_symbols": 28,
+   "S": -1.4259822950066783,
+   "excerpt": "jy yjjy byj bjbjjbb yybjj j jjb bjbjy byyy bbvjyyb bjbj byybj jbbyy bjv jvy vjjbyybjb bbb jjyyjj bvvby jbvjb jyy jbyy bvj bjjb bjyjj"
+  },
+  {
+   "kind": "null-iid",
+   "k": 1,
+   "n_symbols": 29,
+   "S": -1.3076645504791273,
+   "excerpt": "xxxxx xxxx xxxxxx xxxxx xxx xxx x xxxxxxx xxxxxx xxxxx xxxxx xxxxxxx xxxx xxxxx xxxxv xxxx xxxxx xxxx xxxxxx xxxx xx xxxxxx xxx xxxxx xxx"
+  },
+  {
+   "kind": "null-iid",
+   "k": 2,
+   "n_symbols": 27,
+   "S": -1.4263900706366535,
+   "excerpt": "j jbjbyy byjb jjjybbj bbbjyb bj yjj bbb jjbyb yybby bybb b bbb jyby jbb bbbjjy yjjbby yjyyjjj bjjb bbyjy jbyjjb yyb bjjb yyjbjj byjb"
+  },
+  {
+   "kind": "null-iid",
+   "k": 3,
+   "n_symbols": 27,
+   "S": -1.3114593992972534,
+   "excerpt": "xxxxx xxxxx xxxxxxxx xxxxx xxx xxxxx xxxxx xx xxxxx xxxxxx xxxxxx xxxxx xxxxxxx xxxx xxxxxxx xx xxxxxx xxxxxxx xxxxxxxx xxxx xx xxx xxxxx xxxxxx xxxxxxxx"
+  },
+  {
+   "kind": "null-iid",
+   "k": 4,
+   "n_symbols": 27,
+   "S": -1.3081061024897884,
+   "excerpt": "xxx xx xxxxx xxxxxxxx xxxxxxxxxxx xxx xxxx xxxx xxxx xxxxxx xx xxx xxxxxxx xxxx xxxxxx xxx xxxx x xxxxx xx xxxxx xxxx xx xxxxxx xxxxx"
+  },
+  {
+   "kind": "Voynich",
+   "k": 13415,
+   "n_symbols": 26,
+   "S": -1.188013198189311,
+   "excerpt": "cccccccc ccccc cccccc ccccc ccccc cccc cccccc ccccc ccc cccccc cccccc cc cccc cc cccc cccc ccccc ccccc cccc cccccc ccccc ccc ccccc cccccc ccccccc"
+  },
+  {
+   "kind": "Voynich",
+   "k": 4125,
+   "n_symbols": 27,
+   "S": -1.206572279001845,
+   "excerpt": "esa esse resure sum eese se e sar se e sse sumasar sur ssse essas eaesse sar aeese eart caesse ese e e se esse"
+  },
+  {
+   "kind": "Voynich",
+   "k": 34833,
+   "n_symbols": 26,
+   "S": -1.2115516965883393,
+   "excerpt": "usuatri ausri usutri usuesi suet et es ss iattui seesse atset usuesse atues suet ase esse aui ars suss atri atri est ats atti suttse"
+  },
+  {
+   "kind": "Voynich",
+   "k": 1546,
+   "n_symbols": 28,
+   "S": -1.2324941077382587,
+   "excerpt": "xxx xxxxxx xxxxxiiixxxx xxxxxx cx xxx xxx xxxx xiiiixxixxxixiii xxiii xiiii cxxxx ixxxxxixx xiiii xx xxi xxxx xiixxxxxxx xxx xxxx xxx xx xxxx xxxi xxxxx"
+  },
+  {
+   "kind": "Voynich",
+   "k": 30728,
+   "n_symbols": 25,
+   "S": -1.2807015616714468,
+   "excerpt": "ccxxv iccxxxv ccxxv xxxv icccccc cc cc ccccc xxxv xccccc xxv xxv xxv cccc xxv cxxvcccc ccxxc cccccc xxxcc ccxxxv cccc ccv vcccc ccxxv xxcxccc"
+  }
+ ]
+}
