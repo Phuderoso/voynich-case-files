@@ -43,3 +43,41 @@ The secondary population is reported with its own Bonferroni (α = 0.025), and c
 Compute: well under a minute.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration commit `a77b72a3`)
+
+Tools: `tools/k021_sum_cord_colour.py` (7.6 s) and the disclosed post-hoc `tools/k021_posthoc_group_null.py`.
+Output: `analysis/k021_results.json`, `analysis/k021_posthoc_group_null.json`.
+
+**Controls pass.** False-positive rate at α = 0.025: H1 0.015, H2 0.010 (rule ≤ 0.05). Power: H1 1.00, H2 0.98.
+
+| Population | Khipus | Sum cords | Eligible | T1 (boundary) obs / null | p₁ | T2 (shared colour) obs / null | p₂ |
+|---|---|---|---|---|---|---|---|
+| **Primary** (K001 BH-significant) | 10 | 95 | 1,005 | 35 / 31.4 | 0.19 | **416 / 229.5** | **< 1e-4** |
+| Secondary (any sum cord) | 245 | 724 | 10,414 | 290 / 278.1 | 0.11 | 782 / 612.5 | < 1e-4 |
+
+- **H1 (sum cords sit at colour boundaries): not supported.** Power is 1.00, so this is a real negative: sum cords
+  are no more colour-isolated from their neighbours than other cords of value ≥ 10.
+- **H2 (sum cords share a colour): supported**, in both populations. In 7 of the 10 primary khipus, all or nearly
+  all sum cords have one colour (e.g. UR267A all 16 in one colour; UR269 16 of 17; UR256 8 of 8).
+
+### Post-hoc check (disclosed, not pre-registered; it can weaken but not upgrade the verdict)
+Sum cords cluster in particular cord groups, and groups are often one colour, so H2 could just be "sum cords are in
+the same groups". A stricter null redraws sum cords **only within their own cord group**. Overall, H2 survives:
+T2 = 416 against a null mean of 261.5 (p < 1e-4). The excess comes from three Inkawasi khipus: UR267A (p 0.0006),
+UR269 (p < 1e-4) and UR275 (p 0.029). In the other seven, group membership already explains the shared colour.
+
+### Literature check
+This is **not a new discovery**. The [Khipu Field Guide](https://khipufieldguide.com/notebook/fieldmarks/colored_pendant_sum/index.html)
+already lists a "Colored Pendant Sum" field mark for many Inkawasi khipus, including UR255, UR256, UR267A, UR267B,
+UR269 and UR270. What K021 adds is a calibrated, pre-registered test: colour does mark sum cords beyond chance, and in
+UR267A, UR269 and UR275 the effect goes beyond group membership. Colour *boundaries* do not mark them.
+
+### Line 6 status
+Advanced. Next: test whether the shared sum-cord colour is the same colour as the summed cords (colour-matched sums,
+as the Field Guide's field mark implies) against the within-group null, and do the colour-code concordance before any
+cross-khipu comparison of colour names.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

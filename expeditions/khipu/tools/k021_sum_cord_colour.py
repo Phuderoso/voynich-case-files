@@ -1,0 +1,91 @@
+#!/usr/bin/env python3
+"""K021 - Do sum cords stand out by colour? Pre-registered in case-file/K021 (commit a77b72a3).
+Sum cords = K001 hits. Colour = FULL_COLOR of the ascher_cord_color row with smallest RANGE_BEG (ties: color_id).
+Null: draw the same number of 'sum cords' uniformly from each khipu's eligible cords (value>=10, known colour),
+colour sequence untouched. T1 = #sum cords differing in colour from both neighbours; T2 = #same-colour pairs."""
+import sqlite3, json, sys, time, numpy as np
+from collections import defaultdict, Counter
+t0 = time.time(); DB = sys.argv[1] if len(sys.argv) > 1 else '../khipu.db'
+R = 20000; NCAL = 200; KMAX = 12; SEED = 20261105; ALPHA = 0.025
+rng = np.random.default_rng(SEED); c = sqlite3.connect(DB)
+dups = {r[0] for r in c.execute("select KHIPU_ID from khipu_main where DUPLICATE_FLAG=1")}
+names = {r[0]: (r[1] or '', r[2] or '') for r in c.execute("select KHIPU_ID, OKR_NUM, INVESTIGATOR_NUM from khipu_main")}
+val = defaultdict(int)
+for cid, v in c.execute("select CORD_ID, knot_value_type from knot"):
+    if v is not None: val[cid] += int(v)
+col = {}
+for cid, fc, rb, i in c.execute("select CORD_ID, FULL_COLOR, RANGE_BEG, color_id from ascher_cord_color order by CORD_ID, RANGE_BEG, color_id"):
+    if cid not in col and fc not in (None, '', "''"): col[cid] = fc.strip()
+kh = defaultdict(list)
+for khid, cid in c.execute("select KHIPU_ID, CORD_ID from cord where CORD_LEVEL=1 order by KHIPU_ID, CORD_ORDINAL"):
+    if khid not in dups: kh[khid].append(cid)
+sigk = {r['okr'] for r in json.load(open('analysis/k001_results_K5000.json'))['rows'] if r.get('bh_sig_N1')}
+def hits(V):
+    n = len(V); P = np.r_[0, np.cumsum(V)]; NZ = np.r_[0, np.cumsum(V > 0)]; h = np.zeros(n, bool)
+    for i in range(n):
+        if V[i] < 10: continue
+        for k in range(2, KMAX + 1):
+            if i + k < n and P[i + k + 1] - P[i + 1] == V[i] and NZ[i + k + 1] - NZ[i + 1] >= 2: h[i] = True; break
+            if i - k >= 0 and P[i] - P[i - k] == V[i] and NZ[i] - NZ[i - k] >= 2: h[i] = True; break
+    return h
+units = []  # per khipu: eligible idx, boundary flag per eligible, colour id per eligible, observed sum-cord mask over eligible
+for khid, cids in kh.items():
+    V = np.array([val.get(x, 0) for x in cids], np.int64); h = hits(V)
+    C = [col.get(x) for x in cids]; n = len(cids)
+    elig = [i for i in range(n) if V[i] >= 10 and C[i] is not None]
+    if not elig: continue
+    obs = np.array([h[i] for i in elig])
+    if obs.sum() == 0: continue
+    bnd = np.array([all(C[j] != C[i] for j in (i - 1, i + 1) if 0 <= j < n) for i in elig])  # unknown neighbour != colour
+    cc = [C[i] for i in elig]; lab = {x: k for k, x in enumerate(sorted(set(cc)))}
+    units.append(dict(khid=khid, okr=names[khid][0], inv=names[khid][1], m=int(obs.sum()), ne=len(elig), bnd=bnd,
+                      cl=np.array([lab[x] for x in cc]), obs=obs, prim=names[khid][0] in sigk))
+def pairs(cl):  # same-colour pairs
+    cnt = np.bincount(cl); return int((cnt * (cnt - 1) // 2).sum())
+def stats(us, masks): return sum(int(u['bnd'][mk].sum()) for u, mk in zip(us, masks)), sum(pairs(u['cl'][mk]) for u, mk in zip(us, masks))
+def null(us, Rr):
+    T1 = np.zeros(Rr, np.int64); T2 = np.zeros(Rr, np.int64)
+    for u in us:
+        ne, m = u['ne'], u['m']; K = len(np.unique(u['cl']))
+        idx = np.argsort(rng.random((Rr, ne)), 1)[:, :m]
+        T1 += u['bnd'][idx].sum(1)
+        oh = np.zeros((Rr, K), np.int64)
+        for j in range(m): np.add.at(oh, (np.arange(Rr), u['cl'][idx[:, j]]), 1)
+        T2 += (oh * (oh - 1) // 2).sum(1)
+    return T1, T2
+def pv(o, nl): return float((1 + (nl >= o).sum()) / (1 + len(nl)))
+def run(us, label):
+    o1, o2 = stats(us, [u['obs'] for u in us]); N1, N2 = null(us, R)
+    out = dict(pop=label, n_khipus=len(us), n_sum=sum(u['m'] for u in us), n_elig=sum(u['ne'] for u in us),
+               T1=o1, T1_null_mean=float(N1.mean()), p1=pv(o1, N1), T2=o2, T2_null_mean=float(N2.mean()), p2=pv(o2, N2))
+    # calibration and power, each tested against the same null distribution (null does not depend on observed set)
+    cal1 = cal2 = pw1 = pw2 = 0
+    for _ in range(NCAL):
+        mk = [np.isin(np.arange(u['ne']), rng.choice(u['ne'], u['m'], replace=False)) for u in us]
+        a, b = stats(us, mk); cal1 += pv(a, N1) <= ALPHA; cal2 += pv(b, N2) <= ALPHA
+        m1 = []; m2 = []
+        for u, base in zip(us, mk):
+            s = list(np.where(base)[0]); s1 = list(s); s2 = list(s)
+            free_b = [i for i in np.where(u['bnd'] & ~base)[0]]; rng.shuffle(free_b)
+            top = Counter(u['cl'][base]).most_common(1)[0][0]
+            free_c = [i for i in np.where((u['cl'] == top) & ~base)[0]]; rng.shuffle(free_c)
+            for k in range(len(s)):
+                if rng.random() < 0.5 and free_b: s1[k] = free_b.pop()
+                if rng.random() < 0.5 and free_c: s2[k] = free_c.pop()
+            m1.append(np.isin(np.arange(u['ne']), s1)); m2.append(np.isin(np.arange(u['ne']), s2))
+        pw1 += pv(stats(us, m1)[0], N1) <= ALPHA; pw2 += pv(stats(us, m2)[1], N2) <= ALPHA
+    out.update(calib_fpr_H1=cal1 / NCAL, calib_fpr_H2=cal2 / NCAL, power_H1=pw1 / NCAL, power_H2=pw2 / NCAL)
+    for h in ('1', '2'):
+        p, pw, fp = out['p' + h], out['power_H' + h], out['calib_fpr_H' + h]
+        out['verdict_H' + h] = ('controls failed' if fp > 0.05 else 'supported' if p <= ALPHA else
+                                'not supported' if pw >= 0.5 else 'not testable')
+    return out
+prim = [u for u in units if u['prim']]
+res = dict(seed=SEED, R=R, alpha=ALPHA, n_colour_cords=len(col), primary=run(prim, 'K001 BH-significant'),
+           secondary=run(units, 'all khipus with a sum cord'),
+           per_khipu=[dict(okr=u['okr'], inv=u['inv'], n_sum=u['m'], n_elig=u['ne'], bnd_sum=int(u['bnd'][u['obs']].sum()),
+                           bnd_rate_elig=float(u['bnd'].mean()), pairs_sum=pairs(u['cl'][u['obs']]),
+                           sum_colours=dict(Counter(int(x) for x in u['cl'][u['obs']]))) for u in prim])
+res['runtime_s'] = round(time.time() - t0, 1)
+json.dump(res, open('analysis/k021_results.json', 'w'), indent=1); print(json.dumps({k: res[k] for k in ('primary', 'secondary', 'runtime_s')}, indent=1))
+for r in res['per_khipu']: print(r)
