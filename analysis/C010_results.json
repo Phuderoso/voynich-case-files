@@ -1,0 +1,144 @@
+{
+ "bar": 0.028117592375112674,
+ "voynich_D": {
+  "median": 0.005860614099228582,
+  "max": 0.028403155017618906
+ },
+ "planted_fail_rate": 0.975,
+ "planted_D_median": 0.0349577560136366,
+ "n_candidates": 366,
+ "n_screened": 366,
+ "n_still_4stat": 366,
+ "n_pass_screen": 0,
+ "screen_D": {
+  "min": 0.03815961469920669,
+  "median": 0.08272764166400598
+ },
+ "screen_H_end": {
+  "min": 1.6797589574410707,
+  "max": 2.943007146137598
+ },
+ "voynich_H_end": 2.5319120974381706,
+ "best5": [
+  {
+   "D": 0.03815961469920669,
+   "H_end": 2.7459935167017635,
+   "cfg": {
+    "method.canFollow": "curveline",
+    "method.canFollow.error_rate": 10,
+    "method.morph.add_remove.probability": 12,
+    "method.morph.combine_split.probability": 3,
+    "method.morph.combined.dismiss_as_source_probability": 15,
+    "method.morph.reuse_last.probability": 10,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 52,
+    "method.suggestions": "none",
+    "method.suggestions.dyType_min_percentage": 69,
+    "method.suggestions.iType_min_percentage": 88,
+    "method.suggestions.olType_min_percentage": 1,
+    "method.suggestions.probability": 8,
+    "text.initial_line": "default",
+    "text.max_repeat_count": 0
+   }
+  },
+  {
+   "D": 0.041957823719135895,
+   "H_end": 2.6652015327554226,
+   "cfg": {
+    "method.canFollow": "curveline",
+    "method.canFollow.error_rate": 0,
+    "method.morph.add_remove.probability": 0,
+    "method.morph.combine_split.probability": 40,
+    "method.morph.combined.dismiss_as_source_probability": 15,
+    "method.morph.reuse_last.probability": 10,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 52,
+    "method.suggestions": "none",
+    "method.suggestions.dyType_min_percentage": 69,
+    "method.suggestions.iType_min_percentage": 88,
+    "method.suggestions.olType_min_percentage": 1,
+    "method.suggestions.probability": 8,
+    "text.initial_line": "default",
+    "text.max_repeat_count": 0
+   }
+  },
+  {
+   "D": 0.04495555521820335,
+   "H_end": 2.591159486182617,
+   "cfg": {
+    "method.canFollow": "curveline",
+    "method.canFollow.error_rate": 0,
+    "method.morph.add_remove.probability": 0,
+    "method.morph.combine_split.probability": 20,
+    "method.morph.combined.dismiss_as_source_probability": 30,
+    "method.morph.reuse_last.probability": 10,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 28,
+    "method.suggestions": "top",
+    "method.suggestions.dyType_min_percentage": 25,
+    "method.suggestions.iType_min_percentage": 20,
+    "method.suggestions.olType_min_percentage": 25,
+    "method.suggestions.probability": 40,
+    "text.initial_line": "default",
+    "text.max_repeat_count": 0
+   }
+  },
+  {
+   "D": 0.04543808526910953,
+   "H_end": 2.679120104062368,
+   "cfg": {
+    "method.canFollow": "curveline",
+    "method.canFollow.error_rate": 10,
+    "method.morph.add_remove.probability": 23,
+    "method.morph.combine_split.probability": 24,
+    "method.morph.combined.dismiss_as_source_probability": 93,
+    "method.morph.reuse_last.probability": 16,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 74,
+    "method.suggestions": "random",
+    "method.suggestions.dyType_min_percentage": 71,
+    "method.suggestions.iType_min_percentage": 95,
+    "method.suggestions.olType_min_percentage": 34,
+    "method.suggestions.probability": 52,
+    "text.initial_line": "default",
+    "text.max_repeat_count": 4
+   }
+  },
+  {
+   "D": 0.04553118812239382,
+   "H_end": 2.641236927821744,
+   "cfg": {
+    "method.canFollow": "curveline",
+    "method.canFollow.error_rate": 1,
+    "method.morph.add_remove.probability": 12,
+    "method.morph.combine_split.probability": 3,
+    "method.morph.combined.dismiss_as_source_probability": 15,
+    "method.morph.replace.probability": 29,
+    "method.morph.reuse_last.probability": 10,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 52,
+    "method.suggestions": "none",
+    "method.suggestions.dyType_min_percentage": 69,
+    "method.suggestions.iType_min_percentage": 88,
+    "method.suggestions.olType_min_percentage": 1,
+    "method.suggestions.probability": 8,
+    "text.max_repeat_count": 3
+   }
+  }
+ ],
+ "known_negative_C005": {
+  "R": 0.5382814070891261,
+  "mwl": 5.0605,
+  "ttr": 0.37316666666666665,
+  "h2": 2.342494240228854,
+  "D": 0.2859023389979643,
+  "H_end": 1.7617376952778188
+ },
+ "confirmation": [],
+ "verdict": "no screened configuration matches"
+}
