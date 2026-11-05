@@ -36,3 +36,33 @@ planted power ≥ 0.5, **not testable** if below.
 Compute: seconds.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration commit `99e115c4`)
+
+Tool: `tools/k024_deeper_subsidiary_sums.py` (9.9 s). Output: `analysis/k024_results.json`.
+
+Deeper levels are sparse: **109 eligible parents** in 41 khipus (98 at level 2 with level-3 children, 11 at level 3).
+
+| Test | Hits | Null mean | Null max (of 10 000) | p |
+|---|---|---|---|---|
+| **Primary** (all) | 2 | 0.89 | 5 | 0.22 |
+| Without KH0349 (UR113) | 2 | 0.88 | 5 | 0.22 |
+
+The calibration passes (0 of 200 false positives at 0.01), but **power with 3 planted parents is 0.22**, under the 0.5
+bar. **Verdict: not testable** by the pre-registered rule. The two hits are in KH0183 (UR1166) and KH0536 (HP004),
+one each. UR113 has no eligible deeper parents.
+
+### Power curve (disclosed add-on, not pre-registered; it does not change the verdict)
+Tool: `tools/k024_power_curve.py`. Output: `analysis/k024_power_curve.json`. With 100 control corpora each, power is
+0.23 for 3 planted parents, **0.87 for 5** and 1.00 for 8. Since the data show about one hit above chance, a habit that
+would put the sum on **5 or more of the 109 deeper parents (about 5 %)** would very likely have been seen, and it
+wasn't. A rarer habit can't be ruled out.
+
+### Line 7 status
+The deeper-levels question is answered as far as the OKR allows: no detectable sum habit below level 1, and anything
+under about 5 % is not testable. What's left on line 7 is the held-out replication of K004's non-UR113 signal, which
+needs khipus that weren't in K004 (none in the OKR today).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

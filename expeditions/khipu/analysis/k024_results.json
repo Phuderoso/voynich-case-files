@@ -1,0 +1,44 @@
+{
+ "n_units": 46,
+ "n_khipus": 41,
+ "n_eligible": 109,
+ "eligible_by_level": {
+  "3": 98,
+  "4": 11
+ },
+ "primary": {
+  "H": 2,
+  "null_mean": 0.8942,
+  "null_max": 5,
+  "p": 0.22087791220877911
+ },
+ "without_KH0349": {
+  "H": 2,
+  "null_mean": 0.8791,
+  "null_max": 5,
+  "p": 0.21597840215978403
+ },
+ "controls": {
+  "calib_fpr_01": 0.0,
+  "power_3planted": 0.22,
+  "K_control": 1000
+ },
+ "verdict": "not testable",
+ "hits_by_khipu": [
+  {
+   "okr": "KH0183",
+   "inv": "UR1166",
+   "level": 2,
+   "n_hits": 1,
+   "n_elig": 6
+  },
+  {
+   "okr": "KH0536",
+   "inv": "HP004",
+   "level": 2,
+   "n_hits": 1,
+   "n_elig": 1
+  }
+ ],
+ "runtime_s": 9.9
+}
