@@ -45,17 +45,19 @@ def H_from_counts(cnt):
     p = vals / vals.sum()
     return float(-(p * np.log2(p)).sum())
 
-def ngram_counter(a, k):
+def ngram_counter(a, k, A=None):
     """Sparse Counter of overlapping k-grams encoded as int64 base-A rolls.
-    For k=1 returns bincount-like Counter of symbols."""
+    A must be the GLOBAL alphabet size (max code + 1) so block encodings are comparable.
+    For k=1 returns Counter of symbols."""
     a = np.asarray(a, dtype=np.int64)
     if k == 1:
         return Counter(int(x) for x in a)
-    A = int(a.max()) + 1
+    if A is None:
+        A = int(a.max()) + 1
     n = len(a) - k + 1
     if n <= 0:
         return Counter()
-    # Horner: c = a[i] + A*(a[i+1] + A*(...))
+    # Horner with FIXED A: c = a[i] + A*(a[i+1] + A*(...))
     c = a[k - 1:].astype(np.int64).copy()
     mul = 1
     for j in range(k - 2, -1, -1):
@@ -64,9 +66,10 @@ def ngram_counter(a, k):
     return Counter(int(x) for x in c)
 
 def block_ngram_counters(a, k):
-    """Per-block sparse Counters for k-grams (and for k-1 if k>=2, computed separately)."""
+    """Per-block sparse Counters for k-grams; encoding uses the full-stream A."""
     edges = np.linspace(0, len(a), NBLK + 1).astype(int)
-    return [ngram_counter(a[edges[b]:edges[b + 1]], k) for b in range(NBLK)]
+    A = int(np.asarray(a).max()) + 1
+    return [ngram_counter(a[edges[b]:edges[b + 1]], k, A=A) for b in range(NBLK)]
 
 def merge_counters(blocks, idxs):
     out = Counter()
