@@ -1,6 +1,6 @@
 # C015 — Expedição 15: The Name Tags. Do bath, rosette and zodiac labels use different words or glyphs from plant and pharma labels, beyond what their own pages' running text predicts?
 
-**Status:** pre-registered 2026-11-05 04:07 PT, before any counted run. Results appended below.
+**Status:** pre-registered 2026-11-05 04:06:01 PT (commit a776a40b), before any counted run (the run started 04:06:05 PT). Results appended below. The pre-registration text originally gave 04:07 PT, an estimate written before the commit; corrected here to the commit time.
 **Approach family:** **New family: label vocabulary.** C001 used page sections as tags on running text; this is the
 first cycle that measures the label words themselves.
 
