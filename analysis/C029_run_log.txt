@@ -1,0 +1,41 @@
+gate Latin_Caesar 0.03 1.0 7
+gate Latin_Descartes 0.02 1.0 12
+gate Italian_Dante 0.05 1.0 17
+gate Italian_Machiavelli 0.04 1.0 24
+gate Spanish_Cervantes 0.04 1.0 30
+gate Hebrew_Genesis 0.08 1.0 34
+gate Hebrew_Exodus 0.01 1.0 38
+Voynich_ZL3b {'reject_rate': np.float64(0.11), 'median_p': np.float64(0.32338308457711445)} 41
+Latin_Caesar {'reject_rate': np.float64(1.0), 'median_p': np.float64(0.004975124378109453)} 44
+Latin_Descartes {'reject_rate': np.float64(0.98), 'median_p': np.float64(0.004975124378109453)} 46
+Italian_Dante {'reject_rate': np.float64(0.93), 'median_p': np.float64(0.004975124378109453)} 49
+Italian_Machiavelli {'reject_rate': np.float64(1.0), 'median_p': np.float64(0.004975124378109453)} 51
+Spanish_Cervantes {'reject_rate': np.float64(0.55), 'median_p': np.float64(0.04477611940298507)} 54
+Hebrew_Genesis {'reject_rate': np.float64(1.0), 'median_p': np.float64(0.004975124378109453)} 56
+Hebrew_Exodus {'reject_rate': np.float64(1.0), 'median_p': np.float64(0.004975124378109453)} 57
+Generator_TimmSchinner {'reject_rate': np.float64(0.87), 'median_p': np.float64(0.009950248756218905)} 59
+{
+ "calibration": {
+  "Latin_Caesar": 0.03,
+  "Latin_Descartes": 0.02,
+  "Italian_Dante": 0.05,
+  "Italian_Machiavelli": 0.04,
+  "Spanish_Cervantes": 0.04,
+  "Hebrew_Genesis": 0.08,
+  "Hebrew_Exodus": 0.01
+ },
+ "power": {
+  "Latin_Caesar": 1.0,
+  "Latin_Descartes": 1.0,
+  "Italian_Dante": 1.0,
+  "Italian_Machiavelli": 1.0,
+  "Spanish_Cervantes": 1.0,
+  "Hebrew_Genesis": 1.0,
+  "Hebrew_Exodus": 1.0
+ },
+ "gates_pass": true,
+ "verdict_voynich": "inconclusive",
+ "verdict_distinctive": "NOT SUPPORTED",
+ "controls_rejected": 7,
+ "seconds": 59.2
+}

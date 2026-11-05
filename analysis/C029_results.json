@@ -1,0 +1,67 @@
+{
+ "K": 1000,
+ "S": 100,
+ "B": 200,
+ "seed": 29029,
+ "corpora": {
+  "Voynich_ZL3b": {
+   "reject_rate": 0.11,
+   "median_p": 0.32338308457711445
+  },
+  "Latin_Caesar": {
+   "reject_rate": 1.0,
+   "median_p": 0.004975124378109453
+  },
+  "Latin_Descartes": {
+   "reject_rate": 0.98,
+   "median_p": 0.004975124378109453
+  },
+  "Italian_Dante": {
+   "reject_rate": 0.93,
+   "median_p": 0.004975124378109453
+  },
+  "Italian_Machiavelli": {
+   "reject_rate": 1.0,
+   "median_p": 0.004975124378109453
+  },
+  "Spanish_Cervantes": {
+   "reject_rate": 0.55,
+   "median_p": 0.04477611940298507
+  },
+  "Hebrew_Genesis": {
+   "reject_rate": 1.0,
+   "median_p": 0.004975124378109453
+  },
+  "Hebrew_Exodus": {
+   "reject_rate": 1.0,
+   "median_p": 0.004975124378109453
+  },
+  "Generator_TimmSchinner": {
+   "reject_rate": 0.87,
+   "median_p": 0.009950248756218905
+  }
+ },
+ "calibration": {
+  "Latin_Caesar": 0.03,
+  "Latin_Descartes": 0.02,
+  "Italian_Dante": 0.05,
+  "Italian_Machiavelli": 0.04,
+  "Spanish_Cervantes": 0.04,
+  "Hebrew_Genesis": 0.08,
+  "Hebrew_Exodus": 0.01
+ },
+ "power": {
+  "Latin_Caesar": 1.0,
+  "Latin_Descartes": 1.0,
+  "Italian_Dante": 1.0,
+  "Italian_Machiavelli": 1.0,
+  "Spanish_Cervantes": 1.0,
+  "Hebrew_Genesis": 1.0,
+  "Hebrew_Exodus": 1.0
+ },
+ "gates_pass": true,
+ "verdict_voynich": "inconclusive",
+ "verdict_distinctive": "NOT SUPPORTED",
+ "controls_rejected": 7,
+ "seconds": 59.2
+}

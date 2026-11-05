@@ -62,11 +62,11 @@ def main():
         R['corpora'][k] = {'reject_rate': r, 'median_p': sorted(ps)[S // 2]}
         print(k, R['corpora'][k], round(time.time() - t0), flush=True)
     rv = R['corpora']['Voynich_ZL3b']['reject_rate']; nrej = sum(R['corpora'][k]['reject_rate'] >= 0.5 for k in nat)
-    R['gates_pass'] = ok
+    R['gates_pass'] = bool(ok)
     R['verdict_voynich'] = 'NOT TESTABLE' if not ok else ('consistent with binomial' if rv <= 0.10 else 'rejected' if rv >= 0.5 else 'inconclusive')
     R['verdict_distinctive'] = 'NOT TESTABLE' if not ok else ('SUPPORTED' if rv <= 0.10 and nrej >= 6 else 'NOT SUPPORTED')
     R['controls_rejected'] = nrej; R['seconds'] = round(time.time() - t0, 1)
-    print(json.dumps({k: R[k] for k in ('calibration', 'power', 'gates_pass', 'verdict_voynich', 'verdict_distinctive', 'controls_rejected', 'seconds')}, indent=1))
-    json.dump(R, open('analysis/C029_results.json', 'w'), indent=1)
+    print(json.dumps({k: R[k] for k in ('calibration', 'power', 'gates_pass', 'verdict_voynich', 'verdict_distinctive', 'controls_rejected', 'seconds')}, indent=1, default=lambda o: o.item() if hasattr(o, 'item') else str(o)))
+    json.dump(R, open('analysis/C029_results.json', 'w'), indent=1, default=lambda o: o.item() if hasattr(o, 'item') else str(o))
 
 if __name__ == '__main__': main()
