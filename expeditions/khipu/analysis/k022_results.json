@@ -1,0 +1,89 @@
+{
+ "seed": 20261107,
+ "R": 20000,
+ "primary": {
+  "pop": "K001 BH-significant",
+  "n_sum_cords": 95,
+  "A": 50.666666666666664,
+  "A_null_mean": 46.05567833333333,
+  "A_null_sd": 3.063887070169653,
+  "p_two_sided": 0.13299335033248338,
+  "direction": "match",
+  "calib_fpr": 0.03,
+  "power_match": 0.99,
+  "power_apart": 1.0,
+  "verdict": "not supported"
+ },
+ "secondary": {
+  "pop": "all khipus with a sum cord",
+  "n_sum_cords": 712,
+  "A": 298.1304834054834,
+  "A_null_mean": 312.5982618037518,
+  "A_null_sd": 7.704456499633515,
+  "p_two_sided": 0.05879706014699265,
+  "direction": "apart"
+ },
+ "per_khipu": [
+  {
+   "okr": "KH0359",
+   "n": 9,
+   "obs": 9.0,
+   "null_mean": 7.1
+  },
+  {
+   "okr": "KH0405",
+   "n": 4,
+   "obs": 2.0,
+   "null_mean": 1.37
+  },
+  {
+   "okr": "KH0491",
+   "n": 10,
+   "obs": 8.67,
+   "null_mean": 9.11
+  },
+  {
+   "okr": "KH0492",
+   "n": 8,
+   "obs": 7.5,
+   "null_mean": 6.24
+  },
+  {
+   "okr": "KH0503",
+   "n": 16,
+   "obs": 8.0,
+   "null_mean": 5.86
+  },
+  {
+   "okr": "KH0504",
+   "n": 13,
+   "obs": 10.5,
+   "null_mean": 6.0
+  },
+  {
+   "okr": "KH0506",
+   "n": 17,
+   "obs": 0.0,
+   "null_mean": 3.63
+  },
+  {
+   "okr": "KH0507",
+   "n": 5,
+   "obs": 5.0,
+   "null_mean": 4.55
+  },
+  {
+   "okr": "KH0513",
+   "n": 3,
+   "obs": 0.0,
+   "null_mean": 0.38
+  },
+  {
+   "okr": "KH0514",
+   "n": 10,
+   "obs": 0.0,
+   "null_mean": 1.81
+  }
+ ],
+ "runtime_s": 1.0
+}
