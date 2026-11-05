@@ -3,7 +3,7 @@
 
 > **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**. **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026. An AI did all of this work.
 
-Status: **PRE-REGISTERED** (this section committed before the counted run). Results are appended below after the run.
+Status: **PRE-REGISTERED** at commit `0231407d` (05:24:56 PT), counted run 05:25:02–05:27:20 PT. Results appended below.
 
 ## Question
 Many claimed Voynich "readings" fit a glyph-to-letter key and then count how many words come out as words of a
@@ -40,5 +40,67 @@ The blind bank (`analysis/C018_blind_bank.json`) stores each item's glyph string
 
 ## Limits stated in advance
 Latin only, one lexicon, one search method; 100-word items; the readers are mechanical stand-ins for the free-reading step of human or LLM decipherers, not a model of any one author's method. A Voynich "no reading above the bar" excludes Latin under a simple one-to-one key only at the power shown by P1, and says nothing about other languages or cipher classes.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (counted run 2026-11-05, 05:25:02–05:27:20 PT, after pre-registration commit `0231407d`; `tools/c018_free_reader_bar.py`, 138 s; `analysis/C018_results.json`, console log `analysis/C018_run_log.txt`, blind bank `analysis/C018_blind_bank.json`, salt `15bca3cd2fcf5bb5`)
+
+### 1. The counted looks (CMR = share of the 100 tokens the reader "reads" as Latin)
+
+| Reader | P1 (Latin, mono-sub) | P2 (Latin, + anagram) | N1 generator | N2 random EVA | N3 shuffled Voynich | **Bar** (negatives p95 / max) | Gate | V (Voynich) |
+|---|---|---|---|---|---|---|---|---|
+| STRICT | 0.40–0.62 | 0.38–0.56 | **0.63–0.72** | 0.38–0.54 | 0.34–0.53 | 0.70 / 0.72 | P1 0/10: **FAIL** | 0.33–0.68, 0 above max |
+| LENIENT | 0.80–0.95 | 0.86–0.94 | **0.96–1.00** | 0.83–0.92 | 0.85–0.93 | 1.00 / 1.00 | P2 0/10: **FAIL** | 0.90–1.00, 0 above max |
+| INJ | 0.21–0.60 (2 NA) | 0.17–0.26 | 0.20–0.33 | 0.11–0.15 | 0.09–0.14 (1 NA) | 0.30 / 0.33 | P1 5/10: **FAIL** | 0.12–0.29, 0 above max |
+
+True-key ("oracle") CMR of the P1 plaintexts: STRICT/INJ 0.10–0.60 (median 0.53), LENIENT 0.36–0.66.
+
+**By the pre-registered rule, all three readers failed their gate, so all three are *not discriminating* and the Voynich
+readings are *not testable* under any of them.** No Voynich passage scored above the negative maximum under any reader
+(this is reported, not interpreted).
+
+### 2. The bar (the headline)
+- A many-to-one key with exact word matching "reads" **63–72 % of Timm–Schinner generator words as real Latin words**,
+  more than the true key reads in real Latin by another author (median 0.53). The search finds more "Latin" in a
+  meaningless text than there is in a real one, because short frequent words (`et`, `in`, `ad`, `si`, …) can be
+  manufactured from any repetitive glyph stream.
+- Adding the anagram-and-supply-the-vowels licence reads **96–100 % of generator text and 83–92 % of random glyph
+  strings**. Under that licence, a reading of "almost every word" carries no information at all.
+- Only the one-to-one key keeps the negatives low (max 0.33), and even it had a narrow margin over working positives.
+
+So a claimed Voynich reading that rests on a free key plus abbreviation/anagram/vowel licences must report its score
+against meaningless controls; a word-hit rate of 70–100 % is what such a method produces from noise.
+
+### 3. Why the INJ gate failed (disclosed, post-hoc, not counted)
+- **Bank defect.** Two of the ten P1 passages are not Latin: the Gutenberg edition of the *Meditationes* contains a
+  German preface ("uebersetzung des werkes erschien …") and French notes ("et les autres modes ou accidents …"). Both have
+  26 letter types against 24 in the lexicon, so INJ returned NA. One N3 item was NA for the same reason (more than 24 glyph types).
+- **Search stalls.** Of the 8 Latin P1 items, 5 beat the bar (0.52–0.60, close to their oracle) and 3 stalled at
+  0.21–0.28, below their true-key scores (the lowest Latin oracle is 0.18: philosophical vocabulary absent from Caesar).
+- Even with the defect removed, 5/8 is below the 9/10 standard. The verdict stands: INJ is not discriminating at this
+  budget. A repair (Latin-only passage filter by lexicon coverage before banking; more restarts or annealing for INJ)
+  is a new pre-registration, not a re-run of this one.
+
+### 4. Descriptive (not counted)
+Voynich passages behave like the generator and the glyph-shuffled controls under every reader (STRICT median 0.565 vs
+generator 0.685; INJ median 0.205 vs generator 0.245). Nothing here hints at Latin under a simple key, consistent with arXiv 2610.34499 and
+C013/C014. This is not a test result.
+
+### 5. The blind bank
+`analysis/C018_blind_bank.json` holds the 60 items in shuffled order (`B00`–`B59`), glyphs only, with
+`sha256(salt + answer)`; the salt above lets anyone verify. It is the first control set for the §4 LLM step. It carries
+the P1 defect of §3, so the next step will rebuild it with a language filter and publish both.
+
+### Verdict
+- STRICT and LENIENT: **excluded as discriminating methods** (their negatives score at or above real enciphered Latin;
+  the bar is 0.72 and 1.00).
+- INJ: **not discriminating at this budget** (gate 5/10, partly from a bank defect).
+- Voynich: **not testable** under all three readers.
+
+### Next
+Rebuild the bank with a Latin-only filter and a stronger one-to-one search, then re-gate INJ (power first). Only after
+a reader passes its gate does the LLM step start, with the same negatives and the bar measured here.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
