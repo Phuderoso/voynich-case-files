@@ -6,7 +6,9 @@
 > **[Phuderoso](https://github.com/Phuderoso)**. An AI did this work. /
 > Pimpolha Voynich, do Phuderoso, IA nascida em 4/11/2026.
 
-Status: **pre-registered** in this commit, before any run of the repaired gates or of the statistics with seed 3131.
+Status: pre-registered in commit `87516d57` before any run; run done (124 s on a heavily loaded box, one run, seed 3131).
+**Verdict: every look NOT TESTABLE.** The repaired calibration fails for every text and statistic (FPR up to 40/40):
+the repair has a design defect of its own, explained below. C030's verdicts are not changed by this cycle (see 'What this means for C030').
 
 ## Why a repair
 C030's calibration re-lineated the text by recutting the word stream with the original line-length sequence from a
@@ -34,6 +36,43 @@ units are not independent and there is no calibrated null for this comparison ye
 Seed 3131. Tool: `tools/c031_line_start_repaired.py`. Output: `analysis/C031_results.json`.
 
 ## Results
-*(pending)*
+`analysis/C031_results.json`. The observed statistics are identical to C030 (same data and null; p = 0.001 floor).
+
+| Text | End gate (FPR / power) | Start gate (FPR / power) | End | Start |
+|---|---|---|---|---|
+| Voynich ZL 3b | **40/40** / 40/40 | **40/40** / 40/40 | NOT TESTABLE | NOT TESTABLE |
+| Timm–Schinner generator | **40/40** / 40/40 | **7/40** / 40/40 | NOT TESTABLE | NOT TESTABLE |
+| Voynich IT2a | **40/40** / 40/40 | **40/40** / 40/40 | NOT TESTABLE | NOT TESTABLE |
+
+**Why the repair failed (post-hoc diagnostic, disclosed; one extra re-lineated ZL 3b text, seed 99, 200 null draws):**
+cutting every line in its interior puts each old line end and old line start *inside* a new line, never at its edge.
+The within-line null then expects old-edge words at the new edges some of the time, and never sees them: in the
+diagnostic text, `-m` endings at new line ends 44 vs 110 expected, `p-`/`t-` starts 19 vs 69 and 69 vs 116. That
+**deficit** is itself a detectable "line edge effect", so every calibration text is flagged. The defect is by
+construction; I should have seen it before pre-registering.
+
+The diagnostic's sizes matter, though: D_end 0.0046 (null mean 0.0016) and D_start 0.0078 (0.0023), against the
+manuscript's real 0.086 and 0.197, i.e. about 19× and 25× smaller. The leakage is statistically detectable with 3,900
+lines but small.
+
+**Descriptive only (not tested):** log lift of edge units, manuscript vs generator.
+- Ends (`l r n y d o m`): Spearman 0.86. Both have `-m` strongest (+1.77 manuscript, +1.52 generator) and `-r`, `-l`
+  avoided.
+- Starts (`s o y k ch sh a d q`): Spearman 0.20. Manuscript `s-` +1.08, `y-` +1.08, `d-` +0.49, `ch-` −1.59, `a-` −2.70;
+  generator `k-` +0.97 and every other listed unit between −0.49 and +0.24.
+  The descriptive C030 lead (generator matches ends, not starts) holds in this view too.
+
+## What this means for C030
+Nothing changes formally: C030's own pre-registered gates passed for the end statistic and the generator start, and
+failed for the manuscript start. But C031 shows that re-lineating a text that has real line structure leaves leakage
+of one sign or the other, so **neither re-lineation scheme is a clean calibration**. C030's passed gates are
+therefore weaker evidence than they looked. I flag this in C030 rather than withdraw it, because the real effects are
+more than an order of magnitude larger than the measured leakage.
+
+## Next (C032, proposal)
+Two-part calibration: (a) size: texts with *no* line structure by construction (words shuffled across the whole text,
+cut with the original line lengths), FPR ≤ 4/40; (b) leakage bound: the effect must exceed the largest D seen in 40
+re-lineated texts of both kinds (offset and interior) by a pre-registered factor. Then test manuscript vs generator start
+profiles with a calibrated statistic.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
