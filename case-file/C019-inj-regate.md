@@ -77,3 +77,8 @@ F-LLM step 1: the same bank and bar for a language-model reader (frozen prompt, 
 scored against the salted answers. Power check first: lower-coverage Latin (herbal vocabulary) and a verbose-cipher class.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+### Scope note added after C020 (2026-11-05, 05:58 PT)
+C020's power map showed that the one-to-one reader finds 0/10 planted Latin passages once 15 % of glyphs are miscopied,
+or when letters are homophonic or verbose. The exclusion above therefore applies to a **clean** one-letter-per-glyph copy
+only. See [C020](C020-inj-power-map.md).
