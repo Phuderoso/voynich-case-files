@@ -23,3 +23,52 @@
   else is a lead to inspect by hand. Descriptive extra (not part of the decision): how many discovered blocks also
   agree on run lengths.
 - **Budget.** One run, `timeout 600`. Any amendment is disclosed below.
+
+## Amendments
+None. One run.
+
+## Results (`python3 tools/k012_run_collapsed_bh.py data/khipu.db`, 15 s)
+N = 433 khipus, m = 93 528 pairs, 5 323 pairs with a shared collapsed block of at least 3.
+
+| Check | Rule | Result | Verdict |
+|---|---|---|---|
+| (a) Null corpora with any BH discovery | ≤ 6 of 40 | **0 of 40** | passes |
+| (b) Share of all null pairs with p < 0.01 | ≤ 0.02 | 0.0007 | passes |
+| Planted 6-cord copies found by BH | ≥ 0.5 | **0.25** (median p 1.5·10⁻⁴) | target missed |
+
+**Calibrated, but not powerful enough.** Collapsing runs fixes K011's problem completely (false discoveries per
+null corpus went from 68 to 0), which confirms that runs were the cause. But it is conservative, and it throws away
+run lengths, so a planted 6-cord copy is found only a quarter of the time. Short matches stay **not testable**.
+
+### Real BH discoveries (6)
+| Pair | Collapsed block | p | Run lengths agree? | Reading |
+|---|---|---|---|---|
+| KH0362 UR122 · KH0049 AS038/HP036 | 12 | 4.3·10⁻²⁴ | yes | known (K005–K010) |
+| KH0128 UR1114 · KH0137 UR1123 | 10 | 1.3·10⁻¹⁷ | yes | known |
+| KH0140 AS125 · KH0483 UR247 | 12 | 2.9·10⁻¹⁴ | yes | known double recording |
+| KH0240 UR004 · KH0496 UR260 | 9 | 1.3·10⁻⁸ | **no** | **new lead**, see below |
+| KH0304 UR067 · KH0303 UR066 | 7 | 2.6·10⁻⁷ | yes | known Puruchuco pair |
+| KH0284 UR053B · KH0285 UR053C | 6 | 3.1·10⁻⁶ | no | same object number (Banco Central ATE 3517): parts of one khipu, expected |
+
+The fifth K010 pair (Puruchuco UR068/UR064) is not found here, which fits the lower power.
+
+**The lead, inspected by hand.** KH0240 (Leymebamba, Centro Mallqui) and KH0496 (Incahuasi) share the collapsed
+pattern `1, 2, 1, 2, 3, 1, 2, 1, 3`. Their run lengths differ (`4,1,1,1,1,1,1,1,1` vs `1,1,3,1,1,2,1,1,1`), so the
+two khipus do not record the same numbers. What they share is the order in which small values change. All values
+are 1 to 3, the alphabet where chance agreement is easiest, although the calibrated null accounts for each khipu's
+own value shares. It is a **lead only**: one hit among 93 528 pairs. It is not checked against the literature, and
+it is not a claim of a link between the two sites.
+
+## Verdict
+- **Advanced:** a calibrated per-pair test for cross-khipu blocks now exists (run-collapsed, BH). It confirms the
+  four strongest known pairs, finds the expected UR053B/UR053C parts, and raises one new lead (KH0240/KH0496).
+- **Not testable (still):** short copies (power 0.25 < 0.5). Silence on other pairs is not evidence of independence.
+- **Audit of K011:** K011's diagnosis (runs break the independence formula) is confirmed by this cycle.
+- **Next for line 3:** get power back without losing calibration. Score each collapsed block together with its
+  run-length agreement, using a null that keeps run lengths. Or use option (2) from K011: empirical per-pair p-values
+  for the top blocks.
+
+Raw output: `analysis/k012_results.json` (summary, discoveries per null corpus, planted p-values, all six real rows
+with run lengths).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
