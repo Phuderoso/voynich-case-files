@@ -59,4 +59,62 @@ Letter-level substitution, kept word spaces, left-to-right reading, one abjad-st
 frequency penalty helps only if the cipher is a simple substitution; it would mislead for verbose or syllabic codes.
 Short consonant skeletons are dense in any string, so the bar is expected to be generous (as Hebrew's was in C013).
 
+## Results (run 2026-11-05, 03:34:57–03:37:39 PT, after the pre-registration commit 250c3775; `tools/c014_abjad_solver.py`, 2 min 42 s on 8 cores; `analysis/C014_results.json`, per-run cache `analysis/C014_cache.jsonl`)
+
+One run, no reruns. Transcription: ZL 3b (`data/ZL3b-n.txt`, "Version 3b of 13/05/2025", sha256 bf5b6d4a…beccafc).
+
+### 1. Tuning (Caesar second half, 4 plants per λ)
+| λ | Mean accuracy | Share of the most common decoded letter |
+|---|---|---|
+| 0 (C013) | 0.145 | 1.00 (all `s`) |
+| 0.1 | 0.145 | 1.00 (all `s`) |
+| 0.3 | 0.145 | 1.00 (all `s`) |
+| 1 | 0.979 | 0.16–0.18 |
+| **3 (chosen)** | **1.000** | 0.15–0.16 |
+
+The penalty does what it was built for: from λ = 1 the `sss` collapse is gone, and on held-in-author text the
+solver reads every plant correctly. λ = 0 reproduced C013's failure (the built-in negative check).
+
+### 2. Gate (held out: devowelled Descartes, blind, λ = 3 frozen)
+| Plant | Accuracies (5 samples) | Passing (≥ 0.80) |
+|---|---|---|
+| P2 homophonic | 0.833, 0.834, 0.842, 0.842, 0.882 | 5/5 |
+| P1 one-to-one | 0.747, 0.749, 0.749, 0.759, 0.764 | 0/5 |
+| **Total** | | **5/10 — gate failed (needs 9/10)** |
+
+**Verdict: vowelless Latin is still not testable** under this solver. No verdict on the manuscript.
+
+### Why the gate failed (disclosed)
+The collapse is repaired (most common decoded letter 0.18–0.24 in gate runs, not 1.0), but accuracy fell from 1.00
+on Caesar to 0.75–0.88 on Descartes. The model and the tuning plants came from the same author; the gate text did not.
+A Caesar 4-gram model of a 21-letter consonant skeleton does not know Descartes' vocabulary well enough to tell
+some consonants apart once the vowels are gone. The P1 decodes swap whole letters consistently
+(for example `h`→`d`, so *hunc* `hnc` becomes `dnc`; and `q`→`s`, `d`→`t`, so *quod* `qd` becomes `st`), giving about 0.75. The P2 decodes split those letters
+across two symbols and land just above 0.80. The tuning design overstated held-out performance. A repair must tune
+on a different author than the model, and train the model on more than one author. That is a design change and needs
+its own pre-registration.
+
+### Descriptive only (not a verdict: the gate failed)
+- **Bar from 15 meaningless texts:** W 49–129. Generator default 67–88, matched generator 49–76, independent glyph text
+  103–129. Bar = 129. Short consonant skeletons (`snt`, `trm`, `ntr`) are dense in any string, as expected.
+- **Manuscript:** herbal f14r–f23r 109, herbal f52v–f93r 95, herbal f28r–f37r 100; whole-text f79v–f82r 82,
+  f105r–f107r 87. Median 95, below the bar of 129, and below even the independent-glyph nulls. The herbal samples sit
+  a little above the two non-herbal ones (95–109 vs 82–87), still under the bar. Decodes look like
+  `prttm nnttm nntm r sctts srtttm`, with long runs of `t`, `r`, `m`.
+- **Planted W (gate):** 138–190, well above the bar, even at 75–88 % letter accuracy. A correct reading of a real
+  vowelless-Latin text would have cleared the bar, so the bar itself is not out of reach.
+- **Degeneracy guard:** decoded letter entropy 2.39–2.99 bits for nulls, 2.55–2.88 for the manuscript, 2.94–3.33 for
+  the plants; no run collapsed at λ = 3.
+
+### What this does and does not show
+- It shows that C013's `sss` trap is a property of the joint 4-gram objective and that a letter-frequency penalty
+  removes it (λ ≥ 1).
+- It does not give a verdict on vowelless Latin: the solver still fails its held-out gate (5/10) because of the
+  model's domain, not the collapse.
+- The herbal pages, sampled for the first time in the solver family, were run, but because the gate failed their
+  numbers are descriptive only.
+- Comparisons: 1 look, not carried out (gate failed).
+- Not tested: vowelless Latin with a multi-author model, other abjad languages, verbose or syllabic ciphers,
+  anagrams, right-to-left reading.
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
