@@ -2,6 +2,7 @@
 | File | Source | Version | Retrieved | sha256 |
 |---|---|---|---|---|
 | ZL3b-n.txt | https://www.voynich.nu/data/ZL3b-n.txt | ZL IVTFF "Version 3b of 13/05/2025" (Eva-, IVTFF 2.0) | 2026-11-04 | bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc |
+| IT2a-n.txt | https://www.voynich.nu/data/IT2a-n.txt (Takahashi transcription, IVTFF conversion by R. Zandbergen; used from C016) | "Version 2a of 02/02/2023 modified 25/06/2025" (EvaT, IVTFF 2.0) | 2026-11-05 | 7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5 |
 
 ## C003 control corpora (not committed; fetch into `data/corpora/` and check the hash)
 | File | Source | Retrieved | sha256 (prefix…suffix) |
