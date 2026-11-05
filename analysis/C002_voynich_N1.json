@@ -1,0 +1,110 @@
+{
+ "K300 T1 I(W;H|S)": {
+  "obs_bits": 0.10166,
+  "null_mean": 0.05418,
+  "null_sd": 0.0046,
+  "excess_bits": 0.04747,
+  "z": 10.32,
+  "p": 0.0005,
+  "strata": 3
+ },
+ "K300 T2 I(W;S|H)": {
+  "obs_bits": 0.11074,
+  "null_mean": 0.08045,
+  "null_sd": 0.00469,
+  "excess_bits": 0.0303,
+  "z": 6.46,
+  "p": 0.0005,
+  "strata": 4
+ },
+ "K300 T3 I(W;L|S)": {
+  "obs_bits": 0.084,
+  "null_mean": 0.03594,
+  "null_sd": 0.00415,
+  "excess_bits": 0.04805,
+  "z": 11.58,
+  "p": 0.0005,
+  "strata": 3
+ },
+ "K300 T4 I(W;S|L)": {
+  "obs_bits": 0.16348,
+  "null_mean": 0.10573,
+  "null_sd": 0.00666,
+  "excess_bits": 0.05774,
+  "z": 8.67,
+  "p": 0.0005,
+  "strata": 2
+ },
+ "K300 T5 I(W;H|L)": {
+  "obs_bits": 0.08531,
+  "null_mean": 0.05179,
+  "null_sd": 0.0054,
+  "excess_bits": 0.03352,
+  "z": 6.2,
+  "p": 0.0005,
+  "strata": 2
+ },
+ "K300 T6 I(W;H|SxL)": {
+  "obs_bits": 0.03276,
+  "null_mean": 0.02781,
+  "null_sd": 0.00291,
+  "excess_bits": 0.00494,
+  "z": 1.7,
+  "p": 0.08096,
+  "strata": 3
+ },
+ "K1000 T1 I(W;H|S)": {
+  "obs_bits": 0.16032,
+  "null_mean": 0.10077,
+  "null_sd": 0.00598,
+  "excess_bits": 0.05955,
+  "z": 9.95,
+  "p": 0.0005,
+  "strata": 3
+ },
+ "K1000 T2 I(W;S|H)": {
+  "obs_bits": 0.19274,
+  "null_mean": 0.15058,
+  "null_sd": 0.00709,
+  "excess_bits": 0.04216,
+  "z": 5.94,
+  "p": 0.0005,
+  "strata": 4
+ },
+ "K1000 T3 I(W;L|S)": {
+  "obs_bits": 0.13159,
+  "null_mean": 0.07028,
+  "null_sd": 0.00559,
+  "excess_bits": 0.0613,
+  "z": 10.96,
+  "p": 0.0005,
+  "strata": 3
+ },
+ "K1000 T4 I(W;S|L)": {
+  "obs_bits": 0.28095,
+  "null_mean": 0.20399,
+  "null_sd": 0.00849,
+  "excess_bits": 0.07695,
+  "z": 9.06,
+  "p": 0.0005,
+  "strata": 2
+ },
+ "K1000 T5 I(W;H|L)": {
+  "obs_bits": 0.14495,
+  "null_mean": 0.09902,
+  "null_sd": 0.00766,
+  "excess_bits": 0.04593,
+  "z": 5.99,
+  "p": 0.0005,
+  "strata": 2
+ },
+ "K1000 T6 I(W;H|SxL)": {
+  "obs_bits": 0.05708,
+  "null_mean": 0.0501,
+  "null_sd": 0.00386,
+  "excess_bits": 0.00698,
+  "z": 1.81,
+  "p": 0.03398,
+  "strata": 3
+ }
+}
