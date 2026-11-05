@@ -1,0 +1,2 @@
+R {'n_pages': 224, 'G_obs': 39.26255850973835, 'p': 0.00024993751562109475, 'fpr_at_alpha': 0.025, 'power_+1pp_hand5': 0.05, 'verdict': 'not testable'} 5.1 s
+W {'n_pages': 44, 'G_obs': 1.5659179672711827, 'p': 0.01274681329667583, 'fpr_at_alpha': 0.0, 'power_+1pp_hand5': 0.15, 'verdict': 'not testable'} 6.2 s
