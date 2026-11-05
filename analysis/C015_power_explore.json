@@ -1,0 +1,116 @@
+{
+ "BIO-PP": {
+  "S_g_null_mean": 0.1875,
+  "S_g_null_q99.75": 0.2321,
+  "S_w_null_mean": 0.8404,
+  "S_w_null_q99.75": 0.9259,
+  "plants": {
+   "swap@0.5": {
+    "S_g_hits": 0,
+    "S_w_hits": 0,
+    "S_g_planted_mean": 0.1977,
+    "S_w_planted_mean": 0.8441
+   },
+   "swap@1.0": {
+    "S_g_hits": 1,
+    "S_w_hits": 0,
+    "S_g_planted_mean": 0.2187,
+    "S_w_planted_mean": 0.8474
+   },
+   "q-initial@0.1": {
+    "S_g_hits": 0,
+    "S_w_hits": 0,
+    "S_g_planted_mean": 0.1959,
+    "S_w_planted_mean": 0.8506
+   },
+   "q-initial@0.25": {
+    "S_g_hits": 0,
+    "S_w_hits": 0,
+    "S_g_planted_mean": 0.2127,
+    "S_w_planted_mean": 0.8727
+   },
+   "q-initial@0.5": {
+    "S_g_hits": 8,
+    "S_w_hits": 3,
+    "S_g_planted_mean": 0.2423,
+    "S_w_planted_mean": 0.9095
+   }
+  }
+ },
+ "ROS-PP": {
+  "S_g_null_mean": 0.1965,
+  "S_g_null_q99.75": 0.239,
+  "S_w_null_mean": 0.883,
+  "S_w_null_q99.75": 0.9342,
+  "plants": {
+   "swap@0.5": {
+    "S_g_hits": 0,
+    "S_w_hits": 0,
+    "S_g_planted_mean": 0.2151,
+    "S_w_planted_mean": 0.8839
+   },
+   "swap@1.0": {
+    "S_g_hits": 2,
+    "S_w_hits": 0,
+    "S_g_planted_mean": 0.2273,
+    "S_w_planted_mean": 0.8842
+   },
+   "q-initial@0.1": {
+    "S_g_hits": 0,
+    "S_w_hits": 0,
+    "S_g_planted_mean": 0.1982,
+    "S_w_planted_mean": 0.8888
+   },
+   "q-initial@0.25": {
+    "S_g_hits": 0,
+    "S_w_hits": 0,
+    "S_g_planted_mean": 0.2017,
+    "S_w_planted_mean": 0.8999
+   },
+   "q-initial@0.5": {
+    "S_g_hits": 1,
+    "S_w_hits": 0,
+    "S_g_planted_mean": 0.22,
+    "S_w_planted_mean": 0.9182
+   }
+  }
+ },
+ "AZ-PP": {
+  "S_g_null_mean": 0.1213,
+  "S_g_null_q99.75": 0.149,
+  "S_w_null_mean": 0.7748,
+  "S_w_null_q99.75": 0.8424,
+  "plants": {
+   "swap@0.5": {
+    "S_g_hits": 0,
+    "S_w_hits": 0,
+    "S_g_planted_mean": 0.1184,
+    "S_w_planted_mean": 0.775
+   },
+   "swap@1.0": {
+    "S_g_hits": 0,
+    "S_w_hits": 0,
+    "S_g_planted_mean": 0.1298,
+    "S_w_planted_mean": 0.7932
+   },
+   "q-initial@0.1": {
+    "S_g_hits": 0,
+    "S_w_hits": 0,
+    "S_g_planted_mean": 0.1142,
+    "S_w_planted_mean": 0.777
+   },
+   "q-initial@0.25": {
+    "S_g_hits": 0,
+    "S_w_hits": 0,
+    "S_g_planted_mean": 0.1202,
+    "S_w_planted_mean": 0.7929
+   },
+   "q-initial@0.5": {
+    "S_g_hits": 4,
+    "S_w_hits": 1,
+    "S_g_planted_mean": 0.1461,
+    "S_w_planted_mean": 0.8184
+   }
+  }
+ }
+}

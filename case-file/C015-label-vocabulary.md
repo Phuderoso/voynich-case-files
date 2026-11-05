@@ -100,3 +100,94 @@ is the only label-specific test and it assumes that running text of the same pag
 different genre (isolated words), so a common label style shifts both groups at once; T2's two-sided form reports
 it as "less separated". Small groups: ROS is one page; PP has 243 tokens. A planted swap of two glyph pairs is one kind
 of difference; a label vocabulary that differs in other ways may need a larger effect to be seen.
+
+## Results (run 2026-11-05, 04:06:05–04:06:48 PT, after the pre-registration commit a776a40b; `tools/c015_label_vocabulary.py`, 44 s on 8 cores; `analysis/C015_results.json`)
+
+One counted run, no reruns. Transcription: ZL 3b (`data/ZL3b-n.txt`, "Version 3b of 13/05/2025", sha256 bf5b6d4a…beccafc).
+
+### 1. Gates (planted separation, f = 0.5, need ≥ 9/10)
+| Pair | T2 S_g | T2 S_w | T1 S_g | T1 S_w |
+|---|---|---|---|---|
+| BIO–PP | 0/10 | 0/10 | 0/10 | 0/10 |
+| ROS–PP | 0/10 | 0/10 | not testable (1 page) | not testable (1 page) |
+| AZ–PP | 0/10 | 0/10 | 0/10 | 0/10 |
+
+The f = 0.25 power point was also 0/10 everywhere. **Every gate failed, so all 10 counted looks are not testable.**
+No verdict on label vocabulary in this cycle.
+
+Why: the groups are small (119–440 label tokens) and a JSD between two samples this small is noisy. The T2 null for
+BIO–PP spans S_g 0.150–0.232 (central 99.5 %), while the f = 0.5 swap moved the mean only from 0.188 to 0.198. The
+`k↔t`, `ch↔sh` swap also turned out to be a weak plant: those glyph pairs sit in very similar positions and
+neighbourhoods, so swapping them barely changes the bigram profile, and swapped words often land on other existing
+types. The plant was chosen before the run and is reported as it fell.
+
+### 2. False-positive checks
+- T2, leave-one-out over 1,999 null draws: 0.037–0.049 at 0.05 and 0.0015–0.004 at α, for every pair and statistic.
+  Calibrated (by construction, so this checks the code rather than the baseline).
+- T1, 200 random page reassignments: BIO–PP S_g 0.085 at 0.05 (**above the 0.08 limit, so T1 S_g for BIO–PP would be
+  withdrawn even if it had passed its gate**), 0.000 at α; BIO–PP S_w 0.030 / 0.005; AZ–PP S_g 0.060 / 0.010;
+  AZ–PP S_w 0.040 / 0.005.
+
+### 3. Descriptive only (not verdicts: gates failed)
+| Pair | S_g labels | T2 null median [99.5 % range] | T2 p, direction | S_w labels | T2 null median [range] | T2 p, direction | T1 S_g p | T1 S_w p |
+|---|---|---|---|---|---|---|---|---|
+| BIO–PP | 0.164 | 0.188 [0.150, 0.232] | 0.107, less | 0.835 | 0.841 [0.752, 0.926] | 0.874, less | 0.001, more | 0.081, less |
+| ROS–PP | 0.151 | 0.196 [0.164, 0.239] | 0.001, less | 0.928 | 0.882 [0.822, 0.934] | 0.049, more | — | — |
+| AZ–PP | 0.098 | 0.121 [0.098, 0.149] | 0.007, less | 0.860 | 0.776 [0.708, 0.842] | 0.001, more | 0.002, more | 0.621, more |
+
+Two patterns are worth logging as **leads only**:
+- **Glyph profile, "less":** in all three pairs the labels of the two groups are *more alike* in glyph bigrams than
+  random words from their own pages' running text (ROS p 0.001, AZ 0.007, BIO 0.107). The likely driver is visible in
+  the profiles: labels start with `o` far more often than running text does (BIO 61 % vs 17 %, AZ 66 % vs 39 %,
+  PP 51 % vs 21 %; ROS 63 % vs 60 %, since its ring text is already `o`-heavy), and they are longer (5.2–5.6 vs
+  4.4–4.8 glyph units). Labels look like one shared genre across sections. The gate only tested the "more"
+  direction, so this has no planted control yet.
+- **Word types, "more" for AZ:** zodiac/star labels share fewer word types with plant/pharma labels than zodiac ring
+  text shares with pharma page text (p 0.001; ROS p 0.049). S_w has no working gate, so this is not a result.
+- T1 S_g p 0.001–0.002 ("labels differ between groups at all") is expected from scribe and dialect alone (BIO is
+  hand 2 / B, PP hand 1 / A, AZ hand 4) and its gate failed too.
+- Most common labels: BIO `otedy` (4), `darol`, `daldy`, `otoly`, `otol`; ROS `otedy` (4), `otchdy` (3);
+  AZ `otaly` (6), `otar`, `oky`, `otal`, `ar` (5); PP `okol` (4), `otoldy` (3). `otedy` heads both BIO and ROS.
+
+### 4. Transcription-choice sensitivity (BIO–PP, T2, 999 draws, descriptive)
+Commas joined: S_g 0.167 (p 0.112, less), S_w 0.868 (p 0.996). Second alternative reading: S_g 0.161 (p 0.074, less),
+S_w 0.844 (p 0.886). Same picture as the primary parse.
+
+### 5. Post-hoc power exploration (disclosed, exploratory, not counted)
+After all gates failed I ran `tools/c015_power_explore.py` (17 s; `analysis/C015_power_explore.json`) with the same
+T2 nulls and seeds to see what size of separation T2 can see at α = 0.005 (hits out of 10, S_g / S_w):
+
+| Plant | BIO–PP | ROS–PP | AZ–PP |
+|---|---|---|---|
+| swap, f = 0.5 | 0 / 0 | 0 / 0 | 0 / 0 |
+| swap, f = 1.0 (every label) | 1 / 0 | 2 / 0 | 0 / 0 |
+| `q` prefixed to 10 % of labels | 0 / 0 | 0 / 0 | 0 / 0 |
+| `q` prefixed to 25 % | 0 / 0 | 0 / 0 | 0 / 0 |
+| `q` prefixed to 50 % | 8 / 3 | 1 / 0 | 4 / 1 |
+
+Even putting `q` (a glyph labels almost never start with) in front of half of a group's labels is caught at most
+8 times in 10. **With label groups this small, a two-group JSD against same-page running text cannot see any
+separation of a plausible size.** Its first attempt crashed on a JSON type error before printing anything; fixed and
+rerun once.
+
+### 6. Image spot-check (does not change any verdict)
+Beinecke MS 408, IIIF manifest https://collections.library.yale.edu/manifests/2002046:
+- **f77r** (image 1006212, top strip `pct:5,3,85,12`): the labels sit along the pipe and beside the two nymphs, as ZL
+  types them (`Ln` by the nymphs, `Lt` under the pipe outlets). `darchdar`, `otedy`, `dchdy`, `dotedy` read as
+  transcribed at this resolution; `olkchs`, `otork` and `soral` I could not confirm or refute (cramped strokes).
+- **f99r** (image 1006246, full page at 1400 px): one label on the top jar (`Lc`, `okaradag`) and short labels above
+  the individual root and leaf fragments (`Lf`), as typed.
+
+### What this does and does not show
+- It does **not** show that label vocabulary differs, or does not differ, between bath, rosette, zodiac and
+  plant/pharma drawings: every planted gate failed, so all 10 looks are **not testable**.
+- It shows that this design (two-group JSD on 119–440 label tokens against same-page running text) is underpowered,
+  and by how much (section 5).
+- It leaves a lead with a number on it: labels across sections look more like each other than like their own pages'
+  text, mostly through `o`-initial words. A power-first test of "labels vs running text" (pooled over all label
+  groups, one feature at a time, with a planted control in both directions) is the next step.
+- Comparisons: 10 looks registered, 0 judged. 30 exploratory plant settings, not counted.
+- Not tested: label-to-drawing links, positional patterns within a label set, Currier-matched subsets, other
+  transcriptions (IT, GC, RF).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
