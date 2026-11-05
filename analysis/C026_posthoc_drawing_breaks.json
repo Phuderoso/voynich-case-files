@@ -1,0 +1,47 @@
+{
+ "alpha_per_look": 0.016666666666666666,
+ "note": "post-hoc: '<->' read as word space",
+ "IT_C023": {
+  "n_leaves": 102,
+  "vocab": 988,
+  "n_cells": 24,
+  "n_conj": 24,
+  "S_obs": 0.060715283254161645,
+  "p": 0.00024993751562109475,
+  "fpr_at_alpha": 0.0,
+  "power_f0.2": 0.975,
+  "verdict": "replicated"
+ },
+ "ZLpara_C023": {
+  "n_leaves": 99,
+  "vocab": 894,
+  "n_cells": 24,
+  "n_conj": 24,
+  "S_obs": 0.0636755506977228,
+  "p": 0.00024993751562109475,
+  "fpr_at_alpha": 0.0,
+  "power_f0.2": 1.0,
+  "verdict": "replicated"
+ },
+ "IT_C021B": {
+  "n_leaves": 102,
+  "vocab": 988,
+  "n_conj_eligible": 44,
+  "S_obs": 0.03607174306692407,
+  "p": 0.005498625343664084,
+  "fpr_at_alpha": 0.0,
+  "power_f0.2": 1.0,
+  "verdict": "replicated"
+ },
+ "ZL_C023": {
+  "n_leaves": 102,
+  "vocab": 991,
+  "n_cells": 24,
+  "n_conj": 24,
+  "S_obs": 0.06274684298580024,
+  "p": 0.00024993751562109475,
+  "fpr_at_alpha": 0.0,
+  "power_f0.2": 1.0,
+  "verdict": "replicated"
+ }
+}

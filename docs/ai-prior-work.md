@@ -20,6 +20,7 @@ Legend: **[V]** = URL opened/returned by search this run (2026-11-04). **[K]** =
 
 ## 2. Data & tools
 - **Ched-ai/voynich-eva** (HF dataset, ZL v3b 2025-05-13, 4,072 loci, with section/Currier/hand/quire fields, SHA of source) [V] https://huggingface.co/datasets/Ched-ai/voynich-eva — best drop-in versioned dataset (Kryptos' rule: versioned, validated support data).
+  - *Note (Expedição 26, 2026-11-05):* release 0.2.3 of this dataset dropped 1,313 of ZL's 5,385 loci, fused words at drawing breaks and lost locus types; see VCAT's [ERRATA](https://github.com/noah-chelednik/voynich-data/blob/main/ERRATA.md) (E-002, E-003, E-007) and use release 1.0.0 or later. Our own work reads the ZL/IT IVTFF files directly (`data/`).
 - **noah-chelednik/voynich-data** (VCAT: IVTFF parsers, EVA validators, 5 transcriptions ZL/IT/CD/FG/GC + transcription-mismatch dataset) [V] https://github.com/noah-chelednik/voynich-data — the mismatch set quantifies transcription uncertainty → use as a "transcriber noise" null.
 - **Archetype: Voynich Palaeography** (Zenodo 18827108; 203 images, 1,684 annotated glyph images, 8 hands) [V] https://zenodo.org/records/18827108 — glyph/hand recognition training data for image-based cycles.
 - **Neural HTR on Voynich** (viridisgreen Medium; Scheidl's TF HTR; CER 7.6%, word acc 69%) [V] https://medium.com/viridisgreen/neural-network-handwritten-text-recognition-for-the-voynich-manuscript-29412af46d9c — proof that OCR from Beinecke scans is feasible.
