@@ -27,3 +27,34 @@ symbol, but blocks must be all nonzero). The lead pair is named in advance: **KH
 
 ## Results
 (Written after the run, below this line.)
+
+Run: `python3 tools/k028_markov_null_lead.py ../khipu.db` (37.6 s). Output: `analysis/k028_results.json`, log
+`k028_run1.log`.
+
+**Shuffler check: passed.** 0 violations in 20 shuffles of each of the 433 khipus; shuffles differ from the original
+for 91.4% of the 431 khipus with more than one possible order.
+
+| Test | Observed | Null | p | Verdict |
+|---|---|---|---|---|
+| **S** · any pair sharing a {1,2,3} 9-block (corpus-wide) | 1 pair | 0 pairs in 974 of 1 000, 1 pair in 25, 2 in 1 | **0.027** | **survives** (p < 0.05) |
+| D · longest shared block, lead pair only | 9 | most often 4; ≥ 9 in 1 of 20 000 | 1·10⁻⁴ | descriptive (not corrected for search) |
+
+**Reading.** Keeping each khipu's exact transition habits makes the lead look 50 times less rare than under K027's
+run null (0.027 against 0.0005). So part of what looked striking was khipu habit. It still clears the pre-registered
+bar, so it **survives**, but only just. Two cautions:
+1. The 9 and the {1,2,3} alphabet came from the lead. A different length or alphabet would give a different p, and
+   no correction covers that choice.
+2. K013's test that keeps run lengths gave 0.18 for this pair.
+
+So it stays a **lead, now harder to explain away**, not a link between sites.
+
+**Literature.** The Khipu Field Guide page for KH0240 (UR004) lists Urton (2006) on census records (*padrones
+poblacionales*). Small household counts (1–3) are what a census would record, which fits the shared alphabet but not
+the shared order. No source links UR004 with UR260.
+
+### Line 3 status
+**Advanced:** the lead survives the exact doublet null (p 0.027) after the K027 template exclusion. It's not
+confirmed, because the statistic was selected. Remaining test: a held-out confirmation fixed in advance, such as
+the same 9-block search on khipus newly added to the OKR after this commit. That is **data-limited** for now.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
