@@ -1,0 +1,192 @@
+{
+ "T_W": 74.81047708147231,
+ "null_max": {
+  "min": 74.5151110246764,
+  "median": 74.5151110246764,
+  "max": 82.28623377305763
+ },
+ "heldout_with_discovery": 2,
+ "calibrated": true,
+ "plants_found": 23,
+ "plants": 50,
+ "named": {
+  "KH0097/KH0586": {
+   "W": 131.86137050639894,
+   "CONFIRMED": true
+  },
+  "KH0192/KH0470": {
+   "W": 94.7444015466121,
+   "CONFIRMED": true
+  },
+  "KH0192/KH0469": {
+   "W": 80.7684253882482,
+   "CONFIRMED": true
+  }
+ },
+ "n_disc": 5,
+ "discoveries": [
+  {
+   "W": 138.47866960153075,
+   "A": "KH0491",
+   "B": "KH0503",
+   "nA": 16,
+   "nB": 19,
+   "known": false
+  },
+  {
+   "W": 131.86137050639894,
+   "A": "KH0097",
+   "B": "KH0586",
+   "nA": 25,
+   "nB": 15,
+   "known": false
+  },
+  {
+   "W": 123.42935065958645,
+   "A": "KH0502",
+   "B": "KH0514",
+   "nA": 21,
+   "nB": 19,
+   "known": false
+  },
+  {
+   "W": 94.7444015466121,
+   "A": "KH0192",
+   "B": "KH0470",
+   "nA": 42,
+   "nB": 18,
+   "known": false
+  },
+  {
+   "W": 80.7684253882482,
+   "A": "KH0192",
+   "B": "KH0469",
+   "nA": 42,
+   "nB": 19,
+   "known": false
+  }
+ ],
+ "sec": 6.9,
+ "stage2": [
+  {
+   "A": "KH0491",
+   "B": "KH0503",
+   "W": 138.47866960153075,
+   "matched": 15,
+   "V": 15,
+   "p2": 0.36176382361763826,
+   "stage2": false,
+   "known": false,
+   "A_meta": {
+    "okr": "KH0491",
+    "inv": "UR255",
+    "museum": "Projecto Incahuasi",
+    "mnum": "9228-13"
+   },
+   "B_meta": {
+    "okr": "KH0503",
+    "inv": "UR267A",
+    "museum": "Proyecto Incahuasi",
+    "mnum": "13092"
+   }
+  },
+  {
+   "A": "KH0097",
+   "B": "KH0586",
+   "W": 131.86137050639894,
+   "matched": 13,
+   "V": 89,
+   "p2": 9.999000099990002e-05,
+   "stage2": true,
+   "known": false,
+   "A_meta": {
+    "okr": "KH0097",
+    "inv": "UR1084",
+    "museum": "\"Musee Quai Branly, Paris, France\"",
+    "mnum": "71.1930.19.470"
+   },
+   "B_meta": {
+    "okr": "KH0586",
+    "inv": "HP055",
+    "museum": "Museo Nacional de Arqueologia, Anthropologia e Historia del Peru",
+    "mnum": "MNAAHP 29934"
+   }
+  },
+  {
+   "A": "KH0502",
+   "B": "KH0514",
+   "W": 123.42935065958645,
+   "matched": 12,
+   "V": 13,
+   "p2": 9.999000099990002e-05,
+   "stage2": true,
+   "known": false,
+   "A_meta": {
+    "okr": "KH0502",
+    "inv": "UR266",
+    "museum": "Proyecto Incahuasi",
+    "mnum": "13829"
+   },
+   "B_meta": {
+    "okr": "KH0514",
+    "inv": "UR275",
+    "museum": "Proyecto Incahuasi",
+    "mnum": "13836-2014"
+   }
+  },
+  {
+   "A": "KH0192",
+   "B": "KH0470",
+   "W": 94.7444015466121,
+   "matched": 14,
+   "V": 37,
+   "p2": 9.999000099990002e-05,
+   "stage2": true,
+   "known": false,
+   "A_meta": {
+    "okr": "KH0192",
+    "inv": "UR1175",
+    "museum": "\"Museum f\u00fcr V\u00f6lkerkunde, Berlin\"",
+    "mnum": "VA42518"
+   },
+   "B_meta": {
+    "okr": "KH0470",
+    "inv": "UR233",
+    "museum": "\"Ethnologisches Museum, Berlin, Germany\"",
+    "mnum": "VA 63038 b"
+   }
+  },
+  {
+   "A": "KH0192",
+   "B": "KH0469",
+   "W": 80.7684253882482,
+   "matched": 15,
+   "V": 36,
+   "p2": 9.999000099990002e-05,
+   "stage2": true,
+   "known": false,
+   "A_meta": {
+    "okr": "KH0192",
+    "inv": "UR1175",
+    "museum": "\"Museum f\u00fcr V\u00f6lkerkunde, Berlin\"",
+    "mnum": "VA42518"
+   },
+   "B_meta": {
+    "okr": "KH0469",
+    "inv": "UR232",
+    "museum": "\"Ethnologisches Museum, Berlin, Germany\"",
+    "mnum": "VA63038(B)"
+   }
+  }
+ ],
+ "K": 5,
+ "positive_controls": {
+  "KH0097/KH0586": true,
+  "KH0192/KH0470": true,
+  "KH0192/KH0469": true
+ },
+ "pipeline_ok": true,
+ "confirmed_new": [
+  "KH0502/KH0514"
+ ]
+}
