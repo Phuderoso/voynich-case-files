@@ -63,3 +63,18 @@ positions add noise to every class equally. The gates measure whether that noise
 planted half-gap. Width is a horizontal blank run in a fixed band. It ignores slant and tails that cross gaps.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Run 1 (as pre-registered, commit 3f4d93b4): NOT TESTABLE
+The line gate accepted only **9 lines** (f58r 2, f58v 0, f111r 3, f113v 4 of 111 DP matches). That gave 67 spaces,
+16 commas and 296 joins. Gates: FPR A 0/40, FPR B 0/40, **power A 18/40, power B 6/40**, so the gates **failed** and
+the verdict is **NOT TESTABLE**. Descriptive only: mean width spaces 19.4 px, commas 13.7, joins 6.7. The sanity
+check (spaces vs joins, +12.7 px, p 0.002) shows the anchor alignment sees real gaps. Look 2 (n = 16): Harris ρ −0.10
+(p 0.63), IT2a AUC 0.48 (p 0.56). `analysis/C039_results_run1.json`.
+
+## Amendment 1 (pushed before run 2)
+Cause: the run-count clause. Blank runs ≥ 10 px include within-word joins (8% of joins are ≥ 15 px), so the detected
+count overshoots spaces + commas + 1 on most lines. **Change: drop the run-count clause and keep the length clause**
+(within 25%). A geometry-only count gives 97 accepted lines (26/20/32/19). Nothing else changes: method, tests, α,
+gates and decision rule are the same. Run 1 is kept as is (env `C039_RUN_GATE=1` reproduces it). The amendment was
+made after seeing run 1, and I say so here. Its risk is that more lines are misassigned, which adds noise to every
+class equally. The FPR and power gates still decide whether the run is testable.

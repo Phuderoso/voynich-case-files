@@ -25,6 +25,10 @@ INK_T, BG_R = 30, 25                 # ink = background(blur 25) - pixel > 30
 SEED_W, STRIP, MD, TRACK = 320, 150, 45, 22
 BAND = (-14, 10)                     # core band around traced line centre
 RUN_MIN, END_GAP, CAP = 10, 60, 60   # anchor-candidate run >=10 px; line ends at first blank run >=60 px; widths capped
+# Amendment 1 (pushed before run 2): run 1 accepted only 9 lines -> NOT TESTABLE. The run-count clause of the line gate is
+# dropped (runs >= 10 px include within-word joins, so counts overshoot); the length clause stays. Run 1: RUN_GATE = True.
+RUN_GATE = os.environ.get('C039_RUN_GATE', '0') == '1'
+OUT = 'analysis/C039_results_run1.json' if RUN_GATE else 'analysis/C039_results.json'
 
 def wt(u):
     if u in ('ch', 'sh'): return 1.6
@@ -183,7 +187,7 @@ def main():
             if loc not in Z: continue
             u, g = Z[loc]; t = tr[ti]
             # acceptance gate (symmetric in commas): detected runs within [spaces-1, spaces+commas+1]; length within 25%
-            ok = zl[zi][1] - 1 <= len(t['runs']) <= zl[zi][1] + zl[zi][2] + 1 and \
+            ok = (not RUN_GATE or zl[zi][1] - 1 <= len(t['runs']) <= zl[zi][1] + zl[zi][2] + 1) and \
                  abs((t['xb'] - t['xa']) / ppw - zl[zi][3]) <= 0.25 * zl[zi][3]
             if not ok: rej += 1; continue
             wd, na, ns = measure_line(t, u, g, ppw); anc[0] += na; anc[1] += ns
@@ -259,7 +263,8 @@ def main():
         R['look2_it2a'] = dict(n=int(len(yv)), note='one class empty')
     R['seconds'] = round(time.time() - t0, 1)
     print(R['gates'], R['verdict'], R['look2_harris'], R['look2_it2a'], R['seconds'], flush=True)
-    json.dump(R, open('analysis/C039_results.json', 'w'), indent=1, default=float)
+    R['run_gate'] = RUN_GATE
+    json.dump(R, open(OUT, 'w'), indent=1, default=float)
 
 if __name__ == '__main__':
     main()
