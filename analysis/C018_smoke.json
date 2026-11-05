@@ -1,0 +1,389 @@
+{
+ "seed": 19017,
+ "smoke": true,
+ "NW": 100,
+ "NITEM": 2,
+ "RESTARTS": 8,
+ "ITERS": 12000,
+ "salt": "9dc6c3712cbaadff",
+ "seconds": 32.1,
+ "summary": {
+  "STRICT": {
+   "by_class": {
+    "P1": [
+     0.37,
+     0.45
+    ],
+    "P2": [
+     0.48,
+     0.56
+    ],
+    "N1": [
+     0.53,
+     0.73
+    ],
+    "N2": [
+     0.43,
+     0.55
+    ],
+    "N3": [
+     0.53,
+     0.53
+    ],
+    "V": [
+     0.45,
+     0.46
+    ]
+   },
+   "neg_p95": 0.73,
+   "neg_max": 0.73,
+   "gate_class": "P1",
+   "gate_hits": 0,
+   "gate_pass": false,
+   "voynich_above_negmax": 0,
+   "n_na": 0,
+   "oracle_P": {
+    "P1": [
+     0.53,
+     0.48
+    ],
+    "P2": [
+     0.62,
+     0.51
+    ]
+   }
+  },
+  "LENIENT": {
+   "by_class": {
+    "P1": [
+     0.9,
+     0.92
+    ],
+    "P2": [
+     0.91,
+     0.92
+    ],
+    "N1": [
+     0.98,
+     1.0
+    ],
+    "N2": [
+     0.88,
+     0.88
+    ],
+    "N3": [
+     0.91,
+     0.91
+    ],
+    "V": [
+     0.95,
+     1.0
+    ]
+   },
+   "neg_p95": 1.0,
+   "neg_max": 1.0,
+   "gate_class": "P2",
+   "gate_hits": 0,
+   "gate_pass": false,
+   "voynich_above_negmax": 0,
+   "n_na": 0,
+   "oracle_P": {
+    "P1": [
+     0.63,
+     0.62
+    ],
+    "P2": [
+     0.61,
+     0.81
+    ]
+   }
+  },
+  "INJ": {
+   "by_class": {
+    "P1": [
+     0.48,
+     0.53
+    ],
+    "P2": [
+     0.16,
+     0.23
+    ],
+    "N1": [
+     0.25,
+     0.29
+    ],
+    "N2": [
+     0.12,
+     0.17
+    ],
+    "N3": [
+     0.15,
+     0.16
+    ],
+    "V": [
+     0.18,
+     0.21
+    ]
+   },
+   "neg_p95": 0.29,
+   "neg_max": 0.29,
+   "gate_class": "P1",
+   "gate_hits": 2,
+   "gate_pass": true,
+   "voynich_above_negmax": 0,
+   "n_na": 0,
+   "oracle_P": {
+    "P1": [
+     0.53,
+     0.48
+    ],
+    "P2": [
+     0.62,
+     0.51
+    ]
+   }
+  }
+ },
+ "items": [
+  {
+   "id": "B00",
+   "cls": "N1",
+   "folio": null,
+   "STRICT": {
+    "cmr": 0.53,
+    "type_cmr": 0.5344827586206896,
+    "sample": "xii xxxii iiiiii xxxii xxii xxii iiiiiii xxii iiiii xii xxiiii xxii"
+   },
+   "LENIENT": {
+    "cmr": 1.0,
+    "type_cmr": 1.0,
+    "sample": "sme tssru teenru tssme tsry tsme rumteen tsme teyry sme tsmery tstu"
+   },
+   "INJ": {
+    "cmr": 0.25,
+    "type_cmr": 0.22413793103448276,
+    "sample": "uod quuim acctim quuod quis quod imoacct quod acsis uod quodis quam"
+   }
+  },
+  {
+   "id": "B01",
+   "cls": "P2",
+   "folio": null,
+   "STRICT": {
+    "cmr": 0.56,
+    "type_cmr": 0.49411764705882355,
+    "sample": "iiiiiiii viiii ii iiiiixxii vvvhhiiiii iiii viiii viiiii iii vhiiiiiixxi iiiix iii"
+   },
+   "LENIENT": {
+    "cmr": 0.91,
+    "type_cmr": 0.9058823529411765,
+    "sample": "mttttnri ymtri te mtttneeii yyyuuniiir tacs yterr yttiir rra yumttnneeei ttere tis"
+   },
+   "INJ": {
+    "cmr": 0.23,
+    "type_cmr": 0.1411764705882353,
+    "sample": "frriiext pfimt in fiiieuutt pppqqettts rvgc pinxs piitto xxv pqfiieenuut iinxu ita"
+   }
+  },
+  {
+   "id": "B02",
+   "cls": "N2",
+   "folio": null,
+   "STRICT": {
+    "cmr": 0.43,
+    "type_cmr": 0.43,
+    "sample": "iiiiiiiiii iiiiii iiiiii iiiiiiv iiii iiiiii iiii iiii iiiiii iiiiiv iiiii iiiii"
+   },
+   "LENIENT": {
+    "cmr": 0.88,
+    "type_cmr": 0.88,
+    "sample": "iontpooatt stoaii tatnsc rintitm soar tanttt iisc cont itmtto tosiam assns ittsn"
+   },
+   "INJ": {
+    "cmr": 0.12,
+    "type_cmr": 0.12,
+    "sample": "salnyaabxn dnubss nbnlit eslnsno iure xblnnn ssit tuln sxcnnu nuisbo bddld snndl"
+   }
+  },
+  {
+   "id": "B03",
+   "cls": "N1",
+   "folio": null,
+   "STRICT": {
+    "cmr": 0.73,
+    "type_cmr": 0.6764705882352942,
+    "sample": "viii iii viii viii fvii xiiii iii iii ii iii iiiiii viii"
+   },
+   "LENIENT": {
+    "cmr": 0.98,
+    "type_cmr": 0.9705882352941176,
+    "sample": "srnr stn srsr srst dstn ytntn str str sr tym tyymtr srst"
+   },
+   "INJ": {
+    "cmr": 0.29,
+    "type_cmr": 0.22058823529411764,
+    "sample": "eiri hoc eihi eiho xeac fococ hos hos hi ant anntas eiho"
+   }
+  },
+  {
+   "id": "B04",
+   "cls": "P1",
+   "folio": null,
+   "STRICT": {
+    "cmr": 0.45,
+    "type_cmr": 0.37662337662337664,
+    "sample": "iigvisiiii iiiigiii iiiigigi iisii ii iii iiii iisiii iiiii iiiii iiii iiiiii"
+   },
+   "LENIENT": {
+    "cmr": 0.9,
+    "type_cmr": 0.935064935064935,
+    "sample": "asatsipuor ompsauor morsasas mutsp rn scc uars trtsnr ummrt uasrt srrs acrrst"
+   },
+   "INJ": {
+    "cmr": 0.48,
+    "type_cmr": 0.4805194805194805,
+    "sample": "perjectius ulterius quaerere libet an ego ipse habens illam ideam esse possem"
+   }
+  },
+  {
+   "id": "B05",
+   "cls": "N2",
+   "folio": null,
+   "STRICT": {
+    "cmr": 0.55,
+    "type_cmr": 0.5416666666666666,
+    "sample": "iii iii iiiii ii iii ii iiiii iiii ii iii ii iiii"
+   },
+   "LENIENT": {
+    "cmr": 0.88,
+    "type_cmr": 0.8854166666666666,
+    "sample": "mnm pte rrtnt mr mss tr peeer sett es rer ns nrga"
+   },
+   "INJ": {
+    "cmr": 0.17,
+    "type_cmr": 0.14583333333333334,
+    "sample": "usu vir bbisi at ace it vrrrb eoii re bob sc stkd"
+   }
+  },
+  {
+   "id": "B06",
+   "cls": "V",
+   "folio": "f113v",
+   "STRICT": {
+    "cmr": 0.45,
+    "type_cmr": 0.4069767441860465,
+    "sample": "xiiiii iiiii iyiiiiii iiiiii iiiiii iii iiivi iiiig iiiiii iiiii iiiiiiii xiiiii"
+   },
+   "LENIENT": {
+    "cmr": 1.0,
+    "type_cmr": 1.0,
+    "sample": "aroitn rstit rintnyyc rsirtn rsnyyc rsm ntrmn ttire rsnyyc rsitn rsrtnyyc aroiin"
+   },
+   "INJ": {
+    "cmr": 0.18,
+    "type_cmr": 0.10465116279069768,
+    "sample": "jelova etvoi edsismmb etoeua etsmmb etc sieha uvoen etsmmb etoua eteusmmb jelooa"
+   }
+  },
+  {
+   "id": "B07",
+   "cls": "P2",
+   "folio": null,
+   "STRICT": {
+    "cmr": 0.48,
+    "type_cmr": 0.449438202247191,
+    "sample": "vii viiii xiiii viiiiii iiiiii ixiiiiii viiiiiii v iiiii iiiii xiiiiiiii ii"
+   },
+   "LENIENT": {
+    "cmr": 0.92,
+    "type_cmr": 0.9101123595505618,
+    "sample": "yst ynirc inait yssrtee snautt siaaaart ybaaaist y sriit nictt ibaaartte te"
+   },
+   "INJ": {
+    "cmr": 0.16,
+    "type_cmr": 0.1348314606741573,
+    "sample": "dat denig cemub daaijpp remost rcmmmmis dqmmmnab d aiuus eugss cqmmmistp tp"
+   }
+  },
+  {
+   "id": "B08",
+   "cls": "N3",
+   "folio": "f80v",
+   "STRICT": {
+    "cmr": 0.53,
+    "type_cmr": 0.53,
+    "sample": "cccccccccc ccc ccccc cccc ccucc cccc cccc ccccc ccc cccccc ccc ccccccc"
+   },
+   "LENIENT": {
+    "cmr": 0.91,
+    "type_cmr": 0.91,
+    "sample": "sromrstsst tnn uttuu cnms umnro cstu ntsb rtsos snt sunomr rso ronttnc"
+   },
+   "INJ": {
+    "cmr": 0.16,
+    "type_cmr": 0.16,
+    "sample": "qembeuauui inn tiitt sncq tbyem suat niqo eiumu una utnmce eum evndins"
+   }
+  },
+  {
+   "id": "B09",
+   "cls": "N3",
+   "folio": "f42r",
+   "STRICT": {
+    "cmr": 0.53,
+    "type_cmr": 0.53,
+    "sample": "iiinii iiiiii iiiiii iiiii iimiiiii iii iiii biiiiii iiiiii iiii iiiii ibiii"
+   },
+   "LENIENT": {
+    "cmr": 0.91,
+    "type_cmr": 0.91,
+    "sample": "nymrtc tsrvrr crtnny rtnny tseucrtt rtt crcy mutrucn ocyryy utrc cunrc sqtus"
+   },
+   "INJ": {
+    "cmr": 0.15,
+    "type_cmr": 0.15,
+    "sample": "aehfon vmdcuu qdvaae uoaae smjtquov usv ndne ptsdtra lreuee tsun qtadr mgotm"
+   }
+  },
+  {
+   "id": "B10",
+   "cls": "V",
+   "folio": "f112r",
+   "STRICT": {
+    "cmr": 0.46,
+    "type_cmr": 0.5066666666666667,
+    "sample": "iiiii ii iiiiii vii iiii ii viiii viii iiiiii iiiiii iiiiii iii"
+   },
+   "LENIENT": {
+    "cmr": 0.95,
+    "type_cmr": 0.9466666666666667,
+    "sample": "sotev sv svteed ssv sotn sn sartn saat soaart soaart soteed sot"
+   },
+   "INJ": {
+    "cmr": 0.21,
+    "type_cmr": 0.12,
+    "sample": "etsxo eo eosxxp ceo etsi ei cuvsi cuum etuuvm etuuvm etsxxp etm"
+   }
+  },
+  {
+   "id": "B11",
+   "cls": "P1",
+   "folio": null,
+   "STRICT": {
+    "cmr": 0.37,
+    "type_cmr": 0.32142857142857145,
+    "sample": "hanc n cncacn ccdcccccac ac cac cc hac ncjcccncc dccac ccc cccac"
+   },
+   "LENIENT": {
+    "cmr": 0.92,
+    "type_cmr": 0.9166666666666666,
+    "sample": "amit i nirmei tsytuutsme mr oms tt amt iteearinr yarms ptu otoms"
+   },
+   "INJ": {
+    "cmr": 0.53,
+    "type_cmr": 0.4523809523809524,
+    "sample": "quae a natura impellimur ut cum ii qui aeyrotant potum vel cibum"
+   }
+  }
+ ]
+}
