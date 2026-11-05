@@ -1,0 +1,76 @@
+Voynich_ZL3b {'tokens': 38834, 'types': 8104, 'tv_mean': 0.03422902823549961, 'tv_2.5': 0.016850823666304887, 'tv_97.5': 0.05484493151821303} 3
+Latin_Caesar {'tokens': 20547, 'types': 5687, 'tv_mean': 0.08086771304536998, 'tv_2.5': 0.057493915128529804, 'tv_97.5': 0.10471303528809113} 5
+Latin_Descartes {'tokens': 20834, 'types': 4825, 'tv_mean': 0.08513414608021494, 'tv_2.5': 0.05624758538065436, 'tv_97.5': 0.11595255529074375} 7
+Italian_Dante {'tokens': 102005, 'types': 12669, 'tv_mean': 0.06496240001127514, 'tv_2.5': 0.04149466402634783, 'tv_97.5': 0.09149988648879197} 10
+Italian_Machiavelli {'tokens': 29883, 'types': 4795, 'tv_mean': 0.08367176942199737, 'tv_2.5': 0.06164620262740391, 'tv_97.5': 0.10686931382073572} 12
+Spanish_Cervantes {'tokens': 383633, 'types': 22470, 'tv_mean': 0.05332288123890916, 'tv_2.5': 0.03247988847287135, 'tv_97.5': 0.0755469662519776} 14
+Hebrew_Genesis {'tokens': 20629, 'types': 5007, 'tv_mean': 0.08187476022984215, 'tv_2.5': 0.06195551462359872, 'tv_97.5': 0.10380111057435872} 16
+Hebrew_Exodus {'tokens': 16726, 'types': 4170, 'tv_mean': 0.08719791390216404, 'tv_2.5': 0.06651657183223364, 'tv_97.5': 0.10971840733796434} 19
+Generator_TimmSchinner {'tokens': 10832, 'types': 2228, 'tv_mean': 0.05380557161208368, 'tv_2.5': 0.034702726726587925, 'tv_97.5': 0.07501237949072094} 21
+{
+ "gates": {
+  "calibration_p": {
+   "Latin_Caesar": {
+    "A_vs_B": 0.31134432783608196,
+    "B_vs_A": 0.6891554222888556
+   },
+   "Latin_Descartes": {
+    "A_vs_B": 0.19640179910044978,
+    "B_vs_A": 0.8040979510244878
+   },
+   "Italian_Dante": {
+    "A_vs_B": 0.5782108945527237,
+    "B_vs_A": 0.4222888555722139
+   },
+   "Italian_Machiavelli": {
+    "A_vs_B": 0.703648175912044,
+    "B_vs_A": 0.29685157421289354
+   },
+   "Spanish_Cervantes": {
+    "A_vs_B": 0.5107446276861569,
+    "B_vs_A": 0.4897551224387806
+   },
+   "Hebrew_Genesis": {
+    "A_vs_B": 0.7566216891554223,
+    "B_vs_A": 0.24387806096951525
+   },
+   "Hebrew_Exodus": {
+    "A_vs_B": 0.19940029985007496,
+    "B_vs_A": 0.8010994502748626
+   }
+  },
+  "false_positives_of_14": 0,
+  "power_p": {
+   "Latin_Caesar": 0.004497751124437781,
+   "Latin_Descartes": 0.0069965017491254375,
+   "Italian_Dante": 0.01649175412293853,
+   "Italian_Machiavelli": 0.0014992503748125937,
+   "Spanish_Cervantes": 0.08845577211394302,
+   "Hebrew_Genesis": 0.0004997501249375312,
+   "Hebrew_Exodus": 0.0004997501249375312
+  },
+  "power_hits_of_7": 5,
+  "alpha_7": 0.0071428571428571435
+ },
+ "p_holm": {
+  "Hebrew_Genesis": 0.0034982508745627187,
+  "Hebrew_Exodus": 0.0034982508745627187,
+  "Italian_Machiavelli": 0.0074962518740629685,
+  "Latin_Descartes": 0.0079960019990005,
+  "Latin_Caesar": 0.010494752623688156,
+  "Italian_Dante": 0.05897051474262868,
+  "Spanish_Cervantes": 0.10294852573713144
+ },
+ "reverse_p_control_closer_than_voynich": {
+  "Latin_Caesar": 0.9970014992503748,
+  "Latin_Descartes": 0.9985007496251874,
+  "Italian_Dante": 0.9710144927536232,
+  "Italian_Machiavelli": 0.999000499750125,
+  "Spanish_Cervantes": 0.8975512243878061,
+  "Hebrew_Genesis": 1.0,
+  "Hebrew_Exodus": 1.0
+ },
+ "generator_look_p": 0.08395802098950525,
+ "verdict_H1": "NOT TESTABLE",
+ "seconds": 71.4
+}
