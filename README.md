@@ -31,6 +31,9 @@ meaning across many folios and beats the controls.
 | 1 | Vocabulary vs. page labels (conditional MI, label-permutation null) | Section vs. LFD hand vs. Currier A/B | ZL 3b | Hand and section each carry vocabulary information beyond the other (p = 0.0005, both controls pass). **Corrected in C002**: C001's null was miscalibrated. [C001](case-file/C001-section-vs-hand-vs-currier.md) |
 | 2 | Null calibration audit (40 destroyed-signal replicates, size-blocked permutation) | Is C001's null calibrated? Does hand add vocabulary info beyond section *and* Currier? | ZL 3b | C001's null gave false positives 35–44% of the time; withdrawn. With a calibrated null all C001 effects survive at K=300 at about half size. Hand beyond section×Currier: not detected (p = 0.081). [C002](case-file/C002-null-calibration-audit.md) |
 
+## Parallel expeditions
+- [Inka khipu](expeditions/khipu/README.md): exact arithmetic tests on the Open Khipu Repository. Why this one: [triage](expeditions/TRIAGE.md).
+
 ## Outreach log
 None yet.
 
