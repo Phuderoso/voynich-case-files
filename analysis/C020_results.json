@@ -1,0 +1,517 @@
+{
+ "seed": 20020,
+ "neg_max": 0.37,
+ "detected": {
+  "P1": 10,
+  "PH": 0,
+  "PV": 0,
+  "PN": 0
+ },
+ "control_valid": true,
+ "verdict": {
+  "PH": "not covered",
+  "PV": "not covered",
+  "PN": "not covered"
+ },
+ "na": {
+  "PH": 10
+ },
+ "by_class": {
+  "P1": [
+   0.51,
+   0.53,
+   0.55,
+   0.55,
+   0.56,
+   0.58,
+   0.58,
+   0.58,
+   0.6,
+   0.6
+  ],
+  "PH": [],
+  "PV": [
+   0.1,
+   0.13,
+   0.14,
+   0.16,
+   0.17,
+   0.17,
+   0.18,
+   0.18,
+   0.2,
+   0.23
+  ],
+  "PN": [
+   0.18,
+   0.26,
+   0.28,
+   0.29,
+   0.31,
+   0.32,
+   0.32,
+   0.34,
+   0.34,
+   0.36
+  ],
+  "N1": [
+   0.25,
+   0.25,
+   0.25,
+   0.26,
+   0.26,
+   0.27,
+   0.27,
+   0.29,
+   0.35,
+   0.37
+  ],
+  "N2": [
+   0.12,
+   0.12,
+   0.14,
+   0.14,
+   0.14,
+   0.14,
+   0.14,
+   0.15,
+   0.15,
+   0.16
+  ],
+  "N3": [
+   0.07,
+   0.09,
+   0.1,
+   0.12,
+   0.12,
+   0.13,
+   0.13,
+   0.14,
+   0.16,
+   0.19
+  ]
+ },
+ "seconds": 109.1,
+ "items": [
+  {
+   "cls": "N2",
+   "oracle": null,
+   "cmr": 0.14,
+   "sample": "cc xnme xxmrad bis ramxdq rgnxdd msnetld sxnriin abiusxx xxxcb eocsu ivcir"
+  },
+  {
+   "cls": "N2",
+   "oracle": null,
+   "cmr": 0.16,
+   "sample": "saco ei eljeeto xx etba eosbb jiu aadae fbx eae ab oejp"
+  },
+  {
+   "cls": "PV",
+   "oracle": 0.73,
+   "cmr": 0.23,
+   "sample": "hbisc diyimviq avinyibimyir svic kuiaavi dijbinyibix di sbihbijui lbivirbi svic vimbidiq bix"
+  },
+  {
+   "cls": "PN",
+   "oracle": 0.53,
+   "cmr": 0.31,
+   "sample": "ipvis ut cukitationis meae duosdam oodos considerarem nec ad quidqcum aliup rhperrhm"
+  },
+  {
+   "cls": "N1",
+   "oracle": null,
+   "cmr": 0.25,
+   "sample": "poost postea post post equr pua eaulliua ula psulli tculli sua uiea"
+  },
+  {
+   "cls": "P1",
+   "oracle": 0.56,
+   "cmr": 0.56,
+   "sample": "nec etiam a me efficta est nam nihil ab illa detrahere nihil"
+  },
+  {
+   "cls": "PH",
+   "oracle": 0.59,
+   "cmr": null,
+   "sample": "NA"
+  },
+  {
+   "cls": "PN",
+   "oracle": 0.52,
+   "cmr": 0.32,
+   "sample": "fovte id ruluas hajillandi orcasionnm injeniant son facile tayen eliqgid quod urdeat"
+  },
+  {
+   "cls": "N3",
+   "oracle": null,
+   "cmr": 0.13,
+   "sample": "mupu ikunop usu iiium ius itt in bii muik mppdb uvu imii"
+  },
+  {
+   "cls": "N1",
+   "oracle": null,
+   "cmr": 0.26,
+   "sample": "vita hes eoita hik eum ita ita hisita vita adis is rem"
+  },
+  {
+   "cls": "N3",
+   "oracle": null,
+   "cmr": 0.16,
+   "sample": "eeneeu axinci xv xtnaxvc sscau ssxnias cei vtcut at quo sci excxntv"
+  },
+  {
+   "cls": "PH",
+   "oracle": 0.67,
+   "cmr": null,
+   "sample": "NA"
+  },
+  {
+   "cls": "PV",
+   "oracle": 0.52,
+   "cmr": 0.16,
+   "sample": "elijulijsivin sihvittvi alia cvixsili bfidi jditviliasi ulinnsit viatsirrviqvi viunfih alia sinnsi kdirrdiesih"
+  },
+  {
+   "cls": "N2",
+   "oracle": null,
+   "cmr": 0.14,
+   "sample": "yyn tiihh ea l imo anlh lyeo oule yuul thiht ailqhe at"
+  },
+  {
+   "cls": "PV",
+   "oracle": 0.48,
+   "cmr": 0.18,
+   "sample": "pliaxvicsidli xthitviu hikalixpli bsidsinvikfihiu viyyhiu sit jhiycsi rviavithiu via usi sixxsi xviufiyefisi"
+  },
+  {
+   "cls": "PH",
+   "oracle": 0.59,
+   "cmr": null,
+   "sample": "NA"
+  },
+  {
+   "cls": "PN",
+   "oracle": 0.6,
+   "cmr": 0.34,
+   "sample": "scblihev ut nec unhe venissea nec quo abiret viderem ngn immonito smecqrum"
+  },
+  {
+   "cls": "N2",
+   "oracle": null,
+   "cmr": 0.14,
+   "sample": "een scxj psjesvps eiej ippanioeejrnke end aynebe aia pgsj rnuoec evie ngisv"
+  },
+  {
+   "cls": "PH",
+   "oracle": 0.53,
+   "cmr": null,
+   "sample": "NA"
+  },
+  {
+   "cls": "PH",
+   "oracle": 0.53,
+   "cmr": null,
+   "sample": "NA"
+  },
+  {
+   "cls": "N3",
+   "oracle": null,
+   "cmr": 0.12,
+   "sample": "sssncpbn lnqnafe uet abggpa snn ytptsep ssc pegbs ttgaps aatts eiier ntm"
+  },
+  {
+   "cls": "N1",
+   "oracle": null,
+   "cmr": 0.25,
+   "sample": "cxvi kuqalm qalm fxvi alm unum um valle vallh ae carae valr"
+  },
+  {
+   "cls": "PN",
+   "oracle": 0.52,
+   "cmr": 0.28,
+   "sample": "iulao rebus istis simioes csse deberl quinimo ii mjltis saepe magnum discrimep"
+  },
+  {
+   "cls": "PV",
+   "oracle": 0.53,
+   "cmr": 0.13,
+   "sample": "sinnvitdircviphia njiracsiqdi adit ohiqsig diaadi ahipacsircvisig dicavi dirvig jigrvisi dimhia sinnvitdircvisi ghicdirchiq"
+  },
+  {
+   "cls": "N2",
+   "oracle": null,
+   "cmr": 0.15,
+   "sample": "hkcuv qeaxqhepb hhei oded cs rsahdcb bop accb uudc cnacihan aaanvda sinnctnoc"
+  },
+  {
+   "cls": "N3",
+   "oracle": null,
+   "cmr": 0.07,
+   "sample": "dvssn m y ajeugkys y q iis adit igni a e gsysad"
+  },
+  {
+   "cls": "P1",
+   "oracle": 0.53,
+   "cmr": 0.53,
+   "sample": "eodem modo a qualibet ex iis quae interjacent quamvis illa remotior nihil"
+  },
+  {
+   "cls": "P1",
+   "oracle": 0.55,
+   "cmr": 0.55,
+   "sample": "reliquis omnes appetitus et affectus in illo et pro illo sentiebam ac"
+  },
+  {
+   "cls": "N1",
+   "oracle": null,
+   "cmr": 0.27,
+   "sample": "upro elx uppo sirei rela rsi ellaei nec upsi usirei usi si"
+  },
+  {
+   "cls": "N3",
+   "oracle": null,
+   "cmr": 0.14,
+   "sample": "cxcmi evamcaxaia eccm ibc aviah sccacc acnuo eam simbiu by amabiavyv coo"
+  },
+  {
+   "cls": "N2",
+   "oracle": null,
+   "cmr": 0.15,
+   "sample": "eo rdlsod uuus pmlm ut erh ees heaoa aliot dimott uaso ueits"
+  },
+  {
+   "cls": "P1",
+   "oracle": 0.58,
+   "cmr": 0.58,
+   "sample": "nervis musculis venis sanguine et pellibus ita aptum et compositum ut etiamsi"
+  },
+  {
+   "cls": "P1",
+   "oracle": 0.51,
+   "cmr": 0.51,
+   "sample": "ex quibus collecta est ejus co lor figura magnitudo manifesta sunt dura"
+  },
+  {
+   "cls": "P1",
+   "oracle": 0.55,
+   "cmr": 0.55,
+   "sample": "cognitu facillimum nihilque in quo sequentia cum antecedentibus non accurate cohaereant quia"
+  },
+  {
+   "cls": "N1",
+   "oracle": null,
+   "cmr": 0.27,
+   "sample": "kerat at soope sopean auum pin iooat ri sin sin iri aux"
+  },
+  {
+   "cls": "PH",
+   "oracle": 0.53,
+   "cmr": null,
+   "sample": "NA"
+  },
+  {
+   "cls": "P1",
+   "oracle": 0.6,
+   "cmr": 0.6,
+   "sample": "aliud quid illas rejeram jalsae proprie esse non possunt nam sive capram"
+  },
+  {
+   "cls": "N1",
+   "oracle": null,
+   "cmr": 0.25,
+   "sample": "pqit fit fanqos aduan adire fuos pquos vacquos vacin sdirre atcquos adirre"
+  },
+  {
+   "cls": "PH",
+   "oracle": 0.55,
+   "cmr": null,
+   "sample": "NA"
+  },
+  {
+   "cls": "PV",
+   "oracle": 0.6,
+   "cmr": 0.2,
+   "sample": "hgejvemnemvegelrei vel hreymne jrelreyne uveimyveqaenec rem vel kaeveqaeilnec rex vessvei treyvemnei neaem"
+  },
+  {
+   "cls": "N2",
+   "oracle": null,
+   "cmr": 0.12,
+   "sample": "fgvedv vccuxvi cte ditn mxcvm soq eitic sqiinenqc axxt adatcm ahscv lceiae"
+  },
+  {
+   "cls": "N2",
+   "oracle": null,
+   "cmr": 0.12,
+   "sample": "ubi cba umcdtdcd puim veuy iqq ummpc bdudpb csuamd ueri imiquu rdrce"
+  },
+  {
+   "cls": "N3",
+   "oracle": null,
+   "cmr": 0.12,
+   "sample": "leimrx isinbibil extxb biubev xblie lbvbib inbbxxl viltl xgqs ailibari sgl een"
+  },
+  {
+   "cls": "PH",
+   "oracle": 0.59,
+   "cmr": null,
+   "sample": "NA"
+  },
+  {
+   "cls": "PN",
+   "oracle": 0.48,
+   "cmr": 0.18,
+   "sample": "sedsus odinopgerya gipefilfy non fulen gdpea lyreciyun ouria loklron sedyia tejso koel"
+  },
+  {
+   "cls": "N1",
+   "oracle": null,
+   "cmr": 0.29,
+   "sample": "ut retula di dula ipex eret ulla sut rdutut ua rexeh diset"
+  },
+  {
+   "cls": "PV",
+   "oracle": 0.51,
+   "cmr": 0.14,
+   "sample": "hmihhgiegid evilnix qniygixvixgiu vix tniyxni nixgiviaugi yniujgitginihsmi vis tmiyjriu ekisymijni dvilmiyvihu ugix"
+  },
+  {
+   "cls": "N3",
+   "oracle": null,
+   "cmr": 0.19,
+   "sample": "oeue ifvri an aisicci vxv hugsie huiiiuvvy shu eigs ugu rnib iievu"
+  },
+  {
+   "cls": "PH",
+   "oracle": 0.49,
+   "cmr": null,
+   "sample": "NA"
+  },
+  {
+   "cls": "PN",
+   "oracle": 0.51,
+   "cmr": 0.29,
+   "sample": "regis ajexdis sed cojnyscendis iantum incumgo suyyxnkm ijitur njn oytomrm deum xontnm"
+  },
+  {
+   "cls": "PV",
+   "oracle": 0.61,
+   "cmr": 0.18,
+   "sample": "ueir alia nireili fliuucij aeigvipei hcinia jviylip hcilirvijjlirli feipkeimsnili unis nia slisvi"
+  },
+  {
+   "cls": "N1",
+   "oracle": null,
+   "cmr": 0.26,
+   "sample": "etmus iut illam maut illeo iutam etaeo ilmiut faut etaeo illam et"
+  },
+  {
+   "cls": "PN",
+   "oracle": 0.63,
+   "cmr": 0.36,
+   "sample": "posve ut sim eixes sed contra quo jagis in unam clopeqded sive"
+  },
+  {
+   "cls": "N3",
+   "oracle": null,
+   "cmr": 0.1,
+   "sample": "unicn xen asvts vnisnu vxn a dat vtet q vnevtnn vnvivnnd innoav"
+  },
+  {
+   "cls": "PN",
+   "oracle": 0.62,
+   "cmr": 0.34,
+   "sample": "ut nelueam amplias earpm oblivisci uec videam eaben qea rutione stlvendae ssnf"
+  },
+  {
+   "cls": "N1",
+   "oracle": null,
+   "cmr": 0.37,
+   "sample": "cora bis vicis vifis vibem itennj cim eyimis ciy ara idem vicem"
+  },
+  {
+   "cls": "PN",
+   "oracle": 0.57,
+   "cmr": 0.26,
+   "sample": "adei of sefsus esset le ftnxl plane bicfisbere quid ad esseftxam meam"
+  },
+  {
+   "cls": "PN",
+   "oracle": 0.59,
+   "cmr": 0.32,
+   "sample": "re melias possq etcokitari quam si euu ingerat qui ex omnibus quom"
+  },
+  {
+   "cls": "N2",
+   "oracle": null,
+   "cmr": 0.14,
+   "sample": "xcoxxni tndqcnt eanbvb isnn fit sniquijti puyfx avebys eqaibybx vias xnn tiny"
+  },
+  {
+   "cls": "P1",
+   "oracle": 0.58,
+   "cmr": 0.58,
+   "sample": "corporis perceptionem possint kuvare quin eaedem omnes mentis meae naturam melius probent"
+  },
+  {
+   "cls": "PV",
+   "oracle": 0.67,
+   "cmr": 0.17,
+   "sample": "xdiptvin uliglipsim msiatvi nsimxsip sicovirsidit sit nvi yfidiauli hdifijvifim dipviuvitdin alia fit"
+  },
+  {
+   "cls": "PH",
+   "oracle": 0.45,
+   "cmr": null,
+   "sample": "NA"
+  },
+  {
+   "cls": "P1",
+   "oracle": 0.58,
+   "cmr": 0.58,
+   "sample": "inesse debet quae est obyective in ideis ab ista facultate productis ut"
+  },
+  {
+   "cls": "N3",
+   "oracle": null,
+   "cmr": 0.09,
+   "sample": "lircuot rcsxl xxcovp dvsiaio ivvita ihvv ii xii bbir kmpsts kdxhxv pvvmih"
+  },
+  {
+   "cls": "P1",
+   "oracle": 0.6,
+   "cmr": 0.6,
+   "sample": "credamus non tamen hoc infidelibus proponi potest quia circulum esse yudicarent et"
+  },
+  {
+   "cls": "PV",
+   "oracle": 0.66,
+   "cmr": 0.17,
+   "sample": "mkarrfa tam uafa bkafaua sua vtaq bkafauaqltaiamtankaq falltahuadfae mialfalka stahmfa ianouaxlfa qkaml"
+  },
+  {
+   "cls": "N3",
+   "oracle": null,
+   "cmr": 0.13,
+   "sample": "acsi niit ccmjig nices ienk kedq ioyksi neqiq oec saaeq drsarad uueomc"
+  },
+  {
+   "cls": "N2",
+   "oracle": null,
+   "cmr": 0.14,
+   "sample": "ius cjo oean cncs nmmc gmdiur eiocied c aon ijrgni crddja daa"
+  },
+  {
+   "cls": "N1",
+   "oracle": null,
+   "cmr": 0.35,
+   "sample": "vas iuubas ib vero rius fit oad rad vis veero ayis vero"
+  },
+  {
+   "cls": "PV",
+   "oracle": 0.44,
+   "cmr": 0.1,
+   "sample": "egiuic kiffgic si xvi ckiamkihnmvi jvilnkijki lvijgiyhsilvim jlsivimvilvisi vir kixsiykihsihcki osingifmsimvi egisi"
+  }
+ ]
+}
