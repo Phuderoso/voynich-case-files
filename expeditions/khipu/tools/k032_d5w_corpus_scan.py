@@ -186,7 +186,11 @@ def bh(pvals, q=Q):
 
 
 def binom_upper(x, n, a=0.05):
-    return float(sum(comb(n, i) * a ** i * (1 - a) ** (n - i) for i in range(x, n + 1)))
+    # exact one-sided binomial tail P(X >= x | n, a), summed in log space
+    # (fixed after an overflow crash at n = 1371; no design change)
+    from math import lgamma, log, exp
+    return float(min(1.0, sum(exp(lgamma(n + 1) - lgamma(i + 1) - lgamma(n - i + 1)
+                                   + i * log(a) + (n - i) * log(1 - a)) for i in range(x, n + 1))))
 
 
 def mcnemar(a, b):
