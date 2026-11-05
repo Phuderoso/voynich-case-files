@@ -1,0 +1,115 @@
+{
+ "voynich_ZL3b": {
+  "end": {
+   "D": 0.08628313055868417,
+   "p": 0.000999000999000999,
+   "z": 223.48517317510198,
+   "fpr": 0.0,
+   "power": 1.0,
+   "plant_unit": "l",
+   "leak_max": 0.007858280444903488,
+   "leak_offset_max": 0.0024893571275963473,
+   "leak_interior_max": 0.007858280444903488,
+   "ratio_to_leak": 10.979899631177373,
+   "verdict": "DETECTED"
+  },
+  "start": {
+   "D": 0.19724709717379912,
+   "p": 0.000999000999000999,
+   "z": 359.0597541718291,
+   "fpr": 0.025,
+   "power": 1.0,
+   "plant_unit": "q",
+   "leak_max": 0.04005726822893321,
+   "leak_offset_max": 0.04005726822893321,
+   "leak_interior_max": 0.010614605383486792,
+   "ratio_to_leak": 4.924127527781046,
+   "verdict": "DETECTED"
+  }
+ },
+ "ts_generator": {
+  "end": {
+   "D": 0.14624578473981817,
+   "p": 0.000999000999000999,
+   "z": 198.93671065330122,
+   "fpr": 0.0,
+   "power": 1.0,
+   "plant_unit": "y",
+   "leak_max": 0.013946608001124638,
+   "leak_offset_max": 0.004415769121964418,
+   "leak_interior_max": 0.013946608001124638,
+   "ratio_to_leak": 10.486118540653404,
+   "verdict": "DETECTED"
+  },
+  "start": {
+   "D": 0.06578750550426536,
+   "p": 0.000999000999000999,
+   "z": 60.20609261334712,
+   "fpr": 0.0,
+   "power": 1.0,
+   "plant_unit": "o",
+   "leak_max": 0.008235004958046216,
+   "leak_offset_max": 0.0074322990206486615,
+   "leak_interior_max": 0.008235004958046216,
+   "ratio_to_leak": 7.98876331458502,
+   "verdict": "DETECTED"
+  }
+ },
+ "voynich_IT2a": {
+  "end": {
+   "D": 0.08708697310666745,
+   "p": 0.000999000999000999,
+   "z": 233.21005928869877,
+   "fpr": 0.0,
+   "power": 1.0,
+   "plant_unit": "l",
+   "leak_max": 0.007454764787057802,
+   "leak_offset_max": 0.0037050748630325023,
+   "leak_interior_max": 0.007454764787057802,
+   "ratio_to_leak": 11.682055114315467,
+   "verdict": "DETECTED"
+  },
+  "start": {
+   "D": 0.19666573794323444,
+   "p": 0.000999000999000999,
+   "z": 357.3666134209722,
+   "fpr": 0.05,
+   "power": 1.0,
+   "plant_unit": "q",
+   "leak_max": 0.015678897978961305,
+   "leak_offset_max": 0.015678897978961305,
+   "leak_interior_max": 0.009559935923639669,
+   "ratio_to_leak": 12.543339347390992,
+   "verdict": "DETECTED"
+  }
+ },
+ "generator_syd_start": {
+  "observed": 212,
+  "expected": 242.1,
+  "null_mean": 241.991,
+  "p": 0.99000999000999,
+  "fpr": 0.05,
+  "power": 1.0,
+  "verdict": "NOT ENRICHED"
+ },
+ "manuscript_syd_start_descriptive": {
+  "observed": 1575,
+  "expected": 700.1,
+  "null_mean": 699.32,
+  "p": 0.000999000999000999
+ },
+ "_meta": {
+  "SEED": 3232,
+  "FACTOR": 3.0,
+  "TARGET": [
+   "s",
+   "y",
+   "d"
+  ],
+  "NPERM": 1000,
+  "NREP": 40,
+  "ALPHA": 0.025,
+  "PLANT_F": 0.15,
+  "seconds": 47.2
+ }
+}
