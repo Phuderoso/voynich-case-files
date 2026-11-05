@@ -1,0 +1,81 @@
+{
+ "summary": {
+  "N": 433,
+  "M": 93528,
+  "T1": 543.3087375254106,
+  "T2": 0.8792207147720656,
+  "heldout_any": 0.05,
+  "calibrated": true,
+  "power_gapped12": 0.0,
+  "controls": {
+   "UR267A-UR255": {
+    "S1": 329.69973424495123,
+    "S2": 0.7227258053714809,
+    "discovery": false
+   },
+   "UR267B-UR256": {
+    "S1": 305.9991065710571,
+    "S2": 0.4225294496322357,
+    "discovery": false
+   }
+  },
+  "known_pairs": {
+   "KH0362-KH0049": {
+    "S1": 430.8659982980516,
+    "S2": 0.4562867329722805,
+    "discovery": false
+   },
+   "KH0128-KH0137": {
+    "S1": 104.6853174933084,
+    "S2": 0.1430649438822653,
+    "discovery": false
+   },
+   "KH0140-KH0483": {
+    "S1": 186.78624051532995,
+    "S2": 0.9633869486397931,
+    "discovery": true
+   },
+   "KH0304-KH0303": {
+    "S1": 102.8751580768292,
+    "S2": 0.9083143849921159,
+    "discovery": true
+   },
+   "KH0305-KH0301": {
+    "S1": 198.52548437957321,
+    "S2": 0.7462490752857943,
+    "discovery": false
+   }
+  },
+  "real_discoveries": 3,
+  "seconds": 97.7
+ },
+ "discoveries": [
+  {
+   "a": "KH0097 UR1084",
+   "b": "KH0586 HP055",
+   "a_museum": "\"Musee Quai Branly, Paris, France\"",
+   "b_museum": "Museo Nacional de Arqueologia, Anthropologia e Historia del Peru",
+   "S1": 961.888508235088,
+   "S2": 0.5987229592990414,
+   "by": "S1"
+  },
+  {
+   "a": "KH0140 AS125",
+   "b": "KH0483 UR247",
+   "a_museum": "\"Museum f\u00fcr V\u00f6lkerkunde, Berlin\"",
+   "b_museum": "\"Ethnologisches Museum, Berlin, Germany\"",
+   "S1": 186.78624051532995,
+   "S2": 0.9633869486397931,
+   "by": "S2"
+  },
+  {
+   "a": "KH0304 UR067",
+   "b": "KH0303 UR066",
+   "a_museum": "",
+   "b_museum": "Puruchuco Museum",
+   "S1": 102.8751580768292,
+   "S2": 0.9083143849921159,
+   "by": "S2"
+  }
+ ]
+}
