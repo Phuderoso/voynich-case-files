@@ -1,0 +1,36 @@
+{
+ "loci_common": 3990,
+ "loci_identical_glyphs": 2465,
+ "commas": 1367,
+ "spaces": 15932,
+ "nongaps": 68510,
+ "it2a_space_rate": {
+  "at_zl_space": 0.9958573939241777,
+  "at_zl_comma": 0.6503291880029262,
+  "at_zl_nongap": 0.0037658735950956063
+ },
+ "A": {
+  "diff": 0.6465633144078305,
+  "p": 0.0004997501249375312
+ },
+ "B": {
+  "diff": 0.34552820592125155,
+  "p": 0.0004997501249375312
+ },
+ "gates": {
+  "fpr_A": 0.0,
+  "fpr_B": 0.0,
+  "power_A": 1.0,
+  "power_B": 1.0,
+  "passed": true
+ },
+ "look2": {
+  "n_it2a_space": 889,
+  "n_it2a_nospace": 478,
+  "auc": 0.6521431160017132,
+  "p": 0.0004997501249375312
+ },
+ "verdict": "HALF (IT2a agrees partly)",
+ "look2_verdict": "SCORES SEPARATE",
+ "seconds": 154.9
+}

@@ -62,6 +62,11 @@ not, which the text alone cannot tell apart.
 This fits Rozanova & Temerev's physical finding: uncertain spaces are narrower on the page. Here they are also somewhat
 weaker breaks in the glyph stream, and a half-planted mixture would have been seen (power 40/40).
 
+## Audit note (added after C036)
+In the lines both transcriptions agree on, Takahashi writes a space at **65 %** of ZL commas (C036). The 89 % figure above is a
+glyph-context mixing model, not a count of real spaces; read it as "commas look mostly like spaces in glyph context", not
+as "89 % are spaces".
+
 ## Caveats
 The score is estimated on the whole stream, commas included. Commas are one transcriber's judgement. The f ≈ 0.89 is
 model-based and descriptive. ZL only, since IT2a has no commas (0 in paragraph text).
