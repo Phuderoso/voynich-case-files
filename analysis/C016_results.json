@@ -1,0 +1,972 @@
+{
+ "alpha": 0.005,
+ "R": 9999,
+ "delta_star": {
+  "D1_ZL_heldout": {
+   "o_init": 0.2,
+   "len": 0.6,
+   "y_fin": 0.2,
+   "q_init": 0.1,
+   "gallows": 0.2
+  },
+  "D2_IT_C015loci": {
+   "o_init": 0.1,
+   "len": 0.4,
+   "y_fin": 0.1,
+   "q_init": 0.05,
+   "gallows": 0.1
+  }
+ },
+ "stages": {
+  "D1_ZL_heldout": {
+   "label_tokens": 136,
+   "loci": 85,
+   "pages_pooled": [],
+   "counted": true,
+   "looks": {
+    "o_init": {
+     "label_mean": 0.2794,
+     "null_mean": 0.2628,
+     "null_q": [
+      0.1765,
+      0.2647,
+      0.3529
+     ],
+     "diff": 0.0166,
+     "p": 0.6608,
+     "dir": "more",
+     "delta_star": 0.2,
+     "gate_hits_of_100": {
+      "up": 100,
+      "down": 100
+     },
+     "gate_ok": true,
+     "fpr": {
+      "at_0.05": 0.035,
+      "at_alpha": 0.004
+     },
+     "fpr_ok": true,
+     "verdict": "no difference of 0.2 or more detected"
+    },
+    "len": {
+     "label_mean": 3.9853,
+     "null_mean": 4.3609,
+     "null_q": [
+      4.0147,
+      4.3603,
+      4.7132
+     ],
+     "diff": -0.3756,
+     "p": 0.0024,
+     "dir": "less",
+     "delta_star": 0.6,
+     "gate_hits_of_100": {
+      "up": 99,
+      "down": 98
+     },
+     "gate_ok": true,
+     "fpr": {
+      "at_0.05": 0.056,
+      "at_alpha": 0.006
+     },
+     "fpr_ok": true,
+     "verdict": "labels differ from own-page running text (less)"
+    },
+    "y_fin": {
+     "label_mean": 0.2794,
+     "null_mean": 0.3755,
+     "null_q": [
+      0.2868,
+      0.375,
+      0.4706
+     ],
+     "diff": -0.0961,
+     "p": 0.0042,
+     "dir": "less",
+     "delta_star": 0.2,
+     "gate_hits_of_100": {
+      "up": 98,
+      "down": 100
+     },
+     "gate_ok": true,
+     "fpr": {
+      "at_0.05": 0.044,
+      "at_alpha": 0.005
+     },
+     "fpr_ok": true,
+     "verdict": "labels differ from own-page running text (less)"
+    },
+    "q_init": {
+     "label_mean": 0.0074,
+     "null_mean": 0.0695,
+     "null_q": [
+      0.0221,
+      0.0662,
+      0.125
+     ],
+     "diff": -0.0622,
+     "p": 0.0002,
+     "dir": "less",
+     "delta_star": 0.1,
+     "gate_hits_of_100": {
+      "up": 88,
+      "down": 100
+     },
+     "gate_ok": false,
+     "fpr": {
+      "at_0.05": 0.024,
+      "at_alpha": 0.002
+     },
+     "fpr_ok": true,
+     "verdict": "not testable (gate failed)"
+    },
+    "gallows": {
+     "label_mean": 0.4706,
+     "null_mean": 0.4235,
+     "null_q": [
+      0.3235,
+      0.4265,
+      0.5221
+     ],
+     "diff": 0.0471,
+     "p": 0.2126,
+     "dir": "more",
+     "delta_star": 0.2,
+     "gate_hits_of_100": {
+      "up": 100,
+      "down": 100
+     },
+     "gate_ok": true,
+     "fpr": {
+      "at_0.05": 0.04,
+      "at_alpha": 0.007
+     },
+     "fpr_ok": true,
+     "verdict": "no difference of 0.2 or more detected"
+    }
+   },
+   "first_word_only": {
+    "o_init": {
+     "label_mean": 0.3059,
+     "null_mean": 0.2603,
+     "p": 0.353,
+     "dir": "more"
+    },
+    "len": {
+     "label_mean": 4.0353,
+     "null_mean": 4.3329,
+     "p": 0.088,
+     "dir": "less"
+    },
+    "y_fin": {
+     "label_mean": 0.2235,
+     "null_mean": 0.3887,
+     "p": 0.001,
+     "dir": "less"
+    },
+    "q_init": {
+     "label_mean": 0.0118,
+     "null_mean": 0.0833,
+     "p": 0.008,
+     "dir": "less"
+    },
+    "gallows": {
+     "label_mean": 0.5294,
+     "null_mean": 0.4232,
+     "p": 0.043,
+     "dir": "more"
+    },
+    "tokens": 85
+   },
+   "line_initial_baseline": {
+    "o_init": {
+     "null_mean": 0.3058,
+     "p": [
+      0.566,
+      "less"
+     ]
+    },
+    "len": {
+     "null_mean": 5.1947,
+     "p": [
+      0.001,
+      "less"
+     ]
+    },
+    "y_fin": {
+     "null_mean": 0.3679,
+     "p": [
+      0.04,
+      "less"
+     ]
+    },
+    "q_init": {
+     "null_mean": 0.0465,
+     "p": [
+      0.01,
+      "less"
+     ]
+    },
+    "gallows": {
+     "null_mean": 0.5252,
+     "p": [
+      0.218,
+      "less"
+     ]
+    }
+   },
+   "line_final_baseline": {
+    "o_init": {
+     "null_mean": 0.268,
+     "p": [
+      0.825,
+      "more"
+     ]
+    },
+    "len": {
+     "null_mean": 4.0688,
+     "p": [
+      0.578,
+      "less"
+     ]
+    },
+    "y_fin": {
+     "null_mean": 0.3995,
+     "p": [
+      0.003,
+      "less"
+     ]
+    },
+    "q_init": {
+     "null_mean": 0.0378,
+     "p": [
+      0.061,
+      "less"
+     ]
+    },
+    "gallows": {
+     "null_mean": 0.334,
+     "p": [
+      0.001,
+      "more"
+     ]
+    }
+   },
+   "top_initial_units": [
+    [
+     "o",
+     38
+    ],
+    [
+     "d",
+     18
+    ],
+    [
+     "y",
+     18
+    ],
+    [
+     "a",
+     17
+    ],
+    [
+     "ch",
+     13
+    ],
+    [
+     "s",
+     11
+    ]
+   ],
+   "top_words": [
+    [
+     "s",
+     9
+    ],
+    [
+     "l",
+     4
+    ],
+    [
+     "air",
+     3
+    ],
+    [
+     "ar",
+     3
+    ],
+    [
+     "o",
+     3
+    ],
+    [
+     "ols",
+     2
+    ],
+    [
+     "okar",
+     2
+    ],
+    [
+     "okal",
+     2
+    ]
+   ]
+  },
+  "D2_IT_C015loci": {
+   "label_tokens": 820,
+   "loci": 713,
+   "pages_pooled": [
+    "f65r",
+    "f68r1"
+   ],
+   "counted": true,
+   "looks": {
+    "o_init": {
+     "label_mean": 0.5939,
+     "null_mean": 0.3029,
+     "null_q": [
+      0.2659,
+      0.3024,
+      0.3402
+     ],
+     "diff": 0.291,
+     "p": 0.0002,
+     "dir": "more",
+     "delta_star": 0.1,
+     "gate_hits_of_100": {
+      "up": 100,
+      "down": 100
+     },
+     "gate_ok": true,
+     "fpr": {
+      "at_0.05": 0.047,
+      "at_alpha": 0.002
+     },
+     "fpr_ok": true,
+     "verdict": "labels differ from own-page running text (more)"
+    },
+    "len": {
+     "label_mean": 5.2598,
+     "null_mean": 4.733,
+     "null_q": [
+      4.5878,
+      4.7329,
+      4.8793
+     ],
+     "diff": 0.5267,
+     "p": 0.0002,
+     "dir": "more",
+     "delta_star": 0.4,
+     "gate_hits_of_100": {
+      "up": 100,
+      "down": 100
+     },
+     "gate_ok": true,
+     "fpr": {
+      "at_0.05": 0.051,
+      "at_alpha": 0.007
+     },
+     "fpr_ok": true,
+     "verdict": "labels differ from own-page running text (more)"
+    },
+    "y_fin": {
+     "label_mean": 0.4232,
+     "null_mean": 0.3861,
+     "null_q": [
+      0.3451,
+      0.3866,
+      0.4268
+     ],
+     "diff": 0.0371,
+     "p": 0.0146,
+     "dir": "more",
+     "delta_star": 0.1,
+     "gate_hits_of_100": {
+      "up": 100,
+      "down": 100
+     },
+     "gate_ok": true,
+     "fpr": {
+      "at_0.05": 0.034,
+      "at_alpha": 0.002
+     },
+     "fpr_ok": true,
+     "verdict": "no difference of 0.1 or more detected"
+    },
+    "q_init": {
+     "label_mean": 0.0073,
+     "null_mean": 0.1041,
+     "null_q": [
+      0.078,
+      0.1037,
+      0.1305
+     ],
+     "diff": -0.0968,
+     "p": 0.0002,
+     "dir": "less",
+     "delta_star": 0.05,
+     "gate_hits_of_100": {
+      "up": 100,
+      "down": 100
+     },
+     "gate_ok": true,
+     "fpr": {
+      "at_0.05": 0.034,
+      "at_alpha": 0.003
+     },
+     "fpr_ok": true,
+     "verdict": "labels differ from own-page running text (less)"
+    },
+    "gallows": {
+     "label_mean": 0.6317,
+     "null_mean": 0.5206,
+     "null_q": [
+      0.4793,
+      0.5207,
+      0.561
+     ],
+     "diff": 0.1111,
+     "p": 0.0002,
+     "dir": "more",
+     "delta_star": 0.1,
+     "gate_hits_of_100": {
+      "up": 100,
+      "down": 100
+     },
+     "gate_ok": true,
+     "fpr": {
+      "at_0.05": 0.06,
+      "at_alpha": 0.009
+     },
+     "fpr_ok": true,
+     "verdict": "labels differ from own-page running text (more)"
+    }
+   },
+   "first_word_only": {
+    "o_init": {
+     "label_mean": 0.6592,
+     "null_mean": 0.2976,
+     "p": 0.001,
+     "dir": "more"
+    },
+    "len": {
+     "label_mean": 5.5231,
+     "null_mean": 4.7339,
+     "p": 0.001,
+     "dir": "more"
+    },
+    "y_fin": {
+     "label_mean": 0.4404,
+     "null_mean": 0.388,
+     "p": 0.001,
+     "dir": "more"
+    },
+    "q_init": {
+     "label_mean": 0.0084,
+     "null_mean": 0.1092,
+     "p": 0.001,
+     "dir": "less"
+    },
+    "gallows": {
+     "label_mean": 0.6914,
+     "null_mean": 0.5204,
+     "p": 0.001,
+     "dir": "more"
+    },
+    "tokens": 713
+   },
+   "line_initial_baseline": {
+    "o_init": {
+     "null_mean": 0.4121,
+     "p": [
+      0.001,
+      "more"
+     ]
+    },
+    "len": {
+     "null_mean": 5.3121,
+     "p": [
+      0.233,
+      "less"
+     ]
+    },
+    "y_fin": {
+     "null_mean": 0.3094,
+     "p": [
+      0.001,
+      "more"
+     ]
+    },
+    "q_init": {
+     "null_mean": 0.0833,
+     "p": [
+      0.001,
+      "less"
+     ]
+    },
+    "gallows": {
+     "null_mean": 0.654,
+     "p": [
+      0.136,
+      "less"
+     ]
+    }
+   },
+   "line_final_baseline": {
+    "o_init": {
+     "null_mean": 0.309,
+     "p": [
+      0.001,
+      "more"
+     ]
+    },
+    "len": {
+     "null_mean": 4.6233,
+     "p": [
+      0.001,
+      "more"
+     ]
+    },
+    "y_fin": {
+     "null_mean": 0.376,
+     "p": [
+      0.002,
+      "more"
+     ]
+    },
+    "q_init": {
+     "null_mean": 0.0555,
+     "p": [
+      0.001,
+      "less"
+     ]
+    },
+    "gallows": {
+     "null_mean": 0.4411,
+     "p": [
+      0.001,
+      "more"
+     ]
+    }
+   },
+   "top_initial_units": [
+    [
+     "o",
+     487
+    ],
+    [
+     "d",
+     75
+    ],
+    [
+     "y",
+     57
+    ],
+    [
+     "ch",
+     53
+    ],
+    [
+     "a",
+     43
+    ],
+    [
+     "s",
+     36
+    ]
+   ],
+   "top_words": [
+    [
+     "otal",
+     10
+    ],
+    [
+     "am",
+     7
+    ],
+    [
+     "daiin",
+     6
+    ],
+    [
+     "otol",
+     6
+    ],
+    [
+     "oky",
+     6
+    ],
+    [
+     "otaly",
+     6
+    ],
+    [
+     "dy",
+     6
+    ],
+    [
+     "okaly",
+     5
+    ]
+   ]
+  },
+  "D0_ZL_C015loci": {
+   "label_tokens": 954,
+   "loci": 847,
+   "pages_pooled": [
+    "f65r",
+    "f68r1"
+   ],
+   "counted": false,
+   "looks": {
+    "o_init": {
+     "label_mean": 0.608,
+     "null_mean": 0.3493,
+     "null_q": [
+      0.3155,
+      0.3491,
+      0.3847
+     ],
+     "diff": 0.2587,
+     "p": 0.0002,
+     "dir": "more"
+    },
+    "len": {
+     "label_mean": 5.369,
+     "null_mean": 4.6389,
+     "null_q": [
+      4.501,
+      4.6394,
+      4.7788
+     ],
+     "diff": 0.73,
+     "p": 0.0002,
+     "dir": "more"
+    },
+    "y_fin": {
+     "label_mean": 0.4423,
+     "null_mean": 0.3658,
+     "null_q": [
+      0.3302,
+      0.3658,
+      0.4036
+     ],
+     "diff": 0.0766,
+     "p": 0.0002,
+     "dir": "more"
+    },
+    "q_init": {
+     "label_mean": 0.0073,
+     "null_mean": 0.0916,
+     "null_q": [
+      0.0692,
+      0.0912,
+      0.1153
+     ],
+     "diff": -0.0843,
+     "p": 0.0002,
+     "dir": "less"
+    },
+    "gallows": {
+     "label_mean": 0.652,
+     "null_mean": 0.5175,
+     "null_q": [
+      0.479,
+      0.5178,
+      0.5566
+     ],
+     "diff": 0.1345,
+     "p": 0.0002,
+     "dir": "more"
+    }
+   },
+   "first_word_only": {
+    "o_init": {
+     "label_mean": 0.6576,
+     "null_mean": 0.3449,
+     "p": 0.001,
+     "dir": "more"
+    },
+    "len": {
+     "label_mean": 5.5762,
+     "null_mean": 4.6429,
+     "p": 0.001,
+     "dir": "more"
+    },
+    "y_fin": {
+     "label_mean": 0.4475,
+     "null_mean": 0.3695,
+     "p": 0.001,
+     "dir": "more"
+    },
+    "q_init": {
+     "label_mean": 0.0083,
+     "null_mean": 0.0951,
+     "p": 0.001,
+     "dir": "less"
+    },
+    "gallows": {
+     "label_mean": 0.7013,
+     "null_mean": 0.5175,
+     "p": 0.001,
+     "dir": "more"
+    },
+    "tokens": 847
+   },
+   "line_initial_baseline": {
+    "o_init": {
+     "null_mean": 0.4564,
+     "p": [
+      0.001,
+      "more"
+     ]
+    },
+    "len": {
+     "null_mean": 5.0878,
+     "p": [
+      0.001,
+      "more"
+     ]
+    },
+    "y_fin": {
+     "null_mean": 0.331,
+     "p": [
+      0.001,
+      "more"
+     ]
+    },
+    "q_init": {
+     "null_mean": 0.0743,
+     "p": [
+      0.001,
+      "less"
+     ]
+    },
+    "gallows": {
+     "null_mean": 0.6628,
+     "p": [
+      0.444,
+      "less"
+     ]
+    }
+   },
+   "line_final_baseline": {
+    "o_init": {
+     "null_mean": 0.3444,
+     "p": [
+      0.001,
+      "more"
+     ]
+    },
+    "len": {
+     "null_mean": 4.6693,
+     "p": [
+      0.001,
+      "more"
+     ]
+    },
+    "y_fin": {
+     "null_mean": 0.3854,
+     "p": [
+      0.001,
+      "more"
+     ]
+    },
+    "q_init": {
+     "null_mean": 0.0655,
+     "p": [
+      0.001,
+      "less"
+     ]
+    },
+    "gallows": {
+     "null_mean": 0.4395,
+     "p": [
+      0.001,
+      "more"
+     ]
+    }
+   },
+   "top_initial_units": [
+    [
+     "o",
+     580
+    ],
+    [
+     "d",
+     87
+    ],
+    [
+     "y",
+     63
+    ],
+    [
+     "ch",
+     56
+    ],
+    [
+     "a",
+     48
+    ],
+    [
+     "s",
+     40
+    ]
+   ],
+   "top_words": [
+    [
+     "otedy",
+     10
+    ],
+    [
+     "otaly",
+     9
+    ],
+    [
+     "oky",
+     8
+    ],
+    [
+     "otal",
+     7
+    ],
+    [
+     "otar",
+     6
+    ],
+    [
+     "otchdy",
+     6
+    ],
+    [
+     "okol",
+     6
+    ],
+    [
+     "dy",
+     5
+    ]
+   ]
+  },
+  "ZL_vs_IT_first_glyph": {
+   "loci_in_both": 705,
+   "ZLo_ITo": 457,
+   "ZLo_ITnot": 8,
+   "ZLnot_ITo": 7,
+   "neither": 233,
+   "same_first_word": 513,
+   "examples_disagree": [
+    [
+     [
+      "f102v1",
+      "2",
+      "Lf"
+     ],
+     "okeody",
+     "ykeody"
+    ],
+    [
+     [
+      "f102v2",
+      "26",
+      "Lf"
+     ],
+     "aiky",
+     "oika"
+    ],
+    [
+     [
+      "f68r1",
+      "30",
+      "Ls"
+     ],
+     "oeeodchy",
+     "toeeodcthy"
+    ],
+    [
+     [
+      "f68r2",
+      "22",
+      "Ls"
+     ],
+     "otoeeo",
+     "etocho"
+    ],
+    [
+     [
+      "f70v2",
+      "22",
+      "Lz"
+     ],
+     "otar",
+     "sar"
+    ],
+    [
+     [
+      "f70v2",
+      "3",
+      "Lz"
+     ],
+     "ykary",
+     "okasy"
+    ],
+    [
+     [
+      "f71v",
+      "6",
+      "Lz"
+     ],
+     "alcphy",
+     "olcphy"
+    ],
+    [
+     [
+      "f72r3",
+      "32",
+      "Lz"
+     ],
+     "aral",
+     "oral"
+    ],
+    [
+     [
+      "f72v3",
+      "30",
+      "Lz"
+     ],
+     "opal",
+     "epal"
+    ],
+    [
+     [
+      "f73r",
+      "9",
+      "Lz"
+     ],
+     "ykeedy",
+     "okesdy"
+    ],
+    [
+     [
+      "f73v",
+      "10",
+      "Lz"
+     ],
+     "okeor",
+     "ykeor"
+    ],
+    [
+     [
+      "f84r",
+      "1",
+      "Lt"
+     ],
+     "ololal",
+     "lmyl"
+    ]
+   ]
+  }
+ },
+ "elapsed_s": 72.9
+}

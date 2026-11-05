@@ -1,0 +1,68 @@
+{
+ "drop_f69r_44_49": {
+  "tokens": 130,
+  "o_init": {
+   "label_mean": 0.2846,
+   "null_mean": 0.2637,
+   "p": 0.601,
+   "dir": "more"
+  },
+  "len": {
+   "label_mean": 4.1154,
+   "null_mean": 4.3652,
+   "p": 0.057,
+   "dir": "less"
+  },
+  "y_fin": {
+   "label_mean": 0.2846,
+   "null_mean": 0.3741,
+   "p": 0.02,
+   "dir": "less"
+  },
+  "q_init": {
+   "label_mean": 0.0077,
+   "null_mean": 0.0722,
+   "p": 0.002,
+   "dir": "less"
+  },
+  "gallows": {
+   "label_mean": 0.4923,
+   "null_mean": 0.4203,
+   "p": 0.054,
+   "dir": "more"
+  }
+ },
+ "drop_one_unit_words": {
+  "tokens": 113,
+  "o_init": {
+   "label_mean": 0.3097,
+   "null_mean": 0.2755,
+   "p": 0.394,
+   "dir": "more"
+  },
+  "len": {
+   "label_mean": 4.5929,
+   "null_mean": 4.5144,
+   "p": 0.569,
+   "dir": "more"
+  },
+  "y_fin": {
+   "label_mean": 0.3274,
+   "null_mean": 0.3634,
+   "p": 0.37,
+   "dir": "less"
+  },
+  "q_init": {
+   "label_mean": 0.0,
+   "null_mean": 0.0502,
+   "p": 0.003,
+   "dir": "less"
+  },
+  "gallows": {
+   "label_mean": 0.5575,
+   "null_mean": 0.4366,
+   "p": 0.002,
+   "dir": "more"
+  }
+ }
+}
