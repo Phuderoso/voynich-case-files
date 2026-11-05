@@ -1,0 +1,38 @@
+## k4 off=0
+offset=0 pairs=11 crib_letters=20
+RESULT invertible_M=157248 consistent_M=0 numberings=0 max_kernel_dim=2
+## k4 off=1
+offset=1 pairs=11 crib_letters=21
+RESULT invertible_M=157248 consistent_M=0 numberings=0 max_kernel_dim=3
+## hctl_1 off=0
+offset=0 pairs=11 crib_letters=18
+   M=[7,24,14,15] numberings=24 (unit-scaling classes=2.00)
+RESULT invertible_M=157248 consistent_M=1 numberings=24 max_kernel_dim=2
+## hctl_1 off=1
+offset=1 pairs=11 crib_letters=19
+RESULT invertible_M=157248 consistent_M=0 numberings=0 max_kernel_dim=3
+## hctl_2 off=0
+offset=0 pairs=11 crib_letters=21
+RESULT invertible_M=157248 consistent_M=0 numberings=0 max_kernel_dim=4
+## hctl_2 off=1
+offset=1 pairs=11 crib_letters=20
+   M=[11,16,21,17] numberings=12 (unit-scaling classes=1.00)
+RESULT invertible_M=157248 consistent_M=1 numberings=12 max_kernel_dim=3
+## hnull_1 off=0
+offset=0 pairs=11 crib_letters=20
+RESULT invertible_M=157248 consistent_M=0 numberings=0 max_kernel_dim=3
+## hnull_1 off=1
+offset=1 pairs=11 crib_letters=20
+RESULT invertible_M=157248 consistent_M=0 numberings=0 max_kernel_dim=3
+## hnull_2 off=0
+offset=0 pairs=11 crib_letters=22
+RESULT invertible_M=157248 consistent_M=0 numberings=0 max_kernel_dim=2
+## hnull_2 off=1
+offset=1 pairs=11 crib_letters=21
+RESULT invertible_M=157248 consistent_M=0 numberings=0 max_kernel_dim=3
+## hnull_3 off=0
+offset=0 pairs=11 crib_letters=19
+RESULT invertible_M=157248 consistent_M=0 numberings=0 max_kernel_dim=4
+## hnull_3 off=1
+offset=1 pairs=11 crib_letters=21
+RESULT invertible_M=157248 consistent_M=0 numberings=0 max_kernel_dim=5
