@@ -3,7 +3,7 @@
 
 > **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**. **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026. An AI did all of this work.
 
-Status: **PRE-REGISTERED** (committed before the counted run; results appended below).
+Status: **PRE-REGISTERED** at commit `4c9297b2` (05:44 PT, before the counted run 05:44:24–05:45:44 PT). Results appended below.
 
 ## Question
 C018's one-to-one reader (INJ: one Latin letter per glyph, exact words of the Caesar lexicon) failed its gate 5/10, partly
@@ -35,5 +35,45 @@ Voynich passages (0.14–0.30, none above 0.32). These are other passages than t
 lexicon-rich as the positives (≥ 35 % coverage, after the filter). It says nothing about verbose ciphers (one letter →
 several glyphs), nomenclators, other languages, abbreviation, or a different glyph segmentation. Caesar's vocabulary is
 military; a herbal Latin would have lower coverage and less power. The positives are 100-word passages from one author.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (counted run 2026-11-05, 05:44:24–05:45:44 PT, seed 19019, after pre-registration commit `4c9297b2`; 80 s; `analysis/C019_counted.json`, `analysis/C019_run_log.txt`, blind bank `analysis/C019_blind_bank.json`, salt `99b34fbf9f282eb0`)
+
+| Class | CMR (sorted) |
+|---|---|
+| P1 Latin, mono-sub | 0.48 0.48 0.51 0.51 0.52 0.54 0.56 0.57 0.58 0.61 (all equal to their true-key score; 3 passages rejected by the filter) |
+| N1 generator | 0.24 0.27 0.27 0.29 0.29 0.29 0.29 0.30 0.31 0.32 |
+| N2 random EVA | 0.10–0.15 (9 items; 1 NA, more glyph types than letters) |
+| N3 glyph-shuffled Voynich | 0.12–0.20 |
+| **V Voynich** | 0.16 0.16 0.16 0.21 0.24 0.24 0.25 0.28 0.30 0.30 |
+
+- **Gate: 10/10 PASS.** Every positive beat the negative maximum (0.32) and every search reached the true key's score.
+  The repairs worked: INJ is now a discriminating reader on this bank.
+- **Voynich: 0/10 above the bar** → by the rule, **no reading above the bar**. The best passages (f3r, f24r 0.30; f81r
+  0.28) stay under the generator's maximum.
+- Decoded samples are in the JSON; they look like what they are, the generator-level noise (`hae ihic vihuic his panno …`, f3r).
+
+### Verdict
+**Excluded (within the stated limits): Latin written with one Latin letter per EVA glyph unit, in passages as
+lexicon-rich as the positives.** Under the one-to-one reader the manuscript reads like meaningless text with Voynich
+statistics, not like enciphered Latin. This agrees with C013/C014 and arXiv 2610.34499 by an independent, blind-banked
+route. It does not touch verbose ciphers, nomenclators, abbreviation, other languages or other glyph segmentations.
+
+### Descriptive (not counted)
+Voynich passages (median 0.24) sit between the generator (median 0.29) and glyph-shuffled Voynich (0.12–0.20): the
+real word structure gives the reader more short "words" to fit than shuffled glyphs do, but less than the copying machine's output.
+
+### Correction to C018 / Expedição 18
+C018 is now repaired: its INJ "not discriminating" verdict was due to the bank defect and the greedy search, both fixed
+here. C018's STRICT and LENIENT verdicts stand (no change). The Expedição 18 notebook called the OSF pre-registration
+bc5zr "new"; it had already been noted in Expedição 6 (1 Nov). It also said the notebook restyle of Expedição 6 was
+pending; all 18 notebooks were already in the field-notebook style.
+
+### Next
+F-LLM step 1: the same bank and bar for a language-model reader (frozen prompt, items in blind order, Voynich interleaved),
+scored against the salted answers. Power check first: lower-coverage Latin (herbal vocabulary) and a verbose-cipher class.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

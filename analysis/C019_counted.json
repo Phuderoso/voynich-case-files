@@ -1,0 +1,497 @@
+{
+ "mode": "counted",
+ "seed": 19019,
+ "RESTARTS": 16,
+ "ITERS": 20000,
+ "MINCOV": 0.35,
+ "salt": "99b34fbf9f282eb0",
+ "seconds": 80.3,
+ "summary": {
+  "by_class": {
+   "P1": [
+    0.48,
+    0.48,
+    0.51,
+    0.51,
+    0.52,
+    0.54,
+    0.56,
+    0.57,
+    0.58,
+    0.61
+   ],
+   "N1": [
+    0.24,
+    0.27,
+    0.27,
+    0.29,
+    0.29,
+    0.29,
+    0.29,
+    0.3,
+    0.31,
+    0.32
+   ],
+   "N2": [
+    0.1,
+    0.12,
+    0.13,
+    0.13,
+    0.14,
+    0.14,
+    0.14,
+    0.15,
+    0.15
+   ],
+   "N3": [
+    0.12,
+    0.13,
+    0.13,
+    0.13,
+    0.14,
+    0.15,
+    0.17,
+    0.17,
+    0.18,
+    0.2
+   ],
+   "V": [
+    0.16,
+    0.16,
+    0.16,
+    0.21,
+    0.24,
+    0.24,
+    0.25,
+    0.28,
+    0.3,
+    0.3
+   ]
+  },
+  "na": {
+   "N2": 1
+  },
+  "neg_p95": 0.31,
+  "neg_max": 0.32,
+  "gate_hits": 10,
+  "gate_pass": true,
+  "voynich_above_negmax": 0,
+  "verdict_V": "no reading above the bar",
+  "p1_oracle": [
+   0.48,
+   0.48,
+   0.51,
+   0.51,
+   0.52,
+   0.54,
+   0.56,
+   0.57,
+   0.58,
+   0.61
+  ],
+  "p1_below_oracle": [],
+  "positives_rejected_by_filter": 3
+ },
+ "items": [
+  {
+   "id": "B00",
+   "cls": "N2",
+   "folio": null,
+   "oracle": null,
+   "cmr": null,
+   "sample": "NA"
+  },
+  {
+   "id": "B01",
+   "cls": "V",
+   "folio": "f82v",
+   "oracle": null,
+   "cmr": 0.25,
+   "sample": "regeoas anovias ovis xeo xeo viis c num his knx hijs regno"
+  },
+  {
+   "id": "B02",
+   "cls": "V",
+   "folio": "f58v",
+   "oracle": null,
+   "cmr": 0.21,
+   "sample": "ehulla gekuos shut shuo ehuo ehuonulla nult et gpulla yult s reyuoens"
+  },
+  {
+   "id": "B03",
+   "cls": "P1",
+   "folio": null,
+   "oracle": 0.48,
+   "cmr": 0.48,
+   "sample": "perkectius ulterius quaerere libet an ego ipse habens illam ideam esse possem"
+  },
+  {
+   "id": "B04",
+   "cls": "N1",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.29,
+   "sample": "dutbapc appmat drappm hac binuc ibi nut dobi obi ibiuc binut ut"
+  },
+  {
+   "id": "B05",
+   "cls": "V",
+   "folio": "fRos",
+   "oracle": null,
+   "cmr": 0.16,
+   "sample": "sioslggh soli s ilggh sekuli sblggh s serut sort rokkut sblgxlx sosut"
+  },
+  {
+   "id": "B06",
+   "cls": "N1",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.3,
+   "sample": "sed pqiiso ex piso piso ocex send sex ennnd suxced piiso verser"
+  },
+  {
+   "id": "B07",
+   "cls": "N1",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.32,
+   "sample": "ulla ux reinux upei est sux eibum ernux eibum uliula enulla est"
+  },
+  {
+   "id": "B08",
+   "cls": "N2",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.14,
+   "sample": "vxxt nrrx xnmiiux nouijn rdsd ieuur dnrmux rivv iht iuxn vsuin udex"
+  },
+  {
+   "id": "B09",
+   "cls": "V",
+   "folio": "f81r",
+   "oracle": null,
+   "cmr": 0.28,
+   "sample": "permdc eo eo aut triint mo peo aieo eriit eo eo eomddc"
+  },
+  {
+   "id": "B10",
+   "cls": "P1",
+   "folio": null,
+   "oracle": 0.56,
+   "cmr": 0.56,
+   "sample": "quamvis eam in me infirmitatem esse experiar ut non possim semper uni"
+  },
+  {
+   "id": "B11",
+   "cls": "V",
+   "folio": "f88v",
+   "oracle": null,
+   "cmr": 0.16,
+   "sample": "noam oam jafrant jafra dert efram jafrrt nulli jafrap jaulli erat aderant"
+  },
+  {
+   "id": "B12",
+   "cls": "N1",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.24,
+   "sample": "umt slur ece umtet sluouo yppsl cyummi uteo cpsl eouosuo cut cpsleo"
+  },
+  {
+   "id": "B13",
+   "cls": "N2",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.14,
+   "sample": "re li esvl oitgix viiixv csouau ldeidg l euide vli degudqr eddmme"
+  },
+  {
+   "id": "B14",
+   "cls": "V",
+   "folio": "f3r",
+   "oracle": null,
+   "cmr": 0.3,
+   "sample": "hae ihic vihuic his panno lx fhux hic has hag hae hi"
+  },
+  {
+   "id": "B15",
+   "cls": "N1",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.29,
+   "sample": "oe mdoppe viaof of ullam ullam vicofof mcof of viam ope mdoppe"
+  },
+  {
+   "id": "B16",
+   "cls": "P1",
+   "folio": null,
+   "oracle": 0.58,
+   "cmr": 0.58,
+   "sample": "quae lumine naturali manifesta sunt itaque debeo nunc interrogare me ipsum an"
+  },
+  {
+   "id": "B17",
+   "cls": "V",
+   "folio": "f80r",
+   "oracle": null,
+   "cmr": 0.24,
+   "sample": "atsooni aqsoori dausi dareggp auegc atri tat bec aueggp atreggp at atregp"
+  },
+  {
+   "id": "B18",
+   "cls": "N2",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.15,
+   "sample": "qg rrrig d dccnds qnui dmca r cn qdsdg ddgm se dnh"
+  },
+  {
+   "id": "B19",
+   "cls": "N3",
+   "folio": "f70r2",
+   "oracle": null,
+   "cmr": 0.17,
+   "sample": "sx rti iirvsdeetr emsliix bscsv xes eioroe rtmv etervb ssso ededoris teoxi"
+  },
+  {
+   "id": "B20",
+   "cls": "P1",
+   "folio": null,
+   "oracle": 0.57,
+   "cmr": 0.57,
+   "sample": "istis membris infusus non ventus non ignis non vapor non halitus non"
+  },
+  {
+   "id": "B21",
+   "cls": "N1",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.27,
+   "sample": "vmhb iahus vmmhb unncua ius us visvis vlunc vis unna di is"
+  },
+  {
+   "id": "B22",
+   "cls": "N2",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.15,
+   "sample": "nniolf in ggankol sgesfj iceve gcgnxg snl tnnq igxsn scnvaa ttsso si"
+  },
+  {
+   "id": "B23",
+   "cls": "N3",
+   "folio": "f81v",
+   "oracle": null,
+   "cmr": 0.13,
+   "sample": "ubmo ttuus ess iae vsor sibuvx vxvs dd rrub srtrtdu veoaus dse"
+  },
+  {
+   "id": "B24",
+   "cls": "N1",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.29,
+   "sample": "kegam ebas ei ihac hac egi ofo easom eggomom eggo nohgi goc"
+  },
+  {
+   "id": "B25",
+   "cls": "N3",
+   "folio": "f101v",
+   "oracle": null,
+   "cmr": 0.13,
+   "sample": "aitxx madag iaxi aaxii ifaiae ddh vvvmxx xjtxmvn xrmxt xx xtrethsv v"
+  },
+  {
+   "id": "B26",
+   "cls": "P1",
+   "folio": null,
+   "oracle": 0.54,
+   "cmr": 0.54,
+   "sample": "quae non plane certa sunt atque indubitata quam ab aperte falsis assensionem"
+  },
+  {
+   "id": "B27",
+   "cls": "N3",
+   "folio": "f102v2",
+   "oracle": null,
+   "cmr": 0.17,
+   "sample": "mxxx eveae ii iec iednmx aambs dmnf tiiuxrtria firne ar ieiia iemi"
+  },
+  {
+   "id": "B28",
+   "cls": "N2",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.1,
+   "sample": "uuvas txnbn unnkpkb nec ctoneiu onxnouxy egi kixvpixk thknei tenxu ione rqint"
+  },
+  {
+   "id": "B29",
+   "cls": "P1",
+   "folio": null,
+   "oracle": 0.52,
+   "cmr": 0.52,
+   "sample": "etiam ullo modo me quatenus sum res cogitans effecerunt sed tantum dispositiones"
+  },
+  {
+   "id": "B30",
+   "cls": "N3",
+   "folio": "f42r",
+   "oracle": null,
+   "cmr": 0.18,
+   "sample": "jadmas eae aerds caios pvom cohsu sc adiu khasss domo aia id"
+  },
+  {
+   "id": "B31",
+   "cls": "N2",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.13,
+   "sample": "itvd xaanblis sftva cvdpa yabtae piucd etaexhc xtpi unalti vel aetavp annuieb"
+  },
+  {
+   "id": "B32",
+   "cls": "N1",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.27,
+   "sample": "uster am uster dus itter ivak akas ter itter eaxmas dum iter"
+  },
+  {
+   "id": "B33",
+   "cls": "N3",
+   "folio": "f70v2",
+   "oracle": null,
+   "cmr": 0.14,
+   "sample": "ndo se nonso si e tspb sbgsioe sndnitc chc uosunci ssgsve bfconu"
+  },
+  {
+   "id": "B34",
+   "cls": "N2",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.14,
+   "sample": "xclelx iaspu vix onvcs psnxxx kthims xexoa hxiisx paxu xxai lgfpi xxu"
+  },
+  {
+   "id": "B35",
+   "cls": "P1",
+   "folio": null,
+   "oracle": 0.51,
+   "cmr": 0.51,
+   "sample": "mihi videor vikilando altera erat quod cum authorem meae orikinis adhuc iknorarem"
+  },
+  {
+   "id": "B36",
+   "cls": "P1",
+   "folio": null,
+   "oracle": 0.61,
+   "cmr": 0.61,
+   "sample": "esse potest atqui audiveram aliquando ab iis quibus crus aut brachium fuerat"
+  },
+  {
+   "id": "B37",
+   "cls": "N2",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.13,
+   "sample": "viinsevd ieifvvh xv nvdyuete uhat qkvn d ei uiteudhvdtd vfiv bbve uiichan"
+  },
+  {
+   "id": "B38",
+   "cls": "N3",
+   "folio": "f89r2",
+   "oracle": null,
+   "cmr": 0.12,
+   "sample": "nmixe idnvv mdc nvncmd vvvn ixxe iovu dv nemnc invn vuean aen"
+  },
+  {
+   "id": "B39",
+   "cls": "N3",
+   "folio": "f75v",
+   "oracle": null,
+   "cmr": 0.15,
+   "sample": "ssrv iuestd uidp aci uuiutadaxua ath ddst vaa tum m is dmi"
+  },
+  {
+   "id": "B40",
+   "cls": "N1",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.31,
+   "sample": "et osoec ket ad illos atoatils oat atoad uetennx auet atataec amec"
+  },
+  {
+   "id": "B41",
+   "cls": "N1",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.29,
+   "sample": "hin hic aqqb hac sese saqqb isesac dinime dac ab isin sin"
+  },
+  {
+   "id": "B42",
+   "cls": "V",
+   "folio": "f93r",
+   "oracle": null,
+   "cmr": 0.24,
+   "sample": "vicis hci has hasihm mdeem hak eihm has isoeihem fideh ois cidis"
+  },
+  {
+   "id": "B43",
+   "cls": "V",
+   "folio": "f24r",
+   "oracle": null,
+   "cmr": 0.3,
+   "sample": "lex ex i nex elnux ac nceo sukkh ex requkkh nux esukkh"
+  },
+  {
+   "id": "B44",
+   "cls": "N3",
+   "folio": "f17v",
+   "oracle": null,
+   "cmr": 0.2,
+   "sample": "ci idscfs ii duuijd l ibi nigdx nrdoe xdue of x ueio"
+  },
+  {
+   "id": "B45",
+   "cls": "P1",
+   "folio": null,
+   "oracle": 0.51,
+   "cmr": 0.51,
+   "sample": "nihilominus intelligo nunquam illam idcirco fore actu infinitam quia nunquam eo devenietur"
+  },
+  {
+   "id": "B46",
+   "cls": "N3",
+   "folio": "f43v",
+   "oracle": null,
+   "cmr": 0.13,
+   "sample": "birp res ac beiocc rbq bdubv cbtb yhbk eleerai tobicac iotuob kpfe"
+  },
+  {
+   "id": "B47",
+   "cls": "N2",
+   "folio": null,
+   "oracle": null,
+   "cmr": 0.12,
+   "sample": "osa gbl biv id h ort bloueu olsluk ubi opta suro stiimuk"
+  },
+  {
+   "id": "B48",
+   "cls": "P1",
+   "folio": null,
+   "oracle": 0.48,
+   "cmr": 0.48,
+   "sample": "incommodis affici potest et commoda ista sensu quodam voluptatis et incommoda sensu"
+  },
+  {
+   "id": "B49",
+   "cls": "V",
+   "folio": "f86v3",
+   "oracle": null,
+   "cmr": 0.16,
+   "sample": "ubinm cbis ubnm nam rlle cbbs sqbbubbs nqbbnirj sqbbis stbbs irlj unrllf"
+  }
+ ]
+}
