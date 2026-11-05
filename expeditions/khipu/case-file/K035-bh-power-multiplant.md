@@ -69,4 +69,67 @@ scan 3530, nulls 35310–35314, power 3532 (distinct from K031–K034: 3130–34
 A BH hit means "more within-group adjacent exact sums than chance in this khipu under D5w"; a readable negative means
 "no excess as large as m* planted sums", never "no arithmetic". No decipherment is claimed.
 
+## Results
+
+Run 2026-11-05 ~12:04–12:10 PT (America/Vancouver), `timeout 600 python3 tools/k035_bh_power_multiplant.py khipu.db`
+(**346.6 s**, exit 0; all 457 khipus reached in every stage, no wall cap). Output:
+[`analysis/k035_results.json`](../analysis/k035_results.json). Prereg + tool committed first as `2dc09aa`.
+
+### 1. Calibration — all gates pass
+| Stratum | n (5 corpora) | D5w FPR | binomial P(≥x) |
+|---|---|---|---|
+| S0 | 395 | 0.030 | 0.98 |
+| small | 630 | 0.038 | 0.93 |
+| mid | 630 | 0.030 | 0.99 |
+| large | 630 | 0.054 | 0.35 |
+| pop | 1 890 | 0.041 | 0.97 |
+
+BH discoveries per null corpus: **F1 0/0/0/0/0; strat_small, strat_mid, strat_large, strat_S0 and the stratified
+union all 0 of 5.** Both partitions are calibrated at the BH level.
+
+### 2. Primary — BH-level F1 power by planted-sum count m
+| Stratum | m = 1 | m = 2 | m = 3 | m = 4 | m* (≥ 0.5) |
+|---|---|---|---|---|---|
+| small (n ≈ 116–120) | 0.10 | 0.28 | 0.49 | **0.59** | **4** |
+| mid (n ≈ 121–123) | 0.04 | 0.19 | **0.50** | 0.49 | **3** (fragile) |
+| large (n ≈ 124–125) | 0.06 | 0.18 | 0.30 | 0.38 | none |
+| pop | 0.07 | 0.22 | 0.43 | 0.48 | — |
+| S0 (stratum BH, descriptive) | 0.04 | 0.12 | 0.16 | 0.38 | — |
+
+Per-plant p ≤ 0.05 (not BH) at m = 2: small 0.76, mid 0.66, large 0.52. m = 2 reproduces K033's BH-level range
+(0.18–0.28 vs 0.26–0.36; K033 also counted pure A/B specs, so not identical).
+
+Mid's m* = 3 rests on 0.504 (61/121; binomial SE ≈ 0.045), and m = 4 gives 0.488: the curve is flat at the bar
+between m = 3 and 4. By the pre-registered rule mid is **readable at m* = 3**, but the margin is within Monte
+Carlo noise, so we call it **fragile**.
+
+### 3. Secondary — stratified BH
+At m = 2, stratified minus F1 power: small **−0.21**, mid **−0.17**, large **+0.08**. Stratified BH helps the
+large stratum (where 10 of 11 real F1 hits sit, so the BH cut is loose) and hurts small/mid (few or no real hits,
+so the cut is near q/126). No stratum reaches 0.5 under stratified BH at any m ≤ 4 (large best: 0.46 at m = 4).
+**Not adopted** (rule 3 fails: drops > 0.03 in two strata).
+Descriptive only: stratified BH on the real scan names 12 large-stratum khipus, including two not in any F1 list,
+KH0502/UR266 (p 0.0021) and KH0511/UR273B (p 0.0019); S0 BH names KH0038/UR1033D, KH0198/AS181/UR236,
+KH0503/UR267A. **Not discoveries** under the adopted tool (F1).
+
+### 4. Real scan with a fresh seed (reproducibility, not a new claim)
+F1 = **11** again; 9 shared with K033. Swapped at the BH boundary: **KH0420/UR182 out** (p 0.0005 → 0.0019) and
+**KH0478/UR242 in** (0.011 → 0.0011). KH0478's change comes from the adaptive Monte Carlo cut: in K033 its stage-1
+p landed just above 0.01 (no escalation, p stays at K = 1 000); here it fell below and was escalated to K = 10 000.
+KH0420 remains **confirmed** by K034's held-out test, which does not use the BH ranking. Lesson: F1 membership near
+the BH cut is seed-sensitive at K₀ = 1 000 and should be reported with MC uncertainty or a fixed larger K.
+
+### Reading
+- **Verdict: silence testable only against stronger effects (m* > 2).** At K033's strength (2 planted sums)
+  silence is still unreadable in every stratum. A silent **small** khipu is a readable negative against **≥ 4**
+  within-group exact sums; a silent **mid** khipu against **≥ 3** (fragile); **large** stays not testable at m ≤ 4.
+- Real-data consequence: the mid stratum, which has **0** F1 discoveries, shows no within-group exact-sum excess
+  as strong as ~3 planted windows (fragile). The large stratum's non-hits cannot be read.
+- Stratified BH is calibrated but trades small/mid power for large power; not adopted.
+- Pre-registered decision: **gate passed; m*: small 4, mid 3 (fragile), large none; stratified BH not adopted.**
+
+### Next (line 1)
+K036: remove the adaptive-cut seed sensitivity by giving every F1 khipu a fixed K = 10 000 (or K₀ 2 000 with
+escalation at p ≤ 0.02), then re-run the m-curve on large only with m ∈ {4, 6, 8} to locate large's m*.
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
