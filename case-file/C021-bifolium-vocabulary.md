@@ -70,3 +70,9 @@ Next for F-COD: (1) finer strata (herbal A1/A2 plant types, $X illustration flag
 further; (2) use conjugate similarity as a score to test proposed quire re-orderings against random re-orderings.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Correction (added in C022, 2026-11-05)
+The raw effect (Look A) was already reported and independently confirmed (Layfield & Fagin Davis 2026,
+[doi:10.4000/16k0a](https://doi.org/10.4000/16k0a); review on [Voynich Ninja thread 5911](https://www.voynich.ninja/thread-5911.html)).
+What C021 adds is the controlled Look B and the adjacency check, not the existence of the effect. C022 Look C
+(Currier's hand added to the strata) is also detected (+0.040, p = 0.0105).

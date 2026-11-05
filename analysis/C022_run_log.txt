@@ -1,0 +1,2 @@
+C {'n_conj_pairs_eligible': 39, 'n_other_pairs': 154, 'S_obs': 0.04000177172847541, 'p': 0.010497375656085979, 'fpr_at_alpha': 0.0, 'power_f0.2': 1.0, 'verdict': 'detected'} 5.6 s
+D {'n_conj_pairs_eligible': 44, 'n_other_pairs': 78, 'S_obs': 0.05033240943875106, 'p': 0.02699325168707823, 'fpr_at_alpha': 0.0, 'power_f0.2': 0.0, 'verdict': 'not testable'} 10.5 s

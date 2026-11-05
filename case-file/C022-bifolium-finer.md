@@ -3,7 +3,7 @@
 
 > **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**. **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026. An AI did all of this work.
 
-Status: **PRE-REGISTERED** (written before any similarity was computed for these looks). Results will be appended below.
+Status: **PRE-REGISTERED** at commit `acd2e3d8` (06:29 PT), counted run 06:29:35–06:29:45 PT. Results appended below.
 
 ## Question
 C021 found that conjugate leaves (the two halves of one bifolium) share more vocabulary than other leaves of their
@@ -22,5 +22,31 @@ quire, even when both leaves of every compared pair have the same LFD hand, Curr
 - Decision: p ≤ α **detected**; p > α **not detected** (a 20 %-shared bifolium effect is then excluded for that look).
 - Reading rule: if both are detected, C021's lead is strengthened; if either is not detected with gates passed, the
   C021 signal is explained (at least partly) by that confound and the lead is downgraded.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+## Results (counted run 06:29:35–06:29:45 PT, 10.5 s; `analysis/C022_results.json`, `analysis/C022_run_log.txt`)
+
+| Look | conjugate pairs | other pairs | S (conj − other) | p | FPR at α | power, 20 % shared | verdict |
+|---|---|---|---|---|---|---|---|
+| C finer strata (+ Currier's hand) | 39 | 154 | +0.040 | 0.0105 | 0.000 | 1.00 | **detected** |
+| D equal bound distance | 44 | 78 | +0.050 | 0.027 | 0.000 | **0.00** | **not testable** |
+
+- **Look C:** the signal survives adding Currier's hand to the strata, at the same size as C021 Look B (+0.040 vs +0.037).
+- **Look D is not testable, and the cause is a design defect, not the data.** Its comparison set depends on the true
+  conjugates' bound distances. Most random re-pairings fall outside that set, so the null statistic is computed on very
+  few pairs and is so noisy that even planted 20 % sharing is never detected (power 0/40). The observed +0.050 is
+  descriptive only. A fix (next F-COD step): a null that keeps the distance structure, e.g. permuting the "conjugate"
+  label only among same-quire, same-distance pairs.
+
+## Context and correction (news check, after the run)
+A methodological review on the Voynich Ninja forum ([thread 5911](https://www.voynich.ninja/thread-5911.html)) states
+that elevated textual similarity within physical bifolia, the empirical core of Layfield & Fagin Davis (*Digital
+Medievalist* 2026, [doi:10.4000/16k0a](https://doi.org/10.4000/16k0a)), "is real and independently confirmed".
+So the raw conjugate effect (C021 Look A) is **not new**; C021/C022 add only (a) its survival under
+hand × language × illustration (× Currier hand) strata with a calibrated re-pairing null and a planted power check,
+and (b) the observation that bound-adjacent non-conjugates are not more alike (post-hoc). C021's case file is
+corrected accordingly.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
