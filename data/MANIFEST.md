@@ -14,3 +14,10 @@
 | ts_generated_text.txt | https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/master/executable/generate/generated_text.txt (Timm & Schinner sample, MIT licence) | 2026-11-04 | 1e954a17…2888dc11 |
 
 Backup copies kept outside the working copy at `/workspace/voynich/backup/`.
+
+## C004 generator (not committed; fetch into `$TSGEN`, default `/workspace/voynich/tsgen`, and check the hash)
+| File | Source | Retrieved | sha256 (prefix…suffix) |
+|---|---|---|---|
+| text-generator.jar | https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/master/executable/text-generator.jar (MIT) | 2026-11-04 | dc9b2f3c…ad18fef8 |
+| conf.properties | https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/master/executable/conf.properties | 2026-11-04 | 308af498…f9061ee |
+Runtime: Eclipse Temurin JRE 17.0.21 (api.adoptium.net). Default config + seed 19 reproduces `ts_generated_text.txt` byte for byte.
