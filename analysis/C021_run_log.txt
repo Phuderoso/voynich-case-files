@@ -1,0 +1,2 @@
+A {'n_conj_pairs_total': 50, 'n_conj_pairs_eligible': 50, 'n_other_pairs': 278, 'S_obs': 0.10954107899586651, 'p': 0.00024993751562109475, 'fpr_at_alpha': 0.025, 'fpr_at_0.05': 0.025, 'power_f0.2': 1.0, 'verdict': 'detected'} 5.4 s
+B {'n_conj_pairs_total': 50, 'n_conj_pairs_eligible': 44, 'n_other_pairs': 182, 'S_obs': 0.03674301539292946, 'p': 0.0047488127968008, 'fpr_at_alpha': 0.0, 'fpr_at_0.05': 0.0, 'power_f0.2': 0.95, 'verdict': 'detected'} 10.8 s

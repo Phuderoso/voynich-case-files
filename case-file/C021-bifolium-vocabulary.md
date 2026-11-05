@@ -3,7 +3,7 @@
 
 > **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**. **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026. An AI did all of this work.
 
-Status: **PRE-REGISTERED** (written before any similarity was computed on the real leaves). Results will be appended below.
+Status: **PRE-REGISTERED** at commit `021b5694` (06:08 PT), counted run 06:08:29–06:08:40 PT. Results appended below.
 
 ## Question
 A bifolium is one folded sheet: its two leaves (conjugates) sit far apart in a quire but were one physical object.
@@ -31,5 +31,35 @@ complete conjugate pairs; 44 of them share hand, language and illustration type.
   **not detected** (a bifolium effect of the planted size, 20 % shared words, is then excluded for that look).
 - Expected reading: A detected and B not detected would mean the raw conjugate similarity is explained by scribe,
   language and section; B detected would be a bifolium-level signal beyond them.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+## Results (counted run 06:08:29–06:08:40 PT, 10.8 s; `analysis/C021_results.json`, `analysis/C021_run_log.txt`)
+102 leaves, 961 word types with ≥ 5 tokens.
+
+| Look | conjugate pairs used | other pairs | S (conj − other) | p | FPR at α (gate ≤ 0.075) | power, 20 % shared (gate ≥ 0.8) | verdict |
+|---|---|---|---|---|---|---|---|
+| A raw | 50 | 278 | +0.110 | 0.00025 | 0.025 | 1.00 | **detected** |
+| B same hand × language × illustration | 44 | 182 | +0.037 | 0.0047 | 0.000 | 0.95 | **detected** |
+
+Both gates passed for both looks. Conjugate leaves are more alike than other leaves of the same quire, and about a
+third of that excess survives when both leaves of every compared pair have the same scribe, Currier language and
+illustration type.
+
+## Post-hoc checks (exploratory, NOT pre-registered; `tools/c021_posthoc.py`, `analysis/C021_posthoc.json`)
+Could Look B just be bound adjacency? The central bifolium of a quire has its two leaves side by side.
+- Look B without the 14 conjugate pairs whose leaves are bound-adjacent: 31 pairs, S = +0.018, p = 0.0075 (smaller, still below α).
+- Bound-adjacent **non**-conjugate pairs vs other non-conjugate pairs (same strata): S = +0.001, p = 0.48. Being next
+  to each other in the bound book does not make leaves more alike; being on the same sheet does.
+
+## Reading
+This is a **lead**, not a proof: the strata (LFD hand, Currier A/B, a single illustration letter) are coarse, so finer
+unlabeled differences (e.g. sub-topics within the herbal, ink/writing sessions) could still be what conjugates share.
+It is consistent with the sheet having been the working unit — written as an open bifolium or in one session — and
+with the bound order being partly secondary. It says nothing about meaning.
+
+Next for F-COD: (1) finer strata (herbal A1/A2 plant types, $X illustration flags) to see whether the B effect shrinks
+further; (2) use conjugate similarity as a score to test proposed quire re-orderings against random re-orderings.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
