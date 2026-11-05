@@ -50,3 +50,5 @@ and (b) the observation that bound-adjacent non-conjugates are not more alike (p
 corrected accordingly.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+**Follow-up (C023):** Look D repaired with a distance-preserving null: detected, +0.070, p = 0.00025, FPR 0/40, power 40/40. [C023](C023-distance-null.md)
