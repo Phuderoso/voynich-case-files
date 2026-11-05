@@ -1,0 +1,44 @@
+{
+ "as_selected": {
+  "R": 0.523,
+  "mwl": 4.986,
+  "ttr": 0.358,
+  "h2": 2.433
+ },
+ "initial_line=default": {
+  "R": 0.508,
+  "mwl": 5.072,
+  "ttr": 0.36,
+  "h2": 2.511
+ },
+ "initial_line=f1r.1": {
+  "R": 0.421,
+  "mwl": 4.654,
+  "ttr": 0.346,
+  "h2": 2.781
+ },
+ "canFollow=curveline": {
+  "R": 0.59,
+  "mwl": 4.876,
+  "ttr": 0.292,
+  "h2": 2.293
+ },
+ "word_final_subst=true": {
+  "R": 0.539,
+  "mwl": 4.958,
+  "ttr": 0.348,
+  "h2": 2.411
+ },
+ "combine_split=30": {
+  "R": 0.292,
+  "mwl": 4.949,
+  "ttr": 0.451,
+  "h2": 2.55
+ },
+ "sourceChooser=page": {
+  "R": 0.542,
+  "mwl": 4.943,
+  "ttr": 0.142,
+  "h2": 2.07
+ }
+}
