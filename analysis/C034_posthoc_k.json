@@ -1,0 +1,22 @@
+{
+ "Voynich_ZL3b_k1": 0.8675,
+ "Voynich_IT2a_k1": 0.8771,
+ "Generator_TimmSchinner_k1": 0.8598,
+ "Latin_Caesar_k1": 0.6001,
+ "Latin_Descartes_k1": 0.5452,
+ "Italian_Dante_k1": 0.6077,
+ "Italian_Machiavelli_k1": 0.6198,
+ "Spanish_Cervantes_k1": 0.6323,
+ "Hebrew_Genesis_k1": 0.5719,
+ "Hebrew_Exodus_k1": 0.5362,
+ "Voynich_ZL3b_k3": 0.8246,
+ "Voynich_IT2a_k3": 0.8332,
+ "Generator_TimmSchinner_k3": 0.8649,
+ "Latin_Caesar_k3": 0.8862,
+ "Latin_Descartes_k3": 0.8745,
+ "Italian_Dante_k3": 0.8099,
+ "Italian_Machiavelli_k3": 0.8479,
+ "Spanish_Cervantes_k3": 0.8502,
+ "Hebrew_Genesis_k3": 0.7775,
+ "Hebrew_Exodus_k3": 0.7593
+}

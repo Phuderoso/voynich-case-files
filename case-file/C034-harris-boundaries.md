@@ -6,7 +6,7 @@
 > **[Phuderoso](https://github.com/Phuderoso)**. An AI did this work. /
 > Pimpolha Voynich, do Phuderoso, IA nascida em 4/11/2026.
 
-Status: **pre-registered** in this commit, before any run (seed 3434).
+Status: pre-registered in commit 379e9038 before any run (seed 3434); results added after.
 
 ## Question
 In natural language, the next letter is hard to predict right after a word ends: Harris's successor variety, the basis
@@ -37,7 +37,52 @@ estimated on the same text. The statistic is the **AUC** of this score for separ
   is rank-based within each text, which limits but does not remove this. Spaces in the transcriptions are the
   transcribers' reading.
 
-## Results
-*(pending)*
+## Results (run 1, 15 s, `analysis/C034_results.json`)
+Gates pass: all 7 natural texts are detected (p 0.005, the floor with 200 draws, below α 0.0167), and FPR is 0/40 in every text.
+Null AUCs sit at 0.50 (maximum 0.512).
+
+| Text | Units in alphabet | Boundaries | AUC (k = 2) | 95 % block interval | Q1 | Q2 |
+|---|---|---|---|---|---|---|
+| Voynich ZL 3b | 31 | 9,829 | **0.878** | 0.873–0.883 | BOUNDARIES | **ABOVE natural range** |
+| Voynich IT2a | 27 | 9,642 | **0.887** | 0.883–0.892 | BOUNDARIES | **ABOVE natural range** |
+| Timm–Schinner generator | 24 | 9,504 | 0.871 | 0.859–0.885 | BOUNDARIES | WITHIN (top edge) |
+| Latin, Caesar | 24 | 6,766 | 0.857 | 0.850–0.862 | control | |
+| Latin, Descartes | 26 | 7,206 | 0.827 | 0.809–0.844 | control | |
+| Spanish, Cervantes | 24 | 9,144 | 0.813 | 0.806–0.820 | control | |
+| Italian, Machiavelli | 24 | 9,883 | 0.809 | 0.804–0.814 | control | |
+| Italian, Dante | 22 | 10,079 | 0.782 | 0.776–0.786 | control | |
+| Hebrew, Genesis | 27 | 10,635 | 0.714 | 0.707–0.719 | control | |
+| Hebrew, Exodus | 27 | 10,541 | 0.684 | 0.670–0.697 | control | |
+
+**Pre-registered verdicts.** Q1: the transcribed Voynich spaces are Harris boundaries in both transcriptions, and so are
+the generator's. Q2: at k = 2, the Voynich boundary signal is **stronger than in all 7 natural texts** (ZL interval
+above the natural envelope's top, 0.862). The generator sits at the top edge of the natural range, with an interval
+overlapping ZL's.
+
+**Post-hoc sensitivity (disclosed, not pre-registered; `tools/c034_posthoc_k.py`, `analysis/C034_posthoc_k.json`;
+descriptive, no null).** The context length changes the comparison:
+
+| k | Voynich ZL | Voynich IT2a | Generator | Natural range |
+|---|---|---|---|---|
+| 1 | 0.868 | 0.877 | 0.860 | 0.536–0.632 |
+| 2 | 0.878 | 0.887 | 0.871 | 0.684–0.857 |
+| 3 | 0.825 | 0.833 | 0.865 | 0.759–0.886 |
+
+Reading: in natural language, the boundary signal grows as the context grows, from 0.54–0.63 to 0.76–0.89. In
+Voynichese it is almost all there **from one glyph**. A single glyph (word-final `y`, `n`, `m`, word-initial `q`, …) already
+marks the break, and longer context adds nothing. With 3 glyphs it falls inside the natural range, partly
+because sparse contexts with a 27–31 unit alphabet in 40,000 units cost estimation accuracy. So "ABOVE" is a k = 2 result, and the robust finding is
+the *shape*: Voynich word boundaries are marked locally, by the glyphs right at the edge, not by longer letter sequences. That
+fits C010/C030 (edge glyphs) and the slot-grammar picture. The generator copies this shape (0.86 at k = 1), which is no
+surprise, since it copies whole words from the manuscript.
+
+## Caveats
+Spaces are the transcribers' reading, and commas (uncertain spaces) are counted as spaces. Alphabets differ: EVA units
+vs letters. The k = 2 choice was fixed before the run, but the post-hoc table shows the cross-text ranking depends on k.
+Only the first 40,000 units of each text are used. The Gutenberg texts include a few lines of front matter.
+
+## Next
+F-SEG step 2: the uncertain-space commas as a test set. Do ZL's commas score between real spaces and non-spaces, which would make them
+*half-boundaries*, like Rozanova & Temerev's narrower physical widths? This needs a pre-registered design with a power check.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
