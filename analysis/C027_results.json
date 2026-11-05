@@ -1,0 +1,114 @@
+{
+ "window_tokens": 10000,
+ "draws": 200,
+ "Voynich_ZL3b": {
+  "tokens": 38834,
+  "types": 8104,
+  "tv_window_mean": 0.024177124984030445,
+  "tv_window_2.5_97.5": 0.015165993665575231,
+  "tv_window_97.5": 0.03764361749150754,
+  "tv_all_types": 0.022652950576742794,
+  "best_N_all_types": 10
+ },
+ "Latin_Caesar": {
+  "tokens": 20547,
+  "types": 5687,
+  "tv_window_mean": 0.07455300843369778,
+  "tv_window_2.5_97.5": 0.0685221662025328,
+  "tv_window_97.5": 0.08040539116755642,
+  "tv_all_types": 0.06348292022333767,
+  "best_N_all_types": 25
+ },
+ "Latin_Descartes": {
+  "tokens": 20834,
+  "types": 4825,
+  "tv_window_mean": 0.09418866748164874,
+  "tv_window_2.5_97.5": 0.06846409953176727,
+  "tv_window_97.5": 0.1193156223621173,
+  "tv_all_types": 0.08800525146186648,
+  "best_N_all_types": 25
+ },
+ "Italian_Dante": {
+  "tokens": 102005,
+  "types": 12669,
+  "tv_window_mean": 0.05704024483629313,
+  "tv_window_2.5_97.5": 0.03929810154816684,
+  "tv_window_97.5": 0.07524314484257931,
+  "tv_all_types": 0.04167926373221581,
+  "best_N_all_types": 19
+ },
+ "Italian_Machiavelli": {
+  "tokens": 29883,
+  "types": 4795,
+  "tv_window_mean": 0.07805615536225653,
+  "tv_window_2.5_97.5": 0.06953481447226052,
+  "tv_window_97.5": 0.08717948924572494,
+  "tv_all_types": 0.05982834016171225,
+  "best_N_all_types": 25
+ },
+ "Spanish_Cervantes": {
+  "tokens": 383633,
+  "types": 22470,
+  "tv_window_mean": 0.04615380985551068,
+  "tv_window_2.5_97.5": 0.03481319657413592,
+  "tv_window_97.5": 0.05690364217535377,
+  "tv_all_types": 0.02263935274268891,
+  "best_N_all_types": 22
+ },
+ "Hebrew_Genesis": {
+  "tokens": 20629,
+  "types": 5007,
+  "tv_window_mean": 0.07883601464977906,
+  "tv_window_2.5_97.5": 0.07270703128613394,
+  "tv_window_97.5": 0.08619995050740982,
+  "tv_all_types": 0.07791647799564747,
+  "best_N_all_types": 6
+ },
+ "Hebrew_Exodus": {
+  "tokens": 16726,
+  "types": 4170,
+  "tv_window_mean": 0.07894789717938921,
+  "tv_window_2.5_97.5": 0.07002800015443245,
+  "tv_window_97.5": 0.0874969108636642,
+  "tv_all_types": 0.07670072705840993,
+  "best_N_all_types": 6
+ },
+ "Generator_TimmSchinner": {
+  "tokens": 10832,
+  "types": 2228,
+  "tv_window_mean": 0.05041066494197468,
+  "tv_window_2.5_97.5": 0.046772641255615706,
+  "tv_window_97.5": 0.05622046519359027,
+  "tv_all_types": 0.050096881863787385,
+  "best_N_all_types": 8
+ },
+ "p_raw": {
+  "Latin_Caesar": 0.004975124378109453,
+  "Latin_Descartes": 0.004975124378109453,
+  "Italian_Dante": 0.004975124378109453,
+  "Italian_Machiavelli": 0.004975124378109453,
+  "Spanish_Cervantes": 0.01990049751243781,
+  "Hebrew_Genesis": 0.004975124378109453,
+  "Hebrew_Exodus": 0.004975124378109453,
+  "Generator_TimmSchinner": 0.004975124378109453
+ },
+ "p_holm": {
+  "Latin_Caesar": 0.03980099502487562,
+  "Latin_Descartes": 0.03980099502487562,
+  "Italian_Dante": 0.03980099502487562,
+  "Italian_Machiavelli": 0.03980099502487562,
+  "Hebrew_Genesis": 0.03980099502487562,
+  "Hebrew_Exodus": 0.03980099502487562,
+  "Generator_TimmSchinner": 0.03980099502487562,
+  "Spanish_Cervantes": 0.03980099502487562
+ },
+ "gates": {
+  "fpr_at_alpha_strict": 0.0,
+  "fpr_at_0.05": 0.425,
+  "power_at_alpha_strict": 0.0,
+  "alpha_strict": 0.00625
+ },
+ "verdict_H1": "NOT TESTABLE",
+ "verdict_generator_look": "n/a",
+ "seconds": 15.3
+}
