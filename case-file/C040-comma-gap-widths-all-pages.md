@@ -63,3 +63,67 @@ glyphs. All pages are from one scribal zone (the stars/recipes quire plus f58), 
 or balneo spacing. JPG resolution only (no IIIF tiles).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (`analysis/C040_results.json`, seed 4040, 56 s, run once as pre-registered)
+Lines used: **578** on 24 pages (C039 had 97). Spaces anchored are listed per page in the JSON.
+
+| class | n | mean width (px) | median | share ≥ 15 px |
+|---|---|---|---|---|
+| certain space (leave-one-out) | 5,323 | **18.7** | 18 | 0.55 |
+| **comma** | 463 | **12.4** | 9 | 0.31 |
+| within-word join | 22,970 | **8.4** | 5 | 0.15 |
+
+- **A** (commas − joins): **+3.91 px, p = 0.0005** (the floor for 2,000 draws).
+- **B** (spaces − commas): **+6.32 px, p = 0.0005**.
+- Sanity check (spaces − joins): +10.2 px, p = 0.002 (the floor for 500 draws).
+- **Gates: FPR A 0/40, FPR B 0/40, power A 40/40, power B 32/40 → PASSED.** Power B sits exactly on the
+  pre-registered bar (32/40). It passes, but with no margin.
+- **Verdict (pre-registered rule): HALF (intermediate width).** On these pages a ZL comma is, on the vellum, wider
+  than a within-word glyph join and narrower than a certain space.
+- **Look 2** (secondary): comma width vs C035 Harris score ρ = +0.065 (n = 463, p = 0.080), **not significant**.
+  Comma width when IT2a writes a space vs when it does not: 11.8 vs 11.2 px, AUC 0.515 (n = 259, p = 0.33), **not
+  significant**. At this n and with this ruler, neither the glyph-context score nor Takahashi's choice tracks the
+  measured width at a comma. That is a null result, not an exclusion: the ruler's noise could hide a small effect.
+
+### Per page (descriptive only; mean px — spaces / commas / joins, lines)
+| page | lines | spaces | commas | joins | | page | lines | spaces | commas | joins |
+|---|---|---|---|---|---|---|---|---|---|---|
+| f58r | 26 | 13.1 | 14.8 | 8.8 | | f107r | 34 | 23.3 | 10.7 | 8.0 |
+| f58v | 20 | 16.1 | 9.3 | 10.7 | | f107v | 11 | 14.5 | 19.3 | 12.5 |
+| f111r | 32 | 16.9 | 14.8 | 9.3 | | f108r | 28 | 16.4 | 6.7 | 8.2 |
+| f113v | 19 | 20.7 | 13.2 | 10.3 | | f108v | 27 | 17.9 | 15.8 | 9.1 |
+| f103r | 18 | 13.7 | 13.5 | 9.4 | | f111v | 29 | 12.1 | 9.8 | 8.0 |
+| f103v | 19 | 16.9 | 11.4 | 9.9 | | f112r | 14 | 14.9 | 11.2 | 11.5 |
+| f104r | 14 | 11.8 | 9.5 | 9.0 | | f113r | 39 | 25.2 | 16.9 | 7.7 |
+| f104v | 32 | 22.7 | 10.1 | 7.4 | | f114r | 36 | 24.4 | 9.9 | 5.3 |
+| f105r | 19 | 14.2 | 5.3 | 7.8 | | f114v | 20 | 13.4 | 7.9 | 8.3 |
+| f105v | 24 | 21.4 | 15.5 | 7.7 | | f115r | 35 | 26.9 | 13.3 | 5.4 |
+| f106r | 20 | 15.6 | 13.6 | 8.5 | | f115v | 16 | 17.2 | 9.6 | 10.8 |
+| f106v | 21 | 20.7 | 9.8 | 10.5 | | f116r | 25 | 19.6 | 18.9 | 9.4 |
+
+Spaces > commas on 22 of 24 pages. Commas > joins on 17 of 24. The pages hold only 7–38 commas each, so any
+single page is noisy.
+
+### Post-hoc check (labelled; not pre-registered): pages C039 never saw
+`tools/c040_posthoc_new_pages_only.py` reruns the identical pipeline, seed and gates on the 20 new pages only
+(the four C039 pages dropped; 482 lines; `analysis/C040_posthoc_new_pages_only.json`, 47 s). Means: spaces 19.1,
+commas 12.0, joins 8.2 px. A +3.82 px p 0.0005, B +7.06 px p 0.0005. Gates FPR 0/0, power 40/40 and **35/40**, so
+the verdict is again HALF. The result does not depend on the pages that motivated the question. Look 2 is null
+here too (ρ 0.08 p 0.061; AUC 0.49 p 0.56).
+
+## What this means
+With the same blunt ruler and six times the lines, the image measurement now passes the gates C039 failed. **ZL's
+commas mark gaps of intermediate width on the vellum**: about 4 px wider than a glyph join and about 6 px narrower
+than a certain space, on average. Transcribers' "uncertain space" therefore corresponds to a physical feature of the
+writing, not only to their hesitation. This agrees with C035 (half-boundaries in glyph context) and with C036
+(Takahashi spaces about two thirds of them). It is about **spacing**, not meaning, and it holds for the stars/recipes
+quire plus f58 only. One caution: power B was exactly at the bar (32/40) on the full set. The out-of-sample post-hoc
+check gave 35/40.
+
+## Next
+F-SEG is done for this question at this ruler. A sharper ruler (connected-component glyph localisation) would
+matter only for **Look 2**: whether Takahashi's space choice or the Harris score tracks width at a comma. Both are
+null here, and a sharper ruler could reveal or exclude a small effect. Otherwise I'd move to F-MI step 3, or
+extend the ruler to herbal pages to test whether intermediate gaps are a scribe-wide habit.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
