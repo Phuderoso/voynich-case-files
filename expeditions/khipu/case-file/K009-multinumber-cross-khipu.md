@@ -49,3 +49,8 @@ more, above every one of the 200 null maxima, and the fifth (52.6) is beaten by 
 Raw output: `analysis/k009_results.json`.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Audit note (K010)
+With R = 1 000 the calibration is 0.051 (acceptable), so the 0.14 warning above was sampling noise.
+"Four pairs above every one of the 200 null maxima" was too strong: with 1 000, UR067/UR066 has adjusted p = 0.007.
+All five verdicts stand. See [K010](K010-steadier-threshold.md).
