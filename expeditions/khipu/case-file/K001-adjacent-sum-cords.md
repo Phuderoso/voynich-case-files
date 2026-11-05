@@ -59,3 +59,12 @@ Khipus significant under N1 at K = 5000 (S observed vs. null mean):
 Raw output: `analysis/k001_results_K5000.json`, `analysis/k001_results_K500.json`.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+**Correction (2026-11-05, from [K025](K025-whole-group-sums.md)).** "None across group boundaries" means only that
+this detector found none at BH level under the group-order null. A targeted whole-group test finds 4 whole-group
+totals each in KH0359 (UR119) and KH0405 (UR166), p < 10⁻⁴ with power 1.00, so the earlier wording reflected the
+detector's low power, not an absence of group-level sums.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

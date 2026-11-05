@@ -1,0 +1,157 @@
+{
+ "seed": 20261111,
+ "R": 20000,
+ "primary": {
+  "KH0359": {
+   "inv": "UR119",
+   "n_pend": 173,
+   "n_groups": 49,
+   "n_candidate_pairs": 47,
+   "G": 4,
+   "null_mean": 0.0149,
+   "p": 4.999750012499375e-05,
+   "calib_fpr": 0.02,
+   "power_1planted": 1.0,
+   "verdict": "supported"
+  },
+  "KH0405": {
+   "inv": "UR166",
+   "n_pend": 30,
+   "n_groups": 12,
+   "n_candidate_pairs": 10,
+   "G": 4,
+   "null_mean": 0.0029,
+   "p": 4.999750012499375e-05,
+   "calib_fpr": 0.0,
+   "power_1planted": 1.0,
+   "verdict": "supported"
+  }
+ },
+ "secondary": {
+  "n_khipus": 369,
+  "R_per_khipu": 5000,
+  "G_total": 31,
+  "null_total_mean": 14.1432,
+  "p_corpus": 0.0001999600079984003,
+  "n_bh": 2,
+  "calib_bh_false": 0,
+  "calib_fpr_05": 0.013550135501355014,
+  "bh_khipus": [
+   {
+    "okr": "KH0359",
+    "inv": "UR119",
+    "G": 4,
+    "null_mean": 0.0118,
+    "p": 0.0001999600079984003,
+    "bh": true
+   },
+   {
+    "okr": "KH0405",
+    "inv": "UR166",
+    "G": 4,
+    "null_mean": 0.0048,
+    "p": 0.0001999600079984003,
+    "bh": true
+   }
+  ],
+  "top": [
+   {
+    "okr": "KH0359",
+    "inv": "UR119",
+    "G": 4,
+    "null_mean": 0.0118,
+    "p": 0.0001999600079984003,
+    "bh": true
+   },
+   {
+    "okr": "KH0405",
+    "inv": "UR166",
+    "G": 4,
+    "null_mean": 0.0048,
+    "p": 0.0001999600079984003,
+    "bh": true
+   },
+   {
+    "okr": "KH0424",
+    "inv": "UR186",
+    "G": 2,
+    "null_mean": 0.027,
+    "p": 0.0005998800239952009,
+    "bh": false
+   },
+   {
+    "okr": "KH0482",
+    "inv": "UR246",
+    "G": 1,
+    "null_mean": 0.0036,
+    "p": 0.003599280143971206,
+    "bh": false
+   },
+   {
+    "okr": "KH0406",
+    "inv": "UR167",
+    "G": 1,
+    "null_mean": 0.0082,
+    "p": 0.008398320335932814,
+    "bh": false
+   },
+   {
+    "okr": "KH0080",
+    "inv": "AS067/MA029",
+    "G": 1,
+    "null_mean": 0.0178,
+    "p": 0.01779644071185763,
+    "bh": false
+   },
+   {
+    "okr": "KH0113",
+    "inv": "UR1100",
+    "G": 1,
+    "null_mean": 0.021,
+    "p": 0.021195760847830435,
+    "bh": false
+   },
+   {
+    "okr": "KH0489",
+    "inv": "UR253",
+    "G": 1,
+    "null_mean": 0.0428,
+    "p": 0.042191561687662464,
+    "bh": false
+   },
+   {
+    "okr": "KH0460",
+    "inv": "UR222",
+    "G": 1,
+    "null_mean": 0.05,
+    "p": 0.04859028194361128,
+    "bh": false
+   },
+   {
+    "okr": "KH0191",
+    "inv": "AS174",
+    "G": 1,
+    "null_mean": 0.0532,
+    "p": 0.052589482103579284,
+    "bh": false
+   },
+   {
+    "okr": "KH0246",
+    "inv": "UR010",
+    "G": 1,
+    "null_mean": 0.0572,
+    "p": 0.05558888222355529,
+    "bh": false
+   },
+   {
+    "okr": "KH0269",
+    "inv": "UR037",
+    "G": 1,
+    "null_mean": 0.0606,
+    "p": 0.059988002399520096,
+    "bh": false
+   }
+  ]
+ },
+ "runtime_s": 5.6
+}
