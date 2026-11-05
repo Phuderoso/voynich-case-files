@@ -50,3 +50,7 @@
   duplicate in `khipu.db`, with conflicting museum numbers. Any corpus statistic counts it twice (it did here).
 - **Fixes for a K006 version:** a run-preserving null (permute runs of equal values as blocks), and a power-aware
   statistic for short blocks (exact chance probability given both khipus' value multisets).
+
+
+## Audit note (K006)
+Under a run-preserving null ([K006](K006-run-preserving-cross-khipu.md)) the UR047/UR211 flag disappears, which confirms it was a null artefact. The other four pairs survive.
