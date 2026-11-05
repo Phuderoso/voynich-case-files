@@ -1,0 +1,20 @@
+# Method B (pysat Glucose 4.2 / CaDiCaL cross-check) logs
+
+## K4 decrypt
+K4 decrypt offset=0 sols=0 proved_unsat=True time=161.3s engine=glucose
+K4 decrypt offset=1 sols=0 proved_unsat=True time=26.26s engine=glucose
+
+## K4 encrypt
+K4 encrypt offset=0 sols=0 proved_unsat=True time=198.17s engine=glucose
+K4 encrypt offset=1 sols=0 proved_unsat=True time=34.27s engine=glucose
+
+## Control 1 (planted M=[7,24,14,15], offset 0)
+hctl_1 decrypt offset=0 sols=24 classes~2.0 time=102.52s engine=glucose ; every sample M=[7,24,14,15] det=3, fixed-M CaDiCaL cross-check True
+hctl_1 decrypt offset=1 sols=0 proved_unsat=True time=268.24s
+
+## Control 2 (planted M=[11,16,21,17], offset 1)
+hctl_2 decrypt offset=0 sols=0 proved_unsat=True time=96.77s engine=cadical
+hctl_2 decrypt offset=1 sols=12 classes~1.0 time=243.27s engine=cadical ; every sample M=[11,16,21,17] det=7, cross-check True
+
+## Shuffled nulls
+SAT runs on nulls were not completed within the time budget; nulls are covered exhaustively by Method A (exhaustive/all_results.txt): 0 consistent M for all 3 nulls at both offsets.
