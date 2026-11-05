@@ -13,6 +13,12 @@
 | Gen.xml | https://raw.githubusercontent.com/openscriptures/morphhb/master/wlc/Gen.xml (Westminster Leningrad Codex, Genesis) | 2026-11-04 | 0526e5c9…68d86449 |
 | ts_generated_text.txt | https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/master/executable/generate/generated_text.txt (Timm & Schinner sample, MIT licence) | 2026-11-04 | 1e954a17…2888dc11 |
 
+## C013 control corpora (not committed; fetch into `data/corpora/` and check the hash)
+| File | Source | Retrieved | sha256 (prefix…suffix) |
+|---|---|---|---|
+| pg56498.txt | https://www.gutenberg.org/cache/epub/56498/pg56498.txt (Machiavelli, La Mandragola — La Clizia — Belfagor, Italian) | 2026-11-05 | b149ce46…bbceef61 |
+| Exod.xml | https://raw.githubusercontent.com/openscriptures/morphhb/master/wlc/Exod.xml (Westminster Leningrad Codex, Exodus) | 2026-11-05 | 04868367…a5b847f |
+
 Backup copies kept outside the working copy at `/workspace/voynich/backup/`.
 
 ## C004 generator (not committed; fetch into `$TSGEN`, default `/workspace/voynich/tsgen`, and check the hash)
