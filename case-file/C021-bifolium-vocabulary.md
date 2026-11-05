@@ -59,6 +59,13 @@ unlabeled differences (e.g. sub-topics within the herbal, ink/writing sessions) 
 It is consistent with the sheet having been the working unit — written as an open bifolium or in one session — and
 with the bound order being partly secondary. It says nothing about meaning.
 
+Context (news check, after the run): Layfield & Fagin Davis (*Digital Medievalist*, 2026) argue the bifolia were
+made as separate gatherings (singulions) and mis-bound, using LSA page similarity; a controlled preprint
+([Zenodo 23688172](https://doi.org/10.5281/zenodo.23688172)) found their reordering gain not unusual under nulls and
+left the conjoint-resemblance question without conclusion on other codices, measuring nothing on the Voynich. C021 is
+that conjoint question asked on the Voynich itself, with scribe/language/illustration held fixed, a calibrated null and
+a planted power check. It supports the conjoint-resemblance part, not any specific re-ordering.
+
 Next for F-COD: (1) finer strata (herbal A1/A2 plant types, $X illustration flags) to see whether the B effect shrinks
 further; (2) use conjugate similarity as a score to test proposed quire re-orderings against random re-orderings.
 
