@@ -38,3 +38,32 @@ match count agreed with 20 000-permutation means within 1.2 standard errors (1.8
 
 ## Results
 (Written after the run, below this line.)
+
+Run 2026-11-05 ~10:09 PT, `python3 tools/k029_exact_window_probability.py ../khipu.db` (32 s; full output in
+[`analysis/k029_results.json`](../analysis/k029_results.json)). 444 khipus were scored. 13 were *not computed*
+because a value exceeds 20 000: KH0118, KH0134, KH0159, KH0165, KH0189, KH0559, KH0404, KH0426, KH0483, KH0484,
+KH0049, KH0493 and KH0521.
+
+| Check | Rule | Result |
+|---|---|---|
+| Exactness audit | ≥ 19 of 20 within 3 SE | **20 / 20, pass** |
+| Calibration FPR at α 0.05 | W ≤ 0.06 | W **0.047**, S 0.020 |
+| Planted power (377 khipus) | W − S ≥ 0.05 | W **0.456**, S 0.355 (+0.10) |
+| Paired McNemar | p < 0.05 | 56 W-only vs 18 S-only, **p 1.1 × 10⁻⁵** |
+
+**Decision under the pre-registered rule: W is adopted over S.** The exact formula reproduces the permutation mean,
+so K001's N1 null mean can now be computed analytically instead of simulated.
+
+### Caveats, stated openly
+- **Part of the gain is calibration slack.** S is conservative (FPR 0.020 against a 5 % target, because its integer
+  counts tie). W uses the error budget more fully (0.047). Some of the +0.10 is S wasting α, not W seeing more.
+- **The comparator was the wrong baseline for "best on line 1".** The rule compared W with K001's S, but K002/K003's
+  D2 (0.62) and D5 (0.66) already beat S on plant spec A, the same plant used here. W at 0.46 is **below** them. So
+  W is a better per-hit weighting than raw counting, but it does **not** replace D5 as the best line-1 detector. A
+  same-plant head-to-head (W-weights inside D5's min-p over k bands) is the natural follow-up.
+- **BH is resolution-limited at R = 1 000.** The smallest p is 1/1001, near the top-rank BH threshold, so the BH lists
+  depend on ties. W gives 9 BH khipus: KH0359, KH0405, KH0486 (UR250), KH0491, KH0492, KH0503, KH0504, KH0506 and KH0514.
+  Eight of these are among K001's ten. KH0486 is new, and KH0507/KH0513 drop out. S gives 0 at this resolution, as K001
+  did at K = 500. This list is secondary and is not a discovery claim.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
