@@ -1,0 +1,36 @@
+{
+ "alpha_per_look": 0.016666666666666666,
+ "IT_C023": {
+  "n_leaves": 102,
+  "vocab": 952,
+  "n_cells": 24,
+  "n_conj": 24,
+  "S_obs": 0.06756518223592589,
+  "p": 0.00024993751562109475,
+  "fpr_at_alpha": 0.0,
+  "power_f0.2": 1.0,
+  "verdict": "replicated"
+ },
+ "ZLpara_C023": {
+  "n_leaves": 99,
+  "vocab": 865,
+  "n_cells": 24,
+  "n_conj": 24,
+  "S_obs": 0.07040126053800666,
+  "p": 0.00024993751562109475,
+  "fpr_at_alpha": 0.0,
+  "power_f0.2": 1.0,
+  "verdict": "replicated"
+ },
+ "IT_C021B": {
+  "n_leaves": 102,
+  "vocab": 952,
+  "n_conj_eligible": 44,
+  "S_obs": 0.03829493347637447,
+  "p": 0.008247938015496127,
+  "fpr_at_alpha": 0.0,
+  "power_f0.2": 1.0,
+  "verdict": "replicated"
+ },
+ "seconds": 11.0
+}
