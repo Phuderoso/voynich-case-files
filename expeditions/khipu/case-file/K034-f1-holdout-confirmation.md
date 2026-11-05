@@ -72,6 +72,39 @@ A confirmed L means "this khipu's longest within-group exact-sum window is longe
 permutation", a property of the record. It is not a reading of the khipu. No decipherment is claimed.
 
 ## Results
-(Written after the pre-registration commit, below this line.)
+
+Run 2026-11-05 ~11:51 PT (America/Vancouver), `timeout 560 python3 tools/k034_f1_holdout_confirmation.py ../khipu.db`
+(20.9 s). Output: [`analysis/k034_results.json`](../analysis/k034_results.json).
+Prereg + tool committed first as `cd00cbf`.
+
+### 1. FPR gate — **pass**
+200 random other multi-group pop khipus, one null "observed" each, R = 5 000: **5 / 200 = 0.025**
+(≤ 0.08; binomial P(X ≥ 5 | n=200, 0.05) = 0.97). Structure tails on the named khipus' own nulls
+sit near the nominal 0.025 (KH0322 0.031, KH0420 0.027).
+
+### 2. Confirmation (R = 20 000; α = 0.025 each)
+
+| Khipu | L_obs | null mean / p95 / p99 / max | p | Power (k=6 plants) | Verdict |
+|---|---|---|---|---|---|
+| KH0322 / UR086 | **8** | 1.96 / 5 / 6 / 8 | **0.00140** | 0.11 | **confirmed** |
+| KH0420 / UR182 | **8** | 0.40 / 3 / 4 / 8 | **0.00020** | 1.00 | **confirmed** |
+
+Descriptive: KH0322 has 2 hit groups of 18 eligible (max-k hit in group 2; LOO after zeroing it → L = 3).
+KH0420 has 1 hit group of 4 eligible (max-k hit in group 6; LOO → L = 0). The signal in KH0420 is
+carried by a single long window; in KH0322 a second, shorter hit remains after removing the longest.
+
+Plant power for KH0322 is low (0.11) because a single k=6 plant in a 107-pendant / 23-group khipu rarely
+pushes L past the α = 0.025 critical value (~6); that would matter for a *negative*, not for these
+positives. KH0420's smaller frame recovers every plant.
+
+### Reading
+Both F1-only hits from K033 are **confirmed** under a statistic that never consults the BH ranking:
+each khipu's longest within-group exact-sum window (L = 8) is rarer than chance under permutation
+(Bonferroni × 2). The two new names on the calibrated F1 list are not BH artefacts.
+
+**Decision: CONFIRMED (both named khipus; FPR gate passed).**
+
+Next on line 1: silence still not testable (BH power 0.16–0.36 from K033); raise BH-level power
+(stronger / multi-plant or stratified BH). The held-out confirmation fork for KH0322/KH0420 is closed.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

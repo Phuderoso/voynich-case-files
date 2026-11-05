@@ -1,0 +1,150 @@
+{
+ "design": {
+  "statistic": "longest_within_group_exact_sum_window_L",
+  "alpha_per_khipu": 0.025,
+  "bonferroni": 2,
+  "R_CONF": 20000,
+  "R_FPR": 5000,
+  "R_POW": 5000,
+  "N_FPR": 200,
+  "N_POW": 200,
+  "plant": "one within-group exact sum k=6 (fallback k=5)",
+  "seeds": {
+   "KH0322": 3430,
+   "KH0420": 3431,
+   "power": 3432,
+   "fpr": 3433
+  },
+  "smoke": false
+ },
+ "confirmation": {
+  "KH0322": {
+   "khipu_id": 1000336,
+   "okr": "KH0322",
+   "inv": "UR086",
+   "n_pend": 107,
+   "n_groups": 23,
+   "sizes": [
+    7,
+    4,
+    9,
+    4,
+    4,
+    5,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    4,
+    3,
+    4,
+    4,
+    8,
+    7,
+    8,
+    8,
+    4,
+    1,
+    1
+   ],
+   "detail": {
+    "L": 8,
+    "n_hits": 2,
+    "n_groups_hit": 2,
+    "n_eligible_groups": 18,
+    "max_k_groups": [
+     2
+    ],
+    "loo_L_after_zeroing_max_groups": 3
+   },
+   "L_obs": 8,
+   "p": 0.001399930003499825,
+   "null_mean": 1.9602,
+   "null_p95": 5.0,
+   "null_p99": 6.0,
+   "null_max": 8,
+   "crit_alpha": 6,
+   "null_tail_at_crit": 0.0306,
+   "R": 20000,
+   "seed": 3430
+  },
+  "KH0420": {
+   "khipu_id": 1000482,
+   "okr": "KH0420",
+   "inv": "UR182",
+   "n_pend": 30,
+   "n_groups": 7,
+   "sizes": [
+    2,
+    5,
+    1,
+    5,
+    7,
+    1,
+    9
+   ],
+   "detail": {
+    "L": 8,
+    "n_hits": 1,
+    "n_groups_hit": 1,
+    "n_eligible_groups": 4,
+    "max_k_groups": [
+     6
+    ],
+    "loo_L_after_zeroing_max_groups": 0
+   },
+   "L_obs": 8,
+   "p": 0.000199990000499975,
+   "null_mean": 0.40445,
+   "null_p95": 3.0,
+   "null_p99": 4.0,
+   "null_max": 8,
+   "crit_alpha": 4,
+   "null_tail_at_crit": 0.0265,
+   "R": 20000,
+   "seed": 3431
+  }
+ },
+ "fpr": {
+  "n": 200,
+  "hits": 5,
+  "fpr": 0.025,
+  "gate_pass": true,
+  "gate_threshold": 0.08,
+  "binom_p_above_0_05": 0.9735531999908008
+ },
+ "power": {
+  "KH0322": {
+   "n_plants": 200,
+   "skipped": 0,
+   "detected": 22,
+   "power": 0.11,
+   "R": 5000
+  },
+  "KH0420": {
+   "n_plants": 200,
+   "skipped": 0,
+   "detected": 200,
+   "power": 1.0,
+   "R": 5000
+  }
+ },
+ "per_khipu": {
+  "KH0322": {
+   "p": 0.001399930003499825,
+   "L": 8,
+   "power": 0.11,
+   "verdict": "confirmed"
+  },
+  "KH0420": {
+   "p": 0.000199990000499975,
+   "L": 8,
+   "power": 1.0,
+   "verdict": "confirmed"
+  }
+ },
+ "overall": "CONFIRMED",
+ "secs": 20.9
+}
