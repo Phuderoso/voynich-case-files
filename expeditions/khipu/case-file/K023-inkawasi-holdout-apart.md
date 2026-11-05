@@ -30,3 +30,31 @@ recoloured away from its anchor's colour with probability 0.3), as in K022.
 Compute: seconds.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration commit `01ff1d21`)
+
+Tool: `tools/k023_inkawasi_holdout.py` (1.2 s). Output: `analysis/k023_results.json`.
+
+The held-out set has **15 Inkawasi khipus with 49 usable sum cords**. Controls pass: false-positive rate 0.04
+(rule ≤ 0.08), power 0.85.
+
+| Sum cords | A (obs) | Null mean ± sd | p (one-sided, apart) | Verdict by the rule |
+|---|---|---|---|---|
+| 49 | 13.86 | 17.32 ± 2.09 | **0.048** | **supported, only just** |
+
+### Sensitivity (disclosed after the run, not pre-registered; it can weaken but not upgrade the verdict)
+Tool: `tools/k023_sensitivity.py`. Output: `analysis/k023_sensitivity.json`.
+- **Monte Carlo:** five more seeds give p from 0.0477 to 0.0504 (mean 0.049). One of the five lands just above 0.05.
+- **Independence:** KH0502 (UR266) is the published twin of UR275 (KH0514, in the K022 set; see K020), so it is not
+  truly held out. Without it, p = 0.062 (mean of five seeds), which is above α.
+
+### Reading
+The held-out khipus go in the predicted direction (totals share their summands' colour about 20 % less than random
+anchors), and the pre-registered rule is met, but **the result is fragile**. It sits on the α line and depends on one
+khipu that is not independent. I'm recording it as **weakly supported, not established**. The OKR has no other
+Inkawasi khipus left to replicate on, so the line is **paused, data-limited**, and it should not be read as a
+colour convention until new Inkawasi records are published.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
