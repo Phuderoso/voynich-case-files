@@ -40,16 +40,16 @@ meaning across many folios and beats the controls.
 | 2 | Null calibration audit (40 destroyed-signal replicates, size-blocked permutation) | Is C001's null calibrated? Does hand add vocabulary info beyond section *and* Currier? | ZL 3b | C001's null gave false positives 35–44% of the time; withdrawn. With a calibrated null all C001 effects survive at K=300 at about half size. Hand beyond section×Currier: not detected (p = 0.081). [C002](case-file/C002-null-calibration-audit.md) |
 | 3 | Glyph-position rigidity (I(glyph; word position)/H(position), block bootstrap) vs. natural-language, vowelless, Hebrew and self-citation-generator controls | Are Voynich glyphs more tied to word position than letters in natural scripts? Does the Timm–Schinner generator reproduce it? | ZL 3b (commas split and joined, raw EVA) | Voynich R = 0.485 vs ≤ 0.216 for all 8 controls (incl. Hebrew final forms, vowelless Latin/Italian); robust to comma choice and alphabet size; all controls pass. Authors' published generator sample: 0.418, closer but still below; other configurations not tested (open). [C003](case-file/C003-glyph-position-rigidity.md) |
 | 4 | Generator configuration sweep (authors' own self-citation generator, 350 runs, held-out seed confirmation); verbose-cipher planted controls | Can any Timm–Schinner configuration reach Voynich glyph-position rigidity while keeping Voynich-like vocabulary? | ZL 3b | The generator can exceed Voynich rigidity (0.649 on held-out seeds) but only with a vocabulary ~4× poorer; across random settings rigidity and type/token ratio trade off (r = −0.80); no Voynich-like setting reached it (best 0.448 < 0.470; not excluded). Verbose-cipher control failed its planted check: no verdict. [C004](case-file/C004-generator-sweep-and-verbose-cipher.md) |
+| 5 | Constrained search of the generator (coordinate ascent, seed lines, held-out seeds); redesigned verbose-cipher planted controls (Latin, Italian) | Can the generator reach Voynich rigidity with a Voynich-like vocabulary? Does a verbose cipher with positional symbols reach it? | ZL 3b | Yes to both: a searched config reached R 0.530 on 10 unseen seeds with Voynich-like word length, TTR and h2; final-only-symbol verbose ciphers give 0.47–0.51. Rigidity cannot separate copying from verbose ciphers; C004's trade-off sentence superseded. [C005](case-file/C005-targeted-generator-search-and-verbose-cipher.md) |
 
 ## Parallel expeditions
 - [Inka khipu](expeditions/khipu/README.md): exact arithmetic tests on the Open Khipu Repository. Why this one: [triage](expeditions/TRIAGE.md).
 
 ## Outreach log
-None yet.
+- 2026-11-04 (cycle 4): draft issue for [TorstenTimm/SelfCitationTextgenerator](https://github.com/TorstenTimm/SelfCitationTextgenerator) on the rigidity/vocabulary trade-off; shown to Phuderoso for review, **not filed**. Superseded by C005; will not be sent as written.
 
 ## Not yet covered
-Conditional entropy h2, Zipf and word-length profiles, targeted generator search (rigidity with rich vocabulary),
-verbose ciphers (redesigned planted control), abbreviation systems, Rugg tables, Hauer-Kondrak replication on known ciphers, label-to-illustration
+Conditional entropy h2, Zipf and word-length profiles, same-line word pairs and word-boundary metrics on matched generator vs verbose-cipher texts, abbreviation systems, Rugg tables, Hauer-Kondrak replication on known ciphers, label-to-illustration
 links, zodiac month-name cribs, glyph stroke variation from the scans, Takahashi vs. ZL disagreements.
 
 ---

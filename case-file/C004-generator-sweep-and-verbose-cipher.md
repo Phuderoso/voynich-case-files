@@ -151,3 +151,10 @@ planted control (codes built with a stated positional rule, e.g. Hebrew-like fin
 section-matched Voynich references.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+## Audit note (added 2026-11-04 23:15 PT, after C005)
+C005's targeted search found a configuration of the same generator that, on 10 held-out seeds, reaches R 0.530 with
+Voynich-like word length, type/token ratio and h2. The verdicts above stand as worded ("not reached in the explored
+space", not excluded), but the sentence "in this generator, rigidity is bought with vocabulary" describes C004's
+random sample only and is superseded. See [C005](C005-targeted-generator-search-and-verbose-cipher.md).
