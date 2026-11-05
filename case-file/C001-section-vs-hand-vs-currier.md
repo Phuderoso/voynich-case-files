@@ -2,6 +2,11 @@
 
 **Status:** pre-registered 2026-11-04 20:58 PT (before any run), results appended below.
 
+> **Correction (C002, 2026-11-04):** the permutation null used here is miscalibrated (35–44% false positives on
+> destroyed-signal text). All p-values and z-scores below are withdrawn. See [C002](C002-null-calibration-audit.md) for
+> calibrated re-runs: the effects survive at K=300 at about half the size, and hand adds no detectable information
+> beyond section and Currier language jointly.
+
 ## Question
 The Voynich vocabulary is known to differ between parts of the book. Three labellings compete to explain that:
 illustration section (`$I`), Lisa Fagin Davis's scribal hand (`$H`, LFD 2020), and Currier's language A/B (`$L`).
