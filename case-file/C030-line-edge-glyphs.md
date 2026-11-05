@@ -70,6 +70,11 @@ identical):
   `ch` 291 vs 318. The generator's line starts favour gallows, not the manuscript's `y-`, `s-` and `d-` starts, and it
   barely avoids `ch-`.
 
+> **Caveat added after C031 (2026-11-05):** C031 showed that any re-lineation of a text with real line structure leaks
+> some edge structure into the calibration texts (here as a deficit). The passed gates above are therefore weaker
+> evidence than they first appeared; the real effects are about 20× larger than the leakage measured in C031. No
+> verdict is withdrawn. See [C031](C031-line-start-repaired.md).
+
 ## Reading the result
 - The line-end preference for `-m` and `-g` (known since Currier) survives a null that keeps every line's own words,
   in both transcriptions. The generator sample reproduces it with the same units, so a line-end effect by itself does
