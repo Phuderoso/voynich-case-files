@@ -1,0 +1,906 @@
+{
+ "planted_accuracy": 1.0,
+ "planted_by_text": {
+  "Latin": 1.0,
+  "Italian": 1.0,
+  "Spanish": 1.0,
+  "Hebrew": 1.0,
+  "Latin-vowelless": 1.0,
+  "Latin (Descartes)": 1.0
+ },
+ "planted_margin_median": 1.7759901672593799,
+ "generator_assigned": {
+  "Latin": 13,
+  "Latin-vowelless": 10,
+  "Spanish": 13,
+  "Italian": 4
+ },
+ "generator_margins": [
+  0.006269039137452799,
+  0.21490438194821043,
+  0.04778853379757401,
+  0.41406227063583156,
+  0.13285105955002058,
+  0.1381187365238972,
+  0.12272891721338411,
+  0.014974124987715134,
+  0.26247382902266053,
+  0.3215719407733353,
+  0.26499832068869256,
+  0.20086040993326112,
+  0.14476741084418743,
+  0.08516448527633787,
+  0.21181004207741214,
+  0.24397207522976858,
+  0.32721410790139843,
+  0.37100221153430635,
+  0.19148366623997295,
+  0.22567275533573392,
+  0.026260802480091723,
+  0.1468634659524006,
+  0.04341374790406376,
+  0.041908959872607225,
+  0.08915595260507407,
+  0.020132831700419924,
+  0.00603966925030297,
+  0.044348697716367264,
+  0.049304841474460154,
+  0.11993347772722382,
+  0.0979016581238319,
+  0.3211508531972769,
+  0.46681599580724187,
+  0.5885943443370004,
+  0.023517550907896572,
+  0.051001619566879895,
+  0.43768742399376204,
+  0.27765492663521557,
+  0.00386631002120657,
+  0.13079529128712275
+ ],
+ "bar_B": 0.5411007884103946,
+ "voynich": {
+  "assigned": {
+   "Latin": 5,
+   "Latin-vowelless": 4,
+   "Spanish": 10,
+   "Italian": 1
+  },
+  "margin_median": 0.035631913726448604,
+  "margins": [
+   0.0048000180203216026,
+   0.041966499352465644,
+   0.015987031602319127,
+   0.022305931087293812,
+   0.0354034876670967,
+   0.2834583633432073,
+   0.23647378113955572,
+   0.036733994734116,
+   0.0012469993300988091,
+   0.03300106758382889,
+   0.013493371738235256,
+   0.004739490046562044,
+   0.035860339785800506,
+   0.017987842903261348,
+   0.05577166096282696,
+   0.07044813123135006,
+   0.027519607898679774,
+   0.2632310273962171,
+   0.05291486193155956,
+   0.045305442648929425
+  ]
+ },
+ "descriptive": {
+  "V_raw_EVA_chars": {
+   "assigned": {
+    "Latin": 13,
+    "Italian": 6,
+    "Spanish": 1
+   },
+   "margin_median": 0.06146214014593572,
+   "margins": [
+    0.5577953897304745,
+    0.5582054299470462,
+    0.046604481408656084,
+    0.6236501755412042,
+    0.05201174444561464,
+    0.4117467375735742,
+    0.003266875145710179,
+    0.023099814448502794,
+    0.6125298495658771,
+    0.023662245927960672,
+    0.5628741428395552,
+    0.04276425463345814,
+    0.04447793719519679,
+    0.017770965645297943,
+    0.051054924505433606,
+    0.046886820903696766,
+    0.15036990696947616,
+    0.0709125358462568,
+    0.4958761437234122,
+    0.44474067591164995
+   ]
+  },
+  "V_Currier_A": {
+   "assigned": {
+    "Latin": 12,
+    "Spanish": 8
+   },
+   "margin_median": 0.12795026954683467,
+   "margins": [
+    0.18006693047623018,
+    0.0933816794170934,
+    0.059277912625616394,
+    0.13184205726235007,
+    0.002604394257869516,
+    0.13513333231219565,
+    0.19987116521532616,
+    0.060389400218835924,
+    0.1461280523719201,
+    0.18116246447387854,
+    0.10886366010333973,
+    0.06275819099892947,
+    0.08272593694836942,
+    0.1560275114346617,
+    0.12405848183131926,
+    0.01631424232538584,
+    0.2385779021359207,
+    0.10912176957284724,
+    0.23454920032756388,
+    0.13752732411961893
+   ]
+  },
+  "V_Currier_B": {
+   "assigned": {
+    "Italian": 4,
+    "Spanish": 12,
+    "Latin": 4
+   },
+   "margin_median": 0.030238172808651313,
+   "margins": [
+    0.15526973552794401,
+    0.015459961898603939,
+    0.08684742528039721,
+    0.03753034225599531,
+    0.0006085819807367102,
+    0.004019621871888339,
+    0.08087094567740853,
+    0.06117092121395217,
+    0.0004079464624011333,
+    0.1822996810084359,
+    0.08211625160131697,
+    0.014287402818464367,
+    0.035616447134770475,
+    0.03134957862422042,
+    0.007254399387514066,
+    0.006509484897521841,
+    0.02912676699308221,
+    0.02155723268415584,
+    0.001961378816695753,
+    0.08001363837616803
+   ]
+  }
+ },
+ "verdict": "no more confident than meaningless text",
+ "planted": [
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 1.7887151651299185
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 1.9196120078600072
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 2.5364544788679235
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 2.50421732996374
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 2.4409705058823685
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 2.486035235668272
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 2.3165713103653727
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 2.605825641434901
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 2.508897213683351
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 1.9345260980004437
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 2.593915959761492
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 1.957750740606776
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 2.586227862293236
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 1.7776256041252718
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 2.361048646100553
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 1.941175248487111
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 1.9205235049222278
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 2.4916117415515093
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 2.2647224556058143
+  },
+  {
+   "text": "Latin",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 1.834215892039684
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 0.7046823050740058
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 1.1448135822462255
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 3.472661150926031
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 1.7176180587949959
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 0.7202511608000361
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 1.1584821943001942
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 1.6297475433249342
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 0.7257510327884195
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 2.063232127654863
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 2.793323349094691
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 1.2228433639848362
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 2.6994145417022453
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 1.767381263356628
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 1.5874449259790888
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 1.6425597220372186
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 1.4037253839280328
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 2.842830412726781
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 1.774354730393488
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 1.9537818209779068
+  },
+  {
+   "text": "Italian",
+   "truth": "Italian",
+   "got": "Italian",
+   "margin": 1.1243458917023192
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 4.550883528452187
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 1.4853834924732967
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 3.1186229722640815
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 1.8992219875255119
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 2.250526448258302
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 2.379099293544125
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 2.4193552433377805
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 0.7344406653266911
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 3.5654496351040184
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 1.7086660816866204
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 1.7786323298261237
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 2.911879918650369
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 1.5041347603118755
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 0.6584429187336639
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 2.0227227890174473
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 1.4319042162183229
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 2.550934562564632
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 3.363928525241257
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 3.4345564400655424
+  },
+  {
+   "text": "Spanish",
+   "truth": "Spanish",
+   "got": "Spanish",
+   "margin": 3.551534348689784
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.7549649984030739
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.7885621148135786
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.5006177525524582
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.4354943203939956
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.6628778223006008
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.464200790162585
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.4606337856586036
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.7514022443019057
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.7938860978672552
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.7083614277887484
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.6590436170564131
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.6611663487075401
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.6020151404955932
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.7163572518810962
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.6594341325278817
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.6353646292880937
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.7085013834211661
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.4719259363882253
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.6660021141589288
+  },
+  {
+   "text": "Hebrew",
+   "truth": "Hebrew",
+   "got": "Hebrew",
+   "margin": 0.530997882331683
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.3227972170947595
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.963104926916375
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.752246507173709
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.904044649752223
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.268296772212736
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.888054034195225
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.886260684414447
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.996440611689235
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 5.1059810801079655
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.790376522567428
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.510602087934585
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 5.2143682427146985
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 5.043143798538632
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.488990747771903
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.964417578576881
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.710998474227259
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.993739337060653
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 5.042382663986554
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.659900710469926
+  },
+  {
+   "text": "Latin-vowelless",
+   "truth": "Latin-vowelless",
+   "got": "Latin-vowelless",
+   "margin": 4.757665969764025
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.08563997206599848
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.060790368519842035
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.38871404551342326
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.04227437603962788
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.2685892356312393
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.06418260422538305
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 1.0386428738450593
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 1.1491392023169344
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 1.022552924081647
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.17521949964626082
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.2676423076431671
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.2766614525517846
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.5075631212124052
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.10388254218662887
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.7683990168966631
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.1125870475657285
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.08660556129365547
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.5326975457157198
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.5718802112325704
+  },
+  {
+   "text": "Latin (Descartes)",
+   "truth": "Latin",
+   "got": "Latin",
+   "margin": 0.3450868664438038
+  }
+ ]
+}
