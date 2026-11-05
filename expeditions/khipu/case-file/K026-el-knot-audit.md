@@ -42,3 +42,45 @@ Data: OKR `khipu.db` as in K001–K025, non-duplicate khipus. Audited knots are 
 
 ## Results
 (Written after the run, below this line.)
+
+Run: `python3 tools/k026_el_knot_audit.py ../khipu.db` (2.3 s). Output: `analysis/k026_results.json`, log `k026_run1.log`.
+**Disclosure:** the first call pointed at an empty copy of the database (`exp/khipu.db`, no tables) and crashed
+before computing anything. It was rerun on the real file. The code is unchanged from the pre-registration commit `f31294fe`.
+
+30 209 audited knots, 579 violations (89 `E`, 490 `L`).
+
+### H1 · Concentration: supported
+| Grouping | G observed | Null mean (99th pct) | p | Verdict |
+|---|---|---|---|---|
+| Khipu | 2 249 | 476 (535) | < 10⁻⁴ | **supported** (power 1.00 at 50 planted in 3 khipus) |
+| Recording series | 203 | 5.2 (14.8) | < 10⁻⁴ | **supported** |
+
+The errors are clustered rather than spread evenly. One khipu, **KH0103 (AS090/N2, Munich)**, holds 98 of the 579 (2.8
+expected). It's followed by KH0108 (UR1095, Munich; 51 vs 5.0), KH0001 (LL01/UR176; 33 vs 5.2) and KH0431 (UR193; 29 vs 7.6).
+By series, the Ascher (AS) transcriptions have twice their share (200 vs 101), and the HP series is almost clean (1 vs 15.7).
+
+### H2 · Which field looks wrong
+| Category | n | Noteworthy (≥ 20) | Where | Reading |
+|---|---|---|---|---|
+| L-turn0 | 186 | **yes** | spread (UR003, UR1095, UR154, UR143: 16–18 each) | turns = 0, value mostly 10 or 100: type `L` looks wrong (a single knot coded as long) or turns weren't recorded |
+| L-turn10+ | 155 | **yes** | UR1095 34, LL01/UR176 32, UR193 29, UR055 22 | turns 10–13 with value = turns: a units "digit" above 9, so either a real non-decimal use or a turn-count error |
+| L-shift | 117 | **yes** | **AS090/N2 74**, AS028 14, AS080 10 | value = turns × 10 or × 100 (e.g. 3 turns valued 30): long knots read in a higher place |
+| E-type | 43 | **yes** | **AS090/N2 22**, UR053A 6 | `E` valued 10/100 in a non-units cluster: the position agrees with the value, so the type code is the suspect |
+| E-zero | 22 | **yes** | UR188 8, AS071 4 | `E` with value 0: value missing |
+| E-value | 19 | no | AS027 6, UR1138 4 | `E` valued 10 in the units cluster |
+| L-zero / L-other / L-off1 / L-turn1 / E-other | 11 / 10 / 6 / 5 / 5 | no | scattered | listed in the JSON |
+
+Example knot ids for every category are in the JSON. **What this can't say:** the database alone can't tell a
+transcription error from a real, unusual knotting practice. For example, long knots in the tens place on AS090/N2 may be
+what the cord really shows. These are flags for someone with the original records, not corrections.
+
+### Audit of earlier cycles
+None of the ten K001 sum-cord khipus is in the top-12 concentration list, but KH0349 (UR113, K004) has 3 E-type knots.
+Earlier results stay as they are: K008 showed they're robust to masking odd cords, and these 579 knots are 1.9% of
+the audited set.
+
+### Line 4 status
+**Advanced, answered for the database:** the inconsistencies are concentrated and fall into five noteworthy patterns.
+What's left is outreach: add a short per-category table to the pending OKR data-quality note.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
