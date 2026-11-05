@@ -20,3 +20,44 @@
   are testable, and the K012/K013 maps of real discoveries are then complete for that length range (up to the power
   shown).
 - **Budget.** One run, `timeout 600`. Any amendment is disclosed below.
+
+## Results (one run, 40.4 s; `analysis/k014_results.json`)
+No amendments. The tool reuses K013's code with the seed changed and the BH level made a parameter.
+
+**Combined detector calibration:** 0 of 40 null corpora with any discovery; pooled share of null pairs with
+min(p) < 0.005 = 0.0005. **Calibrated** (rules: ≤ 6/40 and ≤ 0.02).
+
+**Power by planted copy length (100 plants each):**
+
+| Copy length (cords) | K012 values | K013 (value, length) | Combined |
+|---|---|---|---|
+| 6 | 0.26 | 0.32 | 0.31 |
+| 8 | 0.53 | 0.60 | 0.60 |
+| 10 | 0.65 | 0.70 | 0.68 |
+| 12 | 0.72 | 0.79 | 0.78 |
+| 16 | 0.86 | 0.89 | 0.90 |
+
+- **Detection floor is 8 cords for all three detectors.** Matches of 8 or more cords are **testable** (power 0.53–0.90);
+  matches of 6 cords or fewer stay **not testable**.
+- With 100 plants per cell the standard error is about 0.05, so K013 vs K012 (≈ +0.05) and combined vs K013
+  (≈ 0) are **not distinguishable** here. The combined detector adds nothing measurable; K013 stays the tool of record.
+- **Real data, combined detector (6 discoveries):** the five known cross-khipu pairs plus KH0240 UR004 (Leymebamba) ·
+  KH0496 UR260 (Incahuasi), found by the K012 arm (p12 = 1.3e-8; p13 = 0.18). The Incahuasi JC009/JC013 lead and the
+  UR053B/UR053C parts drop out at the stricter 0.025 level.
+
+## Literature check of the two leads (web, 2026-11-05)
+- **KH0616 JC009 · KH0620 JC013.** The Khipu Field Guide catalogue page for KH0616 already lists KH0620 as its most
+  similar khipu ("Similar Khipu: Previous (KH0620)"). So the pairing is **consistent with existing work** and is not a
+  new discovery. Our contribution is only a calibrated chance probability for the shared 6-run block.
+- **KH0240 UR004 · KH0496 UR260.** The Inkawasi inventory (Urton & Chu 2015, Appendix I) records UR260 as part of
+  the "khipu pile" in the corridor, tied to UR259, with no mention of any Leymebamba link. I found **no literature**
+  on this pair. It stays an open lead; the shared pattern is small values (1, 2, 3), so a typological explanation
+  (a common counting template) is plausible and must be tested before anything else.
+
+## Audit note: what these tools can't see by design
+Urton & Chu (2015) describe the Inkawasi "closely matching" pairs UR267A/UR255 and UR267B/UR256, where triplets
+x / 15 / y in one khipu become x / y / 15 in the other. Those are reorderings, not identical blocks, so none of the
+exact-block tools (K005–K014) can detect them. That is a **coverage limit, not a negative result**. It opens a new
+line: a close-match detector, with those two published pairs as positive controls.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
