@@ -78,3 +78,39 @@ count overshoots spaces + commas + 1 on most lines. **Change: drop the run-count
 gates and decision rule are the same. Run 1 is kept as is (env `C039_RUN_GATE=1` reproduces it). The amendment was
 made after seeing run 1, and I say so here. Its risk is that more lines are misassigned, which adds noise to every
 class equally. The FPR and power gates still decide whether the run is testable.
+
+## Results — run 2 (after Amendment 1; `analysis/C039_results.json`, ~12 s)
+Lines used: **97** (f58r 26, f58v 20, f111r 32, f113v 19). Spaces anchored by the DP: 831 of 872.
+
+| class | n | mean width (px) | median | share ≥ 15 px |
+|---|---|---|---|---|
+| certain space (leave-one-out) | 872 | 16.5 | 12 | 0.46 |
+| **comma** | 94 | **13.6** | 9.5 | 0.35 |
+| within-word join | 3,695 | 9.6 | 6 | 0.19 |
+
+- **A** (commas − joins): +3.97 px, p = 0.0035. **B** (spaces − commas): +2.94 px, p = 0.020. Sanity check
+  (spaces − joins): +6.9 px, p = 0.002.
+- **Gates: FPR A 1/40, FPR B 0/40, power A 38/40, power B 9/40 → FAILED** (power B < 32/40).
+- **Verdict (pre-registered rule): NOT TESTABLE.** A and B both fell below α, but the B side cannot reliably
+  detect a planted half-gap at this N (9/40), so the HALF reading cannot be claimed. Test A on its own passes its
+  own gates (FPR 1/40, power 38/40). Descriptively, therefore, **commas are wider than within-word joins on the
+  vellum**. Where they sit relative to certain spaces is unresolved. With a noisy ruler they look in between.
+- **Look 2**: comma width vs C035 Harris score ρ = −0.007 (n = 94, p = 0.52), **no relation**. Comma width when IT2a
+  writes a space vs when it does not: 14.2 vs 10.4 px, AUC 0.59 (n = 56, p = 0.12), **not significant**.
+- Run 1 vs run 2: spaces fell from 19.4 to 16.5 px mean as lines were added. The extra lines carry more alignment
+  noise. Joins rose from 6.7 to 9.6.
+
+## What this means
+The first image measurement agrees in direction with C035–C036: a ZL comma is, on average, a real but narrower
+gap. It is wider than a glyph join, and the comma-vs-join contrast survives its own planted controls. The test that
+would place commas strictly *below* spaces is underpowered here, because certain spaces measured through a
+weight-based ruler are themselves noisy (median 12 px). Neither the glyph-context score nor Takahashi's choice
+predicts the measured width at a comma at this n. This says nothing about meaning. It is about how the scribe spaced
+the text and how transcribers read that spacing.
+
+## Next
+A better ruler before more pages: glyph-level localisation (connected components or a learned EVA glyph detector)
+to cut the alignment noise, then all text-only pages (f58r/v, f103r–f116r) for power on B. Also check widths against
+the Beinecke high-resolution IIIF tiles instead of the JPGs.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

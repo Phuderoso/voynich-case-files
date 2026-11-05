@@ -1,0 +1,146 @@
+{
+ "pages": {
+  "f58r": {
+   "image": "115_f58r.jpg",
+   "box": [
+    650,
+    2450,
+    280,
+    3050
+   ],
+   "traces": 44,
+   "zl_lines": 41,
+   "matched": 27,
+   "accepted": 26,
+   "rejected": 1,
+   "px_per_weight": 35.73,
+   "spaces_anchored": [
+    195,
+    212
+   ]
+  },
+  "f58v": {
+   "image": "116_f58v.jpg",
+   "box": [
+    900,
+    2800,
+    280,
+    2980
+   ],
+   "traces": 42,
+   "zl_lines": 39,
+   "matched": 24,
+   "accepted": 20,
+   "rejected": 4,
+   "px_per_weight": 38.09,
+   "spaces_anchored": [
+    166,
+    171
+   ]
+  },
+  "f111r": {
+   "image": "195_f111r.jpg",
+   "box": [
+    345,
+    2450,
+    100,
+    3230
+   ],
+   "traces": 54,
+   "zl_lines": 54,
+   "matched": 34,
+   "accepted": 32,
+   "rejected": 1,
+   "px_per_weight": 34.54,
+   "spaces_anchored": [
+    317,
+    327
+   ]
+  },
+  "f113v": {
+   "image": "200_f113v.jpg",
+   "box": [
+    495,
+    2600,
+    110,
+    3260
+   ],
+   "traces": 49,
+   "zl_lines": 49,
+   "matched": 26,
+   "accepted": 19,
+   "rejected": 7,
+   "px_per_weight": 38.79,
+   "spaces_anchored": [
+    153,
+    162
+   ]
+  }
+ },
+ "method": {
+  "ink": "blur25-diff>30",
+  "band": [
+   -14,
+   10
+  ],
+  "run_min": 10,
+  "end_gap": 60,
+  "cap": 60
+ },
+ "lines_used": 97,
+ "widths": {
+  "space": {
+   "n": 872,
+   "mean": 16.514908256880734,
+   "median": 12.0,
+   "frac_ge15": 0.4644495412844037
+  },
+  "comma": {
+   "n": 94,
+   "mean": 13.574468085106384,
+   "median": 9.5,
+   "frac_ge15": 0.35106382978723405
+  },
+  "nongap": {
+   "n": 3695,
+   "mean": 9.608389715832205,
+   "median": 6.0,
+   "frac_ge15": 0.18863328822733424
+  }
+ },
+ "A_comma_vs_nongap": {
+  "diff": 3.966078369274179,
+  "p": 0.0034982508745627187
+ },
+ "B_space_vs_comma": {
+  "diff": 2.94044017177435,
+  "p": 0.01999000499750125
+ },
+ "sanity_space_vs_nongap": {
+  "diff": 6.906518541048529,
+  "p": 0.001996007984031936
+ },
+ "gates": {
+  "fpr_A": 0.025,
+  "fpr_B": 0.0,
+  "power_A": 0.95,
+  "power_B": 0.225,
+  "passed": false
+ },
+ "verdict": "NOT TESTABLE",
+ "look2_harris": {
+  "n": 94,
+  "spearman": -0.007245174968575418,
+  "p": 0.5197401299350325
+ },
+ "look2_it2a": {
+  "n": 56,
+  "n_it2a_space": 31,
+  "auc": 0.5909677419354838,
+  "p": 0.11694152923538231,
+  "mean_w_it2a_space": 14.161290322580646,
+  "mean_w_it2a_nospace": 10.36
+ },
+ "seconds": 12.0,
+ "run_gate": false
+}

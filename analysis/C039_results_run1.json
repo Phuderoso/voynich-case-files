@@ -141,5 +141,6 @@
   "mean_w_it2a_space": 14.0,
   "mean_w_it2a_nospace": 13.375
  },
- "seconds": 4.1
+ "seconds": 4.7,
+ "run_gate": true
 }
