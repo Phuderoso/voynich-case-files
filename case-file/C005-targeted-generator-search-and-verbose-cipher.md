@@ -127,3 +127,9 @@ Temerev's word-boundary metrics) on the matched generator and VC-F texts, so the
 something other than R.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Audit note (2026-11-05, from C008)
+The selected configuration matches word length, TTR and h2 (and exceeds R), but **not** the word-final glyph
+distribution: on seed 6001, its endings have 1.79 bits of entropy versus 2.53 for the manuscript (`-n` 0.3 % vs 16 %;
+`-m` 19 %, `-g` 7 %). This is descriptive and from one seed. "Voynich-like" in this case file means "within ±15 % on
+the three named statistics" and nothing broader. See [C008](C008-cross-word-rules.md).
