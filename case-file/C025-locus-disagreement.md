@@ -1,6 +1,6 @@
 # C025 — Expedição 25: Do the transcribers disagree more on labels and ring text than on paragraphs?
 
-**Status:** pre-registered before any run (this file is committed with the tool before results exist).
+**Status:** pre-registered before any run (commit `a1bb14e2`, with the tool); results appended below.
 **Family:** F-TRX (transcription reliability), step 2. The family opened in C024.
 
 ## Question
@@ -42,5 +42,30 @@ p = (1 + #null ≥ observed) / (1 + 4,000).
   errors, but label readings may also differ in segmentation. A detected effect means layout and disagreement go
   together; it does not say which transcriber is right. Only the Beinecke scans can settle a reading.
 - ZL and IT do not always share line numbering; unmatched lines are dropped and counted in the results.
+
+## Results (run after the pre-registration; `analysis/C025_results.json`, `analysis/C025_run_log.txt`, 46 s)
+
+Matched ZL/IT line pairs and unmatched ZL lines are counted in the JSON.
+
+| Look | Eligible pages | Non-paragraph lines | Paragraph lines | Pooled rate, non-paragraph | Pooled rate, paragraph | D (within page) | p | FPR at 0.025 | Power at +1 / +2 / +4 pp | Verdict |
+|---|---|---|---|---|---|---|---|---|---|---|
+| L (labels) | 36 | 553 | 799 | 6.37 % | 1.92 % | +0.035 | 0.00025 | 0/40 | 1.00 / 1.00 / 1.00 | **DETECTED** |
+| CR (circular + radial) | 10 | 83 | 81 | 5.99 % | 3.10 % | +0.030 | 0.0022 | 0/40 | 1.00 / 1.00 / 1.00 | **DETECTED** |
+
+Both looks pass both gates (minimum detectable effect ≤ 1 pp) and are significant after Bonferroni.
+
+**Reading.** On the same page, the two transcriptions disagree about three times as often on label text and about
+twice as often on ring and ray text as on paragraph text. This is the layout effect C024 suspected for hand 4, now
+tested inside pages, so hand, language and illustration cannot explain it.
+
+**What it does not say.** It does not say which transcriber is right, nor whether the cause is the glyphs (labels are
+often small, isolated or squeezed into drawings) or the conventions (how each transcriber reads unusual label forms).
+Only the Beinecke scans can settle individual readings. It is also no surprise to anyone who has worked with these
+files; what is new here is a within-page, controlled size of the effect.
+
+**Practical consequence for statistics.** Label and ring text is the least reliable part of any single
+transcription. Analyses that lean on labels (label-to-illustration matching, "plant name" readings, vocabulary of the
+astronomical section) should check that their result holds in both ZL and IT before trusting it. C024's descriptive
+hand-4 excess is very plausibly this layout effect.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
