@@ -33,4 +33,25 @@ Does the same Voynich word type come back at distances of 50–500 tokens more o
   - The manuscript order is the current binding, which may be wrong (Layfield & Fagin Davis 2026). Mis-binding would mostly weaken long-range recurrence.
 - **Code:** `tools/c037_long_range_recurrence.py`, seed 3737, run with `timeout 600`.
 
+
+## Results (run after the pre-registration push, commit 1cecb1a9; runtime 209 s)
+
+**Gates passed.** FPR 1/40, power 40/40, natural texts 7/7 significant. All H1 verdicts stand.
+
+| Text | S (d=1–10) | L (d=50–500) | p_L | z | vs natural S | vs natural L | H1 |
+|---|---:|---:|---:|---:|---|---|---|
+| Voynich ZL 3b | 1.522 | 0.527 | 0.001 | 83.8 | inside | **above** | **LONG-RANGE RECURRENCE** |
+| Voynich IT2a | 1.596 | 0.568 | 0.001 | 95.9 | inside | **above** | **LONG-RANGE RECURRENCE** |
+| Generator base | 1.289 | 0.178 | 0.001 | 36.4 | inside | inside | LONG-RANGE RECURRENCE |
+| Generator C005 matched | 0.468 | 0.272 | 0.001 | 21.1 | inside | inside | LONG-RANGE RECURRENCE |
+| Natural range (7 texts) | −0.011 … 2.379 | 0.019 … 0.511 | — | — | — | — | 7/7 positive |
+
+Hebrew Genesis (L = 0.511) and Exodus (0.430) sit at the top of the natural range; Romance and Latin are much lower. The Voynich L values sit just above Genesis.
+
+**H2 (descriptive).** The base generator matches ZL on short-range S (within 2 combined jackknife SEs) but not on L. The C005 matched generator matches ZL on L but not on S. Neither config reproduces both ends of the Voynich profile at once.
+
+**Interpretation (no overclaim).** The manuscript has long-range word dependence — the same type comes back at distances of 50–500 tokens far above chance. That is what topics do in natural language, but it is also what a self-citation process can do (both generators are positive). Dependence is not meaning. The Voynich L is above the natural range we checked; the generators stay inside it. Mis-binding (Layfield & Fagin Davis 2026) would mostly weaken L, so the high Voynich L is not explained away by a shuffled binding.
+
+**Code and numbers.** `tools/c037_long_range_recurrence.py`, `analysis/C037_results.json`. Seed 3737.
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
