@@ -44,5 +44,59 @@ All eligible khipus are kept (no value-cap skip): D5w needs no DP tables.
   unless it is met on the primary stratum.
 
 ## Results
-(Written after the run, below this line.)
+
+Run 2026-11-05 ~10:35 PT (America/Vancouver), `python3 tools/k031_within_group_windows.py ../khipu.db` (84 s; both stages
+finished all 457 eligible khipus, no time cap). Output is in [`analysis/k031_results.json`](../analysis/k031_results.json).
+No value-cap skip (all eligible kept). Population: 378 khipus with ≥ 2 groups of size ≥ 4; size thirds at 32.7 and 82.3
+pendants; largest third **n = 126** (83–1650 pendants).
+
+**Stage 1, development (seed 3130, K = 300).** Whole corpus (descriptive; no selection).
+
+| Detector | FPR | A_within | B_within | Mean within | A (unrest.) | B (unrest.) |
+|---|---|---|---|---|---|---|
+| D5 | 0.055 | 0.629 | 0.600 | 0.615 | 0.668 | 0.580 |
+| D5w | 0.042 | 0.785 | 0.753 | 0.769 | 0.477 | 0.291 |
+
+D5w recovers within-group plants far better and, as expected, loses on unrestricted plants (many of which sit across
+groups). FPR for D5w is inside the bar.
+
+**Stage 2, evaluation (fresh seed 3131, K = 500, paired).** Primary stratum = largest third of the population.
+
+| Detector | FPR (large) | A_within | B_within | Mean within |
+|---|---|---|---|---|
+| D5 | 0.048 | 0.532 | 0.468 | 0.500 |
+| D5w | **0.048** | **0.686** | **0.571** | **0.628** |
+
+Paired plant outcomes (A_within + B_within on the large stratum, n = 124 + 126): **40** found only by D5w, **8** found
+only by D5. Exact McNemar **p = 3.3 × 10⁻⁶**. Mean gain **+0.128**.
+
+Adoption rule: (a) FPR ≤ 0.05 ✓, (b) gain ≥ 0.03 ✓, (c) McNemar p < 0.05 ✓.
+
+**Decision: D5w adopted as the line-1 detector for within-group sum recovery on large multi-group khipus.**
+K003's absolute bar (A ≥ 0.80, B ≥ 0.60) is **not** met on the large stratum (0.686 / 0.571), so silence on that
+stratum stays *not testable* at the old absolute power target; D5w is still the better tool there.
+
+### Descriptives (eval; not the decision)
+| Stratum | n | D5w FPR | D5w A_within | D5w B_within | D5 A_within | D5 B_within |
+|---|---|---|---|---|---|---|
+| small third | 126 | 0.056 | 0.836 | 0.817 | 0.681 | 0.643 |
+| mid third | 126 | 0.063 | 0.800 | 0.675 | 0.617 | 0.516 |
+| large third (primary) | 126 | 0.048 | 0.686 | 0.571 | 0.532 | 0.468 |
+| whole population | 378 | 0.056 | 0.772 | 0.688 | 0.608 | 0.542 |
+| whole eligible | 457 | 0.055 | 0.763 | 0.679 | 0.620 | 0.536 |
+
+Mid-third D5w FPR (0.063) sits slightly above 0.05; the primary large stratum is calibrated. Unrestricted A/B recovery
+for D5w on the large stratum is 0.421 / 0.278 (below D5's 0.524 / 0.484): D5w is specialised to within-group structure.
+
+### Reading
+- Restricting to within-group windows removes chance sums that cross `CLUSTER_ID` boundaries. On large khipus those
+  false matches were drowning the planted within-group signal; D5w lifts recovery by about 13 percentage points there.
+- The gain is largest where it was needed (large third). On small khipus both detectors are already strong; D5w is
+  stronger still, but that was not the decision stratum.
+- **Line 1 status.** D5w replaces D5 as the preferred detector when the scientific question is within-group adjacent
+  sums on multi-group khipus. D5 remains the right tool for unrestricted adjacent sums. Next levers: a corpus-wide
+  D5w scan with BH-FDR (held-out calibration, given the mid-stratum FPR), and/or a combined rule that uses D5w inside
+  groups and D5 only where a window is free to cross.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
 
