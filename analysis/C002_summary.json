@@ -1,0 +1,63 @@
+{
+ "replicates": 40,
+ "K300_N0": {
+  "n": 200,
+  "frac_p<=0.05": 0.435,
+  "frac_p<=0.01": 0.225,
+  "KS": 0.421,
+  "calibrated": false,
+  "per_test_frac_p<=0.05": {
+   "T1 I(W;H|S)": 0.0,
+   "T2 I(W;S|H)": 0.5,
+   "T3 I(W;L|S)": 0.0,
+   "T4 I(W;S|L)": 0.8,
+   "T5 I(W;H|L)": 0.875
+  }
+ },
+ "K300_N1": {
+  "n": 200,
+  "frac_p<=0.05": 0.05,
+  "frac_p<=0.01": 0.01,
+  "KS": 0.046,
+  "calibrated": true,
+  "per_test_frac_p<=0.05": {
+   "T1 I(W;H|S)": 0.0,
+   "T2 I(W;S|H)": 0.15,
+   "T3 I(W;L|S)": 0.0,
+   "T4 I(W;S|L)": 0.025,
+   "T5 I(W;H|L)": 0.075
+  }
+ },
+ "K1000_N0": {
+  "n": 200,
+  "frac_p<=0.05": 0.345,
+  "frac_p<=0.01": 0.26,
+  "KS": 0.31,
+  "calibrated": false,
+  "per_test_frac_p<=0.05": {
+   "T1 I(W;H|S)": 0.0,
+   "T2 I(W;S|H)": 0.0,
+   "T3 I(W;L|S)": 0.0,
+   "T4 I(W;S|L)": 1.0,
+   "T5 I(W;H|L)": 0.725
+  }
+ },
+ "K1000_N1": {
+  "n": 200,
+  "frac_p<=0.05": 0.085,
+  "frac_p<=0.01": 0.035,
+  "KS": 0.091,
+  "calibrated": false,
+  "per_test_frac_p<=0.05": {
+   "T1 I(W;H|S)": 0.0,
+   "T2 I(W;S|H)": 0.0,
+   "T3 I(W;L|S)": 0.0,
+   "T4 I(W;S|L)": 0.025,
+   "T5 I(W;H|L)": 0.4
+  }
+ },
+ "C2_power_T1_K300_N0": 1.0,
+ "C2_power_T1_K300_N1": 0.85,
+ "C2_power_T1_K1000_N0": 0.25,
+ "C2_power_T1_K1000_N1": 0.1
+}
