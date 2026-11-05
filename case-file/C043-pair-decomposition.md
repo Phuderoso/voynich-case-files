@@ -58,17 +58,60 @@ Is the Voynich h2 deficit vs natural language concentrated in a small set of pre
   - Helpers imported from `tools/c041_conditional_entropy.py` and `c003` / `c030`.
 - **Code:** `tools/c043_pair_decomposition.py`, seed 4343, run with `timeout 600`. Output: `analysis/C043_results.json`. Budget ~8 min with checkpoints.
 
-**Status:** pre-registered (this commit) before any Voynich / generator / vowelless run; results below after the run.
+**Status:** pre-registered (commit 7638978) before any Voynich / generator / vowelless run; results below (runtime 3.5 s).
 
-## Results
-*(placeholder — filled after the gated run)*
+## Results (one run after the pre-registration push, commit 7638978; runtime 3.5 s)
+
+**Gates FAILED → H1 NOT TESTABLE.**
+- FPR 22/40 (need ≤ 4): within-word shuffle C5 exceeded the unshuffled Caesar-window C5 in 22/40 windows (mean shuffle C5 0.498 vs base 0.491).
+- Power 1/40 (need ≥ 32): `plant_copy` (p = 0.6) *lowered* C5 on average (mean plant 0.417 vs base 0.491). A uniform successor map spreads mutual information across predecessors rather than concentrating it in the top 5 — so this plant is the wrong positive control for a C5 gate. Disclosed; not redesigned after seeing Voynich numbers.
+- H2 size-check on Caesar vs fixed EVA set S: **skipped** (S has no Latin-letter analogue); H2 relies on the C041/C042 h2 FPR/power already established.
+- Leave-one-out: Hebrew Genesis C5 (0.553) is above the other six; no other natural text is. Every text reached N = 50,000. Caesar full stream 143,901 symbols. Generator_C005matched was available.
+- Note on `f_top9`: can exceed 1 when some predecessors carry negative pointwise MI (H(next|a) > H(next)); observed for vowelless Caesar (1.011). Disclosed, not patched.
+
+| Text | h2 | I | **C5** | f_top9 / f_S | contrib(S) | h2_abl(S) | closed |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| Voynich ZL 3b | **2.338** | 1.524 | **0.487** | f_S **0.717** | **1.092** | **3.431** | **1.553** |
+| Voynich IT2a | **2.331** | 1.530 | **0.485** | f_S **0.715** | **1.094** | **3.426** | **1.540** |
+| Generator base | 2.183 | 1.546 | 0.498 | f_S 0.707 | 1.094 | 3.277 | 1.273 |
+| Generator C005 matched | 2.424 | 1.507 | 0.555 | f_S 0.560 | 0.845 | 3.269 | 1.366 |
+| Latin Caesar | 3.287 | 0.723 | 0.498 | f_top9 0.705 | — | — | — |
+| Latin Descartes | 3.352 | 0.688 | 0.504 | f_top9 0.712 | — | — | — |
+| Italian Dante | 3.105 | 0.822 | 0.512 | f_top9 0.723 | — | — | — |
+| Italian Machiavelli | **3.042** | 0.873 | 0.528 | f_top9 0.718 | — | — | — |
+| Spanish Cervantes | 3.049 | 0.927 | 0.483 | f_top9 0.705 | — | — | — |
+| Hebrew Genesis | 3.418 | 0.639 | **0.553** | f_top9 0.769 | — | — | — |
+| Hebrew Exodus | 3.437 | 0.643 | 0.552 | f_top9 0.754 | — | — | — |
+| Caesar vowelless | 3.096 | 0.447 | **0.835** | f_top9 1.011† | — | — | — |
+| Dante vowelless | 2.886 | 0.574 | 0.663 | f_top9 0.937 | — | — | — |
+| **Natural max C5** | | | **0.553** | | | | |
+| **Vowelless max C5** | | | **0.835** | | | | |
+| **nat_min h2** | **3.042** | | | | | | |
+
+† `f_top9 > 1` from negative pointwise-MI predecessors (see note above).
+`f_S` on natural using EVA labels is N/A (alphabet mismatch); natural/vowelless rows report `f_top9` (own top 9).
+
+ZL / IT2a top-5 by contribution: `y, i, n, a, d` (same order). Fixed S = `{y, i, n, a, d, r, ch, l, q}`.
+
+**H1 (primary, concentration): NOT TESTABLE.**
+- Gates failed (FPR 22/40, power 1/40). No concentration verdict is issued.
+- Descriptive only (would not decide): ZL C5 0.487 ≤ natural max 0.553 (and ≪ vowelless max 0.835), so the top-5 *share* of MI is ordinary; Voynich's unusual feature is the large total I (1.52 vs natural 0.64–0.93), not a spike in C5.
+
+**H2 (secondary, deficit localization via fixed S): GAP-CLOSED.**
+- ZL: contrib(S) = 1.092 bits, D = nat_min − h2 = 3.042 − 2.338 = 0.704, closed = **1.553**; h2_abl(S) = 3.431 ≥ nat_min.
+- IT2a replicates: contrib(S) = 1.094, closed = **1.540**, h2_abl(S) = 3.426 ≥ nat_min.
+- Neutralizing the C042 Look 3 set more than closes the entire h2 deficit (overshoots into the natural band). Confirmatory of that same-day exploration, not an independent discovery of S.
+- Generators (do not decide): both also GAP-CLOSED on the same S (base closed 1.27, C005 1.37).
 
 ## What this means
-*(placeholder)*
+- The ~0.70-bit h2 deficit is **localized** to the rigid-pair predecessors named in C042 Look 3: ablating those nine glyphs analytically removes more MI than the deficit itself. The writing system's predictability is carried by `qo-`, `-dy`, `-in`/`-ir`, `ch-` and kin — a grammar fact, not a meaning claim.
+- Top-5 *concentration* (C5) is not what sets Voynich apart from natural language; total mutual information is. The C5 gate's plant control failed for a structural reason (uniform successor maps dilute C5), so H1 stays not testable rather than being forced.
+- The Timm–Schinner generator again follows the manuscript on the same S. No defect to report.
 
 ## Next
-*(placeholder)*
+- F-ENT step 4: a redesigned concentration test with a plant that *raises* C5 (e.g. reinforce only a small predecessor set), or Zipf / word-length profiles, or F-LINE step 5 (paragraph-first / Neal keys).
+- Do not treat GAP-CLOSED as a decipherment lead; S was chosen from the same deficit it explains.
 
-**Code and numbers.** `tools/c043_pair_decomposition.py`, `analysis/C043_results.json`. Seed 4343.
+**Code and numbers.** `tools/c043_pair_decomposition.py`, `analysis/C043_results.json`. Seed 4343. Prereg 7638978.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
