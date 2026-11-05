@@ -1,0 +1,197 @@
+{
+ "source": "data/ZL3b-n.txt",
+ "pages": 196,
+ "tokens": 34344,
+ "types": 7595,
+ "nperm": 1000,
+ "K": 100,
+ "crosstab_section_hand": {
+  "T/1": 1,
+  "H/1": 95,
+  "H/2": 20,
+  "H/5": 6,
+  "S/3": 24,
+  "T/5": 1,
+  "B/2": 19,
+  "T/2": 4,
+  "C/2": 3,
+  "C/4": 1,
+  "P/1": 16,
+  "H/3": 6
+ },
+ "crosstab_section_currier": {
+  "T/A": 1,
+  "H/A": 95,
+  "H/B": 32,
+  "S/A": 2,
+  "T/B": 5,
+  "B/B": 19,
+  "C/B": 4,
+  "P/A": 16,
+  "S/B": 22
+ },
+ "crosstab_hand_currier": {
+  "1/A": 112,
+  "2/B": 46,
+  "5/B": 7,
+  "3/A": 2,
+  "4/B": 1,
+  "3/B": 28
+ },
+ "C1_shuffled": {
+  "T1 I(W;H|S)": {
+   "obs_bits": 0.01412,
+   "null_mean": 0.01484,
+   "null_sd": 0.00065,
+   "excess_bits": -0.00072,
+   "z": -1.11,
+   "p": 0.86853,
+   "strata_with_variation": 3,
+   "verdict": "no detectable extra info"
+  },
+  "T2 I(W;S|H)": {
+   "obs_bits": 0.01537,
+   "null_mean": 0.01497,
+   "null_sd": 0.0008,
+   "excess_bits": 0.0004,
+   "z": 0.51,
+   "p": 0.30279,
+   "strata_with_variation": 4,
+   "verdict": "no detectable extra info"
+  },
+  "T3 I(W;L|S)": {
+   "obs_bits": 0.00729,
+   "null_mean": 0.00716,
+   "null_sd": 0.0006,
+   "excess_bits": 0.00013,
+   "z": 0.22,
+   "p": 0.39044,
+   "strata_with_variation": 3,
+   "verdict": "no detectable extra info"
+  },
+  "T4 I(W;S|L)": {
+   "obs_bits": 0.01565,
+   "null_mean": 0.01494,
+   "null_sd": 0.00079,
+   "excess_bits": 0.00071,
+   "z": 0.9,
+   "p": 0.19522,
+   "strata_with_variation": 2,
+   "verdict": "no detectable extra info"
+  },
+  "T5 I(W;H|L)": {
+   "obs_bits": 0.00941,
+   "null_mean": 0.00872,
+   "null_sd": 0.00059,
+   "excess_bits": 0.00069,
+   "z": 1.18,
+   "p": 0.12749,
+   "strata_with_variation": 2,
+   "verdict": "no detectable extra info"
+  }
+ },
+ "C2_planted_hand2": {
+  "T1 I(W;H|S)": {
+   "obs_bits": 0.01949,
+   "null_mean": 0.01529,
+   "null_sd": 0.00072,
+   "excess_bits": 0.0042,
+   "z": 5.85,
+   "p": 0.00398,
+   "strata_with_variation": 3,
+   "verdict": "signal"
+  },
+  "T2 I(W;S|H)": {
+   "obs_bits": 0.01519,
+   "null_mean": 0.01483,
+   "null_sd": 0.00081,
+   "excess_bits": 0.00035,
+   "z": 0.44,
+   "p": 0.33466,
+   "strata_with_variation": 4,
+   "verdict": "no detectable extra info"
+  },
+  "T3 I(W;L|S)": {
+   "obs_bits": 0.01086,
+   "null_mean": 0.00727,
+   "null_sd": 0.00059,
+   "excess_bits": 0.00359,
+   "z": 6.09,
+   "p": 0.00398,
+   "strata_with_variation": 3,
+   "verdict": "signal"
+  },
+  "T4 I(W;S|L)": {
+   "obs_bits": 0.02474,
+   "null_mean": 0.01546,
+   "null_sd": 0.00087,
+   "excess_bits": 0.00928,
+   "z": 10.7,
+   "p": 0.00398,
+   "strata_with_variation": 2,
+   "verdict": "signal"
+  },
+  "T5 I(W;H|L)": {
+   "obs_bits": 0.02047,
+   "null_mean": 0.00908,
+   "null_sd": 0.00072,
+   "excess_bits": 0.0114,
+   "z": 15.9,
+   "p": 0.00398,
+   "strata_with_variation": 2,
+   "verdict": "signal"
+  }
+ },
+ "voynich": {
+  "T1 I(W;H|S)": {
+   "obs_bits": 0.05705,
+   "null_mean": 0.02084,
+   "null_sd": 0.00237,
+   "excess_bits": 0.03621,
+   "z": 15.26,
+   "p": 0.001,
+   "strata_with_variation": 3,
+   "verdict": "signal"
+  },
+  "T2 I(W;S|H)": {
+   "obs_bits": 0.06033,
+   "null_mean": 0.02266,
+   "null_sd": 0.00234,
+   "excess_bits": 0.03767,
+   "z": 16.13,
+   "p": 0.001,
+   "strata_with_variation": 4,
+   "verdict": "signal"
+  },
+  "T3 I(W;L|S)": {
+   "obs_bits": 0.04903,
+   "null_mean": 0.01198,
+   "null_sd": 0.00205,
+   "excess_bits": 0.03705,
+   "z": 18.04,
+   "p": 0.001,
+   "strata_with_variation": 3,
+   "verdict": "signal"
+  },
+  "T4 I(W;S|L)": {
+   "obs_bits": 0.09338,
+   "null_mean": 0.02553,
+   "null_sd": 0.00297,
+   "excess_bits": 0.06784,
+   "z": 22.85,
+   "p": 0.001,
+   "strata_with_variation": 2,
+   "verdict": "signal"
+  },
+  "T5 I(W;H|L)": {
+   "obs_bits": 0.0487,
+   "null_mean": 0.01517,
+   "null_sd": 0.00247,
+   "excess_bits": 0.03354,
+   "z": 13.58,
+   "p": 0.001,
+   "strata_with_variation": 2,
+   "verdict": "signal"
+  }
+ }
+}
