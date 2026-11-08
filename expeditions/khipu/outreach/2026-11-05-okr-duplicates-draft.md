@@ -4,6 +4,7 @@ Title: Possible unflagged re-recordings or copies: KH0097/KH0586, KH0192/KH0470/
 
 Status: drafted 2026-11-05 07:00 PT. The connector opened an approval form, so per our routine rule this is logged as "drafted, not filed". Checked first: no such issue exists (open issues #1, #2).
 Updated 2026-11-08 ~04:25 PT (K044): folded in the K026 E/L category table (flags, not corrections). The four KFG Attachment=T / OKR ATTACHMENT_TYPE=U cords (KH0323 p7, KH0424 p24/p58, KH0482 p25) were checked against KFG ChangeLogs and are **not** added as a data-quality fact (KFG recoded U→T as top cords in Nov–Dec 2025; OKR already stores them as CORD_CLASSIFICATION=T). Still drafted, not filed.
+Updated 2026-11-08 ~05:31 PT (K046): replaced the old same-position colour sentence with the pre-registered K046 colour-agreement result (gates passed; one pair degenerate). Checked first: still only issues #1 and #2. Still drafted, not filed.
 
 ---
 
@@ -21,7 +22,7 @@ How the tests worked, all pre-registered:
 - **Group-leader order** (the first value of each group, rare values weighted more): all 93,528 pairs were compared against 100 corpora with the leaders shuffled. The test held its false-alarm rate (2 of 20 held-out corpora), and the named pairs exceed every one of 1,000 null maxima. ([K018](https://github.com/Phuderoso/voynich-case-files/blob/main/expeditions/khipu/case-file/K018-weighted-leaders.md))
 - **The other cords in each matched group:** the true partner group agrees better than a random group from the same khipu in all three pairs (p < 10⁻⁴, Bonferroni over 3). ([K019](https://github.com/Phuderoso/voynich-case-files/blob/main/expeditions/khipu/case-file/K019-cord-level-check.md))
 
-Pendant counts are KH0097 = 319, KH0586 = 189, KH0192 = 224, KH0470 = 126 and KH0469 = 125. The two Huacho records overlap KH0192 rather than adding up to it. Colours rarely agree at the same position, which may come from the different colour-coding conventions.
+Pendant counts are KH0097 = 319, KH0586 = 189, KH0192 = 224, KH0470 = 126 and KH0469 = 125. The two Huacho records overlap KH0192 rather than adding up to it. **Colour** (pre-registered, [K046](https://github.com/Phuderoso/voynich-case-files/blob/main/expeditions/khipu/case-file/K046-colour-agreement.md)): on the cords aligned by value, identical colour codes occur more often than a within-khipu colour shuffle predicts for KH0192·KH0470 (7/37 vs 3.25 expected, p 0.006; all `YB` on the same within-group slot) and, more weakly, for KH0097·KH0586 (6/89 vs 2.10, p 0.009; mostly plain `W`, not robust to ignoring component order). KH0192·KH0469 share no colour code on the aligned cords at all; there Ascher's `YB` faces Urton's `AB` in 12 of 17 cases, which looks like a difference in how the recorders coded colour rather than a difference of objects.
 
 **A pair that looks like one object** (a K012/K013 exact-block match): KH0140 (AS125) and KH0483 (UR247) share long identical blocks of cord values but carry different Berlin numbers, VA42670 vs VA 42610.
 
