@@ -20,6 +20,32 @@ In an inflected natural language, words with a shared ending often share grammat
 - **Tool:** `tools/c049_context_spelling.py` → `analysis/C049_results.json`. Seed 4949, `timeout 600`.
 
 ## Results
-*(to be added after the run)*
+Run: 63 s (`analysis/C049_results.json`; log kept outside the repo). Seed 4949.
+
+**Gates:** FPR **0/20** (recoded natural halves never reached p < 0.05). Power **0/20**: the planted link (50 of 200 types copying a context neighbour's spelling with one change) was far too weak to move a Spearman correlation over 19,900 pairs. The power gate fails, so **H1 is NOT TESTABLE** by the pre-registered rule.
+
+| Text | ρ half 1 (p) | ρ half 2 (p) |
+|---|---|---|
+| Latin, Caesar | −0.012 (0.92) | −0.001 (0.58) |
+| Latin, Descartes | −0.000 (0.50) | −0.003 (0.54) |
+| Italian, Dante | −0.006 (0.72) | −0.008 (0.76) |
+| Italian, Machiavelli | −0.006 (0.73) | +0.005 (0.34) |
+| Spanish, Cervantes | −0.014 (0.88) | −0.014 (0.91) |
+| Hebrew, Genesis | +0.020 (0.06) | +0.035 (0.02) |
+| Hebrew, Exodus | +0.043 (0.005) | −0.012 (0.84) |
+| **Voynich ZL 3b** | **+0.114 (0.005, floor)** | **+0.078 (0.005)** |
+| **Voynich IT2a** | **+0.092 (0.005)** | **+0.078 (0.005)** |
+
+Mantel null sd is about 0.011–0.015 in every text, so the Voynich values sit roughly 5–8 null sd above zero.
+
+**H2 (pre-registered, no gate attached): HIGHER.** All four Voynich halves (0.078–0.114) lie above the natural maximum (0.043, Exodus half 1); natural range −0.014 to +0.043 over 14 halves.
+
+**Look (descriptive):** Timm–Schinner generator output, first 10,000 tokens: ρ = **0.081** (p 0.005); ZL 3b first 10,000 tokens: ρ = 0.090. The copying generator reaches about the manuscript's level.
+
+**What this says.** In the Voynich text, words that keep the same neighbours look alike far more than in any of the seven natural texts, where at this setting (top 200 types, ±2 window, PPMI) the link is essentially zero for Latin, Italian and Spanish and weak for consonantal Hebrew. The generator, which copies nearby words with small changes, produces a link of the same size. This fits self-citation, and it also fits a system where a word's form encodes its grammatical slot more tightly than European inflection does (Hebrew's small positive values point that way); the result does not decide between them.
+
+**Not claimed.** H1 is not testable (the plant, not the manuscript, was weak). Nothing about meaning. Only seven natural texts in four languages; agglutinative languages with heavy suffixing (Turkish, Finnish, Hungarian) were not in the bank and could plausibly score higher; that is the obvious next control.
+
+**Next (F-EMB step 2):** (a) a power plant that works (e.g. planted spelling families on 50% of types, or test on a rank-matched subset of pairs); (b) add agglutinative and abbreviated-Latin controls; (c) remove pairs sharing the last unit to see whether the link is all suffix; (d) Currier A vs B and generator samples at matched size, with several generator runs to get its spread.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
