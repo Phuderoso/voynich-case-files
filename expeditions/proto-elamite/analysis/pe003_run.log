@@ -1,0 +1,9 @@
+S-full {'exact': 11, 'shifted_mean': 0.0, 'contrast': 11.0, 'null_contrast_mean': 2.097859785978598, 'p': 0.0001}
+D-full {'exact': 11, 'shifted_mean': 0.0, 'contrast': 11.0, 'null_contrast_mean': 3.1942194219421944, 'p': 0.0001}
+B-full {'exact': 11, 'shifted_mean': 0.0, 'contrast': 11.0, 'null_contrast_mean': 2.775177517751775, 'p': 0.0002}
+C-full {'exact': 15, 'shifted_mean': 0.5, 'contrast': 14.5, 'null_contrast_mean': 1.4699469946994699, 'p': 0.0001}
+S-subset {'exact': 76, 'shifted_mean': 72.5, 'contrast': 3.5, 'null_contrast_mean': -5.60941094109411, 'p': 0.0239}
+D-subset {'exact': 72, 'shifted_mean': 68.5, 'contrast': 3.5, 'null_contrast_mean': -7.623712371237124, 'p': 0.0024}
+B-subset {'exact': 76, 'shifted_mean': 72.0, 'contrast': 4.0, 'null_contrast_mean': -7.366936693669367, 'p': 0.0023}
+C-subset {'exact': 98, 'shifted_mean': 88.5, 'contrast': 9.5, 'null_contrast_mean': -3.7131713171317133, 'p': 0.0071}
+{'pe002_stage2_rerun_identical': True, 'differences': {}}
