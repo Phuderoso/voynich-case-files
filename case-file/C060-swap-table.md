@@ -14,7 +14,18 @@ I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (c
 - **Reading rules fixed in advance:** GENERATOR-LIKE means the generator reproduces which glyphs change, not only how often and where — another statistic it matches. DIFFERENT means the generator gets amount and place of change from different glyph swaps, a concrete defect worth reporting to its authors with the table. Neither implies meaning. Note that VG mixes manuscript-vs-generator difference with sampling noise of both; GG carries the generator's noise twice too, so the comparison is fair in noise but not a formal test.
 - **Tool:** `tools/c060_swap_table.py` → `analysis/C060_results.json`; seed 6060; `timeout 600`.
 
-## Results
-*(to be filled after the run)*
+## Results (run 2026-11-08 ~11:31 PT, 93 s, seed 6060; `analysis/C060_results.json`, `analysis/C060_run_log.txt`)
+- **Gate:** label recovery **20/20** (bar 16) — the planted swap was the top excess label with share > 0.3 every time.
+- **Generator:** 12 halves (seeds 552–557; 551 too short, as in C055–C059).
+- **H1 — INTERMEDIATE.** Median VG = **0.409** bits; GG median 0.283, 95th percentile **0.368**, max **0.440**. VG ranges 0.275–0.573; 32/48 Voynich–generator pairs lie above the GG 95th percentile and 16/48 above the GG max. So the manuscript's swap table sits at the far edge of the generator's own spread: not clearly a generator draw, not clearly outside it.
+- **Descriptive references (no verdict):** ZL half 1 vs half 2 = 0.314; IT2a half 1 vs 2 = 0.304 (the manuscript's two halves differ from each other about as much as two generator seeds); ZL vs IT2a on the same half = 0.095 / 0.096 (the transcription matters much less than the section).
+- **Top labels (mean share):** Voynich: insert/delete `e` 0.115, `q` 0.101, `d` 0.063, `i` 0.045, swap `l`↔`r` 0.040, insert/delete `l` 0.039, `k`↔`t` 0.036, `ch`↔`sh` 0.033. Generator: insert/delete `ch` 0.172, `l`↔`r` 0.071, `e` 0.061, `d` 0.060, `o` 0.057, `a`↔`o` 0.044, `o`↔`y` 0.041, `sh` 0.038.
+- **Post-hoc observations (NOT tested, no multiplicity correction; recorded only so a later cycle can pre-register them):** inserting/deleting `ch` is 11–26% of the excess in all 12 generator halves but 1–5% in all 4 manuscript halves; inserting/deleting `q` is 4–16% in the manuscript (much higher in half 2 of both transcriptions) but 0–3% in the generator; `k`↔`t` is 2–5% in the manuscript vs 0–5% in the generator; `ch`↔`sh` is 6–8% in half 1 and 0 in half 2 of both transcriptions. These were found by looking at the run, so they are hypotheses, not findings.
+
+## Verdict
+**INTERMEDIATE.** The generator reproduces the amount (C058) and the place (C059) of local one-glyph changes; on *which* glyphs change, the manuscript sits at the edge of the generator's spread, between its 95th percentile and its maximum. Not a demonstrated defect, and not a match. The large difference between the manuscript's own halves (as large as between generator seeds) says the swap table depends strongly on section — the next step must compare within section and Currier language. No claim about meaning.
+
+## Audit
+C059's journal header gives ~10:47–11:05 PT, but the work ended ~10:53 PT; noted here, the file is left unchanged.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
