@@ -1,0 +1,104 @@
+{
+ "smoke": false,
+ "R": 10000,
+ "N_CAL": 200,
+ "N_POW": 200,
+ "seeds": {
+  "nulls": 4242,
+  "calib": 4243,
+  "power": 4244
+ },
+ "alpha": 0.025,
+ "consistency": {
+  "sha256": "607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db",
+  "n_eligible": 369,
+  "n_holdout": 367,
+  "discovery_found": [
+   "KH0359",
+   "KH0405"
+  ],
+  "k025_n_khipus": 369,
+  "G_holdout": 23,
+  "G_s": 10,
+  "G_ns": 13,
+  "n_pairs": 23,
+  "n_both": 0,
+  "G_s_plus_G_ns": 23
+ }
+}
+nulls 20/367 0.8s
+nulls 40/367 1.5s
+nulls 60/367 3.1s
+nulls 80/367 3.4s
+nulls 100/367 3.7s
+nulls 120/367 4.0s
+nulls 140/367 4.2s
+nulls 160/367 4.7s
+nulls 180/367 5.0s
+nulls 200/367 5.4s
+nulls 220/367 5.8s
+nulls 240/367 6.0s
+nulls 260/367 6.3s
+nulls 280/367 6.7s
+nulls 300/367 7.4s
+nulls 320/367 7.5s
+nulls 340/367 7.9s
+nulls 360/367 8.5s
+nulls 367/367 8.7s
+{
+ "G": 23,
+ "G_s": 10,
+ "G_ns": 13,
+ "null_G_mean": 14.0643,
+ "null_G_sd": 3.7576010312432055,
+ "null_Gs_mean": 1.7338,
+ "null_Gs_sd": 1.3162589258956612,
+ "null_Gns_mean": 12.3305,
+ "null_Gns_sd": 3.50631854656704,
+ "p1": 9.999000099990002e-05,
+ "p2": 0.4607539246075392
+}
+{
+ "capped": false,
+ "n": 200,
+ "fpr_H1": 0.005,
+ "fpr_H2": 0.015,
+ "fpr_any": 0.02
+}
+power H1 {'which': 'H1', 'n': 200, 'hits': 200, 'skipped': 0, 'capped': False, 'rate': 1.0, 'attempts': 200, 'capacity': 899}
+power H2 {'which': 'H2', 'n': 200, 'hits': 122, 'skipped': 0, 'capped': False, 'rate': 0.61, 'attempts': 200, 'capacity': 2600}
+{
+ "decision": {
+  "excluded": false,
+  "H1": {
+   "p": 9.999000099990002e-05,
+   "fpr": 0.005,
+   "power": 1.0,
+   "power_n": 200,
+   "alpha": 0.025,
+   "verdict": "supported",
+   "reason": "p <= 0.025000; calibrated and powered at m=9",
+   "stat": "G_s",
+   "obs": 10,
+   "null_mean": 1.7338,
+   "null_sd": 1.3162589258956612,
+   "capacity": 899
+  },
+  "H2": {
+   "p": 0.4607539246075392,
+   "fpr": 0.015,
+   "power": 0.61,
+   "power_n": 200,
+   "alpha": 0.025,
+   "verdict": "not supported",
+   "reason": "p > 0.025000 with readable power at m=9",
+   "stat": "G_ns",
+   "obs": 13,
+   "null_mean": 12.3305,
+   "null_sd": 3.50631854656704,
+   "capacity": 2600
+  },
+  "reading": "leftover count excess lives in the singleton-total pairs"
+ },
+ "secs": 20.1
+}
