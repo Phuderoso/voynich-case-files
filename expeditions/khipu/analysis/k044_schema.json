@@ -1,0 +1,266 @@
+{
+ "cycle": "K044",
+ "cord_table": "cord",
+ "cord_columns": [
+  "KHIPU_ID",
+  "CORD_ID",
+  "TWIST_ANGLE",
+  "THICKNESS",
+  "FIBER",
+  "TERMINATION",
+  "PENDANT_FROM",
+  "ATTACHED_TO",
+  "ATTACHMENT_TYPE",
+  "CLUSTER_ID",
+  "CLUSTER_ORDINAL",
+  "CORD_ORDINAL",
+  "ATTACH_POS",
+  "CORD_LENGTH",
+  "CREATED_BY",
+  "CREATED_ON",
+  "CHANGED_BY",
+  "CHANGED_ON",
+  "CORD_LEVEL",
+  "CORD_NOTES",
+  "TWIST",
+  "CORD_CLASSIFICATION",
+  "INVESTIGATOR_CORD_NUM",
+  "CANUTO_ORDINAL",
+  "CANUTO_ID"
+ ],
+ "attachment_vocab": [
+  {
+   "attachment_type": "U",
+   "n": 23915
+  },
+  {
+   "attachment_type": "R",
+   "n": 14328
+  },
+  {
+   "attachment_type": "V",
+   "n": 13704
+  },
+  {
+   "attachment_type": "",
+   "n": 1497
+  },
+  {
+   "attachment_type": null,
+   "n": 959
+  }
+ ],
+ "attachment_dc": [
+  {
+   "ATTACH_CD": "R",
+   "ATTACH_DESCR": "recto",
+   "NOTES": ""
+  },
+  {
+   "ATTACH_CD": "V",
+   "ATTACH_DESCR": "verso",
+   "NOTES": ""
+  },
+  {
+   "ATTACH_CD": "H",
+   "ATTACH_DESCR": "overhand knot",
+   "NOTES": "overhand knot attachment; did't use o because of confusion with zero"
+  }
+ ],
+ "grouping_class_dc": [
+  {
+   "CLASS_CODE": "T",
+   "CLASS_DESCRIPTION": "top cords",
+   "NOTES": "strings which \"hang\" in the opposite direction from most pendant cords"
+  },
+  {
+   "CLASS_CODE": "PA",
+   "CLASS_DESCRIPTION": "loop pendants",
+   "NOTES": "pendant strings tied to the primary cord at both ends"
+  },
+  {
+   "CLASS_CODE": "M",
+   "CLASS_DESCRIPTION": "marker",
+   "NOTES": "tassels, miscellaneous strings and other things attached to a primary cord"
+  },
+  {
+   "CLASS_CODE": "K",
+   "CLASS_DESCRIPTION": "knot",
+   "NOTES": "could be a marker knot, or a knot joining two khipu together"
+  },
+  {
+   "CLASS_CODE": "TPA",
+   "CLASS_DESCRIPTION": "top loop pendant",
+   "NOTES": "a loop pendant which \"hangs\" in the opposite direction from the majority of other pendants"
+  },
+  {
+   "CLASS_CODE": "X",
+   "CLASS_DESCRIPTION": "extension",
+   "NOTES": "an extension to the cord which is not a normal pendant but not a part of the main cord (eg, comes out of the terminal or beginning knot)"
+  },
+  {
+   "CLASS_CODE": "A",
+   "CLASS_DESCRIPTION": "side",
+   "NOTES": "a side of a wooden bar"
+  },
+  {
+   "CLASS_CODE": "B",
+   "CLASS_DESCRIPTION": "side",
+   "NOTES": "a side of a wooden bar"
+  },
+  {
+   "CLASS_CODE": "C",
+   "CLASS_DESCRIPTION": "side",
+   "NOTES": "a side of a wooden bar"
+  },
+  {
+   "CLASS_CODE": "D",
+   "CLASS_DESCRIPTION": "side",
+   "NOTES": " a side of a wooden bar"
+  },
+  {
+   "CLASS_CODE": "E",
+   "CLASS_DESCRIPTION": "side",
+   "NOTES": "a side of a wooden bar"
+  },
+  {
+   "CLASS_CODE": "F",
+   "CLASS_DESCRIPTION": "side",
+   "NOTES": "a side of a wooden bar"
+  }
+ ],
+ "classification_T_by_attachment": [
+  {
+   "attachment_type": "U",
+   "n": 191
+  },
+  {
+   "attachment_type": "V",
+   "n": 30
+  },
+  {
+   "attachment_type": "R",
+   "n": 28
+  }
+ ],
+ "secondary": "okr_never_T",
+ "pendants": [
+  {
+   "okr": "KH0323",
+   "inv": "UR087",
+   "cord_ordinal": 7,
+   "value": 15,
+   "kfg_cord": "g2p1 (p7; KFG attachment T = top cord; sums g1 = p1-p6)",
+   "kfg_attachment": "T",
+   "okr_row": {
+    "KHIPU_ID": 1000273,
+    "CORD_ID": 3021354,
+    "CORD_ORDINAL": 7,
+    "ATTACHMENT_TYPE": "U",
+    "CORD_LEVEL": 1,
+    "CORD_CLASSIFICATION": "T",
+    "CLUSTER_ID": 1006820,
+    "CLUSTER_ORDINAL": 1,
+    "INVESTIGATOR_CORD_NUM": 1,
+    "CORD_NOTES": "attached to the right; see observations",
+    "investigator_num": "UR087",
+    "knot_value_sum": 15,
+    "cluster": {
+     "CLUSTER_ID": 1006820,
+     "GROUPING_CLASS": "T",
+     "NUM_CORDS": 1,
+     "BEG_CORD": 7,
+     "END_CORD": 7
+    }
+   }
+  },
+  {
+   "okr": "KH0424",
+   "inv": "UR186",
+   "cord_ordinal": 24,
+   "value": 75,
+   "kfg_cord": "g8p1 (p24; KFG attachment T; sums g7 = p18-p23)",
+   "kfg_attachment": "T",
+   "okr_row": {
+    "KHIPU_ID": 1000497,
+    "CORD_ID": 3041090,
+    "CORD_ORDINAL": 24,
+    "ATTACHMENT_TYPE": "U",
+    "CORD_LEVEL": 1,
+    "CORD_CLASSIFICATION": "T",
+    "CLUSTER_ID": 1016114,
+    "CLUSTER_ORDINAL": 1,
+    "INVESTIGATOR_CORD_NUM": 3,
+    "CORD_NOTES": "",
+    "investigator_num": "UR186",
+    "knot_value_sum": 75,
+    "cluster": {
+     "CLUSTER_ID": 1016114,
+     "GROUPING_CLASS": "T",
+     "NUM_CORDS": 1,
+     "BEG_CORD": 24,
+     "END_CORD": 24
+    }
+   }
+  },
+  {
+   "okr": "KH0424",
+   "inv": "UR186",
+   "cord_ordinal": 58,
+   "value": 596,
+   "kfg_cord": "g17p1 (p58, last cord; KFG attachment T; sums g16 = p52-p57)",
+   "kfg_attachment": "T",
+   "okr_row": {
+    "KHIPU_ID": 1000497,
+    "CORD_ID": 3041124,
+    "CORD_ORDINAL": 58,
+    "ATTACHMENT_TYPE": "U",
+    "CORD_LEVEL": 1,
+    "CORD_CLASSIFICATION": "T",
+    "CLUSTER_ID": 1016123,
+    "CLUSTER_ORDINAL": 1,
+    "INVESTIGATOR_CORD_NUM": 7,
+    "CORD_NOTES": "",
+    "investigator_num": "UR186",
+    "knot_value_sum": 596,
+    "cluster": {
+     "CLUSTER_ID": 1016123,
+     "GROUPING_CLASS": "T",
+     "NUM_CORDS": 1,
+     "BEG_CORD": 58,
+     "END_CORD": 58
+    }
+   }
+  },
+  {
+   "okr": "KH0482",
+   "inv": "UR246",
+   "cord_ordinal": 25,
+   "value": 288,
+   "kfg_cord": "g6p1 (p25; KFG attachment T; sums g5 = p17-p24)",
+   "kfg_attachment": "T",
+   "okr_row": {
+    "KHIPU_ID": 1000556,
+    "CORD_ID": 3049092,
+    "CORD_ORDINAL": 25,
+    "ATTACHMENT_TYPE": "U",
+    "CORD_LEVEL": 1,
+    "CORD_CLASSIFICATION": "T",
+    "CLUSTER_ID": 1018414,
+    "CLUSTER_ORDINAL": 1,
+    "INVESTIGATOR_CORD_NUM": 3,
+    "CORD_NOTES": "",
+    "investigator_num": "UR246",
+    "knot_value_sum": 288,
+    "cluster": {
+     "CLUSTER_ID": 1018414,
+     "GROUPING_CLASS": "T",
+     "NUM_CORDS": 1,
+     "BEG_CORD": 25,
+     "END_CORD": 25
+    }
+   }
+  }
+ ],
+ "disclosure": "schema() rewritten after first run crashed (no table khipu; KHIPU_ID is numeric)"
+}
