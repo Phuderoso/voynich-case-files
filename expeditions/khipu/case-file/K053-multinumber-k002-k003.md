@@ -39,4 +39,72 @@
   Output: `analysis/k053_results.json` (checkpoint `analysis/k053_checkpoint.json`).
 
 ## Results
-_(to be added after the run)_
+One run, 2026-11-08 ~10:39–10:40 PT (America/Vancouver), 55.9 s, no crash, no amendment to the prereg.
+Output: [`analysis/k053_results.json`](../analysis/k053_results.json), log [`analysis/k053_run.log`](../analysis/k053_run.log).
+
+**G0 fixture: pass.** sha256 matches; 3 069 R5 cords (K007/K008 count); universe = K002's 457 ids; empty mask
+reproduces K002's D2 statistic 457/457 and K003's per-k scores 457/457; with the real mask the 242 R5-free khipus
+reproduce K002's D2 statistic 242/242. 215 khipus carry R5 pendants; **433 testable, 24 not testable** (the same
+24 as K008).
+
+**Gates (seed 5353, K = 1000): both detectors pass.**
+
+| | G1 FPR at p ≤ 0.05 (n = 433) | BH flags on calibration | G2 spec-A power at p ≤ 0.05 (n = 374) |
+|---|---|---|---|
+| masked D2 | **0.028** (≤ 0.05 ✓) | 0 | **0.60** (≥ 0.50 ✓; original 0.63) |
+| masked D5 | **0.042** (≤ 0.05 ✓) | 0 | **0.66** (≥ 0.50 ✓; original 0.66) |
+
+Two khipus with ≥ 20 pendants (KH0415, KH0431) have no contiguous non-R5 4-window and were skipped for the plant.
+
+**Corpus (BH q = 0.05 over 433).** Masked D2 (seed 5354): 19 khipus at stage-1 p ≤ 0.01, **14 BH** (bar at rank 14
+= 0.00162). Masked D5 (seed 5355): 29 at p ≤ 0.01, **19 BH** (bar at rank 19 = 0.00219). **No new candidate** under
+either detector: every masked BH name was already on the original list.
+
+| Khipu | R5 pendants | D2 stat orig → masked | D2 p orig → masked | D2 fate | D5 p orig → masked | D5 fate |
+|---|---|---|---|---|---|---|
+| KH0027 AS026A | 0 | 3.74 → 3.74 | 0.00085 → 0.0011 | survives | 0.00005 → 0.00085 | survives |
+| KH0068 UR1057 | 0 | 3.62 → 3.62 | 0.0011 → 0.0010 | survives | (not in K003 list) | |
+| KH0143 AS128 | 0 | 6.20 → 6.20 | (not in K002 list) | | 0.00005 → 0.00055 | survives |
+| KH0168 UR1152 | 0 | 6.93 → 6.93 | 0.0016 → 0.0019 | **no longer established** ¹ | 0.0012 → 0.0013 | survives |
+| KH0218 AS200 | 0 | 0 → 0 | (not in K002 list) | | 0.00005 → 0.00005 | survives |
+| KH0359 UR119 | 5 | 19.6 → 17.7 | 0.00005 → 0.00005 | survives | 0.00005 → 0.00005 | survives |
+| KH0385 UR145 | 0 | 5.37 → 5.37 | 0.0012 → 0.0011 | survives | 0.00005 → 0.00005 | survives |
+| KH0395 UR155 | 0 | 5.56 → 5.56 | (not in K002 list) | | 0.0014 → 0.0012 | survives |
+| KH0405 UR166 | 0 | 9.74 → 9.74 | 0.00005 → 0.00005 | survives | 0.00005 → 0.00005 | survives |
+| KH0424 UR186 | 7 | 5.76 → 5.76 | (not in K002 list) | | 0.0015 → 0.00005 | survives |
+| KH0428 UR190 | 2 | 26.0 → 26.0 | (not in K002 list) | | 0.00005 → 0.00005 | survives |
+| KH0447 UR209 | 3 | 5.70 → 5.70 | 0.00005 → 0.00015 | survives | 0.00005 → 0.00055 | survives |
+| KH0478 UR242 | 0 | 4.73 → 4.73 | (not in K002 list) | | 0.00005 → 0.00005 | survives |
+| KH0491 UR255 | 12 | 20.3 → 8.57 | 0.00005 → 0.00075 | survives | 0.00005 → 0.0025 | **no longer established** |
+| KH0492 UR256 | 13 | 20.9 → 13.4 | 0.00005 → 0.00005 | survives | 0.00005 → 0.00005 | survives |
+| KH0502 UR266 | 10 | 6.81 → 3.56 | 0.00025 → 0.0051 | **no longer established** | (not in K003 list) | |
+| KH0503 UR267A | 14 | 33.4 → 21.8 | 0.00005 → 0.00005 | survives | 0.00005 → 0.00005 | survives |
+| KH0504 UR267B | 17 | 34.0 → 23.5 | 0.00005 → 0.00005 | survives | 0.00005 → 0.00005 | survives |
+| KH0506 UR269 | 21 | 54.6 → 48.4 | 0.00005 → 0.00005 | survives | 0.00005 → 0.00005 | survives |
+| KH0507 UR270 | 22 | 11.3 → 9.20 | 0.00030 → 0.00080 | survives | 0.00025 → 0.00080 | survives |
+| KH0513 UR274B | 1 | 9.30 → 9.30 | 0.00010 → 0.00015 | survives | 0.0013 → 0.0014 | survives |
+| KH0514 UR275 | 13 | 33.2 → 23.1 | 0.00005 → 0.00005 | survives | 0.00005 → 0.00005 | survives |
+
+¹ KH0168 has **no R5 pendant**: its data and D2 statistic are unchanged. Its p moved 0.0016 → 0.0019 by fresh
+Monte-Carlo draws (K = 20000) and now sits just above the BH bar (0.00162 at rank 14, 0.00173 at rank 15). By the
+pre-registered rule it is "no longer established" under masked D2, but the cause is a BH-boundary case, not
+multi-number cords, and it stays BH-significant under masked D5. I report it as is and don't change the rule
+after the fact.
+
+**K002 (D2, 16 names): 14 survive, 2 no longer established (KH0502 UR266 — a real masking effect, statistic
+halved by 10 R5 pendants; KH0168 UR1152 — boundary case, see ¹), 0 not testable.**
+**K003 (D5, 20 names): 19 survive, 1 no longer established (KH0491 UR255, 12 R5 pendants, statistic 20.3 → 8.6),
+0 not testable.** No new BH candidate under either detector.
+
+**K001's 10.** Under masked D2 all 10 survive; under masked D5, 9 of 10 survive (KH0491 drops). Compare K008 (K001's
+own detector, masked): KH0491 and KH0507 lost there. So KH0507 holds under the log-weighted detectors, and KH0491 is
+the one name that is weakened under two of three masked detectors (K001, D5) and survives one (D2, p 0.00075).
+
+## Verdict
+- Gates pass for both detectors (FPR 0.028 / 0.042; spec-A power 0.60 / 0.66, close to the unmasked originals).
+- **The K002 and K003 corpus detections are robust to the multi-number mask**: 14/16 and 19/20 survive, nothing
+  becomes not testable, and no new candidate appears. The losses are KH0502 UR266 (D2), KH0491 UR255 (D5) and the
+  boundary case KH0168 UR1152 (D2, R5-free).
+- Same-data sensitivity, not an independent replication; no new structure is claimed.
+- Line 8 can close: K001, K002, K003, K004, K005 and K006 have all been rerun with R5 cords masked. Not covered: the
+  later adopted K036 F1 / D5w list (line 1) has not itself been R5-masked; that's a possible later step, not this cycle.
