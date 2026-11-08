@@ -24,7 +24,34 @@ Is the spread of Voynich word lengths unusually narrow compared with natural-lan
 - **Caveat fixed in advance:** EVA units vs letters are not the same kind of unit; a CV is scale-free but still depends on how a script cuts glyphs. A low CV would describe the writing system, not meaning.
 - **Tool:** `tools/c044_word_length_zipf.py` → `analysis/C044_results.json`. Run: `timeout 600 python3 tools/c044_word_length_zipf.py`.
 
-## Results
-*(to be filled after the run)*
+## Results (run 2026-11-08 ~02:05 PT, one run, 52 s; `analysis/C044_results.json`, log in the box backup)
+**Gates first.** H1: FPR **4/42** (at the bar), power **40/40** (plant CV mean 0.292) → **passed**. H2: FPR **6/42** > 4 → **failed**; power 40/40 (plant slope −0.69).
+
+**H1 — INSIDE NATURAL** (both transcriptions, so no claim of unusual narrowness under the pre-registered rule).
+
+| text | CV (95% CI) | mean len | Zipf slope (r 1–500) |
+|---|---|---|---|
+| Latin Caesar | 0.483 (0.479–0.488) | 5.99 | −0.800 |
+| Latin Descartes | 0.508 (0.497–0.520) | 5.39 | −0.881 |
+| Italian Dante | 0.563 (0.558–0.568) | 3.96 | −0.985 |
+| Italian Machiavelli | 0.594 (0.589–0.601) | 4.09 | −1.025 |
+| Spanish Cervantes | 0.583 (0.575–0.590) | 4.38 | −0.983 |
+| Hebrew Genesis | **0.315** (0.310–0.320) | 3.76 | −0.839 |
+| Hebrew Exodus | 0.321 (0.316–0.327) | 3.80 | −0.826 |
+| **Voynich ZL 3b** (units) | **0.380** (0.371–0.389) | 4.21 | −0.941 |
+| **Voynich IT2a** (units) | **0.362** (0.354–0.370) | 4.29 | −0.930 |
+| Generator base (10,810 tokens < N) | 0.327 (0.316–0.336) | 4.23 | −0.897 |
+| Generator C005-matched | 0.215 (0.212–0.218) | 5.15 | −0.499 |
+
+Natural range CV 0.315–0.594; Zipf −1.025 to −0.800. Raw-EVA-character CV (descriptive): ZL 0.367, IT2a 0.348.
+
+**H2 — NOT TESTABLE.** Diagnosed cause (post hoc, disclosed): the block bootstrap of a rank-frequency slope is biased — duplicating blocks inflates block-local words, so the CI often excludes its own point estimate (Caesar −0.800, CI −0.795 to −0.754). Descriptively both Voynich slopes sit inside the natural range.
+
+**What this means (no overclaiming).**
+- The narrow-word-length observation is real against the five European texts (Voynich CV 0.36–0.38 vs 0.48–0.59), but **unpointed Hebrew is narrower still** (0.32). A vowelless abjad reaches Voynich-like word-length spread; the pre-registered verdict is therefore INSIDE NATURAL. The European-only comparison is a post-hoc look and carries no verdict.
+- This adds a third line (after C014's vowelless solver and C043's vowelless C5 range) where abjad-like writing is the natural neighbour of Voynichese; it does not say Voynichese is Hebrew or any abjad.
+- **Generator, descriptive:** the published base sample is Voynich-like (0.327, −0.90), but the C005 config matched on rigidity overshoots — word lengths too uniform (0.215, below every natural text and Voynich) and a much flatter Zipf (−0.50). The rigidity match costs realistic word-length and vocabulary shape; one run, one seed, no verdict.
+
+**Next.** F-ZIPF step 2: a Zipf test with a calibrated null that does not bootstrap types (e.g. split-half or disjoint-window spread), and word-length CV with more abjad/vowelless controls (devowelled Latin/Italian, Arabic if a clean public text exists) before any claim.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
