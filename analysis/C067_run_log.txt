@@ -1,0 +1,19 @@
+C067 run log — 2026-11-08 16:49:08–16:49:58 PT (box clock), 49.6 s, seed 6767, 8 processes
+Pre-registration commit f515258 (pushed 16:48 PT, before this run). Command: timeout 600 python3 tools/c067_cross_threshold10.py
+Data: data/ZL3b-n.txt, data/IT2a-n.txt (versions and sha256 in data/MANIFEST.md). Generator seeds: ref 8201-8240 used (8241-8260 not needed; treat as spent), held-out 8301-8320 used (8321-8330 spent).
+
+pool done 43.6
+GATES {"T_S10_ZL3b": {"fp": 0, "power_conn": 10, "power_iso": 3, "n_ref": 40, "n_ho": 20, "ref_range": [0.6376811594202898, 0.8115131578947368, 0.9425287356321839], "conn_shift_median": 0.11976477337923119, "conn_k_median": 10.5, "passed": false}, "T_S10_IT2a": {"fp": 0, "power_conn": 9, "power_iso": 5, "n_ref": 40, "n_ho": 20, "ref_range": [0.647887323943662, 0.8122222222222222, 0.9438202247191011], "conn_shift_median": 0.11750631440012316, "conn_k_median": 10.0, "passed": false}, "T_D10_ZL3b": {"fp": 0, "power": 20, "n": 20, "plant_D_median": -0.12954427269347213, "passed": true, "note": "gates measured on ZL 3b, applied to both transcriptions"}, "T_D10_IT2a": {"fp": 0, "power": 20, "n": 20, "plant_D_median": -0.12954427269347213, "passed": true, "note": "gates measured on ZL 3b, applied to both transcriptions"}}
+tokens {'ZL3b': {'N': 30771, 'by_section': {'H': 11349, 'B': 6152, 'P': 2056, 'S': 11214}, 'pages': 187}, 'IT2a': {'N': 30605, 'by_section': {'H': 11112, 'B': 6187, 'P': 2009, 'S': 11297}, 'pages': 187}}
+VOY ZL3b {"S10": 0.9623655913978495, "D10": -0.03374400051046758, "n_diag": 186, "O10_other": 0.9, "D10_null_mean": 8.083691092673145e-05, "D10_perm_p": 0.0029985007496251873, "sens": {"5": 0.9838709677419355, "20": 0.9032258064516129}, "gen_D10_range": [-0.2254056945233416, -0.08476150449485373, 0.0033175507965423974], "gen_sens_range": {"5": [0.788135593220339, 0.9770114942528736], "20": [0.5652173913043478, 0.8850574712643678]}}
+VOY IT2a {"S10": 0.9479166666666666, "D10": -0.051457967083256735, "n_diag": 192, "O10_other": 0.8965936739659367, "D10_null_mean": -0.00034215830889251114, "D10_perm_p": 0.0004997501249375312, "sens": {"5": 0.9895833333333334, "20": 0.8958333333333334}, "gen_D10_range": [-0.21916362786665758, -0.09091061546458867, 0.001662623091194517], "gen_sens_range": {"5": [0.7844827586206896, 0.9775280898876404], "20": [0.5757575757575758, 0.8764044943820225]}}
+TESTS {"T_S10_ZL3b": {"v": 0.9623655913978495, "p": 0.04878048780487805, "centre": 0.8115131578947368, "side": "above", "gate": false, "verdict": "NOT TESTABLE"}, "T_D10_ZL3b": {"v": -0.03374400051046758, "p": 0.0029985007496251873, "centre": 8.083691092673145e-05, "side": "below", "gate": true, "bh_reject": true, "verdict": "BELOW"}, "T_S10_IT2a": {"v": 0.9479166666666666, "p": 0.04878048780487805, "centre": 0.8122222222222222, "side": "above", "gate": false, "verdict": "NOT TESTABLE"}, "T_D10_IT2a": {"v": -0.051457967083256735, "p": 0.0004997501249375312, "centre": -0.00034215830889251114, "side": "below", "gate": true, "bh_reject": true, "verdict": "BELOW"}}
+NAT {"dropped": [["Latin_Caesar", 20499], ["Latin_Descartes", 20726], ["Hebrew_Genesis", 20629], ["Hebrew_Exodus", 16720], ["Latin_Caesar_devowel", 20202]], "range": [0.22857142857142856, 0.8], "loo_outside": 2, "n": 7, "verdict": {"ZL3b": "OUTSIDE-ABOVE", "IT2a": "OUTSIDE-ABOVE"}}
+NAT_S {'Italian_Dante': 0.5, 'Italian_Machiavelli': 0.429, 'Spanish_Cervantes': 0.32, 'Finnish_Kalevala': 0.24, 'Finnish_Kivi': 0.229, 'Italian_Dante_devowel': 0.8, 'Spanish_Cervantes_devowel': 0.721}
+runtime 49.6
+
+real	0m49.788s
+user	4m59.296s
+sys	0m16.474s
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI ran this)
