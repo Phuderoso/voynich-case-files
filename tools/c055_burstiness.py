@@ -55,11 +55,12 @@ def main():
     fp = pw = 0
     for i in range(NG):
         a = natt[names[i % len(names)]][:NHALF]; fp += test(list(rng.permutation(np.array(a, dtype=object))), rng)['p'] < ALPHA
-        b = natt[names[(i + 4) % len(names)]][NHALF:2 * NHALF]; pw += test(plant(b, rng), rng)['p'] < ALPHA
+        b = natt[names[(i + 4) % len(names)]][:NHALF]; pw += test(plant(b, rng), rng).get('p', 1) < ALPHA
     G = dict(fpr=f'{fp}/{NG}', power=f'{pw}/{NG}', ok=bool(fp <= 2 and pw >= 14)); R['gates'] = G; print('gates', G, round(time.time() - t0, 1), flush=True)
     out = {}
     for k, t in natt.items():
-        out[k] = [test(t[h * NHALF:(h + 1) * NHALF], rng) for h in (0, 1)]; print(k, [(round(y['B'], 3), round(y['D'], 3), y['p'], y['n_types']) for y in out[k]], flush=True)
+        hs = (0, 1) if len(t) >= 2 * NHALF else (0,)  # fix after gate crash: texts under 30k tokens give one half
+        out[k] = [test(t[h * NHALF:(h + 1) * NHALF], rng) for h in hs]; print(k, len(t), [(y['B'], y.get('D'), y.get('p'), y['n_types']) for y in out[k]], flush=True)
     for k, f in (('ZL3b', 'data/ZL3b-n.txt'), ('IT2a', 'data/IT2a-n.txt')):
         pl, _, _ = ivtff_pages_lang(f); t = ['.'.join(T.units(w)) for _, l in pl for w in l]
         out[k] = [test(t[h * NHALF:(h + 1) * NHALF], rng) for h in (0, 1)]; print(k, [(round(y['B'], 3), round(y['D'], 3), y['p'], y['n_types']) for y in out[k]], flush=True)

@@ -14,7 +14,38 @@ I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (c
 - **Disclosure (before the full run):** a smoke test of the tool on IT2a half 1 with scratch seed 1 showed one number (D 0.34, with 50 shuffles). It revealed that 50 shuffles give a p floor (1/51) above the Bonferroni bar 0.0125, so the shuffle count was raised to 200 before this pre-registration; nothing else was changed. Seed for the run: 5555.
 - **Tool:** `tools/c055_burstiness.py` → `analysis/C055_results.json`; `timeout 600`.
 
-## Results
-(pending)
+## Results (run 2, 10.4 s, seed 5555; `analysis/C055_results.json`, logs `c055_run1.log`, `c055_run2.log`)
+**Fix after the first run, disclosed:** run 1 crashed in the power gate, before any verdict-bearing number, because five natural texts (Caesar, Descartes, Machiavelli, Genesis, Exodus) and devowelled Caesar have fewer than 30,000 tokens, so their second "half" was short. Fix: texts under 30,000 tokens contribute **one** 15,000-token half; gate draws use the first 15,000 tokens of each text (the gate halves are shuffled anyway); an untestable gate replicate counts as a miss. Same seed, rerun. Generator seed 551 gave 29,803 tokens (< 30,000) and was dropped by the rule, leaving 4 seeds / 8 halves (≥ 6 needed).
+
+**Gates:** FPR **2/20**, power **14/20** — passed, but exactly on both bars, so the test is at the edge of its calibration.
+
+| text | half | D | p |
+|---|---|---|---|
+| **ZL 3b** | 1 / 2 | **0.332 / 0.292** | 0.005 / 0.005 |
+| **IT2a** | 1 / 2 | **0.340 / 0.293** | 0.005 / 0.005 |
+| Latin Caesar / Descartes | 1 | 0.130 / 0.147 | 0.005 |
+| Italian Dante | 1 / 2 | 0.093 / 0.079 | 0.005 |
+| Italian Machiavelli | 1 | 0.181 | 0.005 |
+| Spanish Cervantes | 1 / 2 | 0.286 / 0.176 | 0.005 |
+| Hebrew Genesis / Exodus | 1 | 0.633 / 0.540 | 0.005 |
+| Finnish Kalevala | 1 / 2 | 0.485 / 0.463 | 0.005 |
+| Finnish Kivi | 1 / 2 | 0.239 / 0.269 | 0.005 |
+| devowelled Caesar | 1 | 0.144 | 0.005 |
+| devowelled Dante | 1 / 2 | 0.062 / 0.036 | 0.005 / 0.010 |
+| devowelled Cervantes | 1 / 2 | 0.249 / 0.132 | 0.005 |
+| generator seeds 552–555 | 8 halves | 0.494–0.613 | 0.005 |
+
+**Verdicts:**
+- **H1 EXCESS** — all four Voynich halves clump beyond shuffling (p 0.005 < 0.0125).
+- **H2 INSIDE** natural (0.036–0.633). The natural range is wide (Dante lowest, Hebrew highest), so this placement is weak.
+- **H3 BELOW the generator** (0.494–0.613 vs Voynich 0.29–0.34): the default copying generator clumps its words *more* than the manuscript does.
+
+**Post-hoc sensitivity, not pre-registered** (`analysis/C055_posthoc_chunks.json`, 50 shuffles, seed 5556; ZL, generator seed 552 and Machiavelli only): the order generator > ZL > Machiavelli holds at chunk sizes 60 (0.33–0.37 / 0.18–0.21 / 0.12) and 230 (0.70–0.84 / 0.45–0.47 / 0.25).
+
+**Reading (within the rules fixed in advance):** the manuscript's words clump, at a level natural texts span, and less than the default generator. This is one more feature the copying account must be tuned to (in the same direction as C054: the generator overdoes local re-use). It does not show topic or meaning: section changes inside the halves could also produce clumping, and that was not separated here. Caveat: the gates were met exactly at their bars.
+
+**Next (F-BURST step 2):** separate section from clumping (within-section halves, herbal A only, against natural texts of the same length); generator settings that lower clumping — do they lower the R0 excess too (a shared knob)? Stronger gate design (more replicates) first.
+
+**Outreach:** none (gates at the edge; one generator configuration).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
