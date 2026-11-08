@@ -1,0 +1,46 @@
+{
+ "n_tablets": 253,
+ "single_total_tablets": 108,
+ "tests": {
+  "S-full": {
+   "lines": 40,
+   "tablets": 29,
+   "lines_on_single_total_tablets": 22
+  },
+  "D-full": {
+   "lines": 35,
+   "tablets": 25,
+   "lines_on_single_total_tablets": 19
+  },
+  "B-full": {
+   "lines": 36,
+   "tablets": 26,
+   "lines_on_single_total_tablets": 20
+  },
+  "C-full": {
+   "lines": 76,
+   "tablets": 56,
+   "lines_on_single_total_tablets": 43
+  },
+  "S-subset": {
+   "lines": 242,
+   "tablets": 132,
+   "lines_on_single_total_tablets": 51
+  },
+  "D-subset": {
+   "lines": 225,
+   "tablets": 127,
+   "lines_on_single_total_tablets": 49
+  },
+  "B-subset": {
+   "lines": 235,
+   "tablets": 128,
+   "lines_on_single_total_tablets": 49
+  },
+  "C-subset": {
+   "lines": 367,
+   "tablets": 210,
+   "lines_on_single_total_tablets": 95
+  }
+ }
+}
