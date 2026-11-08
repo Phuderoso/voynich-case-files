@@ -39,6 +39,6 @@ structure only.
 6. **Audit list for collation**: intact tablets whose sums do not close, sorted by size of the discrepancy, to share with CDLI if the pattern is not explained by the transliteration conventions.
 
 ## Outreach log
-- (none yet)
+- 2026-11-08 (PE001): none for this expedition. No tablet is put forward for collation yet (see PE001).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

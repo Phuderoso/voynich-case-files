@@ -10,6 +10,7 @@ Updated 2026-11-08 ~12:52 PT (K056): checked first, still only issues #1 and #2.
 Updated 2026-11-08 ~13:45 PT (K057): checked first, search for KH0140 / KH0483 / VA42670 returned 0 hits (the broader KH0140 OR duplicate search still only hits #1). One create attempt via cursor-github `create_issue` returned 403 ("Resource not accessible by integration"), not retried → **drafted, not filed**. Text unchanged.
 
 Updated 2026-11-08 ~14:30 PT (K058): checked first, search for KH0140 / KH0483 returned 0 hits; issues still only #1 and #2. One create attempt via cursor-github `create_issue` returned 403 ("Resource not accessible by integration"), not retried → **drafted, not filed**. Text unchanged.
+Updated 2026-11-08 ~15:20 PT (PE001 run): checked first, issues still only #1 and #2, search for KH0140 returned 0 hits. One create attempt via user-GitHub-xai `issue_write` opened an approval form; not waited on, not retried → **drafted, not filed**. Text unchanged.
 
 ---
 
