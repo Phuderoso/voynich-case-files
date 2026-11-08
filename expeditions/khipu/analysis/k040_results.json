@@ -1,0 +1,299 @@
+{
+ "design": {
+  "discovery": [
+   "KH0359",
+   "KH0405"
+  ],
+  "R": 10000,
+  "N_CAL": 200,
+  "N_POW": 200,
+  "seeds": {
+   "nulls": 4040,
+   "calib": 4041,
+   "power": 4042
+  },
+  "alpha": 0.05,
+  "gate": 0.08,
+  "m_primary": 9,
+  "ms": [
+   5,
+   9,
+   15
+  ],
+  "smoke": false,
+  "wall": 520,
+  "expected_sha": "607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db"
+ },
+ "consistency": {
+  "sha256": "607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db",
+  "n_eligible": 369,
+  "n_holdout": 367,
+  "discovery_found": [
+   "KH0359",
+   "KH0405"
+  ],
+  "k025_n_khipus": 369,
+  "G_holdout": 23
+ },
+ "inherited_from_k025": {
+  "source": "analysis/k025_results.json",
+  "primary_G": {
+   "KH0359": 4,
+   "KH0405": 4
+  },
+  "secondary_n": 369,
+  "posthoc_holdout_G": 23,
+  "note": "same data and G; K040 is not an independent replication"
+ },
+ "observed": {
+  "G": 23,
+  "null_mean": 14.1067,
+  "null_std": 3.738063015787722,
+  "p_corpus": 0.016198380161983803,
+  "n_holdout": 367,
+  "n_bh": 0,
+  "top": [
+   {
+    "okr": "KH0424",
+    "inv": "UR186",
+    "G": 2,
+    "null_mean": 0.0274,
+    "p": 0.00029997000299970003,
+    "n_pend": 58,
+    "n_groups": 17,
+    "n_pairs": 18,
+    "bh": false
+   },
+   {
+    "okr": "KH0482",
+    "inv": "UR246",
+    "G": 1,
+    "null_mean": 0.0037,
+    "p": 0.0037996200379962005,
+    "n_pend": 34,
+    "n_groups": 8,
+    "n_pairs": 8,
+    "bh": false
+   },
+   {
+    "okr": "KH0406",
+    "inv": "UR167",
+    "G": 1,
+    "null_mean": 0.0075,
+    "p": 0.007599240075992401,
+    "n_pend": 37,
+    "n_groups": 4,
+    "n_pairs": 6,
+    "bh": false
+   },
+   {
+    "okr": "KH0113",
+    "inv": "UR1100",
+    "G": 1,
+    "null_mean": 0.0189,
+    "p": 0.0188981101889811,
+    "n_pend": 66,
+    "n_groups": 9,
+    "n_pairs": 15,
+    "bh": false
+   },
+   {
+    "okr": "KH0080",
+    "inv": "AS067/MA029",
+    "G": 1,
+    "null_mean": 0.0203,
+    "p": 0.020097990200979902,
+    "n_pend": 140,
+    "n_groups": 13,
+    "n_pairs": 24,
+    "bh": false
+   },
+   {
+    "okr": "KH0460",
+    "inv": "UR222",
+    "G": 1,
+    "null_mean": 0.0422,
+    "p": 0.040695930406959305,
+    "n_pend": 44,
+    "n_groups": 10,
+    "n_pairs": 17,
+    "bh": false
+   },
+   {
+    "okr": "KH0489",
+    "inv": "UR253",
+    "G": 1,
+    "null_mean": 0.0482,
+    "p": 0.047495250474952504,
+    "n_pend": 59,
+    "n_groups": 15,
+    "n_pairs": 18,
+    "bh": false
+   },
+   {
+    "okr": "KH0191",
+    "inv": "AS174",
+    "G": 1,
+    "null_mean": 0.0536,
+    "p": 0.0524947505249475,
+    "n_pend": 13,
+    "n_groups": 7,
+    "n_pairs": 11,
+    "bh": false
+   },
+   {
+    "okr": "KH0269",
+    "inv": "UR037",
+    "G": 1,
+    "null_mean": 0.0548,
+    "p": 0.053594640535946404,
+    "n_pend": 167,
+    "n_groups": 28,
+    "n_pairs": 47,
+    "bh": false
+   },
+   {
+    "okr": "KH0246",
+    "inv": "UR010",
+    "G": 1,
+    "null_mean": 0.0674,
+    "p": 0.06459354064593541,
+    "n_pend": 159,
+    "n_groups": 30,
+    "n_pairs": 44,
+    "bh": false
+   },
+   {
+    "okr": "KH0617",
+    "inv": "JC010",
+    "G": 1,
+    "null_mean": 0.0734,
+    "p": 0.07119288071192881,
+    "n_pend": 160,
+    "n_groups": 18,
+    "n_pairs": 33,
+    "bh": false
+   },
+   {
+    "okr": "KH0235",
+    "inv": "AS215",
+    "G": 1,
+    "null_mean": 0.075,
+    "p": 0.0724927507249275,
+    "n_pend": 27,
+    "n_groups": 10,
+    "n_pairs": 9,
+    "bh": false
+   },
+   {
+    "okr": "KH0090",
+    "inv": "AS077",
+    "G": 1,
+    "null_mean": 0.0752,
+    "p": 0.0744925507449255,
+    "n_pend": 33,
+    "n_groups": 9,
+    "n_pairs": 16,
+    "bh": false
+   },
+   {
+    "okr": "KH0322",
+    "inv": "UR086",
+    "G": 1,
+    "null_mean": 0.097,
+    "p": 0.09199080091990801,
+    "n_pend": 107,
+    "n_groups": 23,
+    "n_pairs": 41,
+    "bh": false
+   },
+   {
+    "okr": "KH0509",
+    "inv": "UR272",
+    "G": 1,
+    "null_mean": 0.1258,
+    "p": 0.11678832116788321,
+    "n_pend": 173,
+    "n_groups": 26,
+    "n_pairs": 40,
+    "bh": false
+   }
+  ]
+ },
+ "calibration": {
+  "capped": false,
+  "n": 200,
+  "fpr": 0.05,
+  "bh_gate": 0.005,
+  "bh_false_mean": 0.005
+ },
+ "power": {
+  "5": {
+   "m": 5,
+   "n": 200,
+   "hits": 64,
+   "capped": false,
+   "rate": 0.32
+  },
+  "9": {
+   "m": 9,
+   "n": 200,
+   "hits": 148,
+   "capped": false,
+   "rate": 0.74
+  },
+  "15": {
+   "m": 15,
+   "n": 200,
+   "hits": 199,
+   "capped": false,
+   "rate": 0.995
+  }
+ },
+ "power_h2_4plant": {
+  "n_plant": 4,
+  "n": 200,
+  "hits": 188,
+  "skipped": 117,
+  "capped": false,
+  "rate": 0.94
+ },
+ "power_h2_1plant": {
+  "n_plant": 1,
+  "n": 200,
+  "hits": 25,
+  "skipped": 0,
+  "capped": false,
+  "rate": 0.125
+ },
+ "decision": {
+  "excluded": false,
+  "H1": {
+   "p": 0.016198380161983803,
+   "G": 23,
+   "null_mean": 14.1067,
+   "fpr": 0.05,
+   "power_m9": 0.74,
+   "power_m9_n": 200,
+   "power_m5": 0.32,
+   "power_m15": 0.995,
+   "meets_fpr": true,
+   "meets_power": true,
+   "meets_alpha": true,
+   "verdict": "supported",
+   "reason": "p_corpus <= 0.05; calibrated and powered at m=9"
+  },
+  "H2": {
+   "n_bh": 0,
+   "bh_khipus": [],
+   "bh_gate": 0.005,
+   "power_4plant": 0.94,
+   "power_4plant_n": 200,
+   "power_1plant": 0.125,
+   "power_1plant_n": 200,
+   "verdict": "not supported",
+   "reason": "no BH discoveries; readable against a 4-plant (UR119-strength) extra"
+  }
+ },
+ "secs": 28.7
+}

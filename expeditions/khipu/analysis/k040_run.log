@@ -1,0 +1,86 @@
+{
+ "smoke": false,
+ "R": 10000,
+ "N_CAL": 200,
+ "N_POW": 200,
+ "seeds": {
+  "nulls": 4040,
+  "calib": 4041,
+  "power": 4042
+ },
+ "consistency": {
+  "sha256": "607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db",
+  "n_eligible": 369,
+  "n_holdout": 367,
+  "discovery_found": [
+   "KH0359",
+   "KH0405"
+  ],
+  "k025_n_khipus": 369,
+  "G_holdout": 23
+ }
+}
+nulls 20/367 G=1 0.7s
+nulls 40/367 G=4 1.4s
+nulls 60/367 G=6 2.7s
+nulls 80/367 G=6 3.1s
+nulls 100/367 G=6 3.3s
+nulls 120/367 G=6 3.7s
+nulls 140/367 G=7 3.9s
+nulls 160/367 G=8 4.2s
+nulls 180/367 G=9 4.6s
+nulls 200/367 G=11 4.9s
+nulls 220/367 G=13 5.4s
+nulls 240/367 G=13 5.5s
+nulls 260/367 G=16 5.8s
+nulls 280/367 G=17 6.2s
+nulls 300/367 G=18 6.9s
+nulls 320/367 G=19 7.0s
+nulls 340/367 G=21 7.5s
+nulls 360/367 G=23 8.1s
+nulls 367/367 G=23 8.2s
+{"G": 23, "null_mean": 14.1067, "p_corpus": 0.016198380161983803, "n_bh": 0, "bh_khipus": []}
+{
+ "capped": false,
+ "n": 200,
+ "fpr": 0.05,
+ "bh_gate": 0.005,
+ "bh_false_mean": 0.005
+}
+power m=5 {'m': 5, 'n': 200, 'hits': 64, 'capped': False, 'rate': 0.32}
+power m=9 {'m': 9, 'n': 200, 'hits': 148, 'capped': False, 'rate': 0.74}
+power m=15 {'m': 15, 'n': 200, 'hits': 199, 'capped': False, 'rate': 0.995}
+H2 4-plant {'n_plant': 4, 'n': 200, 'hits': 188, 'skipped': 117, 'capped': False, 'rate': 0.94}
+H2 1-plant {'n_plant': 1, 'n': 200, 'hits': 25, 'skipped': 0, 'capped': False, 'rate': 0.125}
+{
+ "decision": {
+  "excluded": false,
+  "H1": {
+   "p": 0.016198380161983803,
+   "G": 23,
+   "null_mean": 14.1067,
+   "fpr": 0.05,
+   "power_m9": 0.74,
+   "power_m9_n": 200,
+   "power_m5": 0.32,
+   "power_m15": 0.995,
+   "meets_fpr": true,
+   "meets_power": true,
+   "meets_alpha": true,
+   "verdict": "supported",
+   "reason": "p_corpus <= 0.05; calibrated and powered at m=9"
+  },
+  "H2": {
+   "n_bh": 0,
+   "bh_khipus": [],
+   "bh_gate": 0.005,
+   "power_4plant": 0.94,
+   "power_4plant_n": 200,
+   "power_1plant": 0.125,
+   "power_1plant_n": 200,
+   "verdict": "not supported",
+   "reason": "no BH discoveries; readable against a 4-plant (UR119-strength) extra"
+  }
+ },
+ "secs": 28.7
+}

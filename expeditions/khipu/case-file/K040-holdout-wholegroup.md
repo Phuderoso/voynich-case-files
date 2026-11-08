@@ -3,7 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: pre-registration**, to be committed before any K040 statistic is computed.
+**Status: results appended** (pre-registration written and pushed first as `6568b90`, before any K040 statistic was computed).
 
 ## Why
 K025 closed line 2 for the two khipus that had prompted it: KH0359/UR119 and KH0405/UR166 each carry four whole-group totals (p < 10⁻⁴, power 1.00). A disclosed post-hoc, not pre-registered, then found that the rest of the corpus still had G = 23 against a null mean of 14.0958 (p = 0.0176), a smaller excess spread over many khipus, none of them BH-significant. Those two had been chosen because K001 flagged them, so the leftover number cannot be read as a confirmation.
@@ -95,5 +95,82 @@ verdicts, secs. Log: `analysis/k040_run.log`.
 No decipherment is claimed. Whole-group totals in UR119 are already counted by the Khipu Field
 Guide; K025 pinned down their form. K040 only decides whether a smaller excess of the same form
 remains in the rest of the basket.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+
+## Results
+
+Run 2026-11-08 03:07 PT (America/Vancouver), after prereg `6568b90`. Compute **28.7 s**
+(all 367 holdout khipus reached; nulls, calibration and power all finished; `capped` false;
+wall 520 s not hit). Smoke (`--smoke`, R = 200, N = 10) ran first in 1.4 s, no crash, not
+used for decisions. Output: [`analysis/k040_results.json`](../analysis/k040_results.json),
+log [`analysis/k040_run.log`](../analysis/k040_run.log).
+
+### 1. Consistency (rule 1)
+Database SHA-256 matches `607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db`.
+K025 secondary n = 369; eligible 369; holdout 367; discovery pair KH0359 and KH0405 both
+present; observed holdout G = 23. Rule 1 (excluded) does not apply.
+
+### 2. H1 — corpus leftover (primary)
+R = 10 000, seed 4040. Decision uses the pre-registered one-sided p against the summed
+within-khipu permutation null.
+
+| Quantity | Value |
+|---|---|
+| G_holdout | **23** |
+| Null mean (sd) | 14.1067 (3.738) |
+| p_corpus | **0.0162** |
+| Calibration FPR (N = 200, seed 4041) | 0.05 |
+| Power at m = 5 / 9 / 15 (N = 200, seed 4042) | 0.32 / **0.74** / 0.995 |
+
+- meets_fpr: yes (0.05 ≤ 0.08)
+- meets_power: yes (m = 9 rate 0.74 ≥ 0.5, n = 200)
+- meets_alpha: yes (0.0162 ≤ 0.05)
+- **Verdict: supported** (rules 2–4).
+
+The leftover excess that K025 reported post-hoc (G = 23 vs 14.0958, p = 0.0176, R = 5 000)
+survives the locked rule: same G, a slightly finer null (R = 10 000, seed 4040), a passing
+calibration, and enough power to have seen an excess of leftover size. It is **not an
+independent replication** — same extract, same definition, same 23 pendants.
+
+Power at m = 5 is only 0.32, so a weaker leftover than the one in hand would not have been
+readable. Power at m = 15 is 0.995.
+
+### 3. H2 — individual BH scan (secondary)
+BH q = 0.05 over 367 holdout khipus.
+
+| Quantity | Value |
+|---|---|
+| BH discoveries | **0** |
+| BH-gate (N = 200) | 0.005 |
+| 4-plant power (UR119-strength) | **0.94** (n = 200; 117 redraws that could not place 4 disjoint plants) |
+| 1-plant power (disclosed) | 0.125 (n = 200) |
+
+- Gate passes (0.005 ≤ 0.08).
+- **Verdict: not supported** (rules 6–8): no additional individually significant khipu, and
+  that silence is readable against another UR119-strength (four planted whole-group sums)
+  extra.
+
+The closest name, reported only descriptively, is KH0424/UR186 (G = 2, p = 0.00030). The
+BH threshold for a single discovery is 0.05/367 ≈ 0.000136, so it stays outside the scan.
+A lone extra whole-group sum is not what H2 can see (1-plant power 0.125); that is H1's job.
+
+### 4. Reading
+- A smaller excess of whole-group totals remains after KH0359 and KH0405 are set aside.
+  It is calibrated, powered at leftover size, and diffuse: many khipus contribute a single
+  hit, none strongly enough to pass BH.
+- There is no third UR119 in this extract, and that negative can be read.
+- Same-data caveat stands. Independent replication would need khipus outside this OKR
+  snapshot (data-limited).
+- No decipherment. UR119's own totals remain the ones already counted by the Khipu Field
+  Guide; K040 does not add a new named object.
+
+### Next
+Line 2's leftover is classified (H1 supported, H2 not supported). Proposed for K041: a
+pre-registered form-audit of the leftover 23 hits (side, group length, whether any layout
+repeats) against the within-khipu permutation, to see whether the diffuse excess shares a
+shape or is a mixed bag — or line 8 (K002/K003 with multi-number cords masked; still low
+priority).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
