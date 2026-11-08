@@ -1,0 +1,34 @@
+# PE002 run log (America/Vancouver, UTC-7). Box: 8 cores, Python 3 + numpy 2.5.4.
+# prereg local 150af9b -> origin 012c5f9 (published 15:57); stage 1 curve 15:56:45-15:58:14 (88.8 s) -> local 1b2d623; audit 15:58:43-15:59:03; stage 2 test ~16:00 (0.8 s); post-hoc ~16:01 (58 s)
+## audit
+Sun Nov  8 15:58:43 MST 2026
+PE001 audit f 0.1 0.58 4
+PE001 audit f 0.2 1.0 8
+PE001 audit f 0.3 1.0 12
+PE001 audit f 0.4 1.0 15
+PE001 audit f 0.5 1.0 19
+EXIT 0
+Sun Nov  8 15:59:03 MST 2026
+## stage 2 (analysis/pe002_results.json)
+S-subset lines 191 matched 61 null_mean 57.35 null_max 70 p 0.1712 p_unstrat 0.0048 NOT DETECTED
+D-subset lines 176 matched 57 null_mean 50.26 null_max 62 p 0.0209 p_unstrat 0.0644 NOT DETECTED
+B-subset lines 186 matched 61 null_mean 57.67 null_max 69 p 0.1877 p_unstrat 0.0101 NOT DETECTED
+C-subset lines 272 matched 66 null_mean 62.62 null_max 78 p 0.2418 p_unstrat 0.0053 NOT DETECTED
+S-run lines 316 matched 101 null_mean 93.79 null_max 110 p 0.0617 p_unstrat 0.1128 NOT TESTABLE (gate)
+D-run lines 302 matched 99 null_mean 96.23 null_max 112 p 0.2999 p_unstrat 0.3481 NOT TESTABLE (gate)
+B-run lines 311 matched 102 null_mean 93.92 null_max 111 p 0.0409 p_unstrat 0.093 NOT TESTABLE (gate)
+C-run lines 408 matched 119 null_mean 105.47 null_max 124 p 0.005 p_unstrat 0.0004 SUPPORTED
+BH m = 5
+## post-hoc (analysis/pe002_posthoc.json), no decision weight
+D1 S subset {'exact': 61, 'offbyone_mean': 67.0, 'contrast': -6.0, 'null_contrast_mean': -6.2492492492492495, 'p_contrast': 0.49}
+D1 D subset {'exact': 57, 'offbyone_mean': 63.0, 'contrast': -6.0, 'null_contrast_mean': -8.74024024024024, 'p_contrast': 0.225}
+D1 B subset {'exact': 61, 'offbyone_mean': 67.0, 'contrast': -6.0, 'null_contrast_mean': -6.948448448448448, 'p_contrast': 0.402}
+D1 C subset {'exact': 66, 'offbyone_mean': 74.0, 'contrast': -8.0, 'null_contrast_mean': -6.323323323323323, 'p_contrast': 0.683}
+D1 S run {'exact': 101, 'offbyone_mean': 128.0, 'contrast': -27.0, 'null_contrast_mean': -24.95145145145145, 'p_contrast': 0.659}
+D1 D run {'exact': 99, 'offbyone_mean': 126.5, 'contrast': -27.5, 'null_contrast_mean': -23.04204204204204, 'p_contrast': 0.829}
+D1 B run {'exact': 102, 'offbyone_mean': 128.0, 'contrast': -26.0, 'null_contrast_mean': -24.443943943943943, 'p_contrast': 0.631}
+D1 C run {'exact': 119, 'offbyone_mean': 142.0, 'contrast': -23.0, 'null_contrast_mean': -15.225725725725725, 'p_contrast': 0.911}
+D2 S {'rank_strata': 0.18, 'tie_aware_strata': 0.045, 'no_strata': 0.03}
+D2 D {'rank_strata': 0.21, 'tie_aware_strata': 0.035, 'no_strata': 0.035}
+D2 B {'rank_strata': 0.155, 'tie_aware_strata': 0.045, 'no_strata': 0.02}
+D2 C {'rank_strata': 0.045, 'tie_aware_strata': 0.04, 'no_strata': 0.06}
