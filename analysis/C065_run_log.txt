@@ -1,0 +1,45 @@
+C065 run log — 2026-11-08 PT (Vancouver). Pre-registration commit d3bfb84.
+Command: timeout 600 python3 tools/c065_zip_currier.py   (start 15:18:49 PT, end 15:20:18 PT)
+
+gen done 87.9
+tokens {'ZL3b_A': 10847, 'ZL3b_B': 22559, 'IT2a_A': 10592, 'IT2a_B': 22515}
+ref range {'S1': (0.6400520950736341, 0.7546367087903825, 0.8799493502443498), 'S2': (0.4878048780487805, 0.5456182601074573, 0.5796178343949044), 'S3': (0.04915238185434234, 0.06223513439215428, 0.07939669891861134)}
+gates {'S1': {'fpr': 0.0, 'fp': 0, 'power': 0, 'n_ho': 20, 'plant': 'infl', 'median_plant_shift': 0.037074754022884626}, 'S2': {'fpr': 0.1, 'fp': 2, 'power': 20, 'n_ho': 20, 'plant': 'infl', 'median_plant_shift': 0.08931664001946388}, 'S3': {'fpr': 0.05, 'fp': 1, 'power': 20, 'n_ho': 20, 'plant': 'shuf', 'median_plant_shift': -0.02701559635486095}} {'S1': False, 'S2': True, 'S3': True}
+ZL3b_A_first {'S1': 0.7126, 'S2': 0.7006, 'S3': 0.023}
+ZL3b_A_last {'S1': 0.8038, 'S2': 0.7092, 'S3': 0.0353}
+ZL3b_B_first {'S1': 0.7239, 'S2': 0.7017, 'S3': 0.0383}
+ZL3b_B_last {'S1': 0.785, 'S2': 0.6825, 'S3': 0.0386}
+IT2a_A_first {'S1': 0.7236, 'S2': 0.7055, 'S3': 0.0247}
+IT2a_A_last {'S1': 0.8041, 'S2': 0.7131, 'S3': 0.0348}
+IT2a_B_first {'S1': 0.7128, 'S2': 0.7058, 'S3': 0.0389}
+IT2a_B_last {'S1': 0.7867, 'S2': 0.7002, 'S3': 0.0373}
+S2|ZL3b_A_first 0.7006 0.012345679012345678 True above
+S2|ZL3b_A_last 0.7092 0.012345679012345678 True above
+S2|ZL3b_B_first 0.7017 0.012345679012345678 True above
+S2|ZL3b_B_last 0.6825 0.012345679012345678 True above
+S2|IT2a_A_first 0.7055 0.012345679012345678 True above
+S2|IT2a_A_last 0.7131 0.012345679012345678 True above
+S2|IT2a_B_first 0.7058 0.012345679012345678 True above
+S2|IT2a_B_last 0.7002 0.012345679012345678 True above
+S3|ZL3b_A_first 0.023 0.012345679012345678 True below
+S3|ZL3b_A_last 0.0353 0.012345679012345678 True below
+S3|ZL3b_B_first 0.0383 0.012345679012345678 True below
+S3|ZL3b_B_last 0.0386 0.012345679012345678 True below
+S3|IT2a_A_first 0.0247 0.012345679012345678 True below
+S3|IT2a_A_last 0.0348 0.012345679012345678 True below
+S3|IT2a_B_first 0.0389 0.012345679012345678 True below
+S3|IT2a_B_last 0.0373 0.012345679012345678 True below
+VERDICT {'S1': 'NOT TESTABLE', 'S2': 'CONFIRMED-DIFFERENT-ABOVE', 'S3': 'CONFIRMED-DIFFERENT-BELOW'}
+ALT {"G1": {"S1": {"n": 20, "range": [0.754935340964212, 0.8088903456055303, 0.8416140148064412], "inside": 4, "status": "4/8 inside"}, "S2": {"n": 20, "range": [0.5250755287009063, 0.5579435410195506, 0.5906040268456376], "inside": 0, "status": "0/8 inside"}, "S3": {"n": 20, "range": [0.01565995525727082, 0.02012748756577243, 0.02383701748597833], "inside": 1, "status": "1/8 inside"}}, "G2": {"S1": {"n": 20, "range": [0.7138846163275004, 0.778669609254304, 0.8464420647621026], "inside": 6, "status": "6/8 inside"}, "S2": {"n": 20, "range": [0.5090415913200723, 0.5667558570706219, 0.5842696629213483], "inside": 0, "status": "0/8 inside"}, "S3": {"n": 20, "range": [0.03471295060080104, 0.04076464987581718, 0.05425805878696377], "inside": 6, "status": "6/8 inside"}}, "G3": {"S1": {"n": 20, "range": [0.6549641850071549, 0.7718289435832276, 0.8399880684638185], "inside": 8, "status": "COVERS"}, "S2": {"n": 20, "range": [0.4970817120622568, 0.5465323141478877, 0.5799196787148594], "inside": 0, "status": "0/8 inside"}, "S3": {"n": 20, "range": [0.05070974971983555, 0.059662744800142276, 0.07718585541501244], "inside": 0, "status": "0/8 inside"}}}
+NAT {'S1': (0.6345619405666441, 0.9135028376290807), 'S2': (0.5784883720930233, 0.7802498048399688), 'S3': (0.02466750028418785, 0.15789852983568742)} {'S1': 2, 'S2': 2, 'S3': 2} {'S1': 'INSIDE', 'S2': 'INSIDE', 'S3': 'STRADDLE'} {'S1': {'A': 'INSIDE', 'B': 'INSIDE'}, 'S2': {'A': 'INSIDE', 'B': 'INSIDE'}, 'S3': {'A': 'STRADDLE', 'B': 'INSIDE'}}
+runtime 89.2
+
+Post-hoc exploratory (not pre-registered), ~15:22 PT: timeout 300 python3 tools/c065_posthoc_s2_settings.py (16 s)
+P1 suggestions.probability=0 10 0.53 0.571
+P2 suggestions=none 10 0.529 0.584
+P3 canFollow.error_rate=10 10 0.554 0.608
+P4 replace.probability=100 10 0.524 0.59
+P5 add_remove.probability=80 10 0.352 0.426
+P6 canFollow=none 10 0.617 0.656
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI ran this)
