@@ -18,7 +18,30 @@ H1: in Voynich paragraph text, do the same two words share a line more often tha
 - **Caveats fixed in advance:** natural "pages" are artificial 30-line blocks and typeset lines are not scribal lines; line length differs between texts (the shuffle ratio absorbs part of this, not all). A pair excess says lines are units of composition; it does not show meaning, and the generator could produce it too (not tested this cycle).
 - **Tool:** `tools/c046_line_pair_recurrence.py` → `analysis/C046_results.json`. Run `timeout 600 python3 tools/c046_line_pair_recurrence.py`.
 
-## Results
-*(to be filled after the run)*
+## Results (run 2026-11-08 ~02:32 PT, one run, 146 s; `analysis/C046_results.json`)
+**H1 gates: FPR 1/40 (pass), power 2/40 at the 5% plant (FAIL; 3/40 at 2%) → H1 NOT TESTABLE.** Diagnosed after the run: 5% of ~1,500 lines spread over 30 pairs is only ~2–3 plants per pair, which adds a few dozen recurring pairs against a null sd of about 45; the plant was too weak for this statistic. Not redesigned after seeing Voynich numbers.
+
+**H2 gates: FPR 1/7 (pass, at the limit), power 10/10 (pass). Natural half-bar 0.055 (Machiavelli).**
+
+| text | E (full, p) | E halves |
+|---|---|---|
+| Latin Caesar | 0.246 (0.005) | 0.272 / 0.300 |
+| Latin Descartes | 0.141 (0.005) | 0.202 / 0.151 |
+| Italian Dante | 0.146 (0.005) | 0.171 / 0.143 |
+| Italian Machiavelli | **0.048** (0.005) | **0.055** / 0.068 |
+| Spanish Cervantes | 0.110 (0.005) | 0.135 / 0.115 |
+| Hebrew Genesis | 0.146 (0.005) | 0.183 / 0.163 |
+| Hebrew Exodus | 0.234 (0.005) | 0.155 / 0.376 |
+| **Voynich ZL 3b** (1,940 lines, 135 pages) | **0.027** (0.010) | 0.061 / **0.020** |
+| **Voynich IT2a** (1,964 lines, 136 pages) | **0.023** (0.010) | 0.082 / **0.008** |
+
+**H2 verdict by the pre-registered rule: NOT WEAKER.** Read it as "not shown weaker": in each transcription the first half (earlier folios) sits above the bar and the second half below it, so neither meets "both halves below".
+
+**What this means (no overclaiming):**
+- Descriptively, the full-text Voynich excess (0.023–0.027) is about half of the weakest natural text (Machiavelli 0.048) and positive at p ≈ 0.01. That matches the size reported in arXiv 2610.34499, but here it is **not a verdict**: H1's gate failed, and H2's independent-halves rule did not confirm it.
+- The halves disagree strongly (earlier folios 0.06–0.08, later 0.01–0.02). That points to a difference along the book (possibly Currier A vs B, or the herbal vs the later sections). This is a new lead, and testing it needs its own pre-registration.
+- A pair excess says lines are units of composition; it is not evidence of meaning. The generator was not tested.
+
+**Next:** F-PAIR step 2 with a stronger, calibrated plant for H1 (more lines or fewer pairs, power checked before any Voynich number), and a pre-registered Currier A vs B (or section) split of E with page-level independence.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
