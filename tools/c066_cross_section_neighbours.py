@@ -144,7 +144,7 @@ def blocks(toks, shares):
 def gen_job(a):
     s, Ns, shares = a; Lg = generate({'text.lines_to_create': LINES}, s)
     t = [tuple(T.units(w)) for w in C.flat(Lg)] if Lg else []
-    if len(t) < max(Ns): return s, None
+    if len(t) < max(Ns.values()): return s, None
     rng = np.random.default_rng(SEED * 10000 + s); r = {}
     for k, N in Ns.items():
         docs, lab = blocks(t[:N], shares); r[k] = dict(plain=Corpus(docs).D(lab))
