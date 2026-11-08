@@ -1,0 +1,95 @@
+{"n_eligible": 457, "n_pop": 378, "thirds": [32.66666666666666, 82.33333333333331], "counts": {"S0": 79, "small": 126, "mid": 126, "large": 126}, "work": {"small": 126, "mid": 126}, "seeds": {"power": 3832}, "K": 10000, "MS": [2, 3, 4], "consistency": {"n_eligible_match": true, "n_pop_match": true, "thirds_match": true, "strata_match": true}, "smoke": false}
+power 20 / 252 {'small': 10, 'mid': 10} 2.8
+power 40 / 252 {'small': 20, 'mid': 20} 5.2
+power 60 / 252 {'small': 30, 'mid': 30} 7.5
+power 80 / 252 {'small': 40, 'mid': 40} 9.9
+power 100 / 252 {'small': 50, 'mid': 50} 12.9
+power 120 / 252 {'small': 60, 'mid': 60} 15.7
+power 140 / 252 {'small': 70, 'mid': 70} 19.0
+power 160 / 252 {'small': 80, 'mid': 80} 21.4
+power 180 / 252 {'small': 90, 'mid': 90} 24.0
+power 200 / 252 {'small': 100, 'mid': 100} 27.2
+power 220 / 252 {'small': 110, 'mid': 110} 29.8
+power 240 / 252 {'small': 120, 'mid': 120} 32.5
+{
+ "power": {
+  "small": {
+   "2": {
+    "n": 121,
+    "p05": 0.7769,
+    "bh_F1": 0.2727
+   },
+   "3": {
+    "n": 117,
+    "p05": 0.8889,
+    "bh_F1": 0.3932
+   },
+   "4": {
+    "n": 116,
+    "p05": 0.8966,
+    "bh_F1": 0.6552
+   }
+  },
+  "mid": {
+   "2": {
+    "n": 122,
+    "p05": 0.6967,
+    "bh_F1": 0.2377
+   },
+   "3": {
+    "n": 121,
+    "p05": 0.8182,
+    "bh_F1": 0.3719
+   },
+   "4": {
+    "n": 120,
+    "p05": 0.925,
+    "bh_F1": 0.5583
+   }
+  }
+ },
+ "reached": {
+  "small": 126,
+  "mid": 126
+ },
+ "capped": false,
+ "decision": {
+  "excluded": false,
+  "gate_F1_inherited": true,
+  "m_star": {
+   "small": 4,
+   "mid": 4
+  },
+  "verdicts": {
+   "small": "silence readable against >= 4 within-group sums in small",
+   "mid": "silence readable against >= 4 within-group sums in mid"
+  },
+  "k035_reference": {
+   "small": {
+    "m_star": 4,
+    "bh_power": {
+     "1": 0.1,
+     "2": 0.28,
+     "3": 0.49,
+     "4": 0.59
+    }
+   },
+   "mid": {
+    "m_star": 3,
+    "fragile": true,
+    "bh_power": {
+     "1": 0.04,
+     "2": 0.19,
+     "3": 0.5,
+     "4": 0.49
+    }
+   }
+  },
+  "vs_k035": {
+   "small": "confirms",
+   "mid": "shifts (3 -> 4)"
+  }
+ },
+ "secs": 34.3
+}
+secs 34.3
