@@ -71,7 +71,7 @@ Seeds: curve 203·100 + test index (0–7), test 202, audit 204. Tool: [`tools/p
 ## Results (computed after the pre-registration commit `012c5f9`)
 
 Order of events (America/Vancouver): pre-registration committed locally 15:56 (`150af9b`, published as `012c5f9`);
-stage 1 ran 15:56–15:58 (88.8 s) and was committed (local `1b2d623`) before stage 2 was run; stage 2 took 0.8 s.
+stage 1 ran 15:56–15:58 (88.8 s) and was committed locally before stage 2 was run (published afterwards as `7a92ee3`); stage 2 took 0.8 s.
 Outputs: `analysis/pe002_curve.json`, `analysis/pe002_results.json`, `analysis/pe002_pe001_audit.json`,
 `analysis/pe002_posthoc.json`, run logs `analysis/pe002_curve_run.log`, `analysis/pe002_run.log`.
 
