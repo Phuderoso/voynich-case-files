@@ -28,3 +28,8 @@ Data: ZL 3b has 225 pages with running text, 52 of them with labels, 1,001 disti
 A null that keeps each page's own label count and own text fixed and only asks whether *this* label word is more likely at home than at other pages *for words of its frequency*: e.g. per-label comparison against frequency-matched decoy words from the same section, with the gates drawing fake labels by the same frequency model (so the generator and the null agree), and gates checked before any Voynich number.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Audit note (added in C062)
+With a page-fixed, frequency-matched decoy null ([C062](C062-label-decoys.md)), the ZL own-page hits are 97 vs 87.0 expected (p 0.072, NO EXCESS), so about half of the descriptive surplus above was the confound found by this cycle's diagnostic. The NOT TESTABLE verdict stands.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
