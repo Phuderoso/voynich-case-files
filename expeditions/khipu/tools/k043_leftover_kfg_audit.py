@@ -68,5 +68,29 @@ def merge():
     print("control passed:", control_pass); print("counts:", counts)
 
 
+def context():
+    """Print each target's OKR value and the OKR values of the group it sums (read-only db read),
+    so the hand comparison with the Field Guide summand lists is reproducible."""
+    import sqlite3
+    from collections import defaultdict
+    cat = load_catalogue()
+    db = sqlite3.connect("file:" + os.path.join(HERE, "..", "khipu.db") + "?mode=ro", uri=True)
+    val = defaultdict(int)
+    for cid, v in db.execute("select CORD_ID, knot_value_type from knot"):
+        if v is not None:
+            val[cid] += int(v)
+    kid = {o: k for k, o in db.execute("select KHIPU_ID, OKR_NUM from khipu_main")}
+    out = []
+    for c in cat:
+        cords = [r[0] for r in db.execute("select CORD_ID from cord where KHIPU_ID=? and CORD_LEVEL=1 "
+                                          "order by CORD_ORDINAL", (kid[c["okr"]],))]
+        grp = [val.get(x, 0) for x in cords[c["group_start"]:c["group_end"]]]
+        tot = val.get(c["cord_id"], 0)
+        assert tot == c["value"] and sum(grp) == c["value"], (c, tot, grp)
+        out.append(dict(okr=c["okr"], cord_ordinal=c["cord_ordinal"], value=tot, group_values=grp))
+        print(c["okr"], c["inv"], "cord", c["cord_ordinal"], "=", tot, "<- group", grp)
+    open(os.path.join(AN, "k043_okr_context.json"), "w").write("[\n" + ",\n".join(json.dumps(o) for o in out) + "\n]\n")
+
+
 if __name__ == "__main__":
-    {"targets": targets, "merge": merge}[sys.argv[1] if len(sys.argv) > 1 else "targets"]()
+    {"targets": targets, "merge": merge, "context": context}[sys.argv[1] if len(sys.argv) > 1 else "targets"]()

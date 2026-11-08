@@ -1,0 +1,182 @@
+{
+ "cycle": "K043",
+ "control": {
+  "okr": "KH0359",
+  "inv": "UR119",
+  "retrieved": true,
+  "mentions_sums": true,
+  "urls": [
+   "https://www.khipufieldguide.com/catalog/KH0359.html (200)",
+   "https://www.khipufieldguide.com/notebook/fieldmarks/colored_pendant_sum/html/KH0359.html (200)",
+   "https://www.khipufieldguide.com/notebook/analyses/sum_top_cords.html (200)"
+  ],
+  "quotes": [
+   "# Ascher Sums (pps, ips, cps, sps,...): 65 (38, 11, 16, 0,...)",
+   "g15p1 : 416 W 416 6 g16p1: 19 W + g16p2: 74 W + g16p3: 44 W + g16p4: 221 W + g16p5: 30 W + g16p6: 28 W",
+   "KH0359 4 423 390 481"
+  ],
+  "note": "Catalogue page states 65 Ascher sums (matches K025). The colored-pendant-sum table lists all four K025 UR119 whole-group totals at cord level (g15p1=416, g17p1=390, g19p1=406, g21p1=481, each summing the six cords of the next group); Sum Top Cords table row: 4 top cords, mean 423, min 390, max 481. Control passes and shows the method can match at cord level.",
+  "passed": true
+ },
+ "pendants": [
+  {
+   "okr": "KH0082",
+   "inv": "AS069",
+   "cord_ordinal": 286,
+   "value": 18,
+   "kfg_cord": "g75p1 (p286; singleton group g75, next group g76 = p287-p293)",
+   "kfg_attachment": "U",
+   "label": "already_counted",
+   "evidence_grade": "cord-level listing (span)",
+   "url": "https://www.khipufieldguide.com/notebook/fieldmarks/pendant_pendant_sum/html/KH0082.html",
+   "status": 200,
+   "quote": "g75p1 : 18 W 18 4 g76p2: 10 W + g76p3: 0 W + g76p4: 0 W + g76p5: 8 W",
+   "note": "Listed as the sum of g76p2-p5, the nonzero span of the adjacent 7-cord group (g76p1, p6, p7 = 0 in KFG's Cords sheet), so the value is the whole-group total. Qualified match: KFG lists the span, not the full group."
+  },
+  {
+   "okr": "KH0113",
+   "inv": "UR1100",
+   "cord_ordinal": 1,
+   "value": 259,
+   "kfg_cord": "g1p1 (p1)",
+   "kfg_attachment": "U",
+   "label": "already_counted",
+   "evidence_grade": "cord-level listing (full group)",
+   "url": "https://www.khipufieldguide.com/notebook/fieldmarks/pendant_pendant_sum/html/KH0113.html",
+   "status": 200,
+   "quote": "g1p1 : 259 W 259 6 ❽ g2p1: 81 W + g2p2: 38 W + g2p3: 31 B + g2p4: 42 W + g2p5: 31 DB + ∞ g2p6: 36 B",
+   "note": ""
+  },
+  {
+   "okr": "KH0235",
+   "inv": "AS215",
+   "cord_ordinal": 12,
+   "value": 14,
+   "kfg_cord": "g7p1 (p12)",
+   "kfg_attachment": "U",
+   "label": "already_counted",
+   "evidence_grade": "cord-level listing (full group)",
+   "url": "https://www.khipufieldguide.com/notebook/fieldmarks/pendant_pendant_sum/html/KH0235.html",
+   "status": 200,
+   "quote": "g7p1 : 14 W:DB 14 4 ❽ g8p1: 1 W:DB + g8p2: 11 W:DB + g8p3: 1 W:DB + g8p4: 1 W:DB ❽",
+   "note": "The same cord is also listed as 10+4 of g5p5-p6 (a second, non-group sum)."
+  },
+  {
+   "okr": "KH0246",
+   "inv": "UR010",
+   "cord_ordinal": 91,
+   "value": 112,
+   "kfg_cord": "g16p1 (p91)",
+   "kfg_attachment": "R",
+   "label": "already_counted",
+   "evidence_grade": "cord-level listing (full group)",
+   "url": "https://www.khipufieldguide.com/notebook/fieldmarks/pendant_pendant_sum/html/KH0246.html",
+   "status": 200,
+   "quote": "g16p1 : 112 W 112 7 g17p1: 2 KB + g17p2: 40 W + g17p3: 48 W + g17p4: 6 W + g17p5: 6 W + g17p6: 5 W + g17p7: 5 AB:GG",
+   "note": ""
+  },
+  {
+   "okr": "KH0323",
+   "inv": "UR087",
+   "cord_ordinal": 7,
+   "value": 15,
+   "kfg_cord": "g2p1 (p7; KFG attachment T = top cord; sums g1 = p1-p6)",
+   "kfg_attachment": "T",
+   "label": "already_counted",
+   "evidence_grade": "summary-table value match (Sum Top Cords)",
+   "url": "https://www.khipufieldguide.com/notebook/analyses/sum_top_cords.html",
+   "status": 200,
+   "quote": "KH0323 2 15 15 16",
+   "note": "Not in KFG's pendant-pendant or group-group sum tables for KH0323. KFG's Sum Top Cords table lists 2 sum top cords (mean 15, min 15, max 16); KH0323's only top cord valued 15 is p7, whose adjacent group p1-p6 sums to 15 (1+1+10+1+1+1). KFG Cords sheet: attachment T, note 'attached to the right; see observations'. OKR ATTACHMENT_TYPE is 'U'. Named publication on this set: Medrano & Urton 2018 (Ethnohistory 65(1)) - not read here for this cord."
+  },
+  {
+   "okr": "KH0424",
+   "inv": "UR186",
+   "cord_ordinal": 24,
+   "value": 75,
+   "kfg_cord": "g8p1 (p24; KFG attachment T; sums g7 = p18-p23)",
+   "kfg_attachment": "T",
+   "label": "already_counted",
+   "evidence_grade": "summary-table value match (Sum Top Cords)",
+   "url": "https://www.khipufieldguide.com/notebook/analyses/sum_top_cords.html",
+   "status": 200,
+   "quote": "KH0424 3 250 75 596",
+   "note": "Not in KFG's pendant-pendant (14) or indexed (1) sum tables. Sum Top Cords row: 3 sum top cords, mean 250, min 75, max 596. KH0424's top cords are 89, 110, 75, 79, 50, 71, 596 (KFG Cords sheet), so min 75 = p24 uniquely. A WebSearch index snippet of group_group_sum/html/UR186.html listed '75' and '596' as group sums, but that URL returned 404 on direct fetch (curl and WebFetch); not used as evidence. OKR ATTACHMENT_TYPE 'U'."
+  },
+  {
+   "okr": "KH0424",
+   "inv": "UR186",
+   "cord_ordinal": 58,
+   "value": 596,
+   "kfg_cord": "g17p1 (p58, last cord; KFG attachment T; sums g16 = p52-p57)",
+   "kfg_attachment": "T",
+   "label": "already_counted",
+   "evidence_grade": "summary-table value match (Sum Top Cords)",
+   "url": "https://www.khipufieldguide.com/notebook/analyses/sum_top_cords.html",
+   "status": 200,
+   "quote": "KH0424 3 250 75 596",
+   "note": "max 596 = p58 uniquely. OKR ATTACHMENT_TYPE 'U'."
+  },
+  {
+   "okr": "KH0460",
+   "inv": "UR222",
+   "cord_ordinal": 1,
+   "value": 17,
+   "kfg_cord": "g1p1 (p1)",
+   "kfg_attachment": "V",
+   "label": "already_counted",
+   "evidence_grade": "cord-level listing (full group)",
+   "url": "https://www.khipufieldguide.com/notebook/fieldmarks/pendant_pendant_sum/html/KH0460.html",
+   "status": 200,
+   "quote": "g1p1 : 17 HB 17 6 g2p1: 6 W + g2p2: 4 W + g2p3: 1 W + g2p4: 2 W + g2p5: 1 W + g2p6: 3 W ❽",
+   "note": ""
+  },
+  {
+   "okr": "KH0482",
+   "inv": "UR246",
+   "cord_ordinal": 25,
+   "value": 288,
+   "kfg_cord": "g6p1 (p25; KFG attachment T; sums g5 = p17-p24)",
+   "kfg_attachment": "T",
+   "label": "already_counted",
+   "evidence_grade": "cord-level listing (full group) + Sum Top Cords row",
+   "url": "https://www.khipufieldguide.com/notebook/fieldmarks/colored_pendant_sum/html/KH0482.html",
+   "status": 200,
+   "quote": "g6p1 : 288 AB 288 8 g5p1: 8 AB ∞ + g5p2: 91 AB + g5p3: 6 AB + g5p4: 7 AB + g5p5: 147 AB + g5p6: 9 AB + g5p7: 11 AB + ∞ g5p8: 9 AB",
+   "note": "Also Sum Top Cords row 'KH0482 2 302 288 316'. OKR ATTACHMENT_TYPE 'U'."
+  },
+  {
+   "okr": "KH0583",
+   "inv": "HP052",
+   "cord_ordinal": 7,
+   "value": 40,
+   "kfg_cord": "g5p1 (p7)",
+   "kfg_attachment": "R",
+   "label": "already_counted",
+   "evidence_grade": "cord-level listing (full group)",
+   "url": "https://www.khipufieldguide.com/notebook/fieldmarks/pendant_pendant_sum/html/KH0583.html",
+   "status": 200,
+   "quote": "g5p1 : 40 W:RM 40 2 g6p1: 20 W:RM + g6p2: 20 W:RM",
+   "note": "Same cord also listed as 20+20 of g3p1+g4p1."
+  }
+ ],
+ "counts": {
+  "already_counted": 10,
+  "mentioned_other_sum": 0,
+  "method_excluded": 0,
+  "not_mentioned": 0,
+  "source_missing": 0
+ },
+ "khipu_page_mentions_any_sum": {
+  "KH0082": "682 (226, 111, 283, 45,...)",
+  "KH0113": "26 (9, 2, 10, 3,...)",
+  "KH0235": "11 (6, 0, 3, 1,...)",
+  "KH0246": "172 (99, 35, 32, 1,...)",
+  "KH0323": "101 (37, 7, 55, 0,...)",
+  "KH0424": "16 (14, 1, 0, 0,...)",
+  "KH0460": "17 (11, 1, 5, 0,...)",
+  "KH0482": "3 (1, 1, 1, 0,...)",
+  "KH0583": "26 (16, 0, 9, 0,...)"
+ },
+ "notes": "KFG Sum Top Cords search (code excerpt on that page) tags a one-cord group adjacent to a group whose sum matches (exact or off by one digit) - the singleton-total form of K041/K042. Page: 'A total of 86 sum top cords exist over 22 khipus with sum top cords'. Four of the ten (KH0323 p7, KH0424 p24 and p58, KH0482 p25) are top cords in KFG (attachment T) but carry ATTACHMENT_TYPE 'U' in OKR khipu.db @ 4039ca5; descriptive only."
+}
