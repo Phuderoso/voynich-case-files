@@ -3,13 +3,7 @@
 median planted D_blk 0.045, design power 39/40) and a fresh seed 5758. Power gate raised to >= 32/40 (80%). Everything
 else identical to C056 (block null within IVTFF $I sections, same controls, H1-H3). Pre-registered in
 case-file/C057-burstiness-within-section-v2.md.
-Run: timeout 600 python3 tools/c057_burstiness_within_section_v2.py   — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04"""C056 (F-BURST step 2): does C055's word clumping survive once section changes are taken out? Same statistic B
-as C055 (115-token chunks, types 15-150 per 15,000-token half, mean log var/mean). New null: tokens shuffled only
-inside blocks = contiguous runs of the same IVTFF $I section in reading order (D_blk = B - mean null). Controls get
-the SAME block lengths as the matching Voynich ZL half (natural texts with one half use ZL half 1), so their long-range
-drift is removed in the same way. Stronger gates: 40 replicates. Pre-registered in
-case-file/C056-burstiness-within-section.md. Seed 5656.
-Run: timeout 600 python3 tools/c056_burstiness_within_section.py   — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04"""
+Run: timeout 600 python3 tools/c057_burstiness_within_section_v2.py   — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04"""
 import sys, os, json, time
 import numpy as np
 sys.path.insert(0, os.path.dirname(__file__))
