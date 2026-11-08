@@ -1,0 +1,221 @@
+{"n_eligible": 457, "n_pop": 378, "thirds": [32.66666666666666, 82.33333333333331], "counts": {"S0": 79, "small": 126, "mid": 126, "large": 126}, "work": {"small": 126, "mid": 126, "large": 126}, "seeds": {"power": 3939}, "K": 10000, "MS": [4, 6], "consistency": {"n_eligible_match": true, "n_pop_match": true, "thirds_match": true, "strata_match": true}, "smoke": false}
+power m= 4 20 / 378 {'small': 7, 'mid': 7, 'large': 6} 3.0
+power m= 4 40 / 378 {'small': 14, 'mid': 13, 'large': 13} 6.8
+power m= 4 60 / 378 {'small': 20, 'mid': 20, 'large': 20} 9.2
+power m= 4 80 / 378 {'small': 27, 'mid': 27, 'large': 26} 11.8
+power m= 4 100 / 378 {'small': 34, 'mid': 33, 'large': 33} 13.8
+power m= 4 120 / 378 {'small': 40, 'mid': 40, 'large': 40} 15.6
+power m= 4 140 / 378 {'small': 47, 'mid': 47, 'large': 46} 17.8
+power m= 4 160 / 378 {'small': 54, 'mid': 53, 'large': 53} 19.7
+power m= 4 180 / 378 {'small': 60, 'mid': 60, 'large': 60} 21.4
+power m= 4 200 / 378 {'small': 67, 'mid': 67, 'large': 66} 23.4
+power m= 4 220 / 378 {'small': 74, 'mid': 73, 'large': 73} 24.8
+power m= 4 240 / 378 {'small': 80, 'mid': 80, 'large': 80} 26.9
+power m= 4 260 / 378 {'small': 87, 'mid': 87, 'large': 86} 28.3
+power m= 4 280 / 378 {'small': 94, 'mid': 93, 'large': 93} 30.8
+power m= 4 300 / 378 {'small': 100, 'mid': 100, 'large': 100} 32.5
+power m= 4 320 / 378 {'small': 107, 'mid': 107, 'large': 106} 33.8
+power m= 4 340 / 378 {'small': 114, 'mid': 113, 'large': 113} 35.2
+power m= 4 360 / 378 {'small': 120, 'mid': 120, 'large': 120} 36.5
+power m= 6 20 / 378 {'small': 7, 'mid': 7, 'large': 6} 40.3
+power m= 6 40 / 378 {'small': 14, 'mid': 13, 'large': 13} 43.5
+power m= 6 60 / 378 {'small': 20, 'mid': 20, 'large': 20} 45.7
+power m= 6 80 / 378 {'small': 27, 'mid': 27, 'large': 26} 48.1
+power m= 6 100 / 378 {'small': 34, 'mid': 33, 'large': 33} 50.0
+power m= 6 120 / 378 {'small': 40, 'mid': 40, 'large': 40} 51.7
+power m= 6 140 / 378 {'small': 47, 'mid': 47, 'large': 46} 53.8
+power m= 6 160 / 378 {'small': 54, 'mid': 53, 'large': 53} 55.6
+power m= 6 180 / 378 {'small': 60, 'mid': 60, 'large': 60} 57.2
+power m= 6 200 / 378 {'small': 67, 'mid': 67, 'large': 66} 59.2
+power m= 6 220 / 378 {'small': 74, 'mid': 73, 'large': 73} 60.6
+power m= 6 240 / 378 {'small': 80, 'mid': 80, 'large': 80} 62.6
+power m= 6 260 / 378 {'small': 87, 'mid': 87, 'large': 86} 64.2
+power m= 6 280 / 378 {'small': 94, 'mid': 93, 'large': 93} 66.7
+power m= 6 300 / 378 {'small': 100, 'mid': 100, 'large': 100} 68.3
+power m= 6 320 / 378 {'small': 107, 'mid': 107, 'large': 106} 69.6
+power m= 6 340 / 378 {'small': 114, 'mid': 113, 'large': 113} 70.9
+power m= 6 360 / 378 {'small': 120, 'mid': 120, 'large': 120} 72.2
+{
+ "power": {
+  "pooled": {
+   "4": {
+    "n": 361,
+    "p05": 0.8837,
+    "bh_F1": 0.5152
+   },
+   "6": {
+    "n": 360,
+    "p05": 0.95,
+    "bh_F1": 0.7056
+   }
+  },
+  "small": {
+   "4": {
+    "n": 117,
+    "p05": 0.9145,
+    "bh_F1": 0.5214
+   },
+   "6": {
+    "n": 116,
+    "p05": 0.9655,
+    "bh_F1": 0.7414
+   }
+  },
+  "mid": {
+   "4": {
+    "n": 120,
+    "p05": 0.9583,
+    "bh_F1": 0.575
+   },
+   "6": {
+    "n": 120,
+    "p05": 0.95,
+    "bh_F1": 0.7083
+   }
+  },
+  "large": {
+   "4": {
+    "n": 124,
+    "p05": 0.7823,
+    "bh_F1": 0.4516
+   },
+   "6": {
+    "n": 124,
+    "p05": 0.9355,
+    "bh_F1": 0.6694
+   }
+  }
+ },
+ "reached": {
+  "4": {
+   "small": 126,
+   "mid": 126,
+   "large": 126
+  },
+  "6": {
+   "small": 126,
+   "mid": 126,
+   "large": 126
+  }
+ },
+ "capped": false,
+ "decision": {
+  "excluded": false,
+  "gate_F1_inherited": true,
+  "adoption": {
+   "4": {
+    "meets_bar": true,
+    "all_strata_readable": false,
+    "adopt_corpus_statement": false,
+    "n_pooled": 361,
+    "bh_F1_pooled": 0.5152,
+    "strata": {
+     "small": {
+      "n": 117,
+      "bh_F1": 0.5214
+     },
+     "mid": {
+      "n": 120,
+      "bh_F1": 0.575
+     },
+     "large": {
+      "n": 124,
+      "bh_F1": 0.4516
+     }
+    }
+   },
+   "6": {
+    "meets_bar": true,
+    "all_strata_readable": true,
+    "adopt_corpus_statement": true,
+    "n_pooled": 360,
+    "bh_F1_pooled": 0.7056,
+    "strata": {
+     "small": {
+      "n": 116,
+      "bh_F1": 0.7414
+     },
+     "mid": {
+      "n": 120,
+      "bh_F1": 0.7083
+     },
+     "large": {
+      "n": 124,
+      "bh_F1": 0.6694
+     }
+    }
+   }
+  },
+  "corpus_m_star": 6,
+  "verdict": "corpus-level silence readable against >= 6 planted within-group sums (every stratum also meets the bar at this m)",
+  "published_m_star_not_revised": {
+   "small": {
+    "source": "K038 seed 3832",
+    "m_star": 4,
+    "bh_power": {
+     "2": 0.2727,
+     "3": 0.3932,
+     "4": 0.6552
+    }
+   },
+   "mid": {
+    "source": "K038 seed 3832",
+    "m_star": 4,
+    "bh_power": {
+     "2": 0.2377,
+     "3": 0.3719,
+     "4": 0.5583
+    }
+   },
+   "large": {
+    "source": "K036 seed 3632",
+    "m_star": 6,
+    "bh_power": {
+     "4": 0.416,
+     "6": 0.6532,
+     "8": 0.7823
+    }
+   }
+  },
+  "vs_published": {
+   "small": {
+    "4": {
+     "this": 0.5214,
+     "published": 0.6552,
+     "note": "descriptive seed-sensitivity; m* not revised"
+    },
+    "6": {
+     "this": 0.7414,
+     "published": null,
+     "note": "descriptive seed-sensitivity; m* not revised"
+    }
+   },
+   "mid": {
+    "4": {
+     "this": 0.575,
+     "published": 0.5583,
+     "note": "descriptive seed-sensitivity; m* not revised"
+    },
+    "6": {
+     "this": 0.7083,
+     "published": null,
+     "note": "descriptive seed-sensitivity; m* not revised"
+    }
+   },
+   "large": {
+    "4": {
+     "this": 0.4516,
+     "published": 0.416,
+     "note": "descriptive seed-sensitivity; m* not revised"
+    },
+    "6": {
+     "this": 0.6694,
+     "published": 0.6532,
+     "note": "descriptive seed-sensitivity; m* not revised"
+    }
+   }
+  }
+ },
+ "secs": 73.9
+}
+secs 73.9
