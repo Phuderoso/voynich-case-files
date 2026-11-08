@@ -73,4 +73,51 @@ only targets, seeds and output path changed. Output: `analysis/k037_results.json
 A confirmed L means "this khipu's longest within-group exact-sum window is longer than chance under
 permutation", a property of the record. It is not a reading of the khipu. No decipherment is claimed.
 
+## Results
+
+Run 2026-11-08 02:18:22–02:18:42 PT (America/Vancouver), `timeout 560 python3 tools/k037_f1_holdout_confirmation.py khipu.db`
+(19.9 s). Output: [`analysis/k037_results.json`](../analysis/k037_results.json), log `analysis/k037_run.log`.
+Prereg + tool committed first as `e953060`. Data SHA-256 checked before the run (matches the manifest).
+
+Frames: KH0502/UR266 132 pendants, 36 groups (22 of size ≥ 4); KH0511/UR273B 114 pendants, 32 groups (13 of size ≥ 4).
+
+### 1. FPR gate: **pass**
+200 random other multi-group pop khipus, one null "observed" each, R = 5 000: **1 / 200 = 0.005**
+(≤ 0.08; binomial P(X ≥ 1 | n=200, 0.05) = 0.99996). The test is conservative here (L is discrete and is
+0 in most null draws). Exchangeable tail on the named khipus' own nulls: KH0502 0.02755 at critical value 2.
+For KH0511 the α = 0.025 critical value is 0 (null L = 0 in more than 97.5 % of draws; null p95 = p99 = 0), so
+the descriptive "tail at crit" is 1.0. That is a discreteness artefact of the descriptive, not a calibration
+failure: the decision uses the exact p, which only counts draws with L ≥ 3.
+
+### 2. Confirmation (R = 20 000; α = 0.025 each)
+
+| Khipu | L_obs | null mean / p95 / p99 / max | p | Power (k=6 plants) | Verdict |
+|---|---|---|---|---|---|
+| KH0502 / UR266 | **3** | 0.0773 / 0 / 3 / 6 | **0.01465** | 1.00 (200/200) | **confirmed** |
+| KH0511 / UR273B | **3** | 0.0081 / 0 / 0 / 6 | **0.00195** | 1.00 (200/200) | **confirmed** |
+
+Descriptive: KH0502 has 2 hit pendants in 1 hit group of 22 eligible (max-k hit in group 1; LOO after zeroing
+it → L = 2, so a shorter hit remains elsewhere). KH0511 has a single hit pendant in 1 group of 13 eligible
+(max-k hit in group 6; LOO → L = 0): its whole signal is one 3-cord within-group sum.
+
+### Reading
+Both K036 candidates pass the pre-registered rule: each khipu's longest within-group exact-sum window is longer
+than chance under permutation (Bonferroni × 2), with the FPR gate passed and no BH list consulted.
+Honest scale: these are **short** windows (L = 3, against L = 8 for KH0322/KH0420 in K034). Rare under the null
+because these frames almost never produce any within-group sum (null mean 0.08 and 0.008), not because the
+windows are long. KH0502's p (0.0146) sits within a factor of two of α; KH0511 rests on a single sum cord.
+Power 1.00 refers to k = 6 plants, a stronger effect than observed; it only matters for negatives.
+Context: KH0502/UR266 is the published twin of KH0514/UR275 (Urton & Chu; rediscovered in K020), which is
+also on the F1 list.
+
+**Decision: CONFIRMED (both named khipus; FPR gate passed).** KH0502/UR266 and KH0511/UR273B move from
+"candidate, not claimed" to "confirmed under the K034 holdout" on the fixed-K F1 list. The candidate fork
+opened in K036 is closed.
+
+### Next (line 1)
+All F1-only names (KH0322, KH0420, KH0502, KH0511) now carry a held-out confirmation. The remaining line-1 gap
+is silence in small/mid: their m* values (small 4, mid 3 fragile) come from K035's adaptive-cut scan. Proposed
+**K038**: re-measure BH-level F1 power for small and mid at fixed K = 10 000 (K036's large-only design extended
+to small/mid, m ∈ {2, 3, 4}), to replace the fragile adaptive-cut m* values. No new statistic.
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

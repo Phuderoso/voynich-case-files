@@ -1,0 +1,40 @@
+{"n_eligible": 457, "n_pop": 378, "targets": {"KH0502": {"khipu_id": 1000607, "okr": "KH0502", "inv": "UR266", "n4": 22, "n_groups": 36, "n_pend": 132, "sizes": [1, 5, 5, 5, 4, 7, 6, 1, 5, 3, 7, 4, 4, 1, 1, 4, 4, 1, 4, 4, 4, 5, 5, 5, 4, 4, 3, 1, 1, 1, 1, 8, 5, 3, 3, 3]}, "KH0511": {"khipu_id": 1000616, "okr": "KH0511", "inv": "UR273B", "n4": 13, "n_groups": 32, "n_pend": 114, "sizes": [6, 6, 6, 6, 6, 7, 7, 6, 5, 7, 1, 5, 4, 3, 1, 4, 1, 3, 3, 3, 3, 3, 3, 1, 2, 2, 2, 1, 2, 2, 2, 1]}}, "seeds": {"KH0502": 3730, "KH0511": 3731, "power": 3732, "fpr": 3733}, "R_CONF": 20000, "R_FPR": 5000, "R_POW": 5000, "N_FPR": 200, "N_POW": 200, "alpha": 0.025}
+CONF KH0502 L 3 p 0.014649267536623168 crit 2 tail 0.0276 0.3
+CONF KH0511 L 3 p 0.0019499025048747563 crit 0 tail 1.0 0.4
+FPR 50 3.1
+FPR 100 5.0
+FPR 150 7.0
+FPR 200 9.1
+FPR 0.005 hits 1 / 200 gate True binom 0.9999649473336713
+POW KH0502 1.0 det 200 / 200 skip 0 14.7
+POW KH0511 1.0 det 200 / 200 skip 0 19.9
+{
+ "overall": "CONFIRMED",
+ "per_khipu": {
+  "KH0502": {
+   "p": 0.014649267536623168,
+   "L": 3,
+   "power": 1.0,
+   "verdict": "confirmed"
+  },
+  "KH0511": {
+   "p": 0.0019499025048747563,
+   "L": 3,
+   "power": 1.0,
+   "verdict": "confirmed"
+  }
+ },
+ "fpr": {
+  "n": 200,
+  "hits": 1,
+  "fpr": 0.005,
+  "gate_pass": true,
+  "gate_threshold": 0.08,
+  "binom_p_above_0_05": 0.9999649473336713
+ },
+ "power": {
+  "KH0502": 1.0,
+  "KH0511": 1.0
+ },
+ "secs": 19.9
+}
