@@ -1,0 +1,58 @@
+{
+ "cycle": "K044",
+ "pendants": [
+  {
+   "okr": "KH0323",
+   "inv": "UR087",
+   "cord_ordinal": 7,
+   "value": 15,
+   "kfg_cord": "g2p1 (p7; KFG attachment T = top cord; sums g1 = p1-p6)",
+   "kfg_attachment": "T"
+  },
+  {
+   "okr": "KH0424",
+   "inv": "UR186",
+   "cord_ordinal": 24,
+   "value": 75,
+   "kfg_cord": "g8p1 (p24; KFG attachment T; sums g7 = p18-p23)",
+   "kfg_attachment": "T"
+  },
+  {
+   "okr": "KH0424",
+   "inv": "UR186",
+   "cord_ordinal": 58,
+   "value": 596,
+   "kfg_cord": "g17p1 (p58, last cord; KFG attachment T; sums g16 = p52-p57)",
+   "kfg_attachment": "T"
+  },
+  {
+   "okr": "KH0482",
+   "inv": "UR246",
+   "cord_ordinal": 25,
+   "value": 288,
+   "kfg_cord": "g6p1 (p25; KFG attachment T; sums g5 = p17-p24)",
+   "kfg_attachment": "T"
+  }
+ ],
+ "branches": {
+  "A_kfg_paths": [
+   "https://www.khipufieldguide.com/",
+   "https://www.khipufieldguide.com/changelog",
+   "https://www.khipufieldguide.com/changelog.html",
+   "https://www.khipufieldguide.com/news",
+   "https://www.khipufieldguide.com/news.html",
+   "https://www.khipufieldguide.com/updates",
+   "https://www.khipufieldguide.com/updates.html",
+   "https://www.khipufieldguide.com/about",
+   "https://www.khipufieldguide.com/about.html",
+   "https://www.khipufieldguide.com/notebook/"
+  ],
+  "B_okr": "https://github.com/khipulab/open-khipu-repository",
+  "D_kfg_xlsx": [
+   "https://www.khipufieldguide.com/databook/excel_khipus/KH0323.xlsx",
+   "https://www.khipufieldguide.com/databook/excel_khipus/KH0424.xlsx",
+   "https://www.khipufieldguide.com/databook/excel_khipus/KH0424.xlsx",
+   "https://www.khipufieldguide.com/databook/excel_khipus/KH0482.xlsx"
+  ]
+ }
+}
