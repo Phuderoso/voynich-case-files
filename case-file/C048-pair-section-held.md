@@ -24,6 +24,25 @@ Both tests are **two-sided**, because the direction was hinted by C047's descrip
 - **Tool:** `tools/c048_pair_section_held.py` → `analysis/C048_results.json`.
 
 ## Results
-(to be filled after the run)
+Run: 368 s (`analysis/C048_results.json`; log kept outside the repo). Seed 4848.
+
+**Gates:** T1 FPR 0/20, power **11/20 (fails the ≥ 14 bar)** → T1 is NOT TESTABLE. T2 FPR 0/20, power 14/20 (passes, just at the bar).
+
+| Test | | E group 1 | E group 2 | D (test run) | null mean ± sd | two-sided p | verdict |
+|---|---|---|---|---|---|---|---|
+| T1 herbal A vs herbal B | ZL 3b | 0.053 | 0.050 | +0.000 | −0.015 ± 0.043 | 0.72 | NOT TESTABLE (gate) |
+| | IT2a | 0.064 | 0.087 | −0.015 | −0.012 ± 0.051 | 0.94 | |
+| T2 herbal B vs non-herbal B | ZL 3b | 0.074 | −0.012 | **+0.076** | +0.003 ± 0.017 | **0.005** (floor) | **DIFFERENCE** |
+| | IT2a | 0.063 | −0.028 | **+0.073** | +0.004 ± 0.019 | **0.010** | |
+
+(Group E values were recomputed after the test with fresh shuffles; shuffle noise is about ±0.005, more on the small herbal-B group. Non-herbal B: 51/50 pages, ~19,100 tokens.)
+
+**Verdicts (pre-registered rule):** T1 NOT TESTABLE; T2 DIFFERENCE. Inside Currier B, the herbal pages keep word pairs together on a line about as much as A pages do, while the balneological, stars/recipes, text-only and cosmological B pages show no excess at all.
+
+**What this says.** C047's A > B is at least partly a **section effect inside B** (or something tangled with section there: scribe, quire, book position), because holding the language label fixed still gives a clear difference. Whether a language effect exists on top of it is not answered: T1's gate lacked power at herbal-B size (3,400 tokens), so its near-zero point estimates are a description, not an exclusion. The T2 power gate passed exactly at the bar (14/20), so a weaker section effect could have been missed, but the observed one is well beyond the null.
+
+**Not claimed.** Nothing about meaning. The difference could come from scribal practice (the B sections are mostly Fagin Davis's other hands), from page layout (long continuous paragraphs on balneo/stars pages vs short herbal blocks), or from content.
+
+**Next (F-PAIR step 4):** (a) make T1 testable with natural "pages" sized like herbal pages (~100 tokens) and more trials, or pool herbal A+B against B-herbal-size subsamples; (b) inside non-herbal B, test balneological (Q13) vs stars/recipes (Q20), and test by scribe hand where a public hand assignment exists, to split section from scribe.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
