@@ -1,0 +1,8 @@
+C067 design check (generator only; spent seeds 7711-7740; no manuscript statistic), 2026-11-08 ~16:50 PT, 14 s
+cmd: timeout 600 python3 tools/c067_design_check.py (with CONN_FRAC sizes 0.10/0.15 passed explicitly)
+30 S 0.6991150442477876 0.8346492559975707 0.9578947368421052 sd 0.05306483900227674
+c0.1 shift 0.09942589056513107 planted [0.78448276 0.93518519 1.        ]
+c0.15 shift 0.14457831325301201 planted [0.84821429 0.98198198 1.        ]
+iso shift -0.10362972508591067 planted [0.61946903 0.74       0.86315789]
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI ran this)
