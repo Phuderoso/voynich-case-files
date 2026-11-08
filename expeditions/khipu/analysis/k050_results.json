@@ -1,0 +1,434 @@
+{
+ "cycle": "K050",
+ "db": "OKR khipu.db @ 4039ca5 sha256 607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db",
+ "smoke": false,
+ "alpha": 0.05,
+ "fpr_gate": 0.08,
+ "power_bar": 0.5,
+ "f_plant": 0.25,
+ "seeds": {
+  "null": 5050,
+  "calib": 5051,
+  "power": 5052,
+  "n2_sens": 5053,
+  "copyall": 5054
+ },
+ "R": 10000,
+ "n_calibration": 1000,
+ "n_power": 200,
+ "R_power": 2000,
+ "fixture_passed": true,
+ "fixture": [
+  {
+   "case": "identical plain",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "different plain",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "PK both sides never matches",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "PK inside mottle never matches",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "barber pole '-' is not mottled ':'",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "identical barber pole matches",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "identical mottled matches",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "identical three-part MB-MB:W matches",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "order matters (no re-sort)",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "BY != YB (primary)",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "BY == YB (sensitivity only)",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "BY:W == YB:W (sensitivity only)",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "no colour never matches",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "different length",
+   "expected": false,
+   "got": false
+  }
+ ],
+ "consistency_ok": true,
+ "consistency": {
+  "ok": true,
+  "reason": null,
+  "matched_groups": 12,
+  "V": 13,
+  "Vs": [
+   1,
+   2,
+   1,
+   2,
+   1,
+   1,
+   1,
+   0,
+   1,
+   1,
+   1,
+   1
+  ],
+  "W": 123.42935065958645,
+  "group_pairs": [
+   [
+    3,
+    0
+   ],
+   [
+    4,
+    1
+   ],
+   [
+    5,
+    2
+   ],
+   [
+    7,
+    3
+   ],
+   [
+    8,
+    4
+   ],
+   [
+    9,
+    5
+   ],
+   [
+    10,
+    6
+   ],
+   [
+    11,
+    7
+   ],
+   [
+    12,
+    8
+   ],
+   [
+    15,
+    11
+   ],
+   [
+    17,
+    13
+   ],
+   [
+    20,
+    17
+   ]
+  ],
+  "matched_leaders": [
+   2089,
+   1842,
+   1876,
+   2229,
+   3320,
+   4273,
+   2633,
+   2950,
+   2275,
+   2106,
+   1737,
+   1505
+  ],
+  "n_leader_groups_A": 21,
+  "n_leader_groups_B": 19,
+  "n_aligned_nonleader_units": 13,
+  "n_zero_value_units": 0,
+  "meta_a": {
+   "okr": "KH0502",
+   "inv": "UR266",
+   "museum": "Proyecto Incahuasi",
+   "mnum": "13829",
+   "provenance": "Incahuasi",
+   "region": "",
+   "orig_inv": "UR266"
+  },
+  "meta_b": {
+   "okr": "KH0514",
+   "inv": "UR275",
+   "museum": "Proyecto Incahuasi",
+   "mnum": "13836-2014",
+   "provenance": "Incahuasi",
+   "region": "",
+   "orig_inv": "UR275"
+  }
+ },
+ "n_R5": 3069,
+ "n_leaders": 2763,
+ "n_distinct_leaders": 606,
+ "n_ids": 433,
+ "pairs": {
+  "KH0502/KH0514": {
+   "alignment": {
+    "ok": true,
+    "reason": null,
+    "matched_groups": 12,
+    "V": 13,
+    "Vs": [
+     1,
+     2,
+     1,
+     2,
+     1,
+     1,
+     1,
+     0,
+     1,
+     1,
+     1,
+     1
+    ],
+    "W": 123.42935065958645,
+    "group_pairs": [
+     [
+      3,
+      0
+     ],
+     [
+      4,
+      1
+     ],
+     [
+      5,
+      2
+     ],
+     [
+      7,
+      3
+     ],
+     [
+      8,
+      4
+     ],
+     [
+      9,
+      5
+     ],
+     [
+      10,
+      6
+     ],
+     [
+      11,
+      7
+     ],
+     [
+      12,
+      8
+     ],
+     [
+      15,
+      11
+     ],
+     [
+      17,
+      13
+     ],
+     [
+      20,
+      17
+     ]
+    ],
+    "matched_leaders": [
+     2089,
+     1842,
+     1876,
+     2229,
+     3320,
+     4273,
+     2633,
+     2950,
+     2275,
+     2106,
+     1737,
+     1505
+    ],
+    "n_leader_groups_A": 21,
+    "n_leader_groups_B": 19,
+    "n_aligned_nonleader_units": 13,
+    "n_zero_value_units": 0,
+    "meta_a": {
+     "okr": "KH0502",
+     "inv": "UR266",
+     "museum": "Proyecto Incahuasi",
+     "mnum": "13829",
+     "provenance": "Incahuasi",
+     "region": "",
+     "orig_inv": "UR266"
+    },
+    "meta_b": {
+     "okr": "KH0514",
+     "inv": "UR275",
+     "museum": "Proyecto Incahuasi",
+     "mnum": "13836-2014",
+     "provenance": "Incahuasi",
+     "region": "",
+     "orig_inv": "UR275"
+    }
+   },
+   "census": {
+    "a": {
+     "okr": "KH0502",
+     "inv": "UR266",
+     "museum": "Proyecto Incahuasi",
+     "mnum": "13829",
+     "provenance": "Incahuasi",
+     "region": "",
+     "orig_inv": "UR266"
+    },
+    "b": {
+     "okr": "KH0514",
+     "inv": "UR275",
+     "museum": "Proyecto Incahuasi",
+     "mnum": "13836-2014",
+     "provenance": "Incahuasi",
+     "region": "",
+     "orig_inv": "UR275"
+    }
+   },
+   "aligned_units": 13,
+   "coloured_units": 13,
+   "excluded_units": {},
+   "positive_control_copy_all": {
+    "A": 13,
+    "expected": 13,
+    "p": 0.0004997501249375312,
+    "passed": true
+   },
+   "degeneracy_reason": null,
+   "colour_counts_A": {
+    "YB|": 8,
+    "HB|": 3,
+    "MB|": 1,
+    "W:AB|-": 1
+   },
+   "colour_counts_B": {
+    "NB|": 11,
+    "AB|": 1,
+    "W:AB|-": 1
+   },
+   "observed_A": 1,
+   "rate": 0.07692307692307693,
+   "null_mean": 0.0732,
+   "null_sd": 0.2604645081388249,
+   "null_q95": 1.0,
+   "null_max": 1,
+   "null_min": 0,
+   "p": 0.07329267073292671,
+   "calibration": {
+    "fpr_perm": 0.0,
+    "n": 1000,
+    "shift_offsets": 10,
+    "min_offset": 2,
+    "fpr_shift": 0.0,
+    "shift_p_min": 1.0
+   },
+   "power": {
+    "f": 0.25,
+    "k_planted": 3,
+    "power": 0.44,
+    "median_p": 0.06521739130434782,
+    "n": 200,
+    "curve": {
+     "0.1": 0.04,
+     "0.15": 0.18,
+     "0.25": 0.32,
+     "0.4": 0.93
+    },
+    "curve_n": 100
+   },
+   "N2_within_group": {
+    "applicable": true,
+    "n_keys": 11,
+    "key_sizes": [
+     1,
+     2,
+     1,
+     2,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1,
+     1
+    ],
+    "null_mean": 0.4904,
+    "p": 0.4904509549045096,
+    "note": "descriptive, not a verdict"
+   },
+   "verdict": "NOT TESTABLE",
+   "sensitivities": {
+    "BY_eq_YB": {
+     "A": 1,
+     "p": 0.07169283071692831
+    },
+    "nonzero_value_units": {
+     "n": 13,
+     "A": 1,
+     "p": 0.07329267073292671,
+     "note": "identical to primary (no zero-value units)"
+    }
+   },
+   "matching_units": [
+    {
+     "gA": 7,
+     "gB": 3,
+     "posA": 3,
+     "posB": 2,
+     "value": 386,
+     "colour": "W-AB"
+    }
+   ],
+   "match_colour_counts": {
+    "W-AB": 1
+   }
+  }
+ },
+ "sec": 0.8
+}

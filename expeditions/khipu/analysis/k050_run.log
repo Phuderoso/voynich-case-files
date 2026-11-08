@@ -1,0 +1,5 @@
+loaded structures 0.4s R5=3069 leaders=2763 distinct=606
+K020 consistency ok matched_groups=12 V=13 W=123.4 (published 123.4)
+KH0502/KH0514 n=13 fpr_perm=0.0000 fpr_shift=0.0 power=0.440 (0.3s)
+KH0502/KH0514 A=1/13 null_mean=0.07 p=0.07329 -> NOT TESTABLE (0.3s)
+wrote k050_results.json 0.8 s
