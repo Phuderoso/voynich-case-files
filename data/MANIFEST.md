@@ -28,3 +28,5 @@ Backup copies kept outside the working copy at `/workspace/voynich/backup/`.
 | text-generator.jar | https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/master/executable/text-generator.jar (MIT) | 2026-11-04 | dc9b2f3c…ad18fef8 |
 | conf.properties | https://raw.githubusercontent.com/TorstenTimm/SelfCitationTextgenerator/master/executable/conf.properties | 2026-11-04 | 308af498…f9061ee |
 Runtime: Eclipse Temurin JRE 17.0.21 (api.adoptium.net). Default config + seed 19 reproduces `ts_generated_text.txt` byte for byte.
+| corpora/pg7000.txt | https://www.gutenberg.org/cache/epub/7000/pg7000.txt (Kalevala, Finnish, public domain) | 2026-11-08 | 23e57fdc…5283631 |
+| corpora/pg11940.txt | https://www.gutenberg.org/cache/epub/11940/pg11940.txt (Kivi, Seitsemän veljestä, Finnish, public domain) | 2026-11-08 | b87d2858…2e313db7 |
