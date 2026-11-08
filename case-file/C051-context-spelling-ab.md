@@ -18,6 +18,23 @@ I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (c
 - **Tool:** `tools/c051_context_spelling_ab.py` → `analysis/C051_results.json`; `timeout 600`; 8 worker processes for the page permutations.
 
 ## Results
-(pending)
+Run: 604 s on 8 processes (`analysis/C051_results.json`; logs kept outside the repo). Seed 5151. A first launch stopped on a worker bug (the spelling functions were not passed to the worker processes) after the H1 gates; the fix touched no statistic, the rerun repeats everything from the seed, and the H1 gate numbers are identical in both runs.
+
+**H1 gates: FPR 0/20, power 12/20** (bar 14/20). The diffuse plant is far better than C049's (0/20) and C050's (2/20) near-copy plants, but not enough at N = 10,000. **H1 NOT TESTABLE**, by the rule. Descriptive only: all four Voynich group samples give Mantel p = 0.005 (the floor), ρ 0.048–0.075 against null sd 0.012–0.014.
+
+**H2 gates: FPR 1/10, power 7/10** (bars ≤ 1 and ≥ 7, both met exactly). The one false positive is Finnish *Kalevala* (D −0.037, p 0.010): contiguous drift inside a natural text can move ρ by that much.
+
+| Transcription | ρ_A (Mantel p) | ρ_B (Mantel p) | D = ρ_A − ρ_B | page-perm null sd | p (two-sided) |
+|---|---|---|---|---|---|
+| ZL 3b | 0.050 (0.005) | 0.056 (0.005) | −0.006 | 0.019 | 0.75 |
+| IT2a | 0.048 (0.005) | 0.075 (0.005) | −0.031 | 0.018 | 0.089 |
+
+**H2: NO DIFFERENCE SHOWN.** Neither transcription reaches p < 0.05. This is not "excluded": the Voynich page-label null is about twice as wide as in the natural gates (sd 0.018–0.019 vs 0.009–0.014), so real power on the manuscript is below the 7/10 the gates certified, and a difference of about 0.03 (IT2a's point estimate) would often be missed.
+
+**Descriptive (no verdict):** the link appears in both languages at similar size, with B slightly higher in both transcriptions. So unlike the same-line pair excess (C047, where B pages showed about none), the context–spelling link is not a Currier A property. All four values at N = 10,000 (0.048–0.075) are lower than the 15,000-token halves of C049–C050 (0.078–0.114): ρ depends on sample size, so comparisons must stay at matched N (all of C049–C051 did).
+
+**Reading.** The book-wide link survives the language split; whatever produces it runs through both Currier languages. This fits a single mechanism across the book (self-citation copying would be one; C050's generator reaches the same size) and does not fit a link carried by one scribe or one dialect, within the power stated.
+
+**Next for F-EMB:** a stronger diffuse plant fixed in advance (e.g. 3-letter stems, or N = 15,000 where C049 had more types per cluster) so H1 becomes testable; glyph positions carrying the link (first vs last two units); the abbreviated-Latin control. No outreach this cycle: an internal null-with-caveat is not worth another person's time.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

@@ -87,15 +87,14 @@ def D_stat(pl, A, spellA, spellB, seed):
     return rho_of(subsample(pl, A, rng), spellA)[0] - rho_of(subsample(pl, allp - A, rng), spellB)[0]
 
 def _perm(args):
-    pl, A, nA, spellA_is_split, seed = args; rng = np.random.default_rng(seed); pages = sorted({p for p, _ in pl})
-    Ap = set(rng.choice(pages, nA, replace=False).tolist()); return D_stat(pl, Ap, SPELL[0], SPELL[1], seed + 7)
+    pl, A, nA, spA, spB, seed = args; rng = np.random.default_rng(seed); pages = sorted({p for p, _ in pl})
+    Ap = set(rng.choice(pages, nA, replace=False).tolist()); return D_stat(pl, Ap, spA, spB, seed + 7)
 
-SPELL = [None, None]
+def vunits(w): return tuple(T.units(w))
 
 def perm_test(pl, A, spA, spB, seed, pool):
-    SPELL[0], SPELL[1] = spA, spB
     obs = D_stat(pl, A, spA, spB, seed)
-    nl = np.array(pool.map(_perm, [(pl, A, len(A), False, seed * 1000 + i) for i in range(NPAGE)]))
+    nl = np.array(pool.map(_perm, [(pl, A, len(A), spA, spB, seed * 1000 + i) for i in range(NPAGE)]))
     return dict(D=float(obs), null_sd=float(nl.std()), p=float((1 + (np.abs(nl) >= abs(obs)).sum()) / (NPAGE + 1)))
 
 def pseudo_pages(lines, start, ntok):
@@ -147,7 +146,7 @@ def main():
         V = {}
         for k, f in (('ZL3b', 'data/ZL3b-n.txt'), ('IT2a', 'data/IT2a-n.txt')):
             pl, lang, _ = ivtff_pages_lang(f); pl = [x for x in pl if lang.get(x[0]) in ('A', 'B')]
-            A = {p for p, _ in pl if lang[p] == 'A'}; Bp = {p for p, _ in pl} - A; sp = lambda w: tuple(T.units(w))
+            A = {p for p, _ in pl if lang[p] == 'A'}; Bp = {p for p, _ in pl} - A; sp = vunits
             r = perm_test(pl, A, sp, sp, SEED + 77, pool)
             rg = np.random.default_rng(SEED + 99)
             r['mantel_A'] = mantel(subsample(pl, A, rg), sp, rg); r['mantel_B'] = mantel(subsample(pl, Bp, rg), sp, rg)
