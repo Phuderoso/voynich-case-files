@@ -81,3 +81,11 @@ as the Field Guide's field mark implies) against the within-group null, and do t
 cross-khipu comparison of colour names.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Audit note (K057, 2026-11-08)
+Under the K008 multi-number (R5) mask, H2 is **robust**: primary T2 = 225 vs 100.938, p 5.0×10⁻⁵
+(FPR 0.025, power 0.985); secondary T2 = 513 vs 406.595, p 0.00070 (FPR 0.040, power 1.00). The mask
+removes 26 of 95 primary sum cords (24 R5 targets, 2 R5-only windows). H1 was not retested. See
+[K057](K057-multinumber-sum-colour.md).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

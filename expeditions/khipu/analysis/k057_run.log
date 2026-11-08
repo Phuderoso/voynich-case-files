@@ -1,0 +1,5 @@
+G0 pass {"primary": {"n_khipus": 10, "n_sum": 95, "n_elig": 1005, "T1": 35, "T2": 416}, "secondary": {"n_khipus": 245, "n_sum": 724, "n_elig": 10414, "T1": 290, "T2": 782}}
+masked primary sums: [('KH0359', 9, 8), ('KH0405', 4, 4), ('KH0491', 10, 4), ('KH0492', 8, 5), ('KH0503', 16, 10), ('KH0504', 13, 9), ('KH0506', 17, 15), ('KH0507', 5, 4), ('KH0513', 3, 3), ('KH0514', 10, 7)]
+primary {'pop': 'K001 BH-significant (masked)', 'n_khipus': 10, 'n_sum': 69, 'n_elig': 889, 'T1': 28, 'T1_null_mean': 24.40345, 'T2': 225, 'T2_null_mean': 100.93805, 'p2': 4.999750012499375e-05, 'calib_fpr_H2': 0.025, 'power_H2': 0.985, 'n_fpr': 200, 'n_pow': 200, 'verdict_H2': 'survives'}
+secondary {'pop': 'all khipus with a masked sum cord', 'n_khipus': 217, 'n_sum': 602, 'n_elig': 8870, 'T1': 251, 'T1_null_mean': 238.8597, 'T2': 513, 'T2_null_mean': 406.59515, 'p2': 0.0006999650017499125, 'calib_fpr_H2': 0.04, 'power_H2': 1.0, 'n_fpr': 200, 'n_pow': 200, 'verdict_H2': 'survives'}
+OVERALL ROBUST secs 5.1

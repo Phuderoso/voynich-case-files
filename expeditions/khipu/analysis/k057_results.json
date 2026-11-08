@@ -1,0 +1,302 @@
+{
+ "design": {
+  "seeds": {
+   "p_null": 5757,
+   "p_fpr": 5758,
+   "p_pow": 5759,
+   "s_null": 5760,
+   "s_fpr": 5761,
+   "s_pow": 5762
+  },
+  "R": 20000,
+  "N_CAL": 200,
+  "N_POW": 200,
+  "alpha": 0.025,
+  "gate": 0.05,
+  "power_bar": 0.5,
+  "smoke": false,
+  "g0_only": false,
+  "published": {
+   "primary": {
+    "n_khipus": 10,
+    "n_sum": 95,
+    "n_elig": 1005,
+    "T1": 35,
+    "T2": 416
+   },
+   "secondary": {
+    "n_khipus": 245,
+    "n_sum": 724,
+    "n_elig": 10414,
+    "T1": 290,
+    "T2": 782
+   },
+   "n_colour_cords": 53750,
+   "n_R5": 3069
+  },
+  "kmax": 12
+ },
+ "stage": "done",
+ "g0": {
+  "primary": {
+   "got": {
+    "n_khipus": 10,
+    "n_sum": 95,
+    "n_elig": 1005,
+    "T1": 35,
+    "T2": 416
+   },
+   "expected": {
+    "n_khipus": 10,
+    "n_sum": 95,
+    "n_elig": 1005,
+    "T1": 35,
+    "T2": 416
+   },
+   "pass_": true,
+   "pass": true
+  },
+  "secondary": {
+   "got": {
+    "n_khipus": 245,
+    "n_sum": 724,
+    "n_elig": 10414,
+    "T1": 290,
+    "T2": 782
+   },
+   "expected": {
+    "n_khipus": 245,
+    "n_sum": 724,
+    "n_elig": 10414,
+    "T1": 290,
+    "T2": 782
+   },
+   "pass_": true,
+   "pass": true
+  },
+  "n_R5": 3069,
+  "pass": true
+ },
+ "secs": 5.1,
+ "r5_load": {
+  "n_R5": 3069,
+  "primary": [
+   {
+    "okr": "KH0359",
+    "inv": "UR119",
+    "raw_m": 9,
+    "masked_m": 8,
+    "n_elig": 144,
+    "n_r5": 5,
+    "drop_target_R5": 0,
+    "drop_window_R5": 1,
+    "pairs_masked": 7
+   },
+   {
+    "okr": "KH0405",
+    "inv": "UR166",
+    "raw_m": 4,
+    "masked_m": 4,
+    "n_elig": 26,
+    "n_r5": 0,
+    "drop_target_R5": 0,
+    "drop_window_R5": 0,
+    "pairs_masked": 6
+   },
+   {
+    "okr": "KH0491",
+    "inv": "UR255",
+    "raw_m": 10,
+    "masked_m": 4,
+    "n_elig": 50,
+    "n_r5": 12,
+    "drop_target_R5": 6,
+    "drop_window_R5": 0,
+    "pairs_masked": 6
+   },
+   {
+    "okr": "KH0492",
+    "inv": "UR256",
+    "raw_m": 8,
+    "masked_m": 5,
+    "n_elig": 85,
+    "n_r5": 13,
+    "drop_target_R5": 3,
+    "drop_window_R5": 0,
+    "pairs_masked": 10
+   },
+   {
+    "okr": "KH0503",
+    "inv": "UR267A",
+    "raw_m": 16,
+    "masked_m": 10,
+    "n_elig": 61,
+    "n_r5": 14,
+    "drop_target_R5": 6,
+    "drop_window_R5": 0,
+    "pairs_masked": 45
+   },
+   {
+    "okr": "KH0504",
+    "inv": "UR267B",
+    "raw_m": 13,
+    "masked_m": 9,
+    "n_elig": 76,
+    "n_r5": 17,
+    "drop_target_R5": 4,
+    "drop_window_R5": 0,
+    "pairs_masked": 28
+   },
+   {
+    "okr": "KH0506",
+    "inv": "UR269",
+    "raw_m": 17,
+    "masked_m": 15,
+    "n_elig": 168,
+    "n_r5": 21,
+    "drop_target_R5": 2,
+    "drop_window_R5": 0,
+    "pairs_masked": 105
+   },
+   {
+    "okr": "KH0507",
+    "inv": "UR270",
+    "raw_m": 5,
+    "masked_m": 4,
+    "n_elig": 122,
+    "n_r5": 22,
+    "drop_target_R5": 0,
+    "drop_window_R5": 1,
+    "pairs_masked": 6
+   },
+   {
+    "okr": "KH0513",
+    "inv": "UR274B",
+    "raw_m": 3,
+    "masked_m": 3,
+    "n_elig": 63,
+    "n_r5": 1,
+    "drop_target_R5": 0,
+    "drop_window_R5": 0,
+    "pairs_masked": 1
+   },
+   {
+    "okr": "KH0514",
+    "inv": "UR275",
+    "raw_m": 10,
+    "masked_m": 7,
+    "n_elig": 94,
+    "n_r5": 13,
+    "drop_target_R5": 3,
+    "drop_window_R5": 0,
+    "pairs_masked": 11
+   }
+  ],
+  "dropped_primary": [
+   {
+    "okr": "KH0359",
+    "inv": "UR119",
+    "raw_colour_sum": 9,
+    "masked_m": 8,
+    "drop_target_R5": 0,
+    "drop_window_R5": 1
+   },
+   {
+    "okr": "KH0491",
+    "inv": "UR255",
+    "raw_colour_sum": 10,
+    "masked_m": 4,
+    "drop_target_R5": 6,
+    "drop_window_R5": 0
+   },
+   {
+    "okr": "KH0492",
+    "inv": "UR256",
+    "raw_colour_sum": 8,
+    "masked_m": 5,
+    "drop_target_R5": 3,
+    "drop_window_R5": 0
+   },
+   {
+    "okr": "KH0503",
+    "inv": "UR267A",
+    "raw_colour_sum": 16,
+    "masked_m": 10,
+    "drop_target_R5": 6,
+    "drop_window_R5": 0
+   },
+   {
+    "okr": "KH0504",
+    "inv": "UR267B",
+    "raw_colour_sum": 13,
+    "masked_m": 9,
+    "drop_target_R5": 4,
+    "drop_window_R5": 0
+   },
+   {
+    "okr": "KH0506",
+    "inv": "UR269",
+    "raw_colour_sum": 17,
+    "masked_m": 15,
+    "drop_target_R5": 2,
+    "drop_window_R5": 0
+   },
+   {
+    "okr": "KH0507",
+    "inv": "UR270",
+    "raw_colour_sum": 5,
+    "masked_m": 4,
+    "drop_target_R5": 0,
+    "drop_window_R5": 1
+   },
+   {
+    "okr": "KH0514",
+    "inv": "UR275",
+    "raw_colour_sum": 10,
+    "masked_m": 7,
+    "drop_target_R5": 3,
+    "drop_window_R5": 0
+   }
+  ],
+  "secondary_n_khipus_masked": 217,
+  "secondary_n_sum_masked": 602
+ },
+ "primary": {
+  "pop": "K001 BH-significant (masked)",
+  "n_khipus": 10,
+  "n_sum": 69,
+  "n_elig": 889,
+  "T1": 28,
+  "T1_null_mean": 24.40345,
+  "T2": 225,
+  "T2_null_mean": 100.93805,
+  "p2": 4.999750012499375e-05,
+  "calib_fpr_H2": 0.025,
+  "power_H2": 0.985,
+  "n_fpr": 200,
+  "n_pow": 200,
+  "verdict_H2": "survives"
+ },
+ "secondary": {
+  "pop": "all khipus with a masked sum cord",
+  "n_khipus": 217,
+  "n_sum": 602,
+  "n_elig": 8870,
+  "T1": 251,
+  "T1_null_mean": 238.8597,
+  "T2": 513,
+  "T2_null_mean": 406.59515,
+  "p2": 0.0006999650017499125,
+  "calib_fpr_H2": 0.04,
+  "power_H2": 1.0,
+  "n_fpr": 200,
+  "n_pow": 200,
+  "verdict_H2": "survives"
+ },
+ "decision": {
+  "overall": "ROBUST",
+  "primary": "survives",
+  "secondary": "survives",
+  "rule": "survives iff masked p2 <= 0.025 and FPR <= 0.05; no longer established iff p2 > 0.025 and power >= 0.5; not testable iff p2 > 0.025 and power < 0.5; excluded iff FPR > 0.05. Both survive -> ROBUST; one -> PARTIAL; both powered negatives -> NONE ESTABLISHED."
+ }
+}

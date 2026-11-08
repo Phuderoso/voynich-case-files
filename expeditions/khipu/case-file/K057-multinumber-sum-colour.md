@@ -102,3 +102,60 @@ Khipu Field Guide field mark. K057 only asks whether K021's calibrated shared-co
 depend on multi-number cords.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results
+
+Run 2026-11-08 ~13:39 PT (America/Vancouver), after prereg commit `8352a47`. `timeout 600 python3
+tools/k057_multinumber_sum_colour.py khipu.db`: **5.1 s** (tool wall 540 s not hit; nothing capped). Tool hash
+at run time `9721a051…1bd44` (identical to the committed file). Output
+[`analysis/k057_results.json`](../analysis/k057_results.json), log [`analysis/k057_run.log`](../analysis/k057_run.log).
+
+### G0 fixture — pass
+Hash matches; 3 069 R5; 53 750 colour cords; empty mask reproduces primary n = 10 / 95 / 1 005, T1 = 35,
+T2 = 416 and secondary n = 245 / 724 / 10 414, T1 = 290, T2 = 782.
+
+### R5 load (descriptive)
+Of the 95 published colour-eligible sum cords in the primary ten, **69 stay legal and 26 are removed**.
+24 are themselves R5 targets; 2 (one each in KH0359/UR119 and KH0507/UR270) have only matching windows
+that hold an R5 cord. KH0405/UR166 has no R5 pendant (4 → 4). KH0513/UR274B keeps all three.
+
+| Khipu | Inventory | Published sum cords | Masked | Dropped (target R5 / window R5) | Masked T2 pairs |
+|---|---|---|---|---|---|
+| KH0359 | UR119 | 9 | 8 | 0 / 1 | 7 |
+| KH0405 | UR166 | 4 | 4 | 0 / 0 | 6 |
+| KH0491 | UR255 | 10 | 4 | 6 / 0 | 6 |
+| KH0492 | UR256 | 8 | 5 | 3 / 0 | 10 |
+| KH0503 | UR267A | 16 | 10 | 6 / 0 | 45 |
+| KH0504 | UR267B | 13 | 9 | 4 / 0 | 28 |
+| KH0506 | UR269 | 17 | 15 | 2 / 0 | 105 |
+| KH0507 | UR270 | 5 | 4 | 0 / 1 | 6 |
+| KH0513 | UR274B | 3 | 3 | 0 / 0 | 1 |
+| KH0514 | UR275 | 10 | 7 | 3 / 0 | 11 |
+
+Secondary: 217 of 245 khipus still have at least one legal sum cord (602 vs 724).
+
+### Per target
+| Target | Published | Masked obs | Masked null mean | Masked p | α | FPR (gate ≤ 0.05) | Power (bar 0.5) | Verdict |
+|---|---|---|---|---|---|---|---|---|
+| T1 primary H2 | T2 416 vs 229.5, p 5.0×10⁻⁵ | 225 | 100.938 | 5.0×10⁻⁵ (floor) | 0.025 | 0.025 | 0.985 | **survives** |
+| T2 secondary H2 | T2 782 vs 612.5, p 5.0×10⁻⁵ | 513 | 406.595 | 0.00070 | 0.025 | 0.040 | 1.00 | **survives** |
+
+T1 (boundary) was not retested; descriptively, primary T1 is 28 vs null 24.40 and secondary 251 vs 238.86,
+in the same neighbourhood as K021's powered negative.
+
+The Inkawasi khipus that carried K021's excess still share a colour after the mask: UR269 keeps 15 sum
+cords of one colour (105 pairs), UR267A keeps 10 of one colour (45 pairs), UR256 keeps 5 of one colour
+(10 pairs). The largest cuts are UR255 (10 → 4, six R5 targets) and UR267A (16 → 10, also six R5 targets).
+
+### Overall: **ROBUST** (pre-registered rule 1)
+Both frozen shared-colour results survive the multi-number mask, with passing FPR gates and power well
+above 0.5. The absolute pair count drops (416 → 225 primary; 782 → 513 secondary) because the mask
+removes 26 of 95 primary sum cords, but the remaining set is still far above its own redraw null.
+KH0405 is unchanged (no R5), a fixture-like check.
+
+Same-data sensitivity on the pinned corpus; not an independent replication. Shared sum-cord colour on
+these Inkawasi khipus is already a Khipu Field Guide field mark. No decipherment is claimed.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
