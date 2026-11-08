@@ -174,3 +174,10 @@ shape or is a mixed bag — or line 8 (K002/K003 with multi-number cords masked;
 priority).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Audit note (K056, 2026-11-08)
+Under the K008 multi-number (R5) mask, H1 is **no longer established**: masked G = 18 vs 12.7355, p 0.0955
+(FPR 0.035, m = 9 power 0.81). The mask removes 5 of the 23 hits, all non-singleton. K042's singleton-total excess
+survives the same mask. See [K056](K056-multinumber-wholegroup.md).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

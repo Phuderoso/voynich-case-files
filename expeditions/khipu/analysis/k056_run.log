@@ -1,0 +1,18 @@
+{"sha256": "607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db", "n_r5": 3069, "n_eligible": 369, "n_holdout": 367, "empty_mask": {"KH0359": 4, "KH0405": 4, "G": 23, "G_s": 10, "G_ns": 13}, "pass": true}
+{"KH0359": 5, "KH0405": 0, "holdout_r5": 1328, "holdout_khipus_with_r5": 177, "holdout_khipus_no_legal_pair": 9, "pairs_unmasked": {"KH0359": 47, "KH0405": 10}, "pairs_masked": {"KH0359": 39, "KH0405": 10}}
+KH0359 {"inv": "UR119", "n_pend": 173, "n_r5": 5, "pairs_masked": 39, "alpha": 0.025, "gate": 0.05, "G_masked": 4, "null_mean": 0.0134, "null_max": 2, "p": 4.999750012499375e-05, "fpr": 0.025, "power_1planted": 1.0, "verdict": "survives"} 0.6
+KH0405 {"inv": "UR166", "n_pend": 30, "n_r5": 0, "pairs_masked": 10, "alpha": 0.025, "gate": 0.05, "G_masked": 4, "null_mean": 0.00295, "null_max": 1, "p": 4.999750012499375e-05, "fpr": 0.01, "power_1planted": 1.0, "verdict": "survives"} 0.6
+corpus nulls 60/367 G=5 G_s=4 3.7s
+corpus nulls 120/367 G=5 G_s=4 4.9s
+corpus nulls 180/367 G=7 G_s=5 5.9s
+corpus nulls 240/367 G=10 G_s=5 7.0s
+corpus nulls 300/367 G=15 G_s=8 8.6s
+corpus nulls 360/367 G=18 G_s=10 9.8s
+corpus 18 12.7355 0.09549045095490451 10 1.5118 0.00019998000199980003
+G {"obs_masked": 18, "null_mean": 12.7355, "null_sd": 3.569809483711981, "p": 0.09549045095490451, "fpr": 0.035, "fpr_n": 200, "power_m9": {"n": 200, "hits": 162, "attempts": 200, "rate": 0.81, "capped": false}, "alpha": 0.05, "gate": 0.08, "n_active_khipus": 358, "verdict": "no longer established"}
+G_s {"obs_masked": 10, "null_mean": 1.5118, "null_sd": 1.2214175207520155, "p": 0.00019998000199980003, "fpr": 0.02, "fpr_n": 200, "power_m9": {"n": 200, "hits": 200, "attempts": 200, "rate": 1.0, "capped": false}, "alpha": 0.025, "gate": 0.08, "n_active_khipus": 358, "verdict": "survives"}
+{"excluded": false, "overall": "PARTIAL", "verdicts": {"KH0359": "survives", "KH0405": "survives", "G": "no longer established", "G_s": "survives"}} 19.7
+
+real	0m19.828s
+user	0m19.194s
+sys	0m1.400s
