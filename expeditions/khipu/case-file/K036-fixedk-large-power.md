@@ -70,6 +70,90 @@ negative means "no excess as large as m* planted sums", never "no arithmetic". N
 
 ## Results
 
-*(placeholder — filled after the run; prereg committed first)*
+Run 2026-11-08 ~02:00 PT (America/Vancouver). Compute finished in **396.6 s** after
+prereg `b7d7bf1` (all 126 large khipus reached; `power_capped` false; wall 560 s not
+hit). Output: [`analysis/k036_results.json`](../analysis/k036_results.json).
+
+### 1. Calibration — F1 gate passes
+| Stratum | n (5 corpora) | D5w FPR | binomial P(≥x) |
+|---|---|---|---|
+| S0 | 395 | 0.0329 | 0.9601 |
+| small | 630 | 0.0238 | 0.9997 |
+| mid | 630 | 0.046 | 0.7016 |
+| large | 630 | 0.0349 | 0.9716 |
+| pop | 1 890 | 0.0349 | 0.9993 |
+
+BH discoveries per null corpus: **F1 0/0/0/0/0.** Gate F1 passes (at most 1 of 5
+allowed). Every listed FPR gate passes (`gate_pass` true for S0, small, mid, large
+and pop).
+
+### 2. Primary A — Fixed-K F1 scan (reference list adopted)
+F1 = **14** (D5w BH over pop = 378, fixed K = 10 000, denom 10 001 for every p).
+Twelve sit in large and two in small (KH0395/UR155, KH0420/UR182); mid still has
+none.
+
+| Khipu | p | cnt | se | stratum |
+|---|---|---|---|---|
+| KH0322/UR086 | 0.00069993 | 7 | 0.000264 | large |
+| KH0395/UR155 | 0.00109989 | 11 | 0.000331 | small |
+| KH0420/UR182 | 0.00139986 | 14 | 0.000374 | small |
+| KH0428/UR190 | 0.00099990 | 10 | 0.000316 | large |
+| KH0478/UR242 | 0.00109989 | 11 | 0.000331 | large |
+| KH0491/UR255 | 0.00009999 | 1 | 0.0001 | large |
+| KH0492/UR256 | 0.00069993 | 7 | 0.000264 | large |
+| KH0502/UR266 | 0.00089991 | 9 | 0.0003 | large |
+| KH0504/UR267B | 0.00039996 | 4 | 0.0002 | large |
+| KH0506/UR269 | 0.00039996 | 4 | 0.0002 | large |
+| KH0507/UR270 | 0.00059994 | 6 | 0.000245 | large |
+| KH0511/UR273B | 0.00159984 | 16 | 0.0004 | large |
+| KH0513/UR274B | 0.00019998 | 2 | 0.000141 | large |
+| KH0514/UR275 | 0.00029997 | 3 | 0.000173 | large |
+
+Overlap with the published F1 lists:
+- shared with K033 = 11 (K033's whole F1 list); `only_K033` is empty
+- shared with K035 = 11 (K035's whole F1 list); `only_K035` is empty
+- in K033 not K035: KH0420/UR182; in K035 not K033: KH0478/UR242
+- `only_K036` = `candidates_new` = KH0502/UR266, KH0511/UR273B
+
+So the K033 ∪ K035 F1 union (12 names) is a subset of K036, plus two new
+candidates. The KH0420 ↔ KH0478 adaptive-cut swap is **resolved: both are in the
+fixed-K list.**
+
+**Not claimed as discoveries.** KH0502/UR266 (p 0.00089991, cnt 9, se 0.0003) and
+KH0511/UR273B (p 0.00159984, cnt 16, se 0.0004) are flagged as candidates pending
+a pre-registered holdout (none was invented this cycle). K035 already named both
+descriptively under stratified BH (p 0.0021 / 0.0019) as not-F1; they now enter
+the adopted fixed-K F1 list and remain unconfirmed.
+
+### 3. Primary B — Large-only BH-level F1 power, m ∈ {4, 6, 8}
+Decision uses `bh_F1`, not the raw p ≤ 0.05 rate.
+
+| m | n | p ≤ 0.05 | BH-level F1 power |
+|---|---|---|---|
+| 4 | 125 | 0.76 | 0.416 |
+| 6 | 124 | 0.9516 | **0.6532** |
+| 8 | 124 | 0.9758 | 0.7823 |
+
+n is 125 / 124 / 124 rather than 126 because a few plants could not place m
+windows (not enough eligible within-group slots). `power_khipus_reached` = 126;
+`power_capped` = false.
+
+m*_large = **6** (smallest m with BH-level F1 power ≥ 0.5 and n ≥ 30).
+
+### Reading
+- **Verdict: silence readable against ≥ 6 within-group sums in large.** A silent
+  large khipu is a readable negative against an excess as strong as 6 planted
+  within-group exact-sum windows, not against K033's m = 2 (and not yet at m = 4,
+  where power is 0.416). Readable silence never means "no arithmetic".
+- Fixed-K F1 is the **new reference list for line 1** (14 names). The adaptive-cut
+  boundary swap is gone.
+- Two extra names are candidates, not discoveries.
+- Pre-registered decision: **gate_F1 passed; m*_large = 6; reference list
+  adopted.**
+
+### Next (line 1)
+K037: held-out confirmation of KH0502/UR266 and KH0511/UR273B on the K034 design
+(longest within-group exact-sum window L versus a within-khipu permutation). No
+new test is invented.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

@@ -1,0 +1,166 @@
+{"n_eligible": 457, "n_pop": 378, "thirds": [32.66666666666666, 82.33333333333331], "counts": {"S0": 79, "small": 126, "mid": 126, "large": 126}, "R_null": 5, "seeds": {"scan": 3630, "null": 3631, "power": 3632}, "K": 10000, "MS": [4, 6, 8]}
+scan 50 8.0 s
+scan 100 14.2 s
+scan 150 18.1 s
+scan 200 23.9 s
+scan 250 30.3 s
+scan 300 34.7 s
+scan 350 40.1 s
+scan 400 45.6 s
+scan 450 51.2 s
+scan done 51.8 s
+real F1 14 ['KH0322/UR086', 'KH0395/UR155', 'KH0420/UR182', 'KH0428/UR190', 'KH0478/UR242', 'KH0491/UR255', 'KH0492/UR256', 'KH0502/UR266', 'KH0504/UR267B', 'KH0506/UR269', 'KH0507/UR270', 'KH0511/UR273B', 'KH0513/UR274B', 'KH0514/UR275']
+null0 50 7.1 s
+null0 100 12.9 s
+null0 150 16.7 s
+null0 200 22.7 s
+null0 250 29.6 s
+null0 300 34.2 s
+null0 350 39.9 s
+null0 400 45.5 s
+null0 450 51.0 s
+null0 done 51.6 s
+null0 {'F1': 0}
+null1 50 7.3 s
+null1 100 13.4 s
+null1 150 17.6 s
+null1 200 24.1 s
+null1 250 30.2 s
+null1 300 34.6 s
+null1 350 40.2 s
+null1 400 45.5 s
+null1 450 51.1 s
+null1 done 51.6 s
+null1 {'F1': 0}
+null2 50 7.0 s
+null2 100 13.3 s
+null2 150 17.1 s
+null2 200 22.8 s
+null2 250 29.0 s
+null2 300 33.4 s
+null2 350 38.5 s
+null2 400 43.8 s
+null2 450 49.3 s
+null2 done 49.9 s
+null2 {'F1': 0}
+null3 50 7.1 s
+null3 100 12.9 s
+null3 150 16.6 s
+null3 200 22.3 s
+null3 250 29.0 s
+null3 300 33.5 s
+null3 350 39.0 s
+null3 400 44.1 s
+null3 450 49.4 s
+null3 done 49.9 s
+null3 {'F1': 0}
+null4 50 7.0 s
+null4 100 13.2 s
+null4 150 17.4 s
+null4 200 23.0 s
+null4 250 29.6 s
+null4 300 34.1 s
+null4 350 39.6 s
+null4 400 45.0 s
+null4 450 50.5 s
+null4 done 51.1 s
+null4 {'F1': 0}
+FPR {'large': 0.0349, 'pop': 0.0349, 'S0': 0.0329, 'small': 0.0238, 'mid': 0.046} 
+BH calib {'F1': [0, 0, 0, 0, 0]} 
+gate {'F1': True}
+power 20 / 126 327.6
+power 40 / 126 345.5
+power 60 / 126 358.8
+power 80 / 126 371.5
+power 100 / 126 384.6
+power 120 / 126 392.5
+{
+ "F1": [
+  "KH0322/UR086",
+  "KH0395/UR155",
+  "KH0420/UR182",
+  "KH0428/UR190",
+  "KH0478/UR242",
+  "KH0491/UR255",
+  "KH0492/UR256",
+  "KH0502/UR266",
+  "KH0504/UR267B",
+  "KH0506/UR269",
+  "KH0507/UR270",
+  "KH0511/UR273B",
+  "KH0513/UR274B",
+  "KH0514/UR275"
+ ],
+ "overlap": {
+  "n_F1": 14,
+  "shared_K033": [
+   "KH0322/UR086",
+   "KH0395/UR155",
+   "KH0420/UR182",
+   "KH0428/UR190",
+   "KH0491/UR255",
+   "KH0492/UR256",
+   "KH0504/UR267B",
+   "KH0506/UR269",
+   "KH0507/UR270",
+   "KH0513/UR274B",
+   "KH0514/UR275"
+  ],
+  "shared_K035": [
+   "KH0322/UR086",
+   "KH0395/UR155",
+   "KH0428/UR190",
+   "KH0478/UR242",
+   "KH0491/UR255",
+   "KH0492/UR256",
+   "KH0504/UR267B",
+   "KH0506/UR269",
+   "KH0507/UR270",
+   "KH0513/UR274B",
+   "KH0514/UR275"
+  ],
+  "only_K036": [
+   "KH0502/UR266",
+   "KH0511/UR273B"
+  ],
+  "only_K033": [],
+  "only_K035": [],
+  "in_K033_not_K035": [
+   "KH0420/UR182"
+  ],
+  "in_K035_not_K033": [
+   "KH0478/UR242"
+  ],
+  "candidates_new": [
+   "KH0502/UR266",
+   "KH0511/UR273B"
+  ]
+ },
+ "power": {
+  "large": {
+   "4": {
+    "n": 125,
+    "p05": 0.76,
+    "bh_F1": 0.416
+   },
+   "6": {
+    "n": 124,
+    "p05": 0.9516,
+    "bh_F1": 0.6532
+   },
+   "8": {
+    "n": 124,
+    "p05": 0.9758,
+    "bh_F1": 0.7823
+   }
+  }
+ },
+ "decision": {
+  "gate_F1": true,
+  "m_star_large": 6,
+  "verdict": "silence readable against >= 6 within-group sums in large",
+  "reference_list_adopted": true
+ },
+ "secs": 396.6
+}
+secs 396.6
