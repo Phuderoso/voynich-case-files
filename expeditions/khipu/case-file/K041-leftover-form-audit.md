@@ -3,7 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: pre-registration** (written and to be pushed before any K041 form statistic is computed).
+**Status: results appended** (pre-registration written and pushed first as `b4dad9e`, before any K041 form statistic was computed).
 
 ## Why
 K040 supported a leftover excess of whole-group totals after holding out KH0359/UR119 and KH0405/UR166: G = 23 against a null mean of 14.1067 (p = 0.0162), calibrated (FPR 0.05) and powered at leftover size (m = 9 power 0.74). The individual BH scan found no additional khipu (H2 not supported; 4-plant power 0.94), so the leftover is diffuse: many khipus contribute a single hit. That classifies the *count*, not the *shape*. UR119 itself is a repeated record layout — four totals in a row, each adding the six-cord group that follows. K041 asks whether the leftover 23 hits share a layout (side, group length, singleton-total) more than chance hits would, or whether they are a mixed bag.
@@ -115,5 +115,129 @@ Checkpoint every 20 khipus to `analysis/k041_checkpoint.json`. Code: `tools/k041
 No decipherment is claimed. K041 only classifies the shape of the leftover 23 already counted by
 K040. UR119's own repeated six-cord layout remains the one already described by K025 and counted
 by the Khipu Field Guide.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+
+## Results
+
+Run 2026-11-08 03:19 PT (America/Vancouver), after prereg `b4dad9e`. Compute **13.9 s**
+(all 367 holdout khipus reached; nulls, calibration and power all finished; `capped` false;
+wall 520 s not hit). Smoke (`--smoke`, R = 200, N = 10) ran first in 0.7 s, no crash, not
+used for decisions. Output: [`analysis/k041_results.json`](../analysis/k041_results.json),
+log [`analysis/k041_run.log`](../analysis/k041_run.log).
+
+### 1. Consistency (rule 1)
+Database SHA-256 matches `607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db`.
+K025 secondary n = 369; eligible 369; holdout 367; discovery pair KH0359 and KH0405 both
+present; observed holdout G = 23 distinct pendants; matching pairs n = 23; pendants matching
+both sides n_both = 0. Rule 1 (excluded) does not apply.
+
+### 2. H1 — layout concentration (primary)
+R = 10 000, seed 4141. Bonferroni α = 0.05/3 ≈ 0.01667. Statistic `π` = modal share of any
+single `(side, group_len)` key among the 23 matching pairs.
+
+| Quantity | Value |
+|---|---|
+| Modal key (count) | **(L, 4)** with 4 pairs; **(L, 2)** also has 4 |
+| π_obs | **0.1739** (4/23) |
+| Null mean (sd) | 0.2705 (0.0782) |
+| p (one-sided, greater concentration) | **0.9308** |
+| Calibration FPR (N = 200, seed 4142) | 0.01 |
+| Power at m = 9 (N = 200, seed 4143) | **0.16** (plant key (L, 3); capacity 466) |
+
+- meets_fpr: yes (0.01 ≤ 0.08)
+- meets_power: no (0.16 < 0.5, n = 200)
+- **Verdict: not testable** (rule 3).
+
+Observed `π` sits *below* the null mean: the leftover catalogue is at least as mixed as
+chance hits of typical size (~14), and the one-sided test for extra concentration is far
+from the bar (p = 0.9308). Nine extra copies of the most common plantable layout were not
+enough to push `π` over the Bonferroni bar at least half the time, because a smaller null
+catalogue inflates the modal share (null mean 0.2705 vs observed 0.1739 at n = 23). No
+concentration claim is made either way.
+
+### 3. H2 — singleton-total share (secondary)
+| Quantity | Value |
+|---|---|
+| Singleton-total pairs | **10 / 23** |
+| q_obs | **0.4348** |
+| Null mean (sd) | 0.1248 (0.0919) |
+| p (one-sided) | **0.00330** |
+| Calibration FPR | 0.005 |
+| Power at m = 9 | **0.975** (capacity 899) |
+
+- meets_fpr: yes (0.005 ≤ 0.08)
+- meets_power: yes (0.975 ≥ 0.5, n = 200)
+- meets_alpha: yes (0.00330 ≤ 0.01667)
+- **Verdict: supported** (rules 2–4).
+
+The leftover matching pairs are singleton-totals — a lone total sitting next to the
+multi-cord group it sums, the layout UR119 uses for its four totals — more often than
+permutation-null hits are. Chance hits have that form about one time in eight; the leftover
+has it about two times in five.
+
+### 4. H3 — side balance (secondary)
+| Quantity | Value |
+|---|---|
+| Left / right | **16 / 7** |
+| r_obs (share L) | **0.6957** |
+| Null mean (sd) | 0.5006 (0.1349) |
+| p (two-sided) | **0.1490** |
+| Calibration FPR | 0.025 |
+| Power at m = 9 | **0.045** (capacity 2 557) |
+
+- meets_fpr: yes (0.025 ≤ 0.08)
+- meets_power: no (0.045 < 0.5, n = 200)
+- **Verdict: not testable** (rule 3).
+
+Sixteen of the 23 totals sit in front of the group they sum (UR119's side), but that split
+does not meet the two-sided bar, and nine extra left-sided plants on top of the residual
+chance hits are not enough to make a side bias readable. No side claim is made.
+
+### 5. Catalogue (descriptive, not a test)
+Twelve layout keys appear. Besides the two four-pair keys, (R, 6) appears three times
+(including both hits on KH0424/UR186, which share that key and are both singleton-totals:
+ordinals 24 and 58, values 75 and 596). No pendant matched both sides.
+
+| Khipu | Investigator | Cord ordinal | Value | Side | Group length | Singleton-total |
+|---|---|---|---|---|---|---|
+| KH0080 | AS067/MA029 | 116 | 98 | R | 4 | no |
+| KH0082 | AS069 | 286 | 18 | L | 7 | yes |
+| KH0090 | AS077 | 16 | 10 | L | 4 | no |
+| KH0101 | UR1088 | 54 | 14 | L | 4 | no |
+| KH0113 | UR1100 | 1 | 259 | L | 6 | yes |
+| KH0191 | AS174 | 7 | 16 | L | 2 | no |
+| KH0225 | AS207A | 177 | 10 | L | 5 | no |
+| KH0235 | AS215 | 12 | 14 | L | 4 | yes |
+| KH0246 | UR010 | 91 | 112 | L | 7 | yes |
+| KH0267 | UR034 | 25 | 15 | L | 2 | no |
+| KH0269 | UR037 | 6 | 14 | L | 9 | no |
+| KH0322 | UR086 | 62 | 15 | L | 4 | no |
+| KH0323 | UR087 | 7 | 15 | R | 6 | yes |
+| KH0406 | UR167 | 4 | 11 | L | 15 | no |
+| KH0424 | UR186 | 24 | 75 | R | 6 | yes |
+| KH0424 | UR186 | 58 | 596 | R | 6 | yes |
+| KH0446 | UR208 | 132 | 80 | R | 5 | no |
+| KH0460 | UR222 | 1 | 17 | L | 6 | yes |
+| KH0482 | UR246 | 25 | 288 | R | 8 | yes |
+| KH0489 | UR253 | 55 | 21 | L | 2 | no |
+| KH0509 | UR272 | 163 | 10 | L | 5 | no |
+| KH0583 | HP052 | 7 | 40 | L | 2 | yes |
+| KH0617 | JC010 | 101 | 30 | R | 11 | no |
+
+### 6. Reading
+- **H2 supported:** the leftover shares the singleton-total part of UR119's form.
+- H1 and H3 are not testable at leftover-excess size (m = 9) under the pre-registered
+  shares, so this cycle does not decide whether one `(side, group_len)` repeats or whether
+  totals prefer one side.
+- Same-data caveat stands (the 23 were already counted by K040). No new named khipu, and
+  no decipherment. The Field Guide already counts UR119's own totals; K041 only classifies
+  the leftover's shape.
+
+### Next
+Proposed for K042: a pre-registered holdout test of whether the leftover *count* excess
+lives in the singleton-total pairs (G restricted to singleton-totals, versus the same
+within-khipu permutation), now that H2 has named that form — or line 8 (still low priority).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

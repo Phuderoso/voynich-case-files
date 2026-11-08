@@ -1,0 +1,151 @@
+{
+ "smoke": false,
+ "R": 10000,
+ "N_CAL": 200,
+ "N_POW": 200,
+ "seeds": {
+  "nulls": 4141,
+  "calib": 4142,
+  "power": 4143
+ },
+ "alpha": 0.016666666666666666,
+ "consistency": {
+  "sha256": "607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db",
+  "n_eligible": 369,
+  "n_holdout": 367,
+  "discovery_found": [
+   "KH0359",
+   "KH0405"
+  ],
+  "k025_n_khipus": 369,
+  "G_holdout": 23,
+  "n_pairs": 23,
+  "n_both": 0
+ },
+ "observed_summary": {
+  "n": 23,
+  "modal_count": 4,
+  "modal_share": 0.17391304347826086,
+  "modal_key": [
+   "L",
+   4
+  ],
+  "q_sing": 0.43478260869565216,
+  "r_left": 0.6956521739130435,
+  "n_left": 16,
+  "n_sing": 10,
+  "layout_counts": {
+   "L:4": 4,
+   "L:2": 4,
+   "R:6": 3,
+   "L:7": 2,
+   "L:5": 2,
+   "L:6": 2,
+   "L:9": 1,
+   "R:4": 1,
+   "L:15": 1,
+   "R:5": 1,
+   "R:8": 1,
+   "R:11": 1
+  },
+  "kh0424_n_pairs": 2,
+  "kh0424_share_layout": true
+ }
+}
+nulls 20/367 0.7s
+nulls 40/367 1.4s
+nulls 60/367 2.6s
+nulls 80/367 2.9s
+nulls 100/367 3.2s
+nulls 120/367 3.4s
+nulls 140/367 3.6s
+nulls 160/367 4.0s
+nulls 180/367 4.3s
+nulls 200/367 4.7s
+nulls 220/367 5.1s
+nulls 240/367 5.2s
+nulls 260/367 5.5s
+nulls 280/367 5.9s
+nulls 300/367 6.5s
+nulls 320/367 6.7s
+nulls 340/367 7.1s
+nulls 360/367 7.6s
+nulls 367/367 7.7s
+{
+ "obs_pi": 0.17391304347826086,
+ "p1": 0.9308069193080692,
+ "obs_q": 0.43478260869565216,
+ "p2": 0.0032996700329967,
+ "obs_r": 0.6956521739130435,
+ "p3": 0.148985101489851,
+ "null_pi_mean": 0.2705386840983986,
+ "null_q_mean": 0.12479154718663699,
+ "null_r_mean": 0.500618714541425,
+ "null_G_mean": 14.1134
+}
+{
+ "capped": false,
+ "n": 200,
+ "fpr_H1": 0.01,
+ "fpr_H2": 0.005,
+ "fpr_H3": 0.025,
+ "fpr_any": 0.035
+}
+power H1 {'label': 'p1', 'n': 200, 'hits': 32, 'skipped': 0, 'capped': False, 'rate': 0.16, 'attempts': 200, 'plant_key': ['L', 3], 'capacity': 466}
+power H2 {'label': 'p2', 'n': 200, 'hits': 195, 'skipped': 0, 'capped': False, 'rate': 0.975, 'attempts': 200, 'capacity': 899}
+power H3 {'label': 'p3', 'n': 200, 'hits': 9, 'skipped': 0, 'capped': False, 'rate': 0.045, 'attempts': 200, 'capacity': 2557}
+{
+ "decision": {
+  "excluded": false,
+  "H1": {
+   "p": 0.9308069193080692,
+   "fpr": 0.01,
+   "power": 0.16,
+   "power_n": 200,
+   "alpha": 0.016666666666666666,
+   "verdict": "not testable",
+   "reason": "m=9 plant power < 0.5",
+   "stat": "modal_share",
+   "obs": 0.17391304347826086,
+   "modal_key": [
+    "L",
+    4
+   ],
+   "modal_count": 4,
+   "null_mean": 0.2705386840983986,
+   "null_sd": 0.07816386760466261,
+   "plant_key": [
+    "L",
+    3
+   ]
+  },
+  "H2": {
+   "p": 0.0032996700329967,
+   "fpr": 0.005,
+   "power": 0.975,
+   "power_n": 200,
+   "alpha": 0.016666666666666666,
+   "verdict": "supported",
+   "reason": "p <= 0.016667; calibrated and powered at m=9",
+   "stat": "q_sing",
+   "obs": 0.43478260869565216,
+   "null_mean": 0.12479154718663699,
+   "null_sd": 0.09191300102156859
+  },
+  "H3": {
+   "p": 0.148985101489851,
+   "fpr": 0.025,
+   "power": 0.045,
+   "power_n": 200,
+   "alpha": 0.016666666666666666,
+   "verdict": "not testable",
+   "reason": "m=9 plant power < 0.5",
+   "stat": "r_left",
+   "obs": 0.6956521739130435,
+   "null_mean": 0.500618714541425,
+   "null_sd": 0.13487815348638854
+  },
+  "reading": "shares shape: H2"
+ },
+ "secs": 13.9
+}
