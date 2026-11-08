@@ -6,6 +6,7 @@ Status: drafted 2026-11-05 07:00 PT. The connector opened an approval form, so p
 Updated 2026-11-08 ~04:25 PT (K044): folded in the K026 E/L category table (flags, not corrections). The four KFG Attachment=T / OKR ATTACHMENT_TYPE=U cords (KH0323 p7, KH0424 p24/p58, KH0482 p25) were checked against KFG ChangeLogs and are **not** added as a data-quality fact (KFG recoded U→T as top cords in Nov–Dec 2025; OKR already stores them as CORD_CLASSIFICATION=T). Still drafted, not filed.
 Updated 2026-11-08 ~05:31 PT (K046): replaced the old same-position colour sentence with the pre-registered K046 colour-agreement result (gates passed; one pair degenerate). Checked first: still only issues #1 and #2. Still drafted, not filed.
 Updated 2026-11-08 ~07:42 PT (K049): colour on the KH0140·KH0483 shared 12-cord value block is uniformly plain `W` on both records (A = 12/12), but both inventories are monochromatic, so a within-khipu colour shuffle cannot test excess agreement (verdict DEGENERATE, not a statistical confirmation). Checked first: still only issues #1 and #2; one create attempt via cursor-github `create_issue` returned 403 ("Resource not accessible by integration"), not retried → **drafted, not filed**.
+Updated 2026-11-08 ~12:52 PT (K056): checked first, still only issues #1 and #2. One create attempt via user-GitHub-xai `issue_write` opened an approval form; not waited on, not retried → **drafted, not filed**. Text unchanged.
 
 ---
 
