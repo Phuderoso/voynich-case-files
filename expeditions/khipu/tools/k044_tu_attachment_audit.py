@@ -76,12 +76,14 @@ def targets():
 
 
 def schema():
+    """Read-only OKR schema context. First run (prereg tool) crashed: there is no
+    table named khipu (it is khipu_main) and KHIPU_ID is numeric (KH codes live
+    in OKR_NUM). This version joins that way. Disclosed after the prereg commit."""
     import sqlite3
     four = load_four()
     db = sqlite3.connect("file:" + DB + "?mode=ro", uri=True)
     db.row_factory = sqlite3.Row
     tables = [r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table'")]
-    # Prefer a cord-level table that has ATTACHMENT_TYPE.
     cord_table = None
     for t in tables:
         cols = [r[1] for r in db.execute(f"PRAGMA table_info({t})")]
@@ -98,62 +100,76 @@ def schema():
         )
     ]
     has_t = any((v["attachment_type"] == "T") and v["n"] > 0 for v in vocab)
+    attach_dc = [dict(r) for r in db.execute("SELECT * FROM attachment_dc")] if "attachment_dc" in tables else []
+    grouping_dc = [dict(r) for r in db.execute("SELECT * FROM grouping_class_dc")] if "grouping_class_dc" in tables else []
+    class_t_by_attach = [
+        {"attachment_type": r[0], "n": r[1]}
+        for r in db.execute(
+            f"SELECT ATTACHMENT_TYPE, COUNT(*) FROM {cord_table} WHERE CORD_CLASSIFICATION = 'T' "
+            f"GROUP BY ATTACHMENT_TYPE ORDER BY COUNT(*) DESC"
+        )
+    ] if "CORD_CLASSIFICATION" in cord_cols else []
     rows = []
     for p in four:
-        q = db.execute(
-            f"SELECT * FROM {cord_table} c JOIN khipu k ON k.KHIPU_ID = c.KHIPU_ID "
-            f"WHERE k.KHIPU_ID = ? AND c.CORD_ORDINAL = ?",
-            (p["okr"], p["cord_ordinal"]),
+        km = db.execute(
+            "SELECT KHIPU_ID, INVESTIGATOR_NUM, OKR_NUM FROM khipu_main WHERE OKR_NUM = ?",
+            (p["okr"],),
         ).fetchall()
-        if not q:
-            # Some dumps use an investigator code or a numeric id; try JOIN via PRIMARY_ID / KHIPU
-            q = db.execute(
-                f"SELECT * FROM {cord_table} WHERE CORD_ORDINAL = ? AND KHIPU_ID IN "
-                f"(SELECT KHIPU_ID FROM khipu WHERE KHIPU_ID = ? OR INVESTIGATOR_NUM LIKE ?)",
-                (p["cord_ordinal"], p["okr"], p["okr"] + "%"),
-            ).fetchall()
+        if len(km) != 1:
+            sys.exit(f"EXCLUDED: {p['okr']} matched {len(km)} khipu_main rows")
+        kid = km[0]["KHIPU_ID"]
+        q = db.execute(
+            f"SELECT * FROM {cord_table} WHERE KHIPU_ID = ? AND CORD_ORDINAL = ?",
+            (kid, p["cord_ordinal"]),
+        ).fetchall()
         if len(q) != 1:
             sys.exit(f"EXCLUDED: {p['okr']} ordinal {p['cord_ordinal']} matched {len(q)} cord rows")
         rec = dict(q[0])
-        # Keep a stable subset plus attachment.
         keep_keys = [
             k for k in (
                 "KHIPU_ID", "CORD_ID", "CORD_ORDINAL", "ATTACHMENT_TYPE",
-                "CORD_LEVEL", "CLUSTER_ID", "CLUSTER_BEGINS_NEW_GROUP",
-                "PENDANT_FROM", "TERMINAL", "KNOTTED",
+                "CORD_LEVEL", "CORD_CLASSIFICATION", "CLUSTER_ID",
+                "CLUSTER_ORDINAL", "INVESTIGATOR_CORD_NUM", "CORD_NOTES",
             ) if k in rec
         ]
         slim = {k: rec[k] for k in keep_keys}
-        # knot value if present
-        try:
-            kv = db.execute(
-                "SELECT knot_value_type FROM knot WHERE CORD_ID = ?",
-                (rec.get("CORD_ID"),),
-            ).fetchone()
-            slim["knot_value_type"] = None if kv is None else kv[0]
-        except sqlite3.Error:
-            slim["knot_value_type"] = None
-        if slim.get("knot_value_type") != p["value"]:
-            # Some schemas store the value on the cord table.
-            if "knot_value_type" in rec:
-                slim["knot_value_type"] = rec["knot_value_type"]
+        slim["investigator_num"] = km[0]["INVESTIGATOR_NUM"]
+        kv = db.execute(
+            "SELECT SUM(knot_value_type) FROM knot WHERE CORD_ID = ?",
+            (rec.get("CORD_ID"),),
+        ).fetchone()
+        slim["knot_value_sum"] = None if kv is None else kv[0]
+        cl = db.execute(
+            "SELECT CLUSTER_ID, GROUPING_CLASS, NUM_CORDS, BEG_CORD, END_CORD "
+            "FROM cord_cluster WHERE CLUSTER_ID = ?",
+            (rec.get("CLUSTER_ID"),),
+        ).fetchone()
+        slim["cluster"] = dict(cl) if cl else None
         rows.append({**p, "okr_row": slim})
     out = {
         "cycle": "K044",
         "cord_table": cord_table,
         "cord_columns": cord_cols,
         "attachment_vocab": vocab,
+        "attachment_dc": attach_dc,
+        "grouping_class_dc": grouping_dc,
+        "classification_T_by_attachment": class_t_by_attach,
         "secondary": "okr_has_T" if has_t else "okr_never_T",
         "pendants": rows,
+        "disclosure": "schema() rewritten after first run crashed (no table khipu; KHIPU_ID is numeric)",
     }
     path = os.path.join(AN, "k044_schema.json")
     json.dump(out, open(path, "w"), indent=1, default=str)
     print("schema written:", path)
     print("vocab:", vocab)
     print("secondary:", out["secondary"])
+    print("classification_T_by_attachment:", class_t_by_attach)
     for r in rows:
-        print(r["okr"], r["cord_ordinal"], "OKR", r["okr_row"].get("ATTACHMENT_TYPE"),
-              "value", r["okr_row"].get("knot_value_type"))
+        o = r["okr_row"]
+        print(r["okr"], r["cord_ordinal"], "attach", o.get("ATTACHMENT_TYPE"),
+              "class", o.get("CORD_CLASSIFICATION"),
+              "group", (o.get("cluster") or {}).get("GROUPING_CLASS"),
+              "value", o.get("knot_value_sum"))
 
 
 def merge():

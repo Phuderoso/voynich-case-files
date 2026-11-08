@@ -1,0 +1,178 @@
+{
+ "cycle": "K044",
+ "changelog_sources": [
+  {
+   "url": "https://www.khipufieldguide.com/",
+   "status": 200,
+   "role": "homepage; listed ABOUT and DATABOOK, no dedicated changelog link"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/changelog",
+   "status": 404
+  },
+  {
+   "url": "https://www.khipufieldguide.com/changelog.html",
+   "status": 404
+  },
+  {
+   "url": "https://www.khipufieldguide.com/news",
+   "status": 404
+  },
+  {
+   "url": "https://www.khipufieldguide.com/news.html",
+   "status": 404
+  },
+  {
+   "url": "https://www.khipufieldguide.com/updates",
+   "status": 404
+  },
+  {
+   "url": "https://www.khipufieldguide.com/updates.html",
+   "status": 404
+  },
+  {
+   "url": "https://www.khipufieldguide.com/about",
+   "status": 404
+  },
+  {
+   "url": "https://www.khipufieldguide.com/about.html",
+   "status": 404
+  },
+  {
+   "url": "https://www.khipufieldguide.com/notebook/",
+   "status": 200,
+   "role": "notebook index"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/guidebook/KFG_History.html",
+   "status": 200,
+   "role": "project-history surrogate (no per-cord attachment notes)",
+   "quote": "Evaluating existing digital recordings for errors and missing information - including the restoration of approximately 200 khipus from the Harvard Khipus database"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/databook/KFGExcelSpecification.html",
+   "status": 200,
+   "role": "KFG Attachment codebook",
+   "quote": "Allowed values are: R Recto; V Verso; T Top cord; ? Unknown; U Unknown; H Overhand knot attachment"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/databook/excel_khipus/KH0323.xlsx",
+   "status": 200,
+   "role": "Cords + ChangeLog sheets"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/databook/excel_khipus/KH0424.xlsx",
+   "status": 200,
+   "role": "Cords + ChangeLog sheets"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/databook/excel_khipus/KH0482.xlsx",
+   "status": 200,
+   "role": "Cords + ChangeLog sheets"
+  }
+ ],
+ "okr_docs": [
+  {
+   "url": "https://github.com/khipulab/open-khipu-repository",
+   "status": "README retrieved locally as /workspace/khipu/README_okr.md (same text as upstream README)",
+   "quote": "Data archived in this repository are preserved in the data/ directory... serverless SQLite relational database (khipu.db)",
+   "note": "README does not mention ATTACHMENT_TYPE or top cords"
+  },
+  {
+   "source": "khipu.db attachment_dc",
+   "rows": [
+    [
+     "R",
+     "recto",
+     ""
+    ],
+    [
+     "V",
+     "verso",
+     ""
+    ],
+    [
+     "H",
+     "overhand knot",
+     "overhand knot attachment; did't use o because of confusion with zero"
+    ]
+   ]
+  },
+  {
+   "source": "khipu.db grouping_class_dc T",
+   "quote": "T = top cords; strings which \"hang\" in the opposite direction from most pendant cords"
+  }
+ ],
+ "pendants": [
+  {
+   "okr": "KH0323",
+   "inv": "UR087",
+   "cord_ordinal": 7,
+   "value": 15,
+   "label": "changelog_corrected",
+   "kfg_xlsx_attachment": "T",
+   "kfg_xlsx_note": "attached to the right; see observations",
+   "okr_attachment_type": "U",
+   "okr_cord_classification": "T",
+   "okr_grouping_class": "T",
+   "url": "https://www.khipufieldguide.com/databook/excel_khipus/KH0323.xlsx",
+   "status": 200,
+   "quote": "11/10/2025 | Karen Thompson | Cords / p7 / attachment | From: U | To: T | layout change | because top cord",
+   "note": "Cords sheet p7 Attachment=T, Value=15. OKR cord 3021354: ATTACHMENT_TYPE=U, CORD_CLASSIFICATION=T, cluster GROUPING_CLASS=T, knot sum 15."
+  },
+  {
+   "okr": "KH0424",
+   "inv": "UR186",
+   "cord_ordinal": 24,
+   "value": 75,
+   "label": "changelog_corrected",
+   "kfg_xlsx_attachment": "T",
+   "okr_attachment_type": "U",
+   "okr_cord_classification": "T",
+   "okr_grouping_class": "T",
+   "url": "https://www.khipufieldguide.com/databook/excel_khipus/KH0424.xlsx",
+   "status": 200,
+   "quote": "12/31/2025 | Karen Thompson | Cords / p24 / attachment | From: U | To: T | layout change | the Subs are T, therefore the pendant should be",
+   "note": "Cords sheet p24 Attachment=T, Value=75. OKR cord 3041090: ATTACHMENT_TYPE=U, CORD_CLASSIFICATION=T, cluster GROUPING_CLASS=T, knot sum 75."
+  },
+  {
+   "okr": "KH0424",
+   "inv": "UR186",
+   "cord_ordinal": 58,
+   "value": 596,
+   "label": "changelog_corrected",
+   "kfg_xlsx_attachment": "T",
+   "okr_attachment_type": "U",
+   "okr_cord_classification": "T",
+   "okr_grouping_class": "T",
+   "url": "https://www.khipufieldguide.com/databook/excel_khipus/KH0424.xlsx",
+   "status": 200,
+   "quote": "12/31/2025 | Karen Thompson | Cords / p58 / attachment | From: U | To: T | layout change | propose this is a top cord",
+   "note": "Cords sheet p58 Attachment=T, Value=596. OKR cord 3041124: ATTACHMENT_TYPE=U, CORD_CLASSIFICATION=T, cluster GROUPING_CLASS=T, knot sum 596."
+  },
+  {
+   "okr": "KH0482",
+   "inv": "UR246",
+   "cord_ordinal": 25,
+   "value": 288,
+   "label": "changelog_corrected",
+   "kfg_xlsx_attachment": "T",
+   "okr_attachment_type": "U",
+   "okr_cord_classification": "T",
+   "okr_grouping_class": "T",
+   "url": "https://www.khipufieldguide.com/databook/excel_khipus/KH0482.xlsx",
+   "status": 200,
+   "quote": "12/24/2025 | Karen Thompson | Cords / p | From: U | To: T | layout change | top cords",
+   "note": "Cords sheet p25 Attachment=T, Value=288. The ChangeLog row names 'Cords / p' (not p25 specifically) as a batch U->T recoding of top cords on this khipu; p25 is one of four T attachments in that file. OKR cord 3049092: ATTACHMENT_TYPE=U, CORD_CLASSIFICATION=T, cluster GROUPING_CLASS=T, knot sum 288."
+  }
+ ],
+ "counts": {
+  "changelog_corrected": 4,
+  "changelog_notes_mismatch": 0,
+  "no_changelog_mention": 0,
+  "source_missing": 0
+ },
+ "secondary": "okr_never_T",
+ "note_action": "do_not_add_TU_as_data_quality_fact; fold_K026_table_into_draft",
+ "notes": "Dedicated changelog/about/news URLs 404. Usable surrogates retrieved: KFG History, KFG Excel specification (T=Top cord, U=Unknown in the same Attachment column), and each khipu's Excel ChangeLog sheet. OKR attachment_dc lists only R,V,H; ATTACHMENT_TYPE is never T (0/54403); top cords are stored as CORD_CLASSIFICATION=T (249 cords: 191 U, 30 V, 28 R) and cord_cluster.GROUPING_CLASS=T. All four targets follow the majority pattern (U + classification T). KFG recoded Attachment U->T in Nov-Dec 2025; OKR cord CHANGED_ON max 2020-04-18 (git commit 4039ca5 dated 2026-08-04 on GitHub, data inside not updated then). Not isolated errors and not missing top-cord flags in OKR."
+}
