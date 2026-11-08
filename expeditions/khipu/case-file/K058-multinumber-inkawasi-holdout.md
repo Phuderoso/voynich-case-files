@@ -29,7 +29,7 @@ Tool: [`tools/k058_multinumber_inkawasi_holdout.py`](../tools/k058_multinumber_i
 
 ---
 
-## Results (computed after the pre-registration commit `342a38c`)
+## Results (computed after the pre-registration commit `640f139`)
 
 Tool run once as written (0.8 s; seeds 5858 null, 5859 FPR, 5860 power; sensitivity 58601–58605). Outputs: `analysis/k058_results.json`, `analysis/k058_run.log`.
 

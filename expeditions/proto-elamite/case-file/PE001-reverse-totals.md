@@ -63,7 +63,7 @@ Tool: [`tools/pe001_totals.py`](../tools/pe001_totals.py). Compute: well under a
 
 ---
 
-## Results (computed after the pre-registration commit `21d7863`)
+## Results (computed after the pre-registration commit `d3807ea`)
 
 Tool run once as written (112 s; seeds 101 H1, 102 FPR, 103 power). Outputs: `analysis/pe001_results.json`,
 `analysis/pe001_run.log`.
