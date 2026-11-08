@@ -3,8 +3,8 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: preregistered** (this file and `tools/k047_physical_agreement.py` are written and will be
-pushed before any pair-feature agreement number is computed). A whole-khipu coverage look at OKR
+**Status: results appended** (pre-registration written and pushed with the tool as `4c55d16` before any
+pair-feature agreement number was computed). A whole-khipu coverage look at OKR
 physical fields on these five khipus — frequencies only, never the K019 alignment and never a
 cross-tab — is disclosed below and was used to choose which fields are primary vs census-only.
 
@@ -159,5 +159,104 @@ output `analysis/k047_smoke.json`, not used for decisions.
 ## Output
 `analysis/k047_results.json` (`analysis/k047_checkpoint.json` while running), log `analysis/k047_run.log`.
 Run from `expeditions/khipu/`: `timeout 600 python3 tools/k047_physical_agreement.py run`.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+
+---
+
+## Results (2026-11-08, run ~06:12 PT, America/Vancouver)
+
+Run after the prereg was published as `4c55d16` (connector `push_files`; `git push` had no
+credentials; local clone aligned with `git reset --mixed origin/main`, same tree, never `--hard`).
+Smoke (`--smoke`, R = 200) ran first at 06:10 PT, 0.9 s, no crash; not used for decisions and not
+committed. Full run **7.9 s** wall (nothing was cut by the wall). Output
+[`analysis/k047_results.json`](../analysis/k047_results.json), log
+[`analysis/k047_run.log`](../analysis/k047_run.log).
+
+### Gates (cycle-level)
+- DB hash matches; **fixture 28/28 passed** (20 identity/mismatch cases + 6 majority cases + 2 tuple cases);
+  **K019 consistency passed** (13/89, 14/37, 15/36).
+
+### Census (ply and attachment; no p interpreted)
+| Pair | Twist (n; distinct A/B; raw A) | Attachment (n; distinct A/B; raw A) |
+|---|---|---|
+| KH0097 · KH0586 | 89; 2/1 (`S` 88, `U` 1 vs all `S`); 88 | 89; 3/1 (`R` 27, `V` 61, `U` 1 vs all `R`); 27 |
+| KH0192 · KH0470 | 37; 1/1 (all `S` / all `S`); 37 | 37; 1/1 (all `U` / all `R`); **0** |
+| KH0192 · KH0469 | 36; 1/1 (all `S` / all `S`); 36 | 36; 1/1 (all `U` / all `V`); **0** |
+
+All six census pair-fields are **degenerate** on the alignment, matching the whole-khipu coverage:
+ply is monochromatic `S` (Paris·Lima has a single `U` on the Ascher side); attachment is a
+recorder-level constant on every non-Ascher record (HP all `R`, Urton KH0470 all `R`, Urton KH0469
+all `V`) and on Ascher's KH0192 (all `U`). Ascher’s KH0097 does vary (`R`/`V`/`U`), but pairing it
+with an all-`R` partner makes N1 variance-free.
+
+### Primary pair-fields (α = 0.00833)
+
+| Pair-field | n | A / n | Null mean ± sd · q95 · max | p | Power f=0.25 | Copy-all | Cal / shift FPR | **Verdict** |
+|---|---|---|---|---|---|---|---|---|
+| KH0097·KH0586 termination | 87 | 83 / 87 | 81.14 ± 0.47 · 82 · 84 | 0.0473 | 0.36 | recovered | 0.005 / 0 | **NOT TESTABLE** |
+| KH0097·KH0586 knot dir | 82 | 55 (raw) | — | — | — | — | — | **DEGENERATE** (B all `Z`) |
+| KH0192·KH0470 termination | 37 | 33 / 37 | 33.17 ± 0.56 · 35 · 35 | 1.000 | 0.00 | **failed** (A=37, p 0.034) | 0 / 0 | **TOOL EXCLUDED** |
+| KH0192·KH0470 knot dir | 27 | 19 / 27 | 19.43 ± 0.57 · 20 · 21 | 1.000 | 0.085 | recovered | 0 / 0 | **NOT TESTABLE** |
+| KH0192·KH0469 termination | 36 | 31 / 36 | 31.33 ± 0.77 · 33 · 35 | 1.000 | 0.05 | recovered | 0.008 / 0.034 | **NOT TESTABLE** |
+| KH0192·KH0469 knot dir | 21 | 17 (raw) | — | — | — | — | — | **DEGENERATE** (A all `Z`) |
+
+Power curves (f = 0.10 / 0.15 / 0.25 / 0.40) for the four non-degenerate fields: Paris·Lima
+termination 0.03 / 0.14 / 0.26 / 0.52; KH0192·KH0470 termination 0 / 0 / 0 / 0; KH0192·KH0470
+knot dir 0.01 / 0.02 / 0.10 / 0.18; KH0192·KH0469 termination 0 / 0.04 / 0.01 / 0.11. Only the
+Paris·Lima termination curve reaches the 0.5 bar, and only at a 40 % plant rate.
+
+### Why the readable tests failed the bar
+- **Unbalanced labels.** Termination is almost all `K` (knotted): 83/87 and 85/87 in Paris·Lima,
+  36/37 and 34/37 in KH0192·KH0470, 33/36 and 34/36 in KH0192·KH0469. Majority knot direction is
+  almost all `Z` wherever it varies at all (KH0192·KH0470: A 25 `Z` + 2 `TIE`, B 21 `Z` + 6 `S`).
+  A 25 % copy plant rarely moves A far enough to beat α = 0.00833 against a null whose mean already
+  sits on the match count the margins force (null minima equal the observed A on both Berlin
+  termination tests and on KH0192·KH0470 knot direction: the rare labels do not overlap).
+- **Copy-all vs Bonferroni, KH0192·KH0470 termination.** After copying A onto B the margins are
+  36 `K` + 1 `B`. Identity (A = n) under N1 occurs only when that single `B` stays put, with
+  probability 1/37 ≈ 0.027; the observed copy-all p was 0.034, which is above α = 0.00833, so the
+  pre-registered gate fired. This is a mechanical limit of asking a near-constant feature to beat a
+  six-test Bonferroni α, not a sign that the match function is broken (A did equal n). A future
+  design should score copy-all as “A = n” (or p against an uncorrected 0.05), since the control’s
+  job is to recover identity.
+
+### Disclosed, not verdicts
+- **Leaders / non-zero-value units:** Paris·Lima termination with leaders 96/100, p 0.038; on
+  non-zero-value units 77/81, p 1.0. Berlin termination p = 1.0 in both sensitivities. Knot
+  direction stays degenerate with leaders on Paris·Lima; KH0192·KH0470 with leaders 28/41, p 0.39.
+- **N2 (within-group):** Paris·Lima termination p 0.15; both Berlin termination tests p 1.0;
+  KH0192·KH0470 knot direction p 1.0.
+- **Length Spearman:** Paris·Lima ρ = 0.206, p 0.028 (n 89; means 39.5 vs 34.8 cm); KH0192·KH0470
+  ρ = 0.242, p 0.076 (n 37; means 65.1 vs 38.6 cm); KH0192·KH0469 ρ = −0.078, p 0.680 (n 36;
+  means 63.5 vs 47.3 cm). None would survive α = 0.00833. The Berlin mean gaps look like
+  recorder scale, which Spearman is meant to ignore; even the ranks do not agree strongly.
+- **Ordered knot-direction tuples** (stricter than majority; not a verdict). Paris·Lima 21/82 vs
+  null 4.02, p 0.00010, power 1.00, FPR 0.003, copy-all recovered — the tool would have said
+  SUPPORTED had this been primary. KH0192·KH0470 11/27 vs 3.29, p 0.00010, power 0.71, but
+  **shift FPR 0.091 > 0.08** (tool excluded if it were primary). KH0192·KH0469 12/21 vs 2.16,
+  p 0.00010, power 0.44 (not testable). **Caveat, written after seeing the tuples:** Pereyra/HP’s
+  KH0586 records every usable knot as `Z`, so its tuples are `(Z,)*k` for various knot counts `k`.
+  The value LCS already pairs cords of equal value, and equal values often share knot cardinality,
+  so a tuple match is largely “A is all-`Z` and the knot counts agree”. That leaks the value
+  alignment the pairs were selected on; it is not an independent physical-feature witness. Majority
+  (length-free) was the primary for this reason, and on the HP side it is degenerate.
+
+### Reading
+No primary pair-field is SUPPORTED. Two are degenerate (one side monochromatic), three are not
+readable at the pre-registered 25 % plant rate, and one is tool-excluded because copy-all could not
+beat Bonferroni α on a 36+1 margin. Physical-feature *equality* on these OKR fields, for these
+three pairs, is not a usable test: ply and attachment are recorder-level batch codes, and the
+fields that do vary (termination, majority chirality) are too unbalanced for the design.
+This does **not** say the records are different objects, and it does not say they are the same
+object. It says the witness we named cannot be read here. No decipherment.
+
+### Next (line 6)
+The physical-feature equality fork is closed under this design (not as a negative — as not
+readable). A possible K048 is a pre-registered **rare-label concordance** (do the few `B` ends, or
+the few `S` majority cords, land on each other?), which may still lack power. A colour
+code-*association* test on the K046 cross-tabs remains same-data and must stay labelled
+exploratory if run.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
