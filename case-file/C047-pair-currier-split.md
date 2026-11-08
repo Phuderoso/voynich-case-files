@@ -21,6 +21,23 @@ Is E larger on Currier A pages than on Currier B pages, beyond what a random spl
 - **Tool:** `tools/c047_pair_currier_split.py` (imports C046) → `analysis/C047_results.json`.
 
 ## Results
-*(to be filled after the run)*
+Run: 367 s (`analysis/C047_results.json`, log in the run output).
+
+**Gates passed:** FPR 1/20 with contiguous pseudo-splits (so ordinary drift along a book rarely fakes a difference), power 20/20.
+
+| | E_A | E_B | D = E_A − E_B (test run) | null mean ± sd | p | pages A/B | tokens A/B |
+|---|---|---|---|---|---|---|---|
+| ZL 3b | 0.031 | −0.007 | **+0.044** | −0.002 ± 0.014 | 0.005 (floor) | 113 / 83 | 10,847 / 22,559 |
+| IT2a | 0.051 | −0.013 | **+0.073** | −0.004 ± 0.016 | 0.005 (floor) | 113 / 82 | 10,592 / 22,515 |
+
+(E_A and E_B were recomputed after the test with fresh shuffles, so their difference is not exactly D; the shuffle noise is about ±0.005.)
+
+**Verdict (pre-registered rule): A > B.** The same-line pair excess is larger on Currier A pages than on B pages in both transcriptions, at the permutation floor. Currier B pages show essentially no excess at all (E ≈ 0).
+
+**Descriptive look (no verdict): herbal pages only.** Herbal A E 0.047 / 0.062 (ZL/IT2a, 95 pages); herbal B E 0.056 / 0.087 (32 pages, about 3,400 tokens). With the section held fixed, B is **not** lower; if anything it's higher. So the A > B result is most likely carried by the non-herbal B sections (balneological, stars/recipes, etc.), not by the language label itself. This is a hunch from one descriptive look on a small group, not a finding.
+
+**What this does and doesn't say.** It says A pages and B pages differ in how often word pairs repeat on a line. It does not say why: language, section, scribe and position in the book are tangled together here, and the herbal look points to section. It also corrects nothing earlier but sharpens C046's "earlier folios higher" lead: that lead is real at the A/B level.
+
+**Next (F-PAIR step 3):** a section-held test. Either herbal A vs herbal B with a power gate built at that small size (about 3,400 tokens on the B side), or the B sections against each other (balneo vs stars). Only that can separate section from language.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
