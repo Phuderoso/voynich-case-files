@@ -1,0 +1,332 @@
+{
+ "note": "post hoc, descriptive only; not a K046 verdict",
+ "seed": 4651,
+ "R": 10000,
+ "pairs": {
+  "KH0097/KH0586": {
+   "n": 89,
+   "A_order_free": 6,
+   "null_mean": 6.7812,
+   "p": 0.6927307269273073,
+   "crosstab": [
+    {
+     "A": "BY-W",
+     "B": "W:BL",
+     "count": 13
+    },
+    {
+     "A": "BY-W",
+     "B": "W:MB",
+     "count": 10
+    },
+    {
+     "A": "MB",
+     "B": "W:BL",
+     "count": 9
+    },
+    {
+     "A": "MB:W",
+     "B": "W:PG",
+     "count": 9
+    },
+    {
+     "A": "BY-W",
+     "B": "W-MB",
+     "count": 8
+    },
+    {
+     "A": "BL:W",
+     "B": "W",
+     "count": 6
+    },
+    {
+     "A": "W",
+     "B": "W",
+     "count": 5
+    },
+    {
+     "A": "BL:W",
+     "B": "W-MB",
+     "count": 5
+    },
+    {
+     "A": "BY:BL",
+     "B": "W-MB",
+     "count": 4
+    },
+    {
+     "A": "W",
+     "B": "W-MB",
+     "count": 3
+    },
+    {
+     "A": "MB:BL:W",
+     "B": "W-MB",
+     "count": 3
+    },
+    {
+     "A": "MB-W",
+     "B": "W:AB",
+     "count": 2
+    },
+    {
+     "A": "MB:W",
+     "B": "W",
+     "count": 2
+    },
+    {
+     "A": "W",
+     "B": "MB",
+     "count": 2
+    },
+    {
+     "A": "BY:BL",
+     "B": "W",
+     "count": 1
+    },
+    {
+     "A": "MB:W",
+     "B": "W:PB",
+     "count": 1
+    },
+    {
+     "A": "MB:W",
+     "B": "MB:PG",
+     "count": 1
+    },
+    {
+     "A": "MB",
+     "B": "W:PG",
+     "count": 1
+    },
+    {
+     "A": "BY:W",
+     "B": "W:PG",
+     "count": 1
+    },
+    {
+     "A": "W",
+     "B": "AB",
+     "count": 1
+    },
+    {
+     "A": "MB",
+     "B": "MB",
+     "count": 1
+    },
+    {
+     "A": "BY-W",
+     "B": "W:AB",
+     "count": 1
+    }
+   ],
+   "leaders_crosstab": [
+    {
+     "A": "W",
+     "B": "W",
+     "count": 13
+    }
+   ]
+  },
+  "KH0192/KH0470": {
+   "n": 37,
+   "A_order_free": 7,
+   "null_mean": 3.2742,
+   "p": 0.006299370062993701,
+   "crosstab": [
+    {
+     "A": "YB",
+     "B": "YB",
+     "count": 7
+    },
+    {
+     "A": "YG",
+     "B": "BG",
+     "count": 5
+    },
+    {
+     "A": "YB:0G",
+     "B": "LG:AB",
+     "count": 4
+    },
+    {
+     "A": "LB",
+     "B": "PR",
+     "count": 4
+    },
+    {
+     "A": "YB",
+     "B": "AB",
+     "count": 3
+    },
+    {
+     "A": "YB:0G",
+     "B": "YB",
+     "count": 3
+    },
+    {
+     "A": "YG",
+     "B": "GG",
+     "count": 2
+    },
+    {
+     "A": "YB:0G",
+     "B": "KB:MB",
+     "count": 1
+    },
+    {
+     "A": "LB",
+     "B": "RB",
+     "count": 1
+    },
+    {
+     "A": "YB:0G",
+     "B": "KB:W",
+     "count": 1
+    },
+    {
+     "A": "LB",
+     "B": "PB",
+     "count": 1
+    },
+    {
+     "A": "LB",
+     "B": "RL",
+     "count": 1
+    },
+    {
+     "A": "LB",
+     "B": "GG:AB",
+     "count": 1
+    },
+    {
+     "A": "YB:0G",
+     "B": "GG:YB",
+     "count": 1
+    },
+    {
+     "A": "YB",
+     "B": "LG:AB",
+     "count": 1
+    },
+    {
+     "A": "LB",
+     "B": "YB",
+     "count": 1
+    }
+   ],
+   "leaders_crosstab": [
+    {
+     "A": "W",
+     "B": "AB",
+     "count": 11
+    },
+    {
+     "A": "W",
+     "B": "W",
+     "count": 2
+    },
+    {
+     "A": "W",
+     "B": "RB",
+     "count": 1
+    }
+   ]
+  },
+  "KH0192/KH0469": {
+   "n": 36,
+   "A_order_free": 0,
+   "null_mean": 0.0,
+   "p": 1.0,
+   "crosstab": [
+    {
+     "A": "YB",
+     "B": "AB",
+     "count": 12
+    },
+    {
+     "A": "YB:0G",
+     "B": "LG:W",
+     "count": 3
+    },
+    {
+     "A": "YG",
+     "B": "AB",
+     "count": 3
+    },
+    {
+     "A": "YB:0G",
+     "B": "LG:AB",
+     "count": 3
+    },
+    {
+     "A": "LB",
+     "B": "RB",
+     "count": 2
+    },
+    {
+     "A": "YB",
+     "B": "LG:W",
+     "count": 2
+    },
+    {
+     "A": "YG",
+     "B": "GG",
+     "count": 2
+    },
+    {
+     "A": "YB",
+     "B": "RL:HB:W",
+     "count": 1
+    },
+    {
+     "A": "LB",
+     "B": "AB",
+     "count": 1
+    },
+    {
+     "A": "YG",
+     "B": "RB",
+     "count": 1
+    },
+    {
+     "A": "YB:0G",
+     "B": "AB",
+     "count": 1
+    },
+    {
+     "A": "LB",
+     "B": "KB:MB",
+     "count": 1
+    },
+    {
+     "A": "YB",
+     "B": "RB:AB",
+     "count": 1
+    },
+    {
+     "A": "YG",
+     "B": "W",
+     "count": 1
+    },
+    {
+     "A": "YB",
+     "B": "LG:AB",
+     "count": 1
+    },
+    {
+     "A": "LB",
+     "B": "RB:AB",
+     "count": 1
+    }
+   ],
+   "leaders_crosstab": [
+    {
+     "A": "W",
+     "B": "W",
+     "count": 15
+    }
+   ]
+  }
+ }
+}

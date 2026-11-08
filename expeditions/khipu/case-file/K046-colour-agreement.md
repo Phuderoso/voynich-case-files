@@ -3,7 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: pre-registration** (written and pushed with the tool before any pair-colour agreement
+**Status: results appended** (pre-registration written and pushed with the tool as `8afffef` before any pair-colour agreement
 number was computed; only value-side consistency counts, listed below, were checked first).
 
 ## Why
@@ -124,5 +124,95 @@ aligned value ≠ 0; N2 within-group null.
 ## Output
 `analysis/k046_results.json` (`analysis/k046_checkpoint.json` while running), log `analysis/k046_run.log`.
 Run from `expeditions/khipu/`: `timeout 600 python3 tools/k046_colour_agreement.py run`.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (2026-11-08, run ~05:28 PT, America/Vancouver)
+
+Run after the prereg was published as `8afffef` (connector `push_files`; `git push` had no
+credentials; local clone aligned with `git reset --mixed origin/main`, same tree, never `--hard`).
+Smoke (`--smoke`, R = 200) ran first at 05:28 PT, 0.7 s, no crash; not used for decisions and not
+committed. Full run **4.5 s** wall (the design is cheap; nothing was cut by the wall, the power curve
+finished). Output [`analysis/k046_results.json`](../analysis/k046_results.json), log
+[`analysis/k046_run.log`](../analysis/k046_run.log).
+
+### Gates
+- DB hash matches; **fixture 14/14 passed**; **K019 consistency passed** (13/89, 14/37, 15/36; every
+  traceback length = V).
+- **Excluded units: 0** in all three pairs (every aligned non-leader cord has a usable first colour row;
+  n = 89, 37, 36).
+- **Copy-all control recovered** on all three pairs (A = n = 89 / 37 / 36, p = 0.0005, R = 2 000 floor).
+
+| Pair | n | Calibration FPR (1 000) | Shift FPR (offsets) | Power f = 0.25 (k planted) | Curve f = 0.10 / 0.15 / 0.25 / 0.40 |
+|---|---|---|---|---|---|
+| KH0097 · KH0586 | 89 | 0.007 | 0.000 (72; min p 0.038) | **1.00** (22) | 0.99 / 1.00 / 1.00 / 1.00 |
+| KH0192 · KH0470 | 37 | 0.003 | 0.000 (30; min p 0.161) | **0.96** (9) | 0.19 / 0.62 / 0.99 / 1.00 |
+| KH0192 · KH0469 | 36 | 0.000 | 0.000 (29; min p 1.000) | **1.00** (9) | 0.75 / 0.98 / 1.00 / 1.00 |
+
+All gates pass (FPR ≤ 0.08, power ≥ 0.5).
+
+### Primary statistic (N1, R = 10 000, seed 4646; α = 0.01667)
+| Pair | Systems | A (matches / n) | Null mean ± sd · q95 · max | p | **Verdict** |
+|---|---|---|---|---|---|
+| KH0097 · KH0586 | AS · HP | **6 / 89** | 2.10 ± 1.29 · 4 · 8 | **0.0091** | **SUPPORTED** |
+| KH0192 · KH0470 | AS · UR | **7 / 37** | 3.25 ± 1.28 · 5 · 8 | **0.0059** | **SUPPORTED** |
+| KH0192 · KH0469 | AS · UR | **0 / 36** | 0.00 ± 0 · 0 · 0 | 1.0000 | **NOT SUPPORTED** (degenerate; see below) |
+
+### Disclosed sensitivities (not verdicts)
+| Pair | BY ≡ YB | With leaders | Non-zero-value units only | N2 within-group null |
+|---|---|---|---|---|
+| KH0097 · KH0586 | 6/89, p 0.0076 | 19/102, p 0.0001 | 6/82, p 0.0088 | null mean 2.74, p 0.031 |
+| KH0192 · KH0470 | 7/37, p 0.0068 | 9/51, p 0.0002 | 3/27, p 0.0996 | null mean 4.25, p 0.013 |
+| KH0192 · KH0469 | 0/36, p 1 | 15/51, p 0.0001 | 0/21, p 1 | null mean 0, p 1 |
+
+### Where the matches are (descriptive)
+- **Paris·Lima:** 5 of the 6 matches are plain `W` on the 2nd non-leader cord of matched groups 1–5 (values 22, 22,
+  21, 22, 22); the sixth is plain `MB` (group 13, value 32). Leaders: all 13 are `W` on both sides.
+- **KH0192·KH0470:** all 7 matches are plain `YB`, on KH0192's 3rd non-leader cord ↔ KH0470's 4th (KH0470
+  carries one extra cord before it), in groups 9, 10, 12, 13, 14, 17, 35 of KH0192; 4 of the 7 have value 0.
+  Leaders: KH0192 `W` vs KH0470 `AB` in 11 of 14.
+- **KH0192·KH0469:** the two records share **no** colour code on the 36 aligned non-leader units
+  (KH0192: `YB`, `YB:0G`, `YG`, `LB`; KH0469: `AB`, `LG:W`, `LG:AB`, `RB`, `GG`, …), so the null is
+  identically 0 and equality cannot score. Leaders: `W` = `W` in all 15.
+
+### Post-hoc looks (written after the run; tool `tools/k046_posthoc_order.py`, seed 4651; **not verdicts**)
+Prompted by the cross-tabs, and disclosed as post hoc
+([`analysis/k046_posthoc_order.json`](../analysis/k046_posthoc_order.json)):
+- **Order-free components** (sorted multiset, operators still identical): Paris·Lima **6/89 vs null 6.78,
+  p 0.69**; KH0192·KH0470 7/37 vs 3.27, p 0.0063; KH0192·KH0469 0/36, p 1. Pereyra/HP writes `W` first
+  (`W:MB`, `W:BL`) where Ascher writes the lower ISCC number first (`MB:W`, `BL:W`), so under the
+  order-free view many more chance matches become possible and Paris·Lima's excess disappears.
+- **Code cross-tabs:** Paris·Lima often pairs Ascher barber pole `BY-W` with HP mottle `W:BL` (13) or
+  `W:MB` (10). KH0192·KH0469 pairs Ascher `YB` with Urton `AB` in 12 of 17 `YB` units; KH0192·KH0470
+  pairs `YB`→`YB` 7, `YB`→`AB` 3, `YG`→`BG` 5. A consistent *different* code for the same slot looks like
+  recorder translation (Ascher vs Urton/Pereyra judging the same fibre), not like disagreement of objects;
+  this is an observation, not a test.
+
+### Reading
+- **KH0192·KH0470 — SUPPORTED** (gates passed: FPR 0.003, shift 0, power 0.96). The aligned cords share the
+  `YB` code at the same within-group slot more often than frequency-matched chance; it also holds within groups
+  (N2 p 0.013) and order-free (p 0.0063), but not on non-zero-value units alone (p 0.0996, n 27). A
+  modest, slot-level colour agreement on top of K019's value correspondence.
+- **KH0097·KH0586 — SUPPORTED by the pre-registered rule, but fragile:** 6/89 vs 2.10, carried by plain `W`
+  at one slot across five consecutive groups; N2 within-group p 0.031 and the post-hoc order-free view
+  p 0.69 do not back it. I record it as supported under the stated ordered-code rule and say plainly that it
+  rests on a handful of plain-colour cords and on a code-order convention that differs between recorders.
+- **KH0192·KH0469 — NOT SUPPORTED, degenerate:** no shared code on the aligned non-leader units, so equality
+  cannot detect anything; power was measured with planted copies that create shared codes, so the power
+  figure overstates readability for this pair. This is **not** evidence that the records are different
+  objects; the cross-tab (`YB`↔`AB`) points to recorder coding.
+- None of this proves "same object recorded twice" vs "faithful copy" (both predict agreement); recorder
+  effects dominate the colour field across systems. No decipherment.
+
+### Next (line 6)
+The equality fork is answered as far as OKR codes allow: two supported (one fragile), one degenerate. The
+cross-tabs show that the colour field is mostly a **recorder-translation** problem. Proposed **K047**: a
+pre-registered **physical-feature agreement** test on the same K019 alignment and the same N1/shift/power
+design, using fields K046 never looked at (cord ply/spin direction, attachment, knot directionality, where
+OKR has them for both records): value-independent, colour-independent, and less exposed to colour
+judgement. A code-*association* test (does A's code predict B's code under the same null) is possible but
+would be same-data and post hoc after these cross-tabs; if run, it must be labelled exploratory.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

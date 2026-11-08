@@ -1,0 +1,14 @@
+loaded 0.5s
+K019 consistency ok {'KH0097/KH0586': (13, 89), 'KH0192/KH0470': (14, 37), 'KH0192/KH0469': (15, 36)}
+positive controls {'KH0097/KH0586': {'A': 89, 'expected': 89, 'p': 0.0004997501249375312, 'passed': True}, 'KH0192/KH0470': {'A': 37, 'expected': 37, 'p': 0.0004997501249375312, 'passed': True}, 'KH0192/KH0469': {'A': 36, 'expected': 36, 'p': 0.0004997501249375312, 'passed': True}}
+KH0097/KH0586 n=89 fpr_perm=0.0070 fpr_shift=0.0 power=1.000 (2.4s)
+KH0097/KH0586 A=6/89 null_mean=2.10 p=0.00910 -> SUPPORTED (2.5s)
+KH0192/KH0470 n=37 fpr_perm=0.0030 fpr_shift=0.0 power=0.960 (0.8s)
+KH0192/KH0470 A=7/37 null_mean=3.25 p=0.00590 -> SUPPORTED (0.8s)
+KH0192/KH0469 n=36 fpr_perm=0.0000 fpr_shift=0.0 power=1.000 (0.7s)
+KH0192/KH0469 A=0/36 null_mean=0.00 p=1.00000 -> NOT SUPPORTED (0.8s)
+wrote k046_results.json 4.5 s
+
+real	0m4.643s
+user	0m5.162s
+sys	0m0.125s
