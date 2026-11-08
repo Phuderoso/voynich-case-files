@@ -9,6 +9,8 @@ Updated 2026-11-08 ~07:42 PT (K049): colour on the KH0140·KH0483 shared 12-cord
 Updated 2026-11-08 ~12:52 PT (K056): checked first, still only issues #1 and #2. One create attempt via user-GitHub-xai `issue_write` opened an approval form; not waited on, not retried → **drafted, not filed**. Text unchanged.
 Updated 2026-11-08 ~13:45 PT (K057): checked first, search for KH0140 / KH0483 / VA42670 returned 0 hits (the broader KH0140 OR duplicate search still only hits #1). One create attempt via cursor-github `create_issue` returned 403 ("Resource not accessible by integration"), not retried → **drafted, not filed**. Text unchanged.
 
+Updated 2026-11-08 ~14:30 PT (K058): checked first, search for KH0140 / KH0483 returned 0 hits; issues still only #1 and #2. One create attempt via cursor-github `create_issue` returned 403 ("Resource not accessible by integration"), not retried → **drafted, not filed**. Text unchanged.
+
 ---
 
 Hi, and thank you for keeping the OKR open. An independent statistical survey of `khipu.db` (commit `4039ca5`) turned up three pairs of records, and one known pair, that look either like **the same khipu recorded twice** or like **real copies** of each other. Duplicate assessments are mentioned in #1 (for example AS070/UR035 of KH0083), so these may already be known to you. None of them is flagged with `DUPLICATE_FLAG`, and I couldn't find them cross-referenced in the Khipu Field Guide.
