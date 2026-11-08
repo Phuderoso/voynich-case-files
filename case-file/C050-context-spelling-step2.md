@@ -18,6 +18,34 @@ I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (c
 - **Tool:** `tools/c050_context_spelling_step2.py` → `analysis/C050_results.json`; `timeout 600`.
 
 ## Results
-*(to be added after the run)*
+Run: 190 s (`analysis/C050_results.json`; log kept outside the repo). Seed 5050.
+
+**Gates:** FPR 0/20 for both ρ and ρ_e. Power **2/20** (ρ) and **1/20** (ρ_e): the repaired plant still fails. So **H1 and H3 are NOT TESTABLE.** The lesson is about the instrument: giving 100 of 200 types a near-copy of one context neighbour's spelling creates about 100 strongly linked pairs, and a rank correlation over 19,900 pairs barely moves. The Voynich link, whatever it is, must be **diffuse** (spread over many pairs), not a set of near-duplicate neighbours. A plant of that shape is needed before the existence question can be asked.
+
+| Text | ρ half 1 | ρ half 2 | ρ_e half 1 | ρ_e half 2 |
+|---|---|---|---|---|
+| Latin Caesar / Descartes | −0.012 / −0.000 | −0.001 / −0.003 | −0.016 / −0.007 | −0.011 / −0.017 |
+| Italian Dante / Machiavelli | −0.006 / −0.006 | −0.008 / +0.005 | −0.032 / −0.050 | −0.035 / −0.028 |
+| Spanish Cervantes | −0.014 | −0.014 | −0.049 | −0.048 |
+| Hebrew Genesis / Exodus | +0.020 / +0.043 | +0.035 / −0.012 | +0.002 / +0.020 | +0.033 / −0.033 |
+| **Finnish Kalevala / Kivi** | −0.008 / −0.014 | +0.003 / +0.006 | −0.011 / −0.022 | +0.002 / −0.005 |
+| **Devowelled Caesar / Dante / Cervantes** | −0.030 / −0.024 / −0.020 | −0.018 / −0.030 / −0.009 | −0.046 / −0.021 / −0.049 | −0.043 / −0.039 / −0.041 |
+| **Voynich ZL 3b** | **+0.114** (p 0.005) | **+0.078** (p 0.005) | +0.063 (p 0.005) | +0.032 (p 0.050) |
+| **Voynich IT2a** | **+0.092** (p 0.005) | **+0.078** (p 0.005) | +0.036 (p 0.020) | +0.021 (p 0.15) |
+| Generator seeds 501–505 | 0.084 / 0.086 / 0.103 / 0.085 / 0.072 | 0.061 / 0.084 / 0.061 / 0.092 / 0.065 | 0.054 / 0.049 / 0.086 / 0.057 / 0.028 | 0.020 / 0.054 / 0.037 / 0.047 / 0.030 |
+
+(Voynich and the seven C049 texts reproduce C049 exactly, as they should: same halves, deterministic statistic.)
+
+**H2: ABOVE.** All four Voynich ρ (0.078–0.114) exceed the maximum of the 24 control halves (0.043, Exodus half 1). Adding agglutinative Finnish and consonant-skeleton Latin/Italian/Spanish did not raise the bar: both sit at or below zero. So C049's gap is not explained by agglutination or by a vowelless spelling, at least for these four languages.
+
+**H4: STRADDLE.** Generator range 0.061–0.102 (10 halves). Three Voynich halves fall inside it; ZL 3b half 1 (0.114) is above it. The copying generator reaches the manuscript's level on most samples, not all.
+
+**Descriptive (no verdict, gate failed):** removing pairs with the same last unit roughly halves the Voynich link (ρ_e 0.021–0.063), and in the generator likewise (0.020–0.086). In natural texts ρ_e is mostly negative.
+
+**What this says.** The manuscript's tie between shared contexts and shared spellings is outside every natural control tried, now including an agglutinative language and devowelled text, and is about the size the self-citation generator produces. That makes it one more statistic where copying-with-small-changes is sufficient and the tested natural languages are not. It is not proof of copying.
+
+**Not claimed.** Existence (H1/H3) is not testable on these gates; the low Mantel p-values are reported but the plant could not show the test would catch a link of this kind. Nothing about meaning.
+
+**Next (F-EMB step 3):** a diffuse plant (e.g. types clustered by context into 20 groups, each group sharing a spelling stem), then H1/H3 again; Currier A vs B; and which glyph positions carry the link.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
