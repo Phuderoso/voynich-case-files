@@ -1,0 +1,286 @@
+{
+ "cycle": "K052",
+ "controls": {
+  "C1": {
+   "okr": "KH0616",
+   "inv": "JC009",
+   "evidence_class": "E1_similar_field",
+   "url": "https://www.khipufieldguide.com/catalog/KH0616.html",
+   "status": 200,
+   "retrieved": true,
+   "names_partner": true,
+   "quote": "Similar Khipu:    Previous (KH0620)    Next (KH0618)",
+   "reciprocal": {
+    "url": "https://www.khipufieldguide.com/catalog/KH0620.html",
+    "status": 200,
+    "quote": "Similar Khipu:    Previous (KH0612)    Next (KH0616)",
+    "decides": false
+   },
+   "passed": true
+  },
+  "C2": {
+   "okr": "KH0502",
+   "inv": "UR266",
+   "evidence_class": "E2_publication_match",
+   "url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S1045663500008786/resource/name/S1045663500008786sup001.pdf",
+   "status": 200,
+   "retrieved": true,
+   "names_partner": true,
+   "quote": "13 #13829 266 U.E. 12 129 [...] Repetition of fixed value '47.' Matches UR 275.",
+   "quote_partner_row": "25 #13836 275 U.E. 19 112 Repetition of fixed value '47'. Matches UR266.",
+   "kfg_page": {
+    "url": "https://www.khipufieldguide.com/catalog/KH0502.html",
+    "status": 200,
+    "names_partner": false,
+    "quote": "Similar Khipu:    Previous (KH0463)    Next (KH0381)",
+    "note": "The KFG catalogue page of KH0502 does not name KH0514/UR275 anywhere (similar field, notes or bibliography); C2 passes on the named publication, the alternative the prereg allows. Also: the KFG similar-khipu field of a published match does not list its partner, so E1 silence is weak evidence (descriptive, does not change labels)."
+   },
+   "kfg_partner_page": {
+    "url": "https://www.khipufieldguide.com/catalog/KH0514.html",
+    "status": 200,
+    "quote": "Similar Khipu:    Previous (KH0505)    Next (KH0484)"
+   },
+   "passed": true
+  }
+ },
+ "sources": [
+  {
+   "id": "S1",
+   "evidence_class": "E1_similar_field",
+   "url": "https://www.khipufieldguide.com/catalog/KH0240.html",
+   "status": 200,
+   "retrieved": true,
+   "subjects": [
+    "KH0240"
+   ],
+   "labels": {
+    "KH0240": "mentioned_other_match"
+   },
+   "quote": "Similar Khipu:    Previous (KH0237)    Next (KH0270)",
+   "note": "Similar field names KH0237 and KH0270, not KH0496. No occurrence of KH0496, UR260, Incahuasi or Inkawasi anywhere in the page HTML.",
+   "control_passed": true
+  },
+  {
+   "id": "S2",
+   "evidence_class": "E2_publication_match",
+   "url": "https://www.khipufieldguide.com/catalog/KH0240.html",
+   "status": 200,
+   "retrieved": true,
+   "subjects": [
+    "KH0240"
+   ],
+   "labels": {
+    "KH0240": "not_mentioned"
+   },
+   "quote": "none",
+   "note": "Page has statistics, sum fieldmark links and an 11-item bibliography (Canales 2011; Cherkinsky & Urton 2014; Kenney 2013; Chilean Museum 2003; Urton 2003, 2006, 2007, 2008, 2011, 2017; Witkowski 2007); no match/correspondence statement and no other-subject id.",
+   "control_passed": true
+  },
+  {
+   "id": "S3",
+   "evidence_class": "E1_similar_field",
+   "url": "https://www.khipufieldguide.com/catalog/KH0496.html",
+   "status": 200,
+   "retrieved": true,
+   "subjects": [
+    "KH0496"
+   ],
+   "labels": {
+    "KH0496": "mentioned_other_match"
+   },
+   "quote": "Similar Khipu:    Previous (KH0498)    Next (KH0518)",
+   "note": "Similar field names KH0498 and KH0518, not KH0240. No occurrence of KH0240, UR004 or Leymebamba anywhere in the page HTML.",
+   "control_passed": true
+  },
+  {
+   "id": "S4",
+   "evidence_class": "E2_publication_match",
+   "url": "https://www.khipufieldguide.com/catalog/KH0496.html",
+   "status": 200,
+   "retrieved": true,
+   "subjects": [
+    "KH0496"
+   ],
+   "labels": {
+    "KH0496": "not_mentioned"
+   },
+   "quote": "none",
+   "note": "Bibliography: Urton & Chu 2015 (Text: 519; 520) and Urton 2017 (Text: 176; 263); no match statement.",
+   "control_passed": true
+  },
+  {
+   "id": "S5",
+   "evidence_class": "E2_publication_match",
+   "url": "https://www.khipufieldguide.com/databook/excel_khipus/KH0240.xlsx",
+   "status": 200,
+   "retrieved": true,
+   "subjects": [
+    "KH0240"
+   ],
+   "labels": {
+    "KH0240": "not_mentioned"
+   },
+   "quote": "none",
+   "note": "Sheets License and Description, Khipu, PrimaryCord, CordGroups, Cords, ChangeLog; no similar-khipu field; notes are cord-level recording notes (e.g. p88 possible misrecording, p188 'called SP1 in notes'); no other khipu named.",
+   "control_passed": true
+  },
+  {
+   "id": "S6",
+   "evidence_class": "E2_publication_match",
+   "url": "https://www.khipufieldguide.com/databook/excel_khipus/KH0496.xlsx",
+   "status": 200,
+   "retrieved": true,
+   "subjects": [
+    "KH0496"
+   ],
+   "labels": {
+    "KH0496": "not_mentioned"
+   },
+   "quote": "none",
+   "note": "Same sheets; PrimaryCord notes empty; one ChangeLog row (12/26/2025, p20 knot location query); no other khipu named.",
+   "control_passed": true
+  },
+  {
+   "id": "S7",
+   "evidence_class": "E2_publication_match",
+   "url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S1045663500008786/resource/name/S1045663500008786sup001.pdf",
+   "status": 200,
+   "retrieved": true,
+   "subjects": [
+    "KH0496"
+   ],
+   "labels": {
+    "KH0496": "mentioned_other_match"
+   },
+   "quote": "7 #9228-2013 260 U.E. 2 24 Included in large \"khipu pile\" found in corridor. Primary cord tied around primary cord of UR259.",
+   "note": "Urton & Chu, Appendix I: Inventory of Inkawasi Khipus. UR260's only named partner is UR259 (physical tie); UR259 row: 'All values 4 or below. Tied to UR260'. The inventory covers Inkawasi only; 'Leymebamba' does not occur in it; UR004 is not listed.",
+   "control_passed": true
+  },
+  {
+   "id": "S8",
+   "evidence_class": "E2_publication_match",
+   "url": "https://www.cambridge.org/core/journals/latin-american-antiquity/article/accounting-in-the-kings-storehouse-the-inkawasi-khipu-archive/417CED6AB7ED0F6D37DC7A3E84F698D5",
+   "status": 200,
+   "retrieved": false,
+   "subjects": [
+    "KH0496"
+   ],
+   "labels": {
+    "KH0496": "source_missing"
+   },
+   "quote": "none",
+   "note": "Urton & Chu 2015, Latin American Antiquity 26(4) (KFG cites pp. 519-520 for UR260). Redirects to the /abs/ abstract page (HTTP 200); full text not accessible, so pp. 519-520 were not read. Unresolved.",
+   "control_passed": true
+  },
+  {
+   "id": "S9",
+   "evidence_class": "E2_publication_match",
+   "url": "https://dialnet.unirioja.es/servlet/articulo?codigo=2391294",
+   "status": 200,
+   "retrieved": false,
+   "subjects": [
+    "KH0240"
+   ],
+   "labels": {
+    "KH0240": "source_missing"
+   },
+   "quote": "none",
+   "note": "Urton 2006, Revista Andina 42:153-196 (KFG cites p. 188 for UR004). Dialnet record page: 'Texto completo no disponible'. Unresolved.",
+   "control_passed": true
+  },
+  {
+   "id": "S10",
+   "evidence_class": "E2_publication_match",
+   "url": "https://revistas.pucp.edu.pe/index.php/boletindearqueologia/article/download/2019/1950/0",
+   "status": 200,
+   "retrieved": false,
+   "subjects": [
+    "KH0240"
+   ],
+   "labels": {
+    "KH0240": "source_missing"
+   },
+   "quote": "none",
+   "note": "Urton 2004, 'Concordancias y afinidades en archivos de registros de khipus procedentes de Chachapoyas e Ica, Peru', Boletin de Arqueologia PUCP 8:289-303 (a paper on matching accounts, found by web search; not in KFG's KH0240 bibliography). Download, article view, DOI (10.18800/boletindearqueologiapucp.200401.015) and repositorio item all return an Anubis 'Making sure you're not a bot!' proof-of-work page to curl and WebFetch; the repository API lists 0 bundles. Not read; a search-engine snippet of it is not used as evidence. It predates the Inkawasi excavations (Appendix I project numbers carry 2013-2014), so it could not have named UR260 in any case. Unresolved for UR004.",
+   "control_passed": true
+  }
+ ],
+ "subjects": {
+  "KH0240": {
+   "label": "mentioned_other_match",
+   "by_class": {
+    "E1_similar_field": "mentioned_other_match",
+    "E2_publication_match": "not_mentioned"
+   }
+  },
+  "KH0496": {
+   "label": "mentioned_other_match",
+   "by_class": {
+    "E1_similar_field": "mentioned_other_match",
+    "E2_publication_match": "mentioned_other_match"
+   }
+  }
+ },
+ "pair_label": "not_mentioned",
+ "label_counts_source_x_subject": {
+  "already_paired": 0,
+  "mentioned_other_match": 3,
+  "method_excluded": 0,
+  "not_mentioned": 4,
+  "source_missing": 3
+ },
+ "n_sources": 10,
+ "descriptive": {
+  "kh0240_cites_urton_2006_census": "yes: '2006 Urton, Gary. Censos registrados en cordeles con 'amarres': Padrones poblacionales pre-hispanicos y coloniales tempranos en los khipu Inka. Revista Andina 42:153-196. Text: 188' (KFG KH0240 page). Paper text not retrieved.",
+  "small_counts_1_3": "No retrieved source says UR004 or UR260 records small household counts. Appendix I says of UR259 (tied to UR260): 'All values 4 or below'. Not pairing.",
+  "kfg_similar_field_of_published_match": "KH0502 (UR266) lists Previous KH0463 / Next KH0381 and KH0514 (UR275) lists KH0505 / KH0484: the KFG similar-khipu field does not surface the published UR266-UR275 match, so E1 silence on the subjects is weak evidence.",
+  "web_searches": [
+   {
+    "q": "khipu UR004 Leymebamba UR260 Incahuasi",
+    "result": "KFG catalogue pages KH0240, KH0496 (fetched as S1-S4), KFG indexed-pendant-sum page, KFG catalogue index, Urton & Chu 2015 abstract; no pairing source"
+   },
+   {
+    "q": "\"KH0240\" OR \"KH0496\" khipu",
+    "result": "KFG catalogue and KH0496 sum-fieldmark pages only"
+   },
+   {
+    "q": "Urton 2006 Censos registrados en cordeles ... Leymebamba",
+    "result": "Dialnet record (S9, no full text), Jugo.pe citation, studylib CV"
+   },
+   {
+    "q": "Leymebamba khipu Inkawasi khipu similar pattern match Urton",
+    "result": "Urton 2004 PUCP (S10, blocked), Appendix I (S7), Urton & Chu 2019 abstract, Urton 2003 'Khipu Archives' (JSTOR, predates Inkawasi); no Leymebamba-Inkawasi source"
+   },
+   {
+    "q": "Urton 2004 Concordancias y afinidades ... pdf",
+    "result": "PUCP download/repository/issue pages (all bot-checked)"
+   },
+   {
+    "q": "Inkawasi khipu UR259 UR260 \"khipu pile\" corridor small values",
+    "result": "Appendix I (S7), Emory 'Threads of Time' items (not khipus of this pair)"
+   },
+   {
+    "q": "khipu \"1, 2, 1, 2, 3, 1, 2, 1, 3\"",
+    "result": "no relevant result (valve manual, appliance manual, sports archive)"
+   }
+  ]
+ },
+ "failed_attempts": [
+  {
+   "url": "https://doi.org/10.18800/boletindearqueologiapucp.200401.015",
+   "status": 200,
+   "note": "redirects to PUCP article view; Anubis bot-check page"
+  },
+  {
+   "url": "https://repositorio.pucp.edu.pe/items/57372b05-f4b5-4f74-bfe5-c50dbce60d22",
+   "status": 200,
+   "note": "Anubis bot-check page"
+  },
+  {
+   "url": "https://www.cambridge.org/core/journals/latin-american-antiquity/article/invention-of-taxation-in-the-inka-empire/FE7429EFCD62AA2F37B22BB22D5BF250",
+   "status": 200,
+   "note": "Urton & Chu 2019; abstract page only (not cited by KFG for either subject; not a subject source)"
+  }
+ ],
+ "notes": "Not used as evidence: search-engine snippets (incl. a snippet of Urton 2004 that names other Chachapoyas khipus). Urton 2017 (Inka History in Knots, print book; KFG cites p. 263 for both subjects and p. 176 for UR260) was not retrievable and is not recorded as a source; no claim is made about what p. 263 says."
+}

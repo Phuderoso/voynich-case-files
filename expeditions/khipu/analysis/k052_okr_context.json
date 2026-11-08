@@ -1,0 +1,28 @@
+[
+ {
+  "OKR_NUM": "KH0240",
+  "INVESTIGATOR_NUM": "UR004",
+  "PROVENANCE": "Leymebamba",
+  "REGION": "Chachapoyas",
+  "MUSEUM_NAME": "\"Centro Mallqui, Leymebamba, Amazonas\"",
+  "MUSEUM_NUM": "CMA 847-LC1.476 TEQ",
+  "EARLIEST_AGE": "1600-01-01",
+  "LATEST_AGE": "1600-01-01",
+  "CREATED_BY": "katie",
+  "CREATED_ON": "2003-06-19 14:29:24",
+  "NOTES": "Note: AMS date listed as 834 plus/minus 34 B.P. with the actual date as 1068-1278 A.D.\n(Current BP info (725-935) was calculated by the program from the CE dates.)"
+ },
+ {
+  "OKR_NUM": "KH0496",
+  "INVESTIGATOR_NUM": "UR260",
+  "PROVENANCE": "Incahuasi",
+  "REGION": null,
+  "MUSEUM_NAME": "Proyecto Incahuasi",
+  "MUSEUM_NUM": "9228-13B",
+  "EARLIEST_AGE": null,
+  "LATEST_AGE": null,
+  "CREATED_BY": "julia",
+  "CREATED_ON": "2015-11-11 05:44:21",
+  "NOTES": "Sector C, Subsector E, Unidad 19K, UE 2\nBig Pile\ndrawings attached to notes\nV Shaped structure\n11.5 cm UR 260 primary cord tied around khipu, Aprox. 5 c.m. within knot, space of 6.0 cm"
+ }
+]

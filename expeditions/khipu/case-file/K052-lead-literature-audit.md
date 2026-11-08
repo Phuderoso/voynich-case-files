@@ -3,8 +3,9 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: pre-registration** (written and pushed with the tool before any target page — KH0240 / KH0496 /
-UR004 / UR260 — or either control page was fetched for this cycle, and before any web search for the pair).
+**Status: results appended** (pre-registration written and pushed with the tool as `69c115b` before any target
+page — KH0240 / KH0496 / UR004 / UR260 — or either control page was fetched for this cycle, and before any web
+search for the pair).
 Only local repository files (K014, K020, K028, K043, K050, K051, README) and the pinned `khipu.db` id fields
 were read first.
 
@@ -115,5 +116,82 @@ quote (or `none`) and label, hand-recorded in `analysis/k052_records.json`; merg
 - literature gap: the lead stays unconfirmed; the only non-heuristic confirmation left is the held-out value
   search K028 named, which waits on new OKR khipus (data-limited). Colour-equality on this pair is closed.
 - Not added to the pending OKR note unless a real cataloguing error is found.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+
+---
+
+## Results (2026-11-08, ~09:50–10:05 PT, America/Vancouver)
+
+Retrieval by `curl` (WebFetch once, for the PUCP PDF) and WebSearch, after `69c115b`. `targets` passed (hash, id map,
+K051 values gate) and wrote [`analysis/k052_targets.json`](../analysis/k052_targets.json); `context` wrote
+[`analysis/k052_okr_context.json`](../analysis/k052_okr_context.json). Hand records:
+[`analysis/k052_records.json`](../analysis/k052_records.json); merged by `tools/k052_lead_literature_audit.py merge` into
+[`analysis/k052_results.json`](../analysis/k052_results.json). No tool change after the prereg.
+
+### 1. Controls: both pass
+- **C1 (E1, similar-khipu field): passes.** `https://www.khipufieldguide.com/catalog/KH0616.html` (200):
+  "Similar Khipu: Previous (KH0620) Next (KH0618)" — names KH0620 / JC013, as K014 quoted. Reciprocal (descriptive):
+  KH0620 page (200) "Similar Khipu: Previous (KH0612) Next (KH0616)".
+- **C2 (E2, published match): passes on the named publication.** Urton & Chu, *Appendix I: Inventory of Inkawasi
+  Khipus* ([PDF](https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S1045663500008786/resource/name/S1045663500008786sup001.pdf), 200):
+  row 13, UR266: "Repetition of fixed value '47.' Matches UR 275."; row 25, UR275: "Repetition of fixed value '47'.
+  Matches UR266." **Disclosed:** the KFG catalogue page of KH0502 (200) does **not** name KH0514 / UR275 anywhere
+  ("Similar Khipu: Previous (KH0463) Next (KH0381)"; KH0514 page: "Previous (KH0505) Next (KH0484)"). The prereg
+  allowed the named publication as the C2 source, so C2 passes; but it shows that the KFG similar-khipu field can miss
+  a published match, so **E1 silence is weak evidence** (descriptive; labels unchanged).
+
+### 2. Sources × subjects
+
+| ID | Source (status) | Class | Subject | Label | Verbatim |
+|---|---|---|---|---|---|
+| S1 | [KFG KH0240](https://www.khipufieldguide.com/catalog/KH0240.html) (200) | E1 | KH0240 | mentioned_other_match | "Similar Khipu: Previous (KH0237) Next (KH0270)" |
+| S2 | same page, notes / bibliography | E2 | KH0240 | not_mentioned | none (11-item bibliography, no match statement) |
+| S3 | [KFG KH0496](https://www.khipufieldguide.com/catalog/KH0496.html) (200) | E1 | KH0496 | mentioned_other_match | "Similar Khipu: Previous (KH0498) Next (KH0518)" |
+| S4 | same page, notes / bibliography | E2 | KH0496 | not_mentioned | none (Urton & Chu 2015 pp. 519–520; Urton 2017 pp. 176, 263) |
+| S5 | [KFG Excel KH0240](https://www.khipufieldguide.com/databook/excel_khipus/KH0240.xlsx) (200) | E2 | KH0240 | not_mentioned | none (cord-level recording notes only) |
+| S6 | [KFG Excel KH0496](https://www.khipufieldguide.com/databook/excel_khipus/KH0496.xlsx) (200) | E2 | KH0496 | not_mentioned | none (one ChangeLog row, p20 knot query) |
+| S7 | Urton & Chu, Appendix I (200) | E2 | KH0496 | mentioned_other_match | "260 U.E. 2 24 Included in large "khipu pile" found in corridor. Primary cord tied around primary cord of UR259." |
+| S8 | Urton & Chu 2015, *LAA* 26(4) (abstract page only) | E2 | KH0496 | source_missing | full text not accessible; pp. 519–520 not read |
+| S9 | Urton 2006, *Revista Andina* 42 ([Dialnet](https://dialnet.unirioja.es/servlet/articulo?codigo=2391294)) | E2 | KH0240 | source_missing | "Texto completo no disponible" |
+| S10 | Urton 2004, *Boletín de Arqueología PUCP* 8:289–303 (download, view, DOI, repository) | E2 | KH0240 | source_missing | every URL returns an Anubis bot-check page; repository lists 0 files |
+
+No retrieved page contains the other subject's id (KH0240 / UR004 / Leymebamba on the KH0496 side; KH0496 / UR260 /
+Incahuasi / Inkawasi on the KH0240 side), and none states the pattern. Appendix I covers Inkawasi only ("Leymebamba"
+does not occur). Urton 2004 is a paper on *matching accounts* among Chachapoyas and Ica khipus, so it was the most
+relevant missing source for UR004; it predates the Inkawasi excavations (Appendix I project numbers carry 2013–2014),
+so it could not name UR260. Search snippets of it were **not** used. Urton 2017 (print book) was not retrievable and is
+not recorded as a source.
+
+Web searches (7, listed in the records): the two subject ids, investigator codes with both sites, Leymebamba with
+Inkawasi, Urton 2006, Urton 2004, UR259/UR260, and the collapsed pattern (no relevant hit at all).
+
+### 3. Labels (merge tool)
+Controls C1 ✓, C2 ✓. Source × subject counts: already_paired **0** · mentioned_other_match 3 · not_mentioned 4 ·
+source_missing 3 · method_excluded 0.
+- **KH0240:** mentioned_other_match (E1: KFG similar KH0237 / KH0270; E2: not_mentioned).
+- **KH0496:** mentioned_other_match (E1: KFG similar KH0498 / KH0518; E2: physically tied to **UR259** in Appendix I).
+- **Pair: `not_mentioned` — a literature gap.**
+
+Descriptive, not a test and not pairing: the KH0240 page does cite Urton (2006) on census records ("Censos registrados
+en cordeles con 'amarres': Padrones poblacionales … Text: 188"; paper text not read). No retrieved source says either
+subject records small household counts; Appendix I says of UR259, the khipu UR260 is tied to, "All values 4 or below".
+
+### 4. Reading
+With both controls passing, no retrieved KFG page or named publication pairs **UR004 / KH0240** with **UR260 /
+KH0496**. Each subject's only named partners are different khipus (KFG neighbours; UR259 for UR260). This replaces
+K014's lighter "no literature found" and K028's "No source links UR004 with UR260" with a controlled audit, and it
+agrees with them. It is a **literature gap**: the lead is not known structure, and it is still **not confirmed** and
+not evidence that the pair is real (K028's selected-statistic caveat stands; K051's colour was degenerate). Three
+sources stay unresolved (Urton & Chu 2015 full text, Urton 2006, Urton 2004), and the KFG similar field misses even a
+published match, so the gap holds only for the sources we could read. Same-lead caveat: this is K012's lead.
+No decipherment, no claim of a Leymebamba–Incahuasi link.
+
+### Line 3 status
+**Advanced (literature: gap).** The lead stays unconfirmed. Remaining steps: the held-out value search K028 named,
+which needs khipus added to OKR after the pinned `4039ca5` (data-limited), and reading the three unresolved
+publications if a readable copy appears. Colour-equality on this pair is closed (K051). Not added to the OKR note (no
+cataloguing error found).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

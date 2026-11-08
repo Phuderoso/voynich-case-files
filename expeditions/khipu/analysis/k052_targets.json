@@ -1,0 +1,85 @@
+{
+ "cycle": "K052",
+ "pattern_collapsed": [
+  1,
+  2,
+  1,
+  2,
+  3,
+  1,
+  2,
+  1,
+  3
+ ],
+ "runlen": {
+  "KH0240": [
+   4,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ],
+  "KH0496": [
+   1,
+   1,
+   3,
+   1,
+   1,
+   2,
+   1,
+   1,
+   1
+  ]
+ },
+ "subjects": [
+  {
+   "okr": "KH0240",
+   "inv": "UR004",
+   "kfg": "https://www.khipufieldguide.com/catalog/KH0240.html",
+   "kfg_alt": "https://www.khipufieldguide.com/catalog/UR004.html",
+   "xlsx": "https://www.khipufieldguide.com/databook/excel_khipus/KH0240.xlsx"
+  },
+  {
+   "okr": "KH0496",
+   "inv": "UR260",
+   "kfg": "https://www.khipufieldguide.com/catalog/KH0496.html",
+   "kfg_alt": "https://www.khipufieldguide.com/catalog/UR260.html",
+   "xlsx": "https://www.khipufieldguide.com/databook/excel_khipus/KH0496.xlsx"
+  }
+ ],
+ "controls": {
+  "C1": {
+   "evidence_class": "E1_similar_field",
+   "okr": "KH0616",
+   "inv": "JC009",
+   "partner_okr": "KH0620",
+   "partner_inv": "JC013",
+   "kfg": "https://www.khipufieldguide.com/catalog/KH0616.html",
+   "kfg_partner": "https://www.khipufieldguide.com/catalog/KH0620.html"
+  },
+  "C2": {
+   "evidence_class": "E2_publication_match",
+   "okr": "KH0502",
+   "inv": "UR266",
+   "partner_okr": "KH0514",
+   "partner_inv": "UR275",
+   "kfg": "https://www.khipufieldguide.com/catalog/KH0502.html",
+   "kfg_partner": "https://www.khipufieldguide.com/catalog/KH0514.html"
+  }
+ },
+ "named_publication": {
+  "ref": "Urton & Chu, Appendix I: Inventory of Inkawasi Khipus (supplement to 'Accounting in the King's Storehouse', Latin American Antiquity)",
+  "url": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S1045663500008786/resource/name/S1045663500008786sup001.pdf"
+ },
+ "labels": [
+  "already_paired",
+  "mentioned_other_match",
+  "method_excluded",
+  "not_mentioned",
+  "source_missing"
+ ]
+}
