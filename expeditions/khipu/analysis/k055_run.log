@@ -1,0 +1,85 @@
+G0 {"sha256": "607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db", "sha_ok": true, "n_r5": 3069, "r5_ok": true, "n_eligible": 457, "n_pop": 378, "targets_loaded": true, "empty_mask_L": {"KH0322": 8, "KH0420": 8, "KH0502": 3, "KH0511": 3}, "empty_mask_reproduces_published": true, "r5free_named": ["KH0322"], "r5free_real_mask_reproduces": true, "r5free_detail": {"KH0322": true}, "pass": true}
+G0_targets {"KH0322": {"khipu_id": 1000336, "okr": "KH0322", "inv": "UR086", "n_pend": 107, "n_groups": 23, "n4": 18, "n_r5": 0, "n_unmasked_nonzero": 93, "can_place_masked_L": true, "can_plant": true, "L_empty_mask": 8, "published_L": 8, "empty_mask_matches_published": true, "L_real_mask": 8, "real_mask_matches_published": true}, "KH0420": {"khipu_id": 1000482, "okr": "KH0420", "inv": "UR182", "n_pend": 30, "n_groups": 7, "n4": 4, "n_r5": 3, "n_unmasked_nonzero": 21, "can_place_masked_L": true, "can_plant": true, "L_empty_mask": 8, "published_L": 8, "empty_mask_matches_published": true}, "KH0502": {"khipu_id": 1000607, "okr": "KH0502", "inv": "UR266", "n_pend": 132, "n_groups": 36, "n4": 22, "n_r5": 10, "n_unmasked_nonzero": 80, "can_place_masked_L": true, "can_plant": true, "L_empty_mask": 3, "published_L": 3, "empty_mask_matches_published": true}, "KH0511": {"khipu_id": 1000616, "okr": "KH0511", "inv": "UR273B", "n_pend": 114, "n_groups": 32, "n4": 13, "n_r5": 3, "n_unmasked_nonzero": 29, "can_place_masked_L": true, "can_plant": true, "L_empty_mask": 3, "published_L": 3, "empty_mask_matches_published": true}}
+CONF KH0322 L_unmasked 8 L_masked 8 n_r5 0 p 0.0008499575021248938 scorable True 0.5
+CONF KH0420 L_unmasked 8 L_masked 8 n_r5 3 p 0.00034998250087495624 scorable True 0.5
+CONF KH0502 L_unmasked 3 L_masked 3 n_r5 10 p 0.012199390030498474 scorable True 0.6
+CONF KH0511 L_unmasked 3 L_masked 3 n_r5 3 p 0.0021498925053747312 scorable True 0.7
+FPR 50 2.1
+FPR 100 3.6
+FPR 150 5.1
+FPR 200 7.0
+FPR 0.005 hits 1 / 200 gate True binom 0.9999649473336713
+POW KH0322 0.13 det 26 / 200 skip 0 11.2
+POW KH0420 1.0 det 200 / 200 skip 0 13.1
+POW KH0502 1.0 det 200 / 200 skip 0 17.3
+POW KH0511 1.0 det 200 / 200 skip 0 21.1
+{
+ "overall": "ROBUST",
+ "per_khipu": {
+  "KH0322": {
+   "p_orig": 0.0014,
+   "p_masked": 0.0008499575021248938,
+   "L_orig": 8,
+   "L_unmasked": 8,
+   "L_masked": 8,
+   "n_r5": 0,
+   "power": 0.13,
+   "verdict": "survives",
+   "why": "masked p=0.00084996 <= 0.025",
+   "scorable": true
+  },
+  "KH0420": {
+   "p_orig": 0.0002,
+   "p_masked": 0.00034998250087495624,
+   "L_orig": 8,
+   "L_unmasked": 8,
+   "L_masked": 8,
+   "n_r5": 3,
+   "power": 1.0,
+   "verdict": "survives",
+   "why": "masked p=0.00034998 <= 0.025",
+   "scorable": true
+  },
+  "KH0502": {
+   "p_orig": 0.01465,
+   "p_masked": 0.012199390030498474,
+   "L_orig": 3,
+   "L_unmasked": 3,
+   "L_masked": 3,
+   "n_r5": 10,
+   "power": 1.0,
+   "verdict": "survives",
+   "why": "masked p=0.012199 <= 0.025",
+   "scorable": true
+  },
+  "KH0511": {
+   "p_orig": 0.00195,
+   "p_masked": 0.0021498925053747312,
+   "L_orig": 3,
+   "L_unmasked": 3,
+   "L_masked": 3,
+   "n_r5": 3,
+   "power": 1.0,
+   "verdict": "survives",
+   "why": "masked p=0.0021499 <= 0.025",
+   "scorable": true
+  }
+ },
+ "fpr": {
+  "n": 200,
+  "hits": 1,
+  "fpr": 0.005,
+  "gate_pass": true,
+  "gate_threshold": 0.08,
+  "binom_p_above_0_05": 0.9999649473336713,
+  "seed": 5555,
+  "R": 5000
+ },
+ "power": {
+  "KH0322": 0.13,
+  "KH0420": 1.0,
+  "KH0502": 1.0,
+  "KH0511": 1.0
+ },
+ "secs": 21.1
+}

@@ -135,6 +135,86 @@ p-value, FPR or power number was computed.
 
 
 ## Results
-*(section reserved; no confirmation, FPR or power number is written until after this pre-registration is committed)*
+One run, 2026-11-08 12:11:47–12:12:08 PT (America/Vancouver), 21.1 s, no crash, no amendment to the prereg.
+Command: `timeout 560 python3 tools/k055_multinumber_holdout_L.py khipu.db` from `expeditions/khipu/`.
+Output: [`analysis/k055_results.json`](../analysis/k055_results.json), log [`analysis/k055_run.log`](../analysis/k055_run.log).
+Prereg + tool committed first as `09636e7`.
+
+**G0 fixture: pass** (reconfirmed at the start of the full run; same facts as the pre-commit `--smoke`).
+
+**Gates: pass.**
+
+### 1. G1 FPR (seed 5555) — **pass**
+200 random other multi-group pop khipus, one masked-within-khipu permutation as a null "observed" each,
+R = 5 000: **1 / 200 = 0.005** (≤ 0.08; binomial P(X ≥ 1 | n = 200, 0.05) = 0.99996). The test is
+conservative here, as in K037 (L is discrete and is 0 in most null draws).
+
+Exchangeable tail on the named khipus' own 20 000 masked-null L draws (descriptive): KH0322 0.02915 at
+critical value 6; KH0420 0.04835 at critical value 3. For KH0502 and KH0511 the α = 0.025 critical value
+is 0 (null L = 0 in more than 97.5 % of draws), so the descriptive "tail at crit" is 1.0 — a discreteness
+artefact of the descriptive, not a calibration failure. The decision uses the exact p, which only counts
+draws with L ≥ 3.
+
+### 2. G2 power (seed 5554)
+Per named khipu, N = 200 plants, R_pow = 5 000. No name was skipped for G2 (all four can host a plant).
+
+| Khipu | Power (p ≤ 0.025) | k used | Notes |
+|---|---|---|---|
+| KH0322 / UR086 | 0.13 (26/200) | k = 6 (200/200) | Low, as in K034 (0.11): a single k = 6 plant in a 107-pendant / 23-group khipu rarely pushes L past the α = 0.025 critical value (~6). Matters only for a *negative*. |
+| KH0420 / UR182 | 1.00 (200/200) | k = 6 (200/200) | |
+| KH0502 / UR266 | 1.00 (200/200) | **k = 5 fallback** (200/200) | No group of size ≥ 8 had a fully non-R5 k = 6 block; the pre-registered fallback was used, not a lowered bar. |
+| KH0511 / UR273B | 1.00 (200/200) | **k = 5 fallback** (200/200) | Same fallback (no legal k = 6 non-R5 plant). |
+
+KH0322's power is below 0.5, so a *negative* on that name would have been not testable. All four names are
+positives, so the low power does not change any verdict.
+
+### 3. Confirmation (R = 20 000; α_i = 0.025 each)
+
+| Khipu | R5 | L orig → masked | null mean / p95 / p99 / max | p orig → masked | Power | Fate |
+|---|---|---|---|---|---|---|
+| KH0322 / UR086 | 0 | 8 → **8** | 1.94 / 5 / 6 / 8 | 0.0014 → **0.00085** | 0.13 | **survives** |
+| KH0420 / UR182 | 3 | 8 → **8** | 0.2545 / 2 / 4 / 8 | 0.00020 → **0.00035** | 1.00 | **survives** |
+| KH0502 / UR266 | 10 | 3 → **3** | 0.0591 / 0 / 3 / 5 | 0.01465 → **0.01220** | 1.00 | **survives** |
+| KH0511 / UR273B | 3 | 3 → **3** | 0.0089 / 0 / 0 / 6 | 0.00195 → **0.00215** | 1.00 | **survives** |
+
+Unmasked L computed by the same code matches each published value (already required by G0). Masked L equals
+unmasked L on every name: the R5 cords are not part of the max-k windows the detector sees.
+
+Descriptive (not for the decision):
+- KH0322: 2 hit pendants in 2 of 18 eligible groups (max-k hit in group 2; LOO after zeroing it → L = 3). Same layout as K034.
+- KH0420: 1 hit pendant in 1 of 4 eligible groups (max-k hit in group 6; LOO → L = 0). Same layout as K034; the three R5 pendants are not in that window.
+- KH0502: 1 hit pendant in 1 of 22 eligible groups (max-k hit in group 1; LOO → L = 0). Unmasked K037 had LOO → L = 2 (a shorter hit remained elsewhere). Under the mask that secondary hit is gone: the remaining signal is a single 3-cord window. This matches the D5w score cut K054 reported (6.81 → 3.56) without changing L itself.
+- KH0511: 1 hit pendant in 1 of 13 eligible groups (max-k hit in group 6; LOO → L = 0). Same single-window layout as K037; the three R5 pendants are not in that window (K054's D5w statistic was likewise unchanged at 3.20).
+
+### Reading
+All four frozen held-out L confirmations **survive** the multi-number mask. Every name keeps its published L,
+and every masked p stays ≤ 0.025, with the FPR gate passed and no BH list consulted.
+
+The scientifically sharp case is KH0511/UR273B. K054 dropped it from the masked F1 BH list as an
+R5-score-invariant boundary case (D5w unchanged at 3.20; p 0.00160 → 0.00210, just over the BH bar). The
+holdout asked here does not use that ranking: L stays 3 and p stays well under 0.025 (0.00195 → 0.00215),
+because a 3-cord within-group sum is still rare under this frame's masked null (null mean 0.0089). The scan
+and the confirmation therefore disagree about this name under the mask, for the reason K054 already named
+(a Monte-Carlo BH-boundary move, not a masking cut of the window). I report both facts and do not reopen
+either rule.
+
+KH0502/UR266, the name closest to α and the one K053 lost under masked D2, also keeps L = 3
+(p 0.01465 → 0.01220). The mask does cut something — the secondary shorter hit that K037's LOO still saw
+is gone — but the remaining window is enough to stay confirmed. KH0322 is R5-free, so its change
+(p 0.0014 → 0.00085) is a fresh-seed rerun of the same test. KH0420's three R5 pendants sit outside the
+L = 8 window (D5w was already unchanged in K054).
+
+Plant power of 1.00 on KH0502 and KH0511 refers to the fallback k = 5 plants (a stronger effect than the
+observed L = 3); it only matters for negatives.
+
+**Decision: ROBUST (all four named khipus survive; FPR gate passed).** The held-out L confirmations of
+KH0322/UR086, KH0420/UR182, KH0502/UR266 and KH0511/UR273B are robust to the multi-number mask.
+Same-data sensitivity, not an independent replication; no new structure is claimed.
+
+### Next (line 1)
+The optional R5-mask of the frozen holdout confirmations is done. Combined with K054 (13 of 14 F1 names
+survive the masked D5w scan; KH0511 a BH-boundary drop whose L confirmation still holds here), line 1's
+multi-number sensitivity on both the reference list and its held-out confirmations is mapped. Line 1's
+power fork stays closed (K039). No further R5-mask of these same four names is owed.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

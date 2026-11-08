@@ -1,0 +1,373 @@
+{
+ "design": {
+  "statistic": "masked_longest_within_group_exact_sum_window_L",
+  "alpha_per_khipu": 0.025,
+  "bonferroni": null,
+  "note": "sensitivity of frozen tests; original confirmation alpha_i=0.025 kept; not a new four-way discovery",
+  "R_CONF": 20000,
+  "R_FPR": 5000,
+  "R_POW": 5000,
+  "N_FPR": 200,
+  "N_POW": 200,
+  "plant": "masked-permute then one within-group exact sum k=6 (fallback k=5), all non-R5",
+  "seeds": {
+   "KH0322": 5550,
+   "KH0420": 5551,
+   "KH0502": 5552,
+   "KH0511": 5553,
+   "power": 5554,
+   "fpr": 5555
+  },
+  "smoke": false,
+  "mask": "K008 structure-preserving R5",
+  "published_L": {
+   "KH0322": 8,
+   "KH0420": 8,
+   "KH0502": 3,
+   "KH0511": 3
+  },
+  "published_p": {
+   "KH0322": 0.0014,
+   "KH0420": 0.0002,
+   "KH0502": 0.01465,
+   "KH0511": 0.00195
+  }
+ },
+ "G0": {
+  "sha256": "607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db",
+  "sha_ok": true,
+  "n_r5": 3069,
+  "r5_ok": true,
+  "n_eligible": 457,
+  "n_pop": 378,
+  "targets_loaded": true,
+  "empty_mask_L": {
+   "KH0322": 8,
+   "KH0420": 8,
+   "KH0502": 3,
+   "KH0511": 3
+  },
+  "empty_mask_reproduces_published": true,
+  "r5free_named": [
+   "KH0322"
+  ],
+  "r5free_real_mask_reproduces": true,
+  "r5free_detail": {
+   "KH0322": true
+  },
+  "targets": {
+   "KH0322": {
+    "khipu_id": 1000336,
+    "okr": "KH0322",
+    "inv": "UR086",
+    "n_pend": 107,
+    "n_groups": 23,
+    "n4": 18,
+    "n_r5": 0,
+    "n_unmasked_nonzero": 93,
+    "can_place_masked_L": true,
+    "can_plant": true,
+    "L_empty_mask": 8,
+    "published_L": 8,
+    "empty_mask_matches_published": true,
+    "L_real_mask": 8,
+    "real_mask_matches_published": true
+   },
+   "KH0420": {
+    "khipu_id": 1000482,
+    "okr": "KH0420",
+    "inv": "UR182",
+    "n_pend": 30,
+    "n_groups": 7,
+    "n4": 4,
+    "n_r5": 3,
+    "n_unmasked_nonzero": 21,
+    "can_place_masked_L": true,
+    "can_plant": true,
+    "L_empty_mask": 8,
+    "published_L": 8,
+    "empty_mask_matches_published": true
+   },
+   "KH0502": {
+    "khipu_id": 1000607,
+    "okr": "KH0502",
+    "inv": "UR266",
+    "n_pend": 132,
+    "n_groups": 36,
+    "n4": 22,
+    "n_r5": 10,
+    "n_unmasked_nonzero": 80,
+    "can_place_masked_L": true,
+    "can_plant": true,
+    "L_empty_mask": 3,
+    "published_L": 3,
+    "empty_mask_matches_published": true
+   },
+   "KH0511": {
+    "khipu_id": 1000616,
+    "okr": "KH0511",
+    "inv": "UR273B",
+    "n_pend": 114,
+    "n_groups": 32,
+    "n4": 13,
+    "n_r5": 3,
+    "n_unmasked_nonzero": 29,
+    "can_place_masked_L": true,
+    "can_plant": true,
+    "L_empty_mask": 3,
+    "published_L": 3,
+    "empty_mask_matches_published": true
+   }
+  },
+  "pass": true
+ },
+ "confirmation": {
+  "KH0322": {
+   "khipu_id": 1000336,
+   "okr": "KH0322",
+   "inv": "UR086",
+   "n_pend": 107,
+   "n_groups": 23,
+   "n_r5": 0,
+   "n_unmasked_nonzero": 93,
+   "scorable": true,
+   "L_unmasked": 8,
+   "L_masked": 8,
+   "published_L": 8,
+   "published_p": 0.0014,
+   "published_source": "K034",
+   "detail": {
+    "L": 8,
+    "n_hits": 2,
+    "n_groups_hit": 2,
+    "n_eligible_groups": 18,
+    "max_k_groups": [
+     2
+    ],
+    "loo_L_after_zeroing_max_groups": 3
+   },
+   "p": 0.0008499575021248938,
+   "null_mean": 1.94415,
+   "null_p95": 5.0,
+   "null_p99": 6.0,
+   "null_max": 8,
+   "crit_alpha": 6,
+   "null_tail_at_crit": 0.02915,
+   "R": 20000,
+   "seed": 5550
+  },
+  "KH0420": {
+   "khipu_id": 1000482,
+   "okr": "KH0420",
+   "inv": "UR182",
+   "n_pend": 30,
+   "n_groups": 7,
+   "n_r5": 3,
+   "n_unmasked_nonzero": 21,
+   "scorable": true,
+   "L_unmasked": 8,
+   "L_masked": 8,
+   "published_L": 8,
+   "published_p": 0.0002,
+   "published_source": "K034",
+   "detail": {
+    "L": 8,
+    "n_hits": 1,
+    "n_groups_hit": 1,
+    "n_eligible_groups": 4,
+    "max_k_groups": [
+     6
+    ],
+    "loo_L_after_zeroing_max_groups": 0
+   },
+   "p": 0.00034998250087495624,
+   "null_mean": 0.2545,
+   "null_p95": 2.0,
+   "null_p99": 4.0,
+   "null_max": 8,
+   "crit_alpha": 3,
+   "null_tail_at_crit": 0.04835,
+   "R": 20000,
+   "seed": 5551
+  },
+  "KH0502": {
+   "khipu_id": 1000607,
+   "okr": "KH0502",
+   "inv": "UR266",
+   "n_pend": 132,
+   "n_groups": 36,
+   "n_r5": 10,
+   "n_unmasked_nonzero": 80,
+   "scorable": true,
+   "L_unmasked": 3,
+   "L_masked": 3,
+   "published_L": 3,
+   "published_p": 0.01465,
+   "published_source": "K037",
+   "detail": {
+    "L": 3,
+    "n_hits": 1,
+    "n_groups_hit": 1,
+    "n_eligible_groups": 22,
+    "max_k_groups": [
+     1
+    ],
+    "loo_L_after_zeroing_max_groups": 0
+   },
+   "p": 0.012199390030498474,
+   "null_mean": 0.05905,
+   "null_p95": 0.0,
+   "null_p99": 3.0,
+   "null_max": 5,
+   "crit_alpha": 0,
+   "null_tail_at_crit": 1.0,
+   "R": 20000,
+   "seed": 5552
+  },
+  "KH0511": {
+   "khipu_id": 1000616,
+   "okr": "KH0511",
+   "inv": "UR273B",
+   "n_pend": 114,
+   "n_groups": 32,
+   "n_r5": 3,
+   "n_unmasked_nonzero": 29,
+   "scorable": true,
+   "L_unmasked": 3,
+   "L_masked": 3,
+   "published_L": 3,
+   "published_p": 0.00195,
+   "published_source": "K037",
+   "detail": {
+    "L": 3,
+    "n_hits": 1,
+    "n_groups_hit": 1,
+    "n_eligible_groups": 13,
+    "max_k_groups": [
+     6
+    ],
+    "loo_L_after_zeroing_max_groups": 0
+   },
+   "p": 0.0021498925053747312,
+   "null_mean": 0.00885,
+   "null_p95": 0.0,
+   "null_p99": 0.0,
+   "null_max": 6,
+   "crit_alpha": 0,
+   "null_tail_at_crit": 1.0,
+   "R": 20000,
+   "seed": 5553
+  }
+ },
+ "fpr": {
+  "n": 200,
+  "hits": 1,
+  "fpr": 0.005,
+  "gate_pass": true,
+  "gate_threshold": 0.08,
+  "binom_p_above_0_05": 0.9999649473336713,
+  "seed": 5555,
+  "R": 5000
+ },
+ "power": {
+  "KH0322": {
+   "n_plants": 200,
+   "skipped": 0,
+   "detected": 26,
+   "power": 0.13,
+   "R": 5000,
+   "skipped_g2": false,
+   "k_used_counts": {
+    "6": 200
+   }
+  },
+  "KH0420": {
+   "n_plants": 200,
+   "skipped": 0,
+   "detected": 200,
+   "power": 1.0,
+   "R": 5000,
+   "skipped_g2": false,
+   "k_used_counts": {
+    "6": 200
+   }
+  },
+  "KH0502": {
+   "n_plants": 200,
+   "skipped": 0,
+   "detected": 200,
+   "power": 1.0,
+   "R": 5000,
+   "skipped_g2": false,
+   "k_used_counts": {
+    "5": 200
+   }
+  },
+  "KH0511": {
+   "n_plants": 200,
+   "skipped": 0,
+   "detected": 200,
+   "power": 1.0,
+   "R": 5000,
+   "skipped_g2": false,
+   "k_used_counts": {
+    "5": 200
+   }
+  }
+ },
+ "per_khipu": {
+  "KH0322": {
+   "p_orig": 0.0014,
+   "p_masked": 0.0008499575021248938,
+   "L_orig": 8,
+   "L_unmasked": 8,
+   "L_masked": 8,
+   "n_r5": 0,
+   "power": 0.13,
+   "verdict": "survives",
+   "why": "masked p=0.00084996 <= 0.025",
+   "scorable": true
+  },
+  "KH0420": {
+   "p_orig": 0.0002,
+   "p_masked": 0.00034998250087495624,
+   "L_orig": 8,
+   "L_unmasked": 8,
+   "L_masked": 8,
+   "n_r5": 3,
+   "power": 1.0,
+   "verdict": "survives",
+   "why": "masked p=0.00034998 <= 0.025",
+   "scorable": true
+  },
+  "KH0502": {
+   "p_orig": 0.01465,
+   "p_masked": 0.012199390030498474,
+   "L_orig": 3,
+   "L_unmasked": 3,
+   "L_masked": 3,
+   "n_r5": 10,
+   "power": 1.0,
+   "verdict": "survives",
+   "why": "masked p=0.012199 <= 0.025",
+   "scorable": true
+  },
+  "KH0511": {
+   "p_orig": 0.00195,
+   "p_masked": 0.0021498925053747312,
+   "L_orig": 3,
+   "L_unmasked": 3,
+   "L_masked": 3,
+   "n_r5": 3,
+   "power": 1.0,
+   "verdict": "survives",
+   "why": "masked p=0.0021499 <= 0.025",
+   "scorable": true
+  }
+ },
+ "overall": "ROBUST",
+ "n_survive": 4,
+ "n_no_longer_established": 0,
+ "n_not_testable": 0,
+ "secs": 21.1
+}
