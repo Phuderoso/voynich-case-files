@@ -1,0 +1,11 @@
+gate jobs 28.9
+gen runs 40 198.4
+{'subset': 'IT2a_A', 'n': 10592, 'unit': 'ch', 'voynich': 0.0679, 'gen_min': 0.0637, 'gen_med': 0.1578, 'gen_max': 0.282, 'p': 0.122, 'loo_fpr': 0.05, 'passes_rule': False, 'BH_reject': False}
+{'subset': 'IT2a_A', 'n': 10592, 'unit': 'q', 'voynich': 0.0374, 'gen_min': 0.0, 'gen_med': 0.0153, 'gen_max': 0.0702, 'p': 0.1707, 'loo_fpr': 0.05, 'passes_rule': False, 'BH_reject': False}
+{'subset': 'IT2a_B', 'n': 15000, 'unit': 'ch', 'voynich': 0.0094, 'gen_min': 0.066, 'gen_med': 0.1644, 'gen_max': 0.2887, 'p': 0.0244, 'loo_fpr': 0.05, 'passes_rule': True, 'BH_reject': True}
+{'subset': 'IT2a_B', 'n': 15000, 'unit': 'q', 'voynich': 0.1258, 'gen_min': 0.0, 'gen_med': 0.018, 'gen_max': 0.0621, 'p': 0.0244, 'loo_fpr': 0.05, 'passes_rule': True, 'BH_reject': True}
+{'subset': 'ZL3b_A', 'n': 10847, 'unit': 'ch', 'voynich': 0.0598, 'gen_min': 0.0512, 'gen_med': 0.1605, 'gen_max': 0.2954, 'p': 0.0488, 'loo_fpr': 0.05, 'passes_rule': False, 'BH_reject': False}
+{'subset': 'ZL3b_A', 'n': 10847, 'unit': 'q', 'voynich': 0.0358, 'gen_min': 0.0, 'gen_med': 0.0163, 'gen_max': 0.0669, 'p': 0.1707, 'loo_fpr': 0.05, 'passes_rule': False, 'BH_reject': False}
+{'subset': 'ZL3b_B', 'n': 15000, 'unit': 'ch', 'voynich': 0.033, 'gen_min': 0.0677, 'gen_med': 0.1621, 'gen_max': 0.2848, 'p': 0.0244, 'loo_fpr': 0.05, 'passes_rule': True, 'BH_reject': True}
+{'subset': 'ZL3b_B', 'n': 15000, 'unit': 'q', 'voynich': 0.1288, 'gen_min': 0.0, 'gen_med': 0.0178, 'gen_max': 0.0639, 'p': 0.0244, 'loo_fpr': 0.05, 'passes_rule': True, 'BH_reject': True}
+{'ch': 'PARTIAL', 'ch_n': '2/4', 'q': 'PARTIAL', 'q_n': '2/4'} 20/20 20/20 213.4

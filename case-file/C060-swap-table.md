@@ -28,4 +28,6 @@ I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (c
 ## Audit
 C059's journal header gives ~10:47–11:05 PT, but the work ended ~10:53 PT; noted here, the file is left unchanged.
 
+**Correction added in C063 (2026-11-08):** the post-hoc statement above ("`ch` 11–26% in all 12 generator halves, 1–5% in all 4 manuscript halves") was too tight. [C063](C063-ch-q-replication.md) re-ran the generator on 40 fresh seeds: the `ch` share ranges 5–30%, and Currier A pages carry 6.0–6.8% (inside the generator's range). The deficit replicates only in Currier B (0.9–3.3%, below all 40 runs), and the `q` excess only in B (12.6–12.9% vs generator max 6–7%). C060's numbers are unchanged.
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
