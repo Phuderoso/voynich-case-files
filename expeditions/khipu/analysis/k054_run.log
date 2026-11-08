@@ -1,0 +1,62 @@
+G0 {"sha256": "607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db", "sha_ok": true, "n_r5": 3069, "r5_ok": true, "n_eligible": 457, "eligible_ok": true, "n_pop": 378, "pop_ok": true, "f1_loaded_ok": true, "scores_empty_mask_reproduces": "457/457", "scores_zero_r5_reproduces": "242/242", "n_r5free_eligible": 242, "n_with_r5_pop": 186, "n_testable": 365, "n_not_testable": 13, "pass": true}
+gates 25 / 365 10.3 s
+gates 50 / 365 14.5 s
+gates 75 / 365 20.7 s
+gates 100 / 365 22.7 s
+gates 125 / 365 25.4 s
+gates 150 / 365 28.5 s
+gates 175 / 365 33.9 s
+gates 200 / 365 38.7 s
+gates 225 / 365 43.2 s
+gates 250 / 365 45.1 s
+gates 275 / 365 49.7 s
+gates 300 / 365 56.0 s
+gates 325 / 365 58.5 s
+gates 350 / 365 62.7 s
+gates {"seed": 5454, "K": 10000, "m_plant": 6, "calib_n": 365, "fpr": 0.049315068493150684, "calib_bh_flags": 0, "plant_n": 346, "power": 0.953757225433526, "G1": true, "G2": true, "G2_evaluable": true, "seconds": 67.4}
+gates skipped ['KH0243/UR007', 'KH0221/AS203', 'KH0219/AS201', 'KH0129/AS115', 'KH0160/UR1144', 'KH0186/AS169', 'KH0194/AS177', 'KH0195/AS178', 'KH0071/AS060', 'KH0052/AS041', 'KH0050/AS039', 'KH0090/AS077', 'KH0411/UR172', 'KH0405/UR166', 'KH0431/UR193', 'KH0443/UR205', 'KH0485/UR249', 'KH0491/UR255', 'KH0510/UR273A']
+scan 25 / 365 4.2 s
+scan 50 / 365 6.2 s
+scan 75 / 365 9.3 s
+scan 100 / 365 10.3 s
+scan 125 / 365 11.7 s
+scan 150 / 365 13.1 s
+scan 175 / 365 15.8 s
+scan 200 / 365 18.2 s
+scan 225 / 365 20.4 s
+scan 250 / 365 21.3 s
+scan 275 / 365 23.6 s
+scan 300 / 365 26.8 s
+scan 325 / 365 28.1 s
+scan 350 / 365 30.3 s
+F1 done 31.7
+{
+ "detector": "D5w_F1",
+ "n_tested": 365,
+ "n_bh": 13,
+ "orig_n_bh": 14,
+ "bh_bar_at_rank": 0.0017808219178082193,
+ "bh_rank": 13,
+ "survive": 13,
+ "lost": 1,
+ "not_testable": 0,
+ "new_candidates": [],
+ "gate_G1": true,
+ "gate_G2": true,
+ "verdict": "gates pass"
+}
+F1 {'name': 'KH0322/UR086', 'n_r5': 0, 'stratum': 'large', 'stat_unmasked': 4.677068312644881, 'stat_masked': 4.677068312644881, 'p_orig': 0.0006999300069993001, 'p_masked': 0.0005999400059994001, 'cnt_masked': 6, 'fate': 'survives'}
+F1 {'name': 'KH0395/UR155', 'n_r5': 0, 'stratum': 'small', 'stat_unmasked': 8.15836249209525, 'stat_masked': 8.15836249209525, 'p_orig': 0.0010998900109989002, 'p_masked': 0.0005999400059994001, 'cnt_masked': 6, 'fate': 'survives'}
+F1 {'name': 'KH0420/UR182', 'n_r5': 3, 'stratum': 'small', 'stat_unmasked': 2.0718820073061255, 'stat_masked': 2.0718820073061255, 'p_orig': 0.0013998600139986002, 'p_masked': 0.0008999100089991, 'cnt_masked': 9, 'fate': 'survives'}
+F1 {'name': 'KH0428/UR190', 'n_r5': 2, 'stratum': 'large', 'stat_unmasked': 32.70553639766403, 'stat_masked': 32.70553639766403, 'p_orig': 0.000999900009999, 'p_masked': 0.0010998900109989002, 'cnt_masked': 11, 'fate': 'survives'}
+F1 {'name': 'KH0478/UR242', 'n_r5': 0, 'stratum': 'large', 'stat_unmasked': 12.664696059065276, 'stat_masked': 12.664696059065276, 'p_orig': 0.0010998900109989002, 'p_masked': 0.0010998900109989002, 'cnt_masked': 11, 'fate': 'survives'}
+F1 {'name': 'KH0491/UR255', 'n_r5': 12, 'stratum': 'large', 'stat_unmasked': 20.329257475882123, 'stat_masked': 8.569354816626625, 'p_orig': 9.999000099990002e-05, 'p_masked': 0.00019998000199980003, 'cnt_masked': 2, 'fate': 'survives'}
+F1 {'name': 'KH0492/UR256', 'n_r5': 13, 'stratum': 'large', 'stat_unmasked': 23.630801564617435, 'stat_masked': 16.148596923709707, 'p_orig': 0.0006999300069993001, 'p_masked': 0.000999900009999, 'cnt_masked': 10, 'fate': 'survives'}
+F1 {'name': 'KH0502/UR266', 'n_r5': 10, 'stratum': 'large', 'stat_unmasked': 6.805213272247636, 'stat_masked': 3.558468562523795, 'p_orig': 0.0008999100089991, 'p_masked': 0.0006999300069993001, 'cnt_masked': 7, 'fate': 'survives'}
+F1 {'name': 'KH0504/UR267B', 'n_r5': 17, 'stratum': 'large', 'stat_unmasked': 34.01485427181407, 'stat_masked': 23.52922289208806, 'p_orig': 0.00039996000399960006, 'p_masked': 0.0004999500049995, 'cnt_masked': 5, 'fate': 'survives'}
+F1 {'name': 'KH0506/UR269', 'n_r5': 21, 'stratum': 'large', 'stat_unmasked': 47.81510109918057, 'stat_masked': 41.64477131052649, 'p_orig': 0.00039996000399960006, 'p_masked': 0.00039996000399960006, 'cnt_masked': 4, 'fate': 'survives'}
+F1 {'name': 'KH0507/UR270', 'n_r5': 22, 'stratum': 'large', 'stat_unmasked': 11.324693913861775, 'stat_masked': 9.204119982655925, 'p_orig': 0.0005999400059994001, 'p_masked': 0.0005999400059994001, 'cnt_masked': 6, 'fate': 'survives'}
+F1 {'name': 'KH0511/UR273B', 'n_r5': 3, 'stratum': 'large', 'stat_unmasked': 3.2041199826559246, 'stat_masked': 3.2041199826559246, 'p_orig': 0.0015998400159984002, 'p_masked': 0.0020997900209979003, 'cnt_masked': 21, 'fate': 'no longer established'}
+F1 {'name': 'KH0513/UR274B', 'n_r5': 1, 'stratum': 'large', 'stat_unmasked': 6.260691365937477, 'stat_masked': 6.260691365937477, 'p_orig': 0.00019998000199980003, 'p_masked': 0.0004999500049995, 'cnt_masked': 5, 'fate': 'survives'}
+F1 {'name': 'KH0514/UR275', 'n_r5': 13, 'stratum': 'large', 'stat_unmasked': 33.239666680245, 'stat_masked': 23.14684265350612, 'p_orig': 0.00029997000299970003, 'p_masked': 0.00039996000399960006, 'cnt_masked': 4, 'fate': 'survives'}
+seconds 99.1

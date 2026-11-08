@@ -51,4 +51,69 @@
   Output: `analysis/k054_results.json` (checkpoint `analysis/k054_checkpoint.json`, left untracked).
 
 ## Results
-_(to be added after the run)_
+One run, 2026-11-08 ~11:24–11:26 PT (America/Vancouver), 99.1 s, no crash, no amendment to the prereg.
+Output: [`analysis/k054_results.json`](../analysis/k054_results.json), log [`analysis/k054_run.log`](../analysis/k054_run.log).
+
+**G0 fixture: pass.** sha256 matches; 3 069 R5 cords (K007/K008 count); eligible = 457 and pop = K036's 378 ids;
+published F1 list loads as the 14 reference names; empty mask reproduces K036's unmasked D5w scores 457/457; with
+the real mask the 242 R5-free eligible khipus reproduce those scores 242/242. 186 of 378 pop khipus carry R5
+pendants; **365 testable, 13 not testable** (none of the 14): KH0001, KH0032, KH0089, KH0190, KH0227, KH0281,
+KH0410, KH0522, KH0551, KH0564, KH0572, KH0585, KH0619.
+
+**Gates (seed 5454, K = 10 000): pass.**
+
+| | G1 FPR at p ≤ 0.05 (n = 365) | BH flags on calibration | G2 m = 6 power at p ≤ 0.05 (n = 346) |
+|---|---|---|---|
+| masked D5w / F1 | **0.0493** (18/365, ≤ 0.05 ✓) | 0 | **0.954** (330/346, ≥ 0.50 ✓; unmasked K036 large was 0.9516) |
+
+Nineteen testable khipus could not place six non-R5 within-group windows and were skipped for the plant
+(KH0050, KH0052, KH0071, KH0090, KH0129, KH0160, KH0186, KH0194, KH0195, KH0219, KH0221, KH0243, KH0405,
+KH0411, KH0431, KH0443, KH0485, KH0491, KH0510). G2 remains evaluable (346 ≥ 30).
+
+**Corpus (BH q = 0.05 over 365).** Masked F1 (seed 5455, fixed K = 10 000): **13 BH** (bar at rank 13 = 0.00178).
+**No new candidate**: every masked BH name was already on the original 14.
+
+| Khipu | R5 pendants | D5w stat orig → masked | p orig → masked | Fate |
+|---|---|---|---|---|
+| KH0322 UR086 | 0 | 4.68 → 4.68 | 0.00070 → 0.00060 | survives |
+| KH0395 UR155 | 0 | 8.16 → 8.16 | 0.00110 → 0.00060 | survives |
+| KH0420 UR182 | 3 | 2.07 → 2.07 | 0.00140 → 0.00090 | survives |
+| KH0428 UR190 | 2 | 32.71 → 32.71 | 0.00100 → 0.00110 | survives |
+| KH0478 UR242 | 0 | 12.66 → 12.66 | 0.00110 → 0.00110 | survives |
+| KH0491 UR255 | 12 | 20.33 → 8.57 | 0.00010 → 0.00020 | survives |
+| KH0492 UR256 | 13 | 23.63 → 16.15 | 0.00070 → 0.00100 | survives |
+| KH0502 UR266 | 10 | 6.81 → 3.56 | 0.00090 → 0.00070 | survives |
+| KH0504 UR267B | 17 | 34.01 → 23.53 | 0.00040 → 0.00050 | survives |
+| KH0506 UR269 | 21 | 47.82 → 41.64 | 0.00040 → 0.00040 | survives |
+| KH0507 UR270 | 22 | 11.32 → 9.20 | 0.00060 → 0.00060 | survives |
+| KH0511 UR273B | 3 | 3.20 → 3.20 | 0.00160 → 0.00210 | **no longer established** ¹ |
+| KH0513 UR274B | 1 | 6.26 → 6.26 | 0.00020 → 0.00050 | survives |
+| KH0514 UR275 | 13 | 33.24 → 23.15 | 0.00030 → 0.00040 | survives |
+
+¹ KH0511's D5w statistic is **unchanged** (3.20 → 3.20): its three R5 pendants are not part of the within-group
+hits the detector sees. Fresh Monte-Carlo draws (fixed K = 10 000) moved p from 0.00160 (cnt 16) to 0.00210
+(cnt 21), just above the BH bar (0.00178 at rank 13; even the rank-14 bar would be 0.00192). By the
+pre-registered rule it is "no longer established", but the cause is a BH-boundary case, not a masking cut of the
+signal. K037 had already noted that this name rests on a single 3-cord window (LOO → 0); that holdout is a
+different test and was not rerun. I report the drop as the rule says and don't change the rule after the fact.
+
+**K036 F1 (14 names): 13 survive, 1 no longer established (KH0511 UR273B — boundary case, see ¹), 0 not
+testable.** No new BH candidate.
+
+The two names K053 lost under other detectors both **survive** here, even though the mask cuts their scores the
+same way: KH0502 UR266 (stat 6.81 → 3.56; lost under masked D2) and KH0491 UR255 (stat 20.33 → 8.57; lost under
+masked D5). Under within-group D5w the remaining signal still clears the BH bar. Several other Inkawasi records
+also drop in score but stay significant (KH0492, KH0504, KH0506, KH0507, KH0514). Names whose score is unchanged
+are either R5-free (KH0322, KH0395, KH0478) or carry R5 pendants that are not in the D5w hits (KH0420, KH0428,
+KH0511, KH0513).
+
+## Verdict
+- Gates pass (FPR 0.0493; m = 6 planted recovery 0.954, matching the unmasked K036 large p ≤ 0.05 rate).
+- **The K036 F1 / D5w reference list is robust to the multi-number mask**: 13 of 14 survive, nothing on the list
+  becomes not testable, and no new candidate appears. The one loss (KH0511 UR273B) is a BH-boundary Monte-Carlo
+  move with an unchanged statistic, not a masking cut.
+- Same-data sensitivity, not an independent replication; no new structure is claimed.
+- The optional line-1 step named after K053 is done. Line 1's power fork stays closed (K039); this cycle does
+  not reopen it.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
