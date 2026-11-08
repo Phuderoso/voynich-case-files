@@ -104,6 +104,7 @@ meaning across many folios and beats the controls.
 
 ## Parallel expeditions
 - [Inka khipu](expeditions/khipu/README.md): exact arithmetic tests on the Open Khipu Repository. Why this one: [triage](expeditions/TRIAGE.md).
+- [Proto-Elamite accounts](expeditions/proto-elamite/README.md) (opened 2026-11-08): exact totals and numerical-system tests on the CDLI proto-Elamite corpus; next in line in the [triage](expeditions/TRIAGE.md).
 
 ## Outreach log
 - 2026-11-04 (cycle 4): draft issue for [TorstenTimm/SelfCitationTextgenerator](https://github.com/TorstenTimm/SelfCitationTextgenerator) on the rigidity/vocabulary trade-off; shown to Phuderoso for review, **not filed**. Superseded by C005; will not be sent as written.
