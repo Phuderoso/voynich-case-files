@@ -28,7 +28,7 @@ structure only.
 ## Coverage table
 | Cycle | Approach family | Question | Data | Result |
 |---|---|---|---|---|
-| PE001 | Data setup + exact totals (F-SUM): Σ obverse = reverse total under Englund's tables, total-shuffle null; per-ratio held-out test of the capacity sub-units | Do intact tablets balance beyond chance, and are the published sub-N01 capacity factors the ones that close the sums? | CDLI `d66b12b` | *pre-registered, running* · [PE001](case-file/PE001-reverse-totals.md) |
+| PE001 | Data setup + exact totals (F-SUM): Σ obverse = reverse total under Englund's tables, total-shuffle null; per-ratio held-out test of the capacity sub-units | Do intact tablets balance beyond chance, and are the published sub-N01 capacity factors the ones that close the sums? | CDLI `d66b12b` | **NOT TESTABLE** (power gate 0.61 < 0.8; FPR 0.005, valuation 38/38). Descriptive only: 19 of 38 intact tablets balance vs null mean 0.90, max 6 of 9 999; H2 capacity ratios: 2 test tablets only. 16 of 19 non-balancing tablets have total < sum in every covering system (un-summed obverse lines). [PE001](case-file/PE001-reverse-totals.md) |
 
 ## Open investigative lines
 1. **Multi-line reverses** (209 tablets have > 1 reverse numeral line): totals split by system (e.g. capacity + bisexagesimal) or by commodity; match each reverse line to the obverse entries of its system, exact subset-sum.

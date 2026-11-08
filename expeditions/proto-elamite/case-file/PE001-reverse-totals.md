@@ -60,3 +60,52 @@ do not balance, with total − sum per system), `analysis/pe001_run.log`.
 Tool: [`tools/pe001_totals.py`](../tools/pe001_totals.py). Compute: well under a minute expected.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration commit `21d7863`)
+
+Tool run once as written (112 s; seeds 101 H1, 102 FPR, 103 power). Outputs: `analysis/pe001_results.json`,
+`analysis/pe001_run.log`.
+
+**Descriptive.** 1 585 texts, 11 413 obverse/reverse lines. Numeral tokens: N01 5 988, N14 2 063, N39B 1 301, N30C 674,
+N24 593, N34 271, N30D 244, N45 209, N23 89, N08A 73 (unmapped), N51 48, N39C 46, others < 25. Candidates: strict 38,
+lenient 65. Rejections (strict): no reverse numeral line 597, < 2 obverse numeral lines 465, damage 274, more than one
+reverse numeral line 209, unmapped sign 2.
+
+**Gates.** P0 valuation 38/38 (passes). FPR 0.005 (≤ 0.05, passes). **Power 0.61 (< 0.8, FAILS).** Disclosed check:
+adding one smallest unit to each of the 19 balancing totals broke all 19.
+
+**Verdict by the rule: H1 and H2 are NOT TESTABLE** (power gate failed). With 38 tablets, planting correct totals in
+10 % (3 tablets) is too few to be caught reliably against a null whose maximum reaches 6.
+
+Numbers below carry **no decision weight** (the gate failed) and are reported so nobody has to re-run to see them:
+
+| | n | Balanced | Null mean | Null max (9 999 shuffles) | p |
+|---|---|---|---|---|---|
+| H1 strict | 38 | 19 | 0.90 | 6 | 0.0001 (floor) |
+| H1 lenient (secondary) | 65 | 30 | 1.06 | — | 0.0001 (floor) |
+
+The 19 balancing strict tablets: 9 close only in system C (Englund's capacity values), 1 only in D, 1 in S or B, 8 in
+notations that read the same in S/D/B (4 of them also in C). The observed count is far outside the null, but the gate
+was set before the run and it failed; the honest reading is "not testable at the pre-registered power", not "supported".
+
+**H2** (sub-N01 capacity ratios; 16 train / 12 test tablets using sub-N01 capacity signs): only 5 train and 2 test
+tablets balance in C at all. N01:N39B = 5 gives 2 test balances against 0 for 4, 6 and 10 (train: all four values tie at
+5); the other four ratios tie on both halves (their signs don't separate any balancing tablet). Over all 288 joint
+chains the maximum is 7 balancing tablets, reached by Englund's chain and by many others. With two test tablets this is
+anecdote, not evidence, and the gate failed anyway.
+
+**Intact strict tablets that do not balance** (19, listed with total − sum per system in the JSON): in 16 of 19 the reverse
+total is *smaller* than the obverse sum in every system that covers the signs. The likely cause is structural, not
+scribal: obverse lines that carry numerals but are not summed (header quantities, subscripts, notations in a second
+system). This is why line 1 (multi-system reverses) and a "which obverse lines enter the total" rule come first. No
+tablet is put forward for collation from this run.
+
+## What PE001 settles
+- The pipeline (fetch, hashes, parser, factor tables, total-shuffle null) works and is calibrated (FPR 0.005).
+- The primary test was under-powered at the pre-registered plant size: **NOT TESTABLE**, published as such.
+- Next step (PE002, to pre-register): a power curve (plant fraction 10–50 %) set *before* the test, and a larger
+  candidate pool from multi-line reverses (line 1) and from obverse lines filtered by system.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
