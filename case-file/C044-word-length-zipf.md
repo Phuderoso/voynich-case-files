@@ -52,6 +52,8 @@ Natural range CV 0.315–0.594; Zipf −1.025 to −0.800. Raw-EVA-character CV 
 - This adds a third line (after C014's vowelless solver and C043's vowelless C5 range) where abjad-like writing is the natural neighbour of Voynichese; it does not say Voynichese is Hebrew or any abjad.
 - **Generator, descriptive:** the published base sample is Voynich-like (0.327, −0.90), but the C005 config matched on rigidity overshoots — word lengths too uniform (0.215, below every natural text and Voynich) and a much flatter Zipf (−0.50). The rigidity match costs realistic word-length and vocabulary shape; one run, one seed, no verdict.
 
+**Correction (C045, 2026-11-08):** devowelled Caesar/Dante/Cervantes have CV 0.535–0.602, not narrow. The bullet above linking Hebrew's narrow word lengths to vowelless controls overreached: the narrowness is Hebrew-specific (orthography, attached prefixes), not a general abjad effect. The H1 verdict (INSIDE NATURAL) is unchanged.
+
 **Next.** F-ZIPF step 2: a Zipf test with a calibrated null that does not bootstrap types (e.g. split-half or disjoint-window spread), and word-length CV with more abjad/vowelless controls (devowelled Latin/Italian, Arabic if a clean public text exists) before any claim.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
