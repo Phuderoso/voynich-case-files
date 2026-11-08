@@ -1,0 +1,493 @@
+{
+ "cycle": "K051",
+ "db": "OKR khipu.db @ 4039ca5 sha256 607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db",
+ "smoke": false,
+ "alpha": 0.05,
+ "fpr_gate": 0.08,
+ "power_bar": 0.5,
+ "f_plant": 0.25,
+ "seeds": {
+  "mc": 5151,
+  "calib": 5152,
+  "power": 5153,
+  "sens": 5154,
+  "copyall": 5155
+ },
+ "R_mc": 10000,
+ "n_calibration": 1000,
+ "n_power": 200,
+ "fixture_passed": true,
+ "fixture": [
+  {
+   "case": "identical plain",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "different plain",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "PK both sides never matches",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "PK inside mottle never matches",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "barber pole '-' is not mottled ':'",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "identical barber pole matches",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "identical mottled matches",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "identical three-part MB-MB:W matches",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "order matters (no re-sort)",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "BY != YB (primary)",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "BY == YB (sensitivity only)",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "BY:W == YB:W (sensitivity only)",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "no colour never matches",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "different length",
+   "expected": false,
+   "got": false
+  }
+ ],
+ "exact_dp_selftest": true,
+ "consistency": {
+  "n_ids": 433,
+  "n_R5": 3069,
+  "a": {
+   "khipu_id": 1000024,
+   "run_start": 329,
+   "cord_start_index": 402,
+   "n_collapsed": 363,
+   "n_pendants": 472,
+   "runlen": [
+    4,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+   ],
+   "meta": {
+    "okr": "KH0240",
+    "inv": "UR004",
+    "museum": "Centro Mallqui, Leymebamba, Amazonas",
+    "mnum": "CMA 847-LC1.476 TEQ",
+    "provenance": "Leymebamba",
+    "region": "Chachapoyas"
+   }
+  },
+  "b": {
+   "khipu_id": 1000601,
+   "run_start": 0,
+   "cord_start_index": 0,
+   "n_collapsed": 20,
+   "n_pendants": 24,
+   "runlen": [
+    1,
+    1,
+    3,
+    1,
+    1,
+    2,
+    1,
+    1,
+    1
+   ],
+   "meta": {
+    "okr": "KH0496",
+    "inv": "UR260",
+    "museum": "Proyecto Incahuasi",
+    "mnum": "9228-13B",
+    "provenance": "Incahuasi",
+    "region": ""
+   }
+  },
+  "ok": true,
+  "reason": null,
+  "other_P_holders": []
+ },
+ "units": [
+  {
+   "run": 0,
+   "value": 1,
+   "lenA": 4,
+   "lenB": 1,
+   "colA": "MB",
+   "colB": "AB",
+   "firstA": "MB",
+   "firstB": "AB",
+   "infoA": {
+    "rule": "modal",
+    "n_cords": 4,
+    "n_coloured": 4,
+    "top": 2,
+    "tie": true,
+    "n_tied": 2,
+    "reasons": {}
+   },
+   "infoB": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "cordsA": [
+    "MB",
+    "MB:GG",
+    "MB:GG",
+    "MB"
+   ],
+   "cordsB": [
+    "AB"
+   ]
+  },
+  {
+   "run": 1,
+   "value": 2,
+   "lenA": 1,
+   "lenB": 1,
+   "colA": "MB",
+   "colB": "AB",
+   "firstA": "MB",
+   "firstB": "AB",
+   "infoA": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "infoB": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "cordsA": [
+    "MB"
+   ],
+   "cordsB": [
+    "AB"
+   ]
+  },
+  {
+   "run": 2,
+   "value": 1,
+   "lenA": 1,
+   "lenB": 3,
+   "colA": "MB",
+   "colB": "AB",
+   "firstA": "MB",
+   "firstB": "AB",
+   "infoA": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "infoB": {
+    "rule": "modal",
+    "n_cords": 3,
+    "n_coloured": 3,
+    "top": 3,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "cordsA": [
+    "MB"
+   ],
+   "cordsB": [
+    "AB",
+    "AB",
+    "AB"
+   ]
+  },
+  {
+   "run": 3,
+   "value": 2,
+   "lenA": 1,
+   "lenB": 1,
+   "colA": "MB",
+   "colB": "AB:W",
+   "firstA": "MB",
+   "firstB": "AB:W",
+   "infoA": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "infoB": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "cordsA": [
+    "MB"
+   ],
+   "cordsB": [
+    "AB:W"
+   ]
+  },
+  {
+   "run": 4,
+   "value": 3,
+   "lenA": 1,
+   "lenB": 1,
+   "colA": "KB",
+   "colB": "AB:W",
+   "firstA": "KB",
+   "firstB": "AB:W",
+   "infoA": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "infoB": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "cordsA": [
+    "KB"
+   ],
+   "cordsB": [
+    "AB:W"
+   ]
+  },
+  {
+   "run": 5,
+   "value": 1,
+   "lenA": 1,
+   "lenB": 2,
+   "colA": "GG",
+   "colB": "AB:W",
+   "firstA": "GG",
+   "firstB": "AB:W",
+   "infoA": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "infoB": {
+    "rule": "modal",
+    "n_cords": 2,
+    "n_coloured": 2,
+    "top": 2,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "cordsA": [
+    "GG"
+   ],
+   "cordsB": [
+    "AB:W",
+    "AB:W"
+   ]
+  },
+  {
+   "run": 6,
+   "value": 2,
+   "lenA": 1,
+   "lenB": 1,
+   "colA": "MB",
+   "colB": "AB:W",
+   "firstA": "MB",
+   "firstB": "AB:W",
+   "infoA": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "infoB": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "cordsA": [
+    "MB"
+   ],
+   "cordsB": [
+    "AB:W"
+   ]
+  },
+  {
+   "run": 7,
+   "value": 1,
+   "lenA": 1,
+   "lenB": 1,
+   "colA": "KB",
+   "colB": "AB:W",
+   "firstA": "KB",
+   "firstB": "AB:W",
+   "infoA": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "infoB": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "cordsA": [
+    "KB"
+   ],
+   "cordsB": [
+    "AB:W"
+   ]
+  },
+  {
+   "run": 8,
+   "value": 3,
+   "lenA": 1,
+   "lenB": 1,
+   "colA": "GG:MB",
+   "colB": "AB:W",
+   "firstA": "GG:MB",
+   "firstB": "AB:W",
+   "infoA": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "infoB": {
+    "rule": "modal",
+    "n_cords": 1,
+    "n_coloured": 1,
+    "top": 1,
+    "tie": false,
+    "n_tied": 1,
+    "reasons": {}
+   },
+   "cordsA": [
+    "GG:MB"
+   ],
+   "cordsB": [
+    "AB:W"
+   ]
+  }
+ ],
+ "n_units": 9,
+ "n_coloured_units": 9,
+ "excluded_units": [],
+ "copy_all": {
+  "A": 9,
+  "expected": 9,
+  "p_exact": 0.0006613756613756613,
+  "p_mc": 0.001999000499750125,
+  "passed": true
+ },
+ "degeneracy_reason": "no_shared_matching_colour",
+ "colour_counts_A": {
+  "MB": 5,
+  "KB": 2,
+  "GG": 1,
+  "GG:MB": 1
+ },
+ "colour_counts_B": {
+  "AB:W": 6,
+  "AB": 3
+ },
+ "observed_A": 0,
+ "p_exact": null,
+ "verdict": "DEGENERATE",
+ "note": "no colour variation that a shuffle of B can turn into extra matches (no_shared_matching_colour)",
+ "matching_runs": [],
+ "sec": 0.6
+}

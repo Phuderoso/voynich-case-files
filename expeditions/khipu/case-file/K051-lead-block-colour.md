@@ -3,7 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: pre-registration** (written and pushed with the tool before any colour of this pair was
+**Status: results appended** (pre-registration written and pushed with the tool as `4c4e573` before any colour of this pair was
 read; only the values-only consistency check listed below was run first).
 
 ## Why
@@ -119,5 +119,75 @@ for decisions) may run only after this push.
 ## Output
 `analysis/k051_results.json`, log `analysis/k051_run.log`.
 Run from `expeditions/khipu/`: `timeout 600 python3 tools/k051_lead_block_colour.py run`.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+
+---
+
+## Results (2026-11-08, run ~09:08 PT, America/Vancouver)
+
+Run after the prereg was published as `4c4e573` (connector `push_files`; `git push` had no
+credentials; local clone aligned with `git reset --mixed origin/main` on an identical tree, never
+`--hard`). No smoke run was made. Full run **0.6 s** in-tool (under 1 s wall). Output
+[`analysis/k051_results.json`](../analysis/k051_results.json), log
+[`analysis/k051_run.log`](../analysis/k051_run.log).
+
+### Gates
+- DB hash matches; **fixture 14/14 passed**; **exact-DP self-test passed** (brute force n ≤ 6;
+  9-element derangements 133 496 of 9!).
+- **Values consistency passed**: `P` once in each khipu, run lengths 4,1,1,1,1,1,1,1,1 and
+  1,1,3,1,1,2,1,1,1 as published; no other eligible khipu contains `P`.
+- **No unit dropped**: all 9 runs have a usable colour on both sides (n = 9).
+- **Copy-all recovered**: A = 9 of 9 expected, exact p = 1/1 512 = 0.000661 (MC cross-check 0.0020,
+  R = 2 000 floor).
+- Calibration FPR, shift FPR and power: **skipped**, as pre-registered for a degenerate pair.
+
+### Primary statistic
+
+| Pair | n | A | Inventory on the 9 runs (A · B) | Verdict |
+|---|---|---|---|---|
+| KH0240 (UR004) · KH0496 (UR260) | 9 | **0 / 9** | `MB` 5, `KB` 2, `GG` 1, `GG:MB` 1 · `AB:W` 6, `AB` 3 | **DEGENERATE** (`no_shared_matching_colour`) |
+
+Run by run (value · A cords → run colour · B cords → run colour):
+
+| Run | Value | KH0240 cords | A | KH0496 cords | B |
+|---|---|---|---|---|---|
+| 1 | 1 | `MB`, `MB:GG`, `MB:GG`, `MB` (tie 2–2 → earliest, `MB`) | `MB` | `AB` | `AB` |
+| 2 | 2 | `MB` | `MB` | `AB` | `AB` |
+| 3 | 1 | `MB` | `MB` | `AB`, `AB`, `AB` | `AB` |
+| 4 | 2 | `MB` | `MB` | `AB:W` | `AB:W` |
+| 5 | 3 | `KB` | `KB` | `AB:W` | `AB:W` |
+| 6 | 1 | `GG` | `GG` | `AB:W`, `AB:W` | `AB:W` |
+| 7 | 2 | `MB` | `MB` | `AB:W` | `AB:W` |
+| 8 | 1 | `KB` | `KB` | `AB:W` | `AB:W` |
+| 9 | 3 | `GG:MB` | `GG:MB` | `AB:W` | `AB:W` |
+
+The two sides share **no colour tuple at all** on the block, so A = 0 under every permutation of B
+(the null has max = min = 0). No p-value exists, and by the pre-registered rule the pair is
+**DEGENERATE**. The sensitivities are degenerate as well: there is no `BY`/`YB` on either side, and the
+first-cord rule gives the same 9 run colours as the modal rule (run 1 starts with `MB`), so it also shares no tuple.
+
+### Disclosed, not verdicts (post-hoc inventory look, after the verdict)
+- Over the whole records, KH0240 (472 pendants) is mostly `MB` (272), then `KB` 41, `GG` 27, `AB` 17;
+  KH0496 (24 pendants) is `AB` 16, `AB:W` 7, `MB` 1. Each record does use the other's dominant code
+  somewhere, but not on this block. So the silence is not simply "two disjoint dictionaries"; it is
+  also not a test.
+- KH0496's colour changes once inside the block, `AB` → `AB:W` between runs 3 and 4. KH0240 has no
+  colour change at that point. Descriptive only.
+
+### Reading
+On the 9 collapsed runs of `P`, **colour gives no independent support** to the KH0240 · KH0496 lead:
+not one run carries the same colour code. Because the two inventories on the block don't overlap, the
+test is **DEGENERATE**, not a powered negative: it cannot say the blocks are unrelated (recorder or
+regional dye differences could hide a real link), and it cannot say they are related. The tool
+worked (copy-all recovered, A = 9/9, exact p 0.00066). No decipherment.
+
+### Line 3 status
+**Advanced (colour witness: degenerate).** The lead stays **unconfirmed**: K028's exact doublet null
+(p 0.027, selected statistic), K013 (p 0.18) and now colour (no shared code on the block) leave it a
+lead. The pinned OKR file has no khipus beyond K028's corpus, so the held-out value test stays
+**data-limited**. A literature audit (K043 style) of UR004 / UR260 remains the one non-heuristic step
+left on this lead. Not added to the OKR note (an unconfirmed lead is not a data-quality fact).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
