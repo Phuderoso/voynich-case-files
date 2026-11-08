@@ -122,7 +122,7 @@ quote (or `none`) and label, hand-recorded in `analysis/k052_records.json`; merg
 
 ---
 
-## Results (2026-11-08, ~09:50–10:05 PT, America/Vancouver)
+## Results (2026-11-08, ~09:50–09:56 PT, America/Vancouver)
 
 Retrieval by `curl` (WebFetch once, for the PUCP PDF) and WebSearch, after `69c115b`. `targets` passed (hash, id map,
 K051 values gate) and wrote [`analysis/k052_targets.json`](../analysis/k052_targets.json); `context` wrote
