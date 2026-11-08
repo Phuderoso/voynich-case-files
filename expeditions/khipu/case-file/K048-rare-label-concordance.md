@@ -3,10 +3,11 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: pre-registered** (this text and the tool are published before any pair-level dual-rare
-count is computed). K047's published physical-feature *equality* results — including a descriptive
-remark that broken ends sat at the null floor — are treated below as a disclosure, not as a reason
-to change the hypothesis or to flip the test to a deficit / two-sided look (that would be HARKing).
+**Status: results appended** (pre-registration written and pushed with the tool as `b26aba4` before any
+pair-level dual-rare count was computed). K047's published physical-feature *equality* results —
+including a descriptive remark that broken ends sat at the null floor — are treated below as a
+disclosure, not as a reason to change the hypothesis or to flip the test to a deficit / two-sided
+look (that would be HARKing).
 
 ## Why
 K018/K019 confirmed an ordered, cord-level **value** correspondence for three pairs:
@@ -156,5 +157,99 @@ exact rare-status copy (every A-rare unit is rare on B, and every A-non-rare uni
 ## Output
 `analysis/k048_results.json` (`analysis/k048_checkpoint.json` while running), log `analysis/k048_run.log`.
 Run from `expeditions/khipu/`: `timeout 600 python3 tools/k048_rare_label_concordance.py run`.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+
+---
+
+## Results (2026-11-08, run ~06:52 PT, America/Vancouver)
+
+Run after the prereg was published as `b26aba4` (connector `push_files`; `git push` had no
+credentials; local clone aligned with `git reset --mixed origin/main`, same tree, never `--hard`).
+Full run **4.2 s** wall (nothing was cut by the wall). Output
+[`analysis/k048_results.json`](../analysis/k048_results.json), log
+[`analysis/k048_run.log`](../analysis/k048_run.log). No `--smoke` decision numbers were used.
+
+### Gates (cycle-level)
+- DB hash matches; **fixture 27/27 passed** (16 dual-rare identity/mismatch cases, hand-example
+  count, equality ≠ dual-rare, three hypergeometric-edge cases, six majority-extraction cases);
+  **K019 consistency passed** (13/89, 14/37, 15/36).
+
+### Primary pair-fields (α = 0.00833)
+
+| Pair-field | n | n_rare_A / n_rare_B | A | Null mean ± sd · max | p | Power f=0.50 | Copy-all | Cal / shift FPR | **Verdict** |
+|---|---|---|---|---|---|---|---|---|---|
+| KH0097·KH0586 termination (H_T) | 87 | 4 / 1 | 1 | 0.0457 ± 0.209 · 1 | 0.0458 | 0.945 | recovered (A=4, p 0.00050) | 0 / 0 | **NOT SUPPORTED** |
+| KH0097·KH0586 knot dir (H_D) | 82 | 18 / 0 | 0 | — | — | — | — | — | **DEGENERATE** (B all `Z`) |
+| KH0192·KH0470 termination (H_T) | 37 | 1 / 3 | 0 | 0.0837 ± 0.277 · 1 | 1.000 | 0.00 | **failed** (A=1, p 0.0305) | 0 / 0 | **TOOL EXCLUDED** |
+| KH0192·KH0470 knot dir (H_D) | 27 | 0 / 6 | 0 | — | — | — | — | — | **DEGENERATE** (A 25 `Z` + 2 `TIE`, no `S`) |
+| KH0192·KH0469 termination (H_T) | 36 | 3 / 2 | 0 | 0.167 ± 0.386 · 2 | 1.000 | 0.06 | recovered (A=3, p 0.00050) | 0.005 / 0.034 | **NOT TESTABLE** |
+| KH0192·KH0469 knot dir (H_D) | 21 | 0 / 2 | 0 | — | — | — | — | — | **DEGENERATE** (A all `Z`) |
+
+Power curves (share fractions 0.25 / 0.50 / 0.75 / 1.00; descriptive) for the three non-degenerate
+fields: Paris·Lima termination 0.04 / 0.98 / 1.00 / 1.00; KH0192·KH0470 termination 0 / 0 / 0 / 0;
+KH0192·KH0469 termination 0 / 0.04 / 0.04 / 1.00.
+
+Label counts on the usable units. Paris·Lima termination: A 83 `K` + 4 `B` (2 units excluded,
+empty on A); B 85 `K` + 1 `B` + 1 `U`. KH0192·KH0470 termination: A 36 `K` + 1 `B`; B 34 `K` + 3
+`B`. KH0192·KH0469 termination: A 33 `K` + 3 `B`; B 34 `K` + 2 `B`.
+
+### Why the readable tests look like this
+- **One powered negative.** Paris·Lima H_T has four broken ends on the Ascher side and one on the
+  HP side. They coincide once (A = 1 vs hypergeometric expectation 4 × 1 / 87 = 0.0460; null mean
+  0.0457, p 0.0458). That is larger than the floor (0) but nowhere near α = 0.00833: with n_rare_B
+  = 1, A is 0 or 1, and P(A = 1) = 4/87 ≈ 0.046. The 50 % rare-share plant (k = 2 of A's 4 `B`s)
+  is recovered at power 0.945, so this is a **real negative** at the stated power, not an
+  underpowered silence. The single dual-rare unit is a zero-value cord (group pair 10, positions
+  7 and 9).
+- **Copy-all vs Bonferroni, KH0192·KH0470 termination.** After copying A's rare-status onto B the
+  margins are 1 `B` + 36 non-`B`. Identity (A = n_rare_A = 1) under N1 occurs only when that single
+  `B` stays put, with probability 1/37 ≈ 0.027; the observed copy-all p was 0.0305, above
+  α = 0.00833, so the pre-registered gate fired. The plant curve is 0 at every share fraction
+  including f = 1.00: with n_rare_A = 1, even forcing that one mark to be shared gives
+  P(A ≥ 1) ≈ n_rare_B / n, which stays above Bonferroni α. This is the same mechanical limit K047
+  documented on a 36+1 equality margin, not a sign that the match function is broken (copy-all A
+  did equal n_rare_A). Had the copy-all gate not fired first, the pair-field would have been NOT
+  TESTABLE on power 0.00.
+- **KH0192·KH0469 termination is visible only at a full share.** Copy-all and both FPR gates pass,
+  but the 50 % plant (k = 2 of A's 3 `B`s) has power 0.06. The descriptive curve reaches 1.00 only
+  at f = 1.00. Observed A = 0 (the floor) against a null mean of 0.167, p = 1.000 — a description,
+  not a verdict.
+- **H_D is degenerate on all three pairs.** Paris·Lima: every usable HP direction is `Z` (n_rare_B
+  = 0), as K047's coverage predicted. Both Berlin pairs: Ascher's KH0192 has no `S` majority on the
+  aligned usable units (25 `Z` + 2 `TIE` against KH0470; 21 `Z` against KH0469).
+
+### Disclosed, not verdicts
+- **Leaders.** Paris·Lima termination with leaders: n 100, n_rare 4 / 1, A = 1, p 0.0386. Both
+  Berlin termination tests stay at A = 0 (p 1.0) with leaders (n 51 each). Knot direction stays
+  degenerate with leaders on Paris·Lima (B still all `Z`). With leaders, both Berlin knot-direction
+  fields become non-degenerate because one Ascher leader is `S`: KH0192·KH0470 1 dual-rare vs
+  expectation 0.220, p 0.224; KH0192·KH0469 1 vs 0.306, p 0.310.
+- **Non-zero-value units.** Paris·Lima termination becomes degenerate (n 81; n_rare_B = 0): the
+  single HP broken end, and therefore the single dual-rare unit, was the zero-value cord named
+  above. Both Berlin termination tests are likewise degenerate on non-zero-value units (KH0192·KH0470:
+  n_rare_A = 0; KH0192·KH0469: n_rare_B = 0). Knot direction stays degenerate (no `S` on at least
+  one side).
+- **N2 (within-group).** Paris·Lima termination p 0.146 (null mean 0.146); both Berlin termination
+  tests p 1.0 (N2 null mean 0: the broken ends of A and B never fall in the same matched group).
+
+### Reading
+No primary pair-field is SUPPORTED. H_D cannot be read: one side has no `S`-majority cords on every
+pair. H_T is a real negative on Paris·Lima (one broken-end coincidence, consistent with the
+hypergeometric chance of 4/87, at power 0.945), tool-excluded on KH0192·KH0470 (a single Ascher
+`B` cannot beat Bonferroni α even under copy-all), and not testable on KH0192·KH0469 (power 0.06
+at the 50 % plant). The K047 descriptive peek that broken ends sat at the equality-test floor is
+not recycled as a verdict here: Paris·Lima's dual-rare count is 1, not 0, and that 1 does not
+survive α. This does **not** say the records are different objects, and it does not say they are
+the same object. It says the rare-mark witness we named is either unreadable or, where readable,
+does not show extra dual-rare alignments. No decipherment.
+
+### Next (line 6)
+The rare-label concordance fork is answered as far as these OKR fields allow on these three pairs
+(not as a blanket negative — as one powered negative and five unreadable pair-fields). A colour
+code-*association* test on the K046 cross-tabs remains same-data and must stay labelled
+exploratory if run. Line 6's colour and physical-feature questions on the K019 pairs are now
+mapped.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
