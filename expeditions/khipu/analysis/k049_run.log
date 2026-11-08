@@ -1,0 +1,11 @@
+loaded sequences 0.3s R5=3069
+K010 consistency ok {'KH0362/KH0049': (46, 82, 12), 'KH0128/KH0137': (39, 40, 10), 'KH0140/KH0483': (0, 0, 12), 'KH0304/KH0303': (20, 20, 7), 'KH0305/KH0301': (41, 40, 8)}
+KH0362/KH0049 n=12 fpr_perm=0.0000 fpr_shift=0.0 power=0.000 (0.2s)
+KH0362/KH0049 A=6/12 null_mean=5.50 p=0.50025 -> TOOL EXCLUDED (0.3s)
+KH0128/KH0137 n=10 A=0 DEGENERATE (no_shared_matching_colour)
+KH0140/KH0483 n=12 A=12 DEGENERATE (A_monochromatic)
+KH0304/KH0303 n=7 fpr_perm=0.0000 fpr_shift=0.0 power=0.065 (0.1s)
+KH0304/KH0303 A=3/7 null_mean=0.85 p=0.01730 -> NOT TESTABLE (0.1s)
+KH0305/KH0301 n=8 fpr_perm=0.0040 fpr_shift=0.14285714285714285 power=0.040 (0.2s)
+KH0305/KH0301 A=4/8 null_mean=1.00 p=0.00470 -> TOOL EXCLUDED (0.2s)
+wrote k049_results.json 1.0 s

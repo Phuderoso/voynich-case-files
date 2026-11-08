@@ -1,0 +1,1592 @@
+{
+ "cycle": "K049",
+ "db": "OKR khipu.db @ 4039ca5 sha256 607913034a0f478c5c792025d0c3cab8a9a8f05223ed6bc9c2990122a8c1c4db",
+ "smoke": false,
+ "alpha": 0.01,
+ "fpr_gate": 0.08,
+ "power_bar": 0.5,
+ "f_plant": 0.25,
+ "seeds": {
+  "null": 4949,
+  "calib": 4950,
+  "power": 4951,
+  "n2_sens": 4952,
+  "copyall": 4953
+ },
+ "R": 10000,
+ "n_calibration": 1000,
+ "n_power": 200,
+ "R_power": 2000,
+ "fixture_passed": true,
+ "fixture": [
+  {
+   "case": "identical plain",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "different plain",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "PK both sides never matches",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "PK inside mottle never matches",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "barber pole '-' is not mottled ':'",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "identical barber pole matches",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "identical mottled matches",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "identical three-part MB-MB:W matches",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "order matters (no re-sort)",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "BY != YB (primary)",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "BY == YB (sensitivity only)",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "BY:W == YB:W (sensitivity only)",
+   "expected": true,
+   "got": true
+  },
+  {
+   "case": "no colour never matches",
+   "expected": false,
+   "got": false
+  },
+  {
+   "case": "different length",
+   "expected": false,
+   "got": false
+  }
+ ],
+ "consistency_ok": true,
+ "consistency": {
+  "KH0362/KH0049": {
+   "ok": true,
+   "a": {
+    "ok": true,
+    "okr": "KH0362",
+    "khid": 1000323,
+    "start": 46,
+    "n_hits": 1,
+    "hits": [
+     46
+    ],
+    "block": [
+     1856,
+     2578,
+     89,
+     974,
+     1146,
+     1095,
+     849,
+     790,
+     6485,
+     875,
+     1348,
+     754
+    ],
+    "block_len": 12,
+    "clusters": [
+     1012163,
+     1012163,
+     1012163,
+     1012163,
+     1012163,
+     1012163,
+     1012163,
+     1012163,
+     1012164,
+     1012164,
+     1012164,
+     1012164
+    ],
+    "n_clusters": 2,
+    "n_pendants": 72,
+    "meta": {
+     "okr": "KH0362",
+     "inv": "UR122",
+     "museum": "Museum of Worldculture, Goteborg, Sweden",
+     "mnum": "1938.45.0228",
+     "provenance": "Nazca",
+     "region": "",
+     "orig_inv": "UR122"
+    },
+    "reason": null
+   },
+   "b": {
+    "ok": true,
+    "okr": "KH0049",
+    "khid": 1000565,
+    "start": 82,
+    "n_hits": 1,
+    "hits": [
+     82
+    ],
+    "block": [
+     1856,
+     2578,
+     89,
+     974,
+     1146,
+     1095,
+     849,
+     790,
+     6485,
+     875,
+     1348,
+     754
+    ],
+    "block_len": 12,
+    "clusters": [
+     1018470,
+     1018470,
+     1018470,
+     1018470,
+     1018470,
+     1018470,
+     1018470,
+     1018470,
+     1018471,
+     1018471,
+     1018471,
+     1018471
+    ],
+    "n_clusters": 2,
+    "n_pendants": 108,
+    "meta": {
+     "okr": "KH0049",
+     "inv": "AS038/HP036",
+     "museum": "Museo Nacional de Arqueolog\u00eda, Antropolog\u00eda e Historia de Per\u00fa",
+     "mnum": "MNAAHP3550",
+     "provenance": "Costa Sur",
+     "region": "",
+     "orig_inv": "HP036"
+    },
+    "reason": null
+   }
+  },
+  "KH0128/KH0137": {
+   "ok": true,
+   "a": {
+    "ok": true,
+    "okr": "KH0128",
+    "khid": 1000063,
+    "start": 39,
+    "n_hits": 1,
+    "hits": [
+     39
+    ],
+    "block": [
+     40,
+     9,
+     57,
+     30,
+     56,
+     80,
+     21,
+     8,
+     22,
+     12
+    ],
+    "block_len": 10,
+    "clusters": [
+     1002269,
+     1002269,
+     1002269,
+     1002269,
+     1002269,
+     1002269,
+     1002269,
+     1002269,
+     1002269,
+     1002269
+    ],
+    "n_clusters": 1,
+    "n_pendants": 339,
+    "meta": {
+     "okr": "KH0128",
+     "inv": "UR1114",
+     "museum": "Museum f\u00fcr V\u00f6lkerkunde, Berlin",
+     "mnum": "VA16148",
+     "provenance": "Between Ica and Pisco",
+     "region": "",
+     "orig_inv": "AS114"
+    },
+    "reason": null
+   },
+   "b": {
+    "ok": true,
+    "okr": "KH0137",
+    "khid": 1000079,
+    "start": 40,
+    "n_hits": 1,
+    "hits": [
+     40
+    ],
+    "block": [
+     40,
+     9,
+     57,
+     30,
+     56,
+     80,
+     21,
+     8,
+     22,
+     12
+    ],
+    "block_len": 10,
+    "clusters": [
+     1002361,
+     1002361,
+     1002361,
+     1002361,
+     1002361,
+     1002361,
+     1002361,
+     1002361,
+     1002361,
+     1002361
+    ],
+    "n_clusters": 1,
+    "n_pendants": 70,
+    "meta": {
+     "okr": "KH0137",
+     "inv": "UR1123",
+     "museum": "Museum f\u00fcr V\u00f6lkerkunde, Berlin",
+     "mnum": "VA47085",
+     "provenance": "Ica",
+     "region": "",
+     "orig_inv": "AS123"
+    },
+    "reason": null
+   }
+  },
+  "KH0140/KH0483": {
+   "ok": true,
+   "a": {
+    "ok": true,
+    "okr": "KH0140",
+    "khid": 1000082,
+    "start": 0,
+    "n_hits": 1,
+    "hits": [
+     0
+    ],
+    "block": [
+     1517,
+     2373,
+     6291,
+     3495,
+     4213,
+     6323,
+     4122,
+     2220,
+     4377,
+     1292,
+     1162,
+     2393
+    ],
+    "block_len": 12,
+    "clusters": [
+     1002484,
+     1002484,
+     1002484,
+     1002484,
+     1002485,
+     1002485,
+     1002485,
+     1002486,
+     1002486,
+     1002486,
+     1002486,
+     1002486
+    ],
+    "n_clusters": 3,
+    "n_pendants": 16,
+    "meta": {
+     "okr": "KH0140",
+     "inv": "AS125",
+     "museum": "Museum f\u00fcr V\u00f6lkerkunde, Berlin",
+     "mnum": "VA42670",
+     "provenance": "Pachacamac",
+     "region": "",
+     "orig_inv": "AS125"
+    },
+    "reason": null
+   },
+   "b": {
+    "ok": true,
+    "okr": "KH0483",
+    "khid": 1000558,
+    "start": 0,
+    "n_hits": 1,
+    "hits": [
+     0
+    ],
+    "block": [
+     1517,
+     2373,
+     6291,
+     3495,
+     4213,
+     6323,
+     4122,
+     2220,
+     4377,
+     1292,
+     1162,
+     2393
+    ],
+    "block_len": 12,
+    "clusters": [
+     1018419,
+     1018419,
+     1018419,
+     1018419,
+     1018420,
+     1018420,
+     1018420,
+     1018421,
+     1018421,
+     1018421,
+     1018421,
+     1018421
+    ],
+    "n_clusters": 3,
+    "n_pendants": 15,
+    "meta": {
+     "okr": "KH0483",
+     "inv": "UR247",
+     "museum": "Ethnologisches Museum, Berlin, Germany",
+     "mnum": "VA 42610",
+     "provenance": "Pachacamac",
+     "region": "\"Central Coast, Peru\"",
+     "orig_inv": "UR247"
+    },
+    "reason": null
+   }
+  },
+  "KH0304/KH0303": {
+   "ok": true,
+   "a": {
+    "ok": true,
+    "okr": "KH0304",
+    "khid": 1000260,
+    "start": 20,
+    "n_hits": 1,
+    "hits": [
+     20
+    ],
+    "block": [
+     22,
+     3,
+     9,
+     2,
+     156,
+     13,
+     12
+    ],
+    "block_len": 7,
+    "clusters": [
+     1006623,
+     1006623,
+     1006623,
+     1006623,
+     1006623,
+     1006623,
+     1006623
+    ],
+    "n_clusters": 1,
+    "n_pendants": 32,
+    "meta": {
+     "okr": "KH0304",
+     "inv": "UR067",
+     "museum": "",
+     "mnum": "s/n",
+     "provenance": "Huaquerones",
+     "region": "Puruchuco",
+     "orig_inv": "UR067"
+    },
+    "reason": null
+   },
+   "b": {
+    "ok": true,
+    "okr": "KH0303",
+    "khid": 1000261,
+    "start": 20,
+    "n_hits": 1,
+    "hits": [
+     20
+    ],
+    "block": [
+     22,
+     3,
+     9,
+     2,
+     156,
+     13,
+     12
+    ],
+    "block_len": 7,
+    "clusters": [
+     1006629,
+     1006629,
+     1006629,
+     1006629,
+     1006630,
+     1006630,
+     1006630
+    ],
+    "n_clusters": 2,
+    "n_pendants": 32,
+    "meta": {
+     "okr": "KH0303",
+     "inv": "UR066",
+     "museum": "Puruchuco Museum",
+     "mnum": "4a",
+     "provenance": "Huaquerones",
+     "region": "Puruchuco",
+     "orig_inv": "UR066"
+    },
+    "reason": null
+   }
+  },
+  "KH0305/KH0301": {
+   "ok": true,
+   "a": {
+    "ok": true,
+    "okr": "KH0305",
+    "khid": 1000262,
+    "start": 41,
+    "n_hits": 1,
+    "hits": [
+     41
+    ],
+    "block": [
+     8,
+     1,
+     3,
+     1,
+     57,
+     5,
+     6,
+     2
+    ],
+    "block_len": 8,
+    "clusters": [
+     1006643,
+     1006643,
+     1006643,
+     1006643,
+     1006644,
+     1006644,
+     1006644,
+     1006644
+    ],
+    "n_clusters": 2,
+    "n_pendants": 73,
+    "meta": {
+     "okr": "KH0305",
+     "inv": "UR068",
+     "museum": "Puruchuco Museum",
+     "mnum": "2",
+     "provenance": "",
+     "region": "Puruchuco",
+     "orig_inv": "UR068"
+    },
+    "reason": null
+   },
+   "b": {
+    "ok": true,
+    "okr": "KH0301",
+    "khid": 1000263,
+    "start": 40,
+    "n_hits": 1,
+    "hits": [
+     40
+    ],
+    "block": [
+     8,
+     1,
+     3,
+     1,
+     57,
+     5,
+     6,
+     2
+    ],
+    "block_len": 8,
+    "clusters": [
+     1006656,
+     1006656,
+     1006656,
+     1006656,
+     1006656,
+     1006656,
+     1006656,
+     1006656
+    ],
+    "n_clusters": 1,
+    "n_pendants": 71,
+    "meta": {
+     "okr": "KH0301",
+     "inv": "UR064",
+     "museum": "Puruchuco Museum",
+     "mnum": "#3 Tex 641 Rt 639",
+     "provenance": "Huaquerones",
+     "region": "Puruchuco",
+     "orig_inv": "UR064"
+    },
+    "reason": null
+   }
+  }
+ },
+ "n_R5": 3069,
+ "pairs": {
+  "KH0362/KH0049": {
+   "a": {
+    "ok": true,
+    "okr": "KH0362",
+    "khid": 1000323,
+    "start": 46,
+    "n_hits": 1,
+    "hits": [
+     46
+    ],
+    "block": [
+     1856,
+     2578,
+     89,
+     974,
+     1146,
+     1095,
+     849,
+     790,
+     6485,
+     875,
+     1348,
+     754
+    ],
+    "block_len": 12,
+    "clusters": [
+     1012163,
+     1012163,
+     1012163,
+     1012163,
+     1012163,
+     1012163,
+     1012163,
+     1012163,
+     1012164,
+     1012164,
+     1012164,
+     1012164
+    ],
+    "n_clusters": 2,
+    "n_pendants": 72,
+    "meta": {
+     "okr": "KH0362",
+     "inv": "UR122",
+     "museum": "Museum of Worldculture, Goteborg, Sweden",
+     "mnum": "1938.45.0228",
+     "provenance": "Nazca",
+     "region": "",
+     "orig_inv": "UR122"
+    },
+    "reason": null
+   },
+   "b": {
+    "ok": true,
+    "okr": "KH0049",
+    "khid": 1000565,
+    "start": 82,
+    "n_hits": 1,
+    "hits": [
+     82
+    ],
+    "block": [
+     1856,
+     2578,
+     89,
+     974,
+     1146,
+     1095,
+     849,
+     790,
+     6485,
+     875,
+     1348,
+     754
+    ],
+    "block_len": 12,
+    "clusters": [
+     1018470,
+     1018470,
+     1018470,
+     1018470,
+     1018470,
+     1018470,
+     1018470,
+     1018470,
+     1018471,
+     1018471,
+     1018471,
+     1018471
+    ],
+    "n_clusters": 2,
+    "n_pendants": 108,
+    "meta": {
+     "okr": "KH0049",
+     "inv": "AS038/HP036",
+     "museum": "Museo Nacional de Arqueolog\u00eda, Antropolog\u00eda e Historia de Per\u00fa",
+     "mnum": "MNAAHP3550",
+     "provenance": "Costa Sur",
+     "region": "",
+     "orig_inv": "HP036"
+    },
+    "reason": null
+   },
+   "published_block": [
+    1856,
+    2578,
+    89,
+    974,
+    1146,
+    1095,
+    849,
+    790,
+    6485,
+    875,
+    1348,
+    754
+   ],
+   "published_block_len": 12,
+   "census": {
+    "a": {
+     "okr": "KH0362",
+     "inv": "UR122",
+     "museum": "Museum of Worldculture, Goteborg, Sweden",
+     "mnum": "1938.45.0228",
+     "provenance": "Nazca",
+     "region": "",
+     "orig_inv": "UR122"
+    },
+    "b": {
+     "okr": "KH0049",
+     "inv": "AS038/HP036",
+     "museum": "Museo Nacional de Arqueolog\u00eda, Antropolog\u00eda e Historia de Per\u00fa",
+     "mnum": "MNAAHP3550",
+     "provenance": "Costa Sur",
+     "region": "",
+     "orig_inv": "HP036"
+    }
+   },
+   "aligned_units": 12,
+   "coloured_units": 12,
+   "excluded_units": {},
+   "positive_control_copy_all": {
+    "A": 12,
+    "expected": 12,
+    "p": 0.07796101949025487,
+    "passed": false
+   },
+   "degeneracy_reason": null,
+   "colour_counts_A": {
+    "AB|": 11,
+    "MB|": 1
+   },
+   "colour_counts_B": {
+    "AB|": 6,
+    "W:KB|:": 4,
+    "W|": 2
+   },
+   "observed_A": 6,
+   "rate": 0.5,
+   "null_mean": 5.5002,
+   "null_sd": 0.4999999599999984,
+   "null_q95": 6.0,
+   "null_max": 6,
+   "null_min": 5,
+   "p": 0.5002499750024998,
+   "calibration": {
+    "fpr_perm": 0.0,
+    "n": 1000,
+    "shift_offsets": 9,
+    "min_offset": 2,
+    "fpr_shift": 0.0,
+    "shift_p_min": 0.5002499750024998
+   },
+   "power": {
+    "f": 0.25,
+    "k_planted": 3,
+    "power": 0.0,
+    "median_p": 0.4150424787606197,
+    "n": 200,
+    "curve": {
+     "0.1": 0.0,
+     "0.15": 0.0,
+     "0.25": 0.0,
+     "0.4": 0.0
+    },
+    "curve_n": 100
+   },
+   "N2_within_group": {
+    "applicable": true,
+    "n_keys": 2,
+    "key_sizes": [
+     8,
+     4
+    ],
+    "null_mean": 5.2456,
+    "p": 0.24567543245675433,
+    "note": "descriptive, not a verdict"
+   },
+   "verdict": "TOOL EXCLUDED",
+   "sensitivities": {
+    "BY_eq_YB": {
+     "A": 6,
+     "p": 0.5018498150184981
+    },
+    "nonzero_value_units": {
+     "n": 12,
+     "A": 6,
+     "p": 0.5002499750024998,
+     "note": "identical to primary (published block has no zeros)"
+    }
+   },
+   "matching_units": [
+    {
+     "pos": 0,
+     "value": 1856,
+     "startA": 46,
+     "startB": 82,
+     "colour": "AB"
+    },
+    {
+     "pos": 3,
+     "value": 974,
+     "startA": 49,
+     "startB": 85,
+     "colour": "AB"
+    },
+    {
+     "pos": 4,
+     "value": 1146,
+     "startA": 50,
+     "startB": 86,
+     "colour": "AB"
+    },
+    {
+     "pos": 5,
+     "value": 1095,
+     "startA": 51,
+     "startB": 87,
+     "colour": "AB"
+    },
+    {
+     "pos": 6,
+     "value": 849,
+     "startA": 52,
+     "startB": 88,
+     "colour": "AB"
+    },
+    {
+     "pos": 7,
+     "value": 790,
+     "startA": 53,
+     "startB": 89,
+     "colour": "AB"
+    }
+   ]
+  },
+  "KH0128/KH0137": {
+   "a": {
+    "ok": true,
+    "okr": "KH0128",
+    "khid": 1000063,
+    "start": 39,
+    "n_hits": 1,
+    "hits": [
+     39
+    ],
+    "block": [
+     40,
+     9,
+     57,
+     30,
+     56,
+     80,
+     21,
+     8,
+     22,
+     12
+    ],
+    "block_len": 10,
+    "clusters": [
+     1002269,
+     1002269,
+     1002269,
+     1002269,
+     1002269,
+     1002269,
+     1002269,
+     1002269,
+     1002269,
+     1002269
+    ],
+    "n_clusters": 1,
+    "n_pendants": 339,
+    "meta": {
+     "okr": "KH0128",
+     "inv": "UR1114",
+     "museum": "Museum f\u00fcr V\u00f6lkerkunde, Berlin",
+     "mnum": "VA16148",
+     "provenance": "Between Ica and Pisco",
+     "region": "",
+     "orig_inv": "AS114"
+    },
+    "reason": null
+   },
+   "b": {
+    "ok": true,
+    "okr": "KH0137",
+    "khid": 1000079,
+    "start": 40,
+    "n_hits": 1,
+    "hits": [
+     40
+    ],
+    "block": [
+     40,
+     9,
+     57,
+     30,
+     56,
+     80,
+     21,
+     8,
+     22,
+     12
+    ],
+    "block_len": 10,
+    "clusters": [
+     1002361,
+     1002361,
+     1002361,
+     1002361,
+     1002361,
+     1002361,
+     1002361,
+     1002361,
+     1002361,
+     1002361
+    ],
+    "n_clusters": 1,
+    "n_pendants": 70,
+    "meta": {
+     "okr": "KH0137",
+     "inv": "UR1123",
+     "museum": "Museum f\u00fcr V\u00f6lkerkunde, Berlin",
+     "mnum": "VA47085",
+     "provenance": "Ica",
+     "region": "",
+     "orig_inv": "AS123"
+    },
+    "reason": null
+   },
+   "published_block": [
+    40,
+    9,
+    57,
+    30,
+    56,
+    80,
+    21,
+    8,
+    22,
+    12
+   ],
+   "published_block_len": 10,
+   "census": {
+    "a": {
+     "okr": "KH0128",
+     "inv": "UR1114",
+     "museum": "Museum f\u00fcr V\u00f6lkerkunde, Berlin",
+     "mnum": "VA16148",
+     "provenance": "Between Ica and Pisco",
+     "region": "",
+     "orig_inv": "AS114"
+    },
+    "b": {
+     "okr": "KH0137",
+     "inv": "UR1123",
+     "museum": "Museum f\u00fcr V\u00f6lkerkunde, Berlin",
+     "mnum": "VA47085",
+     "provenance": "Ica",
+     "region": "",
+     "orig_inv": "AS123"
+    }
+   },
+   "aligned_units": 10,
+   "coloured_units": 10,
+   "excluded_units": {},
+   "positive_control_copy_all": {
+    "A": 10,
+    "expected": 10,
+    "p": 1.0,
+    "passed": false
+   },
+   "degeneracy_reason": "no_shared_matching_colour",
+   "colour_counts_A": {
+    "HB|": 10
+   },
+   "colour_counts_B": {
+    "EB|": 10
+   },
+   "observed_A": 0,
+   "rate": 0.0,
+   "null_mean": 0,
+   "p": null,
+   "verdict": "DEGENERATE",
+   "note": "no colour variation to shuffle toward extra matches (no_shared_matching_colour); A is fixed by the inventories and N1 has max = min"
+  },
+  "KH0140/KH0483": {
+   "a": {
+    "ok": true,
+    "okr": "KH0140",
+    "khid": 1000082,
+    "start": 0,
+    "n_hits": 1,
+    "hits": [
+     0
+    ],
+    "block": [
+     1517,
+     2373,
+     6291,
+     3495,
+     4213,
+     6323,
+     4122,
+     2220,
+     4377,
+     1292,
+     1162,
+     2393
+    ],
+    "block_len": 12,
+    "clusters": [
+     1002484,
+     1002484,
+     1002484,
+     1002484,
+     1002485,
+     1002485,
+     1002485,
+     1002486,
+     1002486,
+     1002486,
+     1002486,
+     1002486
+    ],
+    "n_clusters": 3,
+    "n_pendants": 16,
+    "meta": {
+     "okr": "KH0140",
+     "inv": "AS125",
+     "museum": "Museum f\u00fcr V\u00f6lkerkunde, Berlin",
+     "mnum": "VA42670",
+     "provenance": "Pachacamac",
+     "region": "",
+     "orig_inv": "AS125"
+    },
+    "reason": null
+   },
+   "b": {
+    "ok": true,
+    "okr": "KH0483",
+    "khid": 1000558,
+    "start": 0,
+    "n_hits": 1,
+    "hits": [
+     0
+    ],
+    "block": [
+     1517,
+     2373,
+     6291,
+     3495,
+     4213,
+     6323,
+     4122,
+     2220,
+     4377,
+     1292,
+     1162,
+     2393
+    ],
+    "block_len": 12,
+    "clusters": [
+     1018419,
+     1018419,
+     1018419,
+     1018419,
+     1018420,
+     1018420,
+     1018420,
+     1018421,
+     1018421,
+     1018421,
+     1018421,
+     1018421
+    ],
+    "n_clusters": 3,
+    "n_pendants": 15,
+    "meta": {
+     "okr": "KH0483",
+     "inv": "UR247",
+     "museum": "Ethnologisches Museum, Berlin, Germany",
+     "mnum": "VA 42610",
+     "provenance": "Pachacamac",
+     "region": "\"Central Coast, Peru\"",
+     "orig_inv": "UR247"
+    },
+    "reason": null
+   },
+   "published_block": [
+    1517,
+    2373,
+    6291,
+    3495,
+    4213,
+    6323,
+    4122,
+    2220,
+    4377,
+    1292,
+    1162,
+    2393
+   ],
+   "published_block_len": 12,
+   "census": {
+    "a": {
+     "okr": "KH0140",
+     "inv": "AS125",
+     "museum": "Museum f\u00fcr V\u00f6lkerkunde, Berlin",
+     "mnum": "VA42670",
+     "provenance": "Pachacamac",
+     "region": "",
+     "orig_inv": "AS125"
+    },
+    "b": {
+     "okr": "KH0483",
+     "inv": "UR247",
+     "museum": "Ethnologisches Museum, Berlin, Germany",
+     "mnum": "VA 42610",
+     "provenance": "Pachacamac",
+     "region": "\"Central Coast, Peru\"",
+     "orig_inv": "UR247"
+    }
+   },
+   "aligned_units": 12,
+   "coloured_units": 12,
+   "excluded_units": {},
+   "positive_control_copy_all": {
+    "A": 12,
+    "expected": 12,
+    "p": 1.0,
+    "passed": false
+   },
+   "degeneracy_reason": "A_monochromatic",
+   "colour_counts_A": {
+    "W|": 12
+   },
+   "colour_counts_B": {
+    "W|": 12
+   },
+   "observed_A": 12,
+   "rate": 1.0,
+   "null_mean": 12,
+   "p": null,
+   "verdict": "DEGENERATE",
+   "note": "no colour variation to shuffle toward extra matches (A_monochromatic); A is fixed by the inventories and N1 has max = min"
+  },
+  "KH0304/KH0303": {
+   "a": {
+    "ok": true,
+    "okr": "KH0304",
+    "khid": 1000260,
+    "start": 20,
+    "n_hits": 1,
+    "hits": [
+     20
+    ],
+    "block": [
+     22,
+     3,
+     9,
+     2,
+     156,
+     13,
+     12
+    ],
+    "block_len": 7,
+    "clusters": [
+     1006623,
+     1006623,
+     1006623,
+     1006623,
+     1006623,
+     1006623,
+     1006623
+    ],
+    "n_clusters": 1,
+    "n_pendants": 32,
+    "meta": {
+     "okr": "KH0304",
+     "inv": "UR067",
+     "museum": "",
+     "mnum": "s/n",
+     "provenance": "Huaquerones",
+     "region": "Puruchuco",
+     "orig_inv": "UR067"
+    },
+    "reason": null
+   },
+   "b": {
+    "ok": true,
+    "okr": "KH0303",
+    "khid": 1000261,
+    "start": 20,
+    "n_hits": 1,
+    "hits": [
+     20
+    ],
+    "block": [
+     22,
+     3,
+     9,
+     2,
+     156,
+     13,
+     12
+    ],
+    "block_len": 7,
+    "clusters": [
+     1006629,
+     1006629,
+     1006629,
+     1006629,
+     1006630,
+     1006630,
+     1006630
+    ],
+    "n_clusters": 2,
+    "n_pendants": 32,
+    "meta": {
+     "okr": "KH0303",
+     "inv": "UR066",
+     "museum": "Puruchuco Museum",
+     "mnum": "4a",
+     "provenance": "Huaquerones",
+     "region": "Puruchuco",
+     "orig_inv": "UR066"
+    },
+    "reason": null
+   },
+   "published_block": [
+    22,
+    3,
+    9,
+    2,
+    156,
+    13,
+    12
+   ],
+   "published_block_len": 7,
+   "census": {
+    "a": {
+     "okr": "KH0304",
+     "inv": "UR067",
+     "museum": "",
+     "mnum": "s/n",
+     "provenance": "Huaquerones",
+     "region": "Puruchuco",
+     "orig_inv": "UR067"
+    },
+    "b": {
+     "okr": "KH0303",
+     "inv": "UR066",
+     "museum": "Puruchuco Museum",
+     "mnum": "4a",
+     "provenance": "Huaquerones",
+     "region": "Puruchuco",
+     "orig_inv": "UR066"
+    }
+   },
+   "aligned_units": 7,
+   "coloured_units": 7,
+   "excluded_units": {},
+   "positive_control_copy_all": {
+    "A": 7,
+    "expected": 7,
+    "p": 0.0009995002498750624,
+    "passed": true
+   },
+   "degeneracy_reason": null,
+   "colour_counts_A": {
+    "W|": 2,
+    "AB|": 2,
+    "GG:AB|:": 1,
+    "KB:W|:": 1,
+    "GG|": 1
+   },
+   "colour_counts_B": {
+    "W|": 2,
+    "MB|": 1,
+    "KB:MB|:": 1,
+    "AB:W|:": 1,
+    "AB|": 1,
+    "KB|": 1
+   },
+   "observed_A": 3,
+   "rate": 0.42857142857142855,
+   "null_mean": 0.8462,
+   "null_sd": 0.7680791365477909,
+   "null_q95": 2.0,
+   "null_max": 3,
+   "null_min": 0,
+   "p": 0.017298270172982702,
+   "calibration": {
+    "fpr_perm": 0.0,
+    "n": 1000,
+    "shift_offsets": 6,
+    "min_offset": 1,
+    "fpr_shift": 0.0,
+    "shift_p_min": 0.19558044195580443
+   },
+   "power": {
+    "f": 0.25,
+    "k_planted": 2,
+    "power": 0.065,
+    "median_p": 0.12268865567216392,
+    "n": 200,
+    "curve": {
+     "0.1": 0.01,
+     "0.15": 0.01,
+     "0.25": 0.06,
+     "0.4": 0.19
+    },
+    "curve_n": 100
+   },
+   "N2_within_group": {
+    "applicable": true,
+    "n_keys": 2,
+    "key_sizes": [
+     4,
+     3
+    ],
+    "null_mean": 0.9169,
+    "p": 0.0430956904309569,
+    "note": "descriptive, not a verdict"
+   },
+   "verdict": "NOT TESTABLE",
+   "sensitivities": {
+    "BY_eq_YB": {
+     "A": 3,
+     "p": 0.018198180181981802
+    },
+    "nonzero_value_units": {
+     "n": 7,
+     "A": 3,
+     "p": 0.017298270172982702,
+     "note": "identical to primary (published block has no zeros)"
+    }
+   },
+   "matching_units": [
+    {
+     "pos": 0,
+     "value": 22,
+     "startA": 20,
+     "startB": 20,
+     "colour": "W"
+    },
+    {
+     "pos": 4,
+     "value": 156,
+     "startA": 24,
+     "startB": 24,
+     "colour": "W"
+    },
+    {
+     "pos": 5,
+     "value": 13,
+     "startA": 25,
+     "startB": 25,
+     "colour": "AB"
+    }
+   ]
+  },
+  "KH0305/KH0301": {
+   "a": {
+    "ok": true,
+    "okr": "KH0305",
+    "khid": 1000262,
+    "start": 41,
+    "n_hits": 1,
+    "hits": [
+     41
+    ],
+    "block": [
+     8,
+     1,
+     3,
+     1,
+     57,
+     5,
+     6,
+     2
+    ],
+    "block_len": 8,
+    "clusters": [
+     1006643,
+     1006643,
+     1006643,
+     1006643,
+     1006644,
+     1006644,
+     1006644,
+     1006644
+    ],
+    "n_clusters": 2,
+    "n_pendants": 73,
+    "meta": {
+     "okr": "KH0305",
+     "inv": "UR068",
+     "museum": "Puruchuco Museum",
+     "mnum": "2",
+     "provenance": "",
+     "region": "Puruchuco",
+     "orig_inv": "UR068"
+    },
+    "reason": null
+   },
+   "b": {
+    "ok": true,
+    "okr": "KH0301",
+    "khid": 1000263,
+    "start": 40,
+    "n_hits": 1,
+    "hits": [
+     40
+    ],
+    "block": [
+     8,
+     1,
+     3,
+     1,
+     57,
+     5,
+     6,
+     2
+    ],
+    "block_len": 8,
+    "clusters": [
+     1006656,
+     1006656,
+     1006656,
+     1006656,
+     1006656,
+     1006656,
+     1006656,
+     1006656
+    ],
+    "n_clusters": 1,
+    "n_pendants": 71,
+    "meta": {
+     "okr": "KH0301",
+     "inv": "UR064",
+     "museum": "Puruchuco Museum",
+     "mnum": "#3 Tex 641 Rt 639",
+     "provenance": "Huaquerones",
+     "region": "Puruchuco",
+     "orig_inv": "UR064"
+    },
+    "reason": null
+   },
+   "published_block": [
+    8,
+    1,
+    3,
+    1,
+    57,
+    5,
+    6,
+    2
+   ],
+   "published_block_len": 8,
+   "census": {
+    "a": {
+     "okr": "KH0305",
+     "inv": "UR068",
+     "museum": "Puruchuco Museum",
+     "mnum": "2",
+     "provenance": "",
+     "region": "Puruchuco",
+     "orig_inv": "UR068"
+    },
+    "b": {
+     "okr": "KH0301",
+     "inv": "UR064",
+     "museum": "Puruchuco Museum",
+     "mnum": "#3 Tex 641 Rt 639",
+     "provenance": "Huaquerones",
+     "region": "Puruchuco",
+     "orig_inv": "UR064"
+    }
+   },
+   "aligned_units": 8,
+   "coloured_units": 8,
+   "excluded_units": {},
+   "positive_control_copy_all": {
+    "A": 8,
+    "expected": 8,
+    "p": 0.0004997501249375312,
+    "passed": true
+   },
+   "degeneracy_reason": null,
+   "colour_counts_A": {
+    "W|": 2,
+    "AB|": 2,
+    "GG|": 2,
+    "KB:W|:": 2
+   },
+   "colour_counts_B": {
+    "W|": 2,
+    "CB:W|:": 2,
+    "AB|": 1,
+    "GG|": 1,
+    "MB|": 1,
+    "GG:AB:W|::": 1
+   },
+   "observed_A": 4,
+   "rate": 0.5,
+   "null_mean": 1.0016,
+   "null_sd": 0.8860008126407108,
+   "null_q95": 3.0,
+   "null_max": 4,
+   "null_min": 0,
+   "p": 0.0046995300469953,
+   "calibration": {
+    "fpr_perm": 0.004,
+    "n": 1000,
+    "shift_offsets": 7,
+    "min_offset": 1,
+    "fpr_shift": 0.14285714285714285,
+    "shift_p_min": 0.0046995300469953
+   },
+   "power": {
+    "f": 0.25,
+    "k_planted": 2,
+    "power": 0.04,
+    "median_p": 0.1794102948525737,
+    "n": 200,
+    "curve": {
+     "0.1": 0.0,
+     "0.15": 0.01,
+     "0.25": 0.01,
+     "0.4": 0.1
+    },
+    "curve_n": 100
+   },
+   "N2_within_group": {
+    "applicable": true,
+    "n_keys": 2,
+    "key_sizes": [
+     4,
+     4
+    ],
+    "null_mean": 1.005,
+    "p": 0.011698830116988301,
+    "note": "descriptive, not a verdict"
+   },
+   "verdict": "TOOL EXCLUDED",
+   "sensitivities": {
+    "BY_eq_YB": {
+     "A": 4,
+     "p": 0.005699430056994301
+    },
+    "nonzero_value_units": {
+     "n": 8,
+     "A": 4,
+     "p": 0.0046995300469953,
+     "note": "identical to primary (published block has no zeros)"
+    }
+   },
+   "matching_units": [
+    {
+     "pos": 0,
+     "value": 8,
+     "startA": 41,
+     "startB": 40,
+     "colour": "W"
+    },
+    {
+     "pos": 1,
+     "value": 1,
+     "startA": 42,
+     "startB": 41,
+     "colour": "AB"
+    },
+    {
+     "pos": 2,
+     "value": 3,
+     "startA": 43,
+     "startB": 42,
+     "colour": "GG"
+    },
+    {
+     "pos": 4,
+     "value": 57,
+     "startA": 45,
+     "startB": 44,
+     "colour": "W"
+    }
+   ]
+  }
+ },
+ "sec": 1.0
+}

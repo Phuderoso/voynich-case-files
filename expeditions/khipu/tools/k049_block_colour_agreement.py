@@ -362,12 +362,7 @@ def main(smoke=False):
         P["b"] = public_side(B)
         P["published_block"] = spec["block"]
         P["published_block_len"] = spec["block_len"]
-        P["census"] = dict(
-            a=dict(okr=spec["a"], inv=spec["a_inv"], **{k: A["meta"][k] for k in
-                   ("okr", "inv", "orig_inv", "museum", "mnum", "provenance", "region")}),
-            b=dict(okr=spec["b"], inv=spec["b_inv"], **{k: B["meta"][k] for k in
-                   ("okr", "inv", "orig_inv", "museum", "mnum", "provenance", "region")}),
-        )
+        P["census"] = dict(a=dict(A["meta"]), b=dict(B["meta"]))
         us, excl = colour_units(colour, units)
         n = len(us)
         P.update(aligned_units=len(units), coloured_units=n, excluded_units=dict(excl))
