@@ -1,0 +1,2732 @@
+{
+ "cycle": "K045",
+ "db": "OKR khipu.db @ 4039ca5 (read-only)",
+ "fixture_passed": true,
+ "fixture": [
+  {
+   "system": "FAKE1",
+   "token": "FX1",
+   "expected": "exact_published_equivalent",
+   "got": "exact_published_equivalent"
+  },
+  {
+   "system": "FAKE1",
+   "token": "FX2",
+   "expected": "related",
+   "got": "related"
+  },
+  {
+   "system": "FAKE1",
+   "token": "FX3",
+   "expected": "conflicting",
+   "got": "conflicting"
+  },
+  {
+   "system": "FAKE1",
+   "token": "W",
+   "expected": "same_dictionary",
+   "got": "same_dictionary"
+  },
+  {
+   "system": "FAKE1",
+   "token": "ZZQ",
+   "expected": "unmapped",
+   "got": "unmapped"
+  },
+  {
+   "system": "FAKE2",
+   "token": "ZZQ",
+   "expected": "source_missing",
+   "got": "source_missing"
+  },
+  {
+   "pair": [
+    "FAKE1",
+    "FX1",
+    "FAKE1",
+    "W"
+   ],
+   "expected": "exact_published_equivalent",
+   "got": "exact_published_equivalent"
+  },
+  {
+   "pair": [
+    "FAKE1",
+    "W",
+    "FAKE1",
+    "W"
+   ],
+   "expected": "same_dictionary",
+   "got": "same_dictionary"
+  },
+  {
+   "pair": [
+    "FAKE1",
+    "FX1",
+    "FAKE1",
+    "AB"
+   ],
+   "expected": "unmapped",
+   "got": "unmapped"
+  },
+  {
+   "pair": [
+    "FAKE1",
+    "FX2",
+    "FAKE1",
+    "AB"
+   ],
+   "expected": "related",
+   "got": "related"
+  },
+  {
+   "full_a": [
+    [
+     "W",
+     "AB"
+    ],
+    [
+     "-"
+    ]
+   ],
+   "full_b": [
+    [
+     "FX1",
+     "AB"
+    ],
+    [
+     "-"
+    ]
+   ],
+   "expected": true,
+   "got": true
+  },
+  {
+   "full_a": [
+    [
+     "W",
+     "AB"
+    ],
+    [
+     "-"
+    ]
+   ],
+   "full_b": [
+    [
+     "W",
+     "AB"
+    ],
+    [
+     ":"
+    ]
+   ],
+   "expected": false,
+   "got": false
+  },
+  {
+   "full_a": [
+    [
+     "W",
+     "FX2"
+    ],
+    [
+     "-"
+    ]
+   ],
+   "full_b": [
+    [
+     "W",
+     "AB"
+    ],
+    [
+     "-"
+    ]
+   ],
+   "expected": false,
+   "got": false
+  }
+ ],
+ "positive_control": {
+  "codes": [
+   "W",
+   "AB"
+  ],
+  "present": [
+   true,
+   true
+  ],
+  "label": "schema_ok"
+ },
+ "corpus": {
+  "colour_rows": 56306,
+  "distinct_full_color": 1063,
+  "distinct_component_tokens": 64,
+  "tokens_in_ascher_color_dc": 64,
+  "tokens_not_in_ascher_color_dc": [],
+  "tokens_not_in_dc_but_case_insensitive_match": [],
+  "ascher_color_dc_codes": 64,
+  "dictionary_codes_never_used": [],
+  "multi_component_full_color": 983,
+  "operators": [
+   "-",
+   ":",
+   "*",
+   "**",
+   "*_",
+   "%"
+  ]
+ },
+ "by_proxy": {
+  "AS": {
+   "khipus_with_colour": 211,
+   "colour_rows": 16340,
+   "cords_with_colour": 15455,
+   "distinct_tokens": 60,
+   "distinct_full_color": 369,
+   "tokens_not_in_ascher_color_dc": [],
+   "created_by_khipus": {
+    "katie": 134,
+    "leah": 61,
+    "cbrezine": 1,
+    "tania": 10,
+    "eric": 5
+   }
+  },
+  "HP": {
+   "khipus_with_colour": 59,
+   "colour_rows": 3512,
+   "cords_with_colour": 3411,
+   "distinct_tokens": 27,
+   "distinct_full_color": 134,
+   "tokens_not_in_ascher_color_dc": [],
+   "created_by_khipus": {
+    "gurton": 32,
+    "julia": 27
+   }
+  },
+  "UR": {
+   "khipus_with_colour": 305,
+   "colour_rows": 34864,
+   "cords_with_colour": 33487,
+   "distinct_tokens": 62,
+   "distinct_full_color": 689,
+   "tokens_not_in_ascher_color_dc": [],
+   "created_by_khipus": {
+    "cbrezine": 60,
+    "katie": 15,
+    "leah": 4,
+    "luca": 3,
+    "chandra": 13,
+    "Chandra": 1,
+    "tania": 36,
+    "eric": 41,
+    "gurton": 86,
+    "julia": 32,
+    "jclindaniel": 14
+   }
+  },
+  "other:JC": {
+   "khipus_with_colour": 23,
+   "colour_rows": 1401,
+   "cords_with_colour": 1240,
+   "distinct_tokens": 30,
+   "distinct_full_color": 123,
+   "tokens_not_in_ascher_color_dc": [],
+   "created_by_khipus": {
+    "jclindaniel": 23
+   }
+  },
+  "other:QU": {
+   "khipus_with_colour": 4,
+   "colour_rows": 172,
+   "cords_with_colour": 172,
+   "distinct_tokens": 11,
+   "distinct_full_color": 18,
+   "tokens_not_in_ascher_color_dc": [],
+   "created_by_khipus": {
+    "gurton": 4
+   }
+  },
+  "other:missing_khipu": {
+   "khipus_with_colour": 1,
+   "colour_rows": 17,
+   "cords_with_colour": 17,
+   "distinct_tokens": 6,
+   "distinct_full_color": 5,
+   "tokens_not_in_ascher_color_dc": [],
+   "created_by_khipus": {}
+  }
+ },
+ "token_classification": [
+  {
+   "system": "AS",
+   "token": "0B",
+   "class": "same_dictionary",
+   "ref_code": "0B",
+   "component_uses": 6
+  },
+  {
+   "system": "AS",
+   "token": "0D",
+   "class": "same_dictionary",
+   "ref_code": "0D",
+   "component_uses": 52
+  },
+  {
+   "system": "AS",
+   "token": "0G",
+   "class": "same_dictionary",
+   "ref_code": "0G",
+   "component_uses": 176
+  },
+  {
+   "system": "AS",
+   "token": "0L",
+   "class": "same_dictionary",
+   "ref_code": "0L",
+   "component_uses": 1
+  },
+  {
+   "system": "AS",
+   "token": "0Y",
+   "class": "same_dictionary",
+   "ref_code": "0Y",
+   "component_uses": 12
+  },
+  {
+   "system": "AS",
+   "token": "AB",
+   "class": "same_dictionary",
+   "ref_code": "AB",
+   "component_uses": 255
+  },
+  {
+   "system": "AS",
+   "token": "B",
+   "class": "same_dictionary",
+   "ref_code": "B",
+   "component_uses": 2523
+  },
+  {
+   "system": "AS",
+   "token": "BB",
+   "class": "same_dictionary",
+   "ref_code": "BB",
+   "component_uses": 489
+  },
+  {
+   "system": "AS",
+   "token": "BD",
+   "class": "same_dictionary",
+   "ref_code": "BD",
+   "component_uses": 123
+  },
+  {
+   "system": "AS",
+   "token": "BG",
+   "class": "same_dictionary",
+   "ref_code": "BG",
+   "component_uses": 61
+  },
+  {
+   "system": "AS",
+   "token": "BL",
+   "class": "same_dictionary",
+   "ref_code": "BL",
+   "component_uses": 109
+  },
+  {
+   "system": "AS",
+   "token": "BS",
+   "class": "same_dictionary",
+   "ref_code": "BS",
+   "component_uses": 389
+  },
+  {
+   "system": "AS",
+   "token": "BY",
+   "class": "same_dictionary",
+   "ref_code": "BY",
+   "component_uses": 123
+  },
+  {
+   "system": "AS",
+   "token": "CB",
+   "class": "same_dictionary",
+   "ref_code": "CB",
+   "component_uses": 323
+  },
+  {
+   "system": "AS",
+   "token": "D0",
+   "class": "same_dictionary",
+   "ref_code": "D0",
+   "component_uses": 14
+  },
+  {
+   "system": "AS",
+   "token": "DB",
+   "class": "same_dictionary",
+   "ref_code": "DB",
+   "component_uses": 1017
+  },
+  {
+   "system": "AS",
+   "token": "DG",
+   "class": "same_dictionary",
+   "ref_code": "DG",
+   "component_uses": 3
+  },
+  {
+   "system": "AS",
+   "token": "EB",
+   "class": "same_dictionary",
+   "ref_code": "EB",
+   "component_uses": 22
+  },
+  {
+   "system": "AS",
+   "token": "FB",
+   "class": "same_dictionary",
+   "ref_code": "FB",
+   "component_uses": 231
+  },
+  {
+   "system": "AS",
+   "token": "FR",
+   "class": "same_dictionary",
+   "ref_code": "FR",
+   "component_uses": 16
+  },
+  {
+   "system": "AS",
+   "token": "G",
+   "class": "same_dictionary",
+   "ref_code": "G",
+   "component_uses": 118
+  },
+  {
+   "system": "AS",
+   "token": "G0",
+   "class": "same_dictionary",
+   "ref_code": "G0",
+   "component_uses": 129
+  },
+  {
+   "system": "AS",
+   "token": "GA",
+   "class": "same_dictionary",
+   "ref_code": "GA",
+   "component_uses": 4
+  },
+  {
+   "system": "AS",
+   "token": "GB",
+   "class": "same_dictionary",
+   "ref_code": "GB",
+   "component_uses": 18
+  },
+  {
+   "system": "AS",
+   "token": "GG",
+   "class": "same_dictionary",
+   "ref_code": "GG",
+   "component_uses": 193
+  },
+  {
+   "system": "AS",
+   "token": "GL",
+   "class": "same_dictionary",
+   "ref_code": "GL",
+   "component_uses": 6
+  },
+  {
+   "system": "AS",
+   "token": "GR",
+   "class": "same_dictionary",
+   "ref_code": "GR",
+   "component_uses": 26
+  },
+  {
+   "system": "AS",
+   "token": "GY",
+   "class": "same_dictionary",
+   "ref_code": "GY",
+   "component_uses": 70
+  },
+  {
+   "system": "AS",
+   "token": "HB",
+   "class": "same_dictionary",
+   "ref_code": "HB",
+   "component_uses": 78
+  },
+  {
+   "system": "AS",
+   "token": "KB",
+   "class": "same_dictionary",
+   "ref_code": "KB",
+   "component_uses": 582
+  },
+  {
+   "system": "AS",
+   "token": "KG",
+   "class": "same_dictionary",
+   "ref_code": "KG",
+   "component_uses": 14
+  },
+  {
+   "system": "AS",
+   "token": "LA",
+   "class": "same_dictionary",
+   "ref_code": "LA",
+   "component_uses": 14
+  },
+  {
+   "system": "AS",
+   "token": "LB",
+   "class": "same_dictionary",
+   "ref_code": "LB",
+   "component_uses": 1424
+  },
+  {
+   "system": "AS",
+   "token": "LC",
+   "class": "same_dictionary",
+   "ref_code": "LC",
+   "component_uses": 125
+  },
+  {
+   "system": "AS",
+   "token": "LD",
+   "class": "same_dictionary",
+   "ref_code": "LD",
+   "component_uses": 49
+  },
+  {
+   "system": "AS",
+   "token": "LG",
+   "class": "same_dictionary",
+   "ref_code": "LG",
+   "component_uses": 7
+  },
+  {
+   "system": "AS",
+   "token": "LK",
+   "class": "same_dictionary",
+   "ref_code": "LK",
+   "component_uses": 12
+  },
+  {
+   "system": "AS",
+   "token": "MB",
+   "class": "same_dictionary",
+   "ref_code": "MB",
+   "component_uses": 888
+  },
+  {
+   "system": "AS",
+   "token": "MG",
+   "class": "same_dictionary",
+   "ref_code": "MG",
+   "component_uses": 1
+  },
+  {
+   "system": "AS",
+   "token": "NB",
+   "class": "same_dictionary",
+   "ref_code": "NB",
+   "component_uses": 173
+  },
+  {
+   "system": "AS",
+   "token": "PB",
+   "class": "same_dictionary",
+   "ref_code": "PB",
+   "component_uses": 12
+  },
+  {
+   "system": "AS",
+   "token": "PG",
+   "class": "same_dictionary",
+   "ref_code": "PG",
+   "component_uses": 2
+  },
+  {
+   "system": "AS",
+   "token": "PR",
+   "class": "same_dictionary",
+   "ref_code": "PR",
+   "component_uses": 1
+  },
+  {
+   "system": "AS",
+   "token": "R",
+   "class": "same_dictionary",
+   "ref_code": "R",
+   "component_uses": 174
+  },
+  {
+   "system": "AS",
+   "token": "R0",
+   "class": "same_dictionary",
+   "ref_code": "R0",
+   "component_uses": 9
+  },
+  {
+   "system": "AS",
+   "token": "RB",
+   "class": "same_dictionary",
+   "ref_code": "RB",
+   "component_uses": 64
+  },
+  {
+   "system": "AS",
+   "token": "RD",
+   "class": "same_dictionary",
+   "ref_code": "RD",
+   "component_uses": 21
+  },
+  {
+   "system": "AS",
+   "token": "RG",
+   "class": "same_dictionary",
+   "ref_code": "RG",
+   "component_uses": 35
+  },
+  {
+   "system": "AS",
+   "token": "RL",
+   "class": "same_dictionary",
+   "ref_code": "RL",
+   "component_uses": 22
+  },
+  {
+   "system": "AS",
+   "token": "RM",
+   "class": "same_dictionary",
+   "ref_code": "RM",
+   "component_uses": 17
+  },
+  {
+   "system": "AS",
+   "token": "SB",
+   "class": "same_dictionary",
+   "ref_code": "SB",
+   "component_uses": 15
+  },
+  {
+   "system": "AS",
+   "token": "SR",
+   "class": "same_dictionary",
+   "ref_code": "SR",
+   "component_uses": 147
+  },
+  {
+   "system": "AS",
+   "token": "SY",
+   "class": "same_dictionary",
+   "ref_code": "SY",
+   "component_uses": 105
+  },
+  {
+   "system": "AS",
+   "token": "TG",
+   "class": "same_dictionary",
+   "ref_code": "TG",
+   "component_uses": 5
+  },
+  {
+   "system": "AS",
+   "token": "VB",
+   "class": "same_dictionary",
+   "ref_code": "VB",
+   "component_uses": 78
+  },
+  {
+   "system": "AS",
+   "token": "VG",
+   "class": "same_dictionary",
+   "ref_code": "VG",
+   "component_uses": 6
+  },
+  {
+   "system": "AS",
+   "token": "W",
+   "class": "same_dictionary",
+   "ref_code": "W",
+   "component_uses": 7879
+  },
+  {
+   "system": "AS",
+   "token": "YB",
+   "class": "same_dictionary",
+   "ref_code": "YB",
+   "component_uses": 1232
+  },
+  {
+   "system": "AS",
+   "token": "YG",
+   "class": "same_dictionary",
+   "ref_code": "YG",
+   "component_uses": 368
+  },
+  {
+   "system": "AS",
+   "token": "YY",
+   "class": "same_dictionary",
+   "ref_code": "YY",
+   "component_uses": 6
+  },
+  {
+   "system": "HP",
+   "token": "0B",
+   "class": "same_dictionary",
+   "ref_code": "0B",
+   "component_uses": 5
+  },
+  {
+   "system": "HP",
+   "token": "0R",
+   "class": "same_dictionary",
+   "ref_code": "0R",
+   "component_uses": 1
+  },
+  {
+   "system": "HP",
+   "token": "AB",
+   "class": "same_dictionary",
+   "ref_code": "AB",
+   "component_uses": 887
+  },
+  {
+   "system": "HP",
+   "token": "B",
+   "class": "same_dictionary",
+   "ref_code": "B",
+   "component_uses": 3
+  },
+  {
+   "system": "HP",
+   "token": "BG",
+   "class": "same_dictionary",
+   "ref_code": "BG",
+   "component_uses": 79
+  },
+  {
+   "system": "HP",
+   "token": "BL",
+   "class": "same_dictionary",
+   "ref_code": "BL",
+   "component_uses": 37
+  },
+  {
+   "system": "HP",
+   "token": "G",
+   "class": "same_dictionary",
+   "ref_code": "G",
+   "component_uses": 7
+  },
+  {
+   "system": "HP",
+   "token": "GG",
+   "class": "same_dictionary",
+   "ref_code": "GG",
+   "component_uses": 79
+  },
+  {
+   "system": "HP",
+   "token": "GL",
+   "class": "same_dictionary",
+   "ref_code": "GL",
+   "component_uses": 6
+  },
+  {
+   "system": "HP",
+   "token": "HB",
+   "class": "same_dictionary",
+   "ref_code": "HB",
+   "component_uses": 12
+  },
+  {
+   "system": "HP",
+   "token": "KB",
+   "class": "same_dictionary",
+   "ref_code": "KB",
+   "component_uses": 287
+  },
+  {
+   "system": "HP",
+   "token": "LK",
+   "class": "same_dictionary",
+   "ref_code": "LK",
+   "component_uses": 13
+  },
+  {
+   "system": "HP",
+   "token": "MB",
+   "class": "same_dictionary",
+   "ref_code": "MB",
+   "component_uses": 1109
+  },
+  {
+   "system": "HP",
+   "token": "MG",
+   "class": "same_dictionary",
+   "ref_code": "MG",
+   "component_uses": 7
+  },
+  {
+   "system": "HP",
+   "token": "PB",
+   "class": "same_dictionary",
+   "ref_code": "PB",
+   "component_uses": 25
+  },
+  {
+   "system": "HP",
+   "token": "PG",
+   "class": "same_dictionary",
+   "ref_code": "PG",
+   "component_uses": 28
+  },
+  {
+   "system": "HP",
+   "token": "PR",
+   "class": "same_dictionary",
+   "ref_code": "PR",
+   "component_uses": 16
+  },
+  {
+   "system": "HP",
+   "token": "R",
+   "class": "same_dictionary",
+   "ref_code": "R",
+   "component_uses": 1
+  },
+  {
+   "system": "HP",
+   "token": "R0",
+   "class": "same_dictionary",
+   "ref_code": "R0",
+   "component_uses": 6
+  },
+  {
+   "system": "HP",
+   "token": "RB",
+   "class": "same_dictionary",
+   "ref_code": "RB",
+   "component_uses": 48
+  },
+  {
+   "system": "HP",
+   "token": "RL",
+   "class": "same_dictionary",
+   "ref_code": "RL",
+   "component_uses": 19
+  },
+  {
+   "system": "HP",
+   "token": "RM",
+   "class": "same_dictionary",
+   "ref_code": "RM",
+   "component_uses": 158
+  },
+  {
+   "system": "HP",
+   "token": "TG",
+   "class": "same_dictionary",
+   "ref_code": "TG",
+   "component_uses": 8
+  },
+  {
+   "system": "HP",
+   "token": "W",
+   "class": "same_dictionary",
+   "ref_code": "W",
+   "component_uses": 1736
+  },
+  {
+   "system": "HP",
+   "token": "YB",
+   "class": "same_dictionary",
+   "ref_code": "YB",
+   "component_uses": 14
+  },
+  {
+   "system": "HP",
+   "token": "YG",
+   "class": "same_dictionary",
+   "ref_code": "YG",
+   "component_uses": 7
+  },
+  {
+   "system": "HP",
+   "token": "YY",
+   "class": "same_dictionary",
+   "ref_code": "YY",
+   "component_uses": 7
+  },
+  {
+   "system": "UR",
+   "token": "0B",
+   "class": "same_dictionary",
+   "ref_code": "0B",
+   "component_uses": 68
+  },
+  {
+   "system": "UR",
+   "token": "0D",
+   "class": "same_dictionary",
+   "ref_code": "0D",
+   "component_uses": 88
+  },
+  {
+   "system": "UR",
+   "token": "0G",
+   "class": "same_dictionary",
+   "ref_code": "0G",
+   "component_uses": 70
+  },
+  {
+   "system": "UR",
+   "token": "0K",
+   "class": "same_dictionary",
+   "ref_code": "0K",
+   "component_uses": 26
+  },
+  {
+   "system": "UR",
+   "token": "0L",
+   "class": "same_dictionary",
+   "ref_code": "0L",
+   "component_uses": 29
+  },
+  {
+   "system": "UR",
+   "token": "0R",
+   "class": "same_dictionary",
+   "ref_code": "0R",
+   "component_uses": 8
+  },
+  {
+   "system": "UR",
+   "token": "0Y",
+   "class": "same_dictionary",
+   "ref_code": "0Y",
+   "component_uses": 15
+  },
+  {
+   "system": "UR",
+   "token": "AB",
+   "class": "same_dictionary",
+   "ref_code": "AB",
+   "component_uses": 10310
+  },
+  {
+   "system": "UR",
+   "token": "B",
+   "class": "same_dictionary",
+   "ref_code": "B",
+   "component_uses": 360
+  },
+  {
+   "system": "UR",
+   "token": "BB",
+   "class": "same_dictionary",
+   "ref_code": "BB",
+   "component_uses": 55
+  },
+  {
+   "system": "UR",
+   "token": "BD",
+   "class": "same_dictionary",
+   "ref_code": "BD",
+   "component_uses": 10
+  },
+  {
+   "system": "UR",
+   "token": "BG",
+   "class": "same_dictionary",
+   "ref_code": "BG",
+   "component_uses": 641
+  },
+  {
+   "system": "UR",
+   "token": "BL",
+   "class": "same_dictionary",
+   "ref_code": "BL",
+   "component_uses": 170
+  },
+  {
+   "system": "UR",
+   "token": "BS",
+   "class": "same_dictionary",
+   "ref_code": "BS",
+   "component_uses": 5
+  },
+  {
+   "system": "UR",
+   "token": "BY",
+   "class": "same_dictionary",
+   "ref_code": "BY",
+   "component_uses": 124
+  },
+  {
+   "system": "UR",
+   "token": "CB",
+   "class": "same_dictionary",
+   "ref_code": "CB",
+   "component_uses": 273
+  },
+  {
+   "system": "UR",
+   "token": "D0",
+   "class": "same_dictionary",
+   "ref_code": "D0",
+   "component_uses": 6
+  },
+  {
+   "system": "UR",
+   "token": "DB",
+   "class": "same_dictionary",
+   "ref_code": "DB",
+   "component_uses": 365
+  },
+  {
+   "system": "UR",
+   "token": "DG",
+   "class": "same_dictionary",
+   "ref_code": "DG",
+   "component_uses": 43
+  },
+  {
+   "system": "UR",
+   "token": "EB",
+   "class": "same_dictionary",
+   "ref_code": "EB",
+   "component_uses": 26
+  },
+  {
+   "system": "UR",
+   "token": "FB",
+   "class": "same_dictionary",
+   "ref_code": "FB",
+   "component_uses": 47
+  },
+  {
+   "system": "UR",
+   "token": "FR",
+   "class": "same_dictionary",
+   "ref_code": "FR",
+   "component_uses": 28
+  },
+  {
+   "system": "UR",
+   "token": "G",
+   "class": "same_dictionary",
+   "ref_code": "G",
+   "component_uses": 86
+  },
+  {
+   "system": "UR",
+   "token": "G0",
+   "class": "same_dictionary",
+   "ref_code": "G0",
+   "component_uses": 92
+  },
+  {
+   "system": "UR",
+   "token": "GA",
+   "class": "same_dictionary",
+   "ref_code": "GA",
+   "component_uses": 109
+  },
+  {
+   "system": "UR",
+   "token": "GB",
+   "class": "same_dictionary",
+   "ref_code": "GB",
+   "component_uses": 38
+  },
+  {
+   "system": "UR",
+   "token": "GG",
+   "class": "same_dictionary",
+   "ref_code": "GG",
+   "component_uses": 1562
+  },
+  {
+   "system": "UR",
+   "token": "GL",
+   "class": "same_dictionary",
+   "ref_code": "GL",
+   "component_uses": 118
+  },
+  {
+   "system": "UR",
+   "token": "GR",
+   "class": "same_dictionary",
+   "ref_code": "GR",
+   "component_uses": 5
+  },
+  {
+   "system": "UR",
+   "token": "GY",
+   "class": "same_dictionary",
+   "ref_code": "GY",
+   "component_uses": 29
+  },
+  {
+   "system": "UR",
+   "token": "HB",
+   "class": "same_dictionary",
+   "ref_code": "HB",
+   "component_uses": 887
+  },
+  {
+   "system": "UR",
+   "token": "KB",
+   "class": "same_dictionary",
+   "ref_code": "KB",
+   "component_uses": 3341
+  },
+  {
+   "system": "UR",
+   "token": "KG",
+   "class": "same_dictionary",
+   "ref_code": "KG",
+   "component_uses": 16
+  },
+  {
+   "system": "UR",
+   "token": "LA",
+   "class": "same_dictionary",
+   "ref_code": "LA",
+   "component_uses": 20
+  },
+  {
+   "system": "UR",
+   "token": "LB",
+   "class": "same_dictionary",
+   "ref_code": "LB",
+   "component_uses": 107
+  },
+  {
+   "system": "UR",
+   "token": "LC",
+   "class": "same_dictionary",
+   "ref_code": "LC",
+   "component_uses": 150
+  },
+  {
+   "system": "UR",
+   "token": "LD",
+   "class": "same_dictionary",
+   "ref_code": "LD",
+   "component_uses": 5
+  },
+  {
+   "system": "UR",
+   "token": "LG",
+   "class": "same_dictionary",
+   "ref_code": "LG",
+   "component_uses": 215
+  },
+  {
+   "system": "UR",
+   "token": "LK",
+   "class": "same_dictionary",
+   "ref_code": "LK",
+   "component_uses": 684
+  },
+  {
+   "system": "UR",
+   "token": "MB",
+   "class": "same_dictionary",
+   "ref_code": "MB",
+   "component_uses": 7055
+  },
+  {
+   "system": "UR",
+   "token": "MG",
+   "class": "same_dictionary",
+   "ref_code": "MG",
+   "component_uses": 243
+  },
+  {
+   "system": "UR",
+   "token": "NB",
+   "class": "same_dictionary",
+   "ref_code": "NB",
+   "component_uses": 1079
+  },
+  {
+   "system": "UR",
+   "token": "PB",
+   "class": "same_dictionary",
+   "ref_code": "PB",
+   "component_uses": 82
+  },
+  {
+   "system": "UR",
+   "token": "PG",
+   "class": "same_dictionary",
+   "ref_code": "PG",
+   "component_uses": 9
+  },
+  {
+   "system": "UR",
+   "token": "PK",
+   "class": "same_dictionary",
+   "ref_code": "PK",
+   "component_uses": 58
+  },
+  {
+   "system": "UR",
+   "token": "PR",
+   "class": "same_dictionary",
+   "ref_code": "PR",
+   "component_uses": 181
+  },
+  {
+   "system": "UR",
+   "token": "R",
+   "class": "same_dictionary",
+   "ref_code": "R",
+   "component_uses": 6
+  },
+  {
+   "system": "UR",
+   "token": "RB",
+   "class": "same_dictionary",
+   "ref_code": "RB",
+   "component_uses": 531
+  },
+  {
+   "system": "UR",
+   "token": "RD",
+   "class": "same_dictionary",
+   "ref_code": "RD",
+   "component_uses": 16
+  },
+  {
+   "system": "UR",
+   "token": "RG",
+   "class": "same_dictionary",
+   "ref_code": "RG",
+   "component_uses": 3
+  },
+  {
+   "system": "UR",
+   "token": "RL",
+   "class": "same_dictionary",
+   "ref_code": "RL",
+   "component_uses": 593
+  },
+  {
+   "system": "UR",
+   "token": "RM",
+   "class": "same_dictionary",
+   "ref_code": "RM",
+   "component_uses": 27
+  },
+  {
+   "system": "UR",
+   "token": "SR",
+   "class": "same_dictionary",
+   "ref_code": "SR",
+   "component_uses": 42
+  },
+  {
+   "system": "UR",
+   "token": "SY",
+   "class": "same_dictionary",
+   "ref_code": "SY",
+   "component_uses": 24
+  },
+  {
+   "system": "UR",
+   "token": "TG",
+   "class": "same_dictionary",
+   "ref_code": "TG",
+   "component_uses": 13
+  },
+  {
+   "system": "UR",
+   "token": "VB",
+   "class": "same_dictionary",
+   "ref_code": "VB",
+   "component_uses": 27
+  },
+  {
+   "system": "UR",
+   "token": "VG",
+   "class": "same_dictionary",
+   "ref_code": "VG",
+   "component_uses": 11
+  },
+  {
+   "system": "UR",
+   "token": "VR",
+   "class": "same_dictionary",
+   "ref_code": "VR",
+   "component_uses": 69
+  },
+  {
+   "system": "UR",
+   "token": "W",
+   "class": "same_dictionary",
+   "ref_code": "W",
+   "component_uses": 13116
+  },
+  {
+   "system": "UR",
+   "token": "YB",
+   "class": "same_dictionary",
+   "ref_code": "YB",
+   "component_uses": 848
+  },
+  {
+   "system": "UR",
+   "token": "YG",
+   "class": "same_dictionary",
+   "ref_code": "YG",
+   "component_uses": 62
+  },
+  {
+   "system": "UR",
+   "token": "YY",
+   "class": "same_dictionary",
+   "ref_code": "YY",
+   "component_uses": 2
+  },
+  {
+   "system": "other:JC",
+   "token": "0G",
+   "class": "same_dictionary",
+   "ref_code": "0G",
+   "component_uses": 4
+  },
+  {
+   "system": "other:JC",
+   "token": "AB",
+   "class": "same_dictionary",
+   "ref_code": "AB",
+   "component_uses": 455
+  },
+  {
+   "system": "other:JC",
+   "token": "BG",
+   "class": "same_dictionary",
+   "ref_code": "BG",
+   "component_uses": 5
+  },
+  {
+   "system": "other:JC",
+   "token": "BL",
+   "class": "same_dictionary",
+   "ref_code": "BL",
+   "component_uses": 2
+  },
+  {
+   "system": "other:JC",
+   "token": "BY",
+   "class": "same_dictionary",
+   "ref_code": "BY",
+   "component_uses": 29
+  },
+  {
+   "system": "other:JC",
+   "token": "DB",
+   "class": "same_dictionary",
+   "ref_code": "DB",
+   "component_uses": 8
+  },
+  {
+   "system": "other:JC",
+   "token": "DG",
+   "class": "same_dictionary",
+   "ref_code": "DG",
+   "component_uses": 5
+  },
+  {
+   "system": "other:JC",
+   "token": "FB",
+   "class": "same_dictionary",
+   "ref_code": "FB",
+   "component_uses": 31
+  },
+  {
+   "system": "other:JC",
+   "token": "FR",
+   "class": "same_dictionary",
+   "ref_code": "FR",
+   "component_uses": 14
+  },
+  {
+   "system": "other:JC",
+   "token": "G",
+   "class": "same_dictionary",
+   "ref_code": "G",
+   "component_uses": 2
+  },
+  {
+   "system": "other:JC",
+   "token": "G0",
+   "class": "same_dictionary",
+   "ref_code": "G0",
+   "component_uses": 3
+  },
+  {
+   "system": "other:JC",
+   "token": "GB",
+   "class": "same_dictionary",
+   "ref_code": "GB",
+   "component_uses": 26
+  },
+  {
+   "system": "other:JC",
+   "token": "GG",
+   "class": "same_dictionary",
+   "ref_code": "GG",
+   "component_uses": 9
+  },
+  {
+   "system": "other:JC",
+   "token": "GL",
+   "class": "same_dictionary",
+   "ref_code": "GL",
+   "component_uses": 30
+  },
+  {
+   "system": "other:JC",
+   "token": "HB",
+   "class": "same_dictionary",
+   "ref_code": "HB",
+   "component_uses": 60
+  },
+  {
+   "system": "other:JC",
+   "token": "KB",
+   "class": "same_dictionary",
+   "ref_code": "KB",
+   "component_uses": 41
+  },
+  {
+   "system": "other:JC",
+   "token": "LB",
+   "class": "same_dictionary",
+   "ref_code": "LB",
+   "component_uses": 3
+  },
+  {
+   "system": "other:JC",
+   "token": "LG",
+   "class": "same_dictionary",
+   "ref_code": "LG",
+   "component_uses": 114
+  },
+  {
+   "system": "other:JC",
+   "token": "MB",
+   "class": "same_dictionary",
+   "ref_code": "MB",
+   "component_uses": 394
+  },
+  {
+   "system": "other:JC",
+   "token": "MG",
+   "class": "same_dictionary",
+   "ref_code": "MG",
+   "component_uses": 3
+  },
+  {
+   "system": "other:JC",
+   "token": "NB",
+   "class": "same_dictionary",
+   "ref_code": "NB",
+   "component_uses": 133
+  },
+  {
+   "system": "other:JC",
+   "token": "PG",
+   "class": "same_dictionary",
+   "ref_code": "PG",
+   "component_uses": 23
+  },
+  {
+   "system": "other:JC",
+   "token": "R0",
+   "class": "same_dictionary",
+   "ref_code": "R0",
+   "component_uses": 7
+  },
+  {
+   "system": "other:JC",
+   "token": "RB",
+   "class": "same_dictionary",
+   "ref_code": "RB",
+   "component_uses": 69
+  },
+  {
+   "system": "other:JC",
+   "token": "RD",
+   "class": "same_dictionary",
+   "ref_code": "RD",
+   "component_uses": 1
+  },
+  {
+   "system": "other:JC",
+   "token": "RL",
+   "class": "same_dictionary",
+   "ref_code": "RL",
+   "component_uses": 25
+  },
+  {
+   "system": "other:JC",
+   "token": "RM",
+   "class": "same_dictionary",
+   "ref_code": "RM",
+   "component_uses": 2
+  },
+  {
+   "system": "other:JC",
+   "token": "TG",
+   "class": "same_dictionary",
+   "ref_code": "TG",
+   "component_uses": 8
+  },
+  {
+   "system": "other:JC",
+   "token": "W",
+   "class": "same_dictionary",
+   "ref_code": "W",
+   "component_uses": 36
+  },
+  {
+   "system": "other:JC",
+   "token": "YB",
+   "class": "same_dictionary",
+   "ref_code": "YB",
+   "component_uses": 165
+  },
+  {
+   "system": "other:QU",
+   "token": "AB",
+   "class": "same_dictionary",
+   "ref_code": "AB",
+   "component_uses": 24
+  },
+  {
+   "system": "other:QU",
+   "token": "BB",
+   "class": "same_dictionary",
+   "ref_code": "BB",
+   "component_uses": 29
+  },
+  {
+   "system": "other:QU",
+   "token": "DB",
+   "class": "same_dictionary",
+   "ref_code": "DB",
+   "component_uses": 1
+  },
+  {
+   "system": "other:QU",
+   "token": "FR",
+   "class": "same_dictionary",
+   "ref_code": "FR",
+   "component_uses": 18
+  },
+  {
+   "system": "other:QU",
+   "token": "KB",
+   "class": "same_dictionary",
+   "ref_code": "KB",
+   "component_uses": 10
+  },
+  {
+   "system": "other:QU",
+   "token": "LK",
+   "class": "same_dictionary",
+   "ref_code": "LK",
+   "component_uses": 5
+  },
+  {
+   "system": "other:QU",
+   "token": "MB",
+   "class": "same_dictionary",
+   "ref_code": "MB",
+   "component_uses": 9
+  },
+  {
+   "system": "other:QU",
+   "token": "PB",
+   "class": "same_dictionary",
+   "ref_code": "PB",
+   "component_uses": 14
+  },
+  {
+   "system": "other:QU",
+   "token": "R0",
+   "class": "same_dictionary",
+   "ref_code": "R0",
+   "component_uses": 12
+  },
+  {
+   "system": "other:QU",
+   "token": "RL",
+   "class": "same_dictionary",
+   "ref_code": "RL",
+   "component_uses": 2
+  },
+  {
+   "system": "other:QU",
+   "token": "YB",
+   "class": "same_dictionary",
+   "ref_code": "YB",
+   "component_uses": 91
+  },
+  {
+   "system": "other:missing_khipu",
+   "token": "AB",
+   "class": "same_dictionary",
+   "ref_code": "AB",
+   "component_uses": 9
+  },
+  {
+   "system": "other:missing_khipu",
+   "token": "BG",
+   "class": "same_dictionary",
+   "ref_code": "BG",
+   "component_uses": 3
+  },
+  {
+   "system": "other:missing_khipu",
+   "token": "GG",
+   "class": "same_dictionary",
+   "ref_code": "GG",
+   "component_uses": 3
+  },
+  {
+   "system": "other:missing_khipu",
+   "token": "KB",
+   "class": "same_dictionary",
+   "ref_code": "KB",
+   "component_uses": 1
+  },
+  {
+   "system": "other:missing_khipu",
+   "token": "LC",
+   "class": "same_dictionary",
+   "ref_code": "LC",
+   "component_uses": 1
+  },
+  {
+   "system": "other:missing_khipu",
+   "token": "W",
+   "class": "same_dictionary",
+   "ref_code": "W",
+   "component_uses": 4
+  }
+ ],
+ "token_class_counts": {
+  "exact_published_equivalent": 0,
+  "same_dictionary": 196,
+  "related": 0,
+  "conflicting": 0,
+  "unmapped": 0,
+  "source_missing": 0
+ },
+ "mapping_rows": [
+  {
+   "system_a": "AS",
+   "code_a": "AB",
+   "system_b": "OKR",
+   "code_b": "AB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "AB 57",
+   "basis": "same ISCC-NBS 57: OKR AB 'light brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "B",
+   "system_b": "OKR",
+   "code_b": "B",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "B 77",
+   "basis": "same ISCC-NBS 77: OKR B 'moderate yellowish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "BB",
+   "system_b": "OKR",
+   "code_b": "BB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "BB 78",
+   "basis": "same ISCC-NBS 78: OKR BB 'dark yellowish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "BD",
+   "system_b": "OKR",
+   "code_b": "BD",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "BD 81",
+   "basis": "same ISCC-NBS 81: OKR BD 'dark grayish yellowish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "BG",
+   "system_b": "OKR",
+   "code_b": "BG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "BG 186",
+   "basis": "same ISCC-NBS 186: OKR BG 'grayish blue'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "BL",
+   "system_b": "OKR",
+   "code_b": "BL",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "BL 185",
+   "basis": "same ISCC-NBS 185: OKR BL 'pale blue'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "BS",
+   "system_b": "OKR",
+   "code_b": "BS",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "BS 55",
+   "basis": "same ISCC-NBS 55: OKR BS 'strong brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "BY",
+   "system_b": "OKR",
+   "code_b": "BY",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "BY 79",
+   "basis": "same ISCC-NBS 79: OKR BY 'light grayish yellowish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "CB",
+   "system_b": "OKR",
+   "code_b": "CB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "CB 62",
+   "basis": "same ISCC-NBS 62: OKR CB 'dark grayish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "DB",
+   "system_b": "OKR",
+   "code_b": "DB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "DB 56",
+   "basis": "same ISCC-NBS 56: OKR DB 'deep brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "DG",
+   "system_b": "OKR",
+   "code_b": "DG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "DG 126",
+   "basis": "same ISCC-NBS 126: OKR DG 'dark olive green'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "DO",
+   "system_b": "OKR",
+   "code_b": "D0",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "DO 108",
+   "basis": "same ISCC-NBS 108: OKR D0 'dark olive'",
+   "class_of_code_a": "exact_published_equivalent"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "EB",
+   "system_b": "OKR",
+   "code_b": "EB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "EB 80",
+   "basis": "same ISCC-NBS 80: OKR EB 'grayish yellowish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "FB",
+   "system_b": "OKR",
+   "code_b": "FB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "FB 65",
+   "basis": "same ISCC-NBS 65: OKR FB 'brownish black'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "FR",
+   "system_b": "OKR",
+   "code_b": "FR",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "FR 40",
+   "basis": "same ISCC-NBS 40: OKR FR 'strong reddish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "G",
+   "system_b": "OKR",
+   "code_b": "G",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "G 127",
+   "basis": "same ISCC-NBS 127: OKR G 'grayish olive green'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GA",
+   "system_b": "OKR",
+   "code_b": "GA",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GA 64",
+   "basis": "same ISCC-NBS 64: OKR GA 'brownish gray'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GB",
+   "system_b": "OKR",
+   "code_b": "GB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GB 45",
+   "basis": "same ISCC-NBS 45: OKR GB 'light grayish reddish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GG",
+   "system_b": "OKR",
+   "code_b": "GG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GG 150",
+   "basis": "same ISCC-NBS 150: OKR GG 'grayish green'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GL",
+   "system_b": "OKR",
+   "code_b": "GL",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GL 173",
+   "basis": "same ISCC-NBS 173: OKR GL 'moderate greenish blue'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GO",
+   "system_b": "OKR",
+   "code_b": "G0",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GO 110",
+   "basis": "same ISCC-NBS 110: OKR G0 'grayish olive'",
+   "class_of_code_a": "exact_published_equivalent"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GR",
+   "system_b": "OKR",
+   "code_b": "GR",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GR 266",
+   "basis": "same ISCC-NBS 266: OKR GR 'dark green'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GY",
+   "system_b": "OKR",
+   "code_b": "GY",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GY 113",
+   "basis": "same ISCC-NBS 113: OKR GY 'olive gray'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "HB",
+   "system_b": "OKR",
+   "code_b": "HB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "HB 61",
+   "basis": "same ISCC-NBS 61: OKR HB 'grayish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "KB",
+   "system_b": "OKR",
+   "code_b": "KB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "KB 59",
+   "basis": "same ISCC-NBS 59: OKR KB 'dark brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "KG",
+   "system_b": "OKR",
+   "code_b": "KG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "KG 156",
+   "basis": "same ISCC-NBS 156: OKR KG 'dark greenish gray'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "LA",
+   "system_b": "OKR",
+   "code_b": "LA",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "LA 191",
+   "basis": "same ISCC-NBS 191: OKR LA 'bluish gray'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "LB",
+   "system_b": "OKR",
+   "code_b": "LB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "LB 75",
+   "basis": "same ISCC-NBS 75: OKR LB 'deep yellowish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "LC",
+   "system_b": "OKR",
+   "code_b": "LC",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "LC 187",
+   "basis": "same ISCC-NBS 187: OKR LC 'dark grayish blue'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "LD",
+   "system_b": "OKR",
+   "code_b": "LD",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "LD 192",
+   "basis": "same ISCC-NBS 192: OKR LD 'dark bluish gray'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "LG",
+   "system_b": "OKR",
+   "code_b": "LG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "LG 154",
+   "basis": "same ISCC-NBS 154: OKR LG 'light greenish gray'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "LK",
+   "system_b": "OKR",
+   "code_b": "LK",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "LK 267",
+   "basis": "same ISCC-NBS 267: OKR LK 'black'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "MB",
+   "system_b": "OKR",
+   "code_b": "MB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "MB 58",
+   "basis": "same ISCC-NBS 58: OKR MB 'moderate brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "MG",
+   "system_b": "OKR",
+   "code_b": "MG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "MG 265",
+   "basis": "same ISCC-NBS 265: OKR MG 'medium gray'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "NB",
+   "system_b": "OKR",
+   "code_b": "NB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "NB 74",
+   "basis": "same ISCC-NBS 74: OKR NB 'strong yellowish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OB",
+   "system_b": "OKR",
+   "code_b": "0B",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OB 95",
+   "basis": "same ISCC-NBS 95: OKR 0B 'moderate olive brown'",
+   "class_of_code_a": "exact_published_equivalent"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OD",
+   "system_b": "OKR",
+   "code_b": "0D",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OD 128",
+   "basis": "same ISCC-NBS 128: OKR 0D 'dark grayish olive green'",
+   "class_of_code_a": "exact_published_equivalent"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OG",
+   "system_b": "OKR",
+   "code_b": "0G",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OG 109",
+   "basis": "same ISCC-NBS 109: OKR 0G 'light grayish olive'",
+   "class_of_code_a": "exact_published_equivalent"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OK",
+   "system_b": "OKR",
+   "code_b": "0K",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OK 114",
+   "basis": "same ISCC-NBS 114: OKR 0K 'olive black'",
+   "class_of_code_a": "exact_published_equivalent"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OL",
+   "system_b": "OKR",
+   "code_b": "0L",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OL 111",
+   "basis": "same ISCC-NBS 111: OKR 0L 'dark grayish olive'",
+   "class_of_code_a": "exact_published_equivalent"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OR",
+   "system_b": "OKR",
+   "code_b": "0R",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OR 51",
+   "basis": "same ISCC-NBS 51: OKR 0R 'deep orange'",
+   "class_of_code_a": "exact_published_equivalent"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OY",
+   "system_b": "OKR",
+   "code_b": "0Y",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OY 72",
+   "basis": "same ISCC-NBS 72: OKR 0Y 'dark orange yellow'",
+   "class_of_code_a": "exact_published_equivalent"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "PB",
+   "system_b": "OKR",
+   "code_b": "PB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "PB 179",
+   "basis": "same ISCC-NBS 179: OKR PB 'deep blue'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "PG",
+   "system_b": "OKR",
+   "code_b": "PG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "PG 149",
+   "basis": "same ISCC-NBS 149: OKR PG 'pale green'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "PR",
+   "system_b": "OKR",
+   "code_b": "PR",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "PR 41",
+   "basis": "same ISCC-NBS 41: OKR PR 'deep reddish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "R",
+   "system_b": "OKR",
+   "code_b": "R",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "R 38",
+   "basis": "same ISCC-NBS 38: OKR R 'dark reddish orange'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "RB",
+   "system_b": "OKR",
+   "code_b": "RB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "RB 43",
+   "basis": "same ISCC-NBS 43: OKR RB 'moderate reddish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "RD",
+   "system_b": "OKR",
+   "code_b": "RD",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "RD 46",
+   "basis": "same ISCC-NBS 46: OKR RD 'grayish reddish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "RG",
+   "system_b": "OKR",
+   "code_b": "RG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "RG 155",
+   "basis": "same ISCC-NBS 155: OKR RG 'greenish gray'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "RL",
+   "system_b": "OKR",
+   "code_b": "RL",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "RL 42",
+   "basis": "same ISCC-NBS 42: OKR RL 'light reddish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "RM",
+   "system_b": "OKR",
+   "code_b": "RM",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "RM 15",
+   "basis": "same ISCC-NBS 15: OKR RM 'moderate red'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "RO",
+   "system_b": "OKR",
+   "code_b": "R0",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "RO 39",
+   "basis": "same ISCC-NBS 39: OKR R0 'gray reddish orange'",
+   "class_of_code_a": "exact_published_equivalent"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "SB",
+   "system_b": "OKR",
+   "code_b": "SB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "SB 54",
+   "basis": "same ISCC-NBS 54: OKR SB 'brownish orange'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "SR",
+   "system_b": "OKR",
+   "code_b": "SR",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "SR 12",
+   "basis": "same ISCC-NBS 12: OKR SR 'strong red'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "SY",
+   "system_b": "OKR",
+   "code_b": "SY",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "SY 84",
+   "basis": "same ISCC-NBS 84: OKR SY 'strong yellow'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "TG",
+   "system_b": "OKR",
+   "code_b": "TG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "TG 165",
+   "basis": "same ISCC-NBS 165: OKR TG 'dark bluish green'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "VB",
+   "system_b": "OKR",
+   "code_b": "VB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "VB 175",
+   "basis": "same ISCC-NBS 175: OKR VB 'vivid dark greenish blue'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "VG",
+   "system_b": "OKR",
+   "code_b": "VG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "VG 147",
+   "basis": "same ISCC-NBS 147: OKR VG 'vivid dark green'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "VR",
+   "system_b": "OKR",
+   "code_b": "VR",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "VR 14",
+   "basis": "same ISCC-NBS 14: OKR VR 'vivid deep red'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "W",
+   "system_b": "OKR",
+   "code_b": "W",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "W Neutral-uncolored",
+   "basis": "same token W; Ascher: 'W Neutral-uncolored'; OKR W 'white' (ISCC_NBS_NUM 0)",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "YB",
+   "system_b": "OKR",
+   "code_b": "YB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "YB 76",
+   "basis": "same ISCC-NBS 76: OKR YB 'light yellowish brown'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "YG",
+   "system_b": "OKR",
+   "code_b": "YG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "YG 151",
+   "basis": "same ISCC-NBS 151: OKR YG 'dark grayish green'",
+   "class_of_code_a": "same_dictionary"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "YY",
+   "system_b": "OKR",
+   "code_b": "YY",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "YY 89",
+   "basis": "same ISCC-NBS 89: OKR YY 'pale yellow'",
+   "class_of_code_a": "same_dictionary"
+  }
+ ],
+ "mapping_row_class_counts": {
+  "exact_published_equivalent": 10,
+  "same_dictionary": 53,
+  "related": 0,
+  "conflicting": 0,
+  "unmapped": 0,
+  "source_missing": 0
+ },
+ "systems_with_colour_docs": [
+  "AS"
+ ],
+ "sources": [
+  {
+   "url": "OKR khipu.db @ 4039ca5: ascher_color_dc (64 rows), color_operator_dc (6 rows)",
+   "status": "local read-only",
+   "found": "analysis/k045_dictionary.json"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/",
+   "status": 200,
+   "found": "home page; no colour section"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/databook/KFGExcelSpecification.html",
+   "status": 200,
+   "found": "§5.8 'The majority of color schemes use the 65 “Brezine”/“Ascher” colors.' Operators: ': Mottled', '- Barberpole', '% Striped cord', '^ Tweed cord', '** Dahlsberg khipu cprd'"
+  },
+  {
+   "url": "https://khipufieldguide.com/sketchbook/brezine_colors.html",
+   "status": 200,
+   "found": "Brezine Color Chart: same 64 codes as OKR ascher_color_dc incl. 'PK-Unknown Urton Color'"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/databook/DatabaseSQLBuild.html",
+   "status": 200,
+   "found": "§6 'Ascher Cord Colors have hundreds of typos and non-regular codes that need cleansing and normalizing'; bogus_mixed_color_types sample incl. '-':'PK', 'BY':'YB', 'W**BS':'W:BS'; mottled/barberpole components re-sorted by grey value (KFG normalisation, not applied to OKR snapshot)"
+  },
+  {
+   "url": "https://khipufieldguide.com/databook/Ascher_Import.html",
+   "status": 200,
+   "found": "KH0002-KH0010 import: 'I am trying to match Brezine colors to Ascher colors. I probably did a pretty bad job.'; sheet 4 'lists (some) Ascher colors for that khipu, that need translation into current-day Ascher colors' (AS001-AS009 only)"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/databook/KFGImport.html",
+   "status": 200,
+   "found": "author counts incl. Gary Urton 239, Marcia & Robert Ascher 231, Hugo Pereyra 58; Urton khipus 'Repaired/Reconstructed'; no colour mapping"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/notebook/analyses/ascher_color_count.html",
+   "status": 200,
+   "found": "'Marcia Ascher invented a series of color codes ... encoded into the Harvard Khipu Database, by Carrie Brezine'"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/guidebook/KFG_History.html",
+   "status": 200,
+   "found": "no colour-code mapping"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/databook/Pereyra_Import.html, /databook/Urton_Import.html, /databook/Hugo_Pereyra_Import.html, /databook/index.html",
+   "status": 404,
+   "found": "path guesses"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/catalog/KH0097.html, KH0586, KH0192, KH0469, KH0470",
+   "status": 200,
+   "found": "catalog metadata and bibliography; no colour-code dictionary (KH0586 cites Pereyra 2011; KH0469/KH0470 Urton 2017)"
+  },
+  {
+   "url": "https://courses.cit.cornell.edu/quipu/ and contents.htm",
+   "status": 200,
+   "found": "Ascher Databooks online"
+  },
+  {
+   "url": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf",
+   "status": 200,
+   "found": "scanned Introduction to Databook II; p.18-19 'Color' (ISCC-NBS level 3, 'single or double letter mneumonics'; operators '-' barber pole, ':' mottled, '/' joined end to end; 'The color with the lower valued ISCC-NBS number is always listed first'); p.21 Table 5 mnemonic -> ISCC-NBS number"
+  },
+  {
+   "url": "https://courses.cit.cornell.edu/quipu/data/title-1.pdf",
+   "status": 200,
+   "found": "front matter only (no text layer)"
+  },
+  {
+   "url": "https://raw.githubusercontent.com/khipulab/open-khipu-repository/4039ca5/README.md",
+   "status": 200,
+   "found": "no colour-code or ingest documentation; repo tree @4039ca5 has no schema/codebook file besides khipu.db"
+  },
+  {
+   "url": "https://web.archive.org/web/20110722135554/http://khipukamayuq.fas.harvard.edu/ProjectDescription.html",
+   "status": 200,
+   "found": "'The database effectively and accurately contains color information by allowing many different color records for one cord.' No code list"
+  },
+  {
+   "url": "https://web.archive.org/web/2011id_/http://khipukamayuq.fas.harvard.edu/DataTables.html",
+   "status": 200,
+   "found": "'mimics the layout of the tabular format first invented by the Aschers'"
+  },
+  {
+   "url": "https://web.archive.org/web/2011id_/http://khipukamayuq.fas.harvard.edu/Data%20Tables/UR001_files/sheet001.htm",
+   "status": 200,
+   "found": "UR001 heading: 'Color: B-W' (Ascher-style code)"
+  },
+  {
+   "url": "web searches: 'Open Khipu Repository colour codes Ascher Urton Pereyra', 'Urton Khipu Database Project color codes', 'Hugo Pereyra quipus colores', 'khipu field guide Pereyra HP khipus color codes', 'Ascher Code of the Quipu Databook color abbreviations', 'Pereyra Sánchez Descripción de una muestra de quipus colores'",
+   "status": "searched",
+   "found": "no Urton or Pereyra colour dictionary retrieved; Pereyra 2011 is a print book (CONCYTEC)"
+  }
+ ],
+ "six_khipus": {
+  "KH0097": {
+   "khipu_id": 1000344,
+   "investigator_num": "UR1084",
+   "orig_inv_num": "AS084",
+   "created_by": "tania",
+   "system_proxy": "AS",
+   "level1_pendants": 319,
+   "coloured_level1": 297,
+   "no_colour_level1": 22,
+   "distinct_full_color": 13,
+   "full_color_counts": {
+    "": 1,
+    "BL:W": 30,
+    "BY": 2,
+    "BY-W": 49,
+    "BY:BL": 6,
+    "BY:MB": 4,
+    "BY:W": 34,
+    "MB": 36,
+    "MB-W": 5,
+    "MB:BL": 1,
+    "MB:BL:W": 8,
+    "MB:W": 48,
+    "W": 73
+   },
+   "distinct_tokens": 4,
+   "token_counts": {
+    "BL": 45,
+    "BY": 95,
+    "MB": 102,
+    "W": 247
+   },
+   "token_classes": {
+    "BL": "same_dictionary",
+    "BY": "same_dictionary",
+    "MB": "same_dictionary",
+    "W": "same_dictionary"
+   },
+   "fully_usable_coloured": 296,
+   "fully_usable_fraction": 0.9966329966329966
+  },
+  "KH0586": {
+   "khipu_id": 1000588,
+   "investigator_num": "HP055",
+   "orig_inv_num": "HP055",
+   "created_by": "julia",
+   "system_proxy": "HP",
+   "level1_pendants": 189,
+   "coloured_level1": 188,
+   "no_colour_level1": 1,
+   "distinct_full_color": 11,
+   "full_color_counts": {
+    "AB": 3,
+    "MB": 22,
+    "MB:PG": 9,
+    "PG": 3,
+    "W": 45,
+    "W-MB": 33,
+    "W:AB": 15,
+    "W:BL": 30,
+    "W:MB": 13,
+    "W:PB": 1,
+    "W:PG": 14
+   },
+   "distinct_tokens": 6,
+   "token_counts": {
+    "AB": 18,
+    "BL": 30,
+    "MB": 77,
+    "PB": 1,
+    "PG": 26,
+    "W": 151
+   },
+   "token_classes": {
+    "AB": "same_dictionary",
+    "BL": "same_dictionary",
+    "MB": "same_dictionary",
+    "PB": "same_dictionary",
+    "PG": "same_dictionary",
+    "W": "same_dictionary"
+   },
+   "fully_usable_coloured": 188,
+   "fully_usable_fraction": 1.0
+  },
+  "KH0192": {
+   "khipu_id": 1000147,
+   "investigator_num": "UR1175",
+   "orig_inv_num": "AS175",
+   "created_by": "katie",
+   "system_proxy": "AS",
+   "level1_pendants": 224,
+   "coloured_level1": 224,
+   "no_colour_level1": 0,
+   "distinct_full_color": 5,
+   "full_color_counts": {
+    "LB": 48,
+    "W": 44,
+    "YB": 48,
+    "YB:0G": 38,
+    "YG": 46
+   },
+   "distinct_tokens": 5,
+   "token_counts": {
+    "0G": 38,
+    "LB": 48,
+    "W": 44,
+    "YB": 86,
+    "YG": 46
+   },
+   "token_classes": {
+    "0G": "same_dictionary",
+    "LB": "same_dictionary",
+    "W": "same_dictionary",
+    "YB": "same_dictionary",
+    "YG": "same_dictionary"
+   },
+   "fully_usable_coloured": 224,
+   "fully_usable_fraction": 1.0
+  },
+  "KH0470": {
+   "khipu_id": 1000543,
+   "investigator_num": "UR233",
+   "orig_inv_num": "UR233",
+   "created_by": "gurton",
+   "system_proxy": "UR",
+   "level1_pendants": 126,
+   "coloured_level1": 126,
+   "no_colour_level1": 0,
+   "distinct_full_color": 21,
+   "full_color_counts": {
+    "AB": 26,
+    "BG": 15,
+    "GG": 5,
+    "GG:AB": 2,
+    "GG:YB": 1,
+    "KB": 1,
+    "KB:AB": 1,
+    "KB:AB:W": 3,
+    "KB:MB": 2,
+    "KB:RB:W": 1,
+    "KB:W": 1,
+    "LG:AB": 18,
+    "LG:YB": 1,
+    "MB:AB": 1,
+    "PB": 2,
+    "PB:MB": 2,
+    "PR": 13,
+    "RB": 6,
+    "RL": 1,
+    "W": 4,
+    "YB": 20
+   },
+   "distinct_tokens": 12,
+   "token_counts": {
+    "AB": 51,
+    "BG": 15,
+    "GG": 8,
+    "KB": 9,
+    "LG": 19,
+    "MB": 5,
+    "PB": 4,
+    "PR": 13,
+    "RB": 7,
+    "RL": 1,
+    "W": 9,
+    "YB": 22
+   },
+   "token_classes": {
+    "AB": "same_dictionary",
+    "BG": "same_dictionary",
+    "GG": "same_dictionary",
+    "KB": "same_dictionary",
+    "LG": "same_dictionary",
+    "MB": "same_dictionary",
+    "PB": "same_dictionary",
+    "PR": "same_dictionary",
+    "RB": "same_dictionary",
+    "RL": "same_dictionary",
+    "W": "same_dictionary",
+    "YB": "same_dictionary"
+   },
+   "fully_usable_coloured": 126,
+   "fully_usable_fraction": 1.0
+  },
+  "KH0469": {
+   "khipu_id": 1000542,
+   "investigator_num": "UR232",
+   "orig_inv_num": "UR232",
+   "created_by": "gurton",
+   "system_proxy": "UR",
+   "level1_pendants": 125,
+   "coloured_level1": 125,
+   "no_colour_level1": 0,
+   "distinct_full_color": 13,
+   "full_color_counts": {
+    "AB": 36,
+    "BG": 3,
+    "GG": 5,
+    "GG:AB": 2,
+    "KB:AB": 5,
+    "KB:MB": 16,
+    "LG:AB": 6,
+    "LG:W": 6,
+    "RB": 20,
+    "RB:AB": 2,
+    "RL": 1,
+    "RL:HB:W": 1,
+    "W": 22
+   },
+   "distinct_tokens": 10,
+   "token_counts": {
+    "AB": 51,
+    "BG": 3,
+    "GG": 7,
+    "HB": 1,
+    "KB": 21,
+    "LG": 12,
+    "MB": 16,
+    "RB": 22,
+    "RL": 2,
+    "W": 29
+   },
+   "token_classes": {
+    "AB": "same_dictionary",
+    "BG": "same_dictionary",
+    "GG": "same_dictionary",
+    "HB": "same_dictionary",
+    "KB": "same_dictionary",
+    "LG": "same_dictionary",
+    "MB": "same_dictionary",
+    "RB": "same_dictionary",
+    "RL": "same_dictionary",
+    "W": "same_dictionary"
+   },
+   "fully_usable_coloured": 125,
+   "fully_usable_fraction": 1.0
+  }
+ },
+ "pairs": [
+  {
+   "pair": [
+    "KH0097",
+    "KH0586"
+   ],
+   "systems": [
+    "AS",
+    "HP"
+   ],
+   "fraction_a": 0.9966329966329966,
+   "fraction_b": 1.0,
+   "threshold": 0.5,
+   "shared_reference": "OKR ascher_color_dc",
+   "gate": "co_mappable"
+  },
+  {
+   "pair": [
+    "KH0192",
+    "KH0470"
+   ],
+   "systems": [
+    "AS",
+    "UR"
+   ],
+   "fraction_a": 1.0,
+   "fraction_b": 1.0,
+   "threshold": 0.5,
+   "shared_reference": "OKR ascher_color_dc",
+   "gate": "co_mappable"
+  },
+  {
+   "pair": [
+    "KH0192",
+    "KH0469"
+   ],
+   "systems": [
+    "AS",
+    "UR"
+   ],
+   "fraction_a": 1.0,
+   "fraction_b": 1.0,
+   "threshold": 0.5,
+   "shared_reference": "OKR ascher_color_dc",
+   "gate": "co_mappable"
+  }
+ ],
+ "note": "Vocabulary coverage only. No aligned-cord colour agreement computed."
+}

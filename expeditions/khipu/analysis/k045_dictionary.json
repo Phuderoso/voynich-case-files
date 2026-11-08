@@ -1,0 +1,678 @@
+{
+ "cycle": "K045",
+ "source": "OKR khipu.db @ 4039ca5 (read-only)",
+ "ascher_color_dc": [
+  {
+   "ISCC_NBS_NUM": 95,
+   "AS_COLOR_CD": "0B",
+   "COLOR_DESCR": "moderate olive brown",
+   "R_DEC": 0.3922,
+   "G_DEC": 0.251,
+   "B_DEC": 0.0588,
+   "COLOR": "B",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 128,
+   "AS_COLOR_CD": "0D",
+   "COLOR_DESCR": "dark grayish olive green",
+   "R_DEC": 0.1529,
+   "G_DEC": 0.149,
+   "B_DEC": 0.102,
+   "COLOR": "G",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 109,
+   "AS_COLOR_CD": "0G",
+   "COLOR_DESCR": "light grayish olive",
+   "R_DEC": 0.5451,
+   "G_DEC": 0.451,
+   "B_DEC": 0.2941,
+   "COLOR": "L",
+   "INTENSITY": 2
+  },
+  {
+   "ISCC_NBS_NUM": 114,
+   "AS_COLOR_CD": "0K",
+   "COLOR_DESCR": "olive black",
+   "R_DEC": 0.0706,
+   "G_DEC": 0.098,
+   "B_DEC": 0.0627,
+   "COLOR": "Z",
+   "INTENSITY": 5
+  },
+  {
+   "ISCC_NBS_NUM": 111,
+   "AS_COLOR_CD": "0L",
+   "COLOR_DESCR": "dark grayish olive",
+   "R_DEC": 0.1686,
+   "G_DEC": 0.1451,
+   "B_DEC": 0.0902,
+   "COLOR": "L",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 51,
+   "AS_COLOR_CD": "0R",
+   "COLOR_DESCR": "deep orange",
+   "R_DEC": 0.7647,
+   "G_DEC": 0.302,
+   "B_DEC": 0.0392,
+   "COLOR": "N",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 72,
+   "AS_COLOR_CD": "0Y",
+   "COLOR_DESCR": "dark orange yellow",
+   "R_DEC": 0.7647,
+   "G_DEC": 0.4628,
+   "B_DEC": 0.1608,
+   "COLOR": "Y",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 57,
+   "AS_COLOR_CD": "AB",
+   "COLOR_DESCR": "light brown",
+   "R_DEC": 0.6588,
+   "G_DEC": 0.3961,
+   "B_DEC": 0.251,
+   "COLOR": "B",
+   "INTENSITY": 2
+  },
+  {
+   "ISCC_NBS_NUM": 77,
+   "AS_COLOR_CD": "B",
+   "COLOR_DESCR": "moderate yellowish brown",
+   "R_DEC": 0.4902,
+   "G_DEC": 0.3177,
+   "B_DEC": 0.1765,
+   "COLOR": "B",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 78,
+   "AS_COLOR_CD": "BB",
+   "COLOR_DESCR": "dark yellowish brown",
+   "R_DEC": 0.2471,
+   "G_DEC": 0.1451,
+   "B_DEC": 0.0706,
+   "COLOR": "B",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 81,
+   "AS_COLOR_CD": "BD",
+   "COLOR_DESCR": "dark grayish yellowish brown",
+   "R_DEC": 0.2392,
+   "G_DEC": 0.1686,
+   "B_DEC": 0.1216,
+   "COLOR": "B",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 186,
+   "AS_COLOR_CD": "BG",
+   "COLOR_DESCR": "grayish blue",
+   "R_DEC": 0.2902,
+   "G_DEC": 0.3294,
+   "B_DEC": 0.3608,
+   "COLOR": "H",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 185,
+   "AS_COLOR_CD": "BL",
+   "COLOR_DESCR": "pale blue",
+   "R_DEC": 0.5686,
+   "G_DEC": 0.5686,
+   "B_DEC": 0.5726,
+   "COLOR": "H",
+   "INTENSITY": 2
+  },
+  {
+   "ISCC_NBS_NUM": 55,
+   "AS_COLOR_CD": "BS",
+   "COLOR_DESCR": "strong brown",
+   "R_DEC": 0.4588,
+   "G_DEC": 0.2,
+   "B_DEC": 0.0745,
+   "COLOR": "B",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 79,
+   "AS_COLOR_CD": "BY",
+   "COLOR_DESCR": "light grayish yellowish brown",
+   "R_DEC": 0.7059,
+   "G_DEC": 0.5294,
+   "B_DEC": 0.3922,
+   "COLOR": "B",
+   "INTENSITY": 2
+  },
+  {
+   "ISCC_NBS_NUM": 62,
+   "AS_COLOR_CD": "CB",
+   "COLOR_DESCR": "dark grayish brown",
+   "R_DEC": 0.1961,
+   "G_DEC": 0.1333,
+   "B_DEC": 0.102,
+   "COLOR": "B",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 108,
+   "AS_COLOR_CD": "D0",
+   "COLOR_DESCR": "dark olive",
+   "R_DEC": 0.2118,
+   "G_DEC": 0.1726,
+   "B_DEC": 0.0706,
+   "COLOR": "L",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 56,
+   "AS_COLOR_CD": "DB ",
+   "COLOR_DESCR": "deep brown",
+   "R_DEC": 0.302,
+   "G_DEC": 0.1333,
+   "B_DEC": 0.0549,
+   "COLOR": "B",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 126,
+   "AS_COLOR_CD": "DG",
+   "COLOR_DESCR": "dark olive green",
+   "R_DEC": 0.1373,
+   "G_DEC": 0.1726,
+   "B_DEC": 0.0863,
+   "COLOR": "G",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 80,
+   "AS_COLOR_CD": "EB",
+   "COLOR_DESCR": "grayish yellowish brown",
+   "R_DEC": 0.4706,
+   "G_DEC": 0.3451,
+   "B_DEC": 0.251,
+   "COLOR": "B",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 65,
+   "AS_COLOR_CD": "FB",
+   "COLOR_DESCR": "brownish black",
+   "R_DEC": 0.0784,
+   "G_DEC": 0.0588,
+   "B_DEC": 0.0431,
+   "COLOR": "Z",
+   "INTENSITY": 5
+  },
+  {
+   "ISCC_NBS_NUM": 40,
+   "AS_COLOR_CD": "FR",
+   "COLOR_DESCR": "strong reddish brown",
+   "R_DEC": 0.498,
+   "G_DEC": 0.0942,
+   "B_DEC": 0.051,
+   "COLOR": "B",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 127,
+   "AS_COLOR_CD": "G",
+   "COLOR_DESCR": "grayish olive green",
+   "R_DEC": 0.2824,
+   "G_DEC": 0.2667,
+   "B_DEC": 0.1765,
+   "COLOR": "L",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 110,
+   "AS_COLOR_CD": "G0",
+   "COLOR_DESCR": "grayish olive",
+   "R_DEC": 0.3216,
+   "G_DEC": 0.2667,
+   "B_DEC": 0.1726,
+   "COLOR": "L",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 64,
+   "AS_COLOR_CD": "GA",
+   "COLOR_DESCR": "brownish gray",
+   "R_DEC": 0.3137,
+   "G_DEC": 0.2392,
+   "B_DEC": 0.2,
+   "COLOR": "M",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 45,
+   "AS_COLOR_CD": "GB",
+   "COLOR_DESCR": "light grayish reddish brown",
+   "R_DEC": 0.5882,
+   "G_DEC": 0.4157,
+   "B_DEC": 0.3412,
+   "COLOR": "B",
+   "INTENSITY": 2
+  },
+  {
+   "ISCC_NBS_NUM": 150,
+   "AS_COLOR_CD": "GG",
+   "COLOR_DESCR": "grayish green",
+   "R_DEC": 0.3412,
+   "G_DEC": 0.3686,
+   "B_DEC": 0.3059,
+   "COLOR": "G",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 173,
+   "AS_COLOR_CD": "GL",
+   "COLOR_DESCR": "moderate greenish blue",
+   "R_DEC": 0.1882,
+   "G_DEC": 0.3843,
+   "B_DEC": 0.4196,
+   "COLOR": "H",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 266,
+   "AS_COLOR_CD": "GR",
+   "COLOR_DESCR": "dark green",
+   "R_DEC": 0.2863,
+   "G_DEC": 0.2588,
+   "B_DEC": 0.2392,
+   "COLOR": "G",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 113,
+   "AS_COLOR_CD": "GY",
+   "COLOR_DESCR": "olive gray",
+   "R_DEC": 0.302,
+   "G_DEC": 0.2588,
+   "B_DEC": 0.2039,
+   "COLOR": "M",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 61,
+   "AS_COLOR_CD": "HB",
+   "COLOR_DESCR": "grayish brown",
+   "R_DEC": 0.3529,
+   "G_DEC": 0.2392,
+   "B_DEC": 0.1882,
+   "COLOR": "B",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 59,
+   "AS_COLOR_CD": "KB",
+   "COLOR_DESCR": "dark brown",
+   "R_DEC": 0.2178,
+   "G_DEC": 0.0902,
+   "B_DEC": 0.0471,
+   "COLOR": "B",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 156,
+   "AS_COLOR_CD": "KG",
+   "COLOR_DESCR": "dark greenish gray",
+   "R_DEC": 0.2706,
+   "G_DEC": 0.2628,
+   "B_DEC": 0.2314,
+   "COLOR": "M",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 191,
+   "AS_COLOR_CD": "LA",
+   "COLOR_DESCR": "bluish gray",
+   "R_DEC": 0.4902,
+   "G_DEC": 0.4549,
+   "B_DEC": 0.4275,
+   "COLOR": "M",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 75,
+   "AS_COLOR_CD": "LB",
+   "COLOR_DESCR": "deep yellowish brown",
+   "R_DEC": 0.349,
+   "G_DEC": 0.2,
+   "B_DEC": 0.0824,
+   "COLOR": "B",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 187,
+   "AS_COLOR_CD": "LC",
+   "COLOR_DESCR": "dark grayish blue",
+   "R_DEC": 0.1726,
+   "G_DEC": 0.2,
+   "B_DEC": 0.2157,
+   "COLOR": "H",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 192,
+   "AS_COLOR_CD": "LD",
+   "COLOR_DESCR": "dark bluish gray",
+   "R_DEC": 0.2745,
+   "G_DEC": 0.2706,
+   "B_DEC": 0.2667,
+   "COLOR": "M",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 154,
+   "AS_COLOR_CD": "LG",
+   "COLOR_DESCR": "light greenish gray",
+   "R_DEC": 0.7294,
+   "G_DEC": 0.6863,
+   "B_DEC": 0.5882,
+   "COLOR": "M",
+   "INTENSITY": 2
+  },
+  {
+   "ISCC_NBS_NUM": 267,
+   "AS_COLOR_CD": "LK",
+   "COLOR_DESCR": "black",
+   "R_DEC": 0.0745,
+   "G_DEC": 0.0745,
+   "B_DEC": 0.0745,
+   "COLOR": "Z",
+   "INTENSITY": 5
+  },
+  {
+   "ISCC_NBS_NUM": 58,
+   "AS_COLOR_CD": "MB",
+   "COLOR_DESCR": "moderate brown",
+   "R_DEC": 0.4039,
+   "G_DEC": 0.2235,
+   "B_DEC": 0.1373,
+   "COLOR": "B",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 265,
+   "AS_COLOR_CD": "MG",
+   "COLOR_DESCR": "medium gray",
+   "R_DEC": 0.5059,
+   "G_DEC": 0.4392,
+   "B_DEC": 0.4,
+   "COLOR": "M",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 74,
+   "AS_COLOR_CD": "NB",
+   "COLOR_DESCR": "strong yellowish brown",
+   "R_DEC": 0.5843,
+   "G_DEC": 0.3137,
+   "B_DEC": 0.0471,
+   "COLOR": "B",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 179,
+   "AS_COLOR_CD": "PB",
+   "COLOR_DESCR": "deep blue",
+   "R_DEC": 0.0,
+   "G_DEC": 0.1843,
+   "B_DEC": 0.3333,
+   "COLOR": "H",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 149,
+   "AS_COLOR_CD": "PG",
+   "COLOR_DESCR": "pale green",
+   "R_DEC": 0.5529,
+   "G_DEC": 0.5686,
+   "B_DEC": 0.4784,
+   "COLOR": "G",
+   "INTENSITY": 2
+  },
+  {
+   "ISCC_NBS_NUM": 0,
+   "AS_COLOR_CD": "PK",
+   "COLOR_DESCR": "unknown Urton color",
+   "R_DEC": 0.9333,
+   "G_DEC": 0.5647,
+   "B_DEC": 0.5255,
+   "COLOR": "R",
+   "INTENSITY": 2
+  },
+  {
+   "ISCC_NBS_NUM": 41,
+   "AS_COLOR_CD": "PR",
+   "COLOR_DESCR": "deep reddish brown",
+   "R_DEC": 0.2863,
+   "G_DEC": 0.0,
+   "B_DEC": 0.0196,
+   "COLOR": "B",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 38,
+   "AS_COLOR_CD": "R",
+   "COLOR_DESCR": "dark reddish orange",
+   "R_DEC": 0.6078,
+   "G_DEC": 0.1843,
+   "B_DEC": 0.1216,
+   "COLOR": "N",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 39,
+   "AS_COLOR_CD": "R0",
+   "COLOR_DESCR": "gray reddish orange",
+   "R_DEC": 0.7216,
+   "G_DEC": 0.3647,
+   "B_DEC": 0.2627,
+   "COLOR": "N",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 43,
+   "AS_COLOR_CD": "RB",
+   "COLOR_DESCR": "moderate reddish brown",
+   "R_DEC": 0.4431,
+   "G_DEC": 0.1843,
+   "B_DEC": 0.149,
+   "COLOR": "B",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 46,
+   "AS_COLOR_CD": "RD",
+   "COLOR_DESCR": "grayish reddish brown",
+   "R_DEC": 0.3686,
+   "G_DEC": 0.2196,
+   "B_DEC": 0.1882,
+   "COLOR": "B",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 155,
+   "AS_COLOR_CD": "RG",
+   "COLOR_DESCR": "greenish gray",
+   "R_DEC": 0.4784,
+   "G_DEC": 0.4628,
+   "B_DEC": 0.4,
+   "COLOR": "M",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 42,
+   "AS_COLOR_CD": "RL",
+   "COLOR_DESCR": "light reddish brown",
+   "R_DEC": 0.6667,
+   "G_DEC": 0.4,
+   "B_DEC": 0.3177,
+   "COLOR": "B",
+   "INTENSITY": 2
+  },
+  {
+   "ISCC_NBS_NUM": 15,
+   "AS_COLOR_CD": "RM",
+   "COLOR_DESCR": "moderate red",
+   "R_DEC": 0.6706,
+   "G_DEC": 0.204,
+   "B_DEC": 0.2275,
+   "COLOR": "R",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 54,
+   "AS_COLOR_CD": "SB",
+   "COLOR_DESCR": "brownish orange",
+   "R_DEC": 0.6941,
+   "G_DEC": 0.3177,
+   "B_DEC": 0.1412,
+   "COLOR": "N",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 12,
+   "AS_COLOR_CD": "SR",
+   "COLOR_DESCR": "strong red",
+   "R_DEC": 0.749,
+   "G_DEC": 0.1334,
+   "B_DEC": 0.2,
+   "COLOR": "R",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 84,
+   "AS_COLOR_CD": "SY",
+   "COLOR_DESCR": "strong yellow",
+   "R_DEC": 0.898,
+   "G_DEC": 0.6196,
+   "B_DEC": 0.1216,
+   "COLOR": "Y",
+   "INTENSITY": 3
+  },
+  {
+   "ISCC_NBS_NUM": 165,
+   "AS_COLOR_CD": "TG",
+   "COLOR_DESCR": "dark bluish green",
+   "R_DEC": 0.0039,
+   "G_DEC": 0.2275,
+   "B_DEC": 0.2,
+   "COLOR": "H",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 175,
+   "AS_COLOR_CD": "VB",
+   "COLOR_DESCR": "vivid dark greenish blue",
+   "R_DEC": 0.0078,
+   "G_DEC": 0.1255,
+   "B_DEC": 0.1529,
+   "COLOR": "H",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 147,
+   "AS_COLOR_CD": "VG",
+   "COLOR_DESCR": "vivid dark green",
+   "R_DEC": 0.0863,
+   "G_DEC": 0.1451,
+   "B_DEC": 0.1098,
+   "COLOR": "G",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 14,
+   "AS_COLOR_CD": "VR",
+   "COLOR_DESCR": "vivid deep red",
+   "R_DEC": 0.3098,
+   "G_DEC": 0.0,
+   "B_DEC": 0.0784,
+   "COLOR": "R",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 0,
+   "AS_COLOR_CD": "W",
+   "COLOR_DESCR": "white",
+   "R_DEC": 0.9569,
+   "G_DEC": 0.9569,
+   "B_DEC": 0.9569,
+   "COLOR": "A",
+   "INTENSITY": 1
+  },
+  {
+   "ISCC_NBS_NUM": 76,
+   "AS_COLOR_CD": "YB",
+   "COLOR_DESCR": "light yellowish brown",
+   "R_DEC": 0.7333,
+   "G_DEC": 0.5451,
+   "B_DEC": 0.3294,
+   "COLOR": "B",
+   "INTENSITY": 2
+  },
+  {
+   "ISCC_NBS_NUM": 151,
+   "AS_COLOR_CD": "YG",
+   "COLOR_DESCR": "dark grayish green",
+   "R_DEC": 0.1922,
+   "G_DEC": 0.2196,
+   "B_DEC": 0.1882,
+   "COLOR": "G",
+   "INTENSITY": 4
+  },
+  {
+   "ISCC_NBS_NUM": 89,
+   "AS_COLOR_CD": "YY",
+   "COLOR_DESCR": "pale yellow",
+   "R_DEC": 1.0,
+   "G_DEC": 0.8588,
+   "B_DEC": 0.5451,
+   "COLOR": "Y",
+   "INTENSITY": 2
+  }
+ ],
+ "color_operator_dc": [
+  {
+   "OPERATOR": "-",
+   "OPERATOR_DESCR": "barber pole",
+   "NOTES": "ascher code for two components of different colors twisted together"
+  },
+  {
+   "OPERATOR": ":",
+   "OPERATOR_DESCR": "mottled",
+   "NOTES": "components are spun from more than one color, resulting in an irregular mottled appearance"
+  },
+  {
+   "OPERATOR": "*",
+   "OPERATOR_DESCR": "special operator",
+   "NOTES": "see khipu databooks"
+  },
+  {
+   "OPERATOR": "**",
+   "OPERATOR_DESCR": "special operator",
+   "NOTES": "found on dahlsberg khipu"
+  },
+  {
+   "OPERATOR": "*_",
+   "OPERATOR_DESCR": "special operator",
+   "NOTES": "see databooks.  found on dahslberg khipu"
+  },
+  {
+   "OPERATOR": "%",
+   "OPERATOR_DESCR": "con elemento",
+   "NOTES": "used in Hugo Peyera's descriptions"
+  }
+ ]
+}

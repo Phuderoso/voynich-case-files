@@ -1,0 +1,781 @@
+{
+ "cycle": "K045",
+ "note": "Hand-typed from retrieved sources only. relation in {equivalent, related, not_equivalent}. system_a uses the K045 recorder proxy names (AS, UR, HP); system_b OKR = ascher_color_dc @ 4039ca5.",
+ "systems_with_colour_docs": [
+  "AS"
+ ],
+ "system_documentation": {
+  "AS": {
+   "status": "dictionary_retrieved",
+   "ingest": "ingest_documented",
+   "basis": "Ascher Databook II Table 5 (63 mnemonics with ISCC-NBS numbers) matches OKR ascher_color_dc by ISCC number; KFG Ascher_Import and ascher_color_count pages state Ascher's codes were encoded into the Harvard KDB by Carrie Brezine."
+  },
+  "UR": {
+   "status": "source_missing",
+   "ingest": "okr_codebook_only",
+   "basis": "No Urton colour dictionary retrieved. Harvard KDP Data Tables page (archived 2011) says the tables 'mimic the layout of the tabular format first invented by the Aschers', and UR001's heading sheet prints an Ascher-style code ('Color: B-W'); OKR ascher_color_dc has PK = 'unknown Urton color'. This shows Urton records were stored in Ascher-style codes, not how Urton's field colours were chosen."
+  },
+  "HP": {
+   "status": "source_missing",
+   "ingest": "okr_codebook_only",
+   "basis": "Pereyra's colour conventions (Pereyra 2006 / 2011 CONCYTEC books) not retrievable online; only OKR color_operator_dc row '%' = 'con elemento', NOTES \"used in Hugo Peyera's descriptions\"."
+  }
+ },
+ "sources": [
+  {
+   "url": "OKR khipu.db @ 4039ca5: ascher_color_dc (64 rows), color_operator_dc (6 rows)",
+   "status": "local read-only",
+   "found": "analysis/k045_dictionary.json"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/",
+   "status": 200,
+   "found": "home page; no colour section"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/databook/KFGExcelSpecification.html",
+   "status": 200,
+   "found": "§5.8 'The majority of color schemes use the 65 “Brezine”/“Ascher” colors.' Operators: ': Mottled', '- Barberpole', '% Striped cord', '^ Tweed cord', '** Dahlsberg khipu cprd'"
+  },
+  {
+   "url": "https://khipufieldguide.com/sketchbook/brezine_colors.html",
+   "status": 200,
+   "found": "Brezine Color Chart: same 64 codes as OKR ascher_color_dc incl. 'PK-Unknown Urton Color'"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/databook/DatabaseSQLBuild.html",
+   "status": 200,
+   "found": "§6 'Ascher Cord Colors have hundreds of typos and non-regular codes that need cleansing and normalizing'; bogus_mixed_color_types sample incl. '-':'PK', 'BY':'YB', 'W**BS':'W:BS'; mottled/barberpole components re-sorted by grey value (KFG normalisation, not applied to OKR snapshot)"
+  },
+  {
+   "url": "https://khipufieldguide.com/databook/Ascher_Import.html",
+   "status": 200,
+   "found": "KH0002-KH0010 import: 'I am trying to match Brezine colors to Ascher colors. I probably did a pretty bad job.'; sheet 4 'lists (some) Ascher colors for that khipu, that need translation into current-day Ascher colors' (AS001-AS009 only)"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/databook/KFGImport.html",
+   "status": 200,
+   "found": "author counts incl. Gary Urton 239, Marcia & Robert Ascher 231, Hugo Pereyra 58; Urton khipus 'Repaired/Reconstructed'; no colour mapping"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/notebook/analyses/ascher_color_count.html",
+   "status": 200,
+   "found": "'Marcia Ascher invented a series of color codes ... encoded into the Harvard Khipu Database, by Carrie Brezine'"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/guidebook/KFG_History.html",
+   "status": 200,
+   "found": "no colour-code mapping"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/databook/Pereyra_Import.html, /databook/Urton_Import.html, /databook/Hugo_Pereyra_Import.html, /databook/index.html",
+   "status": 404,
+   "found": "path guesses"
+  },
+  {
+   "url": "https://www.khipufieldguide.com/catalog/KH0097.html, KH0586, KH0192, KH0469, KH0470",
+   "status": 200,
+   "found": "catalog metadata and bibliography; no colour-code dictionary (KH0586 cites Pereyra 2011; KH0469/KH0470 Urton 2017)"
+  },
+  {
+   "url": "https://courses.cit.cornell.edu/quipu/ and contents.htm",
+   "status": 200,
+   "found": "Ascher Databooks online"
+  },
+  {
+   "url": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf",
+   "status": 200,
+   "found": "scanned Introduction to Databook II; p.18-19 'Color' (ISCC-NBS level 3, 'single or double letter mneumonics'; operators '-' barber pole, ':' mottled, '/' joined end to end; 'The color with the lower valued ISCC-NBS number is always listed first'); p.21 Table 5 mnemonic -> ISCC-NBS number"
+  },
+  {
+   "url": "https://courses.cit.cornell.edu/quipu/data/title-1.pdf",
+   "status": 200,
+   "found": "front matter only (no text layer)"
+  },
+  {
+   "url": "https://raw.githubusercontent.com/khipulab/open-khipu-repository/4039ca5/README.md",
+   "status": 200,
+   "found": "no colour-code or ingest documentation; repo tree @4039ca5 has no schema/codebook file besides khipu.db"
+  },
+  {
+   "url": "https://web.archive.org/web/20110722135554/http://khipukamayuq.fas.harvard.edu/ProjectDescription.html",
+   "status": 200,
+   "found": "'The database effectively and accurately contains color information by allowing many different color records for one cord.' No code list"
+  },
+  {
+   "url": "https://web.archive.org/web/2011id_/http://khipukamayuq.fas.harvard.edu/DataTables.html",
+   "status": 200,
+   "found": "'mimics the layout of the tabular format first invented by the Aschers'"
+  },
+  {
+   "url": "https://web.archive.org/web/2011id_/http://khipukamayuq.fas.harvard.edu/Data%20Tables/UR001_files/sheet001.htm",
+   "status": 200,
+   "found": "UR001 heading: 'Color: B-W' (Ascher-style code)"
+  },
+  {
+   "url": "web searches: 'Open Khipu Repository colour codes Ascher Urton Pereyra', 'Urton Khipu Database Project color codes', 'Hugo Pereyra quipus colores', 'khipu field guide Pereyra HP khipus color codes', 'Ascher Code of the Quipu Databook color abbreviations', 'Pereyra Sánchez Descripción de una muestra de quipus colores'",
+   "status": "searched",
+   "found": "no Urton or Pereyra colour dictionary retrieved; Pereyra 2011 is a print book (CONCYTEC)"
+  }
+ ],
+ "mappings": [
+  {
+   "system_a": "AS",
+   "code_a": "AB",
+   "system_b": "OKR",
+   "code_b": "AB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "AB 57",
+   "basis": "same ISCC-NBS 57: OKR AB 'light brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "B",
+   "system_b": "OKR",
+   "code_b": "B",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "B 77",
+   "basis": "same ISCC-NBS 77: OKR B 'moderate yellowish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "BB",
+   "system_b": "OKR",
+   "code_b": "BB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "BB 78",
+   "basis": "same ISCC-NBS 78: OKR BB 'dark yellowish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "BD",
+   "system_b": "OKR",
+   "code_b": "BD",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "BD 81",
+   "basis": "same ISCC-NBS 81: OKR BD 'dark grayish yellowish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "BG",
+   "system_b": "OKR",
+   "code_b": "BG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "BG 186",
+   "basis": "same ISCC-NBS 186: OKR BG 'grayish blue'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "BL",
+   "system_b": "OKR",
+   "code_b": "BL",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "BL 185",
+   "basis": "same ISCC-NBS 185: OKR BL 'pale blue'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "BS",
+   "system_b": "OKR",
+   "code_b": "BS",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "BS 55",
+   "basis": "same ISCC-NBS 55: OKR BS 'strong brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "BY",
+   "system_b": "OKR",
+   "code_b": "BY",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "BY 79",
+   "basis": "same ISCC-NBS 79: OKR BY 'light grayish yellowish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "CB",
+   "system_b": "OKR",
+   "code_b": "CB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "CB 62",
+   "basis": "same ISCC-NBS 62: OKR CB 'dark grayish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "DB",
+   "system_b": "OKR",
+   "code_b": "DB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "DB 56",
+   "basis": "same ISCC-NBS 56: OKR DB 'deep brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "DG",
+   "system_b": "OKR",
+   "code_b": "DG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "DG 126",
+   "basis": "same ISCC-NBS 126: OKR DG 'dark olive green'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "DO",
+   "system_b": "OKR",
+   "code_b": "D0",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "DO 108",
+   "basis": "same ISCC-NBS 108: OKR D0 'dark olive'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "EB",
+   "system_b": "OKR",
+   "code_b": "EB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "EB 80",
+   "basis": "same ISCC-NBS 80: OKR EB 'grayish yellowish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "FB",
+   "system_b": "OKR",
+   "code_b": "FB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "FB 65",
+   "basis": "same ISCC-NBS 65: OKR FB 'brownish black'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "FR",
+   "system_b": "OKR",
+   "code_b": "FR",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "FR 40",
+   "basis": "same ISCC-NBS 40: OKR FR 'strong reddish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "G",
+   "system_b": "OKR",
+   "code_b": "G",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "G 127",
+   "basis": "same ISCC-NBS 127: OKR G 'grayish olive green'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GA",
+   "system_b": "OKR",
+   "code_b": "GA",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GA 64",
+   "basis": "same ISCC-NBS 64: OKR GA 'brownish gray'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GB",
+   "system_b": "OKR",
+   "code_b": "GB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GB 45",
+   "basis": "same ISCC-NBS 45: OKR GB 'light grayish reddish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GG",
+   "system_b": "OKR",
+   "code_b": "GG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GG 150",
+   "basis": "same ISCC-NBS 150: OKR GG 'grayish green'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GL",
+   "system_b": "OKR",
+   "code_b": "GL",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GL 173",
+   "basis": "same ISCC-NBS 173: OKR GL 'moderate greenish blue'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GO",
+   "system_b": "OKR",
+   "code_b": "G0",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GO 110",
+   "basis": "same ISCC-NBS 110: OKR G0 'grayish olive'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GR",
+   "system_b": "OKR",
+   "code_b": "GR",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GR 266",
+   "basis": "same ISCC-NBS 266: OKR GR 'dark green'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "GY",
+   "system_b": "OKR",
+   "code_b": "GY",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "GY 113",
+   "basis": "same ISCC-NBS 113: OKR GY 'olive gray'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "HB",
+   "system_b": "OKR",
+   "code_b": "HB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "HB 61",
+   "basis": "same ISCC-NBS 61: OKR HB 'grayish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "KB",
+   "system_b": "OKR",
+   "code_b": "KB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "KB 59",
+   "basis": "same ISCC-NBS 59: OKR KB 'dark brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "KG",
+   "system_b": "OKR",
+   "code_b": "KG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "KG 156",
+   "basis": "same ISCC-NBS 156: OKR KG 'dark greenish gray'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "LA",
+   "system_b": "OKR",
+   "code_b": "LA",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "LA 191",
+   "basis": "same ISCC-NBS 191: OKR LA 'bluish gray'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "LB",
+   "system_b": "OKR",
+   "code_b": "LB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "LB 75",
+   "basis": "same ISCC-NBS 75: OKR LB 'deep yellowish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "LC",
+   "system_b": "OKR",
+   "code_b": "LC",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "LC 187",
+   "basis": "same ISCC-NBS 187: OKR LC 'dark grayish blue'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "LD",
+   "system_b": "OKR",
+   "code_b": "LD",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "LD 192",
+   "basis": "same ISCC-NBS 192: OKR LD 'dark bluish gray'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "LG",
+   "system_b": "OKR",
+   "code_b": "LG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "LG 154",
+   "basis": "same ISCC-NBS 154: OKR LG 'light greenish gray'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "LK",
+   "system_b": "OKR",
+   "code_b": "LK",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "LK 267",
+   "basis": "same ISCC-NBS 267: OKR LK 'black'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "MB",
+   "system_b": "OKR",
+   "code_b": "MB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "MB 58",
+   "basis": "same ISCC-NBS 58: OKR MB 'moderate brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "MG",
+   "system_b": "OKR",
+   "code_b": "MG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "MG 265",
+   "basis": "same ISCC-NBS 265: OKR MG 'medium gray'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "NB",
+   "system_b": "OKR",
+   "code_b": "NB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "NB 74",
+   "basis": "same ISCC-NBS 74: OKR NB 'strong yellowish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OB",
+   "system_b": "OKR",
+   "code_b": "0B",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OB 95",
+   "basis": "same ISCC-NBS 95: OKR 0B 'moderate olive brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OD",
+   "system_b": "OKR",
+   "code_b": "0D",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OD 128",
+   "basis": "same ISCC-NBS 128: OKR 0D 'dark grayish olive green'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OG",
+   "system_b": "OKR",
+   "code_b": "0G",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OG 109",
+   "basis": "same ISCC-NBS 109: OKR 0G 'light grayish olive'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OK",
+   "system_b": "OKR",
+   "code_b": "0K",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OK 114",
+   "basis": "same ISCC-NBS 114: OKR 0K 'olive black'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OL",
+   "system_b": "OKR",
+   "code_b": "0L",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OL 111",
+   "basis": "same ISCC-NBS 111: OKR 0L 'dark grayish olive'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OR",
+   "system_b": "OKR",
+   "code_b": "0R",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OR 51",
+   "basis": "same ISCC-NBS 51: OKR 0R 'deep orange'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "OY",
+   "system_b": "OKR",
+   "code_b": "0Y",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "OY 72",
+   "basis": "same ISCC-NBS 72: OKR 0Y 'dark orange yellow'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "PB",
+   "system_b": "OKR",
+   "code_b": "PB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "PB 179",
+   "basis": "same ISCC-NBS 179: OKR PB 'deep blue'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "PG",
+   "system_b": "OKR",
+   "code_b": "PG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "PG 149",
+   "basis": "same ISCC-NBS 149: OKR PG 'pale green'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "PR",
+   "system_b": "OKR",
+   "code_b": "PR",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "PR 41",
+   "basis": "same ISCC-NBS 41: OKR PR 'deep reddish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "R",
+   "system_b": "OKR",
+   "code_b": "R",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "R 38",
+   "basis": "same ISCC-NBS 38: OKR R 'dark reddish orange'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "RB",
+   "system_b": "OKR",
+   "code_b": "RB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "RB 43",
+   "basis": "same ISCC-NBS 43: OKR RB 'moderate reddish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "RD",
+   "system_b": "OKR",
+   "code_b": "RD",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "RD 46",
+   "basis": "same ISCC-NBS 46: OKR RD 'grayish reddish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "RG",
+   "system_b": "OKR",
+   "code_b": "RG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "RG 155",
+   "basis": "same ISCC-NBS 155: OKR RG 'greenish gray'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "RL",
+   "system_b": "OKR",
+   "code_b": "RL",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "RL 42",
+   "basis": "same ISCC-NBS 42: OKR RL 'light reddish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "RM",
+   "system_b": "OKR",
+   "code_b": "RM",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "RM 15",
+   "basis": "same ISCC-NBS 15: OKR RM 'moderate red'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "RO",
+   "system_b": "OKR",
+   "code_b": "R0",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "RO 39",
+   "basis": "same ISCC-NBS 39: OKR R0 'gray reddish orange'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "SB",
+   "system_b": "OKR",
+   "code_b": "SB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "SB 54",
+   "basis": "same ISCC-NBS 54: OKR SB 'brownish orange'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "SR",
+   "system_b": "OKR",
+   "code_b": "SR",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "SR 12",
+   "basis": "same ISCC-NBS 12: OKR SR 'strong red'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "SY",
+   "system_b": "OKR",
+   "code_b": "SY",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "SY 84",
+   "basis": "same ISCC-NBS 84: OKR SY 'strong yellow'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "TG",
+   "system_b": "OKR",
+   "code_b": "TG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "TG 165",
+   "basis": "same ISCC-NBS 165: OKR TG 'dark bluish green'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "VB",
+   "system_b": "OKR",
+   "code_b": "VB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "VB 175",
+   "basis": "same ISCC-NBS 175: OKR VB 'vivid dark greenish blue'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "VG",
+   "system_b": "OKR",
+   "code_b": "VG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "VG 147",
+   "basis": "same ISCC-NBS 147: OKR VG 'vivid dark green'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "VR",
+   "system_b": "OKR",
+   "code_b": "VR",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "VR 14",
+   "basis": "same ISCC-NBS 14: OKR VR 'vivid deep red'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "W",
+   "system_b": "OKR",
+   "code_b": "W",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "W Neutral-uncolored",
+   "basis": "same token W; Ascher: 'W Neutral-uncolored'; OKR W 'white' (ISCC_NBS_NUM 0)"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "YB",
+   "system_b": "OKR",
+   "code_b": "YB",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "YB 76",
+   "basis": "same ISCC-NBS 76: OKR YB 'light yellowish brown'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "YG",
+   "system_b": "OKR",
+   "code_b": "YG",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "YG 151",
+   "basis": "same ISCC-NBS 151: OKR YG 'dark grayish green'"
+  },
+  {
+   "system_a": "AS",
+   "code_a": "YY",
+   "system_b": "OKR",
+   "code_b": "YY",
+   "relation": "equivalent",
+   "source": "https://courses.cit.cornell.edu/quipu/data/intro-2.pdf (Ascher & Ascher, Code of the Quipu Databook II, 1988, Introduction p.21, Table 5 'Correspondence of single color mneumonics to ISCC-NBS numbers--alphabetical listing'; scanned page read visually, no OCR)",
+   "verbatim": "YY 89",
+   "basis": "same ISCC-NBS 89: OKR YY 'pale yellow'"
+  }
+ ],
+ "descriptive_conflicts": [
+  {
+   "item": "operator %",
+   "a": "OKR color_operator_dc: '%' = 'con elemento', NOTES \"used in Hugo Peyera's descriptions\"",
+   "b": "KFG Excel spec §5.8: '%' = 'Striped cord'",
+   "reading": "conflicting description of the % operator (affects HP strings)"
+  },
+  {
+   "item": "BY",
+   "a": "Ascher Table 5: BY 79; OKR BY 'light grayish yellowish brown' ISCC 79 (YB is 76)",
+   "b": "KFG DatabaseSQLBuild bogus_mixed_color_types: 'BY' : 'YB'",
+   "reading": "KFG normalisation merges BY into YB; Ascher/OKR keep them distinct. OKR snapshot is unnormalised; K045 follows OKR/Ascher."
+  },
+  {
+   "item": "PK",
+   "a": "OKR ascher_color_dc PK = 'unknown Urton color' (ISCC 0); KFG Brezine chart 'PK-Unknown Urton Color'",
+   "b": "KFG DatabaseSQLBuild '-' : 'PK' (a bare operator recoded as PK)",
+   "reading": "PK is a placeholder for an unidentified colour, not a colour; it is in the dictionary (same_dictionary) but should never count as a colour match"
+  },
+  {
+   "item": "operator order",
+   "a": "Ascher Databook II p.19: lower ISCC-NBS number listed first in multicolour designations",
+   "b": "KFG DatabaseSQLBuild: KFG re-sorts components by grey value",
+   "reading": "component order of FULL_COLOR is a convention that can differ by source; a later test needs an order rule fixed in advance"
+  }
+ ],
+ "table5_unmatched": [],
+ "identical_token_iscc_mismatch": []
+}
