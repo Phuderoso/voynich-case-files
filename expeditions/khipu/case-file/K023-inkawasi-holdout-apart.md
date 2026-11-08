@@ -58,3 +58,6 @@ Inkawasi khipus left to replicate on, so the line is **paused, data-limited**, a
 colour convention until new Inkawasi records are published.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+**Audit note (K058, 2026-11-08 ~14:35 PT).** Re-run under the multi-number (R5) mask, pre-registered in K058: 39 sum cords / 13 khipus, A = 8.56 vs null 12.76 ± 1.74, p = 0.0084 (five seeds 0.0067–0.0082; without KH0502 p = 0.0090); gates FPR 0.075, power 0.715 → **robust under the mask**. The original wording ("weakly supported, not established", data-limited) stands: same data, same 15 khipus, one OKR commit.

@@ -1,0 +1,4 @@
+G0 {'n': 49, 'A': 13.862121212121211, 'n_khipus': 15, 'ok': True}
+{'raw_sum': 49, 'masked_sum': 39, 'raw_pool_mean': 39.244897959183675, 'masked_pool_mean': 35.1025641025641}
+primary {'n_sum': 39, 'n_khipus': 13, 'A': 8.55974025974026, 'null_mean': 12.756161466450216, 'null_sd': 1.7360347080245495, 'p': 0.00839958002099895, 'fpr': 0.075, 'power': 0.715}
+VERDICT {'verdict': 'ROBUST (supported under mask; fragile flag if any sensitivity seed > 0.05)', 'fragile': False}
