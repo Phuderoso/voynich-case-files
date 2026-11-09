@@ -1,0 +1,12 @@
+training done 119.6
+winner 33 {'method.sourceChooser': 'random', 'method.morph.combine_split.probability': 30, 'method.morph.add_remove.probability': 20, 'method.morph.use_word_final_substitutions': 'true', 'method.canFollow': 'curveline', 'text.initial_line': 'f103r.1'} 0.0519 {'min_feasible_K_mean': 0.05189962725169419, 'min_feasible_single_run': 0.04090910086616796, 'n_feasible': 13, 'n_cells': 65, 'n_feasible_cells_with_any_run_below_ZL': 13, 'n_feasible_cells_with_any_run_below_IT2a': 13}
+ref range 0.0395 0.0617 mean 0.0505
+holdout {11271: 'NOT CALLED', 11272: 'INSIDE GENERATOR RANGE', 11273: 'INSIDE GENERATOR RANGE', 11274: 'INSIDE GENERATOR RANGE', 11275: 'INSIDE GENERATOR RANGE', 11276: 'INSIDE GENERATOR RANGE', 11277: 'INSIDE GENERATOR RANGE', 11278: 'INSIDE GENERATOR RANGE', 11279: 'ABOVE GENERATOR', 11280: 'INSIDE GENERATOR RANGE'}
+plants {11281: 'BELOW GENERATOR', 11282: 'BELOW GENERATOR', 11283: 'BELOW GENERATOR', 11284: 'BELOW GENERATOR', 11285: 'BELOW GENERATOR'}
+gates {'G1': True, 'G2': '1/10', 'G2_pass': True, 'G3': '5/5', 'G3_pass': True, 'G4': '20/20', 'G4_pass': True}
+surface held-out {'mwl': 4.453758333333333, 'ttr': 0.3666000000000001, 'h2': 2.43320621888966, 'R': 0.4368207330706178} True
+Voynich_ZL3b {"K": 0.10638612170489332, "ci": [0.08907628421015912, 0.11841840001882276], "n_ref_below": 20, "call": "ABOVE GENERATOR"}
+Voynich_IT2a {"K": 0.10316670654182304, "ci": [0.08318941803243757, 0.11595051257757072], "n_ref_below": 20, "call": "ABOVE GENERATOR"}
+H1 NOT CALLED (ABOVE GENERATOR / ABOVE GENERATOR)
+runtime 145.4
+exit 0

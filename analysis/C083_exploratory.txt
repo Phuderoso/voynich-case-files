@@ -1,0 +1,26 @@
+EXPLORATORY (post hoc, training seeds 11246-11250 only; not a verdict)
+feasible cells (13), mean training K:
+ cell 33 0.0519 runs [0.063, 0.066, 0.044, 0.041, 0.046] {'sourceChooser': 'random', 'combine_split': 30, 'add_remove': 20, 'use_word_final_substitutions': 'true', 'canFollow': 'curveline', 'initial_line': 'f103r.1'}
+ cell 32 0.0528 runs [0.049, 0.049, 0.054, 0.063, 0.049] {'sourceChooser': 'random', 'combine_split': 30, 'add_remove': 20, 'use_word_final_substitutions': 'true', 'canFollow': 'curveline', 'initial_line': 'default'}
+ cell 48 0.0595 runs [0.045, 0.068, 0.069, 0.061, 0.054] {'sourceChooser': 'random', 'combine_split': 0, 'add_remove': 20, 'use_word_final_substitutions': 'true', 'canFollow': 'curveline', 'initial_line': 'default'}
+ cell 49 0.062 runs [0.057, 0.06, 0.061, 0.062, 0.071] {'sourceChooser': 'random', 'combine_split': 0, 'add_remove': 20, 'use_word_final_substitutions': 'true', 'canFollow': 'curveline', 'initial_line': 'f103r.1'}
+ cell 37 0.0691 runs [0.071, 0.066, 0.065, 0.08, 0.063] {'sourceChooser': 'random', 'combine_split': 30, 'add_remove': 20, 'use_word_final_substitutions': 'false', 'canFollow': 'curveline', 'initial_line': 'f103r.1'}
+ cell 58 0.0697 runs [0.059, 0.064, 0.055, 0.082, 0.088] {'sourceChooser': 'random', 'combine_split': 0, 'add_remove': 60, 'use_word_final_substitutions': 'true', 'canFollow': 'none', 'initial_line': 'default'}
+ cell 54 0.0768 runs [0.07, 0.072, 0.082, 0.071, 0.088] {'sourceChooser': 'random', 'combine_split': 0, 'add_remove': 20, 'use_word_final_substitutions': 'false', 'canFollow': 'none', 'initial_line': 'default'}
+ cell 50 0.0776 runs [0.06, 0.104, 0.073, 0.083, 0.067] {'sourceChooser': 'random', 'combine_split': 0, 'add_remove': 20, 'use_word_final_substitutions': 'true', 'canFollow': 'none', 'initial_line': 'default'}
+ cell 62 0.0786 runs [0.064, 0.079, 0.1, 0.072, 0.077] {'sourceChooser': 'random', 'combine_split': 0, 'add_remove': 60, 'use_word_final_substitutions': 'false', 'canFollow': 'none', 'initial_line': 'default'}
+ cell 63 0.0799 runs [0.076, 0.087, 0.073, 0.084, 0.08] {'sourceChooser': 'random', 'combine_split': 0, 'add_remove': 60, 'use_word_final_substitutions': 'false', 'canFollow': 'none', 'initial_line': 'f103r.1'}
+ cell 64 0.1028 runs [0.113, 0.103, 0.098, 0.102, 0.098] C005
+ cell 51 0.1036 runs [0.113, 0.098, 0.095, 0.087, 0.125] {'sourceChooser': 'random', 'combine_split': 0, 'add_remove': 20, 'use_word_final_substitutions': 'true', 'canFollow': 'none', 'initial_line': 'f103r.1'}
+ cell 55 0.109 runs [0.115, 0.085, 0.121, 0.111, 0.113] {'sourceChooser': 'random', 'combine_split': 0, 'add_remove': 20, 'use_word_final_substitutions': 'false', 'canFollow': 'none', 'initial_line': 'f103r.1'}
+feasible K range 0.0519 0.109
+feasible cells with mean K in [0.087,0.119] (manuscript CI hull): [64, 51, 55]
+main effects over all 64 grid cells (mean K by level):
+  method.sourceChooser {'page': 0.2239, 'random': 0.0748}
+  method.morph.combine_split.probability {'0': 0.1849, '30': 0.1138}
+  method.morph.add_remove.probability {'20': 0.1551, '60': 0.1437}
+  method.morph.use_word_final_substitutions {'false': 0.1566, 'true': 0.1422}
+  method.canFollow {'curveline': 0.1507, 'none': 0.148}
+  text.initial_line {'default': 0.1535, 'f103r.1': 0.1452}
+default-like cell 0 (page,30,20,true,curveline,default) K 0.1698 feasible False {'mwl': 4.163, 'ttr': 0.215, 'h2': 2.055, 'R': 0.442}
+C005 cell 64 K 0.1028 feasible True
