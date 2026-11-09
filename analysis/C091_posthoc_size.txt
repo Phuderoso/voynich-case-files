@@ -1,0 +1,17 @@
+generator ntypes vs Q, r = 0.701
+data/ZL3b-n.txt types 2139 Q mean 0.2137 range 0.1814 0.2361
+data/ZL3b-n.txt types 2500 Q mean 0.2407 range 0.2196 0.268
+data/ZL3b-n.txt types 2778 Q mean 0.2607 range 0.2455 0.279
+  family 8 ['chekody', 'okchedy', 'ekchody', 'ykechod', 'kcheody', 'kechody', 'okechdy', 'dokechy']
+  family 6 ['koshey', 'okeshy', 'shokey', 'okshey', 'ykesho', 'sheoky']
+  family 6 ['choky', 'kchoy', 'chkoy', 'okchy', 'ykcho', 'ychok']
+  family 5 ['okchey', 'cheoky', 'choeky', 'chokey', 'okechy']
+  family 5 ['chkeey', 'cheeky', 'chekey', 'keechy', 'kcheey']
+data/IT2a-n.txt types 2139 Q mean 0.2179 range 0.1907 0.2403
+data/IT2a-n.txt types 2500 Q mean 0.2449 range 0.2204 0.2684
+data/IT2a-n.txt types 2778 Q mean 0.263 range 0.2444 0.2775
+  family 8 ['chekody', 'okchedy', 'ekchody', 'ykechod', 'kcheody', 'kechody', 'okechdy', 'dokechy']
+  family 6 ['choky', 'kchoy', 'chkoy', 'okchy', 'ykcho', 'ychok']
+  family 5 ['lchody', 'choldy', 'chdoly', 'olchdy', 'dcholy']
+  family 5 ['kechy', 'kchey', 'cheky', 'chkey', 'ychek']
+  family 5 ['dalor', 'dolar', 'oldar', 'arodl', 'darol']
