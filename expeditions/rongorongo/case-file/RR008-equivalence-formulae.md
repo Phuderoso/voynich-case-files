@@ -37,4 +37,26 @@ Fourteen single-occurrence substitutions are a small, noisy dictionary; some may
 than scribal allographs. Classes merging small strokes (001 / 004) can raise chance matches, which the mapped null
 absorbs.
 
+## Results (seed 8008, R 999, run 2026-11-09)
+**Verdict: NOT DETECTED on all 25 pairs, every pair powered** (k* 1–4 planted 4-sign excerpts). Gates pass: Hr–Qr
+T 103 and Hr–Pr T 148 (RR007: 99 and 119) against null maxima about 50–60, p 0.001; reversed y 0 Holm detections,
+2 unadjusted hits. Smallest p: Ab–Ca 0.062 (RR007 0.042), far above the first Holm threshold 0.002.
+
+Compared with RR007, the mapping raised the shared-trigram count on 6 of 25 pairs, by 1 or 2 (Aa–Br 2 to 4; Aa–Ia,
+Ab–Br, Br–Cb, Br–Ia, Ca–Ia by 1), and the mapped nulls rose with it, so no p value fell below 0.06. The known answer
+Ab–Er stays at 1 shared trigram, as declared beforehand: the 700 / 027 swap of Horley's parallel is not one the H/P/Q
+copyists made. Full table: [`analysis/rr008_results.json`](../analysis/rr008_results.json), log
+[`analysis/rr008.log`](../analysis/rr008.log).
+
+**What this teaches.** Three copies of one text give only 14 swaps, each seen once, and 8 of the 11 classes never
+touch a sign that matters for the catalogued parallels. A dictionary learned this way is too small to recover
+variant parallels. The next equivalence source must be independent of the 25 test pairs and larger: a published
+allograph list, fixed before testing, with Horley's catalogued parallels held out as known answers (line 5f).
+
+## Audit E (RR006, seed 6007)
+All 25 verdicts unchanged (NOT DETECTED), controls identical (Hr–Qr 12, Hr–Pr 13), reversed 0 / 0, every p within
+0.025 of RR006. lg* rose by 1 in 5 pairs (Aa–Bv, Ab–Cb, Ab–Er, Bv–Ia, Ca–Ia), because at the floor the planted power
+sits near 0.5 and flips with the seed; range still 5–9. Lesson: a power floor is a ±1 quantity at this plant count.
+Files: [`analysis/rr008_auditE_rr006.json`](../analysis/rr008_auditE_rr006.json), [`analysis/rr008_auditE.log`](../analysis/rr008_auditE.log).
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
