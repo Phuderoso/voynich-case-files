@@ -80,3 +80,7 @@ than chance, so a surplus of 10 or more stroke-final entries is ruled out.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
 
+
+**Audit note (RR004, 2026-11-09).** The stroke regex `00[12349]` ran on unpadded codes, so 6 free strokes in lines
+written unpadded (mostly Aa01–Aa02) were missed. Re-run with padded codes: H1 109 vs 96.3 (p 0.070), H2 11 (p 0.311),
+H3 5 (p 0.986). Verdicts unchanged. See [RR004](RR004-stroke-hosts.md#audit-a-rr002rr003-padded-codes-analysisrr004_auditA_rr003json).
