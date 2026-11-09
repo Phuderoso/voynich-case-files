@@ -29,3 +29,17 @@ Before this push I ran one design smoke test on the whole IT2a file with seed 1,
 Seed 7373. Tool: `tools/c073_word2_matched.py`.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (run 2026-11-08 ~21:20 PT, 18 s; `analysis/C073_results.json`, `analysis/C073_run_log.txt`)
+
+| Subset | IT2a D_m (p) | ZL3b D_m (p) | Gates (FPR, power) | Verdict |
+|---|---|---|---|---|
+| Q20 | +0.093 (0.00025) | +0.088 (0.00025) | 1, 17 / 2, 16 | **REPLICATED** |
+| Currier A | +0.046 (0.0020) | +0.054 (0.0005) | power 14 / 14 fails | **NOT TESTABLE** |
+| B outside Q20 | +0.085 (0.00025) | +0.075 (0.00025) | 1, 19 / 0, 19 | **REPLICATED** |
+
+**Generator: ABOVE GENERATOR.** 40 default runs gave D_m −0.024 to +0.025 (mean +0.002). The manuscript's Currier B outside Q20 beats every run in both transcriptions (rank p 1/41). Generator false alarms: 2/20, at the limit.
+
+**Reading.** With the `y`-junction confound removed, word 2 is still *sh*-initial far more often than comparable mid-line slots. The boost is about 8–9 points in Currier B. C070's verdict stands, and C072's NOT ROBUST traced back to my baseline, not to the effect. Currier A's raw p values are small, but its power gate failed, so it stays descriptive.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
