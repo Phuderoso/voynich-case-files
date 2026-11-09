@@ -8,6 +8,8 @@ Nothing from CDLI is copied here; `tools/pe001_totals.py fetch` downloads the pi
 | `cdli_cat.csv` | same | same | `2e3232f75325b61c4d1e788d4d8c074c6230a947aed422110f9f35a6e353d09c` |
 | `pe.atf` (derived) | catalogue `period` contains "Proto-Elamite": 1 729 ids, 1 585 with ATF | built by `fetch` | `5c4860abe9d04ee4677875248c52e768d4b9fd026fa30878ce8e0425888159a6` |
 
+Re-pinned 2026-11-09 12:08 PT (PE012): both files downloaded again from the LFS media URLs at `d66b12b`; sha256 identical to the table; `pe.atf` rebuilt with the same 1 729 ids / 1 585 texts and the same sha256.
+
 Source: Cuneiform Digital Library Initiative, https://cdli.mpiwg-berlin.mpg.de/ . Cite CDLI and the primary
 publications (MDP 6, 17, 26, 26S, etc.) listed in the catalogue.
 
