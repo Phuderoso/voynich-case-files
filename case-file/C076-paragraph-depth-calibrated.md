@@ -17,4 +17,22 @@ I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (c
 - **Not done here:** generator (no paragraphs), natural texts (no comparable paragraph markup).
 - **Tool:** `tools/c076_paragraph_depth2.py`, `timeout 600`, 8 processes.
 
+## Results (run 2026-11-08 ~23:47 PT, 41 s, seed 7676, 8 processes; `analysis/C076_results.json`, `analysis/C076_run_log.txt`; pre-registration commit 604df62)
+- **Design phase:** no q in the grid reached 9/10 in Currier A (best 6/10 at 0.24); Currier B reached 9/10 at 0.16 and 10/10 at 0.24. By the pre-registered rule **q\* = 0.24**. Median planted JSD at q\* (design, IT2a T): A 0.013, B 0.0096.
+- **Gates at q\* (FPR / power out of 20):** Currier B passes everywhere except **ZL B T (FPR 3/20)**. Currier A fails power for T in both transcriptions (15/20, 13/20) and for IT2a S (13/20) and IT2a H2 (14/20); IT2a A Lst fails FPR (4/20). Ten tests entered Holm.
+
+| Verdict | Currier A | Currier B |
+|---|---|---|
+| H1 top line T | NOT TESTABLE (power 15, 13) | **NOT TESTABLE** (ZL FPR 3/20; IT2a rejects after Holm) |
+| H1 second line S | NOT TESTABLE (IT2a power 13) | **NOT DETECTED** (JSD 0.0012 / 0.0012, p 0.89 / 0.94; planted median 0.010) |
+| H1 last line Lst | NOT TESTABLE (IT2a FPR 4) | **PARTIAL** (IT2a JSD 0.0038, p 0.004, rejects; ZL 0.0037, p 0.018, not after Holm) |
+| H2 top line without p/f words | NOT TESTABLE (IT2a power 14; ZL rejects) | **DIFFERENT** (JSD 0.0051 / 0.0059, p 0.001 / 0.001, both reject after Holm) |
+
+- **Manuscript JSD vs instrument (descriptive):** top-line body JSD in B is 0.021 in both transcriptions, about twice the median planted effect (0.009–0.012); in A 0.039–0.043 (planted 0.012–0.016). With p/f words removed, B keeps 0.005–0.006, below the median planted effect but rejected in both transcriptions.
+- **What the B top-line body has, without p/f words (descriptive):** fewer `e` (−1.5 to −1.8 points of unit share), more `t` (+1.2 to +1.3), `r` (+1.2 to +1.3), `o` (+1.1). In A (not testable) more `sh` (+3.6 to +4.4) and fewer `k`, `a`.
+- **Reading under the pre-registered interpretation:** the full top-line test (H1-T) is NOT TESTABLE in both languages, so the fixed rule "H1-T and H2 both DIFFERENT" cannot be applied. What stands: **in Currier B the body of the top line differs from middle lines even after every p/f-gallows word is removed**, and the second line does not differ at the instrument's detectable size. The last line in B shows a weak, one-transcription difference (fewer `d`).
+- **Caveats:** (1) the H2 excess includes `t`, another gallows, so "beyond p/f" is not "beyond gallows"; Neal's and Pelling's observations also involve t-words. (2) Top-line interior words are longer (C071), and length alone could shift unit shares; a length-matched test is needed before reading this as a separate property. (3) The ZL B T FPR failure (3/20 at gate R = 200) is within what a correct test produces by chance (expected 1, P(≥3) ≈ 0.08), but the pre-registered rule is applied as written. (4) Currier A needs a stronger plant or more paragraphs; q 0.24 was not enough.
+- **Audit of C071:** all twelve C071 descriptive JSD values are reproduced to the third decimal (same data, same statistic), and C071's NOT TESTABLE verdicts stand. C071's descriptive "second line indistinguishable" is now a gated NOT DETECTED in Currier B.
+- **Next (F-PARA step 3, optional):** length-matched H2 (compare top-line and middle-line words of equal unit length), and removal of all gallows words (p f t k) as H3.
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
