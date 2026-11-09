@@ -37,3 +37,38 @@ NOT TESTABLE, which would close the lineara.xyz replication as data-limited and 
 (SigLA / the Navarre-AI collation) rather than to more cuts of the same tablets.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (run 2026-11-09 ~00:15 PT, after pre-registration commit `d681b18`; under 1 s each)
+
+| Run | n | Power curve k = 1…n (gates, printed before E) | k* | Verdict | E (descriptive) |
+|---|---|---|---|---|---|
+| Primary | 5 | 0.00, 0.21, 0.25, 0.27, 0.00 | none | **NOT TESTABLE** | 0 of 5 |
+| Sensitivity (+ HT123+124b) | 6 | 0.00, 0.22, 0.68, 0.81, 0.87, 1.00 | 4 > n/2 = 3 | **NOT TESTABLE** | 0 of 6 |
+
+Why the primary set can never pass: after the merge rule its strata are {HT109, PH(?)31a} and {HT9a, HT100, HT13}, so
+the null has only 2!·3! = **12** orderings and the smallest attainable p is 1/12 = **0.083 > 0.05**. Even five planted
+balances cannot be detected (hence power 0 at k = 5). Disclosed script bug: the field `exact_p_floor_all_balance`
+was computed on the real totals instead of totals set equal to the sums, so it printed 0.0; the verdict used only the
+power curve, which is correct, so nothing changes. The true floor is the 1/12 above.
+
+Per section (Σentries − total): HT9a −¾ · HT13 +½ · HT100 −4 · HT109 −121 · PH(?)31a +4 · (sensitivity) HT123+124b
++1 073/120. HT109's and PH(?)31a's gaps look like parse limits (a section split by an erasure; a total written with a
+logogram ligature, `CAPm+KU 1`), not arithmetic.
+
+## Literature cross-check (descriptive, no decision weight)
+The abstract of "Le frazioni, gli errori di calcolo e le unità di misura nella documentazione in lineare A"
+([IRIS Bologna 11585/696859](https://cris.unibo.it/handle/11585/696859), read 2026-11-09) lists miscalculations on
+HT 9a, 123a.b, 94a, 118, other problems in calculations on HT 13, 102, 116, 119, 127, and probable partial sums on
+HT 110a and 11a. That fits our own failures: here HT9a and HT13; in LA001, HT118 (miscalculation) and HT110a, HT11a
+(partial sums). Of LA001's five non-balancing sections only **HT39 and HT122a** are not in that list.
+
+## Reading and what closes
+lineara.xyz's KU-RO tablets are exhausted for calibrated sum tests: LA001 used every clean integer section, and what
+is left (5–6 sections) cannot reach α = 0.05 under an exact null. **Line 1 is closed on this transcription** with
+LA001's descriptive 6/11 and this literature match. Next: (a) LA003, KI-RO lines (deficit reading), only if a power
+curve computed first says a test is possible; (b) a reading cross-check of HT39 and HT122a against a second
+transcription (SigLA or the Navarre-AI collation), to tell a misread numeral from a real non-sum.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

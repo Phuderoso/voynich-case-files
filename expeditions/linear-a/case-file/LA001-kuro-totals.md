@@ -85,3 +85,6 @@ pre-computed power curve. That set is also the honest replication venue for "KU-
 was used here.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+
+**Audit note (2026-11-09, LA002):** `𐝫` (U+1076B) above is lineara.xyz's erased-sign marker, not a fraction sign. The 9 sections excluded for it stay excluded (erasure as damage), so the LA001 verdict is unchanged.
