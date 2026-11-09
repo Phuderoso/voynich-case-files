@@ -1,0 +1,195 @@
+{
+ "sensitivity": false,
+ "kuro_sections": 37,
+ "used_in_LA001": 11,
+ "decision_set": 5,
+ "decision": [
+  {
+   "doc": "HT100",
+   "idx": 0,
+   "n_entries": 5,
+   "has_fraction": false
+  },
+  {
+   "doc": "HT109",
+   "idx": 0,
+   "n_entries": 2,
+   "has_fraction": false
+  },
+  {
+   "doc": "HT13",
+   "idx": 0,
+   "n_entries": 6,
+   "has_fraction": true
+  },
+  {
+   "doc": "HT9a",
+   "idx": 0,
+   "n_entries": 7,
+   "has_fraction": true
+  },
+  {
+   "doc": "PH(?)31a",
+   "idx": 0,
+   "n_entries": 5,
+   "has_fraction": false
+  }
+ ],
+ "excluded": [
+  {
+   "doc": "HT102",
+   "idx": 0,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 7
+  },
+  {
+   "doc": "HT104",
+   "idx": 0,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 3
+  },
+  {
+   "doc": "HT116b",
+   "idx": 0,
+   "flags": [],
+   "n_entries": 0
+  },
+  {
+   "doc": "HT119",
+   "idx": 0,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 9
+  },
+  {
+   "doc": "HT122b",
+   "idx": 0,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 5
+  },
+  {
+   "doc": "HT123+124a",
+   "idx": 0,
+   "flags": [],
+   "n_entries": 0
+  },
+  {
+   "doc": "HT123+124a",
+   "idx": 1,
+   "flags": [
+    "total_unvalued"
+   ],
+   "n_entries": 0
+  },
+  {
+   "doc": "HT123+124b",
+   "idx": 0,
+   "flags": [
+    "unvalued:13/20",
+    "unvalued:≈ ¹⁄₆"
+   ],
+   "n_entries": 6
+  },
+  {
+   "doc": "HT127b",
+   "idx": 0,
+   "flags": [],
+   "n_entries": 1
+  },
+  {
+   "doc": "HT127b",
+   "idx": 1,
+   "flags": [
+    "damage",
+    "unvalued:[[14]]",
+    "unvalued:[[KI+MU]]"
+   ],
+   "n_entries": 4
+  },
+  {
+   "doc": "HT130",
+   "idx": 0,
+   "flags": [
+    "no_total"
+   ],
+   "n_entries": 1
+  },
+  {
+   "doc": "HT25b",
+   "idx": 0,
+   "flags": [],
+   "n_entries": 0
+  },
+  {
+   "doc": "HT25b",
+   "idx": 1,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 2
+  },
+  {
+   "doc": "HT27a",
+   "idx": 0,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 8
+  },
+  {
+   "doc": "HT40",
+   "idx": 0,
+   "flags": [
+    "no_total"
+   ],
+   "n_entries": 2
+  },
+  {
+   "doc": "HT46a",
+   "idx": 0,
+   "flags": [],
+   "n_entries": 1
+  },
+  {
+   "doc": "HT67",
+   "idx": 0,
+   "flags": [],
+   "n_entries": 0
+  },
+  {
+   "doc": "HT74",
+   "idx": 0,
+   "flags": [],
+   "n_entries": 0
+  },
+  {
+   "doc": "HT85a",
+   "idx": 0,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 7
+  },
+  {
+   "doc": "HT94a",
+   "idx": 0,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 5
+  },
+  {
+   "doc": "ZA15b",
+   "idx": 0,
+   "flags": [],
+   "n_entries": 1
+  }
+ ]
+}
