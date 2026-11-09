@@ -73,5 +73,8 @@ Disclosed: the measurement loop computes every stream at both sizes, so K 3,000 
 ## Next
 C096 must open a new approach family (rule: one in three cycles; C093 opened F-NET, C094/C095 were steps). F-NET backlog: the generator parameter sweep at K 4,000 (does any `sourceChooser`/mutation setting reach RHO 0.64?), with the two-batch gate as standard.
 
+
+**Audit note (C097, 2026-11-09 ~15:21 PT).** The HIGHER calls here are against the **default** generator. In C097's fixed 65-cell grid, the best surface-keeping cell (#37) reaches blind-batch means of 0.652 and 0.656, which bracket the manuscript's 0.642 and 0.635. The formal C097 test was NOT TESTABLE (gate failure), so this is a scope note, not a reversal: the call holds for the default generator only. See [C097](C097-edit-graph-grid.md).
+
 ---
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
