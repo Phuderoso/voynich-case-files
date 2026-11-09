@@ -13,10 +13,10 @@ import sys, os, json, time
 from collections import Counter
 from multiprocessing import Pool
 import numpy as np
-from math import comb, sqrt, exp
+from math import lgamma, log, sqrt, exp
 
 def bsf(x, n, p):  # P(X >= x)
-    return float(sum(comb(n, i) * p**i * (1 - p)**(n - i) for i in range(x, n + 1)))
+    return float(min(1.0, sum(exp(lgamma(n + 1) - lgamma(i + 1) - lgamma(n - i + 1) + i * log(p) + (n - i) * log(1 - p)) for i in range(x, n + 1))))
 
 def wilson(x, n, z=1.96):
     ph = x / n; d = 1 + z * z / n; c = (ph + z * z / (2 * n)) / d; h = z * sqrt(ph * (1 - ph) / n + z * z / (4 * n * n)) / d
@@ -45,7 +45,7 @@ def wordperm(ps, rng):
     return out
 
 def ctrl_job(i):
-    rng = np.random.default_rng([SEED, i, 99]); sh = E.shuffled(E.subset('ZL', 'B', 'W0'), rng)
+    rng = np.random.default_rng([SEED, i, 99]); sh = E.shuffled(E.subset('ZL3b', 'B', 'W0'), rng)
     obs = E.stat(E.build(sh)); null = [E.stat(E.build(wordperm(sh, rng))) for _ in range(RG)]
     return float((1 + sum(v >= obs for v in null)) / (RG + 1))
 
@@ -55,6 +55,7 @@ def main():
         cj = pool.map_async(ctrl_job, range(NR))
         res = pool.map(null_job, [c + (i,) for c in cfg for i in range(NR)], chunksize=4)
         cp = cj.get()
+    json.dump(dict(null=res, control=cp), open('analysis/C079_raw_pvalues.json', 'w'))
     P = {}
     for k, l, w, p in res: P.setdefault(f'{k}_{l}_{w}', []).append(p)
     allp = np.array([p for v in P.values() for p in v]); n = len(allp); x = int((allp <= ALPHA).sum())

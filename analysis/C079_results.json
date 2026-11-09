@@ -1,0 +1,51 @@
+{
+ "seed": 7979,
+ "NR": 100,
+ "RG": 200,
+ "pooled": {
+  "n": 1200,
+  "rejections": 74,
+  "rate": 0.06166666666666667,
+  "binom_p": 0.04013569423569716,
+  "ci95_wilson": [
+   0.04940502128781008,
+   0.07672585838938331
+  ]
+ },
+ "per_config": {
+  "IT2a_A_W0": 8,
+  "IT2a_A_W1": 6,
+  "IT2a_A_W2": 9,
+  "IT2a_B_W0": 9,
+  "IT2a_B_W1": 2,
+  "IT2a_B_W2": 12,
+  "ZL3b_A_W0": 3,
+  "ZL3b_A_W1": 4,
+  "ZL3b_A_W2": 9,
+  "ZL3b_B_W0": 4,
+  "ZL3b_B_W1": 2,
+  "ZL3b_B_W2": 6
+ },
+ "heterogeneity_chi2": {
+  "stat": 18.756756756756754,
+  "df": 11
+ },
+ "ks_uniform": {
+  "D": 0.02631840796019902,
+  "p_asymptotic": 0.3724383659025122
+ },
+ "control": {
+  "rejections": 7,
+  "n": 100,
+  "binom_p": 0.23398601598515908,
+  "passed": false
+ },
+ "gate_fail_prob": {
+  "rule20_at_observed": 0.12222955783861197,
+  "rule40_at_observed": 0.09793009726670447,
+  "rule20_nominal": 0.07548367378849628,
+  "rule40_nominal": 0.048028260254214146
+ },
+ "verdict": "NOT TESTABLE",
+ "runtime_s": 146.6
+}
