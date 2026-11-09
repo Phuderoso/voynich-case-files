@@ -49,8 +49,35 @@ G2 power of the copying plant against the 20 pooled runs as its strength F grows
 
 At F = 0.20 the plant shifts RHO by 0.053, about the effect of interest (0.054). That gives a principled plant strength for a future cycle. It cannot rescue this one, because changing the plant after seeing the gates would be gate shopping.
 
-## Results
-*Pending: registered run after this push.*
+## Results (registered run 13:02:57–13:03:11 PT, 13.7 s, seed 9494; `analysis/C094_results.json`, `analysis/C094_run_log.txt`)
+Pre-registration commits **22929b0** (code + rehearsal outputs, ~13:02 PT) and **a4c149c** (this case file, ~13:02 PT), both before the run. The 30 references and all six gates came out **JSON-identical** to the v3 rehearsal. As registered, no cell passed, so **the manuscript was not measured** (the run file says so: `no cell passed its gate: manuscript NOT measured`).
+
+| Cell | Verdict | Why |
+|---|---|---|
+| H3a RHO, whole text, K 2,000 vs generator | **NOT RUN, `LOW-POWER`** | power 8/20 |
+| H3A RHO, Currier A, K 3,000 vs generator | **NOT RUN, `LOW-POWER`** | power 12/20 |
+| H3B RHO, Currier B, K 4,000 vs generator | **NOT RUN, `LOW-POWER`** | false calls 2/20, power 14/20 |
+| H5 RHO vs one-language reference (*Don Quijote*) | **NOT RUN, `LOW-POWER`** | dead on arrival: lead/MDE 0.93 |
+| AUD C093 H3 vs 20 pooled runs | **NOT RUN, `LOW-POWER`** | false calls 2/20, power 14/20 |
+
+**Excluded vs not testable.** Nothing is excluded and nothing is called. All five questions are **NOT TESTABLE** with this instrument and plant. That means neither "the C093 effect holds in A, in B, at 2,000 types" nor "it vanishes there" can be said.
+
+**What the benchmarks taught (references only, no verdict).**
+1. **The generator's spread was underestimated in C093.** C093's 10 runs had RHO sd 0.0105 at K 4,000, with power 10/10. The 10 fresh runs have sd 0.0138, with power **5/10**. Pooled over 20 runs, sd is 0.0131, the range is 0.558–0.621, and two runs (11483 high, 11489 low) are false calls. So C093's gate pass depended on the batch.
+2. **Smaller vocabularies are noisier.** At K 2,000 the generator's sd is 0.018 and MDE₈₀ is 0.053, about the size of the effect of interest.
+3. **The plant is too weak for this reference.** A 10 % copying plant moves RHO by only 0.030–0.037. At F = 0.20 it moves RHO by 0.053, and power reaches 20/20 at K 3,000 and 4,000 (design aid above).
+4. **One language is still too wide.** Ten chunks of *Don Quijote* spread with sd 0.018, so a 0.054 effect is below MDE₈₀ (0.058). Even a single-author natural reference cannot weigh Zhang & Sheng's 0.054 gap with this statistic.
+
+## Audit note on C093 (changes its standing, not its registered verdict)
+C093's H3 call (**HIGHER**, Holm 0.0034 / 0.0048) was made under its own registered gate, which passed on seeds 11474–11483. That verdict stays as registered. But **its gate does not replicate** on a fresh batch (power 5/10) or on the pooled 20 (false calls 2/20, power 14/20). So **C093 H3 is flagged `FRAGILE (gate not replicated)`**. *Descriptive only, from the public C093 values with no new manuscript measurement:* the manuscript's 0.642 / 0.635 still sits above all 20 runs (maximum 0.621). Its predictive-t p against the 20 runs would be 0.0008 / 0.0028, but the gate failed, so this is not a test. The direction is unchanged. Only its certification is weaker.
+
+## Caveats
+Default generator settings only. A Currier-split generator does not exist, so H3A and H3B would have compared one dialect to an unsplit copier. Prefix sampling follows the current page order, and the Layfield & Fagin Davis singulion re-ordering (Digital Medievalist 19, Oct 2026) would change which types enter a page-order prefix. Nothing about meaning follows from any F-NET number.
+
+**Optimiser-effort audit:** not needed (exact count, no search).
+
+## Next (recorded before any further run)
+C095, F-NET step 3: a **pre-registered re-gate** with the plant strength fixed by the effect of interest, not by the gates. F = 0.20 gives a 0.053 shift, about 0.054. The references will be **20 brand-new generator runs (seeds 11494–11513)**, so the gate is blind to all batches seen so far. Cells: whole text at K 3,000 and 4,000, and Currier B at K 4,000. Currier A at K 3,000 only if it reaches. Hold the G1 bar at ≤ 1/20 and report any batch-to-batch sd change. If the gate fails again, close F-NET's generator line as NOT TESTABLE and record C093 H3 as unconfirmed.
 
 ---
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
