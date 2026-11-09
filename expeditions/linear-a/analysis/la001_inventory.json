@@ -1,0 +1,292 @@
+{
+ "source": "mwenge/lineara.xyz@9c81beb LinearAInscriptions.js",
+ "js_sha256": "9a14cc300201ac8ed07563c09b92142ab59de91a74e646b2e743ca6aeb695f5e",
+ "kuro_sections": 37,
+ "decision_set": 11,
+ "excluded": [
+  {
+   "doc": "HT100",
+   "idx": 0,
+   "flags": [
+    "nonint:𐝫"
+   ],
+   "n_entries": 5
+  },
+  {
+   "doc": "HT102",
+   "idx": 0,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 7
+  },
+  {
+   "doc": "HT104",
+   "idx": 0,
+   "flags": [
+    "damage",
+    "nonint:¹⁄₂"
+   ],
+   "n_entries": 3
+  },
+  {
+   "doc": "HT109",
+   "idx": 0,
+   "flags": [
+    "nonint:𐝫"
+   ],
+   "n_entries": 2
+  },
+  {
+   "doc": "HT116b",
+   "idx": 0,
+   "flags": [],
+   "n_entries": 0
+  },
+  {
+   "doc": "HT119",
+   "idx": 0,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 9
+  },
+  {
+   "doc": "HT122b",
+   "idx": 0,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 5
+  },
+  {
+   "doc": "HT123+124a",
+   "idx": 0,
+   "flags": [
+    "total_nonint"
+   ],
+   "n_entries": 0
+  },
+  {
+   "doc": "HT123+124a",
+   "idx": 1,
+   "flags": [
+    "total_nonint"
+   ],
+   "n_entries": 0
+  },
+  {
+   "doc": "HT123+124b",
+   "idx": 0,
+   "flags": [
+    "nonint:13/20",
+    "nonint:³⁄₄",
+    "nonint:³⁄₈",
+    "nonint:≈ ¹⁄₆"
+   ],
+   "n_entries": 5
+  },
+  {
+   "doc": "HT127b",
+   "idx": 0,
+   "flags": [
+    "nonint:𐝫"
+   ],
+   "n_entries": 1
+  },
+  {
+   "doc": "HT127b",
+   "idx": 1,
+   "flags": [
+    "damage",
+    "nonint:[[14]]",
+    "nonint:[[KI+MU]]"
+   ],
+   "n_entries": 4
+  },
+  {
+   "doc": "HT13",
+   "idx": 0,
+   "flags": [
+    "nonint:¹⁄₂",
+    "total_nonint"
+   ],
+   "n_entries": 6
+  },
+  {
+   "doc": "HT130",
+   "idx": 0,
+   "flags": [
+    "no_total",
+    "nonint:𐝫"
+   ],
+   "n_entries": 1
+  },
+  {
+   "doc": "HT25b",
+   "idx": 0,
+   "flags": [
+    "nonint:𐝫"
+   ],
+   "n_entries": 0
+  },
+  {
+   "doc": "HT25b",
+   "idx": 1,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 2
+  },
+  {
+   "doc": "HT27a",
+   "idx": 0,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 8
+  },
+  {
+   "doc": "HT40",
+   "idx": 0,
+   "flags": [
+    "no_total"
+   ],
+   "n_entries": 2
+  },
+  {
+   "doc": "HT46a",
+   "idx": 0,
+   "flags": [
+    "nonint:𐝫",
+    "total_nonint"
+   ],
+   "n_entries": 1
+  },
+  {
+   "doc": "HT67",
+   "idx": 0,
+   "flags": [
+    "nonint:𐝫"
+   ],
+   "n_entries": 0
+  },
+  {
+   "doc": "HT74",
+   "idx": 0,
+   "flags": [
+    "nonint:𐝫"
+   ],
+   "n_entries": 0
+  },
+  {
+   "doc": "HT85a",
+   "idx": 0,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 7
+  },
+  {
+   "doc": "HT94a",
+   "idx": 0,
+   "flags": [
+    "damage"
+   ],
+   "n_entries": 5
+  },
+  {
+   "doc": "HT9a",
+   "idx": 0,
+   "flags": [
+    "nonint:³⁄₄",
+    "nonint:¹⁄₂",
+    "nonint:¹⁄₄",
+    "total_nonint"
+   ],
+   "n_entries": 7
+  },
+  {
+   "doc": "PH(?)31a",
+   "idx": 0,
+   "flags": [
+    "nonint:𐝫"
+   ],
+   "n_entries": 5
+  },
+  {
+   "doc": "ZA15b",
+   "idx": 0,
+   "flags": [],
+   "n_entries": 1
+  }
+ ],
+ "decision": [
+  {
+   "doc": "HT110a",
+   "idx": 0,
+   "n_entries": 2,
+   "total_stratum": 2
+  },
+  {
+   "doc": "HT117a",
+   "idx": 0,
+   "n_entries": 10,
+   "total_stratum": 1
+  },
+  {
+   "doc": "HT118",
+   "idx": 0,
+   "n_entries": 7,
+   "total_stratum": 1
+  },
+  {
+   "doc": "HT11a",
+   "idx": 0,
+   "n_entries": 3,
+   "total_stratum": 1
+  },
+  {
+   "doc": "HT11b",
+   "idx": 0,
+   "n_entries": 5,
+   "total_stratum": 2
+  },
+  {
+   "doc": "HT122a",
+   "idx": 0,
+   "n_entries": 16,
+   "total_stratum": 1
+  },
+  {
+   "doc": "HT39",
+   "idx": 0,
+   "n_entries": 3,
+   "total_stratum": 2
+  },
+  {
+   "doc": "HT88",
+   "idx": 0,
+   "n_entries": 6,
+   "total_stratum": 0
+  },
+  {
+   "doc": "HT89",
+   "idx": 0,
+   "n_entries": 5,
+   "total_stratum": 1
+  },
+  {
+   "doc": "HT94b",
+   "idx": 0,
+   "n_entries": 5,
+   "total_stratum": 0
+  },
+  {
+   "doc": "HT9b",
+   "idx": 0,
+   "n_entries": 7,
+   "total_stratum": 1
+  }
+ ]
+}
