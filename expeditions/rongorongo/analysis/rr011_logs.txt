@@ -1,0 +1,13 @@
+=== rr011a.log
+{'tokens': {'Er': 342, 'Ev': 312}, 'lines': {'Er': 9, 'Ev': 8}, 'refrains': ['002 001', '004.430 022.380y', '022 022', '040 300.028x', '300.028x 004.430', '670 002'], 'units': 6, 'total_gaps': 27}
+{'seed': 11011, 'smoke': False, 'R': 999, 'R_plant': 199, 'plants': 100, 'tokens': {'Er': 342, 'Ev': 312}, 'lines': {'Er': 9, 'Ev': 8}, 'units': 6, 'total_gaps': 27, 'T1': 0.9552313913430787, 'T2': 3.937826771544078, 'null_mean': [0.8122775107715372, 3.3856577579947116], 'null_range': [[0.5130646359903643, 1.113078420791001], [2.399059445485262, 4.319773433667556]], 'p': [0.924, 0.04], 'p_holm': [0.924, 0.08], 'power': {'T1': {0: 0.32, 1: 0.28, 2: 0.21, 4: 0.24, 6: 0.18, 8: 0.17, 12: 0.18}, 'T2': {0: 0.1, 1: 0.17, 2: 0.16, 4: 0.07, 6: 0.01, 8: 0.02, 12: 0.05}}, 'jstar': [None, None], 'negative_control_rejections': [1, 0], 'verdict': ['T1 gap regularity (weighted CV): NOT TESTABLE', 'T2 phase-locking (max Rayleigh): NOT TESTABLE']}
+=== rr011_recount.log
+{'refrains': 6, 'units': 6, 'T1': 0.9552313913430787, 'T2': 3.9378267715440765, 'tool_T1': 0.9552313913430787, 'tool_T2': 3.937826771544078, 'match': True}
+=== rr011b.log
+{'seed': 11012, 's1_cases': 8, 'informative': 6, 'K': 6, 'null_expected': 3.488690638488713, 'p': 0.010137476685053319, 'all_match_floor': 0.010137476685053319, 'critical_k': 6, 'power_q095': 0.7350918906249998, 'negative_control_rejections': 1, 'verdict': 'NOT TESTABLE'}
+=== rr011b_recount.log
+{'informative': 6, 'K': 6, 'p': 0.010137476685053319, 'tool_K': 6, 'tool_p': 0.010137476685053319, 'match': True}
+=== rr011_auditH.log
+{'disagreements': 41, 'relevant_lines': 25, 'free_strokes_in_relevant_lines': 129, 'units_in_relevant_lines': 1298}
+{'seed': 10010, 'R': 999, 'R_plant': 199, 'plants': 200, 'disagreements': 41, 'relevant_lines': 25, 'free_strokes_in_relevant_lines': 129, 'units_in_relevant_lines': 1298, 'S1': 8, 'S2': 10, 'null_mean': [1.5255255255255256, 6.226226226226226], 'null_range': [[0, 6], [1, 16]], 'p': [0.001, 0.092], 'p_holm': [0.002, 0.092], 'power': {'S1': {0.05: 0.19, 0.1: 0.625, 0.15: 0.815, 0.2: 0.965, 0.3: 0.995, 0.4: 1.0, 0.5: 1.0, 0.7: 1.0, 1.0: 1.0}, 'S2': {0.05: 0.075, 0.1: 0.22, 0.15: 0.495, 0.2: 0.705, 0.3: 0.96, 0.4: 0.99, 0.5: 1.0, 0.7: 1.0, 1.0: 1.0}}, 'fstar': [0.15, 0.3], 'negative_control_rejections': [3, 1], 'verdict': ['S1 same stroke loose beside host: DETECTED', 'S2 any free stroke beside host: NOT DETECTED (planted loose spellings on >= 30% of disagreements would be seen)']}
+EXIT 0
