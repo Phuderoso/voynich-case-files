@@ -1,0 +1,45 @@
+# C068 run log (times PT, box clock UTC-7)
+## Design step (gates only, ZL, design seed 6869; before pre-registration)
+DESIGN Dc FPR 0 /20 power 20 /20 mean planted delta 0.099
+DESIGN Df FPR 0 /20 power 20 /20 mean planted delta 0.0447
+time 4.4
+q=0.01
+DESIGN Dc FPR 0 /20 power 20 /20 mean planted delta 0.0234
+DESIGN Df FPR 0 /20 power 10 /20 mean planted delta 0.0099
+time 4.1
+q=0.02
+DESIGN Dc FPR 0 /20 power 20 /20 mean planted delta 0.0453
+DESIGN Df FPR 0 /20 power 19 /20 mean planted delta 0.0193
+time 4.2
+
+## Main run
+start 2026-11-08 17:36:10 MST
+Traceback (most recent call last):
+  File "/workspace/voynich/c068/tools/c068_vertical_alignment.py", line 252, in <module>
+    main()
+    ~~~~^^
+  File "/workspace/voynich/c068/tools/c068_vertical_alignment.py", line 218, in main
+    nat = B.nat_texts(); nj = pool.map_async(nat_job, [(k, v, list) for k, v in nat.items()])
+  File "/workspace/voynich/c068/tools/c051_context_spelling_ab.py", line 109, in nat_texts
+    nat = {'Latin_Caesar': g(C + 'pg218.txt'), 'Latin_Descartes': g(C + 'pg23306.txt'), 'Italian_Dante': g(C + 'pg1012.txt'),
+                           ~^^^^^^^^^^^^^^^^^
+  File "/workspace/voynich/c068/tools/c003_position_rigidity.py", line 39, in gutenberg
+    s = open(path, encoding='utf-8', errors='replace').read()
+        ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'data/corpora/pg218.txt'
+end 2026-11-08 17:36:10 MST
+crash1: FileNotFoundError data/corpora/pg218.txt (natural corpora not in repo clone) before any manuscript number; copied local corpora, rerun unchanged
+start2 2026-11-08 17:36:15 MST
+ZL3b {"Dc": {"delta": 0.009982456774940335, "p": 0.043478260869565216, "null_mean": 0.0001863133342397813, "share_real": 0.14148550724637682, "share_other": 0.13150305047143648, "n_real": 5520, "n_other_per_slot": 3606.0, "lines": 2568}, "Df": {"delta": 0.0004708336347633152, "p": 0.44377811094452774, "null_mean": -0.00016878076026127447, "share_real": 0.12210144927536232, "share_other": 0.121630615640599, "n_real": 5520, "n_other_per_slot": 3606.0, "lines": 2568}, "n_lines": 3348, "n_pairs": 2927}
+IT2a {"Dc": {"delta": 0.009576258552003863, "p": 0.04547726136931534, "null_mean": 0.00012501019660794, "share_real": 0.14255469301340862, "share_other": 0.13297843446140475, "n_real": 5668, "n_other_per_slot": 3681.8, "lines": 2619}, "Df": {"delta": -0.000582400917473358, "p": 0.5132433783108445, "null_mean": -0.0002005724811037896, "share_real": 0.12261820748059281, "share_other": 0.12320060839806617, "n_real": 5668, "n_other_per_slot": 3681.8, "lines": 2619}, "n_lines": 3355, "n_pairs": 2972}
+gates {"ZL3b_Dc": {"fp": 1, "pw": 20, "fp_delta": 0.0025270315134958343, "pw_delta": 0.04290928337377216, "pass": true}, "ZL3b_Df": {"fp": 0, "pw": 19, "fp_delta": 0.0008898570082693034, "pw_delta": 0.019464000480810477, "pass": true}, "IT2a_Dc": {"fp": 1, "pw": 20, "fp_delta": -0.0006321312477211516, "pw_delta": 0.04454254249596914, "pass": true}, "IT2a_Df": {"fp": 0, "pw": 19, "fp_delta": -0.0013080467176973976, "pw_delta": 0.019618434202846334, "pass": true}}
+generator {"default": {"n": 20, "seeds": [9101, 9102, 9103, 9104, 9105, 9106, 9107, 9108, 9109, 9110, 9111, 9112, 9113, 9114, 9115, 9116, 9117, 9118, 9119, 9120], "Dc": {"min": -0.0004722567557521318, "median": 0.020417089602537117, "max": 0.03098286113259127, "n_sig": 15, "cls": {"ZL3b": "INSIDE", "IT2a": "INSIDE"}}, "Df": {"min": -0.010138504603693699, "median": 0.010035297664064476, "max": 0.0195641926087938, "n_sig": 7, "cls": {"ZL3b": "INSIDE", "IT2a": "INSIDE"}}}, "spp0": {"n": 20, "seeds": [9201, 9202, 9203, 9204, 9205, 9206, 9207, 9208, 9209, 9210, 9211, 9212, 9213, 9214, 9215, 9216, 9217, 9218, 9219, 9220], "Dc": {"min": -0.005872599446582721, "median": 0.005504343884746854, "max": 0.017418224914728914, "n_sig": 3, "cls": {"ZL3b": "INSIDE", "IT2a": "INSIDE"}}, "Df": {"min": -0.009386181532470297, "median": -0.0013813048235111203, "max": 0.010160049229294366, "n_sig": 0, "cls": {"ZL3b": "INSIDE", "IT2a": "INSIDE"}}}, "position": {"n": 20, "seeds": [9301, 9302, 9303, 9304, 9305, 9306, 9307, 9308, 9309, 9310, 9311, 9312, 9313, 9314, 9315, 9316, 9317, 9318, 9319, 9320], "Dc": {"min": 0.04321692570920624, "median": 0.060393157907762895, "max": 0.07755723192712471, "n_sig": 20, "cls": {"ZL3b": "OUTSIDE-BELOW", "IT2a": "OUTSIDE-BELOW"}}, "Df": {"min": 0.020635531204571747, "median": 0.04541120786167451, "max": 0.06305922859203092, "n_sig": 20, "cls": {"ZL3b": "OUTSIDE-BELOW", "IT2a": "OUTSIDE-BELOW"}}}}
+natural {"Latin_Caesar": {"Dc": {"delta": 0.028002645663668002, "p": 0.1744127936031984}, "Df": {"delta": 0.03171955965119441, "p": 0.12543728135932034}}, "Latin_Descartes": {"Dc": {"delta": 0.04735436167818441, "p": 0.014992503748125937}, "Df": {"delta": 0.058470248790728735, "p": 0.0014992503748125937}}, "Italian_Dante": {"Dc": {"delta": -0.04391170472267765, "p": 1.0}, "Df": {"delta": -0.030825844953889098, "p": 0.9975012493753124}}, "Italian_Machiavelli": {"Dc": {"delta": -0.014925539048779468, "p": 0.9050474762618691}, "Df": {"delta": -0.010689374652165462, "p": 0.8225887056471765}}, "Spanish_Cervantes": {"Dc": {"delta": -0.0026227772873232136, "p": 0.5822088955522239}, "Df": {"delta": 0.002658886012137998, "p": 0.4057971014492754}}, "Hebrew_Genesis": {"Dc": {"delta": 0.007142073582855901, "p": 0.28385807096451776}, "Df": {"delta": 0.0063569633123726765, "p": 0.29185407296351823}}, "Hebrew_Exodus": {"Dc": {"delta": -0.022685432901569852, "p": 0.9570214892553723}, "Df": {"delta": -0.022234231314707767, "p": 0.9705147426286856}}, "Finnish_Kalevala": {"Dc": {"delta": 0.010964130209413225, "p": 0.37631184407796103}, "Df": {"delta": 0.024453659547999163, "p": 0.20039980009995004}}, "Finnish_Kivi": {"Dc": {"delta": -0.021918766023264202, "p": 0.7966016991504248}, "Df": {"delta": 0.005919867788206884, "p": 0.392303848075962}}}
+holm {'ZL3b_Dc': False, 'ZL3b_Df': False, 'IT2a_Dc': False, 'IT2a_Df': False}
+verdict {'Dc': 'NOT DETECTED', 'Df': 'NOT DETECTED'}
+time 38.7
+end2 2026-11-08 17:36:54 MST
+
+## Post-hoc (tools/c068_posthoc_generator_ranks.py, after results)
+default Dc deltas [-0.0005, 0.0104, 0.011, 0.0133, 0.0148, 0.0166, 0.0171, 0.0177, 0.0181, 0.0203, 0.0205, 0.0208, 0.0209, 0.0224, 0.0231, 0.0237, 0.0242, 0.0251, 0.0302, 0.031] below 0.0100: 1 below 0.0096: 1
+spp0 Dc deltas [-0.0059, -0.004, -0.0028, -0.0019, 0.0002, 0.0006, 0.001, 0.0027, 0.0047, 0.0053, 0.0057, 0.0063, 0.0068, 0.0079, 0.0099, 0.0106, 0.0124, 0.0137, 0.0149, 0.0174] below 0.0100: 15 below 0.0096: 14
