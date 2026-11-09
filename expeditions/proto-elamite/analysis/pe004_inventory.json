@@ -1,0 +1,10 @@
+{
+ "calibration_tablets": 45,
+ "tasks_entry": 266,
+ "tasks_total": 45,
+ "damaged_tablets": 51,
+ "damaged_entry_slots": 33,
+ "damaged_total_slots": 18,
+ "damaged_with_visible_signs": 41,
+ "damaged_with_complete_editor_reading": 6
+}
