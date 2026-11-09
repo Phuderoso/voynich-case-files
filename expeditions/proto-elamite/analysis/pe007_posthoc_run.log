@@ -1,0 +1,26 @@
+{
+ "P1_P3_A": {
+  "tablets_balancing": 18,
+  "tablets": 24,
+  "wrong_unique_on_balancing": 0,
+  "wrong_unique_on_nonbalancing": 12,
+  "precision_on_balancing": 1.0,
+  "unique_on_balancing": 68
+ },
+ "P2_A": {
+  "planted_G2_pass": 1.0,
+  "planted_G3_pass": 0.645
+ },
+ "P1_P3_B": {
+  "tablets_balancing": 12,
+  "tablets": 26,
+  "wrong_unique_on_balancing": 0,
+  "wrong_unique_on_nonbalancing": 19,
+  "precision_on_balancing": 1.0,
+  "unique_on_balancing": 28
+ },
+ "P2_B": {
+  "planted_G2_pass": 0.995,
+  "planted_G3_pass": 0.565
+ }
+}
