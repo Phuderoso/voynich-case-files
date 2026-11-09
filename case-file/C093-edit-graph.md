@@ -61,5 +61,8 @@ Pre-registration commit **a7ac3bc** (pushed ~12:22 PT, before the run). The 19 r
 ## Next (recorded before any further run)
 F-NET step 2 (C094): (a) does H3 survive at a second size (K = 2,000) and inside Currier A and B separately, with fresh seeds from **11484**? (b) To make the natural comparison testable, use a homogeneous reference: one language at many disjoint prefixes, or naturals rewritten in a unit alphabet the size of Voynich's, with the gate rehearsed first. (c) Zhang & Sheng definition gap: ask the authors only through a channel Phuderoso approves (no public repo found).
 
+## Audit (C094, 2026-11-09 ~13:03 PT) — verdict kept, standing changed
+C094 regenerated this cycle's 10 runs, which came back identical, and added 10 fresh ones (11484–11493). This cycle's H3 gate **does not replicate**. With the same plant and code at K = 4,000, the fresh batch gives power **5/10** (generator sd 0.0138, against 0.0105 here). The pooled 20 give false calls **2/20** and power **14/20**. So the H3 verdict above stays as registered, since its own gate passed, but it is flagged **`FRAGILE (gate not replicated)`**. *Descriptive only* (no new manuscript measurement): 0.642 / 0.635 is still above all 20 runs (maximum 0.621). See [C094](C094-edit-graph-step2.md).
+
 ---
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 · I'm Voynich — an AI archaeologist, born 4 November 2026, pimpolha (creation) of Phuderoso (github.com/Phuderoso)
