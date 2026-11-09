@@ -1,0 +1,254 @@
+G0 fixture 20 / 20 0.8
+family F_prov 4039 pairs in 51 provenances 0.8
+audit K012 {'real_blocks': 5323, 'k012_discoveries': 6, 'published_blocks': 5323, 'published_discoveries': 6, 'reproduced': True} 0.9
+null 10 0 1.2
+null 20 0 1.5
+null 30 0 1.9
+null 40 0 2.2
+plant d>=4 50 3.9
+plant d>=4 100 5.5
+plant d>=4 150 7.2
+plant d>=4 200 8.9
+class d>=4 power 0.575 8.9
+plant d>=5 50 10.5
+plant d>=5 100 12.1
+plant d>=5 150 13.7
+plant d>=5 200 15.4
+class d>=5 power 0.745 15.4
+plant d>=6 50 17.0
+plant d>=6 100 18.6
+plant d>=6 150 20.3
+plant d>=6 200 22.1
+class d>=6 power 0.96 22.1
+{
+ "N": 433,
+ "family": {
+  "name": "F_prov",
+  "pairs": 4039,
+  "provenances": 51
+ },
+ "G0_fixture": true,
+ "G0_fixture_n": 20,
+ "audit_K012": {
+  "real_blocks": 5323,
+  "k012_discoveries": 6,
+  "published_blocks": 5323,
+  "published_discoveries": 6,
+  "reproduced": true
+ },
+ "G1": {
+  "null_corpora": 40,
+  "any_discovery": 0.0,
+  "mean_discoveries": 0.0,
+  "share_p_lt_001": 0.0004456548650656103,
+  "passed": true,
+  "K060_G1_reproduced": true
+ },
+ "coverage_real_windows": {
+  "eligible_windows": 10854,
+  "share_ge_d": {
+   "4": 0.8003501013451262,
+   "5": 0.6030035010134512,
+   "6": 0.26211534918002577
+  },
+  "by_nd": {
+   "6": 2845,
+   "5": 3700,
+   "4": 2142,
+   "3": 1260,
+   "2": 638,
+   "1": 269
+  }
+ },
+ "G2_curve": {
+  "4": {
+   "seed": 6161,
+   "plants": 200,
+   "power": 0.575,
+   "wilson95": [
+    0.505709325931126,
+    0.6414638750685293
+   ],
+   "median_p": 1.6826567213594537e-06,
+   "p_80th_pct": 0.0006038125330588495,
+   "M_star_descriptive": 82,
+   "cells_ge30": {
+    "pachacamac": {
+     "plants": 134,
+     "power": 0.5746268656716418
+    }
+   },
+   "power_by_exact_nd": {
+    "4": 0.14705882352941177,
+    "5": 0.6708860759493671,
+    "6": 0.9811320754716981
+   },
+   "n_by_exact_nd": {
+    "4": 68,
+    "5": 79,
+    "6": 53
+   }
+  },
+  "5": {
+   "seed": 6162,
+   "plants": 200,
+   "power": 0.745,
+   "wilson95": [
+    0.6803707412567906,
+    0.8003950486754176
+   ],
+   "median_p": 2.999551332596521e-07,
+   "p_80th_pct": 4.285367869887433e-05,
+   "M_star_descriptive": 1166,
+   "cells_ge30": {
+    "pachacamac": {
+     "plants": 122,
+     "power": 0.7377049180327869
+    }
+   },
+   "power_by_exact_nd": {
+    "5": 0.6111111111111112,
+    "6": 0.972972972972973
+   },
+   "n_by_exact_nd": {
+    "5": 126,
+    "6": 74
+   }
+  },
+  "6": {
+   "seed": 6163,
+   "plants": 200,
+   "power": 0.96,
+   "wilson95": [
+    0.9230679314255735,
+    0.9795943680389804
+   ],
+   "median_p": 8.687562124241659e-09,
+   "p_80th_pct": 3.973928092461526e-07,
+   "M_star_descriptive": 125820,
+   "cells_ge30": {
+    "ica": {
+     "plants": 33,
+     "power": 0.9393939393939394
+    },
+    "pachacamac": {
+     "plants": 123,
+     "power": 0.991869918699187
+    }
+   },
+   "power_by_exact_nd": {
+    "6": 0.96
+   },
+   "n_by_exact_nd": {
+    "6": 200
+   }
+  }
+ },
+ "d_star": 6,
+ "H1": {
+  "run": true,
+  "scope": "F_prov; silence readable only for 6-cord copies of class d >= 6",
+  "discoveries": [
+   {
+    "a": "KH0140",
+    "a_inv": "AS125",
+    "b": "KH0483",
+    "b_inv": "UR247",
+    "prov": "pachacamac",
+    "L": 12,
+    "p": 2.9236724858771456e-14,
+    "block": [
+     1517,
+     2373,
+     6291,
+     3495,
+     4213,
+     6323,
+     4122,
+     2220,
+     4377,
+     1292,
+     1162,
+     2393
+    ],
+    "nd_block": 12,
+    "known_k012": true
+   },
+   {
+    "a": "KH0304",
+    "a_inv": "UR067",
+    "b": "KH0303",
+    "b_inv": "UR066",
+    "prov": "huaquerones",
+    "L": 7,
+    "p": 2.555125745975234e-07,
+    "block": [
+     22,
+     3,
+     9,
+     2,
+     156,
+     13,
+     12
+    ],
+    "nd_block": 7,
+    "known_k012": true
+   },
+   {
+    "a": "KH0132",
+    "a_inv": "UR1118",
+    "b": "KH0456",
+    "b_inv": "UR218",
+    "prov": "pachacamac",
+    "L": 4,
+    "p": 4.86699140653952e-06,
+    "block": [
+     474,
+     319,
+     453,
+     492
+    ],
+    "nd_block": 4,
+    "known_k012": false
+   },
+   {
+    "a": "KH0616",
+    "a_inv": "JC009",
+    "b": "KH0620",
+    "b_inv": "JC013",
+    "prov": "incahuasi",
+    "L": 6,
+    "p": 1.7318535816992808e-05,
+    "block": [
+     10,
+     1,
+     2,
+     10,
+     30,
+     28
+    ],
+    "nd_block": 5,
+    "known_k012": false
+   },
+   {
+    "a": "KH0446",
+    "a_inv": "UR208",
+    "b": "KH0451",
+    "b_inv": "UR213",
+    "prov": "pachacamac",
+    "L": 4,
+    "p": 4.658720964712894e-05,
+    "block": [
+     50,
+     5,
+     20,
+     10
+    ],
+    "nd_block": 4,
+    "known_k012": false
+   }
+  ],
+  "n_family_pairs_with_block": 169
+ },
+ "seconds": 22.2
+}
