@@ -1,0 +1,52 @@
+POSITIVE [{'pair': 'Hr-Qr', 'Mg': 12, 'null_max': 11, 'p': 0.001, 'passes': True}, {'pair': 'Hr-Pr', 'Mg': 13, 'null_max': 9, 'p': 0.001, 'passes': True}]
+Aa Br lg* 8 13s
+Aa Bv lg* 7 22s
+Aa Ca lg* 7 28s
+Aa Cb lg* 7 35s
+Aa Er lg* 6 40s
+Aa Ia lg* 7 72s
+Ab Br lg* 7 79s
+Ab Bv lg* 7 88s
+Ab Ca lg* 9 94s
+Ab Cb lg* 8 100s
+Ab Er lg* 7 106s
+Ab Ia lg* 7 137s
+Br Ca lg* 6 142s
+Br Cb lg* 6 146s
+Br Er lg* 5 149s
+Br Ia lg* 6 169s
+Bv Ca lg* 6 174s
+Bv Cb lg* 6 178s
+Bv Er lg* 6 183s
+Bv Ia lg* 6 205s
+Ca Er lg* 8 209s
+Ca Ia lg* 7 226s
+Cb Er lg* 6 230s
+Cb Ia lg* 6 247s
+Er Ia lg* 6 262s
+GATES {'positive_controls_pass': True, 'reversed_holm_detections': 0, 'reversed_unadjusted_hits': 0, 'gate_reversed_ok': True}
+Aa-Br 3 6 0.934 8 NOT DETECTED (one-indel copy of >= 8 signs would be seen)
+Aa-Bv 3 5 0.859 7 NOT DETECTED (one-indel copy of >= 7 signs would be seen)
+Aa-Ca 3 5 0.962 7 NOT DETECTED (one-indel copy of >= 7 signs would be seen)
+Aa-Cb 4 5 0.236 7 NOT DETECTED (one-indel copy of >= 7 signs would be seen)
+Aa-Er 2 4 1.0 6 NOT DETECTED (one-indel copy of >= 6 signs would be seen)
+Aa-Ia 3 5 0.984 7 NOT DETECTED (one-indel copy of >= 7 signs would be seen)
+Ab-Br 3 5 0.98 7 NOT DETECTED (one-indel copy of >= 7 signs would be seen)
+Ab-Bv 3 6 0.997 7 NOT DETECTED (one-indel copy of >= 7 signs would be seen)
+Ab-Ca 4 7 0.92 9 NOT DETECTED (one-indel copy of >= 9 signs would be seen)
+Ab-Cb 4 6 0.484 8 NOT DETECTED (one-indel copy of >= 8 signs would be seen)
+Ab-Er 3 5 0.986 7 NOT DETECTED (one-indel copy of >= 7 signs would be seen)
+Ab-Ia 3 5 0.952 7 NOT DETECTED (one-indel copy of >= 7 signs would be seen)
+Br-Ca 3 4 0.607 6 NOT DETECTED (one-indel copy of >= 6 signs would be seen)
+Br-Cb 2 4 1.0 6 NOT DETECTED (one-indel copy of >= 6 signs would be seen)
+Br-Er 3 3 0.511 5 NOT DETECTED (one-indel copy of >= 5 signs would be seen)
+Br-Ia 3 4 0.697 6 NOT DETECTED (one-indel copy of >= 6 signs would be seen)
+Bv-Ca 3 4 1.0 6 NOT DETECTED (one-indel copy of >= 6 signs would be seen)
+Bv-Cb 3 4 0.973 6 NOT DETECTED (one-indel copy of >= 6 signs would be seen)
+Bv-Er 3 4 0.994 6 NOT DETECTED (one-indel copy of >= 6 signs would be seen)
+Bv-Ia 3 4 0.545 6 NOT DETECTED (one-indel copy of >= 6 signs would be seen)
+Ca-Er 5 6 0.095 8 NOT DETECTED (one-indel copy of >= 8 signs would be seen)
+Ca-Ia 3 5 0.779 7 NOT DETECTED (one-indel copy of >= 7 signs would be seen)
+Cb-Er 3 4 0.858 6 NOT DETECTED (one-indel copy of >= 6 signs would be seen)
+Cb-Ia 2 4 1.0 6 NOT DETECTED (one-indel copy of >= 6 signs would be seen)
+Er-Ia 2 4 1.0 6 NOT DETECTED (one-indel copy of >= 6 signs would be seen)

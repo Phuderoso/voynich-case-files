@@ -89,4 +89,8 @@ Method lesson: a published parallel of six signs with one change reaches p 0.005
 after Holm over 25. Our isolation tests are conservative: they certify the absence of copies of ≥ 5–9 signs, not of
 the short list-like parallels the specialists catalogue.
 
+## Audit note (RR008, audit E, seed 6007)
+Re-run with seed 6007: all 25 verdicts and both controls unchanged; lg* +1 in 5 pairs (Aa–Bv, Ab–Cb, Ab–Er, Bv–Ia,
+Ca–Ia), range still 5–9. Read each lg* as ±1. See [RR008](RR008-equivalence-formulae.md).
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

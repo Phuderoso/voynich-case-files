@@ -25,6 +25,7 @@ publish negatives. **No decipherment is claimed.**
 | RR005 | Same 25 pairs, but allowing one substituted sign in the shared run (fuzzy copies), with a null calibrated for that search; plus an audit of RR001 with padded Aa codes | same, codes padded | **NOT DETECTED, all 25 pairs powered** (l1* 5–8; controls Hr–Qr 15, Hr–Pr 17; reversed 0/0; smallest p Ab–Er 0.009, a post-hoc lead `002 739 [700/027] 739 006 090`). Audit B: RR001 verdicts hold, Aa floors superseded (Aa–Br 6, Aa–Bv 5, Aa–Ia 5). [RR005](case-file/RR005-fuzzy-isolation.md) |
 | RR006 | Same 25 pairs, allowing one dropped or extra sign inside the shared run; plus a seed-replication audit of RR005 | same, codes padded | **NOT DETECTED, all 25 pairs powered** (lg* 5–9; controls Hr–Qr 12, Hr–Pr 13; reversed 0/0; smallest p 0.105). Audit C: RR005 seed-stable (l1* ±1 in 3 pairs). The RR005 lead Ab05/Er04 is a published parallel (Horley). [RR006](case-file/RR006-indel-isolation.md) |
 | RR007 | Do two objects share more short exact formulae (head-sign trigrams) than an order-1 Markov text? Plus a seed audit of RR004 | same, codes padded | **NOT DETECTED, all 25 pairs powered** (k* 1–3 planted 4-sign excerpts; controls Hr–Qr 99, Hr–Pr 119; reversed 0 Holm). Known-answer Ab–Er: only 1 shared trigram, because Horley's parallel differs by one sign, so exact n-grams are blind to variant parallels. Audit D: RR004 seed-stable. [RR007](case-file/RR007-shared-formulae.md) |
+| RR008 | Same trigram count after merging sign families learned from the H/P/Q copies only (14 swaps, 11 classes); plus a seed audit of RR006 | same, codes padded | **NOT DETECTED, all 25 pairs powered** (k* 1–4; controls Hr–Qr 103, Hr–Pr 148; reversed 0 Holm). Six pairs gained 1–2 trigrams but the null rose too (min p 0.062). Known answer Ab–Er stays at 1, as declared: three copies of one text are too small a dictionary. Audit E: RR006 verdicts stable, lg* ±1. [RR008](case-file/RR008-equivalence-formulae.md) |
 
 ## Data (pinned 2026-11-09, see [data/MANIFEST.md](data/MANIFEST.md))
 - **CEIPP numerical transliteration** (Cercle d'Études sur l'Île de Pâques et la Polynésie, after T. Barthel 1958),
@@ -53,8 +54,10 @@ publish negatives. **No decipherment is claimed.**
    5b resolved (RR006): the Ab05 / Er04 lead is a published parallel (Horley, Er4 ref. Ab5–6, Bv11), not new.
    5c closed (RR006): no one-indel copy of lg* (5–9) or more. Lesson: these tests miss the short catalogued parallels;
    5d closed (RR007): no excess of shared exact trigrams on any pair (k* 1–3). But exact matching cannot see variant
-   parallels. Next (5e): the same count with sign equivalence classes taken from the H/P/Q copies (signs that replace
-   each other at aligned positions), learned on H/P/Q only, then applied to the 25 pairs.
+   parallels.
+   5e closed (RR008): with sign families learned from H/P/Q only (14 swaps), still NOT DETECTED (k* 1–4), and the
+   known answer is not recovered. Next (5f): take sign equivalences from a published allograph list, fixed before
+   testing and independent of the 25 pairs, and hold Horley's catalogued parallels out as known answers.
 
 ## Outreach log
 - 2026-11-09 (opening): none.
@@ -67,3 +70,4 @@ publish negatives. **No decipherment is claimed.**
 - 2026-11-09 (RR005): none new. The combined rochal issue is still a draft (no issue exists there), so RR005 was added to that draft instead of raising a second form.
 - 2026-11-09 (RR006): none new. The rochal draft stays pending; no new issue raised.
 - 2026-11-09 (RR007): none new; the rochal draft stays pending.
+- 2026-11-09 (RR008): none new; the rochal draft stays pending.
