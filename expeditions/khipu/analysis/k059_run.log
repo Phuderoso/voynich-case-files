@@ -1,0 +1,55 @@
+G0 fixture 20 / 20 0.7
+G0b meter True max|z| 2.36 14.4
+audit K012 {'real_blocks': 5323, 'k012_discoveries': 6, 'published_blocks': 5323, 'published_discoveries': 6, 'reproduced': True} 14.4
+null 10 0 18.7
+null 20 0 22.8
+null 30 0 26.8
+null 40 0 31.0
+plant6 50 0.18 0.24 51.3
+plant6 100 0.19 0.26 71.3
+plant6 150 0.21333333333333335 0.28 91.9
+plant6 200 0.195 0.28 113.5
+plant8 50 0.56 0.5 182.2
+plant8 100 0.53 0.53 334.4
+{
+ "N": 433,
+ "M": 93528,
+ "G0_fixture": true,
+ "G0_fixture_n": 20,
+ "G0b_meter": true,
+ "G0b_max_abs_z": 2.363575037315284,
+ "audit_K012": {
+  "real_blocks": 5323,
+  "k012_discoveries": 6,
+  "published_blocks": 5323,
+  "published_discoveries": 6,
+  "reproduced": true
+ },
+ "G1": {
+  "null_corpora": 40,
+  "any_discovery": 0.0,
+  "mean_discoveries": 0.0,
+  "share_p_lt_001": 0.0006003549739115559,
+  "passed": true
+ },
+ "G2": {
+  "plants6": 200,
+  "power6_exact": 0.195,
+  "power6_k012": 0.28,
+  "plants8": 100,
+  "power8_exact": 0.53,
+  "power8_k012": 0.53,
+  "median_p6_exact": 6.699749684006511e-05,
+  "passed": false
+ },
+ "H2_mcnemar": {
+  "exact_only": 3,
+  "k012_only": 20,
+  "p_one_sided": 0.9999669790267944
+ },
+ "H1": {
+  "run": false,
+  "reason": "gate failed (NOT TESTABLE / EXCLUDED per rule)"
+ },
+ "seconds": 334.4
+}

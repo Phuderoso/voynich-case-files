@@ -45,3 +45,29 @@ Seeds: 5959 (null), 5960 (6-cord plants), 5961 (8-cord plants), 5962 (fixtures /
 [`tools/k059_exact_runperm_bound.py`](../tools/k059_exact_runperm_bound.py) (`MODE=full`). Expected compute ≈ 3 min, run under `timeout 600`.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration commit `98dfcd0`)
+
+Tool run once as written, `MODE=full`, 2026-11-09 15:12–15:17 PT (334.4 s, under `timeout 600`). Outputs: `analysis/k059_results.json`, `analysis/k059_run.log`.
+
+| Gate / test | Number | Rule | Outcome |
+|---|---|---|---|
+| G0 fixture (brute force over all permutations) | 20/20 exact (|diff| < 1e-9) | 20/20 | pass |
+| G0b meter honesty (30 real pairs × 300 permutations) | max |z| 2.36, pooled Monte Carlo / exact = 0.9956 | no |z| > 3 | pass |
+| Audit K012 (Poisson, real data) | 5 323 blocks, 6 BH discoveries | = published 5 323 / 6 | **reproduced exactly** |
+| G1 FPR (40 run-preserving null corpora) | 0/40 corpora with a discovery; pair share p < 0.01 = 0.0006 | ≤ 0.10 and ≤ 0.01 | pass (calibrated, as a valid bound must be) |
+| **G2 power, 6-cord plants (200)** | **0.195** (K012 Poisson on the same plants 0.28) | ≥ 0.80 | **fail** |
+| secondary: 8-cord plants (100) | 0.53 (K012 0.53) | — | descriptive |
+| H2 McNemar on the 200 six-cord plants | exact-only 3, K012-only 20; one-sided p = 0.99997 | p ≤ 0.05 | **NOT SUPPORTED** |
+
+**Verdicts by the rules written beforehand.**
+- **Short cross-khipu matches (6 cords): NOT TESTABLE (LOW-POWER)** with the exact bound. G2 failed, so the observed exact-bound BH scan (H1) was **not run**; nothing about the real corpus is claimed, detected or excluded by K059.
+- **H2: NOT SUPPORTED** — the exact bound is *weaker* than K012's Poisson approximation, not stronger (K012 better on 20 vs 3 discordant plants; reverse-direction binomial p 0.00024, descriptive only). At 8 cords they tie (0.53 each).
+- **Tool status**: exact, valid and calibrated (G0, G0b, G1 pass), but less powerful. Not adopted; K013 stays the line-3 tool.
+- **Audit**: K012's published scan reproduces to the pair (5 323 blocks, 6 discoveries).
+
+**Why (diagnosis, post hoc, no decision weight).** The median exact-bound p for a planted 6-cord copy is 6.7×10⁻⁵, while BH's first rank over M = 93 528 pairs needs p ≤ 0.05/93 528 = 5.3×10⁻⁷. A 6-cord copy collapses to about four or five symbols; even an exact chance computation cannot squeeze two more orders of magnitude out of so few symbols. The bottleneck is the **size of the search family**, not the approximation. Rigour costs a little (Markov over left-maximal matches, ×2 for direction), but the gap is multiplicity. Next step, power first: a pre-registered, smaller family named in advance (for example within-provenance pairs, M of a few thousand), tested on destroyed/planted data before any observed number.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
