@@ -1,0 +1,61 @@
+== rr012 observed run (seed 12012) ==
+{'units': {'Gr': 210, 'K': 127}, 'aligned': 100, 'eligible': 34, 'disagreements': 4, 'relevant_lines': 4, 'free_strokes_in_relevant_lines': 10, 'units_in_relevant_lines': 91}
+{'seed': 12012, 'R': 999, 'R_plant': 199, 'plants': 200, 'R_floor': 19999, 'f_rep': 0.15857320735369515, 'units': {'Gr': 210, 'K': 127}, 'aligned': 100, 'eligible': 34, 'disagreements': 4, 'relevant_lines': 4, 'free_strokes_in_relevant_lines': 10, 'units_in_relevant_lines': 91, 'S1max': 3, 'p_floor': 0.00655, 'power': {'S1': {0.05: 0.025, 0.1: 0.035, 0.1586: 0.03, 0.2: 0.04, 0.3: 0.155, 0.5: 0.295, 1.0: 1.0}, 'S2': {0.05: 0.005, 0.1: 0.03, 0.1586: 0.01, 0.2: 0.035, 0.3: 0.065, 0.5: 0.115, 1.0: 0.995}}, 'power_S1_at_f_rep': 0.03, 'negative_control_rejections_of_40': [1, 2], 'gates': {'D_ge_10': False, 'free_ge_10': True, 'power_at_f_rep_ge_080': False, 'floor_le_0025': True, 'negctrl_S1_le_5_of_40': True}, 'testable': False, 'mode': 'observed', 'S1': 3, 'S2': 3, 'null_mean': [0.6086086086086087, 0.924924924924925], 'null_range': [[0, 3], [0, 4]], 'p': [0.009, 0.04]}
+
+== rr012_recount.py corpus.json rr012_results.json ==
+{'units': {'Gr': 210, 'K': 127}, 'aligned': 100, 'eligible': 34, 'disagreements': 4, 'S1max': 3, 'S1': 3, 'S2': 3, 'tool': {'units': {'Gr': 210, 'K': 127}, 'aligned': 100, 'eligible': 34, 'disagreements': 4, 'S1max': 3, 'S1': 3, 'S2': 3}, 'match': True}
+
+== audit I: rr012_auditI.py (RR008, seed 12008) ==
+POSITIVE [{'pair': 'Hr-Qr', 'T': 103, 'null_max': 50, 'p': 0.001, 'passes': True}, {'pair': 'Hr-Pr', 'T': 148, 'null_max': 61, 'p': 0.001, 'passes': True}]
+Aa Br T 4 null max 9 p 0.474 k* 4 1s
+Aa Bv T 1 null max 4 p 0.439 k* 2 2s
+Aa Ca T 1 null max 5 p 0.654 k* 3 3s
+Aa Cb T 2 null max 5 p 0.532 k* 2 4s
+Aa Er T 0 null max 2 p 1.0 k* 2 5s
+Aa Ia T 1 null max 5 p 0.71 k* 3 8s
+Ab Br T 3 null max 5 p 0.157 k* 2 9s
+Ab Bv T 2 null max 7 p 0.471 k* 3 10s
+Ab Ca T 8 null max 11 p 0.06 k* 2 10s
+Ab Cb T 5 null max 9 p 0.203 k* 2 11s
+Ab Er T 1 null max 5 p 0.646 k* 3 12s
+Ab Ia T 2 null max 7 p 0.581 k* 3 15s
+Br Ca T 0 null max 4 p 1.0 k* 3 15s
+Br Cb T 1 null max 5 p 0.746 k* 3 16s
+Br Er T 1 null max 3 p 0.388 k* 1 17s
+Br Ia T 1 null max 5 p 0.688 k* 3 20s
+Bv Ca T 2 null max 4 p 0.401 k* 2 21s
+Bv Cb T 2 null max 4 p 0.28 k* 1 21s
+Bv Er T 1 null max 4 p 0.723 k* 2 22s
+Bv Ia T 1 null max 3 p 0.293 k* 1 25s
+Ca Er T 1 null max 7 p 0.863 k* 3 26s
+Ca Ia T 3 null max 5 p 0.095 k* 2 29s
+Cb Er T 1 null max 3 p 0.492 k* 2 29s
+Cb Ia T 0 null max 5 p 1.0 k* 4 32s
+Er Ia T 0 null max 5 p 1.0 k* 3 36s
+GATES {'positive_controls_pass': True, 'reversed_holm_detections': 0, 'reversed_unadjusted_hits': 2, 'gate_reversed_ok': True}
+Aa-Br 4 9 0.474 4 NOT DETECTED (4 shared 4-sign excerpts would be seen)
+Aa-Bv 1 4 0.439 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Aa-Ca 1 5 0.654 3 NOT DETECTED (3 shared 4-sign excerpts would be seen)
+Aa-Cb 2 5 0.532 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Aa-Er 0 2 1.0 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Aa-Ia 1 5 0.71 3 NOT DETECTED (3 shared 4-sign excerpts would be seen)
+Ab-Br 3 5 0.157 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Ab-Bv 2 7 0.471 3 NOT DETECTED (3 shared 4-sign excerpts would be seen)
+Ab-Ca 8 11 0.06 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Ab-Cb 5 9 0.203 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Ab-Er 1 5 0.646 3 NOT DETECTED (3 shared 4-sign excerpts would be seen)
+Ab-Ia 2 7 0.581 3 NOT DETECTED (3 shared 4-sign excerpts would be seen)
+Br-Ca 0 4 1.0 3 NOT DETECTED (3 shared 4-sign excerpts would be seen)
+Br-Cb 1 5 0.746 3 NOT DETECTED (3 shared 4-sign excerpts would be seen)
+Br-Er 1 3 0.388 1 NOT DETECTED (1 shared 4-sign excerpts would be seen)
+Br-Ia 1 5 0.688 3 NOT DETECTED (3 shared 4-sign excerpts would be seen)
+Bv-Ca 2 4 0.401 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Bv-Cb 2 4 0.28 1 NOT DETECTED (1 shared 4-sign excerpts would be seen)
+Bv-Er 1 4 0.723 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Bv-Ia 1 3 0.293 1 NOT DETECTED (1 shared 4-sign excerpts would be seen)
+Ca-Er 1 7 0.863 3 NOT DETECTED (3 shared 4-sign excerpts would be seen)
+Ca-Ia 3 5 0.095 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Cb-Er 1 3 0.492 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Cb-Ia 0 5 1.0 4 NOT DETECTED (4 shared 4-sign excerpts would be seen)
+Er-Ia 0 5 1.0 3 NOT DETECTED (3 shared 4-sign excerpts would be seen)
+EXIT 0

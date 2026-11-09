@@ -5,7 +5,7 @@
 > Santiago recto (G) and Small London (K), never touched by RR009–RR011. If the spelling is a rule of the script, it
 > should show up there too.
 
-**Status: PRE-REGISTERED** (this section committed before the observed S1/S2 on G·K were computed).
+**Status: CLOSED, NOT TESTABLE (4e and 4d), lead recorded.** Pre-registered in `e6bc2ac` before the observed S1/S2 on G·K were computed.
 Seed 12012. Data: CEIPP transliteration as pinned in [data/MANIFEST.md](../data/MANIFEST.md) (corpus.json sha256
 `ce1782aa…6e460`, the RR009–RR011 file). Tool: [`tools/rr012_gk_replication.py`](../tools/rr012_gk_replication.py);
 independent recount: [`tools/rr012_recount.py`](../tools/rr012_recount.py).
@@ -76,7 +76,47 @@ Markov text, and does it recover **Horley's catalogued parallels** (held out as 
 - Pin attempt this run: kohaumotu.org answered HTTP 500 to the box's direct fetch at ~09:54 PT; the index page reads
   through the web fetcher but without link targets. Deferred to RR013.
 
-## Results
-*(to be appended after this registration is pushed)*
+## Results (appended after the pre-registration commit `e6bc2ac`, run ~10:00 PT)
+Files: [`analysis/rr012_results.json`](../analysis/rr012_results.json), run, recount and audit logs [`analysis/rr012_logs.txt`](../analysis/rr012_logs.txt).
+
+**Line 4e (S1 on G·K): NOT TESTABLE**, as the gates fixed before the run decided. Two of five gates fail:
+D = 4 < 10, and power at RR010's effect size f_rep 0.1586 is 0.03 (gate 0.80). Floor 0.00655 and negative control
+1/40 pass. **Line 4d on G·K: NOT TESTABLE** by construction (≤ 3 informative cases < 5).
+
+Description only (it cannot be called a replication, by the rule written above):
+| | value |
+|---|---|
+| aligned same-host pairs / eligible / disagreements | 100 / 34 / 4 |
+| S1 (same stroke loose beside the bare host) | **3 of 4** = S1max (every disagreement that *could* score does) |
+| null (within-line reposition, R 999) | mean 0.61, range 0–3; p 0.009 (floor 0.0066) |
+| S2 (any free stroke beside the host) | 3 of 4; null mean 0.92, range 0–4; p 0.040 |
+| independent recount (own parser) | units, links, eligible, D, S1max, S1, S2 identical (`match: true`) |
+
+The four disagreements, all exact (fused copy → bare copy, neighbours of the bare unit):
+1. Gr03 `380.001.003` → Kr04 `380.022`; neighbours `720`, `090f`: no loose stroke.
+2. Kr05 `090.001` → Gr04 `090`; next sign `001`: **loose 001 after the host**, the side it is fused on in K.
+3. Gr06 `290.001` → Kv03 `290`; next sign `001.009`: **loose 001 after the host**, same side as fused.
+4. Kv04 `002.450` → Gr07 `450`; previous sign `002`: **loose 002 before the host**, same side as fused.
+So 3 of 3 loose cases also keep the fused side (4d description, not a test). Both directions occur (K fused / G loose
+twice, G fused / K loose once), so it is not one scribe adding strokes.
+
+Reading: the fresh family points the same way as RR010, and more strongly per case (3/4 vs 8/41), but four
+disagreements cannot carry a confirmatory test; G and K agree on the fused stroke in 30 of 34 eligible pairs, which
+leaves too few disagreements to count. This is a **lead on fresh data**, recorded as such.
+A pooled H/P/Q + G/K analysis would re-use the RR010 data that suggested the idea, so it would not be confirmatory either.
+
+## Audit I · RR008 with a new seed (12008)
+RR008 step 2 exactly (same pinned `rr008_equivalences.json`), seed 12008 instead of 8008
+([`tools/rr012_auditI.py`](../tools/rr012_auditI.py), [`analysis/rr012_auditI_rr008.json`](../analysis/rr012_auditI_rr008.json)).
+Registered pass rule: every pair keeps its verdict and k* moves by ≤ 1.
+- **Verdicts: 25/25 unchanged** (all NOT DETECTED, powered); controls Hr–Qr 103 (null max 50), Hr–Pr 148 (61), p 0.001;
+  reversed 0 Holm. Smallest p 0.060 (RR008: 0.062).
+- **k*: 24/25 within ±1; one pair outside the rule, Ab–Cb 4 → 2.** At k = 2 its power is 0.06 under seed 8008 and
+  0.83 under 12008, so it sits right on the 0.80 edge and 100 plants decide which side of the line it falls. The
+  verdict does not depend on it (NOT DETECTED either way, T 5, p 0.20). Audit I therefore **passes on verdicts and
+  fails the k* tolerance on one pair**; RR008's Ab–Cb k* should be read as "2–4". Lesson: a k* whose power at k−1 or
+  k−2 is near 0.80 needs ≥ 400 plants before it is quoted to one sign.
+- Slip found and corrected: the RR007 tool writes `seed: 7007` into its JSON whatever seed the wrapper maps in; the
+  audit file was corrected by hand to 12008 with a note (as in RR011 audit H).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
