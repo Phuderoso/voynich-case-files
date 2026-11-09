@@ -1,0 +1,119 @@
+gen_11494 3000 72769 ref 0.59 plant 0.5404
+gen_11494 4000 72769 ref 0.6027 plant 0.5452
+gen_11495 3000 73192 ref 0.5935 plant 0.5395
+gen_11495 4000 73192 ref 0.594 plant 0.5533
+gen_11496 3000 71279 ref 0.5595 plant 0.5535
+gen_11496 4000 71279 ref 0.5713 plant 0.5556
+gen_11497 3000 72312 ref 0.5906 plant 0.5423
+gen_11497 4000 72312 ref 0.5868 plant 0.5434
+gen_11498 3000 74117 ref 0.5948 plant 0.5442
+gen_11498 4000 74117 ref 0.6077 plant 0.5481
+gen_11499 3000 72110 ref 0.5766 plant 0.5264
+gen_11499 4000 72110 ref 0.5728 plant 0.5321
+gen_11500 3000 72492 ref 0.592 plant 0.542
+gen_11500 4000 72492 ref 0.5821 plant 0.5422
+gen_11501 3000 73584 ref 0.5999 plant 0.5257
+gen_11501 4000 73584 ref 0.5865 plant 0.537
+gen_11502 3000 70689 ref 0.5855 plant 0.5383
+gen_11502 4000 70689 ref 0.5956 plant 0.5612
+gen_11503 3000 72596 ref 0.5688 plant 0.5168
+gen_11503 4000 72596 ref 0.5927 plant 0.542
+gen_11504 3000 71834 ref 0.5352 plant 0.5198
+gen_11504 4000 71834 ref 0.5797 plant 0.537
+gen_11505 3000 72950 ref 0.5955 plant 0.557
+gen_11505 4000 72950 ref 0.5836 plant 0.545
+gen_11506 3000 71023 ref 0.5497 plant 0.5156
+gen_11506 4000 71023 ref 0.5771 plant 0.518
+gen_11507 3000 72286 ref 0.6058 plant 0.5523
+gen_11507 4000 72286 ref 0.5943 plant 0.5445
+gen_11508 3000 72055 ref 0.5756 plant 0.5391
+gen_11508 4000 72055 ref 0.5938 plant 0.5582
+gen_11509 3000 71506 ref 0.5838 plant 0.5202
+gen_11509 4000 71506 ref 0.5886 plant 0.5318
+gen_11510 3000 71131 ref 0.5648 plant 0.5368
+gen_11510 4000 71131 ref 0.5669 plant 0.5355
+gen_11511 3000 72288 ref 0.582 plant 0.5271
+gen_11511 4000 72288 ref 0.5951 plant 0.5413
+gen_11512 3000 70764 ref 0.5749 plant 0.5204
+gen_11512 4000 70764 ref 0.576 plant 0.5358
+gen_11513 3000 71160 ref 0.5794 plant 0.5261
+gen_11513 4000 71160 ref 0.6008 plant 0.5427
+gen_11514 3000 72635 ref 0.5784 plant 0.5446
+gen_11514 4000 72635 ref 0.5959 plant 0.5472
+gen_11515 3000 72844 ref 0.611 plant 0.5553
+gen_11515 4000 72844 ref 0.6009 plant 0.5631
+gen_11516 3000 72581 ref 0.5736 plant 0.5256
+gen_11516 4000 72581 ref 0.5964 plant 0.5405
+gen_11517 3000 71308 ref 0.593 plant 0.5499
+gen_11517 4000 71308 ref 0.6092 plant 0.55
+gen_11518 3000 73288 ref 0.5934 plant 0.5238
+gen_11518 4000 73288 ref 0.6064 plant 0.5454
+gen_11519 3000 71470 ref 0.5683 plant 0.5263
+gen_11519 4000 71470 ref 0.5757 plant 0.5341
+gen_11520 3000 74388 ref 0.5722 plant 0.54
+gen_11520 4000 74388 ref 0.5845 plant 0.5435
+gen_11521 3000 77385 ref 0.5649 plant 0.5253
+gen_11521 4000 77385 ref 0.579 plant 0.534
+gen_11522 3000 70989 ref 0.5586 plant 0.5103
+gen_11522 4000 70989 ref 0.5618 plant 0.5204
+gen_11523 3000 73849 ref 0.5868 plant 0.5381
+gen_11523 4000 73849 ref 0.5973 plant 0.5417
+gen_11524 3000 71138 ref 0.556 plant 0.5067
+gen_11524 4000 71138 ref 0.5692 plant 0.5127
+gen_11525 3000 72822 ref 0.6005 plant 0.5584
+gen_11525 4000 72822 ref 0.6053 plant 0.5384
+gen_11526 3000 71833 ref 0.5627 plant 0.518
+gen_11526 4000 71833 ref 0.5691 plant 0.5222
+gen_11527 3000 72572 ref 0.5937 plant 0.5374
+gen_11527 4000 72572 ref 0.592 plant 0.5456
+gen_11528 3000 72672 ref 0.5557 plant 0.5259
+gen_11528 4000 72672 ref 0.5588 plant 0.505
+gen_11529 3000 73143 ref 0.5801 plant 0.5308
+gen_11529 4000 73143 ref 0.594 plant 0.536
+gen_11530 3000 73370 ref 0.5818 plant 0.5417
+gen_11530 4000 73370 ref 0.5954 plant 0.5402
+gen_11531 3000 71456 ref 0.591 plant 0.5241
+gen_11531 4000 71456 ref 0.6055 plant 0.5299
+gen_11532 3000 76343 ref 0.5688 plant 0.5194
+gen_11532 4000 76343 ref 0.5677 plant 0.5233
+gen_11533 3000 73275 ref 0.5806 plant 0.5239
+gen_11533 4000 73275 ref 0.5938 plant 0.5346
+N1_K3000 {'reached': '20/20', 'FPR': '1/20', 'POW': '14/20', 'MDE80': 0.0529, 'plant_shift': -0.0457, 'shift_over_MDE': -0.8646, 'lead': 0.054, 'lead_over_MDE': 1.0211, 'mean': 0.5799, 'sd': 0.0176, 'lo': 0.5352, 'hi': 0.6058, 'ok': False, 'why': 'G2'}
+N1_K4000 {'reached': '20/20', 'FPR': '0/20', 'POW': '20/20', 'MDE80': 0.0334, 'plant_shift': -0.0449, 'shift_over_MDE': -1.3434, 'lead': 0.054, 'lead_over_MDE': 1.6151, 'mean': 0.5874, 'sd': 0.0111, 'lo': 0.5669, 'hi': 0.6077, 'ok': True, 'why': ''}
+N2_K3000 {'reached': '20/20', 'FPR': '1/20', 'POW': '16/20', 'MDE80': 0.0466, 'plant_shift': -0.0473, 'shift_over_MDE': -1.0137, 'lead': 0.054, 'lead_over_MDE': 1.158, 'mean': 0.5786, 'sd': 0.0155, 'lo': 0.5557, 'hi': 0.611, 'ok': False, 'why': 'G2'}
+N2_K4000 {'reached': '20/20', 'FPR': '0/20', 'POW': '19/20', 'MDE80': 0.0479, 'plant_shift': -0.0525, 'shift_over_MDE': -1.0952, 'lead': 0.054, 'lead_over_MDE': 1.1266, 'mean': 0.5879, 'sd': 0.0159, 'lo': 0.5588, 'hi': 0.6092, 'ok': True, 'why': ''}
+stability K3000 {'sd_N1': 0.0176, 'sd_N2': 0.0155, 'sd_ratio': 1.1341, 'mean_N1': 0.5799, 'mean_N2': 0.5786, 'BF_p': 0.8511, 'welch_p': 0.7992}
+stability K4000 {'sd_N1': 0.0111, 'sd_N2': 0.0159, 'sd_ratio': 0.6976, 'mean_N1': 0.5874, 'mean_N2': 0.5879, 'BF_p': 0.2058, 'welch_p': 0.9149}
+runnable ['W4', 'B4'] 
+voynich ZL3b_ALL_K3000 {'ntokens': 33929, 'ntypes': 6894, 'RHO': 0.6197, 'GIANT': 0.8707, 'near_share': 0.8813, 'mean_deg': 8.4167, 'tokens': 10256}
+voynich ZL3b_ALL_K4000 {'ntokens': 33929, 'ntypes': 6894, 'RHO': 0.6421, 'GIANT': 0.874, 'near_share': 0.8808, 'mean_deg': 8.769, 'tokens': 16194}
+voynich ZL3b_A_K3000 {'ntokens': 10847, 'ntypes': 3145, 'RHO': 0.6106, 'GIANT': 0.8637, 'near_share': 0.8713, 'mean_deg': 8.1847, 'tokens': 10106}
+voynich ZL3b_A_K4000 {'ntokens': 10847, 'ntypes': 3145}
+voynich ZL3b_B_K3000 {'ntokens': 22559, 'ntypes': 4717, 'RHO': 0.6534, 'GIANT': 0.8583, 'near_share': 0.8697, 'mean_deg': 7.708, 'tokens': 13360}
+voynich ZL3b_B_K4000 {'ntokens': 22559, 'ntypes': 4717, 'RHO': 0.6495, 'GIANT': 0.8602, 'near_share': 0.8758, 'mean_deg': 7.963, 'tokens': 18470}
+voynich IT2a_ALL_K3000 {'ntokens': 33608, 'ntypes': 6908, 'RHO': 0.6192, 'GIANT': 0.8733, 'near_share': 0.8823, 'mean_deg': 8.1973, 'tokens': 9978}
+voynich IT2a_ALL_K4000 {'ntokens': 33608, 'ntypes': 6908, 'RHO': 0.6345, 'GIANT': 0.8765, 'near_share': 0.8852, 'mean_deg': 8.761, 'tokens': 15925}
+voynich IT2a_A_K3000 {'ntokens': 10592, 'ntypes': 3135, 'RHO': 0.606, 'GIANT': 0.8607, 'near_share': 0.8687, 'mean_deg': 8.0947, 'tokens': 9927}
+voynich IT2a_A_K4000 {'ntokens': 10592, 'ntypes': 3135}
+voynich IT2a_B_K3000 {'ntokens': 22515, 'ntypes': 4753, 'RHO': 0.6432, 'GIANT': 0.8653, 'near_share': 0.8787, 'mean_deg': 7.844, 'tokens': 13239}
+voynich IT2a_B_K4000 {'ntokens': 22515, 'ntypes': 4753, 'RHO': 0.6389, 'GIANT': 0.8698, 'near_share': 0.8848, 'mean_deg': 8.1585, 'tokens': 18423}
+voynich C093_parse_K4000 {'ZL3b': 0.6421, 'IT2a': 0.6345}
+N1 {'cell': 'W3_ZL3b', 'status': 'NOT RUN, LOW-POWER'}
+N1 {'cell': 'W3_IT2a', 'status': 'NOT RUN, LOW-POWER'}
+N1 {'cell': 'W4_ZL3b', 'status': 'run', 'x': 0.6421, 'p': 0.0001, 'gap': 0.0547, 'gap_over_MDE': 1.6364, 'above_all': True, 'below_all': False, 'p_holm': 0.0004}
+N1 {'cell': 'W4_IT2a', 'status': 'run', 'x': 0.6345, 'p': 0.0006, 'gap': 0.0471, 'gap_over_MDE': 1.4096, 'above_all': True, 'below_all': False, 'p_holm': 0.0006}
+N1 {'cell': 'B4_ZL3b', 'status': 'run', 'x': 0.6495, 'p': 0.0, 'gap': 0.062, 'gap_over_MDE': 1.8557, 'above_all': True, 'below_all': False, 'p_holm': 0.0001}
+N1 {'cell': 'B4_IT2a', 'status': 'run', 'x': 0.6389, 'p': 0.0002, 'gap': 0.0514, 'gap_over_MDE': 1.5387, 'above_all': True, 'below_all': False, 'p_holm': 0.0005}
+N1 {'cell': 'A3_ZL3b', 'status': 'NOT RUN, LOW-POWER'}
+N1 {'cell': 'A3_IT2a', 'status': 'NOT RUN, LOW-POWER'}
+N2 {'cell': 'W3_ZL3b', 'status': 'NOT RUN, LOW-POWER'}
+N2 {'cell': 'W3_IT2a', 'status': 'NOT RUN, LOW-POWER'}
+N2 {'cell': 'W4_ZL3b', 'status': 'run', 'x': 0.6421, 'p': 0.0036, 'gap': 0.0542, 'gap_over_MDE': 1.1317, 'above_all': True, 'below_all': False, 'p_holm': 0.0108}
+N2 {'cell': 'W4_IT2a', 'status': 'run', 'x': 0.6345, 'p': 0.0101, 'gap': 0.0467, 'gap_over_MDE': 0.9735, 'above_all': True, 'below_all': False, 'p_holm': 0.0112}
+N2 {'cell': 'B4_ZL3b', 'status': 'run', 'x': 0.6495, 'p': 0.0013, 'gap': 0.0616, 'gap_over_MDE': 1.2846, 'above_all': True, 'below_all': False, 'p_holm': 0.0052}
+N2 {'cell': 'B4_IT2a', 'status': 'run', 'x': 0.6389, 'p': 0.0056, 'gap': 0.051, 'gap_over_MDE': 1.0636, 'above_all': True, 'below_all': False, 'p_holm': 0.0112}
+N2 {'cell': 'A3_ZL3b', 'status': 'NOT RUN, LOW-POWER'}
+N2 {'cell': 'A3_IT2a', 'status': 'NOT RUN, LOW-POWER'}
+verdict {'W3': 'NOT RUN, LOW-POWER (NOT TESTABLE)', 'W4': 'HIGHER', 'B4': 'HIGHER', 'A3': 'NOT RUN, LOW-POWER (NOT TESTABLE)'}
+closing {'fnet_generator_line': 'open', 'C093_H3': 'REPLICATED'}
+elapsed 23.8
