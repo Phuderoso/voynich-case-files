@@ -1,0 +1,3 @@
+# C090 post hoc, descriptive only (not registered): ZL 3b, 6 random starts, rng 9090, same insertion search; best order found
+ZL3b best M 0.2315
+order cfh < v < x < u < cph < q < o < l < f < c < p < t < k < ch < sh < cth < ckh < h < e < d < s < a < j < i < r < z < b < n < m < g < y

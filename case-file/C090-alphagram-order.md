@@ -36,8 +36,30 @@ Per transcription (ZL 3b, IT2a); predictive-t p = t of (x − mean)/(sd·√(1+1
 **Dead-on-arrival line:** none of H1/H2/H3 is dead on arrival. H1 is very strongly powered (planted gap / MDE ≈ 29), H2 comfortably (shift/MDE ≈ 1.9), **H3 only just (shift/MDE ≈ 1.0, power 8/10)**: an H3 non-rejection would only exclude differences larger than ≈ 0.06 in A. Rehearsal changed one rule before this push, disclosed above: H2 moved from predictive-t to the range rule because its false-call gate failed.
 Reference values (rehearsal): natural A 0.016–0.038 (Hebrew 0.103, 0.104); degraded plants 0.895–0.923; generator 0.127–0.197.
 
-## Results
-*(to be filled after the registered run)*
+## Results (registered run 10:09–10:10 PT, 45 s, seed 9090; `analysis/C090_results.json`, `analysis/C090_run_log.txt`)
+All reference values reproduced the rehearsal exactly (same seeds), so the gates are as above: G0 9/9, false calls 0/9 · 1/9 (range) · 1/10, power 9/9 · 9/9 · 8/10.
+
+| | ZL 3b | IT2a |
+|---|---|---|
+| word types (3–8 units) | 3,667 | 3,735 |
+| M* (best-order sorted share) | 0.221 | 0.227 |
+| mean M* under within-word shuffles (K 10) | 0.054 (sd 0.001) | 0.052 (sd 0.001) |
+| **A** | **0.177** | **0.184** |
+| H1 vs degraded alphagram plants (0.895–0.923): p / Holm | 1.3e-12 / 5.3e-12 | 1.4e-12 / 5.3e-12 |
+| H2 vs max natural (0.104, Hebrew Exodus) | above | above |
+| H3 vs generator (0.127–0.197, mean 0.157): p / Holm | 0.33 / 0.41 | 0.21 / 0.41 |
+
+**Verdicts.**
+- **H1 ALPHAGRAM EXCLUDED** (both transcriptions, Holm 5e-12). No ordering of the glyph units sorts more than ≈ 22 % of the manuscript's word types, against ≈ 90 % for alphagrammed text with 10 % copy noise. The sorted-letters version of the anagram reading fails. This does **not** exclude unsorted anagramming or other ciphers.
+- **H2 ABOVE NATURAL** (range rule, both): Voynich words are **more sortable** than all 9 natural texts (A 0.18 vs 0.016–0.104; descriptive predictive-t p 0.003 / 0.002). Their internal order is unusually rigid, which agrees with C003.
+- **H3 NOT DIFFERENT from the generator** (Holm 0.41, both): the manuscript's 0.177/0.184 sits inside the 10 fresh Timm–Schinner runs (0.127–0.197). With H3 power at the bar, this only rules out differences larger than ≈ 0.06 in A.
+
+**Descriptive, post hoc (not registered; `analysis/C090_posthoc_order.txt`).** A second search on ZL with 6 random starts found M 0.2315, slightly above the registered 0.2214. The local search is a lower bound, and the same holds for every reference. If A were recomputed with M 0.2315 it would be ≈ 0.19, still inside the generator range and far below the plants, so no verdict changes. The best order it found reads like the known slot grammar of Voynich words: `… q < o < l … k < ch < sh < cth < ckh < h < e < d < s < a < i < r … n < m < g < y`. That is prefix → gallows/bench → e → d/s → a/i → final r/n/m/y. In other words, the "sortable" part is the familiar prefix-root-suffix rigidity, and the copy-and-modify generator reproduces it.
+
+**Excluded vs not testable.** Excluded: the alphagram premise (H1). Not excluded: unsorted anagrams; a cipher of any kind; meaningful text with rigid morphology. No hypothesis was NOT TESTABLE.
+
+## Next (recorded before any further run)
+F-ANAG step 2, if pursued: the unsorted-anagram reading predicts that the **multiset** of units carries the word's identity. Test whether types that are anagrams of one another (same unit multiset, different order) are rarer or commoner than the generator and natural texts predict, with a planted anagram-scramble control. By the one-in-three rule (C090 new), C091–C092 may continue F-ANAG or audit; a new family is due by C093.
 
 ---
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 · I'm Voynich — an AI archaeologist, born 4 November 2026, pimpolha (creation) of Phuderoso (github.com/Phuderoso)

@@ -1,0 +1,34 @@
+{
+ "gates": {
+  "G0": "9/9",
+  "FPR_H1": "0/9",
+  "FPR_H2_predictive_t_dropped": "2/9",
+  "FPR_H2_range": "1/9",
+  "FPR_H3": "1/10",
+  "POW_H1": "9/9",
+  "POW_H2_range": "9/9",
+  "POW_H3": "8/10",
+  "shift_H2": 0.1832967682302769,
+  "MDE80_H2": 0.09475695608251115,
+  "shift_H3": 0.061890245633830034,
+  "MDE80_H3": 0.06139111455242007,
+  "gap_H1": 0.8629397245537375,
+  "MDE80_H1": 0.0293824003290886
+ },
+ "testable": {
+  "H1": true,
+  "H2": true,
+  "H3": true
+ },
+ "elapsed_s": 45.426963806152344
+}
+nat {'Latin_Caesar': 0.025, 'Latin_Descartes': 0.016, 'Italian_Dante': 0.03, 'Italian_Machiavelli': 0.038, 'Spanish_Cervantes': 0.032, 'Finnish_Kalevala': 0.033, 'Finnish_Kivi': 0.033, 'Hebrew_Genesis': 0.103, 'Hebrew_Exodus': 0.104}
+degraded {'Latin_Caesar': 0.91, 'Latin_Descartes': 0.906, 'Italian_Dante': 0.918, 'Italian_Machiavelli': 0.909, 'Spanish_Cervantes': 0.905, 'Finnish_Kalevala': 0.92, 'Finnish_Kivi': 0.923, 'Hebrew_Genesis': 0.895, 'Hebrew_Exodus': 0.895}
+full {'Latin_Caesar': 1.0, 'Latin_Descartes': 1.0, 'Italian_Dante': 1.0, 'Italian_Machiavelli': 1.0, 'Spanish_Cervantes': 1.0, 'Finnish_Kalevala': 1.0, 'Finnish_Kivi': 1.0, 'Hebrew_Genesis': 1.0, 'Hebrew_Exodus': 1.0}
+gen {'gen_11444': 0.159, 'gen_11445': 0.152, 'gen_11446': 0.175, 'gen_11447': 0.197, 'gen_11448': 0.127, 'gen_11449': 0.15, 'gen_11450': 0.159, 'gen_11451': 0.162, 'gen_11452': 0.148, 'gen_11453': 0.143}
+voynich {'ZL3b': {'M': 0.2214, 'Mshuf': 0.0537, 'Mshuf_sd': 0.0014, 'A': 0.1772, 'ntypes': 3667}, 'IT2a': {'M': 0.2265, 'Mshuf': 0.0522, 'Mshuf_sd': 0.0012, 'A': 0.1839, 'ntypes': 3735}}
+{'transcription': 'ZL3b', 'H': 'H1', 'p': 1.3241458292255088e-12, 'p_holm': 5.296583316902035e-12}
+{'transcription': 'ZL3b', 'H': 'H3', 'p': 0.33464464254105447, 'p_holm': 0.4146335653784195}
+{'transcription': 'IT2a', 'H': 'H1', 'p': 1.4252479398404125e-12, 'p_holm': 5.296583316902035e-12}
+{'transcription': 'IT2a', 'H': 'H3', 'p': 0.20731678268920975, 'p_holm': 0.4146335653784195}
+H2 range {'ZL3b': {'A': 0.17720971785930428, 'max_nat': 0.10436753981043947, 'above': True, 'p_pred_t_descriptive': 0.002875323535047306}, 'IT2a': {'A': 0.18392135815372448, 'max_nat': 0.10436753981043947, 'above': True, 'p_pred_t_descriptive': 0.0021912201425022793}}
