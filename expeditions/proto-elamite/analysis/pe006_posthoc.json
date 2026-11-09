@@ -1,0 +1,35 @@
+{
+ "P1_entries<=6": {
+  "a_cap_bal": 7,
+  "b_cap_not": 13,
+  "c_nocap_bal": 14,
+  "d_nocap_not": 11,
+  "p_one_sided_less": 0.13507645023124817,
+  "p_two_sided": 0.23122915944712646,
+  "n": 45
+ },
+ "P1_entries>6": {
+  "a_cap_bal": 0,
+  "b_cap_not": 12,
+  "c_nocap_bal": 4,
+  "d_nocap_not": 3,
+  "p_one_sided_less": 0.009029927760577915,
+  "p_two_sided": 0.009029927760577915,
+  "n": 19
+ },
+ "P2_mismatch_direction": {
+  "CAP": {
+   "total<sum": 20,
+   "total>sum": 5
+  },
+  "nonCAP": {
+   "total>sum": 4,
+   "total<sum": 6,
+   "mixed": 4
+  }
+ },
+ "P3_CAP_nonbalancing_fixed_by_dropping_subunits": {
+  "fixed": 0,
+  "of": 25
+ }
+}

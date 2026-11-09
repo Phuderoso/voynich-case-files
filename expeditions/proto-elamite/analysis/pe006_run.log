@@ -1,0 +1,5 @@
+PE006 run log (America/Vancouver, 2026-11-08). Each command wrapped in `timeout 600`; outputs are the JSON files of the same name.
+~18:56  python3 tools/pe006_cap.py gates     -> analysis/pe006_gates.json        real 0m0.836s
+~18:57  python3 tools/pe006_cap.py test      -> analysis/pe006_results.json      real 0m3.133s  (verdict_H1 SUPPORTED, p_one_sided 0.004867)
+~18:57  python3 tools/pe006_cap.py audit     -> analysis/pe006_pe005_audit.json  real 0m0.316s  (first run printed CAP_recomputed null: key-path bug in the lookup; fixed, re-run)
+~18:58  python3 tools/pe006_posthoc.py       -> analysis/pe006_posthoc.json      real <1s

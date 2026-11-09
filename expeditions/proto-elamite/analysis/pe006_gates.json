@@ -1,0 +1,14 @@
+{
+ "n": 64,
+ "CAP_prevalence": 32,
+ "n_balance": 25,
+ "FPR": 0.019,
+ "FPR_ok": true,
+ "power_w4": 0.923,
+ "power_ok": true,
+ "power_w9_descriptive": 0.999,
+ "seeds": [
+  601,
+  602
+ ]
+}

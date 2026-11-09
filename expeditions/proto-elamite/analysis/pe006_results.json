@@ -1,0 +1,500 @@
+{
+ "verdict_H1": "SUPPORTED",
+ "H1_fresh": {
+  "a_cap_bal": 7,
+  "b_cap_not": 25,
+  "c_nocap_bal": 18,
+  "d_nocap_not": 14,
+  "p_one_sided_less": 0.004867399009519733,
+  "p_two_sided": 0.009734798019039466
+ },
+ "gates": {
+  "n": 64,
+  "CAP_prevalence": 32,
+  "n_balance": 25,
+  "FPR": 0.019,
+  "FPR_ok": true,
+  "power_w4": 0.923,
+  "power_ok": true,
+  "power_w9_descriptive": 0.999,
+  "seeds": [
+   601,
+   602
+  ]
+ },
+ "S1_H_only": {
+  "a_cap_bal": 5,
+  "b_cap_not": 24,
+  "c_nocap_bal": 12,
+  "d_nocap_not": 14,
+  "p_one_sided_less": 0.02098965695217932,
+  "p_two_sided": 0.03920610454262059
+ },
+ "S1b_R_only": {
+  "a_cap_bal": 2,
+  "b_cap_not": 1,
+  "c_nocap_bal": 6,
+  "d_nocap_not": 0,
+  "p_one_sided_less": 0.3333333333333333,
+  "p_two_sided": 0.3333333333333333
+ },
+ "pooled_PE005_plus_fresh_descriptive": {
+  "a_cap_bal": 11,
+  "b_cap_not": 40,
+  "c_nocap_bal": 36,
+  "d_nocap_not": 20,
+  "p_one_sided_less": 7.642024929715833e-06,
+  "p_two_sided": 1.3335010510104889e-05
+ },
+ "edition_stratified_p_descriptive": 0.00359982000899955,
+ "per_tablet": [
+  {
+   "pid": "P008011",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008012",
+   "cls": "H",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008016",
+   "cls": "H",
+   "cap": true,
+   "balances": true,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008019",
+   "cls": "H",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008031",
+   "cls": "R",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008106",
+   "cls": "R",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008136",
+   "cls": "H",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008138",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008139",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008140",
+   "cls": "H",
+   "cap": true,
+   "balances": true,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008143",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008150",
+   "cls": "H",
+   "cap": true,
+   "balances": true,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008168",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008174",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008182",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008186",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 06"
+  },
+  {
+   "pid": "P008241",
+   "cls": "R",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 17"
+  },
+  {
+   "pid": "P008276",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 17"
+  },
+  {
+   "pid": "P008309",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 17"
+  },
+  {
+   "pid": "P008316",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "MDP 17"
+  },
+  {
+   "pid": "P008334",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 17"
+  },
+  {
+   "pid": "P008351",
+   "cls": "H",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 17"
+  },
+  {
+   "pid": "P008369",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 17"
+  },
+  {
+   "pid": "P008396",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "MDP 17"
+  },
+  {
+   "pid": "P008639",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "MDP 17"
+  },
+  {
+   "pid": "P008692",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008735",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008739",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008755",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008767",
+   "cls": "H",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008772",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008803",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008821",
+   "cls": "R",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008864",
+   "cls": "H",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008875",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008876",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008883",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008907",
+   "cls": "H",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008910",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008985",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008990",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008998",
+   "cls": "R",
+   "cap": true,
+   "balances": true,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P008999",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P009006",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P009007",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P009092",
+   "cls": "R",
+   "cap": true,
+   "balances": true,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P009129",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 26"
+  },
+  {
+   "pid": "P009207",
+   "cls": "H",
+   "cap": true,
+   "balances": true,
+   "edition": "MDP 26S"
+  },
+  {
+   "pid": "P009219",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 26S"
+  },
+  {
+   "pid": "P009223",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 26S"
+  },
+  {
+   "pid": "P009296",
+   "cls": "R",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 26S"
+  },
+  {
+   "pid": "P009342",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 31"
+  },
+  {
+   "pid": "P009348",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 31"
+  },
+  {
+   "pid": "P009366",
+   "cls": "H",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 31"
+  },
+  {
+   "pid": "P009367",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 31"
+  },
+  {
+   "pid": "P009370",
+   "cls": "H",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 31"
+  },
+  {
+   "pid": "P009373",
+   "cls": "H",
+   "cap": true,
+   "balances": false,
+   "edition": "MDP 31"
+  },
+  {
+   "pid": "P009375",
+   "cls": "R",
+   "cap": false,
+   "balances": true,
+   "edition": "MDP 31"
+  },
+  {
+   "pid": "P009441",
+   "cls": "H",
+   "cap": false,
+   "balances": true,
+   "edition": "unpublished assigned"
+  },
+  {
+   "pid": "P009442",
+   "cls": "H",
+   "cap": false,
+   "balances": true,
+   "edition": "unpublished assigned"
+  },
+  {
+   "pid": "P009457",
+   "cls": "H",
+   "cap": false,
+   "balances": false,
+   "edition": "Kadmos 24"
+  },
+  {
+   "pid": "P009463",
+   "cls": "H",
+   "cap": false,
+   "balances": true,
+   "edition": "Kadmos 24"
+  },
+  {
+   "pid": "P009525",
+   "cls": "H",
+   "cap": true,
+   "balances": true,
+   "edition": "Yahya 01"
+  },
+  {
+   "pid": "P009531",
+   "cls": "R",
+   "cap": true,
+   "balances": false,
+   "edition": "Yahya 07"
+  }
+ ]
+}

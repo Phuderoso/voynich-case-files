@@ -157,7 +157,14 @@ def audit():
         a = json.load(open("analysis/pe005_results.json")); b = json.load(open(os.path.join(tmp, "analysis/pe005_results.json")))
         strip = lambda d: {k: v for k, v in d.items() if "time" not in k}
         same = strip(a) == strip(b)
-        cap = b.get("features", b).get("CAP") if isinstance(b.get("features", b), dict) else None
+        def find(d):  # locate the CAP block wherever it sits in the results tree (fix after first run: key path)
+            if isinstance(d, dict):
+                if "CAP" in d and isinstance(d["CAP"], dict) and "table_a_b_c_d" in d["CAP"]: return d["CAP"]
+                for v in d.values():
+                    r = find(v)
+                    if r: return r
+            return None
+        cap = find(b)
         out = {"pe005_results_identical_except_time": same, "CAP_recomputed": cap}
         json.dump(out, open("analysis/pe006_pe005_audit.json", "w"), indent=1); print(json.dumps(out, indent=1))
     finally: shutil.rmtree(tmp)

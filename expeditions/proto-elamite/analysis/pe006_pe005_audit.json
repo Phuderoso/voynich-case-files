@@ -1,0 +1,20 @@
+{
+ "pe005_results_identical_except_time": true,
+ "CAP_recomputed": {
+  "table_a_b_c_d": [
+   4,
+   15,
+   18,
+   6
+  ],
+  "p_two_sided": 0.000667869608906382,
+  "direction": "less_balance",
+  "bh_reject": true,
+  "half_p_one_sided": {
+   "odd": 0.0010201334538392016,
+   "even": 0.167420814479638
+  },
+  "confirmed": false,
+  "verdict": "NOT TESTABLE"
+ }
+}
