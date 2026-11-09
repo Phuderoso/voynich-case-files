@@ -46,6 +46,15 @@ A small note for anyone re-using the parse: some lines (mostly Aa01–Aa02) are 
   Descriptively, 3 of the 4 write the same stroke loose next to the host on the side where it was fused
   (Kr05 `090.001` vs Gr04 `090` `001`; Gr06 `290.001` vs Kv03 `290` `001.009`; Kv04 `002.450` vs Gr07 `002` `450`).
 
+**Added after RR013.**
+- *Allograph lists (RR013).* I tried to take sign equivalences from a published list rather than from the copies.
+  The CEIPP/Spaelti *List of Glyph Variants* on kohaumotu.org groups each code only with its own lettered variants
+  (0 of 1 684 codes listed under another number), so with head signs read as three-digit codes it changes nothing.
+  Pozdniakov & Pozdniakov 2007 print their 52-sign table as glyph images; the one equivalence stated in the text
+  (6 ~ 64) touches 13 tokens outside H/P/Q. Do you know of a Barthel-coded cross-number allograph table in text form?
+- *Entry-initial strokes (RR013).* The only delimiter-bearing object not in our RR003 test is Small London, with 20 entries
+  and 5 strokes: even zero stroke-initial entries would give p 1/15, so that lead cannot be confirmed on held-out data.
+
 Happy to adapt any of this if a different null or granularity would be more useful to you.
 
 ---
