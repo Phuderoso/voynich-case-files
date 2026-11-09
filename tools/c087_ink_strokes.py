@@ -159,6 +159,7 @@ def main():
         g1, g0 = sets[t['contrast']]; x0 = np.array([P[f][t['metric']] for f in fos if f in g0])
         t['gates'] = gate_sims(x0, min(t['n1'], len(x0) // 2), rng, ALPHA / 4)
         print(t['contrast'], t['metric'], t['gates'], round(time.time() - t0), 's', flush=True)
+    R.update(tests=tests); json.dump(R, open('analysis/C087_results.json', 'w'), indent=1, default=lambda o: o.item() if hasattr(o, 'item') else str(o))  # checkpoint
     # sensitivity (pre-registered, cannot change verdicts): ink threshold 20 and 40, D only
     sens = {}
     for tt in (20, 40):

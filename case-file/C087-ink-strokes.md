@@ -52,3 +52,36 @@ So no gate fails by construction on exchangeable values; F_blk fires when pages 
 **What would not follow.** Any difference is a property of ink on parchment as photographed: pen, ink load, fading and imaging differ by quire as well as by scribe. No meaning, no reading, no claim about Currier A/B as languages.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (main run 07:51–07:56 PT, 266 s, seed 8787; `analysis/C087_results.json`, log in `/workspace/voynich/backup_c087/c087_run1.log`)
+**Pages measured:** 120 of 120 eligible single-page herbal scans (none dropped; 290–2,183 kept components per page): hand 1 = 91, hand 2 = 20, hand 3 = 3 (f65r, f65v, f94r), hand 5 = 6 (f41r, f41v, f48r, f48v, f57r, f66v). Coverage of design-eligible pages 100% in every class. Of ZL's herbal pages, 4 hand-1 and 5 hand-3/5 panels have no single-page scan file (foldouts or composites) and were excluded by design; C2 therefore has 7 pages, not 12.
+
+| Test | Groups (n) | Medians | D | p two-sided | p (D ≥) / p (D ≤) | Holm p | F_iid | F_blk | Power δ 0.5 / 0.75 / 1.0 / 1.5 | Verdict |
+|---|---|---|---|---|---|---|---|---|---|---|
+| C1 · W | hand 2 (20) vs 1 (91) | 3.57 vs 3.30 px | **+0.27 px** (0.50 SD) | 0.056 | 0.019 / 0.98 | 0.222 | 0/40 | 0/40 | 2 / 6 / **9** / 10 | **NOT DETECTED** (MDE ≈ 1.0 SD ≈ 0.54 px) |
+| C1 · G | hand 2 (20) vs 1 (91) | 23 vs 24 px | −1 px | 0.367 | 0.99 / 0.081 | 1.000 | 0/40 | **7/40** | 0 / 1 / **6** / 9 | **NOT TESTABLE** (underpowered; position drift) |
+| C2 · W | hands 3+5 (7) vs 2 (20) | 3.37 vs 3.57 px | −0.20 px | 0.517 | 0.79 / 0.23 | 1.000 | 2/40 | 5/40 | 0 / 2 / **2** / 3 | **NOT TESTABLE** (underpowered) |
+| C2 · G | hands 3+5 (7) vs 2 (20) | 22 vs 23 px | −1 px | 0.464 | 0.98 / 0.097 | 1.000 | 1/40 | 0/40 | 1 / 0 / **4** / 2 | **NOT TESTABLE** (underpowered) |
+
+Estimator gate E passed before the push (smoke pages only). **Sensitivity** (ink threshold 20 / 40, D only): C1·W +0.22 / +0.43 px (same sign as at 30), C1·G −1.5 / 0, C2·W −0.65 / −0.07, C2·G −1.0 / −2.0.
+
+### Reading
+- **No hand separation is detected by either page-level measure.** The one adequately powered test (C1·W) finds hand-2 herbal pages a quarter-pixel thicker in stroke than hand-1 pages (unadjusted one-sided p 0.019, same sign at all three thresholds), but after Holm over the 4 tests it is not significant; a difference of ≥ 1 page-SD (≈ 0.54 px) is ruled out at the planted-power level, a smaller one is not.
+- **Glyph height G is too coarse an instrument.** It is a median of integer pixel heights; the page values clump on 20–24 px, so the real power at δ 1.0 (6/10) fell below the synthetic rehearsal (8/10 on continuous values). The contiguous-block gate also fired 7/40 on hand-1 pages: G drifts along the book, so a G difference would not have been attributable to the hand anyway.
+- **C2 (the only contrast free of Currier A/B) is underpowered, as pre-stated:** 7 vs 20 pages cannot reach the Holm level for any planted effect up to 1.5 SD.
+- So Davis's palaeographic hands are **not excluded and not confirmed** by these crude pen metrics; the hands differ (if at all, measurably) in letterform shape, which a median stroke width and median component height do not capture.
+
+### Exploratory (after the fact; no confirmatory weight)
+The three hand-3 herbal pages have the thinnest strokes in the herbal set (W 2.83, 2.91, 3.37 px vs hand-1 median 3.30, hand-2 3.57). With n = 3 and a position-confounded pair (f65r/f65v are one leaf), this is a pointer for a better-powered design (hand 3 has 22 star-section pages), not a finding.
+
+### Disclosures
+- After the pre-registration push (4b64322), one line was added to the tool before the main run: a checkpoint `json.dump` after the gates (no computation changed). The published tool includes it.
+- The F_blk gate uses contiguous blocks within the larger class; it addresses smooth drift, not quire-specific imaging or parchment effects, which remain confounded with hand by construction (hands sit in quires).
+- scipy 1.18.1 (`ndimage`) from a venv, as pre-registered.
+
+### What next (F-INK)
+A powered step 2 would need per-glyph rather than per-page measures (e.g. height of the `o` / `a` bowl, gallows-stem slant, stroke width at fixed glyph classes, localized by DP-matching ZL lines as in C039/C040) and a hand contrast with more pages (hand 2 bio vs hand 3 stars, both Currier B — but section-confounded). No generator seeds were used; the next free generator seed stays **11444**.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
