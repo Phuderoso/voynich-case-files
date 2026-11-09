@@ -37,3 +37,59 @@ it.
   `analysis/rr001_results.json`.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (run 2026-11-09 ~01:50 PT, seed 3001, R = 999, 100 plants per ℓ, 52 s)
+
+Files: [`analysis/rr001_results.json`](../analysis/rr001_results.json), [`analysis/rr001_run.log`](../analysis/rr001_run.log). Tool: [`tools/rr001_isolation.py`](../tools/rr001_isolation.py) (run without flags for the pre-registered analysis).
+
+### Gates (computed before any test pair was read)
+
+| Gate | Result | Pass |
+|---|---|---|
+| Positive control Hr–Qr (known parallel) | M = 11, null max 10, p = 0.001 | yes |
+| Positive control Hr–Pr (known parallel) | M = 11, null max 11, p = 0.002 (exactly at α = 0.002, narrow) | yes |
+| Negative control (Y reversed line by line), 25 pairs | 0 Holm detections, 0 unadjusted hits | yes |
+
+### The 25 cross-object pairs
+
+M = observed longest common contiguous run of head signs; ℓ* = smallest planted copy length with power ≥ 0.80.
+
+| Pair | M | null max | p | ℓ* | Verdict |
+|---|---|---|---|---|---|
+| Aa–Br | 3 | 3 | 0.362 | 4 | NOT DETECTED |
+| Aa–Bv | 3 | 3 | 0.145 | 4 | NOT DETECTED |
+| Aa–Ca | 3 | 4 | 0.367 | 5 | NOT DETECTED |
+| Aa–Cb | 3 | 4 | 0.785 | 5 | NOT DETECTED |
+| Aa–Er | 2 | 3 | 1.000 | 4 | NOT DETECTED |
+| Aa–Ia | 2 | 3 | 1.000 | 4 | NOT DETECTED |
+| Ab–Br | 3 | 3 | 0.657 | 4 | NOT DETECTED |
+| Ab–Bv | 3 | 5 | 0.779 | 6 | NOT DETECTED |
+| Ab–Ca | 4 | 5 | 0.728 | 6 | NOT DETECTED |
+| Ab–Cb | 4 | 6 | 0.222 | 6 | NOT DETECTED |
+| Ab–Er | 3 | 4 | 0.618 | 5 | NOT DETECTED |
+| Ab–Ia | 3 | 4 | 0.625 | 5 | NOT DETECTED |
+| Br–Ca | 2 | 2 | 1.000 | 4 | NOT DETECTED |
+| Br–Cb | 2 | 4 | 1.000 | 5 | NOT DETECTED |
+| Br–Er | 3 | 3 | 0.056 | 4 | NOT DETECTED |
+| Br–Ia | 2 | 3 | 1.000 | 4 | NOT DETECTED |
+| Bv–Ca | 3 | 3 | 0.945 | 4 | NOT DETECTED |
+| Bv–Cb | 3 | 3 | 0.755 | 4 | NOT DETECTED |
+| Bv–Er | 3 | 3 | 0.824 | 4 | NOT DETECTED |
+| Bv–Ia | 3 | 3 | 0.160 | 4 | NOT DETECTED |
+| Ca–Er | 3 | 7 | 0.871 | 7 | NOT DETECTED |
+| Ca–Ia | 3 | 4 | 0.457 | 5 | NOT DETECTED |
+| Cb–Er | 3 | 4 | 0.460 | 5 | NOT DETECTED |
+| Cb–Ia | 2 | 3 | 1.000 | 4 | NOT DETECTED |
+| Er–Ia | 2 | 3 | 1.000 | 4 | NOT DETECTED |
+
+**Verdict: NOT DETECTED in all 25 pairs, every one powered (ℓ* ≤ 7 ≤ 10).** A shared copied passage of ℓ* or more head signs (4 to 7, depending on the pair) between any two of Aa, Ab, Br, Bv, Ca, Cb, Er, Ia is ruled out at the Holm level. This turns the qualitative "no shared passages" into a minimum detectable length per pair. It says nothing about copies shorter than ℓ*, about reordered or interleaved copies, or about agreement at the level of full glyph compounds rather than head signs.
+
+### Notes
+
+1. **The null is generous.** Seven pairs have p = 1.0 (observed M at or below every surrogate). An order-1 Markov surrogate reproduces short repeats well, so it sets a high bar. Power was computed against the same null, so NOT DETECTED stays valid; it is conservative, not inflated.
+2. **Audit against rochal: longest Hr–Qr run is 11 here, 15 in rochal's report.** The run ends next to units carrying '!' (e.g. `001!` in Hr03, `205jy!` in Qr03). The pre-registered rule makes every '!' unit unique, so it never matches. This is a design difference, not an error on either side.
+3. **Post-hoc sensitivity (declared after seeing note 2, not part of the decision rule).** Re-run with `--bang-as-sign`, reading 'NNN!' with a nonzero code as its head sign: Hr–Qr M = 15 (rochal's value reproduced exactly), Hr–Pr M = 12; reversed gate still 0/0; all 25 pairs still NOT DETECTED, ℓ* unchanged at 4–7, smallest p Br–Er 0.049 (above α = 0.002). Files: [`analysis/rr001_results_bang.json`](../analysis/rr001_results_bang.json), [`analysis/rr001_run_bang.log`](../analysis/rr001_run_bang.log). The verdict does not depend on how '!' is read.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

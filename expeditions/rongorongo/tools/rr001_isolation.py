@@ -9,9 +9,11 @@ SIDES = ['Aa', 'Ab', 'Br', 'Bv', 'Ca', 'Cb', 'Er', 'Ia']
 POS = [('Hr', 'Qr'), ('Hr', 'Pr')]
 ELLS = list(range(4, 16))
 
+BANG_AS_SIGN = False   # post-hoc sensitivity (--bang-as-sign): 'NNN!' with a nonzero code is read as its head sign
+
 def head(u, k):
-    if '!' in u: return ('ILL', k)          # illegible: unique, never matches
-    m = re.match(r'(\d{3})', re.split(r"[.:;']", u)[0])
+    if '!' in u and not BANG_AS_SIGN: return ('ILL', k)          # illegible: unique, never matches
+    m = re.match(r'(\d{3})', re.split(r"[.:;']", u.replace('!', ''))[0])
     if not m or m.group(1) == '000': return ('ILL', k)
     return m.group(1)
 
@@ -120,4 +122,5 @@ def main(cp, outp, R=999, P=100):
 
 if __name__ == '__main__':
     a = sys.argv; R = int(a[a.index('--R') + 1]) if '--R' in a else 999; P = int(a[a.index('--plants') + 1]) if '--plants' in a else 100
+    if '--bang-as-sign' in a: BANG_AS_SIGN = True
     main(a[1], a[2], R, P)
