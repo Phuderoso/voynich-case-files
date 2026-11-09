@@ -1,0 +1,571 @@
+{
+ "N": 433,
+ "M_all": 93528,
+ "family": {
+  "name": "F_prov",
+  "pairs": 4039,
+  "provenances": 51,
+  "sizes": [
+   69,
+   37,
+   34,
+   20,
+   12,
+   10,
+   8,
+   7,
+   6,
+   6,
+   6,
+   6,
+   5,
+   4,
+   4,
+   4,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   3,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   2,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ "G0_fixture": true,
+ "G0_fixture_n": 20,
+ "audit_K012": {
+  "real_blocks": 5323,
+  "k012_discoveries": 6,
+  "published_blocks": 5323,
+  "published_discoveries": 6,
+  "reproduced": true
+ },
+ "G1": {
+  "null_corpora": 40,
+  "any_discovery": 0.0,
+  "any_discovery_exact": 0.0,
+  "mean_discoveries": 0.0,
+  "share_p_lt_001": 0.0004456548650656103,
+  "passed": true
+ },
+ "G2": {
+  "plants6": 200,
+  "power6_k012": 0.565,
+  "power6_exact": 0.49,
+  "plants8": 100,
+  "power8_k012": 0.69,
+  "power8_exact": 0.66,
+  "median_p6_k012": 5.519494714588517e-06,
+  "median_p6_exact": 1.612812381569764e-05,
+  "bh_first_rank": 1.2379301807378064e-05,
+  "cells": {
+   "\"huaca perez, lima (a.k.a hda. infantas and tambo inca)\"": {
+    "plants": 2,
+    "power_k012": 1.0,
+    "full_power": false
+   },
+   "armatambo, huaca san pedro": {
+    "plants": 1,
+    "power_k012": 0.0,
+    "full_power": false
+   },
+   "huaquerones": {
+    "plants": 5,
+    "power_k012": 0.0,
+    "full_power": false
+   },
+   "ica": {
+    "plants": 41,
+    "power_k012": 0.5609756097560976,
+    "full_power": false
+   },
+   "incahuasi": {
+    "plants": 26,
+    "power_k012": 0.5384615384615384,
+    "full_power": false
+   },
+   "leymebamba": {
+    "plants": 6,
+    "power_k012": 0.6666666666666666,
+    "full_power": false
+   },
+   "lluta valley": {
+    "plants": 1,
+    "power_k012": 1.0,
+    "full_power": false
+   },
+   "nazca": {
+    "plants": 1,
+    "power_k012": 0.0,
+    "full_power": false
+   },
+   "near lima": {
+    "plants": 1,
+    "power_k012": 0.0,
+    "full_power": false
+   },
+   "pachacamac": {
+    "plants": 114,
+    "power_k012": 0.6052631578947368,
+    "full_power": false
+   },
+   "pisco": {
+    "plants": 1,
+    "power_k012": 0.0,
+    "full_power": false
+   },
+   "santa": {
+    "plants": 1,
+    "power_k012": 0.0,
+    "full_power": false
+   }
+  },
+  "full_power_cells": [],
+  "p6_k012_80th_pct": 0.0027473231729986895,
+  "M_star_descriptive": 18,
+  "passed": false
+ },
+ "fixtures": [
+  {
+   "A": [
+    0,
+    0,
+    2,
+    0,
+    1,
+    2,
+    1
+   ],
+   "B": [
+    2,
+    0,
+    2,
+    1,
+    1,
+    1
+   ],
+   "L": 1,
+   "brute": 8.0,
+   "formula": 8.0,
+   "ok": true
+  },
+  {
+   "A": [
+    0,
+    0,
+    2,
+    2
+   ],
+   "B": [
+    2,
+    1,
+    2
+   ],
+   "L": 2,
+   "brute": 0.6666666666666666,
+   "formula": 0.6666666666666666,
+   "ok": true
+  },
+  {
+   "A": [
+    2,
+    0,
+    1,
+    2,
+    2,
+    0
+   ],
+   "B": [
+    0,
+    0,
+    1,
+    2,
+    1,
+    1
+   ],
+   "L": 2,
+   "brute": 0.5,
+   "formula": 0.5,
+   "ok": true
+  },
+  {
+   "A": [
+    0,
+    0,
+    1,
+    1,
+    2
+   ],
+   "B": [
+    0,
+    1,
+    2,
+    1,
+    2,
+    1,
+    2
+   ],
+   "L": 2,
+   "brute": 1.7142857142857142,
+   "formula": 1.714285714285714,
+   "ok": true
+  },
+  {
+   "A": [
+    0,
+    2,
+    2,
+    1,
+    2,
+    2,
+    2
+   ],
+   "B": [
+    2,
+    1,
+    1
+   ],
+   "L": 3,
+   "brute": 0.0,
+   "formula": 0.0,
+   "ok": true
+  },
+  {
+   "A": [
+    0,
+    2,
+    0,
+    0,
+    0,
+    2,
+    2
+   ],
+   "B": [
+    1,
+    1,
+    0
+   ],
+   "L": 3,
+   "brute": 0.0,
+   "formula": 0.0,
+   "ok": true
+  },
+  {
+   "A": [
+    1,
+    2,
+    2,
+    2,
+    2
+   ],
+   "B": [
+    0,
+    2,
+    1
+   ],
+   "L": 1,
+   "brute": 4.666666666666667,
+   "formula": 4.666666666666667,
+   "ok": true
+  },
+  {
+   "A": [
+    1,
+    2,
+    2,
+    1
+   ],
+   "B": [
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0
+   ],
+   "L": 1,
+   "brute": 4.0,
+   "formula": 4.0,
+   "ok": true
+  },
+  {
+   "A": [
+    2,
+    2,
+    0,
+    0
+   ],
+   "B": [
+    1,
+    1,
+    2,
+    2,
+    1,
+    2,
+    0
+   ],
+   "L": 2,
+   "brute": 0.8571428571428571,
+   "formula": 0.8571428571428571,
+   "ok": true
+  },
+  {
+   "A": [
+    0,
+    1,
+    2,
+    0,
+    0,
+    0
+   ],
+   "B": [
+    0,
+    1,
+    1
+   ],
+   "L": 3,
+   "brute": 0.0,
+   "formula": 0.0,
+   "ok": true
+  },
+  {
+   "A": [
+    1,
+    0,
+    0,
+    2,
+    0,
+    1
+   ],
+   "B": [
+    0,
+    1,
+    1,
+    2,
+    2
+   ],
+   "L": 3,
+   "brute": 0.0,
+   "formula": 0.0,
+   "ok": true
+  },
+  {
+   "A": [
+    0,
+    1,
+    1,
+    0,
+    1,
+    0
+   ],
+   "B": [
+    1,
+    2,
+    2
+   ],
+   "L": 3,
+   "brute": 0.0,
+   "formula": 0.0,
+   "ok": true
+  },
+  {
+   "A": [
+    0,
+    1,
+    2,
+    2
+   ],
+   "B": [
+    0,
+    1,
+    2,
+    2,
+    2,
+    2,
+    1
+   ],
+   "L": 3,
+   "brute": 0.5714285714285714,
+   "formula": 0.5714285714285714,
+   "ok": true
+  },
+  {
+   "A": [
+    1,
+    0,
+    1,
+    1
+   ],
+   "B": [
+    0,
+    0,
+    2,
+    2
+   ],
+   "L": 1,
+   "brute": 0.0,
+   "formula": 0.0,
+   "ok": true
+  },
+  {
+   "A": [
+    2,
+    0,
+    1,
+    2,
+    2,
+    0,
+    1
+   ],
+   "B": [
+    0,
+    2,
+    2,
+    0,
+    1,
+    1,
+    2
+   ],
+   "L": 2,
+   "brute": 1.4285714285714286,
+   "formula": 1.4285714285714284,
+   "ok": true
+  },
+  {
+   "A": [
+    2,
+    1,
+    0,
+    2,
+    0,
+    1,
+    0,
+    2
+   ],
+   "B": [
+    0,
+    2,
+    1,
+    0,
+    0
+   ],
+   "L": 2,
+   "brute": 0.2,
+   "formula": 0.2,
+   "ok": true
+  },
+  {
+   "A": [
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "B": [
+    2,
+    0,
+    2,
+    0
+   ],
+   "L": 2,
+   "brute": 0.0,
+   "formula": 0.0,
+   "ok": true
+  },
+  {
+   "A": [
+    2,
+    1,
+    1,
+    1
+   ],
+   "B": [
+    1,
+    1,
+    0,
+    1
+   ],
+   "L": 1,
+   "brute": 6.0,
+   "formula": 6.0,
+   "ok": true
+  },
+  {
+   "A": [
+    1,
+    0,
+    1,
+    1
+   ],
+   "B": [
+    2,
+    0,
+    0,
+    2,
+    2
+   ],
+   "L": 3,
+   "brute": 0.0,
+   "formula": 0.0,
+   "ok": true
+  },
+  {
+   "A": [
+    1,
+    0,
+    1,
+    2,
+    1,
+    2
+   ],
+   "B": [
+    0,
+    0,
+    2,
+    1,
+    1,
+    1,
+    0
+   ],
+   "L": 1,
+   "brute": 9.714285714285714,
+   "formula": 9.714285714285715,
+   "ok": true
+  }
+ ],
+ "H1": {
+  "run": false,
+  "reason": "gate failed (NOT TESTABLE / EXCLUDED per rule)"
+ },
+ "seconds": 138.3
+}

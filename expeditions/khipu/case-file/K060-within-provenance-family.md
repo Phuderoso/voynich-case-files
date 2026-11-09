@@ -49,3 +49,38 @@ Seeds: 6060 (null), 6061 (6-cord plants), 6062 (8-cord plants), 5962 (fixtures).
 [`tools/k060_within_provenance_family.py`](../tools/k060_within_provenance_family.py) (`full`). Expected ≈ 3–5 min under `timeout 600`.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration commit `42638a7`)
+
+Tool run once as written (`full`), 2026-11-09 15:50:14–15:52:33 PT (138.3 s, under `timeout 600`). Outputs: `analysis/k060_results.json`, `analysis/k060_run.log`.
+
+| Gate / test | Number | Rule | Outcome |
+|---|---|---|---|
+| G0 fixture (= audit of K059's G0, seed 5962) | 20/20 exact | 20/20 | pass, **K059 G0 reproduced** |
+| Audit K012 (Poisson, all pairs, real data) | 5 323 blocks, 6 BH discoveries | = published | **reproduced exactly** (third time: K012, K059, K060) |
+| Family F_prov | 4 039 pairs, 51 provenances (largest 69, 37, 34, 20 khipus) | metadata only | as registered |
+| G1 FPR (40 run-preserving nulls, within-family BH) | 0/40 corpora with a discovery (exact bound also 0/40); pair share p < 0.01 = 0.00045 | ≤ 0.10 and ≤ 0.01 | pass |
+| **G2 power, 200 within-family 6-cord plants** | **0.565** (exact bound 0.49) | ≥ 0.80 | **fail** |
+| Cell scope (≥ 30 plants and ≥ 0.80) | Pachacamac 0.61 (114 plants), Ica 0.56 (41); Incahuasi 0.54 (26, too few) | — | **no full-power cell** |
+| secondary: 8-cord plants (100) | 0.69 (exact 0.66) | — | descriptive |
+
+**Verdict by the rules written beforehand.** Short (6-cord) within-provenance matches: **NOT TESTABLE (LOW-POWER)**. G2 failed and no cell
+reached full power, so the observed within-family scan (H1) was **not run**. Nothing about the real within-provenance pairs is claimed,
+detected or excluded by K060.
+
+**What moved (same plant design, smaller family).** Shrinking the family 23× (93 528 → 4 039) doubled K012-Poisson power at 6 cords
+(0.28 in K059 → 0.565) and lifted 8-cord power (0.53 → 0.69). The median plant p (5.5×10⁻⁶) now clears the BH first rank (1.24×10⁻⁵).
+
+**Why it still fails (descriptive, no decision weight).** The plant p distribution has a heavy weak tail: the 80th-percentile plant p is
+**0.0027**, so Bonferroni-level power 0.80 would need a family of **M\* ≈ 18 pairs**. About one 6-cord copy in five collapses to so few,
+so common symbols that no per-pair chance model can separate it from coincidence at any useful family size. Family size is no longer the
+main bottleneck; the **information content of the copy** is. More family shrinking cannot make 6-cord silence readable. Line 3's honest
+floor stays **8 cords** (K014), and even within provenance 8-cord power is 0.69.
+
+**Next on line 3 (named, not run).** Either (a) a pre-named family of **≤ 20 pairs** chosen from outside evidence (e.g. the Field Guide's
+"most similar" pairs, or museum-number neighbours), or (b) condition the plants on information content (e.g. ≥ 4 distinct collapsed symbols)
+and state the readable class explicitly. Otherwise line 3 rests: long matches mapped (K005–K014), short ones unreadable by design.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
