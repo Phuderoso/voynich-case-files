@@ -1,0 +1,106 @@
+{
+ "P": {
+  "K1_PREFIX": {
+   "eligible": 20,
+   "FPR": 0.01,
+   "FPR_ok": true,
+   "power_p05": 1.0,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  },
+  "K2_RUN": {
+   "eligible": 20,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_p05": 0.74,
+   "power_ok": false,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  },
+  "K3_NONSUB": {
+   "eligible": 17,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_p05": 1.0,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  },
+  "K4_SUBONLY": {
+   "eligible": 17,
+   "FPR": 0.01,
+   "FPR_ok": true,
+   "power_p05": 1.0,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  },
+  "K5_UPPER": {
+   "eligible": 25,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_p05": 1.0,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  }
+ },
+ "R": {
+  "K1_PREFIX": {
+   "eligible": 12,
+   "FPR": 0.03,
+   "FPR_ok": true,
+   "power_p05": 0.75,
+   "power_ok": false,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  },
+  "K2_RUN": {
+   "eligible": 12,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_p05": 0.26,
+   "power_ok": false,
+   "power_p08_descriptive": 0.72,
+   "size_ok": true
+  },
+  "K3_NONSUB": {
+   "eligible": 6,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_p05": 0.84,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": false
+  },
+  "K4_SUBONLY": {
+   "eligible": 6,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_p05": 0.84,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": false
+  },
+  "K5_UPPER": {
+   "eligible": 15,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_p05": 1.0,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  }
+ },
+ "params": {
+  "N_FPR": 100,
+  "R_IN": 299,
+  "SEED_FPR": 802,
+  "N_POW": 100,
+  "SEED_POW": 803,
+  "PLANT": 0.5,
+  "ALPHA_POW": 0.01
+ },
+ "runtime_s": 178.7
+}

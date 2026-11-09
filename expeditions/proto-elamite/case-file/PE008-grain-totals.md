@@ -87,3 +87,61 @@ claimed.
 Tool: [`tools/pe008_grain_totals.py`](../tools/pe008_grain_totals.py) (`inventory`, `gates`, `test`, `audit`).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration was published as `f68f50c`)
+
+Order of events (America/Vancouver, 2026-11-08): pre-registration on `main` (`f68f50c`) at ~20:22; gates 20:22–20:25
+(179 s); PE007 audit in parallel (44 s); the real test at 20:28 (9.5 s); post hoc right after (1.5 s). Outputs:
+`analysis/pe008_gates.json`, `analysis/pe008_results.json`, `analysis/pe008_pe007_audit.json`,
+`analysis/pe008_posthoc.json`, run log `analysis/pe008_run.log` (gates, test, audit, post hoc).
+
+**Gates.**
+
+| Set × convention | eligible | FPR (≤ 0.06) | power, plant 0.5, p ≤ 0.01 (≥ 0.80) | plant 0.8 (descr.) | testable |
+|---|---|---|---|---|---|
+| P K1 PREFIX | 20 | 0.01 | 1.00 | 1.00 | ✓ |
+| P K2 RUN | 20 | 0.00 | **0.74** | 1.00 | ✗ (power) |
+| P K3 NONSUB | 17 | 0.00 | 1.00 | 1.00 | ✓ |
+| P K4 SUBONLY | 17 | 0.01 | 1.00 | 1.00 | ✓ |
+| P K5 UPPER | 25 | 0.00 | 1.00 | 1.00 | ✓ |
+| R K1 / K2 | 12 | 0.03 / 0.00 | 0.75 / 0.26 | 1.00 / 0.72 | ✗ (power) |
+| R K3 / K4 | 6 | 0.00 / 0.00 | 0.84 / 0.84 | 1.00 | ✗ (size < 8, as expected) |
+| R K5 | 15 | 0.00 | 1.00 | 1.00 | ✓ |
+
+**Primary set P (25 fresh grain mismatches), Holm over 5.**
+
+| Convention | matched / eligible | null mean (max) | p | Holm p | CP95 upper | Verdict |
+|---|---|---|---|---|---|---|
+| K1 PREFIX | 1 / 20 | 0.30 (2) | 0.293 | 1.00 | 0.216 | **EXCLUDED** |
+| K2 RUN | 1 / 20 | 0.67 (2) | 0.586 | 1.00 | 0.216 | **NOT TESTABLE** (power 0.74) |
+| K3 NONSUB | 0 / 17 | 0.00 (0) | 1.000 | 1.00 | 0.162 | **EXCLUDED** |
+| K4 SUBONLY | 1 / 17 | 0.10 (2) | 0.096 | 0.48 | 0.250 | **NOT DETECTED** (bound 0.2501, just above 0.25) |
+| K5 UPPER (rival) | 0 / 25 | 0.08 (2) | 1.000 | 1.00 | 0.113 | **EXCLUDED** |
+
+Replication set R (15 PE005 grain mismatches; descriptive since nothing passed on P): K1 1/12 (p 0.63), K2 3/12
+(p 0.44; total-permutation p 0.024, descriptive), K3 0/6, K4 0/6, K5 0/15. K1/K2 total-permutation p on P (descriptive):
+0.079 / 0.52. Overlap on P: one tablet (P009219) matches any partial-total convention, none the upper-factor rival;
+**24 of 25 grain mismatches stay unexplained.**
+
+**Verdict.** No convention is SUPPORTED. Prefix totals, the "non-grain lines" total and the upper-factor rival are
+**EXCLUDED** (each explains at most 11–22 % of the fresh grain mismatches, 95 % bound); sub-unit-line totals NOT
+DETECTED; contiguous runs NOT TESTABLE (power 0.74). Because PE006's post hoc had looked at these tablets, this cycle
+was partly exploratory; a negative is not weakened by that look.
+
+## Post-hoc diagnostics (after test; no decision weight; `tools/pe008_posthoc.py`)
+- **Q1 omit-one** (total = sum minus exactly one line): P 1/25 (P009219), R 1/15 (P368541).
+- **Q2 any proper subset**: P 3/25 vs total-permutation mean 1.48 (rate ≥ obs 0.15); R 4/15 vs 2.12 (0.058). Arbitrary
+  subsets explain little more than chance.
+- **Q3 size**: in system C the fresh grain totals are a median **0.24** of the obverse sum (range 0.004–1.75; 5 above 1).
+  Most reverse numbers are far too small to be any partial sum of these lines: the reverse "total" on grain tablets
+  is mostly **not a sum of the obverse at all** (a different quantity, another system, or a summary of something else).
+  This reframes line 9 toward ratio accounts (open line 4) and system disambiguation (line 3).
+
+## PE007 audit
+`pe007_noncap.py test` re-run in a scratch copy with the published gates: **identical** to `analysis/pe007_results.json`
+in every field except run time. Independent re-check: set B entry precision recomputed by a direct PE004 leave-one-out
+= **28 / 47 = 0.596** (published 0.60) ✓ (`analysis/pe008_pe007_audit.json`).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
