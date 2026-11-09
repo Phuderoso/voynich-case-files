@@ -56,3 +56,54 @@ Adjacency is read from the CEIPP transcription, whose segmentation decides what 
 transcriber's convention could create or hide loose spellings. The null keeps free strokes on their line but lets
 them land anywhere on it, so a general tendency of free strokes to sit next to certain hosts (RR003/RR004 territory)
 would also raise S2; S1 is the sharper test because it requires the same stroke.
+
+## Results (seed 10010, R 999, run 2026-11-09)
+**Verdict: S1 DETECTED; S2 NOT DETECTED (powered).**
+
+| statistic | observed | null mean (range) | p | Holm p | f* (power) | negative control |
+|---|---|---|---|---|---|---|
+| S1 same stroke loose beside the bare host | **8** of 41 | 1.50 (0–7) | 0.001 | **0.002** | 0.15 (0.85) | 0/20 |
+| S2 any free stroke beside the bare host | 10 of 41 | 6.06 (0–16) | 0.095 | 0.095 | 0.30 (0.945) | 2/20 |
+
+Gates pass (41 disagreements ≥ 30; 129 free strokes on the 25 lines ≥ 10; f*(S1) defined; controls ≤ 3).
+The independent recount ([`tools/rr010_recount.py`](../tools/rr010_recount.py), own parser) gives S1 = 8, S2 = 10,
+identical. Full output: [`analysis/rr010_results.json`](../analysis/rr010_results.json) (includes all 41 disagreements
+and the bare copy's neighbours).
+
+The eight S1 cases (fused copy → bare copy, loose stroke):
+
+| fused | bare | loose neighbour |
+|---|---|---|
+| Pr01 `306.003a` | Hr01 `306` | `003a` after |
+| Pr01 `009a:244` | Hr01 `244` | `009a` before |
+| Hr03 `004a.004ay.206` | Pr03 `206a` | `004.004` before |
+| Pr05 `004.004.007` | Hr06 `007` | `004` before |
+| Pr07 `002a.760.052x` | Hr08 `760a` | `002a` before |
+| Hr03 `004.600` | Qr03 `600a` | `004` before (and after) |
+| Pr03 `004.600a` | Qr03 `600a` | same unit as above |
+| Pv09 `003a.254j` | Hv07 `254` | `003x` before |
+
+**Reading.** When the copies disagree, the "missing" stroke is still next to the host, and it is the same stroke, about
+five times more often than the line's own free strokes would put it there (8 vs 1.5; no null replicate reached 8).
+Any free stroke at all (S2) is not in excess, so the effect is specific: the same stroke, not just stroke clutter.
+That is what two spellings of one element would look like, fused in one copy and written separately in the other.
+It argues for ligature-like (spelling-optional) fusion in about a fifth of the disagreements; it does not show what the
+stroke means, and the other 33 disagreements simply drop or add it.
+
+**Caveats.** (1) Same data that suggested the idea (see Honest status above): the null rules out chance placement, not
+hypothesis selection. (2) Qr03 `600a` is the bare side of two disagreements; counted once per distinct bare unit
+(exploratory, not pre-registered, same null, seed 10011) S1 = 7 of 37 units, null mean 1.34, max 6, p 0.001
+([`tools/rr010_exploratory_distinct.py`](../tools/rr010_exploratory_distinct.py)). (3) Everything rests on CEIPP's
+segmentation of what is fused and what is free.
+
+**Exploratory (not pre-registered).** In all 7 distinct cases the loose stroke stands on the same side of the host as the
+fused one (6 before, 1 after; Qr03 has 004 on both sides). RR004 already found that fused strokes keep a side, so this
+is expected rather than new; it would be line 4d if tested.
+
+## Audit G (RR009, seed 9010)
+Verdict unchanged: **DETECTED**, A = 41 (deterministic), null 119–174 (was 120–170), p 0.001. f* moved from 0.20 to
+0.15 (power 0.80 at 0.15, was 0.795), negative control 2/20 (was 1/20). The RR009 tool writes a hardcoded seed 9009 into
+its output; the audit JSON was corrected to 9010 by hand and says so. Files:
+[`analysis/rr010_auditG_rr009.json`](../analysis/rr010_auditG_rr009.json), [`analysis/rr010_auditG.log`](../analysis/rr010_auditG.log).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

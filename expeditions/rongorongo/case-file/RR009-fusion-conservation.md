@@ -59,3 +59,8 @@ k* moved by 1 in 4 pairs (Ab–Ca, Ab–Cb, Ca–Er, Ca–Ia), range 1–4; larg
 [`analysis/rr009_auditF.log`](../analysis/rr009_auditF.log).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+**Audit note (RR010, Audit G, seed 9010).** Verdict stands (DETECTED, p 0.001); null 119–174, f* 0.15, negative
+control 2/20. The tool hardcodes `seed 9009` in its JSON; the audit file was corrected. Follow-up 4c (RR010): the
+same stroke written loose beside the bare host in 8 of 41 disagreements vs 1.5 by chance, p 0.001
+([RR010](RR010-loose-strokes.md)).
