@@ -1,0 +1,17 @@
+{
+ "pe009_results_identical_except_time": true,
+ "A_H4_recount": {
+  "matched": 0,
+  "of": 15,
+  "published": "0/15",
+  "match": true
+ },
+ "A_H1_P008825": [
+  {
+   "pid": "P008825",
+   "total": 64,
+   "sum": 1920,
+   "ratio_is_1_30": true
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "D1": {
+  "tablets": 60,
+  "n_total_over_sum_sorted": [],
+  "median_n_total_over_sum": null,
+  "position_vs_entries": {
+   "below_min": 13,
+   "min_to_max": 23,
+   "above_max": 24
+  }
+ },
+ "D2": {
+  "tablets": 17,
+  "n_total_over_sum_sorted": [
+   0.024,
+   0.04,
+   0.045,
+   0.234,
+   0.286,
+   0.286,
+   0.791,
+   1.035,
+   1.089,
+   2.545,
+   3.329,
+   4.182,
+   5.0,
+   7.976,
+   9.897,
+   10.17,
+   40.0
+  ],
+  "median_n_total_over_sum": 1.089,
+  "position_vs_entries": {
+   "below_min": 3,
+   "min_to_max": 7,
+   "above_max": 7
+  }
+ },
+ "A_PE009": {
+  "tablets": 15,
+  "n_total_over_sum_sorted": [
+   0.082,
+   0.092,
+   0.104,
+   0.19,
+   0.233,
+   0.312,
+   0.467,
+   0.618,
+   1.294,
+   1.343,
+   1.455,
+   1.969,
+   2.449,
+   7.689,
+   13.501
+  ],
+  "median_n_total_over_sum": 0.618,
+  "position_vs_entries": {
+   "below_min": 5,
+   "min_to_max": 6,
+   "above_max": 4
+  }
+ },
+ "B_PE009": {
+  "tablets": 25,
+  "n_total_over_sum_sorted": [
+   0.035,
+   0.04,
+   0.063,
+   0.127,
+   0.21,
+   0.322,
+   0.367,
+   0.384,
+   0.55,
+   0.606,
+   0.928,
+   1.372,
+   1.454,
+   1.455,
+   1.647,
+   1.694,
+   2.233,
+   2.286,
+   2.5,
+   2.947,
+   3.024,
+   3.302,
+   5.25,
+   7.979,
+   11.2
+  ],
+  "median_n_total_over_sum": 1.454,
+  "position_vs_entries": {
+   "below_min": 6,
+   "min_to_max": 9,
+   "above_max": 10
+  }
+ }
+}
