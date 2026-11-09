@@ -1,0 +1,14 @@
+generation done 53.9
+batch {"N3": {"n": 20, "mean": 0.6564464385155676, "sd": 0.011077110348046395, "lo": 0.6342188519101818, "hi": 0.6753188727349912}, "N4": {"n": 20, "mean": 0.6552516611879576, "sd": 0.016489202518795404, "lo": 0.6185364946918226, "hi": 0.6781396647870312}}
+surface {"mwl": 4.5853375, "ttr": 0.3123125, "h2": 2.329652494615585, "R": 0.505613077970753}
+surface_like true
+plant {"F": 0.2, "mean_shift": -0.04407084902335044, "mean_abs_shift": 0.04407084902335044, "n": 40}
+gates {"delta1": {"N3": {"reached": "20/20", "false_equiv": "3/40", "equiv_power": "20/20", "ok": true, "why": ""}, "N4": {"reached": "20/20", "false_equiv": "2/40", "equiv_power": "18/20", "ok": false, "why": "GE2"}}, "delta2": {"N3": {"reached": "20/20", "false_equiv": "3/40", "equiv_power": "8/20", "ok": false, "why": "GE2"}, "N4": {"reached": "20/20", "false_equiv": "0/40", "equiv_power": "0/20", "ok": false, "why": "GE2"}}}
+runnable {"delta1": false, "delta2": false}
+default_runs_called_equiv_delta1 "0/40"
+default_mean 0.587652831632536
+voynich {"ZL3b": 0.6421303615118417, "IT2a": 0.6345497487458182}
+descriptive {"N3": {"ZL3b": {"x": 0.6421303615118417, "gap": -0.014316077003725947, "p_diff": 0.2224836911330019, "rank": 2}, "IT2a": {"x": 0.6345497487458182, "gap": -0.021896689769749456, "p_diff": 0.0687900864719481, "rank": 1}}, "N4": {"ZL3b": {"x": 0.6421303615118417, "gap": -0.013121299676115972, "p_diff": 0.44697106478641824, "rank": 4}, "IT2a": {"x": 0.6345497487458182, "gap": -0.02070191244213948, "p_diff": 0.23546248615110646, "rank": 2}}}
+tests {}
+verdict {"delta1": "NOT TESTABLE (gate N4:GE2)", "delta2": "NOT TESTABLE (gate N3:GE2,N4:GE2)"}
+elapsed_s 54.1

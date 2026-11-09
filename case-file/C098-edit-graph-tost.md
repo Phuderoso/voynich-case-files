@@ -1,6 +1,6 @@
 # C098 — F-NET step 5: is the manuscript's link RHO *equivalent* to the generator's best surface-keeping setting? (TOST)
 
-**Status:** PRE-REGISTERED 2026-11-09 ~16:10 PT, before any C098 generator run or manuscript measurement. Results are added below the line after the run.
+**Status:** PRE-REGISTERED 2026-11-09 ~16:06 PT (commit `74f50d3`), before any C098 generator run or manuscript measurement. **Result: NOT TESTABLE at both margins** (δ1 missed equivalence power by one run in N4). See below the line.
 
 ## Question
 C093 and C095 found the manuscript's frequency–neighbour link RHO at K 4,000 types (ZL 0.642, IT 0.635) **higher** than the *default* Timm–Schinner generator (~0.588). C097 searched C083's fixed 65-cell grid. Its best surface-keeping cell (cell 37) produced blind batches averaging 0.652/0.656, which bracket the manuscript. But C097 could only test for *difference*, and its one-direction power gate failed, because the copy-plant **lowers** RHO on that host (−0.035). Not finding a difference is not the same as showing equivalence. C098 asks the equivalence question directly, with a calibration that does not depend on the plant's direction.
@@ -40,4 +40,35 @@ Run: `OMP_NUM_THREADS=1 timeout 600 python tools/c098_edit_graph_tost.py run ana
 
 ---
 ## Results
-(to be filled after the registered run)
+**Run 2026-11-09 ~16:08 PT, 54 s.** Prereg commit `74f50d3`. Files: `analysis/C098_results.json` and `analysis/C098_run_log.txt`.
+
+**Verdict: NOT RUN at either margin, NOT TESTABLE.** Nothing is called equivalent and nothing is called different.
+
+| Margin | N3 gates | N4 gates | Status |
+|---|---|---|---|
+| δ1 = 0.054 | reach 20/20, false equivalence 3/40, power **20/20** ✔ | reach 20/20, false equivalence 2/40, power **18/20** ✘ (GE2) | NOT TESTABLE, missed by one run |
+| δ2 = 0.027 | power 8/20 ✘ | power 0/20 ✘ | NOT TESTABLE, as expected in advance |
+
+**Batches.**
+- N3: mean 0.656, sd 0.011, range 0.634–0.675.
+- N4: mean 0.655, sd **0.016**, range 0.619–0.678.
+- The surface stats are within band (mwl 4.59, ttr 0.312, h2 2.33, R 0.506).
+- N4's sd is 1.5 times N3's. With n = 20 the batch sd is itself noisy, and that alone moved δ1 from passing to failing.
+
+**Descriptive only, no verdict.**
+- The manuscript sits in the *lower* part of cell 37's distribution.
+- ZL 0.642 has gap −0.014 (N3, rank 2 of 20) and −0.013 (N4, rank 4). IT 0.635 has gap −0.022 (N3, rank 1) and −0.021 (N4, rank 2).
+- The two-sided difference p values are 0.22 / 0.069 (N3) and 0.45 / 0.24 (N4), before any correction. So cell 37 slightly overshoots the manuscript. It does not fall short.
+- The copy-plant F 0.20 lowers RHO on this host by −0.044 on average (40/40 runs, mean |shift| 0.044). This replicates C097's sign flip.
+- **Known-different check:** none of C095's 40 default-generator runs (mean 0.588) would be called equivalent to cell 37 at δ1 (**0/40**). The TOST does tell a really different generator apart.
+
+**Deviation from the C097 README pointer, disclosed.** The pointer mentioned cells 37 *and* 49. The registration fixed cell 37 alone, the C097 winner, to avoid a second selection step. Cell 49 was never run.
+
+**What this means.** Equivalence is not shown and not excluded. It failed only because of batch-to-batch spread in the sd. The next registered step is a single pooled reference of at least 40 fresh runs, with the margin and gates fixed in advance, because the gates' power grows with n. It goes in the F-NET backlog. C099 must open a new family (rule of one in three).
+
+**Audit of C097 (this cycle).** On 40 fresh runs, C097's winner cell gives the same picture:
+- the blind means are 0.656/0.655 (C097: 0.652/0.656);
+- the surface stays in band;
+- the plant again lowers RHO (−0.044; C097: −0.035/−0.039).
+
+C097's descriptive "bracket" sentence holds. Its NOT TESTABLE verdict stands.
