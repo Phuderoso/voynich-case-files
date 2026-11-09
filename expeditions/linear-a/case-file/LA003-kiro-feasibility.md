@@ -56,8 +56,9 @@ so the best possible floor is 1/2! = 0.5 and the n ≥ 4 gate fails before any p
 
 **Line B · NOT TESTABLE with this source.** Navarre-AI's records for HT39 and HT122a cite `lineara` and `sigla`. In the
 whole corpus.json, the sign-level entries have the roles erasure, fraction, logogram, syllabogram and transaction.
-None of them is a numeral. The numerals (5 in HT39, 21 in HT122a) appear only in `unicode_text`, which is
-lineara.xyz's text, so this cross-check would compare lineara.xyz with itself. The SigLA word readings differ
+None of them is a numeral. The numerals (5 in HT39, 21 in HT122a) appear only in `unicode_text`. Navarre-AI's README (line 54 at `e4cb48b`) says that field is "transcribed from
+lineara.xyz, or built by us from the SigLA sign list", and the sign list has no numeral role. So the numerals are
+lineara.xyz's, and this cross-check would compare lineara.xyz with itself (clarified in the journal commit). The SigLA word readings differ
 from lineara.xyz in one word of HT122a (`pa-ri-ne` vs `PA-TA-NE`), which does not touch a number.
 Descriptive: in HT39 the KU-RO carries a different commodity (*414+A 100) from the entries (AROM 10, 8, 10). So it is
 probably not a sum of the lines above, and LA001's parser counts it as a failure only because it has no commodity check.
