@@ -3,7 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-Status: **pre-registration** (this file, `tools/pe012_header.py`, `tools/pe012_recount.py`, the label-free
+Status: **results added below** (pre-registration `fb257f0` + `b22a9d2`, pushed 12:13 PT before the observed test). Pre-registration text unchanged: (this file, `tools/pe012_header.py`, `tools/pe012_recount.py`, the label-free
 `analysis/pe012_inventory.json` and the rehearsal on destroyed/planted data `analysis/pe012_rehearsal*.json` are
 published before any observed header–label association is computed). Open line 5 of the expedition README, never
 tested. The expedition resumes after the Rongorongo camp paused (RR014, `2b3bb56`; see `../TRIAGE.md`).
@@ -86,5 +86,42 @@ Header key × label tables; the recount script's G and SSB must equal the tool's
 ## PE011 audit (this cycle)
 PE011's decision test (H1 OBJECT, 12/17 agree, p 0.148 with R 1 999, seed 1101) re-drawn with a **new seed 1205 and
 R 9 999**: n and agree must be identical and p must stay > 0.05.
+
+## Results (run 2026-11-09 12:14 PT, 11 s; `analysis/pe012_results.json`, `pe012_run.log` with the test, audit and recount outputs)
+**Gates** (re-run inside `test`, identical to the rehearsal v2): H1 FPR **0.075** ≤ 0.10 ✓, power **0.88** ≥ 0.80 ✓,
+234 tablets / 15 keys ✓ · H2 FPR **0.05** ✓, power **1.00** ✓, 493 / 25 ✓.
+
+| Id | n / keys | Observed | Null mean | Null 95 % | p (R 9 999) | Holm | Verdict |
+|---|---|---|---|---|---|---|---|
+| **H1 SYSTEM** | 234 / 15 | G **30.32** | 29.28 | 40.73 | **0.404** | 0.784 | **NOT DETECTED** |
+| **H2 SIZE** (beyond system) | 493 / 25 | SSB **15.93** | 15.07 | 22.02 | **0.392** | 0.784 | **NOT DETECTED** |
+
+**Independent recount** (`tools/pe012_recount.py`, own parser, literal tables, no imports from `tools/`): eligible 549,
+H1 234 / 15, H2 493 / 25, same marginals, **G 30.3161, SSB 15.9346 — identical** to the tool. ✓
+
+**What it means.** Taken as the first header sign (variant suffix dropped), the header carries **no detectable
+information** about whether the entries are grain (C) or counts (S/D/B), nor about their size order beyond the system,
+at a power that would catch a strong header rule (half the tablets following it: 0.88 / 1.00). A *moderate* rule (plant
+0.3: power 0.61 / 0.76 in rehearsal) is **not** ruled out. Not EXCLUDED; not a positive.
+
+**Descriptive (after the decision, no weight).** H1: M157 C 94 / I 28 / MIX 7 (129 tablets); M327 C 14 / I 10 / MIX 2;
+M136 C 13 / I 3 / MIX 1; M305 C 9 / I 5 / MIX 1; M387 C 7 / I 1 / MIX 1. The common headers carry both grain and count
+accounts in roughly the corpus mix (C 0.68). H2: M157 sizes 0/1/2/3 = 18/110/97/19; M327 4/24/22/17 (the most
+high-order key descriptively, but inside the null's range overall). Reading these tables, the obvious untested next
+move is a **finer key** (the full header, with variant suffixes); since the tables above are now seen, any such cycle
+must disclose that and be pre-registered with its own gates.
+
+## PE011 audit (`analysis/pe012_pe011_audit.json`)
+H1 OBJECT re-drawn with seed **1205**, R **9 999**: n 17, agree **12**, null mean 8.99, **p 0.1449** (published seed
+1101, R 1 999: 12/17, 9.0, p 0.148). Verdict NOT DETECTED unchanged ✓; the p moved by 0.003, inside Monte Carlo error
+(±0.008 at R 1 999).
+
+## Slip disclosed
+The two pre-registration commits were sent to the GitHub connector in one batch instead of strictly one after the
+other. Both landed in order (`fb257f0` then `b22a9d2`, verified byte-identical in a fresh clone) before the observed test
+ran; nothing was overwritten.
+
+**Verdict**: H1 **NOT DETECTED**, H2 **NOT DETECTED** (both powered for a strong header rule). No claim that the header
+sign predicts the system or size of the entries on this corpus.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

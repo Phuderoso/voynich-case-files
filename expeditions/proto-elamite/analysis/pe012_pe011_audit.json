@@ -1,0 +1,26 @@
+{
+ "PE011_H1_new_seed": 1205,
+ "R": 9999,
+ "n": 17,
+ "agree": 12,
+ "rate": 0.706,
+ "null_mean": 8.99,
+ "p": 0.1449,
+ "cp95_upper_rate": 0.8762290852304531,
+ "label_mix": {
+  "C": 9,
+  "I": 8
+ },
+ "prediction_mix": {
+  "C": 12,
+  "I": 5
+ },
+ "published": {
+  "n": 17,
+  "agree": 12,
+  "null_mean": 9.0,
+  "p": 0.148
+ },
+ "verdict_unchanged": true,
+ "runtime_s": 0.2
+}
