@@ -45,3 +45,5 @@ Both batches fail, so the manuscript test was **NOT RUN, LOW-POWER (NOT TESTABLE
 
 ---
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+**Audit note (C098, 2026-11-09).** Fresh blind batches of cell 37 (seeds 11579–11618) reproduce this case: means 0.656 / 0.655, surface in band, plant shift −0.044 (lowers RHO again). The descriptive "bracket" sentence holds, and the verdict here is unchanged. C098's equivalence test was itself NOT TESTABLE (see [C098](C098-edit-graph-tost.md)).
