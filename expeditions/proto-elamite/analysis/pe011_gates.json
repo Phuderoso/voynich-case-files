@@ -1,0 +1,20 @@
+{
+ "H1_OBJECT": {
+  "doubly_labelled": 17,
+  "FPR": 0.01,
+  "FPR_ok": true,
+  "power": 0.81,
+  "power_ok": true,
+  "size_ok": true
+ },
+ "params": {
+  "N_FPR": 100,
+  "R_IN": 299,
+  "SEED_FPR": 1102,
+  "N_POW": 100,
+  "SEED_POW": 1103,
+  "PLANT": 0.5,
+  "ALPHA_POW": 0.05
+ },
+ "runtime_s": 0.6
+}

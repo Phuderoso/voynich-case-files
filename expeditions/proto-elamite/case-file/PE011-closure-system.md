@@ -87,7 +87,39 @@ Re-run `pe010_per_line.py test` in a scratch copy with the published gates (all 
 re-count PE010's **T1 = 2/60** (reverse equals one readable entry on D1) with a literal C table and plain integer sums
 from the raw numeral parts, without the PE010 matching code.
 
-## Results
-*(to be filled in the results commit)*
+## Results (run 2026-11-08 22:35 PT, 7 s; `analysis/pe011_gates.json`, `pe011_results.json`, `pe011_run.log`)
+**Gates** (H1 OBJECT, 17 doubly-labelled tablets): FPR **0.01** ≤ 0.06 ✓ · power **0.81** ≥ 0.80 ✓ (barely) · size 17 ≥ 8 ✓.
+
+| Id | Doubly labelled | Agree | Null mean | p | CP95 upper rate | Verdict |
+|---|---|---|---|---|---|---|
+| **H1 OBJECT** | 17 (closure C 9 / I 8; object C 12 / I 5) | **12** (0.71) | 9.0 | **0.148** | 0.88 | **NOT DETECTED** |
+
+Not EXCLUDED: the CP95 upper bound 0.88 is above the 0.80 bar, so a reliable agreement is not ruled out either — the
+crate is simply too small (17 tablets) to tell 0.71 from the 0.53 the permutation gives.
+
+**Descriptive (no decision weight)**
+- *Closure yield*: of 46 ambiguous-entry tablets, closure gives a 2-way label on **19** (C 10, I 9); 27 get none
+  (22 close in no system, 4 in all four — N01-only lists —, 1 in C and an integer system together; the 9 I labels close in 2–3 integer systems at once).
+  A **single** system closes on 10, all C. Born et al. report 24 texts disambiguated by summaries (with manual
+  inspection and a wider filter: one *or two* reverse entries); our 19 automatic 2-way labels are the same order.
+- *By total notation*: unambiguous C totals close in C on 1/10 (9 none); unambiguous integer totals close in I on 4/8;
+  ambiguous totals give 9 C, 5 I, 14 none.
+- *Born-D sensitivity* (N23 = 60): H1 13/18, p 0.11 — same picture.
+- *H2 HEADER*: 2 doubly labelled, 0 agree (both closure I, header C) — nothing to read.
+- *Born's example P008014*: closes in C only on our tables too (it is outside the decision set because entry 10 is
+  3(N39B), unambiguous C), consistent with their §4.2.
+- *Reading sets over 6 519 intact numeral slots* (Born count numerals differently: 8 011): all four 4 312 (Born 5 389),
+  unambiguous 1 405 = C 1 330, D 61, S 7, B 7 (Born 1 919), none 153 (Born 57; we parse framed/variant signs and
+  count per slot, so the totals are not comparable one-to-one).
+- *Disagreements* (5): P008767, P008907, P009002, P009375 (closure I, object C) and P008806 (closure C, object I).
+  Four of five are integer closures on tablets whose object signs usually carry capacity numbers — either mixed
+  C/integer accounts (Born's Table 4 lists 32 such tablets) or coincidental closures; not resolved here.
+
+**PE010 audit** (`analysis/pe011_pe010_audit.json`): `pe010_per_line.py test` re-run in a scratch copy — identical
+except run time; T1 re-counted with a literal C table and plain integer sums from the raw numeral parts: **2/60**
+(P008419, P009000), same tablets as published. ✓
+
+**Verdict**: H1 **NOT DETECTED** (gates pass; 12/17 agree vs 9.0 by chance, p 0.148). No claim that sum closure and the
+counted object agree beyond chance on this corpus; also no claim that they disagree. Not a new positive.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

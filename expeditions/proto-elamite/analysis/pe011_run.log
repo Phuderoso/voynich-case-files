@@ -1,0 +1,224 @@
+H1_OBJECT {'doubly_labelled': 17, 'FPR': 0.01, 'FPR_ok': True, 'power': 0.81, 'power_ok': True, 'size_ok': True} 0.6
+{
+ "verdicts": {
+  "H1_OBJECT": "NOT DETECTED"
+ },
+ "results": {
+  "H1_OBJECT": {
+   "n": 17,
+   "agree": 12,
+   "rate": 0.706,
+   "null_mean": 9.0,
+   "p": 0.148,
+   "cp95_upper_rate": 0.8762290852304531,
+   "label_mix": {
+    "C": 9,
+    "I": 8
+   },
+   "prediction_mix": {
+    "C": 12,
+    "I": 5
+   },
+   "p_holm": 0.148
+  }
+ },
+ "descriptive": {
+  "H2_HEADER": {
+   "n": 2,
+   "agree": 0,
+   "rate": 0.0,
+   "null_mean": 0.0,
+   "p": 1.0,
+   "cp95_upper_rate": 0.7763932022500211,
+   "label_mix": {
+    "I": 2
+   },
+   "prediction_mix": {
+    "C": 2
+   }
+  },
+  "closure_yield_2way": {
+   "None": 27,
+   "C": 10,
+   "I": 9
+  },
+  "closure_systems_count": {
+   "0": 22,
+   "4": 4,
+   "1": 10,
+   "3": 8,
+   "2": 2
+  },
+  "unique_single_system": {
+   "C": 10
+  },
+  "closure_by_total_notation_class": {
+   "C": {
+    "C": 1,
+    "None": 9
+   },
+   "I": {
+    "None": 4,
+    "I": 4
+   },
+   "None": {
+    "None": 14,
+    "C": 9,
+    "I": 5
+   }
+  },
+  "numeral_reading_sets_ours": {
+   "B,C,D,S": 4312,
+   "C": 1330,
+   "B,D,S": 382,
+   "none": 153,
+   "C,S": 111,
+   "C,D": 69,
+   "D": 61,
+   "B,C,S": 56,
+   "B,D": 24,
+   "S": 7,
+   "B": 7,
+   "B,S": 4,
+   "n(...) count": 3
+  },
+  "born_table1_quoted": {
+   "intact": 8011,
+   "with_reading": 7954,
+   "unambiguous": 1919,
+   "all_four": 5389,
+   "none": 57
+  },
+  "born_D_sensitivity": {
+   "H1_OBJECT": {
+    "n": 18,
+    "agree": 13,
+    "p": 0.1095,
+    "label_mix": {
+     "C": 10,
+     "I": 8
+    }
+   },
+   "H2_HEADER": {
+    "n": 3,
+    "agree": 1,
+    "p": 1.0,
+    "label_mix": {
+     "I": 2,
+     "C": 1
+    }
+   }
+  },
+  "P008014": {
+   "closes_in": [
+    "C"
+   ],
+   "in_decision_set": false,
+   "entry_readings": [
+    [
+     "B",
+     "C",
+     "D",
+     "S"
+    ],
+    [
+     "B",
+     "C",
+     "D",
+     "S"
+    ],
+    [
+     "B",
+     "C",
+     "D",
+     "S"
+    ],
+    [
+     "B",
+     "C",
+     "D",
+     "S"
+    ],
+    [
+     "B",
+     "C",
+     "D",
+     "S"
+    ],
+    [
+     "B",
+     "C",
+     "D",
+     "S"
+    ],
+    [
+     "B",
+     "C",
+     "D",
+     "S"
+    ],
+    [
+     "B",
+     "C",
+     "D",
+     "S"
+    ],
+    [
+     "C"
+    ],
+    [
+     "B",
+     "C",
+     "D",
+     "S"
+    ]
+   ]
+  },
+  "disagreements": {
+   "H1_OBJECT": [
+    [
+     "P008767",
+     "I",
+     "C"
+    ],
+    [
+     "P008806",
+     "C",
+     "I"
+    ],
+    [
+     "P008907",
+     "I",
+     "C"
+    ],
+    [
+     "P009002",
+     "I",
+     "C"
+    ],
+    [
+     "P009375",
+     "I",
+     "C"
+    ]
+   ]
+  }
+ }
+}
+{
+ "pe010_results_identical_except_time": true,
+ "T1_recount": {
+  "matched": 2,
+  "of": 60,
+  "pids": [
+   "P008419",
+   "P009000"
+  ],
+  "published": "2/60",
+  "published_pids": [
+   "P008419",
+   "P009000"
+  ],
+  "match": true
+ }
+}
