@@ -3,7 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-Status: **PRE-REGISTRATION** (this file, `tools/pe014_ratio.py`, the label-free `analysis/pe014_inventory.json` and the
+Status: **results added below** (pre-registration `76f4b30`, pushed ~13:44 PT before the observed test). Pre-registration text unchanged: (this file, `tools/pe014_ratio.py`, the label-free `analysis/pe014_inventory.json` and the
 rehearsal on destroyed/planted data `analysis/pe014_rehearsal.json` are pushed before any observed ratio is computed).
 Open line **4** of the expedition README (ratio accounts; PE009 said they should be sought between paired notations, not
 between the reverse and the obverse sum).
@@ -87,5 +87,36 @@ The full set with the Born tablets put back; the RSET ratios that hit most often
 
 ## PE013 audit (this cycle)
 PE013 H3 REPEAT re-drawn with seed **1405**, R 9 999; must give M 3 / n 81 and p > 0.05 (published 0.4305, exact 0.4349).
+
+## Results (registered run 2026-11-09 13:45:04–13:46:25 PT, 81 s; `analysis/pe014_results.json`, `analysis/pe014_run.log`)
+Gates re-run identically to the rehearsal (H2 FPR 0.075, power 0.97 / 0.97; H2W FPR 0.05, power 0.88 / 0.89).
+
+| Test | pairs | T observed | null mean | null 95 % | p (R 9 999) | Holm | verdict |
+|---|---|---|---|---|---|---|---|
+| H1 in-line | 1 | — | — | — | — | — | **NOT TESTABLE** (dead on arrival, not run) |
+| H2 structure-preserving | 272 | 40 | 37.56 | 46 | 0.3432 | 0.3432 | **NOT DETECTED** |
+| H2W within-tablet | 272 | 40 | 34.28 | 40 | 0.0739 | 0.1478 | **NOT DETECTED** |
+
+**Reading.** 40 of the 272 informative adjacent pairs (14.7 %) stand in an exact small ratio, against 37.6 expected when
+digits of the same size, system and complexity are reshuffled across the corpus: no corpus-level excess. A ratio
+convention on ~10 % of informative pairs (the planted f 0.2 effect, caught 97 % of the time) is **EXCLUDED**; a weak one
+(~5 %, f 0.1, power 0.55) is not ruled out. The within-tablet control sits at the edge of its null (40 vs 34.3, 95 % point
+40, p 0.074, Holm 0.148): a weak ordering lead, not a result, and by the pre-registered rule no ratio-account claim is
+possible without H2. Ratio accounts as a general practice of the corpus are not shown; the published cases (Born's 2.5:1
+texts, P008212) stay what they are, local conventions on named tablets.
+
+## After the decision (descriptive, no weight; `tools/pe014_posthoc.py`, `analysis/pe014_posthoc.json`)
+- Born tablets put back: 273 pairs, T 41 — they add only one informative pair (their S entries are mostly single-sign or
+  their C entries are not adjacent-informative), so the exclusion did not change the picture.
+- Ratios among the hits: 2 (12), 3/4 and 3/2 (4 each), 1/2 (3), 5/2 (2), others 1–2 each.
+- Hits by tablet size (informative entries): 2 → 9/57, 3–5 → 15/94, 6+ → 16/121 — no concentration on long accounts.
+- Most hits on one tablet: P008844, P008908, P272825 (3 each). Leads only, for a reader with the photographs.
+
+## PE013 audit (`analysis/pe014_pe013_audit.json`)
+H3 REPEAT re-drawn with seed **1405**, R 9 999: n **81**, M **3** (identical), null mean 2.3385, **p 0.4385** (published
+0.4305 Monte Carlo, 0.4349 exact rook polynomial). Verdict NOT DETECTED unchanged ✓.
+
+**Verdict**: H1 **NOT TESTABLE**, H2 **NOT DETECTED** (a ~10 % ratio convention EXCLUDED at power 0.97), H2W **NOT DETECTED**
+(p 0.074, lead only). M009 → M157 confirmatory check NOT TESTABLE (no held-out tablets). No claim.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
