@@ -1,0 +1,123 @@
+{
+ "verdicts": {
+  "H1G": "NOT DETECTED",
+  "H1W": "NOT TESTABLE",
+  "H2G": "NOT TESTABLE",
+  "H2W": "NOT DETECTED"
+ },
+ "results": {
+  "H1G": {
+   "n": 183,
+   "stat": 33.1181,
+   "null_mean": 26.0981,
+   "null_q95": 37.3444,
+   "p": 0.133,
+   "p_holm": 0.266
+  },
+  "H1W": {
+   "status": "NOT RUN (gate failed)"
+  },
+  "H2G": {
+   "status": "NOT RUN (gate failed)"
+  },
+  "H2W": {
+   "n": 325,
+   "stat": 13.6741,
+   "null_mean": 12.7155,
+   "null_q95": 17.8137,
+   "p": 0.3356,
+   "p_holm": 0.3356
+  }
+ },
+ "gates": {
+  "H1G": {
+   "n": 183,
+   "fine_keys": 13,
+   "coarse_groups": 8,
+   "size_ok": true,
+   "FPR": 0.1,
+   "FPR_ok": true,
+   "power_batches": [
+    {
+     "seed": 1503,
+     "power": 0.83
+    },
+    {
+     "seed": 1504,
+     "power": 0.81
+    }
+   ],
+   "power": 0.81,
+   "power_ok": true,
+   "alpha_power": 0.0125,
+   "seconds": 4.0
+  },
+  "H1W": {
+   "n": 166,
+   "fine_keys": 9,
+   "coarse_groups": 4,
+   "size_ok": true,
+   "FPR": 0.05,
+   "FPR_ok": true,
+   "power_batches": [
+    {
+     "seed": 11503,
+     "power": 0.48
+    },
+    {
+     "seed": 11504,
+     "power": 0.51
+    }
+   ],
+   "power": 0.48,
+   "power_ok": false,
+   "alpha_power": 0.0125,
+   "seconds": 3.8
+  },
+  "H2G": {
+   "n": 405,
+   "fine_keys": 25,
+   "coarse_groups": 18,
+   "size_ok": true,
+   "FPR": 0.125,
+   "FPR_ok": false,
+   "power_batches": [
+    {
+     "seed": 21503,
+     "power": 1.0
+    },
+    {
+     "seed": 21504,
+     "power": 0.99
+    }
+   ],
+   "power": 0.99,
+   "power_ok": true,
+   "alpha_power": 0.0125,
+   "seconds": 7.5
+  },
+  "H2W": {
+   "n": 325,
+   "fine_keys": 11,
+   "coarse_groups": 4,
+   "size_ok": true,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_batches": [
+    {
+     "seed": 31503,
+     "power": 0.81
+    },
+    {
+     "seed": 31504,
+     "power": 0.8
+    }
+   ],
+   "power": 0.8,
+   "power_ok": true,
+   "alpha_power": 0.0125,
+   "seconds": 6.3
+  }
+ },
+ "runtime_s": 23.1
+}

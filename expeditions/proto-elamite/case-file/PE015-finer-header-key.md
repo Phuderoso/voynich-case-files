@@ -3,8 +3,8 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-Status: **pre-registration** (this file, `tools/pe015_finekey.py`, the label-free `analysis/pe015_inventory.json` and
-the rehearsal on destroyed/planted data `analysis/pe015_rehearsal.json` + `pe015_rehearsal_run.log` are pushed before
+Status: **results added below** (pre-registration `3deda62`, pushed 14:23 PT before the observed test; text unchanged except this status line). Pre-registration: (this file, `tools/pe015_finekey.py`, the label-free `analysis/pe015_inventory.json` and
+the rehearsal on destroyed/planted data `analysis/pe015_rehearsal.json` are pushed before
 any observed fine-key–label association is computed). Open line **5b** of the expedition README.
 
 ## Not blind — disclosed first
@@ -80,5 +80,41 @@ this corpus and **the camp pauses with its second closing summary** (as planned 
 ## PE014 audit (this cycle)
 PE014 H2 (272 adjacent informative pairs, T 40, p 0.3432 with seed 1401) re-drawn with **seed 1505, R 9 999**: pairs and
 T must be identical and p must stay > 0.05.
+
+## Results (registered run 2026-11-09 14:23:53–14:24:21 PT, 23 s; `analysis/pe015_results.json`, `pe015_run.log`)
+**Gates** re-run inside `test`, identical to the rehearsal (H1G 0.10 / 0.83 / 0.81, H1W power 0.48 / 0.51 ✗, H2G FPR
+0.125 ✗, H2W 0.00 / 0.81 / 0.80). Runnable: H1G, H2W; Holm over 2.
+
+| Id | n / fine keys | Observed | Null mean | Null 95 % | p (R 9 999) | Holm | Verdict |
+|---|---|---|---|---|---|---|---|
+| **H1G** SYSTEM | 183 / 13 | G **33.12** | 26.10 | 37.34 | **0.133** | 0.266 | **NOT DETECTED** |
+| H1W SYSTEM beyond coarse | 166 / 9 | — | — | — | — | — | **NOT TESTABLE** (power 0.48 / 0.51), not run |
+| H2G SIZE | 405 / 25 | — | — | — | — | — | **NOT TESTABLE** (FPR 0.125), not run |
+| **H2W** SIZE beyond coarse key and system | 325 / 11 | SSB **13.67** | 12.72 | 17.81 | **0.336** | 0.336 | **NOT DETECTED** |
+
+**What it means.** Keeping the variant suffixes and the whole complex grapheme does not make the header informative:
+the fine key predicts neither the entries' system (p 0.133) nor, inside its coarse key, their size order beyond the
+system (p 0.336), at a power that would catch a strong (plant 0.5) fine-key rule on both independent batches. A
+moderate rule is not ruled out, and whether the fine key adds *system* information beyond the coarse one (H1W) is not
+testable on this corpus. With PE012 (5a) and PE013 (5c) this closes line 5 within reach of the CDLI corpus.
+
+**Descriptive (after the decision, no weight; `analysis/pe015_posthoc.json`, `tools/pe015_posthoc.py`).** The split
+that motivated 5b does nothing: M157 C 68 / I 21 / MIX 5 (C 0.72) vs M157~a C 19 / I 7 / MIX 2 (C 0.68); sizes
+0/1/2/3 M157 12/76/68/17 vs M157~a 3/28/26/2. The small keys look sharper (M387 C 6/6, M136~q C 5/5, M005~a I 3 of 4),
+but each is ≤ 6 tablets and inside the null's spread; any of them would need its own pre-registered, held-out test.
+
+## PE014 audit (`analysis/pe015_pe014_audit.json`)
+H2 re-drawn with seed **1505**, R **9 999**: pairs **272**, T **40** (identical), null mean 37.48 (published 37.56),
+**p 0.3432** (published 0.3432 with seed 1401; the null means differ, so the equal p is a coincidence of two independent
+draws, inside Monte Carlo error ±0.005). Verdict NOT DETECTED unchanged ✓.
+
+## Disclosed
+- `pe015_rehearsal_run.log` was not pushed with the pre-registration (the connector takes ≤ 4 file references per call);
+  its gate lines are identical to `pe015_rehearsal.json` and to the first lines of `pe015_run.log`.
+- Local fast-forward after the pre-registration push: the four pushed files were checked byte-identical to `3deda62`.
+
+**Verdict**: H1G **NOT DETECTED**, H2W **NOT DETECTED**, H1W and H2G **NOT TESTABLE**. No claim that the full header
+line predicts the system or size of the entries. Line 5 closed within reach; **camp paused** (second closing summary in
+the expedition README).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

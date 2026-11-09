@@ -1,0 +1,16 @@
+{
+ "PE014_H2_new_seed": 1505,
+ "R": 9999,
+ "pairs": 272,
+ "T": 40,
+ "null_mean": 37.477,
+ "p": 0.3432,
+ "published": {
+  "pairs": 272,
+  "T": 40,
+  "null_mean": 37.562,
+  "p": 0.3432
+ },
+ "verdict_unchanged": true,
+ "runtime_s": 4.7
+}
