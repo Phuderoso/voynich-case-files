@@ -95,7 +95,7 @@ distinct values, 60.3 % ≥ 5, **26.2 % have 6**. So the readable class is about
 - **H1 DETECTED within F_prov** (calibrated: FPR 0/40): two K012 re-findings, one known lead, and **two pairs never named before by
   this expedition** (KH0132·KH0456, KH0446·KH0451). Per the pre-registration these are **leads needing a literature check, not claims.**
   Neither appears in the KFG "similar khipu" links (KH0132 → KH0366/KH0160; KH0456 → KH0485/KH0513; KH0446 → KH0387/KH0435;
-  KH0451 → KH0290/KH0676, checked 16:37 PT).
+  KH0451 → KH0290/KH0676, checked ~16:35 PT).
 - **Readable negative, scoped:** 6-cord copies with 6 distinct values are readable (power 0.96); for them the scan would have seen any
   copy at planted strength. Copies with ≤ 5 distinct values stay **NOT TESTABLE** (0.575 / 0.745).
 - The smaller family is what made these visible: neither new pair is among the six all-pairs K012 discoveries.
