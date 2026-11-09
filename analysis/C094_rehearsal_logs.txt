@@ -1,0 +1,204 @@
+===== C094_rehearsal_v1_log.txt
+gen_11484 74901 ref {'RHO': 0.5345, 'GIANT': 0.903, 'near_share': 0.9335, 'mean_deg': 7.764, 'tokens': 11427} plant {'RHO': 0.5288, 'GIANT': 0.9145, 'near_share': 0.951, 'mean_deg': 7.933, 'tokens': 7865}
+gen_11485 71543 ref {'RHO': 0.5629, 'GIANT': 0.9085, 'near_share': 0.9245, 'mean_deg': 6.448, 'tokens': 10278} plant {'RHO': 0.5567, 'GIANT': 0.929, 'near_share': 0.95, 'mean_deg': 6.722, 'tokens': 7608}
+gen_11486 73528 ref {'RHO': 0.6004, 'GIANT': 0.883, 'near_share': 0.9295, 'mean_deg': 7.598, 'tokens': 10542} plant {'RHO': 0.5629, 'GIANT': 0.9265, 'near_share': 0.952, 'mean_deg': 8.235, 'tokens': 7498}
+gen_11487 73521 ref {'RHO': 0.5484, 'GIANT': 0.862, 'near_share': 0.921, 'mean_deg': 7.256, 'tokens': 11965} plant {'RHO': 0.5289, 'GIANT': 0.9015, 'near_share': 0.947, 'mean_deg': 7.836, 'tokens': 8317}
+gen_11488 70824 ref {'RHO': 0.5743, 'GIANT': 0.916, 'near_share': 0.941, 'mean_deg': 7.268, 'tokens': 10417} plant {'RHO': 0.5361, 'GIANT': 0.9445, 'near_share': 0.9665, 'mean_deg': 7.476, 'tokens': 7506}
+gen_11489 70974 ref {'RHO': 0.565, 'GIANT': 0.903, 'near_share': 0.94, 'mean_deg': 6.706, 'tokens': 12112} plant {'RHO': 0.5261, 'GIANT': 0.9295, 'near_share': 0.9545, 'mean_deg': 7.169, 'tokens': 8182}
+gen_11490 71924 ref {'RHO': 0.5671, 'GIANT': 0.905, 'near_share': 0.932, 'mean_deg': 7.067, 'tokens': 9059} plant {'RHO': 0.5097, 'GIANT': 0.911, 'near_share': 0.9475, 'mean_deg': 7.282, 'tokens': 6745}
+gen_11491 72958 ref {'RHO': 0.5714, 'GIANT': 0.896, 'near_share': 0.9345, 'mean_deg': 7.01, 'tokens': 9980} plant {'RHO': 0.5367, 'GIANT': 0.9285, 'near_share': 0.9565, 'mean_deg': 7.385, 'tokens': 7295}
+gen_11492 70841 ref {'RHO': 0.5534, 'GIANT': 0.8935, 'near_share': 0.932, 'mean_deg': 6.408, 'tokens': 10789} plant {'RHO': 0.5058, 'GIANT': 0.911, 'near_share': 0.944, 'mean_deg': 6.825, 'tokens': 7500}
+gen_11493 71718 ref {'RHO': 0.5745, 'GIANT': 0.879, 'near_share': 0.925, 'mean_deg': 6.887, 'tokens': 9976} plant {'RHO': 0.5458, 'GIANT': 0.9065, 'near_share': 0.9455, 'mean_deg': 7.074, 'tokens': 6805}
+cerv_0 30000 ref {'RHO': 0.3379, 'GIANT': 0.192, 'near_share': 0.438, 'mean_deg': 1.121, 'tokens': 7352} plant {'RHO': 0.2567, 'GIANT': 0.4125, 'near_share': 0.7865, 'mean_deg': 3.793, 'tokens': 4965}
+cerv_1 30000 ref {'RHO': 0.3698, 'GIANT': 0.175, 'near_share': 0.475, 'mean_deg': 1.033, 'tokens': 7469} plant {'RHO': 0.273, 'GIANT': 0.442, 'near_share': 0.771, 'mean_deg': 3.366, 'tokens': 4680}
+cerv_2 30000 ref {'RHO': 0.3718, 'GIANT': 0.205, 'near_share': 0.499, 'mean_deg': 1.155, 'tokens': 8614} plant {'RHO': 0.3014, 'GIANT': 0.454, 'near_share': 0.8065, 'mean_deg': 3.915, 'tokens': 4825}
+cerv_3 30000 ref {'RHO': 0.3794, 'GIANT': 0.1505, 'near_share': 0.5025, 'mean_deg': 1.027, 'tokens': 8579} plant {'RHO': 0.316, 'GIANT': 0.391, 'near_share': 0.778, 'mean_deg': 3.529, 'tokens': 4730}
+cerv_4 30000 ref {'RHO': 0.3228, 'GIANT': 0.1945, 'near_share': 0.5095, 'mean_deg': 1.181, 'tokens': 8945} plant {'RHO': 0.2847, 'GIANT': 0.437, 'near_share': 0.7885, 'mean_deg': 3.634, 'tokens': 5044}
+cerv_5 30000 ref {'RHO': 0.3705, 'GIANT': 0.1965, 'near_share': 0.4905, 'mean_deg': 1.075, 'tokens': 8638} plant {'RHO': 0.2649, 'GIANT': 0.404, 'near_share': 0.7895, 'mean_deg': 3.627, 'tokens': 4707}
+cerv_6 30000 ref {'RHO': 0.3561, 'GIANT': 0.2155, 'near_share': 0.467, 'mean_deg': 1.051, 'tokens': 7311} plant {'RHO': 0.2955, 'GIANT': 0.443, 'near_share': 0.7555, 'mean_deg': 3.358, 'tokens': 4385}
+cerv_7 30000 ref {'RHO': 0.3491, 'GIANT': 0.211, 'near_share': 0.5005, 'mean_deg': 1.214, 'tokens': 7699} plant {'RHO': 0.2665, 'GIANT': 0.4385, 'near_share': 0.7595, 'mean_deg': 3.77, 'tokens': 4657}
+cerv_8 30000 ref {'RHO': 0.336, 'GIANT': 0.166, 'near_share': 0.461, 'mean_deg': 0.982, 'tokens': 7112} plant {'RHO': 0.2842, 'GIANT': 0.3795, 'near_share': 0.741, 'mean_deg': 3.467, 'tokens': 4554}
+cerv_9 30000 ref {'RHO': 0.3611, 'GIANT': 0.1865, 'near_share': 0.5065, 'mean_deg': 1.077, 'tokens': 8836} plant {'RHO': 0.2718, 'GIANT': 0.445, 'near_share': 0.809, 'mean_deg': 3.698, 'tokens': 4948}
+generator {'reached': '10/10', 'FPR': '1/10', 'POW': '3/10', 'MDE80': 0.0576, 'plant_shift': -0.0314, 'shift_over_MDE': -0.5457, 'lead': 0.054, 'lead_over_MDE': 0.9373, 'mean': 0.5652, 'sd': 0.0177, 'lo': 0.5345, 'hi': 0.6004, 'ok': False, 'why': 'G2'}
+cervantes {'reached': '10/10', 'FPR': '0/10', 'POW': '9/10', 'MDE80': 0.0604, 'plant_shift': -0.074, 'shift_over_MDE': -1.2245, 'lead': 0.054, 'lead_over_MDE': 0.8939, 'mean': 0.3554, 'sd': 0.0186, 'lo': 0.3228, 'hi': 0.3794, 'ok': False, 'why': 'DOA'}
+elapsed 11.5
+===== C094_rehearsal_v2_log.txt
+gen_11484 2000 74901 ref {'RHO': 0.5345, 'GIANT': 0.903, 'near_share': 0.9335, 'mean_deg': 7.764, 'tokens': 11427} plant {'RHO': 0.5288, 'GIANT': 0.9145, 'near_share': 0.951, 'mean_deg': 7.933, 'tokens': 7865}
+gen_11484 3000 74901 ref {'RHO': 0.5956, 'GIANT': 0.9243, 'near_share': 0.9423, 'mean_deg': 8.308, 'tokens': 19217} plant {'RHO': 0.5492, 'GIANT': 0.9367, 'near_share': 0.9613, 'mean_deg': 8.7713, 'tokens': 13771}
+gen_11484 4000 74901 ref {'RHO': 0.597, 'GIANT': 0.9247, 'near_share': 0.9445, 'mean_deg': 8.6605, 'tokens': 28825} plant {'RHO': 0.5635, 'GIANT': 0.9437, 'near_share': 0.9637, 'mean_deg': 9.3565, 'tokens': 19225}
+gen_11485 2000 71543 ref {'RHO': 0.5629, 'GIANT': 0.9085, 'near_share': 0.9245, 'mean_deg': 6.448, 'tokens': 10278} plant {'RHO': 0.5567, 'GIANT': 0.929, 'near_share': 0.95, 'mean_deg': 6.722, 'tokens': 7608}
+gen_11485 3000 71543 ref {'RHO': 0.5581, 'GIANT': 0.9173, 'near_share': 0.9343, 'mean_deg': 7.4193, 'tokens': 16880} plant {'RHO': 0.5478, 'GIANT': 0.9357, 'near_share': 0.955, 'mean_deg': 7.7293, 'tokens': 12252}
+gen_11485 4000 71543 ref {'RHO': 0.5686, 'GIANT': 0.925, 'near_share': 0.9427, 'mean_deg': 8.1205, 'tokens': 25903} plant {'RHO': 0.5511, 'GIANT': 0.9415, 'near_share': 0.9547, 'mean_deg': 8.3345, 'tokens': 17400}
+gen_11486 2000 73528 ref {'RHO': 0.6004, 'GIANT': 0.883, 'near_share': 0.9295, 'mean_deg': 7.598, 'tokens': 10542} plant {'RHO': 0.5629, 'GIANT': 0.9265, 'near_share': 0.952, 'mean_deg': 8.235, 'tokens': 7498}
+gen_11486 3000 73528 ref {'RHO': 0.587, 'GIANT': 0.8993, 'near_share': 0.9337, 'mean_deg': 8.0467, 'tokens': 18605} plant {'RHO': 0.566, 'GIANT': 0.9207, 'near_share': 0.9517, 'mean_deg': 8.6033, 'tokens': 12643}
+gen_11486 4000 73528 ref {'RHO': 0.5836, 'GIANT': 0.9105, 'near_share': 0.9423, 'mean_deg': 8.4045, 'tokens': 29411} plant {'RHO': 0.5571, 'GIANT': 0.9287, 'near_share': 0.9553, 'mean_deg': 9.1905, 'tokens': 18712}
+gen_11487 2000 73521 ref {'RHO': 0.5484, 'GIANT': 0.862, 'near_share': 0.921, 'mean_deg': 7.256, 'tokens': 11965} plant {'RHO': 0.5289, 'GIANT': 0.9015, 'near_share': 0.947, 'mean_deg': 7.836, 'tokens': 8317}
+gen_11487 3000 73521 ref {'RHO': 0.5739, 'GIANT': 0.8893, 'near_share': 0.9297, 'mean_deg': 7.6487, 'tokens': 19798} plant {'RHO': 0.5189, 'GIANT': 0.906, 'near_share': 0.9507, 'mean_deg': 8.51, 'tokens': 13657}
+gen_11487 4000 73521 ref {'RHO': 0.5899, 'GIANT': 0.9087, 'near_share': 0.94, 'mean_deg': 8.159, 'tokens': 30442} plant {'RHO': 0.5304, 'GIANT': 0.915, 'near_share': 0.9497, 'mean_deg': 8.813, 'tokens': 19270}
+gen_11488 2000 70824 ref {'RHO': 0.5743, 'GIANT': 0.916, 'near_share': 0.941, 'mean_deg': 7.268, 'tokens': 10417} plant {'RHO': 0.5361, 'GIANT': 0.9445, 'near_share': 0.9665, 'mean_deg': 7.476, 'tokens': 7506}
+gen_11488 3000 70824 ref {'RHO': 0.5958, 'GIANT': 0.9233, 'near_share': 0.9517, 'mean_deg': 8.0233, 'tokens': 17836} plant {'RHO': 0.5571, 'GIANT': 0.9387, 'near_share': 0.968, 'mean_deg': 8.23, 'tokens': 12556}
+gen_11488 4000 70824 ref {'RHO': 0.6007, 'GIANT': 0.9283, 'near_share': 0.9543, 'mean_deg': 8.5615, 'tokens': 29684} plant {'RHO': 0.5582, 'GIANT': 0.943, 'near_share': 0.9705, 'mean_deg': 9.011, 'tokens': 18328}
+gen_11489 2000 70974 ref {'RHO': 0.565, 'GIANT': 0.903, 'near_share': 0.94, 'mean_deg': 6.706, 'tokens': 12112} plant {'RHO': 0.5261, 'GIANT': 0.9295, 'near_share': 0.9545, 'mean_deg': 7.169, 'tokens': 8182}
+gen_11489 3000 70974 ref {'RHO': 0.5682, 'GIANT': 0.92, 'near_share': 0.9467, 'mean_deg': 7.7213, 'tokens': 22534} plant {'RHO': 0.5287, 'GIANT': 0.939, 'near_share': 0.9637, 'mean_deg': 8.098, 'tokens': 13725}
+gen_11489 4000 70974 ref {'RHO': 0.5579, 'GIANT': 0.9247, 'near_share': 0.9495, 'mean_deg': 8.2035, 'tokens': 33029} plant {'RHO': 0.5428, 'GIANT': 0.9465, 'near_share': 0.9688, 'mean_deg': 8.823, 'tokens': 20612}
+gen_11490 2000 71924 ref {'RHO': 0.5671, 'GIANT': 0.905, 'near_share': 0.932, 'mean_deg': 7.067, 'tokens': 9059} plant {'RHO': 0.5097, 'GIANT': 0.911, 'near_share': 0.9475, 'mean_deg': 7.282, 'tokens': 6745}
+gen_11490 3000 71924 ref {'RHO': 0.5583, 'GIANT': 0.9093, 'near_share': 0.937, 'mean_deg': 7.7453, 'tokens': 16467} plant {'RHO': 0.5333, 'GIANT': 0.9203, 'near_share': 0.9547, 'mean_deg': 8.3593, 'tokens': 12048}
+gen_11490 4000 71924 ref {'RHO': 0.5752, 'GIANT': 0.9225, 'near_share': 0.946, 'mean_deg': 8.2955, 'tokens': 25836} plant {'RHO': 0.5401, 'GIANT': 0.9305, 'near_share': 0.96, 'mean_deg': 8.7545, 'tokens': 17423}
+gen_11491 2000 72958 ref {'RHO': 0.5714, 'GIANT': 0.896, 'near_share': 0.9345, 'mean_deg': 7.01, 'tokens': 9980} plant {'RHO': 0.5367, 'GIANT': 0.9285, 'near_share': 0.9565, 'mean_deg': 7.385, 'tokens': 7295}
+gen_11491 3000 72958 ref {'RHO': 0.5761, 'GIANT': 0.9083, 'near_share': 0.9363, 'mean_deg': 8.032, 'tokens': 18088} plant {'RHO': 0.5348, 'GIANT': 0.9387, 'near_share': 0.9647, 'mean_deg': 8.3533, 'tokens': 12158}
+gen_11491 4000 72958 ref {'RHO': 0.5874, 'GIANT': 0.9217, 'near_share': 0.9443, 'mean_deg': 8.51, 'tokens': 26433} plant {'RHO': 0.5473, 'GIANT': 0.9405, 'near_share': 0.9627, 'mean_deg': 9.0115, 'tokens': 18160}
+gen_11492 2000 70841 ref {'RHO': 0.5534, 'GIANT': 0.8935, 'near_share': 0.932, 'mean_deg': 6.408, 'tokens': 10789} plant {'RHO': 0.5058, 'GIANT': 0.911, 'near_share': 0.944, 'mean_deg': 6.825, 'tokens': 7500}
+gen_11492 3000 70841 ref {'RHO': 0.5761, 'GIANT': 0.919, 'near_share': 0.9413, 'mean_deg': 7.3613, 'tokens': 18729} plant {'RHO': 0.5355, 'GIANT': 0.93, 'near_share': 0.9553, 'mean_deg': 7.6067, 'tokens': 12924}
+gen_11492 4000 70841 ref {'RHO': 0.5738, 'GIANT': 0.9233, 'near_share': 0.9445, 'mean_deg': 7.9895, 'tokens': 28797} plant {'RHO': 0.5455, 'GIANT': 0.9373, 'near_share': 0.961, 'mean_deg': 8.353, 'tokens': 18538}
+gen_11493 2000 71718 ref {'RHO': 0.5745, 'GIANT': 0.879, 'near_share': 0.925, 'mean_deg': 6.887, 'tokens': 9976} plant {'RHO': 0.5458, 'GIANT': 0.9065, 'near_share': 0.9455, 'mean_deg': 7.074, 'tokens': 6805}
+gen_11493 3000 71718 ref {'RHO': 0.5791, 'GIANT': 0.9043, 'near_share': 0.9347, 'mean_deg': 7.562, 'tokens': 17794} plant {'RHO': 0.5697, 'GIANT': 0.9153, 'near_share': 0.9487, 'mean_deg': 7.964, 'tokens': 12572}
+gen_11493 4000 71718 ref {'RHO': 0.5956, 'GIANT': 0.9217, 'near_share': 0.947, 'mean_deg': 8.0765, 'tokens': 27236} plant {'RHO': 0.565, 'GIANT': 0.9293, 'near_share': 0.9537, 'mean_deg': 8.4705, 'tokens': 18093}
+cerv_0 2000 38000 ref {'RHO': 0.3379, 'GIANT': 0.192, 'near_share': 0.438, 'mean_deg': 1.121, 'tokens': 7352} plant {'RHO': 0.2578, 'GIANT': 0.4115, 'near_share': 0.7865, 'mean_deg': 3.796, 'tokens': 4965}
+cerv_0 3000 38000 ref {'RHO': 0.3379, 'GIANT': 0.2193, 'near_share': 0.4773, 'mean_deg': 1.1833, 'tokens': 12730} plant {'RHO': 0.2872, 'GIANT': 0.445, 'near_share': 0.7793, 'mean_deg': 3.8973, 'tokens': 7557}
+cerv_0 4000 38000 ref {'RHO': 0.3291, 'GIANT': 0.2515, 'near_share': 0.5068, 'mean_deg': 1.319, 'tokens': 20490} plant {'RHO': 0.286, 'GIANT': 0.4605, 'near_share': 0.7915, 'mean_deg': 4.0375, 'tokens': 10539}
+cerv_1 2000 38000 ref {'RHO': 0.3586, 'GIANT': 0.211, 'near_share': 0.4935, 'mean_deg': 1.112, 'tokens': 7778} plant {'RHO': 0.3182, 'GIANT': 0.4235, 'near_share': 0.773, 'mean_deg': 3.713, 'tokens': 4692}
+cerv_1 3000 38000 ref {'RHO': 0.3665, 'GIANT': 0.235, 'near_share': 0.5083, 'mean_deg': 1.2093, 'tokens': 14008} plant {'RHO': 0.2909, 'GIANT': 0.457, 'near_share': 0.7973, 'mean_deg': 4.0827, 'tokens': 7786}
+cerv_1 4000 38000 ref {'RHO': 0.3733, 'GIANT': 0.259, 'near_share': 0.5325, 'mean_deg': 1.34, 'tokens': 22323} plant {'RHO': 0.2835, 'GIANT': 0.4868, 'near_share': 0.8057, 'mean_deg': 4.551, 'tokens': 11486}
+cerv_2 2000 38000 ref {'RHO': 0.3569, 'GIANT': 0.241, 'near_share': 0.503, 'mean_deg': 1.219, 'tokens': 8492} plant {'RHO': 0.2686, 'GIANT': 0.442, 'near_share': 0.78, 'mean_deg': 3.972, 'tokens': 4706}
+cerv_2 3000 38000 ref {'RHO': 0.3526, 'GIANT': 0.2457, 'near_share': 0.5317, 'mean_deg': 1.274, 'tokens': 14850} plant {'RHO': 0.2741, 'GIANT': 0.5077, 'near_share': 0.808, 'mean_deg': 4.5027, 'tokens': 8118}
+cerv_2 4000 38000 ref {'RHO': 0.3735, 'GIANT': 0.2557, 'near_share': 0.557, 'mean_deg': 1.3245, 'tokens': 23948} plant {'RHO': 0.2939, 'GIANT': 0.5148, 'near_share': 0.828, 'mean_deg': 4.723, 'tokens': 11428}
+cerv_3 2000 38000 ref {'RHO': 0.3253, 'GIANT': 0.1845, 'near_share': 0.5015, 'mean_deg': 1.159, 'tokens': 8759} plant {'RHO': 0.2818, 'GIANT': 0.4105, 'near_share': 0.7915, 'mean_deg': 3.428, 'tokens': 4876}
+cerv_3 3000 38000 ref {'RHO': 0.3316, 'GIANT': 0.231, 'near_share': 0.5447, 'mean_deg': 1.29, 'tokens': 16567} plant {'RHO': 0.285, 'GIANT': 0.4737, 'near_share': 0.82, 'mean_deg': 4.026, 'tokens': 8061}
+cerv_3 4000 38000 ref {'RHO': 0.3469, 'GIANT': 0.2427, 'near_share': 0.5635, 'mean_deg': 1.369, 'tokens': 25002} plant {'RHO': 0.2778, 'GIANT': 0.51, 'near_share': 0.8335, 'mean_deg': 4.5, 'tokens': 11755}
+cerv_4 2000 38000 ref {'RHO': 0.3801, 'GIANT': 0.1885, 'near_share': 0.4855, 'mean_deg': 1.06, 'tokens': 8376} plant {'RHO': 0.2921, 'GIANT': 0.422, 'near_share': 0.773, 'mean_deg': 3.547, 'tokens': 5014}
+cerv_4 3000 38000 ref {'RHO': 0.3759, 'GIANT': 0.2387, 'near_share': 0.515, 'mean_deg': 1.1773, 'tokens': 16141} plant {'RHO': 0.3094, 'GIANT': 0.4443, 'near_share': 0.7953, 'mean_deg': 3.958, 'tokens': 8111}
+cerv_4 4000 38000 ref {'RHO': 0.373, 'GIANT': 0.2375, 'near_share': 0.5335, 'mean_deg': 1.232, 'tokens': 22954} plant {'RHO': 0.2991, 'GIANT': 0.4875, 'near_share': 0.8213, 'mean_deg': 4.4245, 'tokens': 11801}
+cerv_5 2000 38000 ref {'RHO': 0.381, 'GIANT': 0.199, 'near_share': 0.4685, 'mean_deg': 1.054, 'tokens': 7464} plant {'RHO': 0.3166, 'GIANT': 0.431, 'near_share': 0.765, 'mean_deg': 3.798, 'tokens': 4575}
+cerv_5 3000 38000 ref {'RHO': 0.3799, 'GIANT': 0.221, 'near_share': 0.5033, 'mean_deg': 1.1813, 'tokens': 13582} plant {'RHO': 0.3223, 'GIANT': 0.4653, 'near_share': 0.7853, 'mean_deg': 4.1947, 'tokens': 7542}
+cerv_5 4000 38000 ref {'RHO': 0.3896, 'GIANT': 0.2387, 'near_share': 0.5308, 'mean_deg': 1.3015, 'tokens': 20845} plant {'RHO': 0.3339, 'GIANT': 0.4675, 'near_share': 0.7965, 'mean_deg': 4.418, 'tokens': 10972}
+cerv_6 2000 38000 ref {'RHO': 0.3443, 'GIANT': 0.1905, 'near_share': 0.4675, 'mean_deg': 1.064, 'tokens': 8206} plant {'RHO': 0.2769, 'GIANT': 0.426, 'near_share': 0.7705, 'mean_deg': 3.736, 'tokens': 4755}
+cerv_6 3000 38000 ref {'RHO': 0.3381, 'GIANT': 0.2023, 'near_share': 0.4957, 'mean_deg': 1.118, 'tokens': 14211} plant {'RHO': 0.2947, 'GIANT': 0.447, 'near_share': 0.7927, 'mean_deg': 4.1373, 'tokens': 7967}
+cerv_6 4000 38000 ref {'RHO': 0.3457, 'GIANT': 0.233, 'near_share': 0.523, 'mean_deg': 1.199, 'tokens': 20585} plant {'RHO': 0.3068, 'GIANT': 0.475, 'near_share': 0.803, 'mean_deg': 4.3185, 'tokens': 11465}
+cerv_7 2000 38000 ref {'RHO': 0.3685, 'GIANT': 0.216, 'near_share': 0.492, 'mean_deg': 1.153, 'tokens': 8111} plant {'RHO': 0.2882, 'GIANT': 0.46, 'near_share': 0.773, 'mean_deg': 3.851, 'tokens': 4686}
+cerv_7 3000 38000 ref {'RHO': 0.3514, 'GIANT': 0.2383, 'near_share': 0.5363, 'mean_deg': 1.2493, 'tokens': 14720} plant {'RHO': 0.3082, 'GIANT': 0.4773, 'near_share': 0.7987, 'mean_deg': 4.0453, 'tokens': 7821}
+cerv_7 4000 38000 ref {'RHO': 0.3633, 'GIANT': 0.2635, 'near_share': 0.542, 'mean_deg': 1.3115, 'tokens': 21950} plant {'RHO': 0.3072, 'GIANT': 0.4898, 'near_share': 0.814, 'mean_deg': 4.34, 'tokens': 11273}
+cerv_8 2000 38000 ref {'RHO': 0.333, 'GIANT': 0.1965, 'near_share': 0.466, 'mean_deg': 1.049, 'tokens': 7553} plant {'RHO': 0.292, 'GIANT': 0.395, 'near_share': 0.7615, 'mean_deg': 3.469, 'tokens': 4706}
+cerv_8 3000 38000 ref {'RHO': 0.3347, 'GIANT': 0.2223, 'near_share': 0.508, 'mean_deg': 1.1887, 'tokens': 13736} plant {'RHO': 0.2908, 'GIANT': 0.457, 'near_share': 0.796, 'mean_deg': 3.9673, 'tokens': 7692}
+cerv_8 4000 38000 ref {'RHO': 0.3539, 'GIANT': 0.265, 'near_share': 0.5413, 'mean_deg': 1.3515, 'tokens': 22112} plant {'RHO': 0.2888, 'GIANT': 0.4925, 'near_share': 0.8157, 'mean_deg': 4.3905, 'tokens': 10916}
+cerv_9 2000 38000 ref {'RHO': 0.3788, 'GIANT': 0.1845, 'near_share': 0.4665, 'mean_deg': 1.009, 'tokens': 7462} plant {'RHO': 0.2821, 'GIANT': 0.3785, 'near_share': 0.762, 'mean_deg': 3.555, 'tokens': 4405}
+cerv_9 3000 38000 ref {'RHO': 0.3483, 'GIANT': 0.2087, 'near_share': 0.492, 'mean_deg': 1.0947, 'tokens': 13385} plant {'RHO': 0.2874, 'GIANT': 0.4173, 'near_share': 0.7897, 'mean_deg': 3.8793, 'tokens': 7454}
+cerv_9 4000 38000 ref {'RHO': 0.3511, 'GIANT': 0.2198, 'near_share': 0.5232, 'mean_deg': 1.1995, 'tokens': 21447} plant {'RHO': 0.2712, 'GIANT': 0.4313, 'near_share': 0.805, 'mean_deg': 4.146, 'tokens': 10668}
+gen_K2000 {'reached': '10/10', 'FPR': '1/10', 'POW': '3/10', 'MDE80': 0.0576, 'plant_shift': -0.0314, 'shift_over_MDE': -0.5457, 'lead': 0.054, 'lead_over_MDE': 0.9373, 'mean': 0.5652, 'sd': 0.0177, 'lo': 0.5345, 'hi': 0.6004, 'ok': False, 'why': 'G2'}
+gen_K3000 {'reached': '10/10', 'FPR': '0/10', 'POW': '6/10', 'MDE80': 0.0434, 'plant_shift': -0.0327, 'shift_over_MDE': -0.7539, 'lead': 0.054, 'lead_over_MDE': 1.2449, 'mean': 0.5768, 'sd': 0.0133, 'lo': 0.5581, 'hi': 0.5958, 'ok': False, 'why': 'G2'}
+gen_K4000 {'reached': '10/10', 'FPR': '1/10', 'POW': '5/10', 'MDE80': 0.045, 'plant_shift': -0.0329, 'shift_over_MDE': -0.7303, 'lead': 0.054, 'lead_over_MDE': 1.1993, 'mean': 0.583, 'sd': 0.0138, 'lo': 0.5579, 'hi': 0.6007, 'ok': False, 'why': 'G2'}
+cerv_K2000 {'reached': '10/10', 'FPR': '0/10', 'POW': '8/10', 'MDE80': 0.0671, 'plant_shift': -0.069, 'shift_over_MDE': -1.0286, 'lead': 0.054, 'lead_over_MDE': 0.8049, 'mean': 0.3564, 'sd': 0.0206, 'lo': 0.3253, 'hi': 0.381, 'ok': False, 'why': 'G2'}
+cerv_K3000 {'reached': '10/10', 'FPR': '0/10', 'POW': '8/10', 'MDE80': 0.0562, 'plant_shift': -0.0567, 'shift_over_MDE': -1.0085, 'lead': 0.054, 'lead_over_MDE': 0.9606, 'mean': 0.3517, 'sd': 0.0173, 'lo': 0.3316, 'hi': 0.3799, 'ok': False, 'why': 'G2'}
+cerv_K4000 {'reached': '10/10', 'FPR': '0/10', 'POW': '9/10', 'MDE80': 0.058, 'plant_shift': -0.0651, 'shift_over_MDE': -1.1222, 'lead': 0.054, 'lead_over_MDE': 0.9307, 'mean': 0.3599, 'sd': 0.0178, 'lo': 0.3291, 'hi': 0.3896, 'ok': False, 'why': 'DOA'}
+elapsed 10.3
+===== C094_rehearsal_log.txt
+gen_11474 2000 71985 ref {'RHO': 0.5499, 'GIANT': 0.879, 'near_share': 0.9305, 'mean_deg': 6.943, 'tokens': 11166} plant {'RHO': 0.5072, 'GIANT': 0.911, 'near_share': 0.957, 'mean_deg': 7.31, 'tokens': 7803}
+gen_11474 3000 71985 ref {'RHO': 0.5889, 'GIANT': 0.9127, 'near_share': 0.9437, 'mean_deg': 7.7927, 'tokens': 19950} plant {'RHO': 0.5232, 'GIANT': 0.928, 'near_share': 0.9533, 'mean_deg': 8.2153, 'tokens': 13397}
+gen_11474 4000 71985 ref {'RHO': 0.5862, 'GIANT': 0.9333, 'near_share': 0.9523, 'mean_deg': 8.3, 'tokens': 31170} plant {'RHO': 0.5396, 'GIANT': 0.9357, 'near_share': 0.96, 'mean_deg': 8.9, 'tokens': 19140}
+gen_11475 2000 71899 ref {'RHO': 0.5425, 'GIANT': 0.8925, 'near_share': 0.931, 'mean_deg': 7.356, 'tokens': 9658} plant {'RHO': 0.5247, 'GIANT': 0.9235, 'near_share': 0.952, 'mean_deg': 7.634, 'tokens': 7190}
+gen_11475 3000 71899 ref {'RHO': 0.5673, 'GIANT': 0.9103, 'near_share': 0.9337, 'mean_deg': 7.9573, 'tokens': 17028} plant {'RHO': 0.5354, 'GIANT': 0.9263, 'near_share': 0.9543, 'mean_deg': 8.3867, 'tokens': 11691}
+gen_11475 4000 71899 ref {'RHO': 0.587, 'GIANT': 0.9237, 'near_share': 0.942, 'mean_deg': 8.4005, 'tokens': 25938} plant {'RHO': 0.5434, 'GIANT': 0.9367, 'near_share': 0.9557, 'mean_deg': 9.001, 'tokens': 17179}
+gen_11476 2000 72944 ref {'RHO': 0.5543, 'GIANT': 0.893, 'near_share': 0.931, 'mean_deg': 7.548, 'tokens': 11049} plant {'RHO': 0.532, 'GIANT': 0.9355, 'near_share': 0.962, 'mean_deg': 7.931, 'tokens': 8047}
+gen_11476 3000 72944 ref {'RHO': 0.5839, 'GIANT': 0.9197, 'near_share': 0.9413, 'mean_deg': 8.0267, 'tokens': 19642} plant {'RHO': 0.5297, 'GIANT': 0.9307, 'near_share': 0.9573, 'mean_deg': 8.6353, 'tokens': 13133}
+gen_11476 4000 72944 ref {'RHO': 0.5985, 'GIANT': 0.9195, 'near_share': 0.9483, 'mean_deg': 8.364, 'tokens': 30400} plant {'RHO': 0.5387, 'GIANT': 0.9375, 'near_share': 0.965, 'mean_deg': 9.1715, 'tokens': 19103}
+gen_11477 2000 71581 ref {'RHO': 0.5871, 'GIANT': 0.9115, 'near_share': 0.9395, 'mean_deg': 7.583, 'tokens': 9468} plant {'RHO': 0.5757, 'GIANT': 0.9215, 'near_share': 0.9615, 'mean_deg': 7.78, 'tokens': 6848}
+gen_11477 3000 71581 ref {'RHO': 0.5827, 'GIANT': 0.9237, 'near_share': 0.9437, 'mean_deg': 8.2947, 'tokens': 18163} plant {'RHO': 0.5815, 'GIANT': 0.9263, 'near_share': 0.9613, 'mean_deg': 8.584, 'tokens': 12047}
+gen_11477 4000 71581 ref {'RHO': 0.5866, 'GIANT': 0.921, 'near_share': 0.9423, 'mean_deg': 8.602, 'tokens': 26316} plant {'RHO': 0.5743, 'GIANT': 0.9387, 'near_share': 0.964, 'mean_deg': 9.168, 'tokens': 18335}
+gen_11478 2000 72286 ref {'RHO': 0.5867, 'GIANT': 0.884, 'near_share': 0.928, 'mean_deg': 6.625, 'tokens': 9534} plant {'RHO': 0.5346, 'GIANT': 0.9125, 'near_share': 0.953, 'mean_deg': 7.206, 'tokens': 7153}
+gen_11478 3000 72286 ref {'RHO': 0.5835, 'GIANT': 0.901, 'near_share': 0.9383, 'mean_deg': 7.3973, 'tokens': 17622} plant {'RHO': 0.5389, 'GIANT': 0.91, 'near_share': 0.9547, 'mean_deg': 7.762, 'tokens': 12080}
+gen_11478 4000 72286 ref {'RHO': 0.586, 'GIANT': 0.9273, 'near_share': 0.9487, 'mean_deg': 8.062, 'tokens': 26138} plant {'RHO': 0.5414, 'GIANT': 0.9333, 'near_share': 0.9615, 'mean_deg': 8.419, 'tokens': 17860}
+gen_11479 2000 72327 ref {'RHO': 0.5515, 'GIANT': 0.91, 'near_share': 0.9355, 'mean_deg': 7.178, 'tokens': 9522} plant {'RHO': 0.5286, 'GIANT': 0.9215, 'near_share': 0.9585, 'mean_deg': 7.267, 'tokens': 6983}
+gen_11479 3000 72327 ref {'RHO': 0.5931, 'GIANT': 0.914, 'near_share': 0.939, 'mean_deg': 8.0253, 'tokens': 17515} plant {'RHO': 0.5604, 'GIANT': 0.9307, 'near_share': 0.958, 'mean_deg': 8.2987, 'tokens': 12143}
+gen_11479 4000 72327 ref {'RHO': 0.591, 'GIANT': 0.9237, 'near_share': 0.9465, 'mean_deg': 8.3645, 'tokens': 25643} plant {'RHO': 0.565, 'GIANT': 0.9353, 'near_share': 0.9625, 'mean_deg': 8.961, 'tokens': 17681}
+gen_11480 2000 72398 ref {'RHO': 0.5802, 'GIANT': 0.919, 'near_share': 0.943, 'mean_deg': 6.604, 'tokens': 12694} plant {'RHO': 0.5391, 'GIANT': 0.922, 'near_share': 0.9565, 'mean_deg': 7.059, 'tokens': 8923}
+gen_11480 3000 72398 ref {'RHO': 0.5872, 'GIANT': 0.9247, 'near_share': 0.9467, 'mean_deg': 7.598, 'tokens': 21850} plant {'RHO': 0.5599, 'GIANT': 0.9393, 'near_share': 0.9647, 'mean_deg': 7.934, 'tokens': 14877}
+gen_11480 4000 72398 ref {'RHO': 0.5937, 'GIANT': 0.924, 'near_share': 0.9507, 'mean_deg': 7.962, 'tokens': 31354} plant {'RHO': 0.5486, 'GIANT': 0.9437, 'near_share': 0.9665, 'mean_deg': 8.7645, 'tokens': 20937}
+gen_11481 2000 76870 ref {'RHO': 0.5587, 'GIANT': 0.8965, 'near_share': 0.9295, 'mean_deg': 7.412, 'tokens': 12203} plant {'RHO': 0.5299, 'GIANT': 0.91, 'near_share': 0.954, 'mean_deg': 8.135, 'tokens': 8226}
+gen_11481 3000 76870 ref {'RHO': 0.5773, 'GIANT': 0.916, 'near_share': 0.939, 'mean_deg': 8.1267, 'tokens': 22630} plant {'RHO': 0.5355, 'GIANT': 0.9243, 'near_share': 0.9577, 'mean_deg': 9.02, 'tokens': 14637}
+gen_11481 4000 76870 ref {'RHO': 0.5913, 'GIANT': 0.924, 'near_share': 0.9423, 'mean_deg': 8.5385, 'tokens': 33033} plant {'RHO': 0.5371, 'GIANT': 0.9337, 'near_share': 0.9635, 'mean_deg': 9.6025, 'tokens': 21978}
+gen_11482 2000 74545 ref {'RHO': 0.5682, 'GIANT': 0.904, 'near_share': 0.9375, 'mean_deg': 7.677, 'tokens': 11330} plant {'RHO': 0.564, 'GIANT': 0.912, 'near_share': 0.952, 'mean_deg': 7.835, 'tokens': 8157}
+gen_11482 3000 74545 ref {'RHO': 0.5914, 'GIANT': 0.9133, 'near_share': 0.9427, 'mean_deg': 8.2773, 'tokens': 19487} plant {'RHO': 0.5732, 'GIANT': 0.9377, 'near_share': 0.9587, 'mean_deg': 8.6887, 'tokens': 13560}
+gen_11482 4000 74545 ref {'RHO': 0.5945, 'GIANT': 0.9337, 'near_share': 0.951, 'mean_deg': 8.9195, 'tokens': 31066} plant {'RHO': 0.5682, 'GIANT': 0.9445, 'near_share': 0.961, 'mean_deg': 9.2015, 'tokens': 19435}
+gen_11483 2000 71951 ref {'RHO': 0.5936, 'GIANT': 0.88, 'near_share': 0.9275, 'mean_deg': 7.519, 'tokens': 11098} plant {'RHO': 0.5478, 'GIANT': 0.9065, 'near_share': 0.9485, 'mean_deg': 7.949, 'tokens': 7684}
+gen_11483 3000 71951 ref {'RHO': 0.6088, 'GIANT': 0.8987, 'near_share': 0.9377, 'mean_deg': 8.16, 'tokens': 19280} plant {'RHO': 0.564, 'GIANT': 0.923, 'near_share': 0.958, 'mean_deg': 8.67, 'tokens': 12966}
+gen_11483 4000 71951 ref {'RHO': 0.6211, 'GIANT': 0.91, 'near_share': 0.941, 'mean_deg': 8.557, 'tokens': 29695} plant {'RHO': 0.5648, 'GIANT': 0.927, 'near_share': 0.9617, 'mean_deg': 9.193, 'tokens': 18655}
+gen_11484 2000 74901 ref {'RHO': 0.5345, 'GIANT': 0.903, 'near_share': 0.9335, 'mean_deg': 7.764, 'tokens': 11427} plant {'RHO': 0.5288, 'GIANT': 0.9145, 'near_share': 0.951, 'mean_deg': 7.933, 'tokens': 7865}
+gen_11484 3000 74901 ref {'RHO': 0.5956, 'GIANT': 0.9243, 'near_share': 0.9423, 'mean_deg': 8.308, 'tokens': 19217} plant {'RHO': 0.5492, 'GIANT': 0.9367, 'near_share': 0.9613, 'mean_deg': 8.7713, 'tokens': 13771}
+gen_11484 4000 74901 ref {'RHO': 0.597, 'GIANT': 0.9247, 'near_share': 0.9445, 'mean_deg': 8.6605, 'tokens': 28825} plant {'RHO': 0.5635, 'GIANT': 0.9437, 'near_share': 0.9637, 'mean_deg': 9.3565, 'tokens': 19225}
+gen_11485 2000 71543 ref {'RHO': 0.5629, 'GIANT': 0.9085, 'near_share': 0.9245, 'mean_deg': 6.448, 'tokens': 10278} plant {'RHO': 0.5567, 'GIANT': 0.929, 'near_share': 0.95, 'mean_deg': 6.722, 'tokens': 7608}
+gen_11485 3000 71543 ref {'RHO': 0.5581, 'GIANT': 0.9173, 'near_share': 0.9343, 'mean_deg': 7.4193, 'tokens': 16880} plant {'RHO': 0.5478, 'GIANT': 0.9357, 'near_share': 0.955, 'mean_deg': 7.7293, 'tokens': 12252}
+gen_11485 4000 71543 ref {'RHO': 0.5686, 'GIANT': 0.925, 'near_share': 0.9427, 'mean_deg': 8.1205, 'tokens': 25903} plant {'RHO': 0.5511, 'GIANT': 0.9415, 'near_share': 0.9547, 'mean_deg': 8.3345, 'tokens': 17400}
+gen_11486 2000 73528 ref {'RHO': 0.6004, 'GIANT': 0.883, 'near_share': 0.9295, 'mean_deg': 7.598, 'tokens': 10542} plant {'RHO': 0.5629, 'GIANT': 0.9265, 'near_share': 0.952, 'mean_deg': 8.235, 'tokens': 7498}
+gen_11486 3000 73528 ref {'RHO': 0.587, 'GIANT': 0.8993, 'near_share': 0.9337, 'mean_deg': 8.0467, 'tokens': 18605} plant {'RHO': 0.566, 'GIANT': 0.9207, 'near_share': 0.9517, 'mean_deg': 8.6033, 'tokens': 12643}
+gen_11486 4000 73528 ref {'RHO': 0.5836, 'GIANT': 0.9105, 'near_share': 0.9423, 'mean_deg': 8.4045, 'tokens': 29411} plant {'RHO': 0.5571, 'GIANT': 0.9287, 'near_share': 0.9553, 'mean_deg': 9.1905, 'tokens': 18712}
+gen_11487 2000 73521 ref {'RHO': 0.5484, 'GIANT': 0.862, 'near_share': 0.921, 'mean_deg': 7.256, 'tokens': 11965} plant {'RHO': 0.5289, 'GIANT': 0.9015, 'near_share': 0.947, 'mean_deg': 7.836, 'tokens': 8317}
+gen_11487 3000 73521 ref {'RHO': 0.5739, 'GIANT': 0.8893, 'near_share': 0.9297, 'mean_deg': 7.6487, 'tokens': 19798} plant {'RHO': 0.5189, 'GIANT': 0.906, 'near_share': 0.9507, 'mean_deg': 8.51, 'tokens': 13657}
+gen_11487 4000 73521 ref {'RHO': 0.5899, 'GIANT': 0.9087, 'near_share': 0.94, 'mean_deg': 8.159, 'tokens': 30442} plant {'RHO': 0.5304, 'GIANT': 0.915, 'near_share': 0.9497, 'mean_deg': 8.813, 'tokens': 19270}
+gen_11488 2000 70824 ref {'RHO': 0.5743, 'GIANT': 0.916, 'near_share': 0.941, 'mean_deg': 7.268, 'tokens': 10417} plant {'RHO': 0.5361, 'GIANT': 0.9445, 'near_share': 0.9665, 'mean_deg': 7.476, 'tokens': 7506}
+gen_11488 3000 70824 ref {'RHO': 0.5958, 'GIANT': 0.9233, 'near_share': 0.9517, 'mean_deg': 8.0233, 'tokens': 17836} plant {'RHO': 0.5571, 'GIANT': 0.9387, 'near_share': 0.968, 'mean_deg': 8.23, 'tokens': 12556}
+gen_11488 4000 70824 ref {'RHO': 0.6007, 'GIANT': 0.9283, 'near_share': 0.9543, 'mean_deg': 8.5615, 'tokens': 29684} plant {'RHO': 0.5582, 'GIANT': 0.943, 'near_share': 0.9705, 'mean_deg': 9.011, 'tokens': 18328}
+gen_11489 2000 70974 ref {'RHO': 0.565, 'GIANT': 0.903, 'near_share': 0.94, 'mean_deg': 6.706, 'tokens': 12112} plant {'RHO': 0.5261, 'GIANT': 0.9295, 'near_share': 0.9545, 'mean_deg': 7.169, 'tokens': 8182}
+gen_11489 3000 70974 ref {'RHO': 0.5682, 'GIANT': 0.92, 'near_share': 0.9467, 'mean_deg': 7.7213, 'tokens': 22534} plant {'RHO': 0.5287, 'GIANT': 0.939, 'near_share': 0.9637, 'mean_deg': 8.098, 'tokens': 13725}
+gen_11489 4000 70974 ref {'RHO': 0.5579, 'GIANT': 0.9247, 'near_share': 0.9495, 'mean_deg': 8.2035, 'tokens': 33029} plant {'RHO': 0.5428, 'GIANT': 0.9465, 'near_share': 0.9688, 'mean_deg': 8.823, 'tokens': 20612}
+gen_11490 2000 71924 ref {'RHO': 0.5671, 'GIANT': 0.905, 'near_share': 0.932, 'mean_deg': 7.067, 'tokens': 9059} plant {'RHO': 0.5097, 'GIANT': 0.911, 'near_share': 0.9475, 'mean_deg': 7.282, 'tokens': 6745}
+gen_11490 3000 71924 ref {'RHO': 0.5583, 'GIANT': 0.9093, 'near_share': 0.937, 'mean_deg': 7.7453, 'tokens': 16467} plant {'RHO': 0.5333, 'GIANT': 0.9203, 'near_share': 0.9547, 'mean_deg': 8.3593, 'tokens': 12048}
+gen_11490 4000 71924 ref {'RHO': 0.5752, 'GIANT': 0.9225, 'near_share': 0.946, 'mean_deg': 8.2955, 'tokens': 25836} plant {'RHO': 0.5401, 'GIANT': 0.9305, 'near_share': 0.96, 'mean_deg': 8.7545, 'tokens': 17423}
+gen_11491 2000 72958 ref {'RHO': 0.5714, 'GIANT': 0.896, 'near_share': 0.9345, 'mean_deg': 7.01, 'tokens': 9980} plant {'RHO': 0.5367, 'GIANT': 0.9285, 'near_share': 0.9565, 'mean_deg': 7.385, 'tokens': 7295}
+gen_11491 3000 72958 ref {'RHO': 0.5761, 'GIANT': 0.9083, 'near_share': 0.9363, 'mean_deg': 8.032, 'tokens': 18088} plant {'RHO': 0.5348, 'GIANT': 0.9387, 'near_share': 0.9647, 'mean_deg': 8.3533, 'tokens': 12158}
+gen_11491 4000 72958 ref {'RHO': 0.5874, 'GIANT': 0.9217, 'near_share': 0.9443, 'mean_deg': 8.51, 'tokens': 26433} plant {'RHO': 0.5473, 'GIANT': 0.9405, 'near_share': 0.9627, 'mean_deg': 9.0115, 'tokens': 18160}
+gen_11492 2000 70841 ref {'RHO': 0.5534, 'GIANT': 0.8935, 'near_share': 0.932, 'mean_deg': 6.408, 'tokens': 10789} plant {'RHO': 0.5058, 'GIANT': 0.911, 'near_share': 0.944, 'mean_deg': 6.825, 'tokens': 7500}
+gen_11492 3000 70841 ref {'RHO': 0.5761, 'GIANT': 0.919, 'near_share': 0.9413, 'mean_deg': 7.3613, 'tokens': 18729} plant {'RHO': 0.5355, 'GIANT': 0.93, 'near_share': 0.9553, 'mean_deg': 7.6067, 'tokens': 12924}
+gen_11492 4000 70841 ref {'RHO': 0.5738, 'GIANT': 0.9233, 'near_share': 0.9445, 'mean_deg': 7.9895, 'tokens': 28797} plant {'RHO': 0.5455, 'GIANT': 0.9373, 'near_share': 0.961, 'mean_deg': 8.353, 'tokens': 18538}
+gen_11493 2000 71718 ref {'RHO': 0.5745, 'GIANT': 0.879, 'near_share': 0.925, 'mean_deg': 6.887, 'tokens': 9976} plant {'RHO': 0.5458, 'GIANT': 0.9065, 'near_share': 0.9455, 'mean_deg': 7.074, 'tokens': 6805}
+gen_11493 3000 71718 ref {'RHO': 0.5791, 'GIANT': 0.9043, 'near_share': 0.9347, 'mean_deg': 7.562, 'tokens': 17794} plant {'RHO': 0.5697, 'GIANT': 0.9153, 'near_share': 0.9487, 'mean_deg': 7.964, 'tokens': 12572}
+gen_11493 4000 71718 ref {'RHO': 0.5956, 'GIANT': 0.9217, 'near_share': 0.947, 'mean_deg': 8.0765, 'tokens': 27236} plant {'RHO': 0.565, 'GIANT': 0.9293, 'near_share': 0.9537, 'mean_deg': 8.4705, 'tokens': 18093}
+cerv_0 2000 38000 ref {'RHO': 0.3379, 'GIANT': 0.192, 'near_share': 0.438, 'mean_deg': 1.121, 'tokens': 7352} plant {'RHO': 0.2578, 'GIANT': 0.4115, 'near_share': 0.7865, 'mean_deg': 3.796, 'tokens': 4965}
+cerv_0 3000 38000 ref {'RHO': 0.3379, 'GIANT': 0.2193, 'near_share': 0.4773, 'mean_deg': 1.1833, 'tokens': 12730} plant {'RHO': 0.2872, 'GIANT': 0.445, 'near_share': 0.7793, 'mean_deg': 3.8973, 'tokens': 7557}
+cerv_0 4000 38000 ref {'RHO': 0.3291, 'GIANT': 0.2515, 'near_share': 0.5068, 'mean_deg': 1.319, 'tokens': 20490} plant {'RHO': 0.286, 'GIANT': 0.4605, 'near_share': 0.7915, 'mean_deg': 4.0375, 'tokens': 10539}
+cerv_1 2000 38000 ref {'RHO': 0.3586, 'GIANT': 0.211, 'near_share': 0.4935, 'mean_deg': 1.112, 'tokens': 7778} plant {'RHO': 0.3182, 'GIANT': 0.4235, 'near_share': 0.773, 'mean_deg': 3.713, 'tokens': 4692}
+cerv_1 3000 38000 ref {'RHO': 0.3665, 'GIANT': 0.235, 'near_share': 0.5083, 'mean_deg': 1.2093, 'tokens': 14008} plant {'RHO': 0.2909, 'GIANT': 0.457, 'near_share': 0.7973, 'mean_deg': 4.0827, 'tokens': 7786}
+cerv_1 4000 38000 ref {'RHO': 0.3733, 'GIANT': 0.259, 'near_share': 0.5325, 'mean_deg': 1.34, 'tokens': 22323} plant {'RHO': 0.2835, 'GIANT': 0.4868, 'near_share': 0.8057, 'mean_deg': 4.551, 'tokens': 11486}
+cerv_2 2000 38000 ref {'RHO': 0.3569, 'GIANT': 0.241, 'near_share': 0.503, 'mean_deg': 1.219, 'tokens': 8492} plant {'RHO': 0.2686, 'GIANT': 0.442, 'near_share': 0.78, 'mean_deg': 3.972, 'tokens': 4706}
+cerv_2 3000 38000 ref {'RHO': 0.3526, 'GIANT': 0.2457, 'near_share': 0.5317, 'mean_deg': 1.274, 'tokens': 14850} plant {'RHO': 0.2741, 'GIANT': 0.5077, 'near_share': 0.808, 'mean_deg': 4.5027, 'tokens': 8118}
+cerv_2 4000 38000 ref {'RHO': 0.3735, 'GIANT': 0.2557, 'near_share': 0.557, 'mean_deg': 1.3245, 'tokens': 23948} plant {'RHO': 0.2939, 'GIANT': 0.5148, 'near_share': 0.828, 'mean_deg': 4.723, 'tokens': 11428}
+cerv_3 2000 38000 ref {'RHO': 0.3253, 'GIANT': 0.1845, 'near_share': 0.5015, 'mean_deg': 1.159, 'tokens': 8759} plant {'RHO': 0.2818, 'GIANT': 0.4105, 'near_share': 0.7915, 'mean_deg': 3.428, 'tokens': 4876}
+cerv_3 3000 38000 ref {'RHO': 0.3316, 'GIANT': 0.231, 'near_share': 0.5447, 'mean_deg': 1.29, 'tokens': 16567} plant {'RHO': 0.285, 'GIANT': 0.4737, 'near_share': 0.82, 'mean_deg': 4.026, 'tokens': 8061}
+cerv_3 4000 38000 ref {'RHO': 0.3469, 'GIANT': 0.2427, 'near_share': 0.5635, 'mean_deg': 1.369, 'tokens': 25002} plant {'RHO': 0.2778, 'GIANT': 0.51, 'near_share': 0.8335, 'mean_deg': 4.5, 'tokens': 11755}
+cerv_4 2000 38000 ref {'RHO': 0.3801, 'GIANT': 0.1885, 'near_share': 0.4855, 'mean_deg': 1.06, 'tokens': 8376} plant {'RHO': 0.2921, 'GIANT': 0.422, 'near_share': 0.773, 'mean_deg': 3.547, 'tokens': 5014}
+cerv_4 3000 38000 ref {'RHO': 0.3759, 'GIANT': 0.2387, 'near_share': 0.515, 'mean_deg': 1.1773, 'tokens': 16141} plant {'RHO': 0.3094, 'GIANT': 0.4443, 'near_share': 0.7953, 'mean_deg': 3.958, 'tokens': 8111}
+cerv_4 4000 38000 ref {'RHO': 0.373, 'GIANT': 0.2375, 'near_share': 0.5335, 'mean_deg': 1.232, 'tokens': 22954} plant {'RHO': 0.2991, 'GIANT': 0.4875, 'near_share': 0.8213, 'mean_deg': 4.4245, 'tokens': 11801}
+cerv_5 2000 38000 ref {'RHO': 0.381, 'GIANT': 0.199, 'near_share': 0.4685, 'mean_deg': 1.054, 'tokens': 7464} plant {'RHO': 0.3166, 'GIANT': 0.431, 'near_share': 0.765, 'mean_deg': 3.798, 'tokens': 4575}
+cerv_5 3000 38000 ref {'RHO': 0.3799, 'GIANT': 0.221, 'near_share': 0.5033, 'mean_deg': 1.1813, 'tokens': 13582} plant {'RHO': 0.3223, 'GIANT': 0.4653, 'near_share': 0.7853, 'mean_deg': 4.1947, 'tokens': 7542}
+cerv_5 4000 38000 ref {'RHO': 0.3896, 'GIANT': 0.2387, 'near_share': 0.5308, 'mean_deg': 1.3015, 'tokens': 20845} plant {'RHO': 0.3339, 'GIANT': 0.4675, 'near_share': 0.7965, 'mean_deg': 4.418, 'tokens': 10972}
+cerv_6 2000 38000 ref {'RHO': 0.3443, 'GIANT': 0.1905, 'near_share': 0.4675, 'mean_deg': 1.064, 'tokens': 8206} plant {'RHO': 0.2769, 'GIANT': 0.426, 'near_share': 0.7705, 'mean_deg': 3.736, 'tokens': 4755}
+cerv_6 3000 38000 ref {'RHO': 0.3381, 'GIANT': 0.2023, 'near_share': 0.4957, 'mean_deg': 1.118, 'tokens': 14211} plant {'RHO': 0.2947, 'GIANT': 0.447, 'near_share': 0.7927, 'mean_deg': 4.1373, 'tokens': 7967}
+cerv_6 4000 38000 ref {'RHO': 0.3457, 'GIANT': 0.233, 'near_share': 0.523, 'mean_deg': 1.199, 'tokens': 20585} plant {'RHO': 0.3068, 'GIANT': 0.475, 'near_share': 0.803, 'mean_deg': 4.3185, 'tokens': 11465}
+cerv_7 2000 38000 ref {'RHO': 0.3685, 'GIANT': 0.216, 'near_share': 0.492, 'mean_deg': 1.153, 'tokens': 8111} plant {'RHO': 0.2882, 'GIANT': 0.46, 'near_share': 0.773, 'mean_deg': 3.851, 'tokens': 4686}
+cerv_7 3000 38000 ref {'RHO': 0.3514, 'GIANT': 0.2383, 'near_share': 0.5363, 'mean_deg': 1.2493, 'tokens': 14720} plant {'RHO': 0.3082, 'GIANT': 0.4773, 'near_share': 0.7987, 'mean_deg': 4.0453, 'tokens': 7821}
+cerv_7 4000 38000 ref {'RHO': 0.3633, 'GIANT': 0.2635, 'near_share': 0.542, 'mean_deg': 1.3115, 'tokens': 21950} plant {'RHO': 0.3072, 'GIANT': 0.4898, 'near_share': 0.814, 'mean_deg': 4.34, 'tokens': 11273}
+cerv_8 2000 38000 ref {'RHO': 0.333, 'GIANT': 0.1965, 'near_share': 0.466, 'mean_deg': 1.049, 'tokens': 7553} plant {'RHO': 0.292, 'GIANT': 0.395, 'near_share': 0.7615, 'mean_deg': 3.469, 'tokens': 4706}
+cerv_8 3000 38000 ref {'RHO': 0.3347, 'GIANT': 0.2223, 'near_share': 0.508, 'mean_deg': 1.1887, 'tokens': 13736} plant {'RHO': 0.2908, 'GIANT': 0.457, 'near_share': 0.796, 'mean_deg': 3.9673, 'tokens': 7692}
+cerv_8 4000 38000 ref {'RHO': 0.3539, 'GIANT': 0.265, 'near_share': 0.5413, 'mean_deg': 1.3515, 'tokens': 22112} plant {'RHO': 0.2888, 'GIANT': 0.4925, 'near_share': 0.8157, 'mean_deg': 4.3905, 'tokens': 10916}
+cerv_9 2000 38000 ref {'RHO': 0.3788, 'GIANT': 0.1845, 'near_share': 0.4665, 'mean_deg': 1.009, 'tokens': 7462} plant {'RHO': 0.2821, 'GIANT': 0.3785, 'near_share': 0.762, 'mean_deg': 3.555, 'tokens': 4405}
+cerv_9 3000 38000 ref {'RHO': 0.3483, 'GIANT': 0.2087, 'near_share': 0.492, 'mean_deg': 1.0947, 'tokens': 13385} plant {'RHO': 0.2874, 'GIANT': 0.4173, 'near_share': 0.7897, 'mean_deg': 3.8793, 'tokens': 7454}
+cerv_9 4000 38000 ref {'RHO': 0.3511, 'GIANT': 0.2198, 'near_share': 0.5232, 'mean_deg': 1.1995, 'tokens': 21447} plant {'RHO': 0.2712, 'GIANT': 0.4313, 'near_share': 0.805, 'mean_deg': 4.146, 'tokens': 10668}
+gen_K2000 {'reached': '20/20', 'FPR': '1/20', 'POW': '8/20', 'MDE80': 0.0529, 'plant_shift': -0.0302, 'shift_over_MDE': -0.5706, 'lead': 0.054, 'lead_over_MDE': 1.0208, 'mean': 0.5662, 'sd': 0.0176, 'lo': 0.5345, 'hi': 0.6004, 'ok': False, 'why': 'G2'}
+gen_K3000 {'reached': '20/20', 'FPR': '1/20', 'POW': '12/20', 'MDE80': 0.0385, 'plant_shift': -0.0345, 'shift_over_MDE': -0.895, 'lead': 0.054, 'lead_over_MDE': 1.402, 'mean': 0.5816, 'sd': 0.0128, 'lo': 0.5581, 'hi': 0.6088, 'ok': False, 'why': 'G2'}
+gen_K4000 {'reached': '20/20', 'FPR': '2/20', 'POW': '14/20', 'MDE80': 0.0395, 'plant_shift': -0.0372, 'shift_over_MDE': -0.9411, 'lead': 0.054, 'lead_over_MDE': 1.3665, 'mean': 0.5883, 'sd': 0.0131, 'lo': 0.5579, 'hi': 0.6211, 'ok': False, 'why': 'G1'}
+cerv_K2000 {'reached': '10/10', 'FPR': '0/10', 'POW': '8/10', 'MDE80': 0.0671, 'plant_shift': -0.069, 'shift_over_MDE': -1.0286, 'lead': 0.054, 'lead_over_MDE': 0.8049, 'mean': 0.3564, 'sd': 0.0206, 'lo': 0.3253, 'hi': 0.381, 'ok': False, 'why': 'G2'}
+cerv_K3000 {'reached': '10/10', 'FPR': '0/10', 'POW': '8/10', 'MDE80': 0.0562, 'plant_shift': -0.0567, 'shift_over_MDE': -1.0085, 'lead': 0.054, 'lead_over_MDE': 0.9606, 'mean': 0.3517, 'sd': 0.0173, 'lo': 0.3316, 'hi': 0.3799, 'ok': False, 'why': 'G2'}
+cerv_K4000 {'reached': '10/10', 'FPR': '0/10', 'POW': '9/10', 'MDE80': 0.058, 'plant_shift': -0.0651, 'shift_over_MDE': -1.1222, 'lead': 0.054, 'lead_over_MDE': 0.9307, 'mean': 0.3599, 'sd': 0.0178, 'lo': 0.3291, 'hi': 0.3896, 'ok': False, 'why': 'DOA'}
+runnable [] 
+elapsed 14.1
+===== C094_power_curve_log.txt
+2000 0.1 8/20 -0.0302
+2000 0.15 9/20 -0.0359
+2000 0.2 12/20 -0.0447
+2000 0.3 17/20 -0.0596
+3000 0.1 12/20 -0.0345
+3000 0.15 17/20 -0.0485
+3000 0.2 20/20 -0.0533
+3000 0.3 20/20 -0.0632
+4000 0.1 14/20 -0.0372
+4000 0.15 19/20 -0.0492
+4000 0.2 20/20 -0.053
+4000 0.3 20/20 -0.0598
