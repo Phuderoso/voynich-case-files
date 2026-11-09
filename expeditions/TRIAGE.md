@@ -22,5 +22,7 @@ and the Open Khipu Repository has no commit newer than `4039ca5`, so a new trenc
 
 **Fourth pick (9 Nov 2026): Rongorongo** (score 4, next after Linear A). Linear A's open lines closed on machine-readable data after LA003, and the Open Khipu Repository is still at `4039ca5`. New trench: [expeditions/rongorongo](rongorongo/README.md). A careful scripted study already exists (rochal/rongorongo), so the trench adds calibration (nulls and power), not rediscovery.
 
+**Rotation (9 Nov 2026, after RR014): back to Proto-Elamite.** Rongorongo paused after four NOT TESTABLE cycles in a row (RR011–RR014; reasons in its README). Khipu still waits for OKR data (`4039ca5`), Linear A is exhausted, Indus (3) and Phaistos (1) stay on the bench. Proto-Elamite resumes with PE012 (line 5, header structure), data re-pin plus a power-first pre-registration.
+
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.

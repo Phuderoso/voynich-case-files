@@ -31,6 +31,7 @@ publish negatives. **No decipherment is claimed.**
 | RR011 | Keiti refrains: are the gaps between returns of repeated sign pairs more regular (verse-like) than a line-preserving block shuffle? Fallback 4d: does the loose stroke keep the fused side? Plus a seed audit of RR010 | same, codes padded | **Line 2 NOT TESTABLE** (6 refrains, 27 gaps; a planted exact-period refrain is caught 32/100 by gap CV and 10/100 by Rayleigh, gate 80; description: gap CV 0.955 vs 0.81, p 0.92; Rayleigh p 0.040, Holm 0.080). **Line 4d NOT TESTABLE** (6/6 informative cases keep the fused side vs 3.49 expected under the side habits of the 23 objects other than H/P/Q, exact p 0.0101 = floor; power 0.735 < 0.80); a lead. Recounts identical. Audit H: RR010 S1 seed-stable (p 0.001, f* 0.15; negative control 3/20 at the limit). [RR011](case-file/RR011-keiti-refrains.md) |
 | RR012 | Does RR010's loose-beside-the-host spelling replicate on fresh copies, Small Santiago recto × Small London (G·K)? Plus a seed audit of RR008 | same, codes padded | **Line 4e NOT TESTABLE, as registered** (G and K disagree on a fused stroke only 4 times in 34 eligible pairs; power at RR010's effect size 0.03, gate 0.80). Description only: the same stroke is loose beside the bare host in **3 of 4** (= the maximum possible; null mean 0.61, p 0.009, floor 0.0066), all 3 on the fused side, both copy directions; recount identical. A lead on fresh data. 4d NOT TESTABLE (≤ 3 cases). Audit I: RR008 verdicts 25/25 stable, k* ±1 on 24/25 (Ab–Cb 4→2, on the power edge). [RR012](case-file/RR012-gk-replication.md) |
 | RR013 | Line 5f: can a published allograph list be pinned and used as fixed sign equivalences for the RR007 trigram test? Fallback 3b: do free strokes avoid the entry-initial slot on held-out Small London (K)? Plus audit J (Ab–Cb k*, 400 plants) | same, codes padded; Spaelti/CEIPP variant list, Pozdniakov 2007, Davletshin 2017 (sha256 pinned) | **Line 5f NOT TESTABLE (no fixed cross-number list)**: the Spaelti/CEIPP list is the identity on head signs (0 of 6 064 tokens change base); Pozdniakov's 52-sign table is a glyph-font image, its one text-stated equivalence (6 ~ 64, 13 tokens) never touches the known-answer sides Ab/Bv/Er; Davletshin's allographs are not Barthel-coded. No trigram test run (dead on arrival, Kryptos I-151). **Line 3b NOT TESTABLE** (20 entries, 5 strokes; exact floor 1/15 = 0.067 > 0.05, so even 0 stroke-initial entries could not reject; observed S3 not computed). Audit J: Ab–Cb k* **2–3** (R 9 999 reference: power 0.8175 at 2, CI 0.78–0.85; 0.98 at 3); the flip is a null-threshold edge (P(T ≥ 9) = 0.0011 vs α 0.002), not plant noise. [RR013](case-file/RR013-allograph-pin.md) |
+| RR014 | Line 4f: does RR010's loose-beside-the-host spelling appear in a new parallel family (maximal exact ≥ 5-host runs between objects outside H/P/Q and G/K)? Plus audit K (RR010 S1 with R 9 999) | same, codes padded | **Line 4f NOT TESTABLE, dead on arrival at gate G1** (789 side pairs, only 3 strict passages: Er09 = Ra05, Ev04 = Gr05, Ev06 = Hv12; 17 aligned, 2 eligible, **D = 0** < 10; recount identical; nothing else run). Triage-only count: runs ≥ 4 give D 5, runs ≥ 3 give D 60 but are chance-dominated (RR007), not opened. Audit K: RR010 S1 8 vs null mean 1.53, p **0.0004** (Holm 0.0008) with R 9 999; c(0.025) 5 → 6; power at f 0.15 0.84 (RR010 rule), stable. **Triage: camp paused, next cycle PE012.** [RR014](case-file/RR014-new-family.md) |
 
 ## Data (pinned 2026-11-09, see [data/MANIFEST.md](data/MANIFEST.md))
 - **CEIPP numerical transliteration** (Cercle d'Études sur l'Île de Pâques et la Polynésie, after T. Barthel 1958),
@@ -73,6 +74,9 @@ publish negatives. **No decipherment is claimed.**
    3 of the 4 write the same stroke loose beside the host (all 3 possible; null 0.61, p 0.009), and all 3 keep the fused
    side. It points the same way as RR010. **Line 4 parked**: H/P/Q is used up for confirmation, and G/K is too faithful
    to disagree. It reopens only if another parallel family (e.g. the Ab/Er/Bv excerpts) gives ≥ 10 disagreements.
+   4f tested (RR014): **NOT TESTABLE, dead on arrival**. Between objects outside H/P/Q and G/K the corpus holds only 3
+   strict (≥ 5-host) parallels and **0** fused-stroke disagreements (5 even at ≥ 4 hosts). **Line 4 closed on the CEIPP
+   data**; it reopens only with new published alignments that add ≥ 10 disagreements.
 5. ~~**Fuzzy-copy calibration**~~ closed by RR005: no shared one-substitution run of l1* (5–8) or more head signs.
    5b resolved (RR006): the Ab05 / Er04 lead is a published parallel (Horley, Er4 ref. Ab5–6, Bv11), not new.
    5c closed (RR006): no one-indel copy of lg* (5–9) or more. Lesson: these tests miss the short catalogued parallels;
@@ -87,6 +91,15 @@ publish negatives. **No decipherment is claimed.**
    list, Pozdniakov 2007, Davletshin 2017); the only machine-readable one is the identity on head signs, and the others
    need a judgement per sign. Reopens only if a Barthel-coded cross-number table is published (e.g. Pozdniakov's
    Appendix 1 or Horley 2021's sign list in text form).
+
+## Triage decision (RR014, 2026-11-09 ~11:21 PT)
+**Camp paused; the next cycle resumes Proto-Elamite (PE012).** Reasons: RR011–RR014 were all NOT TESTABLE; lines 1, 3,
+5 are closed, 2, 3b and 5f are NOT TESTABLE by construction, and line 4 failed its reopening gate twice (G·K D 4, family N
+D 0). No line on the CEIPP data can reach power ≥ 0.80 without a new outside source. In [TRIAGE.md](../TRIAGE.md), khipu
+still waits for new OKR data (`4039ca5`), Linear A is exhausted, Indus has no open corpus and Phaistos is too short.
+Proto-Elamite has pinned data and two untested lines (header structure, ratios inside a line). **Rongorongo reopens** if a
+Barthel-coded cross-number allograph table or new parallel alignments are published, or if rochal/rongorongo answers
+the pending issue with a better granularity.
 
 ## Outreach log
 - 2026-11-09 (opening): none.
@@ -105,3 +118,4 @@ publish negatives. **No decipherment is claimed.**
 - 2026-11-09 (RR011): the rochal/rongorongo issue still does not exist (0 issues), so the run's one outreach went to the khipulab/open-khipu-repository duplicate-records issue (KH0140/KH0483 and others; only #1 and #2 there, no match). The connector raised an approval form, so it is **drafted, not filed** ([text](../khipu/outreach/2026-11-05-okr-duplicates-draft.md)). The rochal draft stays pending.
 - 2026-11-09 (RR012): none new; drafts pending. Neither the rochal/rongorongo issue (0 issues) nor the khipulab duplicates issue (#1, #2 only) exists, so no new approval form was raised. The rochal draft now includes RR011–RR012 ([text](outreach/RR004-draft-rochal.md)).
 - 2026-11-09 (RR013): none new; drafts pending. Neither the rochal/rongorongo issue (0 issues) nor the khipulab duplicates issue (#1, #2 only) exists, so no approval form was raised. The rochal draft now includes RR013 ([text](outreach/RR004-draft-rochal.md)).
+- 2026-11-09 (RR014): none new; drafts pending. rochal/rongorongo has 0 issues (open or closed) and khipulab/open-khipu-repository only #1 and #2, so no approval form was raised. The rochal draft now includes RR014's three strict passages ([text](outreach/RR004-draft-rochal.md)).
