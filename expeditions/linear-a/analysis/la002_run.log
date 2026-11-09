@@ -1,0 +1,12 @@
+GATES {"n": 5, "exact_p_floor_all_balance": 0.0, "power_curve": {"1": 0.0, "2": 0.21, "3": 0.25, "4": 0.27, "5": 0.0}, "k_star": null, "testable": false}
+{"sensitivity": false, "gates": {"n": 5, "exact_p_floor_all_balance": 0.0, "power_curve": {"1": 0.0, "2": 0.21, "3": 0.25, "4": 0.27, "5": 0.0}, "k_star": null, "testable": false}, "exact": 0, "p_exact": 1.0, "null_dist": {"0": 12}, "verdict": "NOT TESTABLE"}
+
+real	0m0.273s
+user	0m0.862s
+sys	0m0.069s
+GATES {"n": 6, "exact_p_floor_all_balance": 0.0, "power_curve": {"1": 0.0, "2": 0.22, "3": 0.68, "4": 0.81, "5": 0.87, "6": 1.0}, "k_star": 4, "testable": false}
+{"sensitivity": true, "gates": {"n": 6, "exact_p_floor_all_balance": 0.0, "power_curve": {"1": 0.0, "2": 0.22, "3": 0.68, "4": 0.81, "5": 0.87, "6": 1.0}, "k_star": 4, "testable": false}, "exact": 0, "p_exact": 1.0, "null_dist": {"0": 48}, "verdict": "NOT TESTABLE"}
+
+real	0m0.385s
+user	0m1.064s
+sys	0m0.044s
