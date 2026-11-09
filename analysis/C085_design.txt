@@ -1,0 +1,12 @@
+design runs 35/35 usable; between-run SD 0.0147; range 0.0861-0.1501 (mean not used by the rule: 0.1103)
+sd_ms 0.0083  sd_hold 0.0083  sd_gen_between_runs 0.0147  se_mean(40) 0.0023
+margin  P(EQUIV|ms-like,d=0)  P(EQUIV|held-out gen,d~N(0,sd_gen))  P(BEYOND|held-out)  P(EQUIV|d=0.05)  P(BEYOND|d=0.05)
+0.010   0.000                 0.000                                0.0654              0.0000          0.996
+0.015   0.000                 0.000                                0.0291              0.0000          0.979
+0.020   0.229                 0.134                                0.0123              0.0000          0.926
+0.025   0.616                 0.385                                0.0042              0.0000          0.809
+0.030   0.852                 0.598                                0.0016              0.0000          0.614
+CHOSEN MARGIN 0.03
+P(both transcriptions EQUIV | d=0), assuming independence (lower bound-ish): 0.727
+P(EQ<8 of 20 | p .598)= 0.022
+P(BEYOND>2 of 20 | .0016)= 5e-06
