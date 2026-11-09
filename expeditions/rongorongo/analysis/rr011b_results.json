@@ -1,0 +1,239 @@
+{
+ "seed": 11012,
+ "s1_cases": 8,
+ "informative": 6,
+ "K": 6,
+ "null_expected": 3.488690638488713,
+ "p": 0.010137476685053319,
+ "all_match_floor": 0.010137476685053319,
+ "critical_k": 6,
+ "power_q095": 0.7350918906249998,
+ "negative_control_rejections": 1,
+ "verdict": "NOT TESTABLE",
+ "cases": [
+  {
+   "fused": [
+    "Pr",
+    "Pr01",
+    26,
+    "306.003a"
+   ],
+   "bare": [
+    "Hr",
+    "Hr01",
+    27,
+    "306"
+   ],
+   "loose_sides": [
+    "A"
+   ],
+   "strokes": [
+    "003"
+   ],
+   "informative": true,
+   "stroke": "003",
+   "host": "306",
+   "fused_side": "A",
+   "loose_side": "A",
+   "match": true,
+   "rB": 0.03333333333333333,
+   "rate_n": 14,
+   "rate_source": "host",
+   "p_match_null": 0.9666666666666667
+  },
+  {
+   "fused": [
+    "Pr",
+    "Pr01",
+    36,
+    "009a:244"
+   ],
+   "bare": [
+    "Hr",
+    "Hr01",
+    45,
+    "244"
+   ],
+   "loose_sides": [
+    "B"
+   ],
+   "strokes": [
+    "009"
+   ],
+   "informative": true,
+   "stroke": "009",
+   "host": "244",
+   "fused_side": "B",
+   "loose_side": "B",
+   "match": true,
+   "rB": 0.29891304347826086,
+   "rate_n": 91,
+   "rate_source": "type",
+   "p_match_null": 0.29891304347826086
+  },
+  {
+   "fused": [
+    "Hr",
+    "Hr03",
+    12,
+    "004a.004ay.206"
+   ],
+   "bare": [
+    "Pr",
+    "Pr03",
+    5,
+    "206a"
+   ],
+   "loose_sides": [
+    "B"
+   ],
+   "strokes": [
+    "004"
+   ],
+   "informative": true,
+   "stroke": "004",
+   "host": "206",
+   "fused_side": "B",
+   "loose_side": "B",
+   "match": true,
+   "rB": 0.7481751824817519,
+   "rate_n": 136,
+   "rate_source": "type",
+   "p_match_null": 0.7481751824817519
+  },
+  {
+   "fused": [
+    "Pr",
+    "Pr05",
+    71,
+    "004.004.007"
+   ],
+   "bare": [
+    "Hr",
+    "Hr06",
+    27,
+    "007"
+   ],
+   "loose_sides": [
+    "B"
+   ],
+   "strokes": [
+    "004"
+   ],
+   "informative": true,
+   "stroke": "004",
+   "host": "007",
+   "fused_side": "B",
+   "loose_side": "B",
+   "match": true,
+   "rB": 0.7481751824817519,
+   "rate_n": 136,
+   "rate_source": "type",
+   "p_match_null": 0.7481751824817519
+  },
+  {
+   "fused": [
+    "Pr",
+    "Pr07",
+    52,
+    "002a.760.052x"
+   ],
+   "bare": [
+    "Hr",
+    "Hr08",
+    28,
+    "760a"
+   ],
+   "loose_sides": [
+    "B"
+   ],
+   "strokes": [
+    "002"
+   ],
+   "informative": true,
+   "stroke": "002",
+   "host": "760",
+   "fused_side": "B",
+   "loose_side": "B",
+   "match": true,
+   "rB": 0.6267605633802817,
+   "rate_n": 70,
+   "rate_source": "type",
+   "p_match_null": 0.6267605633802817
+  },
+  {
+   "fused": [
+    "Hr",
+    "Hr03",
+    26,
+    "004.600"
+   ],
+   "bare": [
+    "Qr",
+    "Qr03",
+    14,
+    "600a"
+   ],
+   "loose_sides": [
+    "A",
+    "B"
+   ],
+   "strokes": [
+    "004"
+   ],
+   "informative": false
+  },
+  {
+   "fused": [
+    "Pr",
+    "Pr03",
+    19,
+    "004.600a"
+   ],
+   "bare": [
+    "Qr",
+    "Qr03",
+    14,
+    "600a"
+   ],
+   "loose_sides": [
+    "A",
+    "B"
+   ],
+   "strokes": [
+    "004"
+   ],
+   "informative": false
+  },
+  {
+   "fused": [
+    "Pv",
+    "Pv09",
+    10,
+    "003a.254j"
+   ],
+   "bare": [
+    "Hv",
+    "Hv07",
+    41,
+    "254"
+   ],
+   "loose_sides": [
+    "B"
+   ],
+   "strokes": [
+    "003"
+   ],
+   "informative": true,
+   "stroke": "003",
+   "host": "254",
+   "fused_side": "B",
+   "loose_side": "B",
+   "match": true,
+   "rB": 0.1,
+   "rate_n": 224,
+   "rate_source": "type",
+   "p_match_null": 0.1
+  }
+ ]
+}
