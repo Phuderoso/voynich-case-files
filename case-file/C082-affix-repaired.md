@@ -27,7 +27,41 @@ C081 measured K, the share of a word's last-symbol uncertainty explained by its 
 - **Fixed interpretation:** "BELOW GENERATOR" means that default self-citation ties word beginnings to endings more tightly than the manuscript does. That is a quantitative misfit of the generator's *default settings*, not a refutation of self-citation in general. It says nothing about meaning. "INSIDE" means this feature cannot separate them.
 - **Next seeds after this cycle:** 11246+.
 
-## Results
-*(to be filled after the run)*
+## Results (run 2026-11-09 ~04:00 PT, 25 s, seed 8282; `analysis/C082_results.json`, `analysis/C082_run_log.txt`; pre-registration commit 4c93764)
+
+| Text | K | repaired 95% CI | median d |
+|---|---|---|---|
+| Finnish (Kalevala) | 0.083 | 0.074–0.090 | −0.000 |
+| **Voynich IT2a** | **0.103** | **0.083–0.115** | +0.002 |
+| **Voynich ZL 3b** | **0.107** | **0.087–0.119** | +0.000 |
+| Finnish (Kivi) | 0.144 | 0.132–0.157 | −0.001 |
+| Hebrew (Genesis / Exodus) | 0.152 / 0.165 | 0.138–0.157 / 0.150–0.176 | |
+| Latin (Caesar / Descartes) | 0.187 / 0.236 | 0.182–0.202 / 0.216–0.256 | |
+| Italian (Dante / Machiavelli) | 0.199 / 0.262 | 0.193–0.213 / 0.242–0.286 | |
+| Spanish (Cervantes) | 0.276 | 0.255–0.299 | |
+| **Generator, 20 reference runs (11211–11230)** | **0.123–0.201** (min 0.1231, seed 11214) | — | |
+| Held-out generator runs (11231–11240) | 0.143–0.214 | each with CI | |
+| Plants: 25% of endings decoupled (11241–11245) | 0.070–0.098 | CI uppers 0.080–0.107 | |
+| Control: Caesar fully decoupled | 0.002 | −0.001–0.005 | |
+
+**Gates:**
+- **G1** passed: all 27 CIs contain their point values. Centring holds in 16/27 rows (descriptive); the medians of d are now within about ±0.006 everywhere, where C081 was off by up to +0.03.
+- **G2** passed: 0/10 held-out runs were called BELOW or ABOVE. Nine were INSIDE, one was NOT CALLED.
+- **G3** passed: 5/5 plants were called BELOW GENERATOR.
+- The H2 leave-one-out gate passed (1/9), and the control was called OUTSIDE NATURAL.
+
+**Verdicts as pre-registered:**
+- **H1: BELOW GENERATOR (supported).** Both transcriptions lie below all 20 fresh reference runs (rank p = 1/21 = 0.048 each, intersection–union). Both repaired CIs end below the reference minimum: ZL 3b upper 0.1186 and IT2a upper 0.1149, against 0.1231.
+- **H2: INSIDE NATURAL** for both transcriptions. They fall between the two Finnish texts. End-coupling therefore does not separate the manuscript from natural language.
+
+**What this does and does not mean (no overclaiming):**
+- The margin is narrow. The CI uppers sit 0.005–0.008 below the generator minimum, and the confirmatory p is 0.048, about as weak as a pass can be.
+- Descriptively, across all 40 unmodified generator runs I have (C081's 10 + these 30), K has mean 0.161 and SD 0.024. The manuscript sits at about z = −2.3. That is unusual for the generator, not impossible.
+- Only the generator's **default parameters** were tested. A setting that weakens the coupling between prefix and suffix during copy-and-modify could well close the gap. This is a measured misfit of one configuration, not a refutation of self-citation, and it says nothing about meaning.
+- The manuscript is low-coupled *like Finnish*, but a single feature cannot identify a language family.
+
+**Audit of C081:** C081's CIs (bootstrap with replacement, fixed E_null) are **superseded** by the repaired intervals above. Its point values are reproduced to within 0.0002; they differ only through E_null shuffle noise under a different seed. C081's NOT TESTABLE and NOT CALLED stand as the honest verdicts of that cycle.
+
+**Next (suggested):** a parameter sweep of the generator, asking whether any plausible setting reaches K ≈ 0.10 while keeping the C004 surface statistics. Seeds 11246+.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

@@ -43,4 +43,6 @@ Voynich words look built from slots: a beginning, a middle and an end, as in Sto
 - **Descriptive (hypothesis for C082, suggested by these data):** the manuscript's end-coupling is low for a natural language, between the two Finnish texts and close to the agglutinative Kalevala. It is also **lower than every generator run**: the Timm–Schinner generator ties its word ends together more tightly than the manuscript does.
 - **C082 (pre-committed):** repair the CI (recompute E_null inside every resample, and use half-sample subsampling without replacement). Then test "manuscript BELOW GENERATOR" confirmatorily on 20 new generator seeds (11211–11230), with the same known-answer control.
 
+**Audit (C082, 2026-11-09):** the CIs in the table above are superseded by C082's repaired half-sample intervals (E_null recomputed per draw); with them the natural verdict becomes INSIDE NATURAL and "below the generator" was confirmed on 20 fresh seeds (see [C082](C082-affix-repaired.md)).
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
