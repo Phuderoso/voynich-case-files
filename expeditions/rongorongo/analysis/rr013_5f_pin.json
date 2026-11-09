@@ -1,0 +1,36 @@
+{
+ "list_sha256": "6e05f83d0917b592b029937f70a45ad5297298b9b10ae2c0b288d78d237f050e",
+ "corpus_sha256": "ce1782aaa9cd83acb6f60b1b70776aba726258607c66a0187845d53f6716e460",
+ "n_groups": 372,
+ "n_variant_codes": 1684,
+ "cross_number_entries": 0,
+ "cross_examples": [],
+ "codes_in_two_groups": {},
+ "token_stats": {
+  "illegible_or_marker": 280,
+  "listed": 6064,
+  "not_listed": 412,
+  "not_listed_base_exists": 12
+ },
+ "base_differs_examples": [],
+ "pozdniakov_6_64": {
+  "tokens_064_in_8_sides": 13,
+  "tokens_006_in_8_sides": 81,
+  "units_in_8_sides": 5164,
+  "per_side": {
+   "Aa:006": 3,
+   "Aa:064": 3,
+   "Ab:006": 8,
+   "Br:006": 6,
+   "Br:064": 1,
+   "Bv:006": 14,
+   "Ca:006": 7,
+   "Ca:064": 1,
+   "Cb:006": 8,
+   "Cb:064": 4,
+   "Er:006": 2,
+   "Ia:006": 33,
+   "Ia:064": 4
+  }
+ }
+}
