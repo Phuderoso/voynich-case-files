@@ -74,3 +74,5 @@ Natural X per text (W1 / W2): Caesar 0.156/0.206, Descartes 0.244/0.318, Dante 0
 **Seeds spent:** generator 11286–11320. **Next: 11321+.** The deferred F-AFFIX equivalence test of the C005 configuration is C085.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+**Audit note (C086, 2026-11-09).** The X values above come from one PLSA initialisation per text. Re-measured with 8 initialisations (R 9, non-registered seeds; [C086](C086-joint-surface-topics.md) design step), the manuscript's X is ZL 0.460 ± 0.039 / IT2a 0.467 ± 0.013 in W1 and 0.221 ± 0.042 / 0.217 ± 0.035 in W2. The W1 values reported here (0.546/0.538) sit above all 16 repeats, and `null_sd` does not include the observed text's own init spread (G ranged −0.08 to −0.27 bits on ZL W1 over 17 inits). Readings unchanged: H1 DETECTED (X ≫ 0 for every init), H3 ABOVE the C005 setting (≤ 0.10/0.15), default runs still bracket W1 (in W2 the manuscript, ≈ 0.22, lies below all five default runs, 0.35–0.57, as in the table above). Quote multi-init means from now on.
