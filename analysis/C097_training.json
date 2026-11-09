@@ -1,0 +1,1319 @@
+{
+ "training": [
+  {
+   "ci": 0,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.5894217696351769,
+   "max_RHO": 0.5986048501288013,
+   "surf": {
+    "mwl": 4.226833333333333,
+    "ttr": 0.20123333333333332,
+    "h2": 1.9422467793680844,
+    "R": 0.4519492737376286
+   },
+   "feasible": false
+  },
+  {
+   "ci": 1,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.5757947603280277,
+   "max_RHO": 0.590028297240943,
+   "surf": {
+    "mwl": 4.121966666666666,
+    "ttr": 0.2277,
+    "h2": 2.1116526564352904,
+    "R": 0.41270154886723337
+   },
+   "feasible": false
+  },
+  {
+   "ci": 2,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.4879906040525914,
+   "max_RHO": 0.5028509446208143,
+   "surf": {
+    "mwl": 4.6582,
+    "ttr": 0.3797,
+    "h2": 2.507532696160504,
+    "R": 0.18249705702517766
+   },
+   "feasible": false
+  },
+  {
+   "ci": 3,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.48460590167130063,
+   "max_RHO": 0.5056831293724044,
+   "surf": {
+    "mwl": 4.643333333333333,
+    "ttr": 0.3926666666666666,
+    "h2": 2.572145111986012,
+    "R": 0.13144717072254947
+   },
+   "feasible": false
+  },
+  {
+   "ci": 4,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6116273362442157,
+   "max_RHO": 0.6261778306987363,
+   "surf": {
+    "mwl": 4.4039,
+    "ttr": 0.1506,
+    "h2": 1.7069913283113873,
+    "R": 0.504228781390284
+   },
+   "feasible": false
+  },
+  {
+   "ci": 5,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6008493788932823,
+   "max_RHO": 0.6172183294037477,
+   "surf": {
+    "mwl": 4.3482666666666665,
+    "ttr": 0.1673,
+    "h2": 1.7942085955111349,
+    "R": 0.48940963628106465
+   },
+   "feasible": false
+  },
+  {
+   "ci": 6,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.48272623960902683,
+   "max_RHO": 0.49855176444459565,
+   "surf": {
+    "mwl": 4.737399999999999,
+    "ttr": 0.3889666666666667,
+    "h2": 2.5008133605203766,
+    "R": 0.17320020107474682
+   },
+   "feasible": false
+  },
+  {
+   "ci": 7,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.479939230340732,
+   "max_RHO": 0.5114497487618229,
+   "surf": {
+    "mwl": 4.614366666666666,
+    "ttr": 0.3899666666666667,
+    "h2": 2.591317211989239,
+    "R": 0.15289197650982672
+   },
+   "feasible": false
+  },
+  {
+   "ci": 8,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6200888388917981,
+   "max_RHO": 0.6357270316305738,
+   "surf": {
+    "mwl": 4.082966666666667,
+    "ttr": 0.17073333333333332,
+    "h2": 2.0321873784676323,
+    "R": 0.46729436342242636
+   },
+   "feasible": false
+  },
+  {
+   "ci": 9,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6158278396959125,
+   "max_RHO": 0.624440569421022,
+   "surf": {
+    "mwl": 4.130633333333333,
+    "ttr": 0.18943333333333334,
+    "h2": 2.0486286835991963,
+    "R": 0.45483055722535315
+   },
+   "feasible": false
+  },
+  {
+   "ci": 10,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.5256318135180011,
+   "max_RHO": 0.5486080629272088,
+   "surf": {
+    "mwl": 4.349333333333334,
+    "ttr": 0.3387333333333334,
+    "h2": 2.5013185766042136,
+    "R": 0.20726785603579456
+   },
+   "feasible": false
+  },
+  {
+   "ci": 11,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.5139564031591068,
+   "max_RHO": 0.5419114949465239,
+   "surf": {
+    "mwl": 4.262066666666667,
+    "ttr": 0.3367666666666667,
+    "h2": 2.5259538972404556,
+    "R": 0.19229099993504178
+   },
+   "feasible": false
+  },
+  {
+   "ci": 12,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 0,
+   "mean_RHO": null,
+   "max_RHO": null,
+   "surf": null,
+   "feasible": false
+  },
+  {
+   "ci": 13,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 2,
+   "mean_RHO": 0.6021829799547678,
+   "max_RHO": 0.6048886296902535,
+   "surf": {
+    "mwl": 4.291916666666666,
+    "ttr": 0.17508333333333334,
+    "h2": 1.998186545020872,
+    "R": 0.4998541665127375
+   },
+   "feasible": false
+  },
+  {
+   "ci": 14,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.5244930034207911,
+   "max_RHO": 0.546798372176034,
+   "surf": {
+    "mwl": 4.307833333333333,
+    "ttr": 0.3363,
+    "h2": 2.5065228245331506,
+    "R": 0.20070884127817581
+   },
+   "feasible": false
+  },
+  {
+   "ci": 15,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.518239366990303,
+   "max_RHO": 0.5309901956650324,
+   "surf": {
+    "mwl": 4.180466666666666,
+    "ttr": 0.3381333333333333,
+    "h2": 2.545351437024641,
+    "R": 0.19580570043351647
+   },
+   "feasible": false
+  },
+  {
+   "ci": 16,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 0,
+   "mean_RHO": null,
+   "max_RHO": null,
+   "surf": null,
+   "feasible": false
+  },
+  {
+   "ci": 17,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 0,
+   "mean_RHO": null,
+   "max_RHO": null,
+   "surf": null,
+   "feasible": false
+  },
+  {
+   "ci": 18,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 3,
+   "mean_RHO": 0.6222171018933574,
+   "max_RHO": 0.651278391266186,
+   "surf": {
+    "mwl": 4.476166666666667,
+    "ttr": 0.1783888888888889,
+    "h2": 2.2716036680198726,
+    "R": 0.5608747776520299
+   },
+   "feasible": false
+  },
+  {
+   "ci": 19,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 3,
+   "mean_RHO": 0.6206943265543314,
+   "max_RHO": 0.6343908797965401,
+   "surf": {
+    "mwl": 4.355166666666666,
+    "ttr": 0.18611111111111112,
+    "h2": 2.3700013232829815,
+    "R": 0.5731541680526395
+   },
+   "feasible": false
+  },
+  {
+   "ci": 20,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 0,
+   "mean_RHO": null,
+   "max_RHO": null,
+   "surf": null,
+   "feasible": false
+  },
+  {
+   "ci": 21,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 0,
+   "mean_RHO": null,
+   "max_RHO": null,
+   "surf": null,
+   "feasible": false
+  },
+  {
+   "ci": 22,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 4,
+   "mean_RHO": 0.6397466242687387,
+   "max_RHO": 0.6466079149950537,
+   "surf": {
+    "mwl": 4.407791666666667,
+    "ttr": 0.16599999999999998,
+    "h2": 2.2449065827005668,
+    "R": 0.5551758958201493
+   },
+   "feasible": false
+  },
+  {
+   "ci": 23,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 3,
+   "mean_RHO": 0.6120088440735675,
+   "max_RHO": 0.632789750342417,
+   "surf": {
+    "mwl": 4.186333333333333,
+    "ttr": 0.17705555555555555,
+    "h2": 2.39166447774472,
+    "R": 0.5513594968085193
+   },
+   "feasible": false
+  },
+  {
+   "ci": 24,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 0,
+   "mean_RHO": null,
+   "max_RHO": null,
+   "surf": null,
+   "feasible": false
+  },
+  {
+   "ci": 25,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 0,
+   "mean_RHO": null,
+   "max_RHO": null,
+   "surf": null,
+   "feasible": false
+  },
+  {
+   "ci": 26,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 1,
+   "mean_RHO": 0.6687966739310345,
+   "max_RHO": 0.6687966739310345,
+   "surf": {
+    "mwl": 4.352166666666666,
+    "ttr": 0.17483333333333334,
+    "h2": 2.2455230501074523,
+    "R": 0.5906504518914593
+   },
+   "feasible": false
+  },
+  {
+   "ci": 27,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 3,
+   "mean_RHO": 0.6621320055396244,
+   "max_RHO": 0.6788698306179428,
+   "surf": {
+    "mwl": 4.213833333333333,
+    "ttr": 0.17905555555555555,
+    "h2": 2.271249730608439,
+    "R": 0.5431307382899807
+   },
+   "feasible": false
+  },
+  {
+   "ci": 28,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 0,
+   "mean_RHO": null,
+   "max_RHO": null,
+   "surf": null,
+   "feasible": false
+  },
+  {
+   "ci": 29,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 0,
+   "mean_RHO": null,
+   "max_RHO": null,
+   "surf": null,
+   "feasible": false
+  },
+  {
+   "ci": 30,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 3,
+   "mean_RHO": 0.6505354916468264,
+   "max_RHO": 0.6556667839893715,
+   "surf": {
+    "mwl": 4.170111111111111,
+    "ttr": 0.17711111111111114,
+    "h2": 2.2765114779350277,
+    "R": 0.5664614028860208
+   },
+   "feasible": false
+  },
+  {
+   "ci": 31,
+   "cell": {
+    "method.sourceChooser": "page",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 4,
+   "mean_RHO": 0.6771919663508706,
+   "max_RHO": 0.702320842614716,
+   "surf": {
+    "mwl": 3.988083333333333,
+    "ttr": 0.173875,
+    "h2": 2.2931658433627105,
+    "R": 0.5760928313627434
+   },
+   "feasible": false
+  },
+  {
+   "ci": 32,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 0,
+   "mean_RHO": null,
+   "max_RHO": null,
+   "surf": null,
+   "feasible": false
+  },
+  {
+   "ci": 33,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 0,
+   "mean_RHO": null,
+   "max_RHO": null,
+   "surf": null,
+   "feasible": false
+  },
+  {
+   "ci": 34,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 0,
+   "mean_RHO": null,
+   "max_RHO": null,
+   "surf": null,
+   "feasible": false
+  },
+  {
+   "ci": 35,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 4,
+   "mean_RHO": 0.6026737475500428,
+   "max_RHO": 0.6292276422161507,
+   "surf": {
+    "mwl": 4.661041666666667,
+    "ttr": 0.46262499999999995,
+    "h2": 2.675689278064874,
+    "R": 0.22496340493436418
+   },
+   "feasible": false
+  },
+  {
+   "ci": 36,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6567667327026401,
+   "max_RHO": 0.6629065234887084,
+   "surf": {
+    "mwl": 4.541966666666667,
+    "ttr": 0.2692333333333333,
+    "h2": 2.2964672368894283,
+    "R": 0.545317372254597
+   },
+   "feasible": false
+  },
+  {
+   "ci": 37,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6614717385196325,
+   "max_RHO": 0.6706085473887707,
+   "surf": {
+    "mwl": 4.6039666666666665,
+    "ttr": 0.30319999999999997,
+    "h2": 2.312319868419558,
+    "R": 0.5127303134142809
+   },
+   "feasible": true
+  },
+  {
+   "ci": 38,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6248678004090106,
+   "max_RHO": 0.6341069490140484,
+   "surf": {
+    "mwl": 4.7289,
+    "ttr": 0.43656666666666666,
+    "h2": 2.5922106079042733,
+    "R": 0.2654273141135288
+   },
+   "feasible": false
+  },
+  {
+   "ci": 39,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.613347626961605,
+   "max_RHO": 0.617236659227272,
+   "surf": {
+    "mwl": 4.706099999999999,
+    "ttr": 0.45533333333333326,
+    "h2": 2.6603990933148234,
+    "R": 0.27382860151114785
+   },
+   "feasible": false
+  },
+  {
+   "ci": 40,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6849177888701251,
+   "max_RHO": 0.6973891544580018,
+   "surf": {
+    "mwl": 4.200233333333332,
+    "ttr": 0.2760666666666667,
+    "h2": 2.448935767200947,
+    "R": 0.48097757602643176
+   },
+   "feasible": false
+  },
+  {
+   "ci": 41,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6721105465787718,
+   "max_RHO": 0.6883151562032827,
+   "surf": {
+    "mwl": 4.237666666666667,
+    "ttr": 0.2951666666666667,
+    "h2": 2.4279401024972445,
+    "R": 0.44467546688964144
+   },
+   "feasible": false
+  },
+  {
+   "ci": 42,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6322159935362726,
+   "max_RHO": 0.6452398981453892,
+   "surf": {
+    "mwl": 4.3408999999999995,
+    "ttr": 0.39943333333333336,
+    "h2": 2.674576736729446,
+    "R": 0.2506219869206303
+   },
+   "feasible": false
+  },
+  {
+   "ci": 43,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6315274045306978,
+   "max_RHO": 0.6340818187578285,
+   "surf": {
+    "mwl": 4.3419,
+    "ttr": 0.40226666666666666,
+    "h2": 2.625647854101902,
+    "R": 0.2683135112346624
+   },
+   "feasible": false
+  },
+  {
+   "ci": 44,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6900572637840845,
+   "max_RHO": 0.7025278071154439,
+   "surf": {
+    "mwl": 4.300966666666667,
+    "ttr": 0.22996666666666665,
+    "h2": 2.328051242235301,
+    "R": 0.5556161227323256
+   },
+   "feasible": false
+  },
+  {
+   "ci": 45,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6823541488599357,
+   "max_RHO": 0.694894535130683,
+   "surf": {
+    "mwl": 4.2881,
+    "ttr": 0.2625,
+    "h2": 2.3837324067653305,
+    "R": 0.5172159189664849
+   },
+   "feasible": false
+  },
+  {
+   "ci": 46,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.629474357099661,
+   "max_RHO": 0.6438871974633831,
+   "surf": {
+    "mwl": 4.325066666666666,
+    "ttr": 0.39980000000000004,
+    "h2": 2.6985595808914566,
+    "R": 0.26812922773738024
+   },
+   "feasible": false
+  },
+  {
+   "ci": 47,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 30,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6298823553738854,
+   "max_RHO": 0.6517856258595828,
+   "surf": {
+    "mwl": 4.290066666666667,
+    "ttr": 0.4084,
+    "h2": 2.648986743591979,
+    "R": 0.25710640927926826
+   },
+   "feasible": false
+  },
+  {
+   "ci": 48,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6322142192773434,
+   "max_RHO": 0.647428737207335,
+   "surf": {
+    "mwl": 4.371,
+    "ttr": 0.3151333333333333,
+    "h2": 2.4128512312125947,
+    "R": 0.4751972660804814
+   },
+   "feasible": true
+  },
+  {
+   "ci": 49,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6503761444587652,
+   "max_RHO": 0.6721154705987814,
+   "surf": {
+    "mwl": 4.381733333333334,
+    "ttr": 0.3364666666666667,
+    "h2": 2.399564102717478,
+    "R": 0.4871100609640546
+   },
+   "feasible": true
+  },
+  {
+   "ci": 50,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.576564555079465,
+   "max_RHO": 0.5880096601289391,
+   "surf": {
+    "mwl": 4.944100000000001,
+    "ttr": 0.345,
+    "h2": 2.419698247324179,
+    "R": 0.5174464193101904
+   },
+   "feasible": true
+  },
+  {
+   "ci": 51,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.5882753066820916,
+   "max_RHO": 0.6060898555423001,
+   "surf": {
+    "mwl": 4.7889,
+    "ttr": 0.34440000000000004,
+    "h2": 2.4854505912485116,
+    "R": 0.49414048425374685
+   },
+   "feasible": true
+  },
+  {
+   "ci": 52,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6359206195208743,
+   "max_RHO": 0.6415108177549096,
+   "surf": {
+    "mwl": 4.7357,
+    "ttr": 0.26266666666666666,
+    "h2": 2.2539109243701465,
+    "R": 0.5801443790723921
+   },
+   "feasible": false
+  },
+  {
+   "ci": 53,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6353516596154651,
+   "max_RHO": 0.6578119274317914,
+   "surf": {
+    "mwl": 4.593133333333333,
+    "ttr": 0.2771,
+    "h2": 2.302435281387547,
+    "R": 0.5825619572056596
+   },
+   "feasible": false
+  },
+  {
+   "ci": 54,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.5868690874505876,
+   "max_RHO": 0.6171258635971911,
+   "surf": {
+    "mwl": 4.922500000000001,
+    "ttr": 0.3368,
+    "h2": 2.417060012700874,
+    "R": 0.5221723890129388
+   },
+   "feasible": true
+  },
+  {
+   "ci": 55,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.596625587547343,
+   "max_RHO": 0.6226424690821344,
+   "surf": {
+    "mwl": 4.778533333333334,
+    "ttr": 0.33330000000000004,
+    "h2": 2.3941453699415662,
+    "R": 0.5074501846354817
+   },
+   "feasible": true
+  },
+  {
+   "ci": 56,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6682371511564161,
+   "max_RHO": 0.6772426064571443,
+   "surf": {
+    "mwl": 4.175633333333333,
+    "ttr": 0.2680333333333333,
+    "h2": 2.449143319627492,
+    "R": 0.5091071332815955
+   },
+   "feasible": false
+  },
+  {
+   "ci": 57,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6620339683208396,
+   "max_RHO": 0.6829465477621022,
+   "surf": {
+    "mwl": 4.1847666666666665,
+    "ttr": 0.28113333333333335,
+    "h2": 2.39964100893771,
+    "R": 0.4670245992597035
+   },
+   "feasible": false
+  },
+  {
+   "ci": 58,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6411749286686388,
+   "max_RHO": 0.6546279755355845,
+   "surf": {
+    "mwl": 4.401933333333334,
+    "ttr": 0.29379999999999995,
+    "h2": 2.5796376784357107,
+    "R": 0.5158789822998548
+   },
+   "feasible": false
+  },
+  {
+   "ci": 59,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6251139280329665,
+   "max_RHO": 0.6328711702501966,
+   "surf": {
+    "mwl": 4.384799999999999,
+    "ttr": 0.30789999999999995,
+    "h2": 2.5620734130925706,
+    "R": 0.5065674559963302
+   },
+   "feasible": true
+  },
+  {
+   "ci": 60,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6772624243162655,
+   "max_RHO": 0.6929330594925605,
+   "surf": {
+    "mwl": 4.394466666666666,
+    "ttr": 0.22086666666666668,
+    "h2": 2.2943600819717225,
+    "R": 0.59338998888506
+   },
+   "feasible": false
+  },
+  {
+   "ci": 61,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "curveline",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6553778249261606,
+   "max_RHO": 0.6619276906009811,
+   "surf": {
+    "mwl": 4.2473,
+    "ttr": 0.23336666666666667,
+    "h2": 2.347522486315117,
+    "R": 0.572008061362789
+   },
+   "feasible": false
+  },
+  {
+   "ci": 62,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "default"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6438905170398573,
+   "max_RHO": 0.6507745536270162,
+   "surf": {
+    "mwl": 4.389633333333334,
+    "ttr": 0.2976666666666667,
+    "h2": 2.5697759878484105,
+    "R": 0.5167849501980991
+   },
+   "feasible": false
+  },
+  {
+   "ci": 63,
+   "cell": {
+    "method.sourceChooser": "random",
+    "method.morph.combine_split.probability": 0,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.canFollow": "none",
+    "text.initial_line": "f103r.1"
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.6265829431547806,
+   "max_RHO": 0.640572388641228,
+   "surf": {
+    "mwl": 4.339333333333332,
+    "ttr": 0.30589999999999995,
+    "h2": 2.549542928996259,
+    "R": 0.5037411727947924
+   },
+   "feasible": true
+  },
+  {
+   "ci": 64,
+   "cell": {
+    "text.max_repeat_count": 2,
+    "text.initial_line": "f103r.1",
+    "method.canFollow": "none",
+    "method.canFollow.error_rate": 0,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 62,
+    "method.morph.add_remove.probability": 20,
+    "method.morph.combine_split.probability": 0,
+    "method.morph.reuse_last.probability": 0,
+    "method.morph.combined.dismiss_as_source_probability": 19,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "daiin",
+    "method.suggestions.probability": 51,
+    "method.suggestions.iType_min_percentage": 34,
+    "method.suggestions.olType_min_percentage": 81,
+    "method.suggestions.dyType_min_percentage": 1
+   },
+   "n_ok": 5,
+   "mean_RHO": 0.5842977630168,
+   "max_RHO": 0.6000933975702942,
+   "surf": {
+    "mwl": 5.039666666666667,
+    "ttr": 0.35246666666666665,
+    "h2": 2.4430892541215066,
+    "R": 0.5309800560454289
+   },
+   "feasible": true
+  }
+ ]
+}

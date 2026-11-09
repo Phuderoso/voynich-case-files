@@ -1,0 +1,13 @@
+training done 400.7
+winner 37 {'method.sourceChooser': 'random', 'method.morph.combine_split.probability': 30, 'method.morph.add_remove.probability': 20, 'method.morph.use_word_final_substitutions': 'false', 'method.canFollow': 'curveline', 'text.initial_line': 'f103r.1'} 0.6615
+confirmation done 442.4
+extreme {"n_feasible": 10, "feasible_max_mean": 0.6614717385196325, "feasible_max_single": 0.6721154705987814, "all_max_mean": 0.6900572637840845, "all_max_single": 0.7025278071154439, "default_like_cells": null}
+winner {"ci": 37, "cell": {"method.sourceChooser": "random", "method.morph.combine_split.probability": 30, "method.morph.add_remove.probability": 20, "method.morph.use_word_final_substitutions": "false", "method.canFollow": "curveline", "text.initial_line": "f103r.1"}, "n_ok": 5, "mean_RHO": 0.6614717385196325, "max_RHO": 0.6706085473887707, "surf": {"mwl": 4.6039666666666665, "ttr": 0.30319999999999997, "h2": 2.312319868419558, "R": 0.5127303134142809}, "feasible": true}
+gates {"N1": {"reached": "20/20", "FPR": "2/20", "POW": "13/20", "MDE80": 0.042394490524029695, "plant_shift": -0.03533777833256483, "shift_over_MDE": -0.833546479643032, "lead": 0.054, "lead_over_MDE": 1.2737504173895466, "mean": 0.6517609285075288, "sd": 0.01409805354141362, "lo": 0.6171717268357532, "hi": 0.6831809649451145, "ok": false, "why": "G1"}, "N2": {"reached": "20/20", "FPR": "1/20", "POW": "16/20", "MDE80": 0.0418374077140144, "plant_shift": -0.03936362600308933, "shift_over_MDE": -0.9408715346841047, "lead": 0.054, "lead_over_MDE": 1.2907109438788544, "mean": 0.6558663339913255, "sd": 0.013912798731519275, "lo": 0.6290557135586163, "hi": 0.6787220814648229, "ok": false, "why": "G2"}}
+reach {"N1": 20, "N2": 20}
+batch {"mean_N1": 0.6517609285075288, "sd_N1": 0.01409805354141362, "mean_N2": 0.6558663339913255, "sd_N2": 0.013912798731519275, "max_all": 0.6831809649451145}
+winner_surface_confirm {"mwl": 4.5682875, "ttr": 0.3102666666666667, "h2": 2.3468970827501088, "R": 0.5122786783767039}
+winner_surface_like true
+runnable false
+verdict "NOT RUN, LOW-POWER (NOT TESTABLE)"
+elapsed_s 442.4
