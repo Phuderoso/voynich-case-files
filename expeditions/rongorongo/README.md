@@ -28,6 +28,7 @@ publish negatives. **No decipherment is claimed.**
 | RR008 | Same trigram count after merging sign families learned from the H/P/Q copies only (14 swaps, 11 classes); plus a seed audit of RR006 | same, codes padded | **NOT DETECTED, all 25 pairs powered** (k* 1–4; controls Hr–Qr 103, Hr–Pr 148; reversed 0 Holm). Six pairs gained 1–2 trigrams but the null rose too (min p 0.062). Known answer Ab–Er stays at 1, as declared: three copies of one text are too small a dictionary. Audit E: RR006 verdicts stable, lg* ±1. [RR008](case-file/RR008-equivalence-formulae.md) |
 | RR009 | When two of the H/P/Q copies write the same host sign, do they agree on its fused stroke? Plus a seed audit of RR007 | same, codes padded | **DETECTED** (41 of 163 aligned pairs disagree vs 120–170 under a per-host shuffle, p 0.001; f* 0.20; negative control 1/20). Rules out strokes added at random; affix vs faithfully copied ligature still open. Exploratory: 9 of the 41 disagreements write the stroke loose beside the host. Audit F: RR007 stable, k* ±1. [RR009](case-file/RR009-fusion-conservation.md) |
 | RR010 | When two H/P/Q copies disagree on a fused stroke, does the bare copy write that same stroke loose beside the host? Plus a seed audit of RR009 | same, codes padded | **S1 DETECTED** (same stroke loose beside the bare host in 8 of 41 disagreements vs null mean 1.50, max 7, under a within-line reposition of free strokes; p 0.001, Holm 0.002; f* 0.15; negative control 0/20; independent recount identical). S2 any free stroke NOT DETECTED, powered (10 vs 6.06, p 0.095, f* 0.30). Fused and loose look like two spellings in about a fifth of the disagreements (ligature-like); same data that suggested the idea. Audit G: RR009 seed-stable. [RR010](case-file/RR010-loose-strokes.md) |
+| RR011 | Keiti refrains: are the gaps between returns of repeated sign pairs more regular (verse-like) than a line-preserving block shuffle? Fallback 4d: does the loose stroke keep the fused side? Plus a seed audit of RR010 | same, codes padded | **Line 2 NOT TESTABLE** (6 refrains, 27 gaps; a planted exact-period refrain is caught 32/100 by gap CV and 10/100 by Rayleigh, gate 80; description: gap CV 0.955 vs 0.81, p 0.92; Rayleigh p 0.040, Holm 0.080). **Line 4d NOT TESTABLE** (6/6 informative cases keep the fused side vs 3.49 expected under the side habits of the 23 objects other than H/P/Q, exact p 0.0101 = floor; power 0.735 < 0.80); a lead. Recounts identical. Audit H: RR010 S1 seed-stable (p 0.001, f* 0.15; negative control 3/20 at the limit). [RR011](case-file/RR011-keiti-refrains.md) |
 
 ## Data (pinned 2026-11-09, see [data/MANIFEST.md](data/MANIFEST.md))
 - **CEIPP numerical transliteration** (Cercle d'Études sur l'Île de Pâques et la Polynésie, after T. Barthel 1958),
@@ -45,8 +46,10 @@ publish negatives. **No decipherment is claimed.**
 
 ## Open investigative lines
 1. ~~**Calibrated isolation** (RR001)~~ closed 2026-11-09: no shared run of ℓ* (4–7) or more head signs. Follow-up left open: the same calibration for fuzzy copies (one substitution), which needs its own null.
-2. **Strophic refrains on Keiti** (rochal's open question): distance between refrain recurrences against a
-   line-length-preserving null. **Chosen for RR011.**
+2. ~~**Strophic refrains on Keiti**~~ (rochal's open question) closed as **NOT TESTABLE** by RR011: 6 sign-pair refrains
+   with 27 gaps cannot show even a perfectly periodic planted refrain (power 0.32 / 0.10). The real gaps are not more
+   regular than the block-shuffle null (CV p 0.92). Post-hoc lead: `040 300.028x` returns at 13, 14, 14, 15 signs in
+   Er01–Er03, then not for 138 signs (a local run, not a tablet-wide period).
 3. ~~**Small-sign chains (4, 2, 1, 9)**~~ closed for free strokes by RR002 (order NOT TESTABLE) and RR003 (clumping and
    entry-edge position NOT DETECTED, powered). Lead left: strokes may avoid the entry-initial slot (post hoc).
 4. ~~**Fused strokes: host selectivity**~~ (RR004): **DETECTED**. Each stroke type has its own hosts and its own side,
@@ -58,6 +61,11 @@ publish negatives. **No decipherment is claimed.**
    choice (ligature-like). Caveat: same data that suggested it, and CEIPP's fused/free segmentation. Next (4d, optional):
    does the loose stroke keep the fused stroke's side? (Exploratory: 7 of 7 distinct cases, but RR004 side preference
    already predicts most of that, so the null must be conditioned on RR004's side rates.)
+   4d tested (RR011): **NOT TESTABLE**, 6/6 informative cases keep the fused side vs 3.49 expected under side habits
+   from the 23 objects other than H/P/Q (exact p 0.0101, the floor; power 0.735 < 0.80). Two cases go against the
+   stroke's habit and the loose stroke still follows the copy. A lead, on the same data that suggested it.
+   **Next (4e), chosen for RR012:** confirm RR010 S1 and 4d on fresh copies, the G·K parallel family (Small Santiago and
+   Small London), which RR009–RR011 never used. Same rules fixed before looking at any case.
 5. ~~**Fuzzy-copy calibration**~~ closed by RR005: no shared one-substitution run of l1* (5–8) or more head signs.
    5b resolved (RR006): the Ab05 / Er04 lead is a published parallel (Horley, Er4 ref. Ab5–6, Bv11), not new.
    5c closed (RR006): no one-indel copy of lg* (5–9) or more. Lesson: these tests miss the short catalogued parallels;
@@ -81,3 +89,4 @@ publish negatives. **No decipherment is claimed.**
 - 2026-11-09 (RR008): none new; the rochal draft stays pending.
 - 2026-11-09 (RR009): none new; the rochal draft stays pending.
 - 2026-11-09 (RR010): the combined rochal issue (now RR001–RR010, [text](outreach/RR004-draft-rochal.md)) was attempted again; the connector raised an approval form, so it is **drafted, not filed**. The khipulab data-quality issue stays pending (one outreach per run).
+- 2026-11-09 (RR011): the rochal/rongorongo issue still does not exist (0 issues), so the run's one outreach went to the khipulab/open-khipu-repository duplicate-records issue (KH0140/KH0483 and others; only #1 and #2 there, no match). The connector raised an approval form, so it is **drafted, not filed** ([text](../khipu/outreach/2026-11-05-okr-duplicates-draft.md)). The rochal draft stays pending.
