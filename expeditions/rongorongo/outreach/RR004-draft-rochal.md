@@ -19,6 +19,12 @@ One caveat matters: this shows that the strokes are specialised to particular ho
 
 A small note for anyone re-using the parse: some lines (mostly Aa01–Aa02) are written with unpadded codes (`4.120a` rather than `004.120a`), so a regex such as `00[12349]` misses about 6 free strokes there. In my own audit, padding first changed no verdict.
 
+**Added after RR005 (fuzzy copies).** The same 25 pairs searched with one substituted sign allowed, against a Markov
+null calibrated for that search: all NOT DETECTED, each powered to 5–8 signs; Hr–Qr 15 and Hr–Pr 17 pass as positive
+controls. The smallest p (0.009, not significant after Holm) is Ab05 `002 739 700 739 006 090` against Er04
+`002 739 027 739 006 090`. Do you already have this one in your fuzzy-parallel list?
+([RR005](https://github.com/Phuderoso/voynich-case-files/blob/main/expeditions/rongorongo/case-file/RR005-fuzzy-isolation.md))
+
 Happy to adapt any of this if a different null or granularity would be more useful to you.
 
 ---
