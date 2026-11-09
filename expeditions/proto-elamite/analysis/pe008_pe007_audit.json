@@ -1,0 +1,9 @@
+{
+ "pe007_results_identical_except_time": true,
+ "B_entry_recomputed": {
+  "tasks": 129,
+  "unique": 47,
+  "unique_correct": 28,
+  "precision": 0.5957446808510638
+ }
+}
