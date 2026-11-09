@@ -1,0 +1,52 @@
+POSITIVE [{'pair': 'Hr-Qr', 'M1': 15, 'null_max': 14, 'p': 0.001, 'passes': True}, {'pair': 'Hr-Pr', 'M1': 17, 'null_max': 10, 'p': 0.001, 'passes': True}] 3s
+Aa Br 680 440 l1* 8 thr 8 6s
+Aa Bv 680 516 l1* 7 thr 7 10s
+Aa Ca 680 400 l1* 7 thr 7 12s
+Aa Cb 680 374 l1* 7 thr 7 15s
+Aa Er 680 342 l1* 5 thr 5 18s
+Aa Ia 680 1746 l1* 6 thr 6 32s
+Ab Br 666 440 l1* 6 thr 6 35s
+Ab Bv 666 516 l1* 7 thr 7 39s
+Ab Ca 666 400 l1* 8 thr 8 41s
+Ab Cb 666 374 l1* 8 thr 8 44s
+Ab Er 666 342 l1* 7 thr 7 47s
+Ab Ia 666 1746 l1* 6 thr 6 60s
+Br Ca 440 400 l1* 6 thr 6 62s
+Br Cb 440 374 l1* 6 thr 6 64s
+Br Er 440 342 l1* 5 thr 5 66s
+Br Ia 440 1746 l1* 6 thr 6 75s
+Bv Ca 516 400 l1* 6 thr 6 77s
+Bv Cb 516 374 l1* 6 thr 6 79s
+Bv Er 516 342 l1* 6 thr 6 81s
+Bv Ia 516 1746 l1* 6 thr 6 91s
+Ca Er 400 342 l1* 8 thr 8 93s
+Ca Ia 400 1746 l1* 6 thr 6 102s
+Cb Er 374 342 l1* 6 thr 6 103s
+Cb Ia 374 1746 l1* 6 thr 6 112s
+Er Ia 342 1746 l1* 6 thr 6 119s
+GATES {'positive_controls_pass': True, 'reversed_holm_detections': 0, 'reversed_unadjusted_hits': 0, 'gate_reversed_ok': True}
+Aa-Br 4 7 0.796 8 NOT DETECTED (one-substitution copy of >= 8 signs would be seen)
+Aa-Bv 4 6 0.852 7 NOT DETECTED (one-substitution copy of >= 7 signs would be seen)
+Aa-Ca 4 7 0.928 7 NOT DETECTED (one-substitution copy of >= 7 signs would be seen)
+Aa-Cb 4 7 0.953 7 NOT DETECTED (one-substitution copy of >= 7 signs would be seen)
+Aa-Er 4 4 0.98 5 NOT DETECTED (one-substitution copy of >= 5 signs would be seen)
+Aa-Ia 4 5 0.911 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)
+Ab-Br 4 5 0.956 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)
+Ab-Bv 4 6 0.966 7 NOT DETECTED (one-substitution copy of >= 7 signs would be seen)
+Ab-Ca 5 7 0.878 8 NOT DETECTED (one-substitution copy of >= 8 signs would be seen)
+Ab-Cb 5 7 0.495 8 NOT DETECTED (one-substitution copy of >= 8 signs would be seen)
+Ab-Er 6 6 0.005 7 NOT DETECTED (one-substitution copy of >= 7 signs would be seen)
+Ab-Ia 4 6 0.907 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)
+Br-Ca 4 5 0.538 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)
+Br-Cb 4 5 0.938 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)
+Br-Er 4 4 0.494 5 NOT DETECTED (one-substitution copy of >= 5 signs would be seen)
+Br-Ia 3 5 1.0 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)
+Bv-Ca 4 5 0.997 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)
+Bv-Cb 4 5 0.971 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)
+Bv-Er 4 5 0.996 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)
+Bv-Ia 4 5 0.414 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)
+Ca-Er 4 7 0.984 8 NOT DETECTED (one-substitution copy of >= 8 signs would be seen)
+Ca-Ia 4 6 0.766 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)
+Cb-Er 4 5 0.717 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)
+Cb-Ia 3 5 1.0 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)
+Er-Ia 3 5 1.0 6 NOT DETECTED (one-substitution copy of >= 6 signs would be seen)

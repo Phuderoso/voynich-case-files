@@ -106,4 +106,8 @@ summary "ℓ* 4–7" becomes "ℓ* 4–7 (Aa pairs 4–6 after audit)". Files:
 Disclosed: the pre-registration says the M1 code was checked on 600 random cases; that check was 200 draws of one x
 against three y rows each (600 comparisons), all equal to brute force.
 
+## Audit notes
+- **Audit C (RR006, 2026-11-09): seed-stable.** Re-run with seed 5006: same verdicts, l1* moves by one sign in 3 of 25 pairs, p by at most 0.03. See [RR006](RR006-indel-isolation.md).
+- **The post-hoc lead is a known parallel.** Ab05 / Er04 is listed by Horley (Er4 with Ab5–6 and Bv11, [PDF](https://evols.library.manoa.hawaii.edu/server/api/core/bitstreams/d68c64ef-12c2-4d79-ae8a-afb56a43c762/content)). Not new.
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
