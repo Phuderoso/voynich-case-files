@@ -62,3 +62,6 @@ Seed 7474. Tool: `tools/c074_junction.py`.
 - **A hunch to test, not a finding:** `r.a`, `s.a` and `l.k` look like places where a "space" may cut through one word (e.g. `or.aiin`, `ol.kedy`). If so, part of the junction signal is a word-segmentation artefact of the transcriptions. Step 2 should split the MI into pairs with uncertain spaces (ZL `,`) and pairs with certain ones, and use size-matched generator texts.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Audit note (added in C075, 2026-11-08)
+In ZL Currier B, about 0.04 of the 0.249 bits come from the 7% of pairs at uncertain spaces (`,`). On certain-space pairs alone, MI is 0.207 bits (A: 0.109). Against generator runs size-matched to 13,159 pairs, the range is 0.013–0.048, so the ABOVE GENERATOR verdict stands. See [C075](C075-junction-uncertain-spaces.md).
