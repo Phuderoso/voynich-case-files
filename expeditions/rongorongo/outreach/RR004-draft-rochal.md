@@ -55,6 +55,12 @@ A small note for anyone re-using the parse: some lines (mostly Aa01–Aa02) are 
 - *Entry-initial strokes (RR013).* The only delimiter-bearing object not in our RR003 test is Small London, with 20 entries
   and 5 strokes: even zero stroke-initial entries would give p 1/15, so that lead cannot be confirmed on held-out data.
 
+**Added after RR014.**
+- *Strict parallels outside the copy families (RR014).* Between objects outside H/P/Q and G/K (789 side pairs), maximal
+  exact runs of ≥ 5 head signs occur only 3 times: Er09 = Ra05 (6), Ev04 = Gr05 (5) and Ev06 = Hv12 (6). None of them
+  disagrees on a fused stroke, so the H/P/Q loose-stroke finding cannot be checked there. One detail: Gr05 writes
+  `380.001.003` where Ev04 writes `380.001`.
+
 Happy to adapt any of this if a different null or granularity would be more useful to you.
 
 ---
