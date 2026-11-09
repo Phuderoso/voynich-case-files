@@ -127,8 +127,8 @@ to the committed `analysis/pe004_calibration.json` and `analysis/pe004_posthoc.j
   as such.
 - The capacity split (CAP / not-MULTI) is the one lead: 4/19 vs 18/24 balance, full p 0.00067, odd half p 0.0010, even
   half p 0.167. It needs **more labelled tablets**, not a new feature. The natural next step is to enlarge the
-  labelled set honestly, e.g. single-total tablets whose only damage is outside the numerals or on a line whose
-  numeral is fully restored by the editor, then test CAP alone (one pre-registered test, no split penalty) with a
-  fresh power gate.
+  labelled set honestly, e.g. single-total tablets whose damaged numerals the editor restores completely (damage
+  outside the numeral parts is already allowed in this set; correction made in the journal commit), then test CAP
+  alone (one pre-registered test, no split penalty) with a fresh power gate.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
