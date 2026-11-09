@@ -1,0 +1,73 @@
+# C089 registered run 1 (09:28:17-09:29:04 PT): crashed in the gate summary after the Q1 plants, before any real-label statistic (KeyError on the empty Q2 dict); fixed in f9a31c8
+cells {'ZL3b': {'A_W1': 47, 'A_W2': 19, 'B_W1': 35, 'B_W2': 29}, 'IT2a': {'A_W1': 45, 'A_W2': 19, 'B_W1': 35, 'B_W2': 30}} strata {'ZL3b': {'AA': 2, 'BA': 2, 'CA': 3, 'EB': 2, 'FB': 2, 'FA': 2, 'GA': 2, 'MB': 5, 'OA': 2, 'SA': 2, 'TB': 6}, 'IT2a': {'AA': 2, 'CA': 3, 'EB': 2, 'FB': 2, 'FA': 2, 'GA': 2, 'MB': 5, 'OA': 2, 'SA': 2, 'TB': 6}}
+Traceback (most recent call last):
+  File "/workspace/voynich/c089/ro/tools/c089_topic_pages.py", line 283, in <module>
+    main('--rehearse' in sys.argv)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/voynich/c089/ro/tools/c089_topic_pages.py", line 233, in main
+    gates(pool, base + 10, out)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/voynich/c089/ro/tools/c089_topic_pages.py", line 207, in gates
+    pw2 = sum(q2[f'{k}']['T'] > 0 and q2[f'{k}']['p'] <= A2 for k in range(NG))
+  File "/workspace/voynich/c089/ro/tools/c089_topic_pages.py", line 207, in <genexpr>
+    pw2 = sum(q2[f'{k}']['T'] > 0 and q2[f'{k}']['p'] <= A2 for k in range(NG))
+              ~~^^^^^^^^
+KeyError: '0'
+EXIT 1
+
+# C089 registered run 2 (09:29:25-09:30:12 PT), code at f9a31c8
+cells {'ZL3b': {'A_W1': 47, 'A_W2': 19, 'B_W1': 35, 'B_W2': 29}, 'IT2a': {'A_W1': 45, 'A_W2': 19, 'B_W1': 35, 'B_W2': 30}} strata {'ZL3b': {'AA': 2, 'BA': 2, 'CA': 3, 'EB': 2, 'FB': 2, 'FA': 2, 'GA': 2, 'MB': 5, 'OA': 2, 'SA': 2, 'TB': 6}, 'IT2a': {'AA': 2, 'CA': 3, 'EB': 2, 'FB': 2, 'FA': 2, 'GA': 2, 'MB': 5, 'OA': 2, 'SA': 2, 'TB': 6}}
+q1_cells {'ZL3b': {'A_W1': 47, 'A_W2': 19, 'B_W1': 35, 'B_W2': 29}, 'IT2a': {'A_W1': 45, 'A_W2': 19, 'B_W1': 35, 'B_W2': 30}}
+q2_strata {'ZL3b': {'AA': 2, 'BA': 2, 'CA': 3, 'EB': 2, 'FB': 2, 'FA': 2, 'GA': 2, 'MB': 5, 'OA': 2, 'SA': 2, 'TB': 6}, 'IT2a': {'AA': 2, 'CA': 3, 'EB': 2, 'FB': 2, 'FA': 2, 'GA': 2, 'MB': 5, 'OA': 2, 'SA': 2, 'TB': 6}}
+q1_power {'A': '1/20', 'B': '3/20'}
+q2_power 0/20
+q1_pass {'A': False, 'B': False}
+q2_pass False
+q1_fpr 1/40
+q2_fpr 2/20
+reliability {'q1_g_corr': 0.48124758377117655, 'q1_g_mean': 0.11788825543414326, 'q1_g_sd': 0.15760229883537322, 'q2_sim_corr': 0.9152996023214546}
+q1_tests {'ZL3b_A': {'n_W1': 47, 'n_W2': 19, 'D': 0.10276639361647, 'null_mean': 0.00039456575403591735, 'null_sd': 0.04018302366286488, 'p': 0.0106, 'holm_reject': True}, 'ZL3b_B': {'n_W1': 35, 'n_W2': 29, 'D': 0.01926608179820019, 'null_mean': -0.0007922485541167387, 'null_sd': 0.040715586196216964, 'p': 0.622, 'holm_reject': False}, 'IT2a_A': {'n_W1': 45, 'n_W2': 19, 'D': 0.05071353001334149, 'null_mean': 0.00023419266015401968, 'null_sd': 0.03690540648180055, 'p': 0.1696, 'holm_reject': False}, 'IT2a_B': {'n_W1': 35, 'n_W2': 30, 'D': 0.02942588587995161, 'null_mean': 0.0007928529735292042, 'null_sd': 0.04065454330134096, 'p': 0.4794, 'holm_reject': False}}
+q1_verdict {'A': 'NOT TESTABLE (gate)', 'B': 'NOT TESTABLE (gate)'}
+gate_runtime_s 34.0
+runtime_s 46.0
+plant1 A_0 0.0268 0.0398 0.5134
+plant1 A_1 0.0558 0.0398 0.1674
+plant1 A_10 0.1067 0.0388 0.0064
+plant1 A_11 0.065 0.0387 0.0882
+plant1 A_12 0.0448 0.0377 0.249
+plant1 A_13 0.0531 0.0375 0.1562
+plant1 A_14 0.0192 0.0371 0.6024
+plant1 A_15 0.0438 0.0369 0.2338
+plant1 A_16 0.0483 0.0349 0.1642
+plant1 A_17 0.1137 0.048 0.018
+plant1 A_18 0.0637 0.0347 0.0674
+plant1 A_19 0.0493 0.0349 0.1576
+plant1 A_2 0.0155 0.035 0.6658
+plant1 A_3 0.0458 0.0401 0.2596
+plant1 A_4 0.0268 0.0368 0.4722
+plant1 A_5 0.0035 0.0405 0.9266
+plant1 A_6 0.0744 0.0372 0.04
+plant1 A_7 0.0901 0.0385 0.0176
+plant1 A_8 0.0784 0.0346 0.0238
+plant1 A_9 0.0246 0.0377 0.5162
+plant1 B_0 0.0937 0.0359 0.0088
+plant1 B_1 0.0733 0.0413 0.0784
+plant1 B_10 0.0517 0.0405 0.205
+plant1 B_11 0.0838 0.0413 0.04
+plant1 B_12 0.0111 0.0343 0.7374
+plant1 B_13 0.0224 0.0326 0.4954
+plant1 B_14 0.0325 0.04 0.4272
+plant1 B_15 0.0525 0.0383 0.1756
+plant1 B_16 0.0397 0.0371 0.2752
+plant1 B_17 0.0453 0.0376 0.2354
+plant1 B_18 0.0514 0.0382 0.1822
+plant1 B_19 0.1147 0.044 0.0076
+plant1 B_2 0.0485 0.0394 0.228
+plant1 B_3 0.0676 0.0374 0.0746
+plant1 B_4 0.0041 0.0375 0.929
+plant1 B_5 -0.0189 0.0366 0.6126
+plant1 B_6 0.0834 0.0367 0.0236
+plant1 B_7 0.1013 0.036 0.0046
+plant1 B_8 0.016 0.0443 0.714
+plant1 B_9 0.0335 0.0406 0.4082
+EXIT 0
