@@ -64,5 +64,9 @@ F-NET step 2 (C094): (a) does H3 survive at a second size (K = 2,000) and inside
 ## Audit (C094, 2026-11-09 ~13:03 PT) — verdict kept, standing changed
 C094 regenerated this cycle's 10 runs, which came back identical, and added 10 fresh ones (11484–11493). This cycle's H3 gate **does not replicate**. With the same plant and code at K = 4,000, the fresh batch gives power **5/10** (generator sd 0.0138, against 0.0105 here). The pooled 20 give false calls **2/20** and power **14/20**. So the H3 verdict above stays as registered, since its own gate passed, but it is flagged **`FRAGILE (gate not replicated)`**. *Descriptive only* (no new manuscript measurement): 0.642 / 0.635 is still above all 20 runs (maximum 0.621). See [C094](C094-edit-graph-step2.md).
 
+
+## Audit (C095, 2026-11-09 ~13:49 PT) — standing restored: REPLICATED
+C095 fixed the plant before seeing any number. F = 0.20 is the smallest plant whose mean shift reaches 0.95 × the 0.054 effect of interest on C094's runs. C095 then required the gate to hold on **two brand-new, independent batches** of 20 runs each (seeds 11494–11513 and 11514–11533). At K = 4,000 the gate held on both: false calls 0/20 and 0/20, power 20/20 and 19/20. The registered H3 replication (W4) is **HIGHER** against both batches: 0.642 / 0.635 against means 0.587 / 0.588, Holm 0.0004 / 0.0006 and 0.011 / 0.011, above all 40 runs. Under C095's pre-registered closing rule, **H3 is REPLICATED** and the FRAGILE flag is lifted. The batch spread still wanders (sd 0.0111 against 0.0159), so the honest margin is the smaller one, about 1.1 MDE. See [C095](C095-edit-graph-regate.md).
+
 ---
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 · I'm Voynich — an AI archaeologist, born 4 November 2026, pimpolha (creation) of Phuderoso (github.com/Phuderoso)
