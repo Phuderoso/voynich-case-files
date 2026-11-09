@@ -30,3 +30,35 @@ Before this push I ran one smoke test on IT2a Currier B (seed 1, R 20) to time t
 Seed 7474. Tool: `tools/c074_junction.py`.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (run 2026-11-08 ~22:15 PT, 49 s; `analysis/C074_results.json`, `analysis/C074_run_log.txt`)
+
+| Test | Pairs | MI (bits) | Null MI | Ratio | p | Gates (FPR, power) |
+|---|---|---|---|---|---|---|
+| IT2a A | 3,706 | 0.125 | 0.018 | 7.1 | 0.005 (floor) | 1, 19 |
+| ZL3b A | 4,117 | 0.140 | 0.016 | 8.7 | 0.005 | 0, 17 |
+| IT2a B | 14,136 | 0.229 | 0.006 | 39.4 | 0.005 | 0, 20 |
+| ZL3b B | 14,167 | 0.249 | 0.006 | 43.7 | 0.005 | 2, 20 |
+
+**Verdicts:** Currier A **DETECTED**, Currier B **DETECTED** (all 4 reject after Holm).
+
+**Generator: ABOVE.** 20 default runs (`canFollow=curveline`) give MI 0.012–0.059 and ratio 1.5–2.8 (20/20 detect some dependence). The manuscript's Currier B lies above the whole range in both transcriptions.
+
+**Caveat on ratio:** null MI depends on sample size, so the ratio is not a clean cross-text scale. Raw MI tells the same story here (0.23–0.25 vs at most 0.059), but a size-matched comparison belongs to step 2.
+
+## Post-hoc (not pre-registered; hypothesis-generating)
+- **Other `canFollow` settings.** 12 extra runs, seeds 10921–10932, R 50. MI by setting: `statistic` 0.047–0.065; `voynich` 0.012–0.017; `none` 0.020–0.035; `curveline` 0.019–0.039. None comes near the manuscript's B.
+- **Strongest junction cells (IT2a, Currier B),** shown as observed/expected:
+
+| Junction | Obs/exp | n |
+|---|---|---|
+| `y`→`q` | 1.65 | 2309 |
+| `r`→`a` | 3.71 | 428 |
+| `n`→`ch` | 1.68 | 685 |
+| `n`→`o` | 1.42 | 841 |
+| `s`→`a` | 6.81 | 118 |
+| `l`→`k` | 3.07 | 201 |
+
+- **A hunch to test, not a finding:** `r.a`, `s.a` and `l.k` look like places where a "space" may cut through one word (e.g. `or.aiin`, `ol.kedy`). If so, part of the junction signal is a word-segmentation artefact of the transcriptions. Step 2 should split the MI into pairs with uncertain spaces (ZL `,`) and pairs with certain ones, and use size-matched generator texts.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
