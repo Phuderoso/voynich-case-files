@@ -1,0 +1,52 @@
+POSITIVE CONTROLS [{'pair': 'Hr-Qr', 'M': 11, 'null_max': 10, 'p': 0.001, 'passes': True}, {'pair': 'Hr-Pr', 'M': 11, 'null_max': 11, 'p': 0.002, 'passes': True}]
+Aa Br lstar 6 thr 6 3s
+Aa Bv lstar 5 thr 5 5s
+Aa Ca lstar 5 thr 5 7s
+Aa Cb lstar 5 thr 5 9s
+Aa Er lstar 4 thr 4 10s
+Aa Ia lstar 5 thr 5 14s
+Ab Br lstar 4 thr 4 16s
+Ab Bv lstar 6 thr 6 18s
+Ab Ca lstar 6 thr 6 19s
+Ab Cb lstar 6 thr 6 21s
+Ab Er lstar 5 thr 5 23s
+Ab Ia lstar 5 thr 5 26s
+Br Ca lstar 4 thr 3 28s
+Br Cb lstar 5 thr 5 29s
+Br Er lstar 4 thr 4 30s
+Br Ia lstar 4 thr 4 34s
+Bv Ca lstar 4 thr 4 35s
+Bv Cb lstar 4 thr 4 36s
+Bv Er lstar 4 thr 4 38s
+Bv Ia lstar 4 thr 4 41s
+Ca Er lstar 7 thr 7 42s
+Ca Ia lstar 5 thr 5 45s
+Cb Er lstar 5 thr 5 46s
+Cb Ia lstar 4 thr 4 50s
+Er Ia lstar 4 thr 4 53s
+GATES {'positive_controls_pass': True, 'reversed_holm_detections': 0, 'reversed_unadjusted_hits': 0, 'gate_reversed_ok': True}
+Aa-Br 3 5 0.628 6 NOT DETECTED (copy of >= 6 signs would be seen)
+Aa-Bv 3 4 0.395 5 NOT DETECTED (copy of >= 5 signs would be seen)
+Aa-Ca 3 4 0.367 5 NOT DETECTED (copy of >= 5 signs would be seen)
+Aa-Cb 3 4 0.795 5 NOT DETECTED (copy of >= 5 signs would be seen)
+Aa-Er 2 3 1.0 4 NOT DETECTED (copy of >= 4 signs would be seen)
+Aa-Ia 2 4 1.0 5 NOT DETECTED (copy of >= 5 signs would be seen)
+Ab-Br 3 3 0.657 4 NOT DETECTED (copy of >= 4 signs would be seen)
+Ab-Bv 3 5 0.779 6 NOT DETECTED (copy of >= 6 signs would be seen)
+Ab-Ca 4 5 0.728 6 NOT DETECTED (copy of >= 6 signs would be seen)
+Ab-Cb 4 6 0.222 6 NOT DETECTED (copy of >= 6 signs would be seen)
+Ab-Er 3 4 0.618 5 NOT DETECTED (copy of >= 5 signs would be seen)
+Ab-Ia 3 4 0.625 5 NOT DETECTED (copy of >= 5 signs would be seen)
+Br-Ca 2 2 1.0 4 NOT DETECTED (copy of >= 4 signs would be seen)
+Br-Cb 2 4 1.0 5 NOT DETECTED (copy of >= 5 signs would be seen)
+Br-Er 3 3 0.056 4 NOT DETECTED (copy of >= 4 signs would be seen)
+Br-Ia 2 3 1.0 4 NOT DETECTED (copy of >= 4 signs would be seen)
+Bv-Ca 3 3 0.945 4 NOT DETECTED (copy of >= 4 signs would be seen)
+Bv-Cb 3 3 0.755 4 NOT DETECTED (copy of >= 4 signs would be seen)
+Bv-Er 3 3 0.824 4 NOT DETECTED (copy of >= 4 signs would be seen)
+Bv-Ia 3 3 0.16 4 NOT DETECTED (copy of >= 4 signs would be seen)
+Ca-Er 3 7 0.871 7 NOT DETECTED (copy of >= 7 signs would be seen)
+Ca-Ia 3 4 0.457 5 NOT DETECTED (copy of >= 5 signs would be seen)
+Cb-Er 3 4 0.46 5 NOT DETECTED (copy of >= 5 signs would be seen)
+Cb-Ia 2 3 1.0 4 NOT DETECTED (copy of >= 4 signs would be seen)
+Er-Ia 2 3 1.0 4 NOT DETECTED (copy of >= 4 signs would be seen)
