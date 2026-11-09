@@ -1,0 +1,94 @@
+{
+ "n": 43,
+ "balancing": 22,
+ "fpr": {
+  "familywise_supported": 0.0275,
+  "familywise_confirmed": 0.0125,
+  "per_feature_supported": {
+   "EDGE": 0.007,
+   "CAP": 0.005,
+   "LONG": 0.0025,
+   "MULTI": 0.004,
+   "UNREAD": 0.01
+  },
+  "per_feature_confirmed": {
+   "EDGE": 0.0015,
+   "CAP": 0.003,
+   "LONG": 0.0015,
+   "MULTI": 0.0035,
+   "UNREAD": 0.0035
+  }
+ },
+ "fpr_gate_pass": true,
+ "power": {
+  "EDGE": {
+   "prevalence": 7,
+   "w4": {
+    "supported": 0.156,
+    "confirmed": 0.0335
+   },
+   "w9": {
+    "supported": 0.4195,
+    "confirmed": 0.1005
+   },
+   "testable": false
+  },
+  "CAP": {
+   "prevalence": 19,
+   "w4": {
+    "supported": 0.6065,
+    "confirmed": 0.431
+   },
+   "w9": {
+    "supported": 0.964,
+    "confirmed": 0.845
+   },
+   "testable": false
+  },
+  "LONG": {
+   "prevalence": 17,
+   "w4": {
+    "supported": 0.5325,
+    "confirmed": 0.3625
+   },
+   "w9": {
+    "supported": 0.935,
+    "confirmed": 0.777
+   },
+   "testable": false
+  },
+  "MULTI": {
+   "prevalence": 21,
+   "w4": {
+    "supported": 0.663,
+    "confirmed": 0.482
+   },
+   "w9": {
+    "supported": 0.979,
+    "confirmed": 0.902
+   },
+   "testable": false
+  },
+  "UNREAD": {
+   "prevalence": 28,
+   "w4": {
+    "supported": 0.812,
+    "confirmed": 0.5525
+   },
+   "w9": {
+    "supported": 0.997,
+    "confirmed": 0.9305
+   },
+   "testable": false
+  }
+ },
+ "seeds": [
+  501,
+  502
+ ],
+ "R": [
+  2000,
+  2000
+ ],
+ "runtime_s": 7.1
+}

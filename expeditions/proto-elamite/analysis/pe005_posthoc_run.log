@@ -1,0 +1,41 @@
+{
+ "H1_cap_multi_balance": {
+  "CAP=False,MULTI=False,balances=False": 1,
+  "CAP=False,MULTI=False,balances=True": 2,
+  "CAP=False,MULTI=True,balances=False": 5,
+  "CAP=False,MULTI=True,balances=True": 16,
+  "CAP=True,MULTI=False,balances=False": 15,
+  "CAP=True,MULTI=False,balances=True": 4
+ },
+ "H2_cap_tablets_balance_vs_integer_part_balance": {
+  "balances=False,integer_part_balances=False": 12,
+  "balances=False,integer_part_balances=True": 3,
+  "balances=True,integer_part_balances=False": 2,
+  "balances=True,integer_part_balances=True": 2
+ },
+ "H3_edition_parity_cap_balance": {
+  "MDP 06|even|CAP=False|bal=False": 1,
+  "MDP 06|even|CAP=False|bal=True": 1,
+  "MDP 06|even|CAP=True|bal=True": 1,
+  "MDP 06|odd|CAP=False|bal=True": 2,
+  "MDP 06|odd|CAP=True|bal=False": 1,
+  "MDP 06|odd|CAP=True|bal=True": 1,
+  "MDP 17|even|CAP=False|bal=False": 1,
+  "MDP 17|even|CAP=False|bal=True": 1,
+  "MDP 17|even|CAP=True|bal=True": 1,
+  "MDP 17|odd|CAP=False|bal=True": 6,
+  "MDP 17|odd|CAP=True|bal=False": 1,
+  "MDP 26|even|CAP=False|bal=False": 1,
+  "MDP 26|even|CAP=False|bal=True": 4,
+  "MDP 26|even|CAP=True|bal=False": 5,
+  "MDP 26|odd|CAP=False|bal=False": 2,
+  "MDP 26|odd|CAP=False|bal=True": 2,
+  "MDP 26|odd|CAP=True|bal=False": 6,
+  "MDP 26|odd|CAP=True|bal=True": 1,
+  "MDP 31|even|CAP=False|bal=False": 1,
+  "MDP 31|even|CAP=False|bal=True": 1,
+  "MDP 31|odd|CAP=False|bal=True": 1,
+  "RA 050|odd|CAP=True|bal=False": 1,
+  "TCL 32|odd|CAP=True|bal=False": 1
+ }
+}
