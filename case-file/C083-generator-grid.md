@@ -56,3 +56,5 @@ Winner's held-out surface (20-run mean): word length 4.45 (−2 %), TTR 0.367 (+
 **Seeds:** 11246–11285 spent (plus smoke seed 11999); next 11286+.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+**Audit note (C085, 2026-11-09).** The exploratory value "C005 configuration K 0.103 on training seeds" rested on 5 runs (0.098–0.113). On 40 fresh runs ([C085](C085-c005-equivalence.md)) the configuration's mean K is 0.114, between-run SD 0.016, range 0.083–0.153, so five runs understated its spread about 2.5×. The C085 equivalence test (Δ 0.030, pre-fixed) gave ZL EQUIVALENT and IT2a INCONCLUSIVE (missing the margin by 0.0003): NOT CALLED, not excluded. The C083 verdict is unchanged.

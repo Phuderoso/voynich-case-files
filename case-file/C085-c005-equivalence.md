@@ -44,3 +44,39 @@ C082 found the manuscript's coupling K (how much a word's first symbol predicts 
 - **Interpretation fixed in advance.** EQUIVALENT: the surface-matched copier reproduces the coupling at Δ = 0.03, so F-AFFIX gives no departure from self-citation in this configuration; C082's "below" was a default-setting effect. EXCLUDED BELOW: the manuscript couples less than even this configuration; a departure, confined to this configuration. EXCLUDED ABOVE: it couples more. None of these bears on meaning. The C084 tension (this configuration loses page topics) is left to C086's joint test.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (run 06:17–06:18 PT 2026-11-09, 35 s, seed 8585; `analysis/C085_results.json`, `analysis/C085_run_log.txt`)
+**Reference (40 fresh C005 runs, seeds 11321–11360, 40/40 usable):** mean K **0.1143**, SD 0.0163 (design estimate 0.0147), se 0.0026, range 0.083–0.153.
+
+| Text | K | 95% CI | 90% CI | d = K − m | 90% CI of d (TOST) | Call | 2-SD reading | Rank among 40 |
+|---|---|---|---|---|---|---|---|---|
+| ZL 3b | 0.1063 | 0.0871–0.1183 | 0.0891–0.1167 | −0.0080 | **−0.0295 … +0.0066** | **EQUIVALENT** | inside | 13/40 below it |
+| IT2a | 0.1032 | 0.0857–0.1153 | 0.0883–0.1142 | −0.0111 | **−0.0303 … +0.0041** | **INCONCLUSIVE** (misses −0.030 by 0.0003) | inside | 11/40 below it |
+
+**Gates (all pass):**
+- G1: every 95% and 90% interval contains its point.
+- G2: held-out runs 11361–11380: EQUIVALENT 12/20 (calibrated expectation 0.60 → 12), BEYOND 0/20, INCONCLUSIVE 8/20.
+- G3a: 5/5 plants (70% of endings shuffled; K 0.007–0.011) BELOW BEYOND MARGIN, 0 EQUIVALENT.
+- G3b: default configuration (K 0.148–0.197): 3/5 ABOVE BEYOND MARGIN, 2/5 INCONCLUSIVE, 0/5 EQUIVALENT.
+- G4: 40/40 reference runs usable.
+
+**H2 FEASIBILITY CONFIRMED:** mean word length 4.999 (+9.5%), TTR 0.360 (+1.9%), h2 2.423 (+7.7%), R 0.531 (+9.0%), all within ±15%.
+
+### Verdict
+**H1 NOT CALLED (equivalence for one transcription only).** ZL 3b is equivalent to the C005 configuration at Δ = 0.030; IT2a's interval reaches −0.0303 and misses the margin by 0.0003. By the pre-registered rule that is NOT CALLED. The margin is not moved after the fact.
+
+What this does and does not show:
+- **Not excluded:** neither transcription is beyond the margin on either side. The manuscript sits at rank 11–13 of 40 among single generator runs, a typical run under the C084-style 2-SD reading (secondary, no confirmatory weight).
+- **Equivalence not established on both transcriptions:** at the pre-fixed Δ = 0.030 the evidence is one transcription and a knife-edge miss. "The C005 configuration reproduces the manuscript's K" stays unproven. The point estimates sit 0.008–0.011 below the configuration's mean.
+- **The instrument works:** strong planted departures and the default configuration are never called equivalent, and held-out runs behave as calibrated.
+- **For F-AFFIX:** no K-based departure from a surface-matched self-citation generator has been shown (C083 overshoot, C085 no exclusion). C082's "below" holds only against the default configuration, and the 5 default controls here (0.148–0.197) are consistent with it.
+
+### Audit note for C083 (added this cycle)
+C083's exploratory line "the C005 configuration gives K 0.103 on training seeds" rested on 5 runs (0.098–0.113). On 40 fresh runs the mean is 0.114 and the between-run SD is 0.016 (35 design runs: 0.110, SD 0.015), so 5 runs understated the spread about 2.5×. The C083 verdict (NOT CALLED) is unaffected.
+
+### Problems and disclosures
+- The draft design used the wrong configuration's spread (C083 winner cell 33). It was caught by the smoke run and replaced by a measured value before the push (design step above). The draft G2 bar (≥ 16/20) would have failed by construction; recalibrated to ≥ 8/20 before the push. Observed 12/20.
+- Not blind (see Disclosure); the margin rule used precision numbers only.
+- Seeds spent: 11286–11320 (design), 11321–11390 (this test), smoke 11999. Next free: **11391**.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
