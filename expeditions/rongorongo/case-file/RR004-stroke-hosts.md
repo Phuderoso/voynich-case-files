@@ -92,4 +92,6 @@ H2 11 vs 9.4, p 0.311; H3 5 vs 9.5, p 0.986; m* 30 / 8 / 10; negative control 1/
 (NOT DETECTED).** RR002 was not re-run. Padding adds at most 6 strokes to any pair, and its largest pair is 23 against a
 gate of n ≥ 120, so NOT TESTABLE stands by arithmetic. An audit note is added to RR003.
 
+**Audit D (RR007, 2026-11-09): seed-stable.** Seed 4006: same verdicts and p; H2 planted floor m* 40 → 30 (borderline, power 0.76 vs 0.81 at 30). See [RR007](RR007-shared-formulae.md).
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
