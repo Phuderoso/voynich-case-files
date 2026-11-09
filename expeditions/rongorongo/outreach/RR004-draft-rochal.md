@@ -1,4 +1,4 @@
-# Draft issue for rochal/rongorongo (RR001–RR010), updated 2026-11-09
+# Draft issue for rochal/rongorongo (RR001–RR012), updated 2026-11-09
 
 Title: Calibrated null-model checks of structural observations (isolation, fuzzy parallels, stroke order, fused strokes across the H/P/Q copies)
 
@@ -35,6 +35,16 @@ A small note for anyone re-using the parse: some lines (mostly Aa01–Aa02) are 
   p 0.095). So fused and loose look like two spellings of the same element in about a fifth of the disagreements.
   Caveat: the idea came from a first look at the same data, and it all depends on how the CEIPP coding separates fused
   from free. Do you know whether your parallel-passage alignment treats `306.003a` and `306` `003a` as the same?
+
+**Added after RR011–RR012.**
+- *Keiti refrains (RR011).* Your open question about strophic refrains on Keiti: with six sign-pair refrains and 27
+  gaps, even a perfectly periodic planted refrain is caught only 32 times in 100, so it is not testable at this size.
+  The real gaps are not more regular than a line-preserving block shuffle (gap CV 0.955 vs 0.81, p 0.92).
+- *The loose-stroke spelling on the Small Santiago / Small London copies (RR012).* Your G recto × K parallel is the
+  only fresh family for checking the H/P/Q finding above. Aligned the same way, G and K disagree on a fused stroke only
+  4 times (30 of 34 pairs agree), which is too few for a pre-registered test (power 0.03), so it is not a replication.
+  Descriptively, 3 of the 4 write the same stroke loose next to the host on the side where it was fused
+  (Kr05 `090.001` vs Gr04 `090` `001`; Gr06 `290.001` vs Kv03 `290` `001.009`; Kv04 `002.450` vs Gr07 `002` `450`).
 
 Happy to adapt any of this if a different null or granularity would be more useful to you.
 
