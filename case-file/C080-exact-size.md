@@ -16,4 +16,11 @@
   - INFLATED with the control detected: a defect in the test machinery. All F-PARA rejections stay valid only where p sits at the floor (0.001), and the defect is hunted next cycle.
   - No earlier verdict is revised in this cycle.
 
+## Results (run 2026-11-09 ~02:40 PT, 154.4 s, seed 8080, 8 processes; `analysis/C080_results.json`, `analysis/C080_raw.json`, `analysis/C080_run_log.txt`; pre-registration commit 6573c9a)
+- **Known-answer control DETECTED:** the rule p ≤ 13/201 rejected 92/1,400 times (6.6%, binomial p 0.0049 against 10/201). The audit can see an excess of this size.
+- **H1: CALIBRATED.** 80/1,400 null rejections at p ≤ 10/201 (5.7%, Wilson 95% interval 4.6–7.1%), binomial p 0.11 against the attainable 4.98%. By configuration: IT2a B W0 21/300, IT2a B W2 19/300, ZL B W0 17/300, ZL B W2 11/300, synthetic i.i.d. 12/200.
+- **Near-ties: 0** in 280,000 permuted statistics, so floating-point ties are excluded as a cause.
+- **Reading under the fixed interpretation:** no inflation is detected. The C078/C079 excess is consistent with chance; C079 itself had been chosen after C078 looked high. An excess of up to about two points is **not excluded** by this sample (upper bound 7.1%). The 20-replicate gate is valid but coarse. From now on F-PARA gates use 40 replicates (FPR ≤ 4/40, power ≥ 32/40).
+- **Audit:** C078 verdicts stand. C079 is now superseded as an audit: its question is answered here with a working control.
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

@@ -1,0 +1,54 @@
+{
+ "seed": 8080,
+ "RG": 200,
+ "n": 1400,
+ "H1": {
+  "rejections": 80,
+  "rate": 0.05714285714285714,
+  "size": 0.04975124378109453,
+  "binom_p": 0.11448583227066123
+ },
+ "control": {
+  "rule": "p <= 13/201",
+  "rejections": 92,
+  "rate": 0.06571428571428571,
+  "binom_p_vs_10_201": 0.004867728654522766,
+  "detected": true,
+  "critical_count": 84,
+  "analytic_power": 0.776165362043674
+ },
+ "per_config": {
+  "IT2a_B_W0": {
+   "n": 300,
+   "rej": 21,
+   "near_ties": 0
+  },
+  "IT2a_B_W2": {
+   "n": 300,
+   "rej": 19,
+   "near_ties": 0
+  },
+  "ZL3b_B_W0": {
+   "n": 300,
+   "rej": 17,
+   "near_ties": 0
+  },
+  "ZL3b_B_W2": {
+   "n": 300,
+   "rej": 11,
+   "near_ties": 0
+  },
+  "SYN_ZL3b_B_W0": {
+   "n": 200,
+   "rej": 12,
+   "near_ties": 0
+  }
+ },
+ "total_near_ties": 0,
+ "verdict": "CALIBRATED",
+ "runtime_s": 154.4
+}
+
+real	2m34.460s
+user	16m53.177s
+sys	0m1.535s
