@@ -43,4 +43,40 @@ named by rochal; K is removed as a copy), so H2 and H3 rest mainly on G, E and C
 
 Seed 3003. Tool: [`tools/rr003_stroke_clustering.py`](../tools/rr003_stroke_clustering.py).
 
+---
+
+## Results (run 2026-11-09 ~03:15 PT, seed 3003, 15 s)
+
+Files: [`analysis/rr003_results.json`](../analysis/rr003_results.json), [`analysis/rr003_run.log`](../analysis/rr003_run.log),
+[`analysis/rr003_posthoc.log`](../analysis/rr003_posthoc.log).
+
+Sizes: 251 lines, 732 free strokes; 77 entries on Gr, Ev, Ca, Cb, Na and Sa, of which 32 contain a stroke.
+
+### Gates
+- **Planted power (at 0.05/3):** H1 m* = 30 extra adjacent pairs (power 0.69 at 20, 0.98 at 30). H2 m* = 10 entries
+  (0.92). H3 m* = 10 entries (0.95). All three are testable.
+- **Negative control:** 1 of 20 null replicates gave a Holm detection (limit 2). Pass.
+
+### Verdicts
+
+| H | Statistic | Observed | Null mean | Null max | p (upper) | m* | Verdict |
+|---|---|---|---|---|---|---|---|
+| H1 | adjacent stroke–stroke pairs | 107 | 96.1 | 120 | 0.098 | 30 | **NOT DETECTED** |
+| H2 | entries ending in a stroke | 11 | 9.4 | 17 | 0.311 | 10 | **NOT DETECTED** |
+| H3 | entries starting with a stroke | 5 | 9.5 | 17 | 0.986 | 10 | **NOT DETECTED** |
+
+**Reading.** Free strokes stand next to each other about 11 times more often than line composition implies (107 vs 96).
+A clumping of 30 or more extra pairs is ruled out, but a smaller one is not. They do not end list entries more often
+than chance, so a surplus of 10 or more stroke-final entries is ruled out.
+
+### Descriptive and post hoc (not verdicts)
+- **H3 points the other way:** only 5 entries open with a stroke, against about 9.5 expected. The lower tail was not
+  pre-registered. Computed afterwards from 9 999 fresh shuffles (seed 30031), it gives p = 0.046 one-sided. That is
+  0.091 once the change of direction is paid for, so it is a lead and not a result: strokes may avoid the first slot
+  after a delimiter.
+- With RR002, the stroke picture on these data is: no order established, no strong clumping, no entry-final surplus.
+  The case for "numeral" or "suffix" behaviour of the *free* strokes is not supported at the sizes the data can test.
+  rochal's own evidence for affix behaviour concerns *fused* strokes, which RR003 does not test.
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
