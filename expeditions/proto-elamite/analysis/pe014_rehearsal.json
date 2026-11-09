@@ -1,0 +1,85 @@
+{
+ "gates": {
+  "H1": {
+   "pairs": 1,
+   "size_ok": false,
+   "FPR": null,
+   "power": null,
+   "FPR_ok": false,
+   "power_ok": false
+  },
+  "H2": {
+   "pairs": 272,
+   "slots": 1090,
+   "size_ok": true,
+   "FPR": 0.075,
+   "FPR_ok": true,
+   "power_batches": [
+    {
+     "seed": 11403,
+     "power": 0.97,
+     "mean_planted_pairs": 26.6
+    },
+    {
+     "seed": 11404,
+     "power": 0.97,
+     "mean_planted_pairs": 27.1
+    }
+   ],
+   "power": 0.97,
+   "power_ok": true,
+   "alpha_power": 0.025,
+   "seconds": 34.9
+  },
+  "H2W": {
+   "pairs": 272,
+   "slots": 1090,
+   "size_ok": true,
+   "FPR": 0.05,
+   "FPR_ok": true,
+   "power_batches": [
+    {
+     "seed": 21403,
+     "power": 0.88,
+     "mean_planted_pairs": 27.82
+    },
+    {
+     "seed": 21404,
+     "power": 0.89,
+     "mean_planted_pairs": 27.55
+    }
+   ],
+   "power": 0.88,
+   "power_ok": true,
+   "alpha_power": 0.025,
+   "seconds": 38.5
+  }
+ },
+ "power_curve_40": {
+  "H2": {
+   "0.1": 0.55,
+   "0.2": 1.0,
+   "0.3": 1.0,
+   "0.5": 1.0
+  },
+  "H2W": {
+   "0.1": 0.425,
+   "0.2": 0.95,
+   "0.3": 1.0,
+   "0.5": 1.0
+  }
+ },
+ "smoke_shuffle_1499": {
+  "H2": {
+   "T_on_registered_shuffle_1499": 37,
+   "p_R999": 0.565,
+   "null_mean": 37.453
+  },
+  "H2W": {
+   "T_on_registered_shuffle_1499": 43,
+   "p_R999": 0.022,
+   "null_mean": 34.266
+  }
+ },
+ "runtime_s": 123.7
+}

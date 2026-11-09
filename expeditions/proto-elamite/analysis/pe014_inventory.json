@@ -1,0 +1,43 @@
+{
+ "H1": {
+  "pairs": 1,
+  "slots": 2,
+  "parse": {
+   "lines with >= 2 numeral runs": 35,
+   "damaged / n / x (dropped)": 34
+  },
+  "strata": 2,
+  "readings_marginal": {
+   "C,D": 1,
+   "C": 1
+  },
+  "pids": [
+   "P009531"
+  ]
+ },
+ "H2": {
+  "pairs": 272,
+  "slots": 1090,
+  "parse": {
+   "Born-named tablet (excluded)": 12,
+   "informative slots": 1090,
+   "adjacent informative pairs": 272
+  },
+  "strata": 50,
+  "readings_marginal": {
+   "B,D,S": 78,
+   "C": 513,
+   "B,C,D,S": 335,
+   "B,C,S": 22,
+   "B,S": 3,
+   "C,S": 52,
+   "D": 38,
+   "none": 10,
+   "C,D": 20,
+   "S": 4,
+   "B": 6,
+   "B,D": 9
+  },
+  "full_set_incl_Born_pairs": 273
+ }
+}
