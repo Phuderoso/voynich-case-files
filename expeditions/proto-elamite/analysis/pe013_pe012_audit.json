@@ -1,0 +1,16 @@
+{
+ "PE012_H1_new_seed": 1305,
+ "R": 9999,
+ "n": 234,
+ "G": 30.3161,
+ "p": 0.4027,
+ "null_mean": 29.2762,
+ "published": {
+  "n": 234,
+  "stat": 30.3161,
+  "null_mean": 29.2758,
+  "p": 0.4039
+ },
+ "verdict_unchanged": true,
+ "runtime_s": 0.7
+}

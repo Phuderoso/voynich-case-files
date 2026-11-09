@@ -3,7 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-Status: **pre-registration** (this file, `tools/pe013_subscript.py`, the label-free `analysis/pe013_inventory.json` and the
+Status: **results added below** (pre-registration `fb1c793`, pushed ~12:55 PT before the observed test). Pre-registration text unchanged: (this file, `tools/pe013_subscript.py`, the label-free `analysis/pe013_inventory.json` and the
 rehearsal on destroyed/planted data `analysis/pe013_rehearsal.json` are pushed before any observed subscript–label or
 subscript–header association is computed). Open line **5c** of the expedition README (PE012 took 5a; 5c was never looked at).
 
@@ -81,5 +81,37 @@ Header × subscript pairs; subscript key × SYSTEM/SIZE tables (H1/H2 descriptiv
 ## PE012 audit (this cycle)
 PE012's H1 SYSTEM (G 30.32, p 0.404 with R 9 999 seed 1201) re-drawn with a **new seed 1305**, R 9 999: n and G must be
 identical and p must stay > 0.05.
+
+## Results (run 2026-11-09 12:55 PT, 1.7 s; `analysis/pe013_results.json`, `analysis/pe013_run.log`)
+**Gates** (re-run inside `test`, identical to the rehearsal): H1 size ✗ (16 < 30) → **NOT TESTABLE, NOT RUN**; H2 FPR
+0.00 ✓, power **0.43** ✗ → **NOT TESTABLE, NOT RUN**; H3 FPR 0.00 ✓, power **1.00** ✓, n 81 ✓ → runs, Holm over 1.
+
+| Id | n | Observed | Null mean | Null 95 % | p (R 9 999) | Holm | Verdict |
+|---|---|---|---|---|---|---|---|
+| H1 SYSTEM | 16 / 4 keys | — | — | — | — | — | **NOT TESTABLE** (size) |
+| H2 SIZE | 54 / 9 keys | — | — | — | — | — | **NOT TESTABLE** (power 0.43) |
+| **H3 REPEAT** | 81 | M **3** | 2.32 | 4 | **0.4305** | 0.4305 | **NOT DETECTED**; repeat rate ≥ 0.2 **EXCLUDED** (power 0.975) |
+
+**Exact recount** (`tools/pe013_exact.py`, written after the run, own parser, no imports from `tools/`): rook polynomial of
+the match board (blocks M157 56×3, M305 2×5, M327 7×1, M377 2×1, M387 2×1), exact E[M] = **7/3 = 2.333**, exact
+**P(M ≥ 3) = 0.4349** (Monte Carlo 0.4305, inside its ±0.005 error); full exact distribution in `analysis/pe013_exact.json`
+(P(M ≥ 6) = 3.9 × 10⁻⁴). Same 81 tablets, same M. ✓
+
+**What it means.** The closing subscript does **not** repeat the header sign beyond what the two sign frequencies give by
+chance (3 matches vs 2.33 expected). A summary convention in which at least one tablet in five closes with its own header
+sign is ruled out at power 0.975; a rarer one (10 %, power 0.675) is not. Whether the subscript carries system or size
+information **could not be tested**: only 16 subscripted tablets have a system label and the 54 sized ones cannot catch even
+a strong (50 %) rule (power 0.43). The corpus is too thin here, not the signal shown absent.
+
+**Descriptive (after the decision, no weight).** All 3 matches are M157 on M157. The commonest subscript, M009, closes 13
+tablets, every one headed M157 (expected 9.0 under independence); M153 (|M153+X| family) closes 11, 6 under M157 and 3 under
+M005. H1 table: M009 I 4 / C 0, M218 I 4 / C 1, M153 C 3 / I 1, M305 C 2 / I 1 (16 tablets: nothing to read). The M009-under-M157
+pattern is a post hoc lead only; any test of it needs fresh data or a prior from the literature, pre-registered.
+
+## PE012 audit (`analysis/pe013_pe012_audit.json`)
+H1 SYSTEM re-drawn with seed **1305**, R 9 999: n **234**, G **30.3161** (identical), null mean 29.276, **p 0.4027**
+(published 0.4039). Verdict NOT DETECTED unchanged ✓.
+
+**Verdict**: H1 **NOT TESTABLE**, H2 **NOT TESTABLE**, H3 **NOT DETECTED** (repeat ≥ 20 % EXCLUDED at power 0.975). No claim.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
