@@ -1,0 +1,28 @@
+{
+ "gates": {
+  "G0": "9/9",
+  "FPR_H1": "0/9",
+  "FPR_H2_predictive_t_dropped": "2/9",
+  "FPR_H2_range": "1/9",
+  "FPR_H3": "1/10",
+  "POW_H1": "9/9",
+  "POW_H2_range": "9/9",
+  "POW_H3": "8/10",
+  "shift_H2": 0.1832967682302769,
+  "MDE80_H2": 0.09475695608251115,
+  "shift_H3": 0.061890245633830034,
+  "MDE80_H3": 0.06139111455242007,
+  "gap_H1": 0.8629397245537375,
+  "MDE80_H1": 0.0293824003290886
+ },
+ "testable": {
+  "H1": true,
+  "H2": true,
+  "H3": true
+ },
+ "elapsed_s": 31.842384576797485
+}
+nat {'Latin_Caesar': 0.025, 'Latin_Descartes': 0.016, 'Italian_Dante': 0.03, 'Italian_Machiavelli': 0.038, 'Spanish_Cervantes': 0.032, 'Finnish_Kalevala': 0.033, 'Finnish_Kivi': 0.033, 'Hebrew_Genesis': 0.103, 'Hebrew_Exodus': 0.104}
+degraded {'Latin_Caesar': 0.91, 'Latin_Descartes': 0.906, 'Italian_Dante': 0.918, 'Italian_Machiavelli': 0.909, 'Spanish_Cervantes': 0.905, 'Finnish_Kalevala': 0.92, 'Finnish_Kivi': 0.923, 'Hebrew_Genesis': 0.895, 'Hebrew_Exodus': 0.895}
+full {'Latin_Caesar': 1.0, 'Latin_Descartes': 1.0, 'Italian_Dante': 1.0, 'Italian_Machiavelli': 1.0, 'Spanish_Cervantes': 1.0, 'Finnish_Kalevala': 1.0, 'Finnish_Kivi': 1.0, 'Hebrew_Genesis': 1.0, 'Hebrew_Exodus': 1.0}
+gen {'gen_11444': 0.159, 'gen_11445': 0.152, 'gen_11446': 0.175, 'gen_11447': 0.197, 'gen_11448': 0.127, 'gen_11449': 0.15, 'gen_11450': 0.159, 'gen_11451': 0.162, 'gen_11452': 0.148, 'gen_11453': 0.143}
