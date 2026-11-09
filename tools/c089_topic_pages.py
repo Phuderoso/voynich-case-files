@@ -204,7 +204,7 @@ def gates(pool, base, out):
     q2 = {} if (out['mode'] == 'registered' and PRIMARY_ONLY) else \
         {f'{k}': r for k, r in pool.imap_unordered(q2_plant_job, [(k, base + 1) for k in range(NG)])}
     pw1 = {L: sum(q1.get(f'{L}_{k}', {'D': 0})['D'] > 0 and q1.get(f'{L}_{k}', {'p': 1})['p'] <= A1 for k in range(NG)) for L in 'AB'}
-    pw2 = sum(q2[f'{k}']['T'] > 0 and q2[f'{k}']['p'] <= A2 for k in range(NG))
+    pw2 = sum(q2[f'{k}']['T'] > 0 and q2[f'{k}']['p'] <= A2 for k in range(NG)) if q2 else 0  # C089 pre-run fix: Q2 skipped in the registered run
     out.update(q1_plants=q1, q2_plants=q2, q1_power={L: f'{pw1[L]}/{NG}' for L in 'AB'}, q2_power=f'{pw2}/{NG}',
                q1_pass={L: pw1[L] >= 16 for L in 'AB'}, q2_pass=pw2 >= 16, gate_runtime_s=round(time.time() - t, 1))
     return out
