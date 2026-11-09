@@ -77,3 +77,52 @@ S tables and plain integer sums.
 Tool: [`tools/pe010_per_line.py`](../tools/pe010_per_line.py) (`inventory`, `gates`, `test`, `audit`).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration was published as `0bf1769`)
+
+Order of events (America/Vancouver, 2026-11-08): label-free inventory 21:47; pre-registration on `main` (`0bf1769`)
+~21:48; gates 21:48–21:49 (82 s) with the PE009 audit in parallel (10 s); the real test at 21:52 (5 s); post hoc right
+after (0.3 s). Outputs: `analysis/pe010_gates.json`, `analysis/pe010_results.json`, `analysis/pe010_pe009_audit.json`,
+`analysis/pe010_posthoc.json`, run log `analysis/pe010_run.log`.
+
+**Gates.**
+
+| Test | set | eligible | FPR (≤ 0.06) | power, plant 0.5, p ≤ 0.0167 (≥ 0.80) | plant 0.8 (descr.) | testable |
+|---|---|---|---|---|---|---|
+| T1 ENTRY | D1 | 60 | 0.02 | 1.00 | 1.00 | ✓ |
+| T2 MAX | D2 | 17 | 0.04 | 0.99 | 1.00 | ✓ |
+| T3 MEAN (± 1 N39C) | D2 | 17 | 0.00 | 1.00 | 1.00 | ✓ |
+
+**Decision tests (fresh crates), Holm over 3.**
+
+| Test | matched / eligible | null mean (max) | p | Holm p | CP95 upper | Verdict |
+|---|---|---|---|---|---|---|
+| T1 reverse = one entry (D1) | 2 / 60 (P008419, P009000) | 1.78 (6) | 0.576 | 1.00 | 0.101 | **EXCLUDED** |
+| T2 reverse = largest entry (D2) | 0 / 17 | 0.24 (2) | 1.000 | 1.00 | 0.162 | **EXCLUDED** |
+| T3 reverse = mean entry ± 1 N39C (D2) | 0 / 17 | 0.00 (0) | 1.000 | 1.00 | 0.162 | **EXCLUDED** |
+
+**Verdict.** No per-line reading is SUPPORTED. On fresh grain tablets the reverse number is **not** one of the entries
+(2/60, exactly the chance level 1.78; shifted control 1 and 3), **not** the largest entry (0/17) and **not** the mean
+entry (0/17, even allowing one N39C of rounding). All three are EXCLUDED (≤ 10–16 % at 95 %). A clean negative.
+
+Descriptive (no decision weight): exact mean on D2 0/7; ENTRY on D2 (exposed by PE002) 2/17 vs null 2.53. On PE009's
+exposed sets: A — ENTRY 1/15 (P009011, which is also its largest entry; null 0.50 / 0.26), mean 0/15; B — ENTRY 1/25
+(P008276; null 0.82), MAX 0/25, mean 0/25. MAX/MEAN on D1 not computable (no complete D1 tablet), as declared.
+
+## Post-hoc diagnostics (after test; no decision weight; `tools/pe010_posthoc.py`)
+- **Q1 the reverse relative to the mean entry** (n · total / sum; 1 = mean entry): D2 median **1.09** (range
+  0.024–40), A 0.62 (0.08–13.5), B 1.45 (0.035–11.2). The values are of the order of one entry, but spread over more
+  than two orders of magnitude around it — no tight per-line rule. PE009's "≈ 1/n" impression was wrong: A's small
+  ratios come from short and long lists alike.
+- **Q2 position among the entries**: below the smallest / between / above the largest — D2 3/7/7, A 5/6/4, B 6/9/10,
+  D1 13/23/24 (D1 partial lists). The reverse is neither systematically below nor above the list.
+
+## PE009 audit
+`pe009_other_quantity.py test` re-run in a scratch copy with the published gates: **identical** to
+`analysis/pe009_results.json` in every field except run time. Independent re-count with literal C and S tables and
+plain integer sums: A H4 count of lines **0/15** (published 0/15) ✓; A H1 hit P008825 total 64 N39C, sum 1 920 N39C,
+ratio **1/30** ✓ (`analysis/pe010_pe009_audit.json`).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

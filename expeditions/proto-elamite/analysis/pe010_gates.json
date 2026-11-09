@@ -1,0 +1,43 @@
+{
+ "T1_ENTRY": {
+  "set": "D1",
+  "eligible": 60,
+  "FPR": 0.02,
+  "FPR_ok": true,
+  "power_p05": 1.0,
+  "power_ok": true,
+  "power_p08_descriptive": 1.0,
+  "size_ok": true
+ },
+ "T2_MAX": {
+  "set": "D2",
+  "eligible": 17,
+  "FPR": 0.04,
+  "FPR_ok": true,
+  "power_p05": 0.99,
+  "power_ok": true,
+  "power_p08_descriptive": 1.0,
+  "size_ok": true
+ },
+ "T3_MEAN": {
+  "set": "D2",
+  "eligible": 17,
+  "FPR": 0.0,
+  "FPR_ok": true,
+  "power_p05": 1.0,
+  "power_ok": true,
+  "power_p08_descriptive": 1.0,
+  "size_ok": true
+ },
+ "params": {
+  "N_FPR": 100,
+  "R_IN": 299,
+  "SEED_FPR": 1002,
+  "N_POW": 100,
+  "SEED_POW": 1003,
+  "PLANT": 0.5,
+  "ALPHA_POW": 0.016666666666666666,
+  "N_STRATA": 4
+ },
+ "runtime_s": 81.8
+}
