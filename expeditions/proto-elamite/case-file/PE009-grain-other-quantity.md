@@ -78,3 +78,59 @@ signs: no decipherment is claimed.
 Tool: [`tools/pe009_other_quantity.py`](../tools/pe009_other_quantity.py) (`inventory`, `gates`, `test`, `audit`).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration was published as `0384a43`)
+
+Order of events (America/Vancouver, 2026-11-08): pre-registration on `main` (`0384a43`) at ~21:06; gates 21:07–21:09
+(95 s); PE008 audit in parallel; the real test at 21:09 (3 s); post hoc right after (0.2 s). Outputs:
+`analysis/pe009_gates.json`, `analysis/pe009_results.json`, `analysis/pe009_pe008_audit.json`,
+`analysis/pe009_posthoc.json`, run log `analysis/pe009_run.log`.
+
+**Gates.**
+
+| Set × hypothesis | eligible | FPR (≤ 0.06) | power, plant 0.5, p ≤ 0.0125 (≥ 0.80) | plant 0.8 (descr.) | testable |
+|---|---|---|---|---|---|
+| A H1 RATIO_METRO | 15 | 0.01 | 0.99 | 1.00 | ✓ |
+| A H2 MIX_EQ | 5 | 0.00 | **0.51** | 0.92 | ✗ (size < 8, power; as declared) |
+| A H3 PER_HEAD | 15 | 0.00 | 1.00 | 1.00 | ✓ |
+| A H4 COUNT_LINES | 15 | 0.00 | 1.00 | 1.00 | ✓ |
+| B H1 / H2 / H3 / H4 | 25 / 8 / 25 / 25 | 0.02 / 0 / 0 / 0 | 1.00 / 0.94 / 1.00 / 1.00 | 1.00 | ✓ |
+
+**Primary set A (15 PE005 grain mismatches), Holm over 4.**
+
+| Hypothesis | matched / eligible | null mean (max) | p | Holm p | CP95 upper | Verdict |
+|---|---|---|---|---|---|---|
+| H1 RATIO_METRO | 1 / 15 | 0.57 (4) | 0.459 | 1.00 | 0.279 | **NOT DETECTED** (bound just above 0.25) |
+| H2 MIX_EQ | 0 / 5 | 0.07 (1) | 1.000 | 1.00 | 0.451 | **NOT TESTABLE** (size, power 0.51) |
+| H3 PER_HEAD | 0 / 15 | 0.00 (0) | 1.000 | 1.00 | 0.181 | **EXCLUDED** |
+| H4 COUNT_LINES | 0 / 15 | 0.13 (1) | 1.000 | 1.00 | 0.181 | **EXCLUDED** |
+
+Replication set B (25 PE006 grain mismatches; descriptive since nothing passed on A): H1 1/25 (p 0.457, null mean 0.56;
+exposed), H2 0/8, H3 0/25, H4 0/25 — every B bound ≤ 0.31, H1/H3/H4 ≤ 0.18. Exploratory small fractions (1/2 … 1/10,
+no decision weight): A 0/15 (permutation mean 0.41), B 1/25 (mean 0.23, rate ≥ obs 0.21). Tablets explained by any H:
+A 1/15 (P008825, ratio 1/30), B 1/25 (P009348, ratio 1/2) — each at the level the null produces by chance (~0.6).
+
+**Verdict.** No "different quantity" is SUPPORTED. Head-count × standard ration and count-of-lines readings are
+**EXCLUDED** on the clean set (≤ 18 %, 95 % bound; 0/25 on B too); the exact C-unit ratio is **NOT DETECTED**
+(1/15, chance level; bound 0.28, and 1/25 on B); the count-system reading of the grain sum is **NOT TESTABLE** on A
+(5 eligible) and 0/8 on B. This is a clean negative.
+
+## Post-hoc diagnostics (after test; no decision weight; `tools/pe009_posthoc.py`)
+- **Q2 the reverse number is itself grain.** The totals carry capacity sub-unit signs on **13/15** (A) and **21/25** (B)
+  grain mismatches, against **0/6** and **0/14** on non-grain mismatches. So the reverse is written in the capacity system:
+  this is why count readings (H2–H4) fail structurally — the reverse is a grain amount, just a smaller one.
+- **Q1 first look at A's ratios**: total/sum in C median **0.088** (range 0.026–1.10; 2 above 1), smaller than B's 0.242.
+- **Q3** the two H1 hits: P008825 (1/30) and P009348 (1/2) — isolated, chance-level.
+- **Impression, not computed (disclosed for the next pre-registration)**: A's small ratios (≈ 0.03–0.11) are of the
+  order of 1/n for lists of 7–13 entries. "Reverse = mean entry (sum / n)" or "reverse = one of the entries" was **not**
+  tested here; since A and B have now been looked at, such a test needs a fresh set.
+
+## PE008 audit
+`pe008_grain_totals.py test` re-run in a scratch copy with the published gates: **identical** to
+`analysis/pe008_results.json` in every field except run time. Independent re-check: the PE008 post-hoc median
+total/sum ratio in C on the 25 fresh grain mismatches re-computed with a literal C table and plain integer sums (no PE001
+value code) = **0.242** (published 0.242) ✓ (`analysis/pe009_pe008_audit.json`).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

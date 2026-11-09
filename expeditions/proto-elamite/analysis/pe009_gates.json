@@ -1,0 +1,88 @@
+{
+ "A": {
+  "H1_RATIO_METRO": {
+   "eligible": 15,
+   "FPR": 0.01,
+   "FPR_ok": true,
+   "power_p05": 0.99,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  },
+  "H2_MIX_EQ": {
+   "eligible": 5,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_p05": 0.51,
+   "power_ok": false,
+   "power_p08_descriptive": 0.92,
+   "size_ok": false
+  },
+  "H3_PER_HEAD": {
+   "eligible": 15,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_p05": 1.0,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  },
+  "H4_COUNT_LINES": {
+   "eligible": 15,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_p05": 1.0,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  }
+ },
+ "B": {
+  "H1_RATIO_METRO": {
+   "eligible": 25,
+   "FPR": 0.02,
+   "FPR_ok": true,
+   "power_p05": 1.0,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  },
+  "H2_MIX_EQ": {
+   "eligible": 8,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_p05": 0.94,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  },
+  "H3_PER_HEAD": {
+   "eligible": 25,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_p05": 1.0,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  },
+  "H4_COUNT_LINES": {
+   "eligible": 25,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_p05": 1.0,
+   "power_ok": true,
+   "power_p08_descriptive": 1.0,
+   "size_ok": true
+  }
+ },
+ "params": {
+  "N_FPR": 100,
+  "R_IN": 299,
+  "SEED_FPR": 902,
+  "N_POW": 100,
+  "SEED_POW": 903,
+  "PLANT": 0.5,
+  "ALPHA_POW": 0.0125
+ },
+ "runtime_s": 94.6
+}

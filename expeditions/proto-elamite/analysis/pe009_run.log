@@ -1,0 +1,148 @@
+# PE009 run log (America/Vancouver, 2026-11-08)
+## gates 21:07:13-21:08:48 (95 s) + PE008 audit in parallel
+A H1_RATIO_METRO {'eligible': 15, 'FPR': 0.01, 'FPR_ok': True, 'power_p05': 0.99, 'power_ok': True, 'power_p08_descriptive': 1.0, 'size_ok': True} 14.5
+A H2_MIX_EQ {'eligible': 5, 'FPR': 0.0, 'FPR_ok': True, 'power_p05': 0.51, 'power_ok': False, 'power_p08_descriptive': 0.92, 'size_ok': False} 19.6
+A H3_PER_HEAD {'eligible': 15, 'FPR': 0.0, 'FPR_ok': True, 'power_p05': 1.0, 'power_ok': True, 'power_p08_descriptive': 1.0, 'size_ok': True} 27.9
+A H4_COUNT_LINES {'eligible': 15, 'FPR': 0.0, 'FPR_ok': True, 'power_p05': 1.0, 'power_ok': True, 'power_p08_descriptive': 1.0, 'size_ok': True} 35.5
+B H1_RATIO_METRO {'eligible': 25, 'FPR': 0.02, 'FPR_ok': True, 'power_p05': 1.0, 'power_ok': True, 'power_p08_descriptive': 1.0, 'size_ok': True} 59.4
+B H2_MIX_EQ {'eligible': 8, 'FPR': 0.0, 'FPR_ok': True, 'power_p05': 0.94, 'power_ok': True, 'power_p08_descriptive': 1.0, 'size_ok': True} 68.3
+B H3_PER_HEAD {'eligible': 25, 'FPR': 0.0, 'FPR_ok': True, 'power_p05': 1.0, 'power_ok': True, 'power_p08_descriptive': 1.0, 'size_ok': True} 82.1
+B H4_COUNT_LINES {'eligible': 25, 'FPR': 0.0, 'FPR_ok': True, 'power_p05': 1.0, 'power_ok': True, 'power_p08_descriptive': 1.0, 'size_ok': True} 94.6
+## audit
+{
+ "pe008_results_identical_except_time": true,
+ "P_ratio_recomputed": {
+  "n": 25,
+  "median": 0.242,
+  "published_median": 0.242,
+  "match": true
+ }
+}
+## test 21:09:41 (3 s)
+{
+ "verdicts": {
+  "H1_RATIO_METRO": "NOT DETECTED",
+  "H2_MIX_EQ": "NOT TESTABLE",
+  "H3_PER_HEAD": "EXCLUDED",
+  "H4_COUNT_LINES": "EXCLUDED"
+ },
+ "A": {
+  "H1_RATIO_METRO": {
+   "eligible": 15,
+   "matched": 1,
+   "null_mean": 0.5717858929464732,
+   "null_max": 4,
+   "p": 0.4585,
+   "cp95_upper_matched_fraction": 0.2793961936128766,
+   "matched_pids": [
+    "P008825"
+   ],
+   "p_holm": 1.0
+  },
+  "H2_MIX_EQ": {
+   "eligible": 5,
+   "matched": 0,
+   "null_mean": 0.06803401700850426,
+   "null_max": 1,
+   "p": 1.0,
+   "cp95_upper_matched_fraction": 0.4507197283469412,
+   "matched_pids": [],
+   "p_holm": 1.0
+  },
+  "H3_PER_HEAD": {
+   "eligible": 15,
+   "matched": 0,
+   "null_mean": 0.0,
+   "null_max": 0,
+   "p": 1.0,
+   "cp95_upper_matched_fraction": 0.18103627252208476,
+   "matched_pids": [],
+   "p_holm": 1.0
+  },
+  "H4_COUNT_LINES": {
+   "eligible": 15,
+   "matched": 0,
+   "null_mean": 0.12856428214107055,
+   "null_max": 1,
+   "p": 1.0,
+   "cp95_upper_matched_fraction": 0.18103627252208476,
+   "matched_pids": [],
+   "p_holm": 1.0
+  }
+ },
+ "B": {
+  "H1_RATIO_METRO": {
+   "eligible": 25,
+   "matched": 1,
+   "null_mean": 0.5617808904452226,
+   "null_max": 4,
+   "p": 0.457,
+   "cp95_upper_matched_fraction": 0.17612071060451806,
+   "matched_pids": [
+    "P009348"
+   ]
+  },
+  "H2_MIX_EQ": {
+   "eligible": 8,
+   "matched": 0,
+   "null_mean": 0.0,
+   "null_max": 0,
+   "p": 1.0,
+   "cp95_upper_matched_fraction": 0.31234397806636793,
+   "matched_pids": []
+  },
+  "H3_PER_HEAD": {
+   "eligible": 25,
+   "matched": 0,
+   "null_mean": 0.0,
+   "null_max": 0,
+   "p": 1.0,
+   "cp95_upper_matched_fraction": 0.11292814500684334,
+   "matched_pids": []
+  },
+  "H4_COUNT_LINES": {
+   "eligible": 25,
+   "matched": 0,
+   "null_mean": 0.17958979489744872,
+   "null_max": 1,
+   "p": 1.0,
+   "cp95_upper_matched_fraction": 0.11292814500684334,
+   "matched_pids": []
+  }
+ },
+ "expl": {
+  "A": {
+   "matched": 0,
+   "of": 15,
+   "perm_mean": 0.4114114114114114,
+   "perm_rate_ge_obs": 1.0,
+   "pids": []
+  },
+  "B": {
+   "matched": 1,
+   "of": 25,
+   "perm_mean": 0.22622622622622623,
+   "perm_rate_ge_obs": 0.214,
+   "pids": [
+    "P009348"
+   ]
+  }
+ },
+ "explained": {
+  "A": {
+   "pids": [
+    "P008825"
+   ],
+   "count": 1,
+   "of": 15
+  },
+  "B": {
+   "pids": [
+    "P009348"
+   ],
+   "count": 1,
+   "of": 25
+  }
+ }
+}
+## post hoc 21:11 (0.2 s): see analysis/pe009_posthoc.json
