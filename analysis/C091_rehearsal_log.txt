@@ -1,0 +1,47 @@
+{
+ "gates": {
+  "FPR_H1": "0/9",
+  "FPR_H2_t": "0/9",
+  "FPR_H2_below_range": "1/9",
+  "FPR_H3": "0/10",
+  "POW_H1": "9/9",
+  "POW_H2_t": "9/9",
+  "POW_H2_below_range": "1/9",
+  "POW_H3": "10/10",
+  "gap_H1": 0.6576493994683033,
+  "MDE80_H1": 0.08386995654209607,
+  "shift_H2_t": 0.43661497700075924,
+  "shift_H2_below": -0.007598957866237534,
+  "MDE80_H2_t": 0.22393776193129225,
+  "shift_H3": 0.23699189933719328,
+  "MDE80_H3": 0.06790971441937126
+ },
+ "testable": {
+  "H1": true,
+  "H2": true,
+  "H3": true
+ },
+ "elapsed_s": 3.0588059425354004
+}
+nat {'Latin_Caesar': 0.0472, 'Latin_Descartes': 0.0587, 'Italian_Dante': 0.1233, 'Italian_Machiavelli': 0.0854, 'Spanish_Cervantes': 0.0776, 'Finnish_Kalevala': 0.1307, 'Finnish_Kivi': 0.1153, 'Hebrew_Genesis': 0.235, 'Hebrew_Exodus': 0.2251}
+free {'Latin_Caesar': 0.8215, 'Latin_Descartes': 0.8165, 'Italian_Dante': 0.7388, 'Italian_Machiavelli': 0.7929, 'Spanish_Cervantes': 0.7797, 'Finnish_Kalevala': 0.7855, 'Finnish_Kivi': 0.7366, 'Hebrew_Genesis': 0.7738, 'Hebrew_Exodus': 0.7719}
+gen {'gen_11454': 0.4003, 'gen_11455': 0.3371, 'gen_11456': 0.3537, 'gen_11457': 0.3852, 'gen_11458': 0.3747, 'gen_11459': 0.3819, 'gen_11460': 0.3614, 'gen_11461': 0.3856, 'gen_11462': 0.4024, 'gen_11463': 0.3612}
+Latin_Caesar {'ref': 0.0472, 'free': 0.8215, 'partial_scramble': 0.5867, 'partial_alphagram': 0.0428}
+Latin_Descartes {'ref': 0.0587, 'free': 0.8165, 'partial_scramble': 0.6021, 'partial_alphagram': 0.0559}
+Italian_Dante {'ref': 0.1233, 'free': 0.7388, 'partial_scramble': 0.5075, 'partial_alphagram': 0.1135}
+Italian_Machiavelli {'ref': 0.0854, 'free': 0.7929, 'partial_scramble': 0.5715, 'partial_alphagram': 0.0803}
+Spanish_Cervantes {'ref': 0.0776, 'free': 0.7797, 'partial_scramble': 0.5415, 'partial_alphagram': 0.0753}
+Finnish_Kalevala {'ref': 0.1307, 'free': 0.7855, 'partial_scramble': 0.5487, 'partial_alphagram': 0.1241}
+Finnish_Kivi {'ref': 0.1153, 'free': 0.7366, 'partial_scramble': 0.502, 'partial_alphagram': 0.1098}
+Hebrew_Genesis {'ref': 0.235, 'free': 0.7738, 'partial_scramble': 0.5905, 'partial_alphagram': 0.2184}
+Hebrew_Exodus {'ref': 0.2251, 'free': 0.7719, 'partial_scramble': 0.5774, 'partial_alphagram': 0.2097}
+gen_11454 {'ref': 0.4003, 'partial_scramble': 0.6074, 'free_descriptive': 0.8707} 2468
+gen_11455 {'ref': 0.3371, 'partial_scramble': 0.6265, 'free_descriptive': 0.888} 2139
+gen_11456 {'ref': 0.3537, 'partial_scramble': 0.6148, 'free_descriptive': 0.8733} 2307
+gen_11457 {'ref': 0.3852, 'partial_scramble': 0.6013, 'free_descriptive': 0.8702} 2778
+gen_11458 {'ref': 0.3747, 'partial_scramble': 0.6094, 'free_descriptive': 0.8757} 2525
+gen_11459 {'ref': 0.3819, 'partial_scramble': 0.6126, 'free_descriptive': 0.8836} 2548
+gen_11460 {'ref': 0.3614, 'partial_scramble': 0.6053, 'free_descriptive': 0.8785} 2377
+gen_11461 {'ref': 0.3856, 'partial_scramble': 0.6063, 'free_descriptive': 0.8776} 2451
+gen_11462 {'ref': 0.4024, 'partial_scramble': 0.6224, 'free_descriptive': 0.8819} 2577
+gen_11463 {'ref': 0.3612, 'partial_scramble': 0.6073, 'free_descriptive': 0.8813} 2544

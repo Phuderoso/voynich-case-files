@@ -1,0 +1,571 @@
+{
+ "seed": 9191,
+ "mode": "rehearse",
+ "N": 15000,
+ "F2": 0.25,
+ "F3": 0.1,
+ "H2MODE": "t",
+ "gates": {
+  "FPR_H1": "0/9",
+  "FPR_H2_t": "0/9",
+  "FPR_H2_below_range": "1/9",
+  "FPR_H3": "0/10",
+  "POW_H1": "9/9",
+  "POW_H2_t": "9/9",
+  "POW_H2_below_range": "1/9",
+  "POW_H3": "10/10",
+  "gap_H1": 0.6576493994683033,
+  "MDE80_H1": 0.08386995654209607,
+  "shift_H2_t": 0.43661497700075924,
+  "shift_H2_below": -0.007598957866237534,
+  "MDE80_H2_t": 0.22393776193129225,
+  "shift_H3": 0.23699189933719328,
+  "MDE80_H3": 0.06790971441937126
+ },
+ "testable": {
+  "H1": true,
+  "H2": true,
+  "H3": true
+ },
+ "naturals": {
+  "Latin_Caesar": {
+   "ref": {
+    "Q": 0.04718761796904492,
+    "ntypes": 2649,
+    "nclasses": 2585,
+    "nfam2": 61,
+    "maxfam": 3
+   },
+   "free": {
+    "Q": 0.821529381575571,
+    "ntypes": 7794,
+    "nclasses": 2585,
+    "nfam2": 1194,
+    "maxfam": 71
+   },
+   "partial_scramble": {
+    "Q": 0.5867005310551836,
+    "ntypes": 4331,
+    "nclasses": 2585,
+    "nfam2": 795,
+    "maxfam": 23
+   },
+   "partial_alphagram": {
+    "Q": 0.04275444570563754,
+    "ntypes": 2643,
+    "nclasses": 2585,
+    "nfam2": 55,
+    "maxfam": 3
+   }
+  },
+  "Latin_Descartes": {
+   "ref": {
+    "Q": 0.05865809562073122,
+    "ntypes": 2489,
+    "nclasses": 2413,
+    "nfam2": 70,
+    "maxfam": 3
+   },
+   "free": {
+    "Q": 0.8165174938974776,
+    "ntypes": 7374,
+    "nclasses": 2413,
+    "nfam2": 1060,
+    "maxfam": 74
+   },
+   "partial_scramble": {
+    "Q": 0.602135231316726,
+    "ntypes": 4215,
+    "nclasses": 2413,
+    "nfam2": 736,
+    "maxfam": 28
+   },
+   "partial_alphagram": {
+    "Q": 0.05593561368209256,
+    "ntypes": 2485,
+    "nclasses": 2413,
+    "nfam2": 67,
+    "maxfam": 3
+   }
+  },
+  "Italian_Dante": {
+   "ref": {
+    "Q": 0.12330066392665191,
+    "ntypes": 3163,
+    "nclasses": 2959,
+    "nfam2": 186,
+    "maxfam": 5
+   },
+   "free": {
+    "Q": 0.7387725631768953,
+    "ntypes": 6925,
+    "nclasses": 2959,
+    "nfam2": 1150,
+    "maxfam": 39
+   },
+   "partial_scramble": {
+    "Q": 0.5075230181899842,
+    "ntypes": 4453,
+    "nclasses": 2959,
+    "nfam2": 766,
+    "maxfam": 15
+   },
+   "partial_alphagram": {
+    "Q": 0.11347743165924984,
+    "ntypes": 3146,
+    "nclasses": 2959,
+    "nfam2": 170,
+    "maxfam": 5
+   }
+  },
+  "Italian_Machiavelli": {
+   "ref": {
+    "Q": 0.08539823008849558,
+    "ntypes": 2260,
+    "nclasses": 2162,
+    "nfam2": 95,
+    "maxfam": 3
+   },
+   "free": {
+    "Q": 0.792909211398277,
+    "ntypes": 6036,
+    "nclasses": 2162,
+    "nfam2": 912,
+    "maxfam": 77
+   },
+   "partial_scramble": {
+    "Q": 0.5715485858302997,
+    "ntypes": 3571,
+    "nclasses": 2162,
+    "nfam2": 632,
+    "maxfam": 24
+   },
+   "partial_alphagram": {
+    "Q": 0.080301685891748,
+    "ntypes": 2254,
+    "nclasses": 2162,
+    "nfam2": 89,
+    "maxfam": 3
+   }
+  },
+  "Spanish_Cervantes": {
+   "ref": {
+    "Q": 0.07762376237623762,
+    "ntypes": 2525,
+    "nclasses": 2424,
+    "nfam2": 95,
+    "maxfam": 4
+   },
+   "free": {
+    "Q": 0.7796952736318408,
+    "ntypes": 6432,
+    "nclasses": 2424,
+    "nfam2": 1007,
+    "maxfam": 132
+   },
+   "partial_scramble": {
+    "Q": 0.5414595867120062,
+    "ntypes": 3823,
+    "nclasses": 2424,
+    "nfam2": 671,
+    "maxfam": 41
+   },
+   "partial_alphagram": {
+    "Q": 0.0753370340999207,
+    "ntypes": 2522,
+    "nclasses": 2424,
+    "nfam2": 92,
+    "maxfam": 4
+   }
+  },
+  "Finnish_Kalevala": {
+   "ref": {
+    "Q": 0.13073220167215607,
+    "ntypes": 3947,
+    "nclasses": 3672,
+    "nfam2": 241,
+    "maxfam": 4
+   },
+   "free": {
+    "Q": 0.7854667646749973,
+    "ntypes": 9523,
+    "nclasses": 3672,
+    "nfam2": 1629,
+    "maxfam": 54
+   },
+   "partial_scramble": {
+    "Q": 0.5486771571848521,
+    "ntypes": 5783,
+    "nclasses": 3672,
+    "nfam2": 1062,
+    "maxfam": 21
+   },
+   "partial_alphagram": {
+    "Q": 0.12414143983719156,
+    "ntypes": 3931,
+    "nclasses": 3672,
+    "nfam2": 229,
+    "maxfam": 4
+   }
+  },
+  "Finnish_Kivi": {
+   "ref": {
+    "Q": 0.11528629856850715,
+    "ntypes": 3912,
+    "nclasses": 3675,
+    "nfam2": 214,
+    "maxfam": 4
+   },
+   "free": {
+    "Q": 0.7366086659843057,
+    "ntypes": 8793,
+    "nclasses": 3675,
+    "nfam2": 1359,
+    "maxfam": 245
+   },
+   "partial_scramble": {
+    "Q": 0.501967095851216,
+    "ntypes": 5592,
+    "nclasses": 3675,
+    "nfam2": 890,
+    "maxfam": 82
+   },
+   "partial_alphagram": {
+    "Q": 0.10977173634265196,
+    "ntypes": 3899,
+    "nclasses": 3675,
+    "nfam2": 204,
+    "maxfam": 4
+   }
+  },
+  "Hebrew_Genesis": {
+   "ref": {
+    "Q": 0.23503383654346693,
+    "ntypes": 3842,
+    "nclasses": 3342,
+    "nfam2": 403,
+    "maxfam": 6
+   },
+   "free": {
+    "Q": 0.773792443806791,
+    "ntypes": 8364,
+    "nclasses": 3342,
+    "nfam2": 1450,
+    "maxfam": 107
+   },
+   "partial_scramble": {
+    "Q": 0.5904558404558404,
+    "ntypes": 5616,
+    "nclasses": 3342,
+    "nfam2": 1042,
+    "maxfam": 60
+   },
+   "partial_alphagram": {
+    "Q": 0.21844532279314888,
+    "ntypes": 3795,
+    "nclasses": 3342,
+    "nfam2": 376,
+    "maxfam": 6
+   }
+  },
+  "Hebrew_Exodus": {
+   "ref": {
+    "Q": 0.22508200857935906,
+    "ntypes": 3963,
+    "nclasses": 3466,
+    "nfam2": 395,
+    "maxfam": 7
+   },
+   "free": {
+    "Q": 0.771855512413225,
+    "ntypes": 8499,
+    "nclasses": 3466,
+    "nfam2": 1527,
+    "maxfam": 92
+   },
+   "partial_scramble": {
+    "Q": 0.5773704617553754,
+    "ntypes": 5674,
+    "nclasses": 3466,
+    "nfam2": 1068,
+    "maxfam": 39
+   },
+   "partial_alphagram": {
+    "Q": 0.20974738453687164,
+    "ntypes": 3919,
+    "nclasses": 3466,
+    "nfam2": 369,
+    "maxfam": 6
+   }
+  }
+ },
+ "generator": {
+  "gen_11454": {
+   "ref": {
+    "Q": 0.40032414910858993,
+    "ntypes": 2468,
+    "nclasses": 1904,
+    "nfam2": 424,
+    "maxfam": 8
+   },
+   "partial_scramble": {
+    "Q": 0.6073867163252639,
+    "ntypes": 3222,
+    "nclasses": 1904,
+    "nfam2": 639,
+    "maxfam": 25
+   },
+   "free_descriptive": {
+    "Q": 0.8706560922855083,
+    "ntypes": 6935,
+    "nclasses": 1904,
+    "nfam2": 1007,
+    "maxfam": 60
+   }
+  },
+  "gen_11455": {
+   "ref": {
+    "Q": 0.33707339878447873,
+    "ntypes": 2139,
+    "nclasses": 1732,
+    "nfam2": 314,
+    "maxfam": 7
+   },
+   "partial_scramble": {
+    "Q": 0.6265060240963856,
+    "ntypes": 3071,
+    "nclasses": 1732,
+    "nfam2": 585,
+    "maxfam": 41
+   },
+   "free_descriptive": {
+    "Q": 0.8879591547298256,
+    "ntypes": 7051,
+    "nclasses": 1732,
+    "nfam2": 942,
+    "maxfam": 91
+   }
+  },
+  "gen_11456": {
+   "ref": {
+    "Q": 0.35370611183355005,
+    "ntypes": 2307,
+    "nclasses": 1842,
+    "nfam2": 351,
+    "maxfam": 8
+   },
+   "partial_scramble": {
+    "Q": 0.6147823363607893,
+    "ntypes": 3193,
+    "nclasses": 1842,
+    "nfam2": 612,
+    "maxfam": 43
+   },
+   "free_descriptive": {
+    "Q": 0.8733304610081861,
+    "ntypes": 6963,
+    "nclasses": 1842,
+    "nfam2": 960,
+    "maxfam": 60
+   }
+  },
+  "gen_11457": {
+   "ref": {
+    "Q": 0.3851691864650828,
+    "ntypes": 2778,
+    "nclasses": 2169,
+    "nfam2": 461,
+    "maxfam": 8
+   },
+   "partial_scramble": {
+    "Q": 0.6013161502604881,
+    "ntypes": 3647,
+    "nclasses": 2169,
+    "nfam2": 715,
+    "maxfam": 28
+   },
+   "free_descriptive": {
+    "Q": 0.8701660961075187,
+    "ntypes": 7887,
+    "nclasses": 2169,
+    "nfam2": 1145,
+    "maxfam": 86
+   }
+  },
+  "gen_11458": {
+   "ref": {
+    "Q": 0.37465346534653465,
+    "ntypes": 2525,
+    "nclasses": 1980,
+    "nfam2": 401,
+    "maxfam": 8
+   },
+   "partial_scramble": {
+    "Q": 0.6093563766388558,
+    "ntypes": 3356,
+    "nclasses": 1980,
+    "nfam2": 669,
+    "maxfam": 23
+   },
+   "free_descriptive": {
+    "Q": 0.8757257395631739,
+    "ntypes": 7234,
+    "nclasses": 1980,
+    "nfam2": 1081,
+    "maxfam": 63
+   }
+  },
+  "gen_11459": {
+   "ref": {
+    "Q": 0.38186813186813184,
+    "ntypes": 2548,
+    "nclasses": 1999,
+    "nfam2": 424,
+    "maxfam": 8
+   },
+   "partial_scramble": {
+    "Q": 0.6125993523697381,
+    "ntypes": 3397,
+    "nclasses": 1999,
+    "nfam2": 683,
+    "maxfam": 23
+   },
+   "free_descriptive": {
+    "Q": 0.8835817093363902,
+    "ntypes": 7851,
+    "nclasses": 1999,
+    "nfam2": 1085,
+    "maxfam": 60
+   }
+  },
+  "gen_11460": {
+   "ref": {
+    "Q": 0.36137989061842657,
+    "ntypes": 2377,
+    "nclasses": 1879,
+    "nfam2": 361,
+    "maxfam": 8
+   },
+   "partial_scramble": {
+    "Q": 0.6053037311131668,
+    "ntypes": 3243,
+    "nclasses": 1879,
+    "nfam2": 599,
+    "maxfam": 31
+   },
+   "free_descriptive": {
+    "Q": 0.8785136432195255,
+    "ntypes": 7293,
+    "nclasses": 1879,
+    "nfam2": 993,
+    "maxfam": 80
+   }
+  },
+  "gen_11461": {
+   "ref": {
+    "Q": 0.38555691554467564,
+    "ntypes": 2451,
+    "nclasses": 1905,
+    "nfam2": 399,
+    "maxfam": 7
+   },
+   "partial_scramble": {
+    "Q": 0.6063279586248859,
+    "ntypes": 3287,
+    "nclasses": 1905,
+    "nfam2": 611,
+    "maxfam": 29
+   },
+   "free_descriptive": {
+    "Q": 0.877595331795359,
+    "ntypes": 7369,
+    "nclasses": 1905,
+    "nfam2": 1003,
+    "maxfam": 80
+   }
+  },
+  "gen_11462": {
+   "ref": {
+    "Q": 0.4024058983313931,
+    "ntypes": 2577,
+    "nclasses": 1981,
+    "nfam2": 441,
+    "maxfam": 8
+   },
+   "partial_scramble": {
+    "Q": 0.6224310041103934,
+    "ntypes": 3406,
+    "nclasses": 1981,
+    "nfam2": 695,
+    "maxfam": 25
+   },
+   "free_descriptive": {
+    "Q": 0.8818886923390937,
+    "ntypes": 7349,
+    "nclasses": 1981,
+    "nfam2": 1113,
+    "maxfam": 60
+   }
+  },
+  "gen_11463": {
+   "ref": {
+    "Q": 0.36124213836477986,
+    "ntypes": 2544,
+    "nclasses": 2018,
+    "nfam2": 393,
+    "maxfam": 8
+   },
+   "partial_scramble": {
+    "Q": 0.6072886297376093,
+    "ntypes": 3430,
+    "nclasses": 2018,
+    "nfam2": 671,
+    "maxfam": 27
+   },
+   "free_descriptive": {
+    "Q": 0.8813424947145877,
+    "ntypes": 7568,
+    "nclasses": 2018,
+    "nfam2": 1120,
+    "maxfam": 74
+   }
+  }
+ },
+ "summary": {
+  "nat": {
+   "Latin_Caesar": 0.04718761796904492,
+   "Latin_Descartes": 0.05865809562073122,
+   "Italian_Dante": 0.12330066392665191,
+   "Italian_Machiavelli": 0.08539823008849558,
+   "Spanish_Cervantes": 0.07762376237623762,
+   "Finnish_Kalevala": 0.13073220167215607,
+   "Finnish_Kivi": 0.11528629856850715,
+   "Hebrew_Genesis": 0.23503383654346693,
+   "Hebrew_Exodus": 0.22508200857935906
+  },
+  "free": {
+   "Latin_Caesar": 0.821529381575571,
+   "Latin_Descartes": 0.8165174938974776,
+   "Italian_Dante": 0.7387725631768953,
+   "Italian_Machiavelli": 0.792909211398277,
+   "Spanish_Cervantes": 0.7796952736318408,
+   "Finnish_Kalevala": 0.7854667646749973,
+   "Finnish_Kivi": 0.7366086659843057,
+   "Hebrew_Genesis": 0.773792443806791,
+   "Hebrew_Exodus": 0.771855512413225
+  },
+  "gen": {
+   "gen_11454": 0.40032414910858993,
+   "gen_11455": 0.33707339878447873,
+   "gen_11456": 0.35370611183355005,
+   "gen_11457": 0.3851691864650828,
+   "gen_11458": 0.37465346534653465,
+   "gen_11459": 0.38186813186813184,
+   "gen_11460": 0.36137989061842657,
+   "gen_11461": 0.38555691554467564,
+   "gen_11462": 0.4024058983313931,
+   "gen_11463": 0.36124213836477986
+  }
+ },
+ "elapsed_s": 3.0588059425354004
+}
