@@ -34,3 +34,43 @@ The F-AFFIX next step (equivalence test of the C005 generator configuration with
 - **Not claimed in any branch:** nothing here reads or translates the text.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+## Results (run 2026-11-09 ~05:40–05:43 PT, 130.5 s, seed 8484; pre-registration commit acba2c9)
+Outputs: `analysis/C084_results.json` (sha256 63fe6d1c01aeeeaa…; every run with G, null mean/SD, X, p), `analysis/C084_run_log.txt`, `analysis/C084_exploratory.txt` (post hoc, labelled). All 35 generator runs produced enough text.
+
+**Windows.** W1 (ZL): 131 pages f1r–f79v, 15,186 tokens, Currier A 88 / B 37 / unmarked 6, mostly herbal (`$I=H` 112). IT2a W1: 129 pages f1r–f80r. W2: 57 pages f86v6–f116r (both transcriptions), 15,011 tokens, B 32 / A 25; stars 23, herbal 16, pharma 15.
+
+**Gates.** G1 false positives **2/20** (at the bar; pass). G2 power **10/10** plants (X 0.13–0.30; pass). G3 leave-one-out natural **2/9 in each window → FAIL** (Italian Dante BELOW the others, Hebrew Exodus ABOVE). G4 held-out C005-configuration generator **0/10 and 0/10** called (pass); 20/20 reference runs usable.
+
+| Measurement | G (bits/token) | X = G − null mean | null SD | p (floor 0.01) | H2 call | H3 call |
+|---|---|---|---|---|---|---|
+| ZL 3b W1 | −0.114 | **0.546** | 0.027 | 0.01 | INSIDE | ABOVE |
+| IT2a W1 | −0.130 | **0.538** | 0.023 | 0.01 | INSIDE | ABOVE |
+| ZL 3b W2 | −0.472 | **0.212** | 0.023 | 0.01 | INSIDE | ABOVE |
+| IT2a W2 | −0.492 | **0.214** | 0.028 | 0.01 | INSIDE | ABOVE |
+
+| Comparator (X, bits/token) | W1 | W2 |
+|---|---|---|
+| 9 natural texts (range) | 0.088 (Dante) – 0.904 (Exodus) | 0.046 (Dante) – 0.928 (Exodus) |
+| C005-configuration generator, 20 reference runs (range; mean ± SD) | −0.024 – 0.099 (0.045 ± 0.027) | −0.031 – 0.145 (0.072 ± 0.046) |
+| Default generator, 5 runs (descriptive) | 0.32, 0.40, 0.50, 0.53, 0.62 | 0.35, 0.55, 0.55, 0.56, 0.57 |
+
+Natural X per text (W1 / W2): Caesar 0.156/0.206, Descartes 0.244/0.318, Dante 0.088/0.046, Machiavelli 0.132/0.184, Cervantes 0.189/0.276, Genesis 0.626/0.732, Exodus 0.904/0.928, Kalevala 0.675/0.825, Kivi 0.261/0.311. (G is negative everywhere because the 8-topic model over-fits half-pages; only the excess X over the null is interpreted.)
+
+### Verdicts (as pre-registered)
+- **H1: DETECTED.** All four manuscript measurements beat all 99 line-reassignment nulls (p = 0.01, the floor; Holm rejects all four). A topic model that sees half of a page's lines predicts the other half better than chance pages do: 0.21–0.55 bits per token. The FP gate passed exactly at the bar (2/20).
+- **H2: NOT TESTABLE** (G3 failed: the natural texts are too spread out for a 9-text range rule, 2/9 natural texts fall outside the others in each window). Descriptive only: all four manuscript values lie inside the natural range, between the Romance prose and the Hebrew/Finnish texts.
+- **H3: ABOVE GENERATOR** (all four measurements, margin 2 null-SD; held-out gate 0/10). Against the **surface-matched C005 configuration** of the Timm–Schinner generator, the manuscript's pages are far more self-predictive: 0.21–0.55 vs at most 0.10 (W1) and 0.14 (W2). Fixed interpretation: a new gap for self-citation **in this configuration**, not evidence of meaning.
+
+### Caveats, stated plainly
+- **The gap is configuration-specific.** The 5 default-setting runs (descriptive, not tested) give X 0.32–0.62, which brackets the manuscript. The default chooses source words from the same page; the C005 configuration chooses them at random, which removes page-level reuse. Joined with C083 (all 13 surface-feasible cells of its 65-cell grid used random source choice, and the default was not surface-feasible), this points to a **tension** inside the generator space explored so far: settings that keep the manuscript's surface statistics lose its page topicality, and the setting with page topicality loses the surface. This is a lead from two separate designs, not a tested exclusion; it needs a joint pre-registered test (proposed for C086).
+- Part of W1's high value comes from mixing Currier A and B pages (a dialect/hand split looks like "topics"). Exploratory check (post hoc, `analysis/C084_exploratory.txt`): inside Currier A only (113 pages, 10,847 tokens) X = 0.178, inside B only (65 pages, 15,005 tokens) X = 0.262, both at their floor p 0.05 (R = 19). So page topicality survives inside one language; the sizes are not matched to any comparator, so no call is made.
+- Power: the plant needed 20 % of tokens re-drawn from page topics (design step). Weak page topics could be missed; the manuscript's effect is not weak.
+- Only one model (PLSA, K 8) and one split (odd/even lines); K 4/16 were not run.
+- Lines adjacent on a page share vocabulary in natural text through local repetition as well as topic; the statistic does not separate the two (the default generator shows local copying alone can produce it).
+- Nothing here reads or translates the text.
+
+**Seeds spent:** generator 11286–11320. **Next: 11321+.** The deferred F-AFFIX equivalence test of the C005 configuration is C085.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

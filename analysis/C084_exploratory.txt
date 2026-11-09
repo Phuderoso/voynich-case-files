@@ -1,0 +1,5 @@
+# C084 EXPLORATORY (post hoc, not pre-registered, no verdict): X within one Currier language ($L from ZL 3b headers), pages >= 40 tokens in file order up to 15,000 tokens (A has only 10,847); R = 19 (floor p 0.05); seed 84840+. Page sizes differ from the main windows, so no comparator range applies. Script: same tool functions (tools/c084_page_topics.py), run 2026-11-09 ~05:46 PT.
+A 113 10847 f1r f102v1 {'T': 1, 'H': 95, 'S': 2, 'P': 15}
+B 65 15005 f26r f106r {'H': 32, 'T': 5, 'B': 19, 'C': 2, 'S': 7}
+ZL_CurrierA {'G': -0.5718, 'null_mean': -0.7493, 'null_sd': 0.0234, 'X': 0.1775, 'p': 0.05, 'R': 19, 'n_pages': 113, 'n_tokens': 10847}
+ZL_CurrierB {'G': -0.2911, 'null_mean': -0.5526, 'null_sd': 0.0351, 'X': 0.2615, 'p': 0.05, 'R': 19, 'n_pages': 65, 'n_tokens': 15005}

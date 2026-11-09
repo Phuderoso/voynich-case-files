@@ -1,0 +1,12 @@
+# C084 run log: timeout 600 python3 tools/c084_page_topics.py (seed 8484), 2026-11-09 ~05:40-05:43 PT, 130.5 s; pre-registration commit acba2c9
+generator done 18.5
+Voynich_ZL3b_W1 {"X": 0.5459937136966535, "G": -0.11364202570315429, "p": 0.01, "holm_reject": true, "H2": "INSIDE", "H3": "ABOVE"}
+Voynich_IT2a_W1 {"X": 0.5382050287228997, "G": -0.12955256609277724, "p": 0.01, "holm_reject": true, "H2": "INSIDE", "H3": "ABOVE"}
+Voynich_ZL3b_W2 {"X": 0.2121468076036342, "G": -0.4721269432388098, "p": 0.01, "holm_reject": true, "H2": "INSIDE", "H3": "ABOVE"}
+Voynich_IT2a_W2 {"X": 0.21433291993913856, "G": -0.49223997454050145, "p": 0.01, "holm_reject": true, "H2": "INSIDE", "H3": "ABOVE"}
+W1 nat [0.0877, 0.9039] gen [-0.0243, 0.099] def [0.4022, 0.6186, 0.5308, 0.3208, 0.5017] loo 2 hold 0
+W2 nat [0.0464, 0.928] gen [-0.0307, 0.1445] def [0.5542, 0.5714, 0.5535, 0.3506, 0.5616] loo 2 hold 0
+gates {'FPR': '2/20', 'FPR_pass': True, 'power': '10/10', 'power_pass': True, 'LOO_natural': {'W1': 2, 'W2': 2}, 'LOO_pass': False, 'holdout_gen': {'W1': 0, 'W2': 0}, 'holdout_pass': True, 'ref_pass': True}
+H1 DETECTED | H2 NOT TESTABLE (gate) | H3 ABOVE
+runtime 130.5
+EXIT 0
