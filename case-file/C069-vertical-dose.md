@@ -18,4 +18,22 @@ I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (c
 - **Tool:** `tools/c069_vert_dose.py`, `timeout 600`, 8 processes.
 - **Backlog, not run here:** two-lines-up and same-index variants of the C068 statistic; F-CROSS step 3 (A→B reuse inside herbal).
 
+## Results (run 2026-11-08 18:13:39–18:16:15 PT, 156.4 s, seed 6868, 8 processes; `analysis/C069_results.json`, `analysis/C069_run_log.txt`; pre-registration commit 04e7bbb)
+- **Reproduction:** V = +0.009982 (ZL, 2,568 lower lines) and +0.009576 (IT2a, 2,619), identical to C068.
+- **Valid runs:** all required (100 + 100 references, 20 + 20 held out, 10 per dose value); every run in the seed ranges produced ≥ 2,784 usable lines, so the first seeds of each range were used.
+- **Gates (all pass):** H1 FPR 0/20, power 19/20; H2 FPR 1/20, power 20/20. Size-matching narrowed the generator spread as expected: default references Dc 0.0075–0.0359 (median 0.0235), spp0 −0.0059–0.0151 (median 0.0038).
+
+| Test | V | reference runs on the far side | rank p (floor 1/101) | Holm (4 tests) |
+|---|---|---|---|---|
+| H1 below default, ZL | +0.0100 | 2/100 default runs ≤ V | 0.0297 | not rejected (first threshold 0.0125) |
+| H1 below default, IT2a | +0.0096 | 2/100 | 0.0297 | not rejected |
+| H2 above spp0, ZL | +0.0100 | 11/100 spp0 runs ≥ V | 0.119 | not rejected |
+| H2 above spp0, IT2a | +0.0096 | 11/100 | 0.119 | not rejected |
+
+- **Verdict: H1 NOT DETECTED, H2 NOT DETECTED** (gates passed). H1 is nominally under 0.05 in both transcriptions but fails Holm; under the pre-registered rule it is not a finding. The C068 post-hoc lead ("below 19/20 default runs") is **not confirmed**: with size-matched runs the manuscript is below 98/100 default runs, which is suggestive and not decisive.
+- **What the gates do and do not cover:** power was measured for telling a spp0-like text from the default (19–20/20). The manuscript lies between the two settings, so an intermediate value is exactly where both rank tests are weakest. Not excluded: a manuscript-like text produced by the default generator (2 in 100 runs reach it) or by spp0 (11 in 100).
+- **Dose curve (descriptive, no p claims):** median Dc for `same_position_probability` 0 / 7 / 14 / 21 / 28 = 0.0038 / 0.0101 / 0.0117 / 0.0174 / 0.0235 (10 runs at 7, 14, 21). The manuscript's V meets the median curve at about **spp ≈ 6.9 (ZL) / 6.5 (IT2a)**. Runs at spp 7 range 0.0047–0.0133, so the manuscript is ordinary for that setting. This places the manuscript on one generator dial; it says nothing about whether a generator or a scribe wrote it.
+- **Audit of C068:** its 1,200-line generator runs were noisier than the manuscript (default range −0.0005–0.031 vs size-matched 0.0075–0.0359). The C068 verdict (manuscript statistic, swap test) is unaffected; its descriptive INSIDE-default classification would read INSIDE (near the bottom) with size-matched runs too.
+- **Seeds spent:** 9401–9520, 9601–9720, 9801–9830, 9901–9930, 10001–10015, 10101–10115, 10201–10215 (and seed 1 for timing).
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
