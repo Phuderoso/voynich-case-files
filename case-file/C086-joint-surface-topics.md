@@ -32,7 +32,22 @@ Two earlier findings pull against each other. C083/C085: Timm–Schinner generat
 - **Gates (fail → NOT TESTABLE):** **K1** known answers on the new seeds: cell 128 surface-feasible and below the W1 band; cell 129 surface-infeasible. **K2** positive control: IT2a manuscript text through the same pipeline (surface on its first 6,000 words; X = mean of 3 inits on its real pages) jointly feasible. **F** FPR: 5 line-reassigned generator texts, p ≤ 0.05 in ≤ 1/5 per window. Confirmation only: **G3** ≤ 2/10 held-out runs called ABOVE/BELOW per window; **G4** ≥ 18/20 reference runs usable.
 - **What a result can mean:** REACHED JOINTLY = one generator setting reproduces both properties at this resolution (not a mechanism, says nothing about meaning). NOT REACHED IN THIS GRID = not excluded for the generator family (other knobs exist), only for these 128 settings.
 
-## Results
-*(to be filled after the run)*
+## Results (run 07:13–07:16 PT, 164 s, seed 8686; `analysis/C086_results.json`, `analysis/C086_run_log.txt`)
+**H1: NOT TESTABLE — no surface-feasible cell in the grid.** None of the 128 page/position cells kept all four surface statistics within ±15% on the training seeds 11391–11393, so the joint question could not be posed inside this grid. This is not an exclusion of the generator family: it says only that these 128 settings with topic-capable source choice cannot hold the surface.
+
+- **Gates all pass.** K1: cell 128 (C005) surface-feasible (mwl 5.05, TTR 0.365, h2 2.47, R 0.514) with X 0.034 (W1) / 0.059 (W2), below the band; cell 129 (default) surface-infeasible (TTR 0.225). K2: IT2a manuscript text jointly feasible (surface mwl 4.37, TTR 0.375, h2 2.34, R 0.453; X 0.450 / 0.250, inside both bands — the W2 value is 0.004 below the band's top). F: line-reassigned generator texts p ≤ 0.05 in 1/5 (W1) and 0/5 (W2).
+- **Where the surface fails (128 cells, all usable):** TTR alone 56 cells; R alone 26; TTR + R 28; mwl + TTR 12; mwl + TTR + R 6. Grid ranges: TTR 0.122–0.419, R 0.172–0.597, mwl 3.57–4.92, h2 1.94–2.56. 30 cells reach TTR ≥ 0.30 (the band's floor) but every one of them loses positional rigidity R (closest: cell 102, position chooser, add_remove 60, canFollow none, no suggestions: TTR 0.333, R 0.249 vs 0.487). The closest cell overall (cell 3, page chooser, no suggestions, 12-line pages) misses by 26% (TTR 0.261, R 0.398).
+- **Grid-extreme reporting (I-107/I-117):** not applicable to X (no surface-feasible cell, so no training X computed by rule). On the surface side the extreme is the smallest worst-deviation, 0.262 (cell 3), versus the ±0.15 bar.
+- **A knob that does nothing (disclosed):** `method.morph.replace.probability` 50 vs 100 gave byte-identical statistics in all 64 pairs, so the grid has 64 distinct settings, not 128. Doesn't change the verdict.
+- **Branches not reached:** joint-feasible selection, held-out confirmation (seeds 11394–11423) and boundary re-runs (11424–11443) were not run; those seeds are **reserved but unused**. To keep the bookkeeping simple they're treated as spent. Next free seed: **11444**.
+
+### Exploratory (after seeing the surface table; no confirmatory weight; `tools/c086_exploratory.py`, `analysis/C086_exploratory.json`)
+Topic X (R 9) on the training seeds for three near-miss cells picked after the fact: cell 3 (page, closest surface) **0.505 / 0.543**; cell 102 (position, closest TTR-feasible) **0.420 / 0.525**; cell 39 (page, TTR-feasible) **0.823 / 0.890** (W1 / W2; band W1 0.391–0.537, W2 0.184–0.254). The default control: 0.448 / 0.532. **Lead:** in every topic-capable setting tried, the generator's topic strength is about the same in both windows or higher in W2 (0.43–0.89), whereas the manuscript's falls by half from W1 (≈ 0.46) to W2 (≈ 0.22). W1 is reachable (four of five values in or above the band); W2 is overshot by every topic-capable setting. So the C084 tension has two parts: (a) under page/position copying, raising vocabulary variety destroys positional rigidity, and (b) the generator's page topics are uniform across the book while the manuscript's vary by section. Both are hypotheses for a future pre-registered test, not results.
+
+### What changes elsewhere
+- **C084 audit note** (added there): its single-init X values (W1 0.546/0.538) sit in the upper tail of the PLSA init spread; multi-init means are 0.460/0.467 (W1) and 0.221/0.217 (W2). H1 DETECTED, H3 ABOVE (C005 setting) and the default bracketing all stand.
+
+### Honest limits
+NOT TESTABLE is a statement about this grid: other knobs (e.g. `same_position_probability`, `max_repeat_count`, `reuse_last`, initial line) were not varied, and the jar has no mixture of page and random source choice. Nothing here reads any meaning; no breakthrough.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
