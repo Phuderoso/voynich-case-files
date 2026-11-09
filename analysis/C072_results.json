@@ -1,0 +1,1119 @@
+{
+ "seed": 7272,
+ "tests": {
+  "IT2a_W1short": {
+   "n_lines": 509,
+   "D": 0.16972015316270042,
+   "p": 0.00024993751562109475,
+   "fpr": 0,
+   "power": 16,
+   "gate": true,
+   "share2": 0.26129666011787817,
+   "share_mid": 0.09157650695517774
+  },
+  "IT2a_W1long": {
+   "n_lines": 2462,
+   "D": 0.0691340644115784,
+   "p": 0.00024993751562109475,
+   "fpr": 0,
+   "power": 20,
+   "gate": true,
+   "share2": 0.1661251015434606,
+   "share_mid": 0.0969910371318822
+  },
+  "IT2a_W1y": {
+   "n_lines": 989,
+   "D": -0.0050279944452161635,
+   "p": 0.6938265433641589,
+   "fpr": 0,
+   "power": 19,
+   "gate": true,
+   "share2": 0.09403437815975733,
+   "share_mid": 0.0990623726049735
+  },
+  "IT2a_W1noty": {
+   "n_lines": 1982,
+   "D": 0.13192301156468345,
+   "p": 0.00024993751562109475,
+   "fpr": 0,
+   "power": 20,
+   "gate": true,
+   "share2": 0.2265388496468214,
+   "share_mid": 0.09461583808213794
+  },
+  "IT2a_H1": {
+   "n_lines": 718,
+   "D": 0.04984365639882063,
+   "p": 0.0004998750312421895,
+   "fpr": 1,
+   "power": 18,
+   "gate": true,
+   "share2": 0.15877437325905291,
+   "share_mid": 0.10893071686023229
+  },
+  "IT2a_H2": {
+   "n_lines": 1008,
+   "D": 0.08655025637251293,
+   "p": 0.00024993751562109475,
+   "fpr": 1,
+   "power": 20,
+   "gate": true,
+   "share2": 0.1984126984126984,
+   "share_mid": 0.11186244204018547
+  },
+  "IT2a_H3": {
+   "n_lines": 1104,
+   "D": 0.09910756778605749,
+   "p": 0.00024993751562109475,
+   "fpr": 0,
+   "power": 20,
+   "gate": true,
+   "share2": 0.1766304347826087,
+   "share_mid": 0.07752286699655121
+  },
+  "ZL3b_W1short": {
+   "n_lines": 563,
+   "D": 0.12242831418113304,
+   "p": 0.00024993751562109475,
+   "fpr": 1,
+   "power": 19,
+   "gate": true,
+   "share2": 0.216696269982238,
+   "share_mid": 0.09426795580110497
+  },
+  "ZL3b_W1long": {
+   "n_lines": 2407,
+   "D": 0.07178660768024017,
+   "p": 0.00024993751562109475,
+   "fpr": 2,
+   "power": 20,
+   "gate": true,
+   "share2": 0.16576651433319484,
+   "share_mid": 0.09397990665295466
+  },
+  "ZL3b_W1y": {
+   "n_lines": 1002,
+   "D": -0.0017918037372918333,
+   "p": 0.5743564108972756,
+   "fpr": 0,
+   "power": 20,
+   "gate": true,
+   "share2": 0.09381237524950099,
+   "share_mid": 0.09560417898679283
+  },
+  "ZL3b_W1noty": {
+   "n_lines": 1968,
+   "D": 0.12369937346162453,
+   "p": 0.00024993751562109475,
+   "fpr": 1,
+   "power": 20,
+   "gate": true,
+   "share2": 0.21697154471544716,
+   "share_mid": 0.09327217125382263
+  },
+  "ZL3b_H1": {
+   "n_lines": 749,
+   "D": 0.05424423340134854,
+   "p": 0.00024993751562109475,
+   "fpr": 4,
+   "power": 17,
+   "gate": false,
+   "share2": 0.1548731642189586,
+   "share_mid": 0.10062893081761007
+  },
+  "ZL3b_H2": {
+   "n_lines": 1000,
+   "D": 0.07599539877300614,
+   "p": 0.00024993751562109475,
+   "fpr": 1,
+   "power": 19,
+   "gate": true,
+   "share2": 0.187,
+   "share_mid": 0.11100460122699386
+  },
+  "ZL3b_H3": {
+   "n_lines": 1078,
+   "D": 0.09724896247807299,
+   "p": 0.00024993751562109475,
+   "fpr": 0,
+   "power": 20,
+   "gate": true,
+   "share2": 0.17346938775510204,
+   "share_mid": 0.07622042527702905
+  }
+ },
+ "holm": {
+  "IT2a_W1short": true,
+  "IT2a_W1long": true,
+  "IT2a_W1noty": true,
+  "IT2a_H2": true,
+  "ZL3b_W1short": true,
+  "IT2a_H3": true,
+  "ZL3b_W1noty": true,
+  "ZL3b_W1long": true,
+  "ZL3b_H2": true,
+  "ZL3b_H3": true,
+  "IT2a_H1": true,
+  "ZL3b_W1y": false,
+  "IT2a_W1y": false
+ },
+ "verdict": {
+  "W1short": "HOLDS",
+  "W1long": "HOLDS",
+  "W1y": "NOT DETECTED",
+  "W1noty": "HOLDS",
+  "H1": "NOT TESTABLE",
+  "H2": "HOLDS",
+  "H3": "HOLDS",
+  "overall": "NOT ROBUST"
+ },
+ "generator": {
+  "verdict": "GAP-ROBUST",
+  "reached": [],
+  "max_D": 0.022293855563298534,
+  "n_runs": 84,
+  "top5": [
+   [
+    0.012805691887833558,
+    "S2_29"
+   ],
+   [
+    0.012063374481606173,
+    "S2_24"
+   ],
+   [
+    0.011217351156880738,
+    "S2_13"
+   ],
+   [
+    0.01088724012674859,
+    "S2_9"
+   ],
+   [
+    0.009885130619441573,
+    "S2_18"
+   ]
+  ]
+ },
+ "generator_runs": {
+  "S1_0": {
+   "cfg": {
+    "method.morph.use_word_final_substitutions": "false"
+   },
+   "D": [
+    -0.005826961060840824,
+    0.006543035350069622,
+    0.00906214688104269
+   ],
+   "mean": 0.0032594070567571625
+  },
+  "S1_1": {
+   "cfg": {
+    "method.canFollow": "statistic"
+   },
+   "D": [
+    0.0007311954870466778,
+    0.005406326105942244,
+    0.020602463072597686
+   ],
+   "mean": 0.008913328221862202
+  },
+  "S1_2": {
+   "cfg": {
+    "method.canFollow": "voynich"
+   },
+   "D": [
+    0.019192749150686583,
+    -0.010879091427561716,
+    0.0033430839324590234
+   ],
+   "mean": 0.003885580551861297
+  },
+  "S1_3": {
+   "cfg": {
+    "method.canFollow": "none"
+   },
+   "D": [
+    0.002576196180410953,
+    -0.007541245747826067,
+    0.0010905921725828868
+   ],
+   "mean": -0.001291485798277409
+  },
+  "S1_4": {
+   "cfg": {
+    "method.sourceChooser": "position"
+   },
+   "D": [
+    0.0025136095827043986,
+    -0.0009137757368103822,
+    0.006280018628057479
+   ],
+   "mean": 0.0026266174913171653
+  },
+  "S1_5": {
+   "cfg": {
+    "method.sourceChooser": "random"
+   },
+   "D": [
+    -0.005078561707775181,
+    0.0076746429417957895,
+    -0.00040031119089352363
+   ],
+   "mean": 0.0007319233477090283
+  },
+  "S1_6": {
+   "cfg": {
+    "method.suggestions": "none"
+   },
+   "D": [
+    -0.008059739592446574,
+    0.009194720017262445,
+    0.013205303896684548
+   ],
+   "mean": 0.0047800947738334725
+  },
+  "S1_7": {
+   "cfg": {
+    "method.suggestions": "daiin"
+   },
+   "D": [
+    -0.004816694217280898,
+    0.00879587811905743,
+    0.022293855563298534
+   ],
+   "mean": 0.00875767982169169
+  },
+  "S1_8": {
+   "cfg": {
+    "method.suggestions": "random"
+   },
+   "D": [
+    -0.00405514863802478,
+    -0.001268956224439871,
+    0.004835659164412406
+   ],
+   "mean": -0.00016281523268408168
+  },
+  "S1_9": {
+   "cfg": {
+    "method.morph.replace.probability": 20
+   },
+   "D": [
+    -0.014996682149966821,
+    -0.0030515085640280687,
+    -0.005513259733595621
+   ],
+   "mean": -0.007853816815863503
+  },
+  "S1_10": {
+   "cfg": {
+    "method.morph.replace.probability": 100
+   },
+   "D": [
+    0.009017639655001963,
+    -0.008860369259232032,
+    -0.003674708240933633
+   ],
+   "mean": -0.0011724792817212337
+  },
+  "S1_11": {
+   "cfg": {
+    "method.morph.add_remove.probability": 0
+   },
+   "D": [
+    0.0008376034980404918,
+    0.004653559646192323,
+    -0.0039504727294427736
+   ],
+   "mean": 0.0005135634715966805
+  },
+  "S1_12": {
+   "cfg": {
+    "method.morph.add_remove.probability": 80
+   },
+   "D": [
+    0.0027931250147398695,
+    0.0005804356356319609,
+    0.007043147208121825
+   ],
+   "mean": 0.0034722359528312186
+  },
+  "S1_13": {
+   "cfg": {
+    "method.morph.combine_split.probability": 0
+   },
+   "D": [
+    -0.011696240715774991,
+    0.018840957696520777,
+    -0.0041962046024648265
+   ],
+   "mean": 0.0009828374594269863
+  },
+  "S1_14": {
+   "cfg": {
+    "method.morph.combine_split.probability": 80
+   },
+   "D": [
+    0.007741078855050196,
+    0.0010883946300385555,
+    0.004386062477646051
+   ],
+   "mean": 0.004405178654244934
+  },
+  "S1_15": {
+   "cfg": {
+    "method.sourceChooser.same_position_probability": 0
+   },
+   "D": [
+    0.00994834620694697,
+    0.012283834523262455,
+    -0.010018204924972185
+   ],
+   "mean": 0.004071325268412414
+  },
+  "S1_16": {
+   "cfg": {
+    "method.sourceChooser.same_position_probability": 100
+   },
+   "D": [
+    0.0052033059615575195,
+    0.01489687590937687,
+    0.008633602185084743
+   ],
+   "mean": 0.009577928018673043
+  },
+  "S1_17": {
+   "cfg": {
+    "method.canFollow.error_rate": 10
+   },
+   "D": [
+    0.010328142694416495,
+    -0.007783144827962302,
+    0.009352191585539321
+   ],
+   "mean": 0.003965729817331172
+  },
+  "S2_0": {
+   "cfg": {
+    "text.max_repeat_count": 0,
+    "method.canFollow": "none",
+    "method.canFollow.error_rate": 0,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 11,
+    "method.morph.add_remove.probability": 76,
+    "method.morph.combine_split.probability": 12,
+    "method.morph.replace.probability": 62,
+    "method.morph.reuse_last.probability": 4,
+    "method.morph.combined.dismiss_as_source_probability": 50,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.suggestions": "top",
+    "method.suggestions.probability": 83,
+    "method.suggestions.iType_min_percentage": 85,
+    "method.suggestions.olType_min_percentage": 61,
+    "method.suggestions.dyType_min_percentage": 11
+   },
+   "D": [
+    -0.003232697336024354
+   ],
+   "mean": -0.003232697336024354
+  },
+  "S2_1": {
+   "cfg": {
+    "text.max_repeat_count": 4,
+    "method.canFollow": "curveline",
+    "method.canFollow.error_rate": 2,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 74,
+    "method.morph.add_remove.probability": 23,
+    "method.morph.combine_split.probability": 24,
+    "method.morph.replace.probability": 38,
+    "method.morph.reuse_last.probability": 16,
+    "method.morph.combined.dismiss_as_source_probability": 93,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.suggestions": "random",
+    "method.suggestions.probability": 52,
+    "method.suggestions.iType_min_percentage": 95,
+    "method.suggestions.olType_min_percentage": 34,
+    "method.suggestions.dyType_min_percentage": 71
+   },
+   "D": [
+    0.005853866926104012
+   ],
+   "mean": 0.005853866926104012
+  },
+  "S2_2": {
+   "cfg": {
+    "text.max_repeat_count": 0,
+    "method.canFollow": "voynich",
+    "method.canFollow.error_rate": 5,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 75,
+    "method.morph.add_remove.probability": 26,
+    "method.morph.combine_split.probability": 9,
+    "method.morph.replace.probability": 26,
+    "method.morph.reuse_last.probability": 8,
+    "method.morph.combined.dismiss_as_source_probability": 12,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "none",
+    "method.suggestions.probability": 97,
+    "method.suggestions.iType_min_percentage": 54,
+    "method.suggestions.olType_min_percentage": 77,
+    "method.suggestions.dyType_min_percentage": 20
+   },
+   "D": [
+    -0.0005328976083623371
+   ],
+   "mean": -0.0005328976083623371
+  },
+  "S2_3": {
+   "cfg": {
+    "text.max_repeat_count": 4,
+    "method.canFollow": "none",
+    "method.canFollow.error_rate": 1,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 99,
+    "method.morph.add_remove.probability": 27,
+    "method.morph.combine_split.probability": 37,
+    "method.morph.replace.probability": 23,
+    "method.morph.reuse_last.probability": 16,
+    "method.morph.combined.dismiss_as_source_probability": 41,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "random",
+    "method.suggestions.probability": 87,
+    "method.suggestions.iType_min_percentage": 25,
+    "method.suggestions.olType_min_percentage": 53,
+    "method.suggestions.dyType_min_percentage": 27
+   },
+   "D": [
+    0.000964123641125407
+   ],
+   "mean": 0.000964123641125407
+  },
+  "S2_4": {
+   "cfg": {
+    "text.max_repeat_count": 3,
+    "method.canFollow": "statistic",
+    "method.canFollow.error_rate": 6,
+    "method.sourceChooser": "position",
+    "method.sourceChooser.same_position_probability": 32,
+    "method.morph.add_remove.probability": 64,
+    "method.morph.combine_split.probability": 39,
+    "method.morph.replace.probability": 45,
+    "method.morph.reuse_last.probability": 16,
+    "method.morph.combined.dismiss_as_source_probability": 5,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.suggestions": "random",
+    "method.suggestions.probability": 9,
+    "method.suggestions.iType_min_percentage": 58,
+    "method.suggestions.olType_min_percentage": 1,
+    "method.suggestions.dyType_min_percentage": 61
+   },
+   "D": [
+    0.00453995007345688
+   ],
+   "mean": 0.00453995007345688
+  },
+  "S2_5": {
+   "cfg": {
+    "text.max_repeat_count": 3,
+    "method.canFollow": "curveline",
+    "method.canFollow.error_rate": 1,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 44,
+    "method.morph.add_remove.probability": 75,
+    "method.morph.combine_split.probability": 5,
+    "method.morph.replace.probability": 54,
+    "method.morph.reuse_last.probability": 17,
+    "method.morph.combined.dismiss_as_source_probability": 37,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "random",
+    "method.suggestions.probability": 83,
+    "method.suggestions.iType_min_percentage": 25,
+    "method.suggestions.olType_min_percentage": 59,
+    "method.suggestions.dyType_min_percentage": 2
+   },
+   "D": [
+    -0.01001664952599253
+   ],
+   "mean": -0.01001664952599253
+  },
+  "S2_6": {
+   "cfg": {
+    "text.max_repeat_count": 5,
+    "method.canFollow": "statistic",
+    "method.canFollow.error_rate": 9,
+    "method.sourceChooser": "page",
+    "method.sourceChooser.same_position_probability": 79,
+    "method.morph.add_remove.probability": 70,
+    "method.morph.combine_split.probability": 11,
+    "method.morph.replace.probability": 53,
+    "method.morph.reuse_last.probability": 13,
+    "method.morph.combined.dismiss_as_source_probability": 12,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "top",
+    "method.suggestions.probability": 52,
+    "method.suggestions.iType_min_percentage": 16,
+    "method.suggestions.olType_min_percentage": 29,
+    "method.suggestions.dyType_min_percentage": 20
+   },
+   "D": [
+    -0.007919748211677603
+   ],
+   "mean": -0.007919748211677603
+  },
+  "S2_7": {
+   "cfg": {
+    "text.max_repeat_count": 3,
+    "method.canFollow": "statistic",
+    "method.canFollow.error_rate": 4,
+    "method.sourceChooser": "position",
+    "method.sourceChooser.same_position_probability": 86,
+    "method.morph.add_remove.probability": 26,
+    "method.morph.combine_split.probability": 53,
+    "method.morph.replace.probability": 28,
+    "method.morph.reuse_last.probability": 3,
+    "method.morph.combined.dismiss_as_source_probability": 11,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.suggestions": "none",
+    "method.suggestions.probability": 17,
+    "method.suggestions.iType_min_percentage": 97,
+    "method.suggestions.olType_min_percentage": 67,
+    "method.suggestions.dyType_min_percentage": 74
+   },
+   "D": [
+    0.004208495566162734
+   ],
+   "mean": 0.004208495566162734
+  },
+  "S2_8": {
+   "cfg": {
+    "text.max_repeat_count": 3,
+    "method.canFollow": "curveline",
+    "method.canFollow.error_rate": 7,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 15,
+    "method.morph.add_remove.probability": 72,
+    "method.morph.combine_split.probability": 59,
+    "method.morph.replace.probability": 80,
+    "method.morph.reuse_last.probability": 15,
+    "method.morph.combined.dismiss_as_source_probability": 67,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "daiin",
+    "method.suggestions.probability": 67,
+    "method.suggestions.iType_min_percentage": 85,
+    "method.suggestions.olType_min_percentage": 61,
+    "method.suggestions.dyType_min_percentage": 54
+   },
+   "D": [
+    0.00355531691231388
+   ],
+   "mean": 0.00355531691231388
+  },
+  "S2_9": {
+   "cfg": {
+    "text.max_repeat_count": 2,
+    "method.canFollow": "voynich",
+    "method.canFollow.error_rate": 1,
+    "method.sourceChooser": "position",
+    "method.sourceChooser.same_position_probability": 46,
+    "method.morph.add_remove.probability": 47,
+    "method.morph.combine_split.probability": 64,
+    "method.morph.replace.probability": 33,
+    "method.morph.reuse_last.probability": 1,
+    "method.morph.combined.dismiss_as_source_probability": 54,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "top",
+    "method.suggestions.probability": 19,
+    "method.suggestions.iType_min_percentage": 74,
+    "method.suggestions.olType_min_percentage": 5,
+    "method.suggestions.dyType_min_percentage": 89
+   },
+   "D": [
+    0.01088724012674859
+   ],
+   "mean": 0.01088724012674859
+  },
+  "S2_10": {
+   "cfg": {
+    "text.max_repeat_count": 3,
+    "method.canFollow": "curveline",
+    "method.canFollow.error_rate": 3,
+    "method.sourceChooser": "position",
+    "method.sourceChooser.same_position_probability": 90,
+    "method.morph.add_remove.probability": 73,
+    "method.morph.combine_split.probability": 74,
+    "method.morph.replace.probability": 21,
+    "method.morph.reuse_last.probability": 2,
+    "method.morph.combined.dismiss_as_source_probability": 67,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.suggestions": "daiin",
+    "method.suggestions.probability": 0,
+    "method.suggestions.iType_min_percentage": 31,
+    "method.suggestions.olType_min_percentage": 13,
+    "method.suggestions.dyType_min_percentage": 80
+   },
+   "D": [
+    -0.0006789053168645004
+   ],
+   "mean": -0.0006789053168645004
+  },
+  "S2_11": {
+   "cfg": {
+    "text.max_repeat_count": 1,
+    "method.canFollow": "voynich",
+    "method.canFollow.error_rate": 0,
+    "method.sourceChooser": "page",
+    "method.sourceChooser.same_position_probability": 80,
+    "method.morph.add_remove.probability": 62,
+    "method.morph.combine_split.probability": 54,
+    "method.morph.replace.probability": 83,
+    "method.morph.reuse_last.probability": 7,
+    "method.morph.combined.dismiss_as_source_probability": 0,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.suggestions": "none",
+    "method.suggestions.probability": 93,
+    "method.suggestions.iType_min_percentage": 1,
+    "method.suggestions.olType_min_percentage": 58,
+    "method.suggestions.dyType_min_percentage": 90
+   },
+   "D": [
+    0.002752380021776163
+   ],
+   "mean": 0.002752380021776163
+  },
+  "S2_12": {
+   "cfg": {
+    "text.max_repeat_count": 1,
+    "method.canFollow": "statistic",
+    "method.canFollow.error_rate": 7,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 50,
+    "method.morph.add_remove.probability": 2,
+    "method.morph.combine_split.probability": 33,
+    "method.morph.replace.probability": 38,
+    "method.morph.reuse_last.probability": 17,
+    "method.morph.combined.dismiss_as_source_probability": 92,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "random",
+    "method.suggestions.probability": 10,
+    "method.suggestions.iType_min_percentage": 87,
+    "method.suggestions.olType_min_percentage": 56,
+    "method.suggestions.dyType_min_percentage": 68
+   },
+   "D": [
+    0.0015227857825286031
+   ],
+   "mean": 0.0015227857825286031
+  },
+  "S2_13": {
+   "cfg": {
+    "text.max_repeat_count": 4,
+    "method.canFollow": "voynich",
+    "method.canFollow.error_rate": 5,
+    "method.sourceChooser": "position",
+    "method.sourceChooser.same_position_probability": 61,
+    "method.morph.add_remove.probability": 55,
+    "method.morph.combine_split.probability": 65,
+    "method.morph.replace.probability": 65,
+    "method.morph.reuse_last.probability": 13,
+    "method.morph.combined.dismiss_as_source_probability": 4,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "daiin",
+    "method.suggestions.probability": 57,
+    "method.suggestions.iType_min_percentage": 97,
+    "method.suggestions.olType_min_percentage": 86,
+    "method.suggestions.dyType_min_percentage": 23
+   },
+   "D": [
+    0.011217351156880738
+   ],
+   "mean": 0.011217351156880738
+  },
+  "S2_14": {
+   "cfg": {
+    "text.max_repeat_count": 4,
+    "method.canFollow": "voynich",
+    "method.canFollow.error_rate": 7,
+    "method.sourceChooser": "position",
+    "method.sourceChooser.same_position_probability": 20,
+    "method.morph.add_remove.probability": 52,
+    "method.morph.combine_split.probability": 75,
+    "method.morph.replace.probability": 79,
+    "method.morph.reuse_last.probability": 5,
+    "method.morph.combined.dismiss_as_source_probability": 99,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "daiin",
+    "method.suggestions.probability": 75,
+    "method.suggestions.iType_min_percentage": 79,
+    "method.suggestions.olType_min_percentage": 35,
+    "method.suggestions.dyType_min_percentage": 93
+   },
+   "D": [
+    0.003997780552087667
+   ],
+   "mean": 0.003997780552087667
+  },
+  "S2_15": {
+   "cfg": {
+    "text.max_repeat_count": 0,
+    "method.canFollow": "none",
+    "method.canFollow.error_rate": 9,
+    "method.sourceChooser": "page",
+    "method.sourceChooser.same_position_probability": 28,
+    "method.morph.add_remove.probability": 51,
+    "method.morph.combine_split.probability": 70,
+    "method.morph.replace.probability": 54,
+    "method.morph.reuse_last.probability": 0,
+    "method.morph.combined.dismiss_as_source_probability": 19,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "daiin",
+    "method.suggestions.probability": 36,
+    "method.suggestions.iType_min_percentage": 77,
+    "method.suggestions.olType_min_percentage": 19,
+    "method.suggestions.dyType_min_percentage": 92
+   },
+   "D": [
+    0.002596454786599485
+   ],
+   "mean": 0.002596454786599485
+  },
+  "S2_16": {
+   "cfg": {
+    "text.max_repeat_count": 1,
+    "method.canFollow": "curveline",
+    "method.canFollow.error_rate": 3,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 62,
+    "method.morph.add_remove.probability": 16,
+    "method.morph.combine_split.probability": 64,
+    "method.morph.replace.probability": 59,
+    "method.morph.reuse_last.probability": 7,
+    "method.morph.combined.dismiss_as_source_probability": 19,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.suggestions": "daiin",
+    "method.suggestions.probability": 51,
+    "method.suggestions.iType_min_percentage": 34,
+    "method.suggestions.olType_min_percentage": 81,
+    "method.suggestions.dyType_min_percentage": 1
+   },
+   "D": [
+    0.004016488499778197
+   ],
+   "mean": 0.004016488499778197
+  },
+  "S2_17": {
+   "cfg": {
+    "text.max_repeat_count": 5,
+    "method.canFollow": "none",
+    "method.canFollow.error_rate": 3,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 68,
+    "method.morph.add_remove.probability": 39,
+    "method.morph.combine_split.probability": 68,
+    "method.morph.replace.probability": 46,
+    "method.morph.reuse_last.probability": 17,
+    "method.morph.combined.dismiss_as_source_probability": 15,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "none",
+    "method.suggestions.probability": 87,
+    "method.suggestions.iType_min_percentage": 71,
+    "method.suggestions.olType_min_percentage": 54,
+    "method.suggestions.dyType_min_percentage": 21
+   },
+   "D": [
+    -0.002235116069166626
+   ],
+   "mean": -0.002235116069166626
+  },
+  "S2_18": {
+   "cfg": {
+    "text.max_repeat_count": 5,
+    "method.canFollow": "voynich",
+    "method.canFollow.error_rate": 9,
+    "method.sourceChooser": "position",
+    "method.sourceChooser.same_position_probability": 49,
+    "method.morph.add_remove.probability": 53,
+    "method.morph.combine_split.probability": 70,
+    "method.morph.replace.probability": 54,
+    "method.morph.reuse_last.probability": 2,
+    "method.morph.combined.dismiss_as_source_probability": 18,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "random",
+    "method.suggestions.probability": 60,
+    "method.suggestions.iType_min_percentage": 29,
+    "method.suggestions.olType_min_percentage": 15,
+    "method.suggestions.dyType_min_percentage": 49
+   },
+   "D": [
+    0.009885130619441573
+   ],
+   "mean": 0.009885130619441573
+  },
+  "S2_19": {
+   "cfg": {
+    "text.max_repeat_count": 1,
+    "method.canFollow": "none",
+    "method.canFollow.error_rate": 1,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 19,
+    "method.morph.add_remove.probability": 12,
+    "method.morph.combine_split.probability": 79,
+    "method.morph.replace.probability": 67,
+    "method.morph.reuse_last.probability": 16,
+    "method.morph.combined.dismiss_as_source_probability": 70,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "top",
+    "method.suggestions.probability": 62,
+    "method.suggestions.iType_min_percentage": 73,
+    "method.suggestions.olType_min_percentage": 41,
+    "method.suggestions.dyType_min_percentage": 92
+   },
+   "D": [
+    -0.0019959954260404256
+   ],
+   "mean": -0.0019959954260404256
+  },
+  "S2_20": {
+   "cfg": {
+    "text.max_repeat_count": 5,
+    "method.canFollow": "statistic",
+    "method.canFollow.error_rate": 10,
+    "method.sourceChooser": "position",
+    "method.sourceChooser.same_position_probability": 30,
+    "method.morph.add_remove.probability": 36,
+    "method.morph.combine_split.probability": 27,
+    "method.morph.replace.probability": 21,
+    "method.morph.reuse_last.probability": 5,
+    "method.morph.combined.dismiss_as_source_probability": 63,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "daiin",
+    "method.suggestions.probability": 86,
+    "method.suggestions.iType_min_percentage": 82,
+    "method.suggestions.olType_min_percentage": 9,
+    "method.suggestions.dyType_min_percentage": 14
+   },
+   "D": [
+    0.0085074543152448
+   ],
+   "mean": 0.0085074543152448
+  },
+  "S2_21": {
+   "cfg": {
+    "text.max_repeat_count": 0,
+    "method.canFollow": "voynich",
+    "method.canFollow.error_rate": 5,
+    "method.sourceChooser": "page",
+    "method.sourceChooser.same_position_probability": 12,
+    "method.morph.add_remove.probability": 55,
+    "method.morph.combine_split.probability": 49,
+    "method.morph.replace.probability": 88,
+    "method.morph.reuse_last.probability": 20,
+    "method.morph.combined.dismiss_as_source_probability": 77,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.suggestions": "none",
+    "method.suggestions.probability": 84,
+    "method.suggestions.iType_min_percentage": 45,
+    "method.suggestions.olType_min_percentage": 23,
+    "method.suggestions.dyType_min_percentage": 70
+   },
+   "D": [
+    -0.009367122608109957
+   ],
+   "mean": -0.009367122608109957
+  },
+  "S2_22": {
+   "cfg": {
+    "text.max_repeat_count": 3,
+    "method.canFollow": "none",
+    "method.canFollow.error_rate": 2,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 46,
+    "method.morph.add_remove.probability": 27,
+    "method.morph.combine_split.probability": 1,
+    "method.morph.replace.probability": 58,
+    "method.morph.reuse_last.probability": 3,
+    "method.morph.combined.dismiss_as_source_probability": 83,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "random",
+    "method.suggestions.probability": 58,
+    "method.suggestions.iType_min_percentage": 31,
+    "method.suggestions.olType_min_percentage": 62,
+    "method.suggestions.dyType_min_percentage": 11
+   },
+   "D": [
+    -0.012792395345287845
+   ],
+   "mean": -0.012792395345287845
+  },
+  "S2_23": {
+   "cfg": {
+    "text.max_repeat_count": 2,
+    "method.canFollow": "statistic",
+    "method.canFollow.error_rate": 2,
+    "method.sourceChooser": "page",
+    "method.sourceChooser.same_position_probability": 71,
+    "method.morph.add_remove.probability": 4,
+    "method.morph.combine_split.probability": 69,
+    "method.morph.replace.probability": 91,
+    "method.morph.reuse_last.probability": 13,
+    "method.morph.combined.dismiss_as_source_probability": 10,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "random",
+    "method.suggestions.probability": 78,
+    "method.suggestions.iType_min_percentage": 1,
+    "method.suggestions.olType_min_percentage": 11,
+    "method.suggestions.dyType_min_percentage": 97
+   },
+   "D": [
+    0.008949088298780244
+   ],
+   "mean": 0.008949088298780244
+  },
+  "S2_24": {
+   "cfg": {
+    "text.max_repeat_count": 0,
+    "method.canFollow": "none",
+    "method.canFollow.error_rate": 1,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 48,
+    "method.morph.add_remove.probability": 60,
+    "method.morph.combine_split.probability": 39,
+    "method.morph.replace.probability": 84,
+    "method.morph.reuse_last.probability": 1,
+    "method.morph.combined.dismiss_as_source_probability": 56,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.suggestions": "daiin",
+    "method.suggestions.probability": 50,
+    "method.suggestions.iType_min_percentage": 80,
+    "method.suggestions.olType_min_percentage": 32,
+    "method.suggestions.dyType_min_percentage": 43
+   },
+   "D": [
+    0.012063374481606173
+   ],
+   "mean": 0.012063374481606173
+  },
+  "S2_25": {
+   "cfg": {
+    "text.max_repeat_count": 3,
+    "method.canFollow": "voynich",
+    "method.canFollow.error_rate": 1,
+    "method.sourceChooser": "position",
+    "method.sourceChooser.same_position_probability": 56,
+    "method.morph.add_remove.probability": 76,
+    "method.morph.combine_split.probability": 68,
+    "method.morph.replace.probability": 23,
+    "method.morph.reuse_last.probability": 6,
+    "method.morph.combined.dismiss_as_source_probability": 39,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.suggestions": "daiin",
+    "method.suggestions.probability": 37,
+    "method.suggestions.iType_min_percentage": 95,
+    "method.suggestions.olType_min_percentage": 83,
+    "method.suggestions.dyType_min_percentage": 63
+   },
+   "D": [
+    -0.006077877369131887
+   ],
+   "mean": -0.006077877369131887
+  },
+  "S2_26": {
+   "cfg": {
+    "text.max_repeat_count": 3,
+    "method.canFollow": "voynich",
+    "method.canFollow.error_rate": 10,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 44,
+    "method.morph.add_remove.probability": 23,
+    "method.morph.combine_split.probability": 63,
+    "method.morph.replace.probability": 45,
+    "method.morph.reuse_last.probability": 5,
+    "method.morph.combined.dismiss_as_source_probability": 87,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "daiin",
+    "method.suggestions.probability": 58,
+    "method.suggestions.iType_min_percentage": 15,
+    "method.suggestions.olType_min_percentage": 56,
+    "method.suggestions.dyType_min_percentage": 16
+   },
+   "D": [
+    0.004829946369320701
+   ],
+   "mean": 0.004829946369320701
+  },
+  "S2_27": {
+   "cfg": {
+    "text.max_repeat_count": 0,
+    "method.canFollow": "none",
+    "method.canFollow.error_rate": 6,
+    "method.sourceChooser": "page",
+    "method.sourceChooser.same_position_probability": 1,
+    "method.morph.add_remove.probability": 29,
+    "method.morph.combine_split.probability": 61,
+    "method.morph.replace.probability": 98,
+    "method.morph.reuse_last.probability": 13,
+    "method.morph.combined.dismiss_as_source_probability": 61,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.suggestions": "random",
+    "method.suggestions.probability": 63,
+    "method.suggestions.iType_min_percentage": 2,
+    "method.suggestions.olType_min_percentage": 93,
+    "method.suggestions.dyType_min_percentage": 75
+   },
+   "D": [
+    0.005332807609847459
+   ],
+   "mean": 0.005332807609847459
+  },
+  "S2_28": {
+   "cfg": {
+    "text.max_repeat_count": 3,
+    "method.canFollow": "curveline",
+    "method.canFollow.error_rate": 7,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 90,
+    "method.morph.add_remove.probability": 71,
+    "method.morph.combine_split.probability": 64,
+    "method.morph.replace.probability": 98,
+    "method.morph.reuse_last.probability": 13,
+    "method.morph.combined.dismiss_as_source_probability": 4,
+    "method.morph.use_word_final_substitutions": "false",
+    "method.suggestions": "none",
+    "method.suggestions.probability": 46,
+    "method.suggestions.iType_min_percentage": 1,
+    "method.suggestions.olType_min_percentage": 23,
+    "method.suggestions.dyType_min_percentage": 56
+   },
+   "D": [
+    0.004737344086362158
+   ],
+   "mean": 0.004737344086362158
+  },
+  "S2_29": {
+   "cfg": {
+    "text.max_repeat_count": 2,
+    "method.canFollow": "statistic",
+    "method.canFollow.error_rate": 8,
+    "method.sourceChooser": "random",
+    "method.sourceChooser.same_position_probability": 62,
+    "method.morph.add_remove.probability": 69,
+    "method.morph.combine_split.probability": 78,
+    "method.morph.replace.probability": 37,
+    "method.morph.reuse_last.probability": 10,
+    "method.morph.combined.dismiss_as_source_probability": 62,
+    "method.morph.use_word_final_substitutions": "true",
+    "method.suggestions": "top",
+    "method.suggestions.probability": 34,
+    "method.suggestions.iType_min_percentage": 86,
+    "method.suggestions.olType_min_percentage": 58,
+    "method.suggestions.dyType_min_percentage": 87
+   },
+   "D": [
+    0.012805691887833558
+   ],
+   "mean": 0.012805691887833558
+  }
+ },
+ "runtime_s": 24.0
+}
