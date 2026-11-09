@@ -1,0 +1,18 @@
+{
+ "side_pairs": 789,
+ "passages": 3,
+ "pairs_with_passage": 3,
+ "longest": 6,
+ "aligned": 17,
+ "eligible": 2,
+ "disagreements": 0,
+ "relevant_lines": 0,
+ "free_strokes_in_relevant_lines": 0,
+ "units_in_relevant_lines": 0,
+ "passage_list": [
+  "Er[282] Ra[101] len 6",
+  "Ev[81] Gr[110] len 5",
+  "Ev[153] Hv[548] len 6"
+ ],
+ "G1_D_ge_10": false
+}

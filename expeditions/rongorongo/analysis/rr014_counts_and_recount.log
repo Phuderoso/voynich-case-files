@@ -1,0 +1,3 @@
+# rr014_new_family.py --counts, then rr014_recount.py (independent)
+{'side_pairs': 789, 'passages': 3, 'pairs_with_passage': 3, 'longest': 6, 'aligned': 17, 'eligible': 2, 'disagreements': 0, 'relevant_lines': 0, 'free_strokes_in_relevant_lines': 0, 'units_in_relevant_lines': 0}
+{"side_pairs": 789, "passages": 3, "aligned": 17, "eligible": 2, "disagreements": 0, "relevant_lines": 0, "free_strokes_in_relevant_lines": 0}

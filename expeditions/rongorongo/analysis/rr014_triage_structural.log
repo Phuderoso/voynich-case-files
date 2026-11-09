@@ -1,0 +1,3 @@
+# rr014_triage_structural.py (triage only, after G1 failed; no S1/S2)
+{'LMIN': 4, 'passages': 24, 'aligned': 101, 'eligible': 26, 'disagreements': 5}
+{'LMIN': 3, 'passages': 204, 'aligned': 641, 'eligible': 116, 'disagreements': 60}
