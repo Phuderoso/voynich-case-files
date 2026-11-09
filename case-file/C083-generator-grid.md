@@ -20,4 +20,39 @@ C082 found the manuscript's first/last-symbol coupling K (ZL 3b 0.107, IT2a 0.10
 - **Smoke test disclosure:** before committing I ran the tool on seed 11999 (outside the registered ranges) for cells 63 and 64 only, to check the code. The C005 cell gave K 0.133 and was feasible; cell 63 was infeasible. Seed 11999 is spent and unused in any verdict. An indexing bug in the smoke path (labels only) was fixed.
 - **Seeds:** 11246–11285 used here; next 11286+.
 
+---
+## Results (run 2026-11-09 ~04:51–04:53 PT, 145 s, seed 8383; pre-registration commit f901c1b)
+Outputs: `analysis/C083_train.json` (sha256 3b448d26c4fdb783…; all 65 cells × 5 training runs), `analysis/C083_results.json` (1388c4876f67b8f1…), `analysis/C083_run_log.txt`, `analysis/C083_exploratory.txt` (post hoc, labelled).
+
+**Training (seeds 11246–11250).** All 65 cells usable; **13 feasible** (surface kept within ±15 %). Grid-extreme statistics (I-107 style, over all feasible cells): min mean K **0.052** (cell 33), min single-run K 0.041; **13 of 13** feasible cells had at least one training run at or below the manuscript's K. The all-default cell (cell 0) is **not** feasible: TTR 0.215, word length 4.16, h2 2.06 (mean K 0.170).
+
+**Winner (selection rule):** cell 33 = `sourceChooser=random`, combine_split 30, add_remove 20, word-final substitutions on, canFollow curveline, seed line f103r line 1 (mean training K 0.052).
+
+**Confirmation (held-out seeds):**
+| | K | 95 % CI | call vs winner reference |
+|---|---|---|---|
+| Winner, 20 reference runs 11251–11270 | **0.040–0.062** (mean 0.050, SD 0.006) | — | — |
+| **Voynich ZL 3b** | **0.106** | 0.089–0.118 | **ABOVE GENERATOR** (above all 20) |
+| **Voynich IT2a** | **0.103** | 0.083–0.116 | **ABOVE GENERATOR** (above all 20) |
+| Held-out winner runs 11271–11280 | 0.041–0.075 | each with CI | 8 INSIDE, 1 NOT CALLED, 1 ABOVE |
+| Plants (25 % endings decoupled) 11281–11285 | 0.021–0.034 | uppers 0.025–0.039 | 5/5 BELOW |
+
+Winner's held-out surface (20-run mean): word length 4.45 (−2 %), TTR 0.367 (+4 %), h2 2.43 (+8 %), R 0.437 (−10 %): **kept**.
+
+**Gates:** G1 all CIs contain their points (17/17); G2 false positives **1/10** (≤ 2 allowed); G3 plants **5/5**; G4 20/20 usable. All pass.
+
+**Verdict as pre-registered: H1 NOT CALLED (ABOVE GENERATOR / ABOVE GENERATOR).** The registration mapped only BELOW (→ ROBUST DEPARTURE) and INSIDE (→ REACHED); the outcome fell outside both, so I do not upgrade it. What the data do settle:
+- **ROBUST DEPARTURE is not supported.** That branch needed the manuscript below the generator's best shot. Instead the best shot lies entirely *below* the manuscript (20/20 held-out runs), with the surface statistics kept and every gate passed. Low K is therefore **not** a property the self-citation generator cannot produce: surface-matched settings overshoot it.
+- **REACHED is not established either.** The pre-registered selection rule (the minimum K) was the wrong target: it was designed to give the generator its best chance to get *down to* the manuscript and did not foresee overshooting. No configuration has yet been shown, on held-out seeds, to sit *at* the manuscript's K.
+- **C082 reinterpreted (audit):** C082's BELOW GENERATOR compared the manuscript with the all-default generator, which here fails the surface test (TTR 0.215 vs 0.354). Its verdict stands as stated (default settings only) but should not be read as a misfit of self-citation in general. A note has been added to C082.
+
+**Exploratory (post hoc, training seeds only; not a verdict; `analysis/C083_exploratory.txt`):**
+- Feasible cells span mean K 0.052–0.109, a range that **brackets** the manuscript. Three feasible cells have mean K inside the manuscript's CI hull [0.087, 0.119]: cell 64 (the C005 selected configuration, **0.103**), cell 51 (0.104), cell 55 (0.109).
+- The C005 configuration was chosen in C005 for rigidity, without looking at K, so it makes a clean prediction for a confirmatory test. Its K was seen here on training seeds 11246–11250, which I disclose.
+- Main effect: `sourceChooser` dominates (page 0.224 vs random 0.075, means over 32 cells each). combine_split 30 lowers K (0.114 vs 0.185); the other four factors move it by less than 0.015.
+
+**Next (pre-committed for C084):** an equivalence-style confirmatory test of the **C005 configuration** (selected without reference to K) on fresh seeds 11286+: is the manuscript INSIDE its reference range on both transcriptions, with gates as here? Then F-AFFIX can close: K does not separate the manuscript from a surface-matched self-citation generator, nor from natural language (C082 H2).
+
+**Seeds:** 11246–11285 spent (plus smoke seed 11999); next 11286+.
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

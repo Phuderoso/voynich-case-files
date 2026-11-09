@@ -64,4 +64,6 @@ C081 measured K, the share of a word's last-symbol uncertainty explained by its 
 
 **Next (suggested):** a parameter sweep of the generator, asking whether any plausible setting reaches K ≈ 0.10 while keeping the C004 surface statistics. Seeds 11246+.
 
+**Audit note (C083, 2026-11-09):** in C083's fixed grid the all-default generator configuration is not surface-matched (TTR 0.215, word length 4.16, h2 2.06 vs the manuscript's 0.354, 4.57, 2.25). Surface-matched settings span K 0.052–0.109 and the best one sits wholly below the manuscript on held-out seeds. This verdict stays valid for default settings, but "below the generator" must not be read as a misfit of self-citation in general. See [C083](C083-generator-grid.md).
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
