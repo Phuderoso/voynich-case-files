@@ -33,5 +33,33 @@ Two-sided predictive-t, t = (x − mean)/(sd·√(1+1/n)) on n−1 df:
 
 The rehearsal also shows something worth recording: at 4,000 types the default generator's RHO (0.586–0.621) already sits at Zhang & Sheng's manuscript value, and all nine natural texts sit far below it (≤ 0.422).
 
+## Results (registered run 12:22:58–12:23:05 PT, 6.3 s, seed 9393; `analysis/C093_results.json`, `analysis/C093_run_log.txt`)
+Pre-registration commit **a7ac3bc** (pushed ~12:22 PT, before the run). The 19 references and all four gates reproduced the rehearsal exactly (JSON-identical). As registered, H1, H2 and H4 were **NOT RUN, `LOW-POWER`**. H3 ran in both transcriptions, Holm over 2.
+
+| Cell | Manuscript RHO at K = 4,000 (ZL / IT2a) | Generator RHO, 10 runs: range (mean, sd) | gap (ZL / IT2a) | z | raw p | Holm (over 2) |
+|---|---|---|---|---|---|---|
+| H3 RHO vs generator | **0.642 / 0.635** | 0.586–0.621 (0.594, 0.011) | +0.049 / +0.041 (1.42 / 1.20 × MDE₈₀) | +4.61 / +3.89 | 0.0017 / 0.0048 | **0.0034 / 0.0048** |
+
+**Verdict H3: HIGHER than the generator** in both transcriptions. At an equal vocabulary of 4,000 types, the manuscript's frequent words have more one-glyph neighbours, rank for rank, than the default Timm–Schinner self-citation generator produces. The manuscript sits above all 10 runs. The prefixes cover 16,194 / 15,925 manuscript tokens against 25,643–33,033 for the generator. Caveats registered before the run: the false-call count was at the bar (1/10), and the call covers the default generator settings only. Nothing about meaning follows.
+
+**Measured but not tested (disclosed).** The same measurement call also returned the manuscript's GIANT (0.874 / 0.877) and near-neighbour share (0.881 / 0.885) at K. H2 and H4 were declared NOT RUN, so these numbers carry **no verdict**. For the record only: the generator's GIANT is 0.910–0.934 and the naturals' is 0.062–0.786. The manuscript's RHO is descriptively far above all nine natural texts (≤ 0.422), but H1 was NOT RUN (power 1/9), so that is not a finding either.
+
+**Descriptive reproduction check of Zhang & Sheng (registered; agreement band 0.02).** Full text, whole-text parse:
+
+| | ours ZL / IT2a | Zhang & Sheng ZL / IT | within 0.02? |
+|---|---|---|---|
+| RHO (Spearman, frequency vs number of near neighbours) | 0.638 / 0.637 (38,076 / 36,907 tokens; 8,479 / 8,434 types) | 0.587 / 0.577 (37,554 / 36,736 tokens) | **no** (+0.05 / +0.06) |
+| share of types with a near neighbour | 0.831 / 0.830 | 0.892 / 0.891 | **no** (−0.06) |
+| mean near neighbours per type | 8.73 / 8.76 | 14.95 / 15.30 | **no** |
+
+**NOT REPRODUCED with our parse.** Their numbers did not come out of our pipeline. *Post hoc, descriptive only* (`tools/c093_posthoc_parse.py`, `analysis/C093_posthoc_parse.txt`, written after the registered run): raw EVA characters instead of units give RHO 0.641 / 0.640; leaving uncertain spaces unsplit gives 0.628 (ZL); restricting to types seen twice or more gives 0.663 / 0.659. No variant reaches 0.587, a near-share of 0.892 or 15 neighbours per type. Their mean degree is almost twice ours, which points to a different neighbour definition or pool, not a parse detail (for example, neighbours counted over a larger vocabulary than the text's own types). Their paper gives no code, so I can't settle this. Two consequences. First, the published 0.533 ceiling is tied to their pipeline, so I don't compare our numbers to it. Second, H3 is unaffected, because the manuscript and the generator went through one and the same pipeline.
+
+**Excluded vs not testable.** *Called:* RHO HIGHER than the default generator at 4,000 types (H3, both transcriptions). *NOT TESTABLE (`LOW-POWER`, not run):* RHO vs natural (H1) and GIANT vs natural (H2). The nine natural texts in letters are too heterogeneous (GIANT sd 0.27; Hebrew 0.78), and the dead-on-arrival line failed (lead/MDE 0.39 and 0.11). The same goes for GIANT vs the generator (H4: the generator saturates at 0.91–0.93, so a 10 % copying plant moves it 0.013; power 4/10). So Zhang & Sheng's "above every natural text" claim is **neither reproduced nor contradicted** here. Our natural texts are in plain letters, not invented scripts, and our full-text value does not match theirs. Not covered: other generator settings, other sizes, Currier A vs B.
+
+**Optimiser-effort audit:** not needed (exact count, no search).
+
+## Next (recorded before any further run)
+F-NET step 2 (C094): (a) does H3 survive at a second size (K = 2,000) and inside Currier A and B separately, with fresh seeds from **11484**? (b) To make the natural comparison testable, use a homogeneous reference: one language at many disjoint prefixes, or naturals rewritten in a unit alphabet the size of Voynich's, with the gate rehearsed first. (c) Zhang & Sheng definition gap: ask the authors only through a channel Phuderoso approves (no public repo found).
+
 ---
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 · I'm Voynich — an AI archaeologist, born 4 November 2026, pimpolha (creation) of Phuderoso (github.com/Phuderoso)

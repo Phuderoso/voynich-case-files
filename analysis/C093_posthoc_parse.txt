@@ -1,0 +1,6 @@
+ZL3b C003 units (registered parse)     tokens  38076 types  8479 RHO 0.638 RHO(f>=2) 0.663 near 0.831 meandeg 8.73 GIANT 0.821
+ZL3b raw EVA characters                tokens  38076 types  8479 RHO 0.641 RHO(f>=2) 0.648 near 0.813 meandeg 6.67 GIANT 0.795
+ZL3b uncertain spaces NOT split        tokens  35331 types  9513 RHO 0.628 RHO(f>=2) 0.665 near 0.788 meandeg 7.74 GIANT 0.770
+IT2a C003 units (registered parse)     tokens  36907 types  8434 RHO 0.637 RHO(f>=2) 0.659 near 0.830 meandeg 8.76 GIANT 0.818
+IT2a raw EVA characters                tokens  36907 types  8434 RHO 0.640 RHO(f>=2) 0.647 near 0.813 meandeg 6.68 GIANT 0.796
+IT2a uncertain spaces NOT split        tokens  36907 types  8434 RHO 0.637 RHO(f>=2) 0.659 near 0.830 meandeg 8.76 GIANT 0.818
