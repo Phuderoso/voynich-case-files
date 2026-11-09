@@ -1,0 +1,32 @@
+jobs 3800
+done 0 4.4
+done 2000 85.1
+ZL3b_A {'n_W1': 47, 'n_W2': 19, 'R': 199, 'D': 0.0499, 'null_mean': -0.1589, 'null_sd': 0.1721, 'p': 0.23, 'holm_reject': False}
+ZL3b_B {'n_W1': 35, 'n_W2': 29, 'R': 199, 'D': -0.1029, 'null_mean': -0.0433, 'null_sd': 0.1262, 'p': 0.56, 'holm_reject': False}
+IT2a_A {'n_W1': 45, 'n_W2': 19, 'R': 199, 'D': 0.073, 'null_mean': -0.1757, 'null_sd': 0.1637, 'p': 0.15, 'holm_reject': False}
+IT2a_B {'n_W1': 35, 'n_W2': 30, 'R': 199, 'D': -0.1249, 'null_mean': -0.0306, 'null_sd': 0.1336, 'p': 0.48, 'holm_reject': False}
+fpr_A_0 {'n_W1': 47, 'n_W2': 19, 'R': 99, 'D': -0.2784, 'null_mean': -0.175, 'null_sd': 0.1662, 'p': 0.56}
+fpr_A_1 {'n_W1': 47, 'n_W2': 19, 'R': 99, 'D': -0.1649, 'null_mean': -0.1674, 'null_sd': 0.1655, 'p': 1.0}
+fpr_A_2 {'n_W1': 47, 'n_W2': 19, 'R': 99, 'D': -0.517, 'null_mean': -0.1759, 'null_sd': 0.1648, 'p': 0.06}
+fpr_A_3 {'n_W1': 47, 'n_W2': 19, 'R': 99, 'D': -0.1896, 'null_mean': -0.1266, 'null_sd': 0.1415, 'p': 0.68}
+fpr_A_4 {'n_W1': 47, 'n_W2': 19, 'R': 99, 'D': -0.1552, 'null_mean': -0.1697, 'null_sd': 0.166, 'p': 0.92}
+plant_A_0 {'n_W1': 47, 'n_W2': 19, 'R': 199, 'D': 0.1572, 'null_mean': -0.1666, 'null_sd': 0.1578, 'p': 0.02}
+plant_A_1 {'n_W1': 47, 'n_W2': 19, 'R': 199, 'D': 0.1092, 'null_mean': -0.1501, 'null_sd': 0.1613, 'p': 0.11}
+plant_A_2 {'n_W1': 47, 'n_W2': 19, 'R': 199, 'D': -0.1745, 'null_mean': -0.1711, 'null_sd': 0.1513, 'p': 0.99}
+plant_A_3 {'n_W1': 47, 'n_W2': 19, 'R': 199, 'D': -0.0949, 'null_mean': -0.154, 'null_sd': 0.1647, 'p': 0.71}
+plant_A_4 {'n_W1': 47, 'n_W2': 19, 'R': 199, 'D': 0.0339, 'null_mean': -0.1465, 'null_sd': 0.1566, 'p': 0.27}
+fpr_B_0 {'n_W1': 35, 'n_W2': 29, 'R': 99, 'D': -0.0253, 'null_mean': -0.0437, 'null_sd': 0.1411, 'p': 0.92}
+fpr_B_1 {'n_W1': 35, 'n_W2': 29, 'R': 99, 'D': 0.1415, 'null_mean': -0.0303, 'null_sd': 0.1472, 'p': 0.26}
+fpr_B_2 {'n_W1': 35, 'n_W2': 29, 'R': 99, 'D': -0.0303, 'null_mean': -0.0045, 'null_sd': 0.1206, 'p': 0.86}
+fpr_B_3 {'n_W1': 35, 'n_W2': 29, 'R': 99, 'D': 0.1225, 'null_mean': -0.0301, 'null_sd': 0.1387, 'p': 0.3}
+fpr_B_4 {'n_W1': 35, 'n_W2': 29, 'R': 99, 'D': -0.1832, 'null_mean': -0.0265, 'null_sd': 0.1265, 'p': 0.3}
+plant_B_0 {'n_W1': 35, 'n_W2': 29, 'R': 199, 'D': 0.0183, 'null_mean': -0.0134, 'null_sd': 0.1489, 'p': 0.83}
+plant_B_1 {'n_W1': 35, 'n_W2': 29, 'R': 199, 'D': 0.016, 'null_mean': -0.0237, 'null_sd': 0.1343, 'p': 0.77}
+plant_B_2 {'n_W1': 35, 'n_W2': 29, 'R': 199, 'D': 0.1898, 'null_mean': -0.0243, 'null_sd': 0.1381, 'p': 0.16}
+plant_B_3 {'n_W1': 35, 'n_W2': 29, 'R': 199, 'D': 0.0744, 'null_mean': -0.0181, 'null_sd': 0.1509, 'p': 0.56}
+plant_B_4 {'n_W1': 35, 'n_W2': 29, 'R': 199, 'D': -0.1378, 'null_mean': -0.0364, 'null_sd': 0.133, 'p': 0.53}
+descriptive {'ZL3b': {'W1': 0.28851873056374633, 'W2': 0.1877207146788914}, 'IT2a': {'W1': 0.2533961549105549, 'W2': 0.17646243881574897}}
+gates {'FPR': '0/10', 'FPR_pass': True, 'plant': {'A': '0/5', 'B': '0/5'}, 'plant_pass': {'A': False, 'B': False}}
+verdict {'A': 'NOT TESTABLE (gate)', 'B': 'NOT TESTABLE (gate)'}
+runtime 154.8
+EXIT 0

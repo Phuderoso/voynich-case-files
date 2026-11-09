@@ -46,3 +46,30 @@ If the halving disappears within language at equal page size, the C086 "manuscri
 **Disclosed:** a timing-only fit (G not printed) on the real W1-A pages, and one delta smoke on the reserved line-shuffled host (seed 11999), before this file was written. X uses single-init PLSA (C086 audit: single-init noise); the noise is in obs and null alike, so the test stays exact but loses some power, which the planted gate measures.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (run ~08:32–08:34 PT, 155 s, seed 8888; `analysis/C088_results.json` sha256 1046db1d12a11e78…, `analysis/C088_run_log.txt`)
+
+| test | pages W1 / W2 | D = X(W1) − X(W2) | null mean (SD) | two-sided p | Holm |
+|---|---|---|---|---|---|
+| ZL 3b · Currier A | 47 / 19 | +0.050 | −0.159 (0.172) | 0.23 | — |
+| IT2a · Currier A | 45 / 19 | +0.073 | −0.176 (0.164) | 0.15 | — |
+| ZL 3b · Currier B | 35 / 29 | −0.103 | −0.043 (0.126) | 0.56 | — |
+| IT2a · Currier B | 35 / 30 | −0.125 | −0.031 (0.134) | 0.48 | — |
+
+**Gates.** FPR **0/10** (pass). Planted ≈ halving **0/5 in A and 0/5 in B** at p ≤ 0.0125 (fail; best plant p 0.02). Planted shift of D above its null mean: A +0.32, +0.26, 0.00, +0.06, +0.18 (mean ≈ 0.16 ≈ 1 null SD); B +0.03, +0.04, +0.21, +0.09, −0.10 (≈ 0.05).
+
+**Verdict: Currier A NOT TESTABLE, Currier B NOT TESTABLE (planted-control gate).** No Holm rejection either way; this is **not** an exclusion of a within-language W1/W2 difference. The instrument (single-init PLSA, X from 4 inner draws, ~1.5–2.8k tokens per set) has a permutation SD of 0.13–0.17 bits/token, about as large as the whole effect it was built to see, so a planted halving moves D by ≈ 1 SD at best.
+
+**Disclosed slip.** The I-119 rehearsal of the plant gate (run the gate on exchangeable draws before pushing) was promised in the method list but **not** run before the pre-registration push; it would have shown the gate failing. The gate did its job afterwards, and no verdict was called on underpowered tests.
+
+**Descriptive only (no test, pooled languages, truncated to 80 tokens, R_IN 19):** ZL W1 0.289 / W2 0.188; IT2a W1 0.253 / W2 0.176. The C084 gap (0.55 vs 0.21) narrows to ≈ 0.08–0.10 once pages are cut to the same size and short pages drop out. W1's high C084 value is mostly size/composition, not shown to be a section property.
+
+## Audit note on C086 (exploratory contrast)
+C086's exploratory line "the generator's topics are uniform across windows but the manuscript's halve" compared untruncated windows whose page sizes differ about fourfold for Currier B (median 124 vs 430 tokens). At equal truncated size the manuscript's W1/W2 gap is ≈ 0.1 bits/token (descriptive), and C088 couldn't test it within language. **Until a powered, size-matched test exists, the "manuscript halves" contrast carries no weight.** The C086 verdict (NOT TESTABLE, 0/128 surface-feasible cells) is unaffected.
+
+## Next (recorded before any further run)
+A lower-variance instrument: one multi-init PLSA fit per transcription on all eligible truncated pages (both windows), **per-page** held-out gain g_d (even-line bits/token minus that page's own line-reassignment expectation), then D = mean g(W1) − mean g(W2) inside each language with the same within-language label permutation. One fit per null draw is no longer needed (labels permute over fixed g_d), so R can be 9,999 and the plant gate can be rehearsed (I-119) before the push.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
