@@ -1,0 +1,201 @@
+Sun Nov  8 19:32:18 MST 2026
+A 17.2
+B 32.2
+{
+ "A": {
+  "entry": {
+   "FPR_G2_pass_rate": 0.001001001001001001,
+   "FPR_ok": true,
+   "power_G1G2G3": 0.645,
+   "power_ok": false,
+   "planted_mean_precision": 0.9739451594592865
+  },
+  "total": {
+   "FPR_G2_pass_rate": 0.0,
+   "FPR_ok": true,
+   "power_G1G2G3": 0.0,
+   "power_ok": false,
+   "planted_mean_precision": 0.9608333333333334
+  }
+ },
+ "B": {
+  "entry": {
+   "FPR_G2_pass_rate": 0.0,
+   "FPR_ok": true,
+   "power_G1G2G3": 0.565,
+   "power_ok": false,
+   "planted_mean_precision": 0.9443988906045966
+  },
+  "total": {
+   "FPR_G2_pass_rate": 0.0,
+   "FPR_ok": true,
+   "power_G1G2G3": 0.0,
+   "power_ok": false,
+   "planted_mean_precision": 0.9183333333333333
+  }
+ },
+ "params": {
+  "R_FPR": 999,
+  "SEED_FPR": 701,
+  "R_POW": 200,
+  "SEED_POW": 702,
+  "P_PLANT": 0.9
+ },
+ "runtime_s": 32.2
+}
+Sun Nov  8 19:32:51 MST 2026
+{
+ "final_verdict": {
+  "entry": "NOT TESTABLE",
+  "total": "NOT TESTABLE"
+ },
+ "A": {
+  "entry": {
+   "tasks": 147,
+   "unique": 80,
+   "unique_correct": 68,
+   "recovery": 0.46258503401360546,
+   "precision": 0.85,
+   "cp95_low": 0.7683239392098304,
+   "cp95_high": 0.9111061645814054,
+   "no_candidate": 19,
+   "baseline_correct": 74,
+   "mcnemar": {
+    "rule_only": 30,
+    "baseline_only": 36,
+    "p": 0.8054737697261036
+   },
+   "null": {
+    "R": 4999,
+    "seed": 703,
+    "mean": 4.7525505101020205,
+    "max": 32,
+    "p": 0.0002
+   },
+   "gates": {
+    "FPR_gate": true,
+    "power_gate": false,
+    "G1_tasks": true,
+    "G2_precision": true,
+    "G3_baseline_holm4": false,
+    "G4_null": true
+   },
+   "verdict": "NOT TESTABLE"
+  },
+  "total": {
+   "tasks": 24,
+   "unique": 6,
+   "unique_correct": 4,
+   "recovery": 0.16666666666666666,
+   "precision": 0.6666666666666666,
+   "cp95_low": 0.27133837251975246,
+   "cp95_high": 0.9371501082916456,
+   "no_candidate": 0,
+   "baseline_correct": 0,
+   "mcnemar": {
+    "rule_only": 4,
+    "baseline_only": 0,
+    "p": 0.0625
+   },
+   "null": {
+    "R": 4999,
+    "seed": 703,
+    "mean": 0.28605721144228846,
+    "max": 3,
+    "p": 0.0002
+   },
+   "gates": {
+    "FPR_gate": true,
+    "power_gate": false,
+    "G1_tasks": false,
+    "G2_precision": false,
+    "G3_baseline_holm4": false,
+    "G4_null": true
+   },
+   "verdict": "NOT TESTABLE"
+  }
+ },
+ "B": {
+  "entry": {
+   "tasks": 129,
+   "unique": 47,
+   "unique_correct": 28,
+   "recovery": 0.21705426356589147,
+   "precision": 0.5957446808510638,
+   "cp95_low": 0.46537098403269445,
+   "cp95_high": 0.7166845667067179,
+   "no_candidate": 22,
+   "baseline_correct": 50,
+   "mcnemar": {
+    "rule_only": 7,
+    "baseline_only": 29,
+    "p": 0.999965199152939
+   },
+   "null": {
+    "R": 4999,
+    "seed": 703,
+    "mean": 1.9865973194638928,
+    "max": 20,
+    "p": 0.0002
+   },
+   "gates": {
+    "FPR_gate": true,
+    "power_gate": false,
+    "G1_tasks": true,
+    "G2_precision": false,
+    "G3_baseline_holm4": false,
+    "G4_null": true
+   },
+   "verdict": "NOT TESTABLE"
+  },
+  "total": {
+   "tasks": 26,
+   "unique": 3,
+   "unique_correct": 1,
+   "recovery": 0.038461538461538464,
+   "precision": 0.3333333333333333,
+   "cp95_low": 0.0169524275084415,
+   "cp95_high": 0.8646496378284162,
+   "no_candidate": 0,
+   "baseline_correct": 0,
+   "mcnemar": {
+    "rule_only": 1,
+    "baseline_only": 0,
+    "p": 0.5
+   },
+   "null": {
+    "R": 4999,
+    "seed": 703,
+    "mean": 0.07721544308861772,
+    "max": 1,
+    "p": 0.0774
+   },
+   "gates": {
+    "FPR_gate": true,
+    "power_gate": false,
+    "G1_tasks": false,
+    "G2_precision": false,
+    "G3_baseline_holm4": false,
+    "G4_null": false
+   },
+   "verdict": "NOT TESTABLE"
+  }
+ }
+}
+Sun Nov  8 19:33:48 MST 2026
+{
+ "pe006_results_identical": true,
+ "H1_table": [
+  [
+   7,
+   25
+  ],
+  [
+   18,
+   14
+  ]
+ ],
+ "p_one_sided_recomputed_independently": 0.004867399009519733,
+ "matches_published_0.0049": true
+}
+Sun Nov  8 19:33:52 MST 2026

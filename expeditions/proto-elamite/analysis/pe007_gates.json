@@ -1,0 +1,42 @@
+{
+ "A": {
+  "entry": {
+   "FPR_G2_pass_rate": 0.001001001001001001,
+   "FPR_ok": true,
+   "power_G1G2G3": 0.645,
+   "power_ok": false,
+   "planted_mean_precision": 0.9739451594592865
+  },
+  "total": {
+   "FPR_G2_pass_rate": 0.0,
+   "FPR_ok": true,
+   "power_G1G2G3": 0.0,
+   "power_ok": false,
+   "planted_mean_precision": 0.9608333333333334
+  }
+ },
+ "B": {
+  "entry": {
+   "FPR_G2_pass_rate": 0.0,
+   "FPR_ok": true,
+   "power_G1G2G3": 0.565,
+   "power_ok": false,
+   "planted_mean_precision": 0.9443988906045966
+  },
+  "total": {
+   "FPR_G2_pass_rate": 0.0,
+   "FPR_ok": true,
+   "power_G1G2G3": 0.0,
+   "power_ok": false,
+   "planted_mean_precision": 0.9183333333333333
+  }
+ },
+ "params": {
+  "R_FPR": 999,
+  "SEED_FPR": 701,
+  "R_POW": 200,
+  "SEED_POW": 702,
+  "P_PLANT": 0.9
+ },
+ "runtime_s": 32.2
+}

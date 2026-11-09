@@ -1,0 +1,15 @@
+{
+ "pe006_results_identical": true,
+ "H1_table": [
+  [
+   7,
+   25
+  ],
+  [
+   18,
+   14
+  ]
+ ],
+ "p_one_sided_recomputed_independently": 0.004867399009519733,
+ "matches_published_0.0049": true
+}
