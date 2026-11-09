@@ -1,0 +1,16 @@
+{
+ "calibration_tablets": 45,
+ "no_common_system": [
+  "P008619",
+  "P009155"
+ ],
+ "analysis_set": 43,
+ "odd_P": 25,
+ "prevalence": {
+  "EDGE": 7,
+  "CAP": 19,
+  "LONG": 17,
+  "MULTI": 21,
+  "UNREAD": 28
+ }
+}
