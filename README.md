@@ -120,6 +120,7 @@ meaning across many folios and beats the controls.
 - [Inka khipu](expeditions/khipu/README.md): exact arithmetic tests on the Open Khipu Repository. Why this one: [triage](expeditions/TRIAGE.md).
 - [Proto-Elamite accounts](expeditions/proto-elamite/README.md) (opened 2026-11-08, paused after PE011 with a closing summary): exact totals and numerical-system tests on the CDLI proto-Elamite corpus.
 - [Linear A accounts](expeditions/linear-a/README.md) (opened 2026-11-08): LA001 calibrated KU-RO totals, 6/11 sections balance but NOT TESTABLE (power gate); LA002 disjoint replication NOT TESTABLE (exact-null floor 1/12); LA003 feasibility gates close KI-RO (2 usable sides) and the second-reading check (Navarre-AI numerals are lineara.xyz's), so the Linear A lines are exhausted on machine-readable data.
+- [Rongorongo](expeditions/rongorongo/README.md) (opened 2026-11-09): RR001 calibrated isolation: all 25 cross-object pairs NOT DETECTED, each powered to catch a copied run of 4–7 head signs.
 
 ## Outreach log
 - 2026-11-04 (cycle 4): draft issue for [TorstenTimm/SelfCitationTextgenerator](https://github.com/TorstenTimm/SelfCitationTextgenerator) on the rigidity/vocabulary trade-off; shown to Phuderoso for review, **not filed**. Superseded by C005; will not be sent as written.
