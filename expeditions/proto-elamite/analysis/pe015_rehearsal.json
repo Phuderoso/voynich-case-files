@@ -1,0 +1,109 @@
+{
+ "gates": {
+  "H1G": {
+   "n": 183,
+   "fine_keys": 13,
+   "coarse_groups": 8,
+   "size_ok": true,
+   "FPR": 0.1,
+   "FPR_ok": true,
+   "power_batches": [
+    {
+     "seed": 1503,
+     "power": 0.83
+    },
+    {
+     "seed": 1504,
+     "power": 0.81
+    }
+   ],
+   "power": 0.81,
+   "power_ok": true,
+   "alpha_power": 0.0125,
+   "seconds": 4.0
+  },
+  "H1W": {
+   "n": 166,
+   "fine_keys": 9,
+   "coarse_groups": 4,
+   "size_ok": true,
+   "FPR": 0.05,
+   "FPR_ok": true,
+   "power_batches": [
+    {
+     "seed": 11503,
+     "power": 0.48
+    },
+    {
+     "seed": 11504,
+     "power": 0.51
+    }
+   ],
+   "power": 0.48,
+   "power_ok": false,
+   "alpha_power": 0.0125,
+   "seconds": 3.7
+  },
+  "H2G": {
+   "n": 405,
+   "fine_keys": 25,
+   "coarse_groups": 18,
+   "size_ok": true,
+   "FPR": 0.125,
+   "FPR_ok": false,
+   "power_batches": [
+    {
+     "seed": 21503,
+     "power": 1.0
+    },
+    {
+     "seed": 21504,
+     "power": 0.99
+    }
+   ],
+   "power": 0.99,
+   "power_ok": true,
+   "alpha_power": 0.0125,
+   "seconds": 7.4
+  },
+  "H2W": {
+   "n": 325,
+   "fine_keys": 11,
+   "coarse_groups": 4,
+   "size_ok": true,
+   "FPR": 0.0,
+   "FPR_ok": true,
+   "power_batches": [
+    {
+     "seed": 31503,
+     "power": 0.81
+    },
+    {
+     "seed": 31504,
+     "power": 0.8
+    }
+   ],
+   "power": 0.8,
+   "power_ok": true,
+   "alpha_power": 0.0125,
+   "seconds": 6.4
+  }
+ },
+ "runnable": [
+  "H1G",
+  "H2W"
+ ],
+ "smoke_registered_shuffle_1599": {
+  "H1G": {
+   "stat_on_registered_shuffle": 30.716,
+   "p_R999": 0.226,
+   "null_mean": 26.2018
+  },
+  "H2W": {
+   "stat_on_registered_shuffle": 13.0886,
+   "p_R999": 0.402,
+   "null_mean": 12.5656
+  }
+ },
+ "runtime_s": 21.8
+}
