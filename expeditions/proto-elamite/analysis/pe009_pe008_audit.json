@@ -1,0 +1,9 @@
+{
+ "pe008_results_identical_except_time": true,
+ "P_ratio_recomputed": {
+  "n": 25,
+  "median": 0.242,
+  "published_median": 0.242,
+  "match": true
+ }
+}

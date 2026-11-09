@@ -1,0 +1,71 @@
+{
+ "Q1_A_ratio_total_over_sum_C": {
+  "n": 15,
+  "sorted": [
+   0.026,
+   0.033,
+   0.041,
+   0.046,
+   0.047,
+   0.052,
+   0.078,
+   0.088,
+   0.108,
+   0.328,
+   0.364,
+   0.448,
+   0.816,
+   1.039,
+   1.098
+  ],
+  "median": 0.088,
+  "above_1": 2
+ },
+ "Q2_total_composition": {
+  "A_grain": {
+   "tablets": 15,
+   "total_has_subunit": 13,
+   "total_only_N01_N14": 2
+  },
+  "B_grain": {
+   "tablets": 25,
+   "total_has_subunit": 21,
+   "total_only_N01_N14": 1
+  },
+  "nonCAP_A": {
+   "tablets": 6,
+   "total_has_subunit": 0,
+   "total_only_N01_N14": 4
+  },
+  "nonCAP_B": {
+   "tablets": 14,
+   "total_has_subunit": 0,
+   "total_only_N01_N14": 11
+  }
+ },
+ "Q3_H1_matches": [
+  {
+   "set": "A",
+   "pid": "P008825",
+   "ratio": "1/30",
+   "sign_pairs": [
+    "N30C/N01",
+    "N39B/N14",
+    "N14/N34",
+    "N45/N48"
+   ],
+   "n_entries": 7
+  },
+  {
+   "set": "B",
+   "pid": "P009348",
+   "ratio": "1/2",
+   "sign_pairs": [
+    "N39C/N30D",
+    "N30D/N30C",
+    "N24/N39B"
+   ],
+   "n_entries": 5
+  }
+ ]
+}
