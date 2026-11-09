@@ -4,7 +4,7 @@
 > lock the list by its fingerprint, then ask whether the RR007 shared-trigram test finds Horley's catalogued parallels.
 > This morning's job was the locksmith's part: find a list a machine can read without me deciding anything.
 
-**Status: PRE-REGISTRATION** (pushed before audit J is run and before any observed statistic of line 3b or any
+**Status: CLOSED. 5f NOT TESTABLE (no fixed cross-number list); 3b NOT TESTABLE (dead on arrival); audit J done.** Pre-registered in `e5b74d6` + `69e74b2` (pushed before audit J was run and before any observed statistic of line 3b or any
 5f trigram count is computed). Seed 13013. Data: CEIPP transliteration as pinned in [data/MANIFEST.md](../data/MANIFEST.md)
 (corpus.json sha256 `ce1782aa…6e460`, the RR009–RR012 file).
 Tools: [`tools/rr013_5f_pin.py`](../tools/rr013_5f_pin.py), [`tools/rr013_entry_initial_K.py`](../tools/rr013_entry_initial_K.py),
@@ -61,5 +61,46 @@ the null draw, power is estimated against five R 999 nulls (seeds 13008–13012)
 Registered rule: the reference k* is the smallest k with power ≥ 0.80 against the R 9 999 null; it is quoted to one sign
 only if the Wilson 95% interval at k* lies above 0.80 and at k* − 1 below it; otherwise as a range. The Ab–Cb verdict
 (NOT DETECTED, T 5) cannot change: it needs k* ≤ 8.
+
+## Results (appended after the pre-registration commits `e5b74d6`, `69e74b2`; run ~10:45 PT)
+Files: [`analysis/rr013_results.json`](../analysis/rr013_results.json) (line 3b), [`analysis/rr013_auditJ_rr008_abcb.json`](../analysis/rr013_auditJ_rr008_abcb.json),
+[`analysis/rr013_auditJ.log`](../analysis/rr013_auditJ.log), recount [`analysis/rr013_recount.json`](../analysis/rr013_recount.json).
+
+**Line 5f: NOT TESTABLE (no fixed cross-number list)**, as decided in the registration. No trigram test was run.
+Three published sources were pinned by sha256; none yields a judgement-free Barthel-coded cross-number map. The
+Spaelti/CEIPP list is the identity on head signs (0 of 6 064 listed tokens change base). Pozdniakov's one text-stated
+equivalence (6 ~ 64) touches 13 tokens, none on the known-answer sides Ab, Bv, Er, so it could not gain by construction.
+
+**Line 3b (entry-initial deficit on K): NOT TESTABLE, dead on arrival.** The `--run` with seed 13013 reproduced the gates:
+20 entries, 5 free strokes, expected S3 2.03 (null mean 2.02, range 0–5); exact floor P0(S3 = 0) = **1/15 = 0.067 > 0.05**;
+power 0.00 at every f; negative control 0/40. The observed S3 was **not computed**. Even a perfect deficit on Small
+London could not reach α 0.05. RR003's lead stays a lead: no unused delimiter-bearing object can confirm it.
+
+**Audit J · Ab–Cb k* with 400 plants.**
+| null | R | rejection threshold T | power k = 2 (95% CI) | power k = 3 (95% CI) | k* |
+|---|---|---|---|---|---|
+| seed 13008 | 999 | 10 | 0.11 (0.08–0.14) | 0.845 (0.81–0.88) | 3 |
+| seed 13009 | 999 | 9 | 0.82 (0.78–0.86) | 0.97 | 2 |
+| seed 13010 | 999 | 9 | 0.80 (0.76–0.83) | 0.97 | 3 |
+| seed 13011 | 999 | 10 | 0.13 (0.10–0.16) | 0.84 (0.80–0.87) | 3 |
+| seed 13012 | 999 | 9 | 0.835 (0.80–0.87) | 0.975 | 2 |
+| **seed 13013 (reference)** | **9 999** | **9** | **0.8175 (0.777–0.852)** | **0.98 (0.96–0.99)** | **2** |
+
+Reading, by the registered rule: the reference k* is 2, but its interval straddles 0.80, so **Ab–Cb k* is quoted as
+"2–3"** (k = 3 is clearly above, 0.98). RR008's 4 (power 0.79 at 3 under seed 8008) is superseded as too high by one
+sign. Verdict unchanged (NOT DETECTED, T 5). **Why it flips:** under the R 9 999 null P(T ≥ 9) = 0.0011 and P(T ≥ 10) = 0
+(descriptive, same null), so the true tail at T = 9 sits just under α = 0.002. With R 999 the empirical p of T = 9 is
+(1 + #null ≥ 9)/1000, and #null ≥ 9 is roughly Poisson(1.1): 0–1 such draws gives threshold 9 (k* 2), 2 or more gives 10
+(k* 3). The edge is a **null-threshold edge, not a plant edge**: 400 plants tighten each row, but only a larger null
+settles which row is right. Lesson for the expedition: when α is within a factor of 2 of 1/(R + 1), use R ≥ 9 999 for
+the null that sets the power threshold.
+
+**Recount.** The independent parser reproduces every headline count used above (372 groups, 1 684 codes, 0 cross-number,
+6 064 listed / 0 differ; K 20 entries, 45 units, 5 strokes, floor 1/15; 064 ×13, 006 ×81).
+
+**Disclosures.** (1) Pozdniakov 2007 was read from a Wayback Machine capture, because the author's server refused the
+box; the hash is of that copy. (2) kohaumotu.org was reached over https with the certificate check off (expired
+certificate); the hash pins exactly the bytes received. (3) The `--run` of line 3b printed its gates again, the same
+values as the rehearsal up to Monte Carlo noise (null mean 2.023 vs 2.037); no observed statistic was computed.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

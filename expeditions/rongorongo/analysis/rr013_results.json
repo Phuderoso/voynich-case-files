@@ -1,0 +1,29 @@
+{
+ "mode": "--run",
+ "seed": 13013,
+ "R": 9999,
+ "plants": 400,
+ "gates": {
+  "entries": 20,
+  "entries_with_stroke": 5,
+  "units": 45,
+  "strokes": 5,
+  "expected_S3": 2.033,
+  "floor_p0": 0.06666666666666668,
+  "G1_floor_ok": false,
+  "power": {
+   "0.25": 0.0,
+   "0.474": 0.0,
+   "0.75": 0.0,
+   "1.0": 0.0
+  },
+  "G2_power_ok": false,
+  "negative_rejections_of_40": 0,
+  "G3_negative_ok": true,
+  "null_mean": 2.023,
+  "null_min": 0,
+  "null_max": 5,
+  "testable": false
+ },
+ "verdict": "NOT TESTABLE (dead on arrival: observed S3 not computed)"
+}
