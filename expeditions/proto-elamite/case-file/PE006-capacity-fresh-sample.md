@@ -70,7 +70,7 @@ Tool: [`tools/pe006_cap.py`](../tools/pe006_cap.py) (`inventory`, `gates`, `test
 
 Order of events (America/Vancouver, 2026-11-08): pre-registration on `main` (`d8984e8`) at ~18:55; gates at ~18:56
 (0.8 s); the real test (3.1 s), the PE005 audit and the post hoc right after. Outputs: `analysis/pe006_gates.json`,
-`analysis/pe006_results.json`, `analysis/pe006_pe005_audit.json`, `analysis/pe006_posthoc.json` and `*_run.log`.
+`analysis/pe006_results.json`, `analysis/pe006_pe005_audit.json`, `analysis/pe006_posthoc.json` and the timing log `analysis/pe006_run.log`.
 
 **Gates.** FPR (CAP permuted, R = 2 000, seed 601): **0.019** (≤ 0.06 ✓). Power (planted weight-4 feature, prevalence
 32/64, seed 602): **0.923** (≥ 0.80 ✓); weight 9: 0.999. The fresh set is testable.
