@@ -1,0 +1,5474 @@
+{
+ "calibration_tablets": 45,
+ "G0_solver_plant": {
+  "synthetic_tablets": 2000,
+  "slots": 11994,
+  "missed": 0,
+  "pass": true,
+  "seed": 401
+ },
+ "entry": {
+  "tasks": 266,
+  "unique": 122,
+  "unique_correct": 85,
+  "covered": 119,
+  "mean_candidates": 0.8195488721804511,
+  "no_candidate": 96,
+  "recovery_rate": 0.31954887218045114,
+  "precision_unique": 0.6967213114754098,
+  "precision_cp95_low": 0.6210385514223561,
+  "baseline_correct": 102,
+  "baseline_rate": 0.38345864661654133,
+  "mcnemar": {
+   "rule_only": 47,
+   "baseline_only": 64,
+   "p": 0.9564554363881258
+  },
+  "null": {
+   "R": 9999,
+   "seed": 404,
+   "mean": 3.1573157315731573,
+   "max": 30,
+   "p": 0.0001
+  },
+  "gates": {
+   "G0_solver": true,
+   "G1_tasks": true,
+   "G2_precision": false,
+   "G3_beats_baseline_holm": false,
+   "G4_beats_null": true
+  },
+  "verdict": "NOT VALIDATED"
+ },
+ "total": {
+  "tasks": 45,
+  "unique": 21,
+  "unique_correct": 8,
+  "covered": 22,
+  "mean_candidates": 1.5555555555555556,
+  "no_candidate": 1,
+  "recovery_rate": 0.17777777777777778,
+  "precision_unique": 0.38095238095238093,
+  "precision_cp95_low": 0.205749898750653,
+  "baseline_correct": 0,
+  "baseline_rate": 0.0,
+  "mcnemar": {
+   "rule_only": 8,
+   "baseline_only": 0,
+   "p": 0.00390625
+  },
+  "null": {
+   "R": 9999,
+   "seed": 404,
+   "mean": 0.29002900290029004,
+   "max": 3,
+   "p": 0.0001
+  },
+  "gates": {
+   "G0_solver": true,
+   "G1_tasks": true,
+   "G2_precision": false,
+   "G3_beats_baseline_holm": true,
+   "G4_beats_null": true
+  },
+  "verdict": "NOT VALIDATED"
+ },
+ "rows": [
+  {
+   "pid": "P008003",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "2(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "5(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008003",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "2(N39B)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008003",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008003",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "5(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008003",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008003",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "2(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "5(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008003",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "1(N14) 8(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008003",
+   "kind": "entry",
+   "slot": 7,
+   "truth": "1(N14) 8(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008003",
+   "kind": "entry",
+   "slot": 8,
+   "truth": "1(N14) 8(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008003",
+   "kind": "entry",
+   "slot": 9,
+   "truth": "2(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "5(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008003",
+   "kind": "entry",
+   "slot": 10,
+   "truth": "5(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008003",
+   "kind": "entry",
+   "slot": 11,
+   "truth": "5(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008003",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N01) 3(N39B) 1(N24)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N45) 5(N01) 2(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008004",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "3(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008004",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "5(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "3(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008004",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "3(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008004",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "3(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "3(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008004",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "2(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "3(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008004",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "2(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "3(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008004",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "3(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008004",
+   "kind": "entry",
+   "slot": 7,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "3(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008004",
+   "kind": "total",
+   "slot": "total",
+   "truth": "2(N14) 2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N14) 9(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "6(N14) 1(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008005",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008005",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008005",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008005",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008005",
+   "kind": "total",
+   "slot": "total",
+   "truth": "4(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008014",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008014",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008014",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008014",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008014",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008014",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008014",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008014",
+   "kind": "entry",
+   "slot": 7,
+   "truth": "4(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008014",
+   "kind": "entry",
+   "slot": 8,
+   "truth": "3(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008014",
+   "kind": "entry",
+   "slot": 9,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008014",
+   "kind": "total",
+   "slot": "total",
+   "truth": "4(N14) 1(N01) 3(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N14) 1(N01) 3(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008048",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "5(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "5(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008048",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008048",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008048",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008048",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N14)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N14) 2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14) 4(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008135",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "3(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008135",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "2(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008135",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "2(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008135",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "2(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008135",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "2(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008135",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008135",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008135",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N14) 3(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 3(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N14) 1(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008169",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "5(N14) 4(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "4(N14) 1(N01) 1(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "5(N14) 4(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008169",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "4(N14) 1(N01) 1(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "5(N14) 4(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N14) 1(N01) 1(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008169",
+   "kind": "total",
+   "slot": "total",
+   "truth": "9(N14) 2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "9(N14) 2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008201",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "5(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "5(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "5(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008201",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "5(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "5(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "5(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008201",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "5(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "5(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "5(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008201",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N14) 5(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 5(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N14) 3(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008210",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "2(N14)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 7(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14) 3(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008210",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N14) 1(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "8(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "4(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008210",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N14)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "7(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "3(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008210",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N14)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "7(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "3(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008210",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "3(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008210",
+   "kind": "total",
+   "slot": "total",
+   "truth": "5(N14) 1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "5(N14) 4(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008216",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "4(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008216",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008216",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008216",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008216",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008216",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008216",
+   "kind": "total",
+   "slot": "total",
+   "truth": "5(N14) 4(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "5(N14) 4(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008229",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008229",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "4(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 2(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "4(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008229",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008229",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008229",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008229",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008229",
+   "kind": "total",
+   "slot": "total",
+   "truth": "2(N14) 2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 4(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N14) 2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008243",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "9(N14) 4(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14) 2(N01) 1(N23)",
+   "baseline_correct": false,
+   "candidates": {
+    "9(N14) 4(N01)": [
+     "D"
+    ]
+   }
+  },
+  {
+   "pid": "P008243",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "6(N14) 9(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14) 2(N01) 1(N23)",
+   "baseline_correct": false,
+   "candidates": {
+    "6(N14) 9(N01)": [
+     "D"
+    ]
+   }
+  },
+  {
+   "pid": "P008243",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "4(N14) 7(N01) 1(N23)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14) 2(N01) 1(N23)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N14) 7(N01) 1(N23)": [
+     "D"
+    ]
+   }
+  },
+  {
+   "pid": "P008243",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "4(N14) 4(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14) 2(N01) 1(N23)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N14) 4(N01)": [
+     "D"
+    ]
+   }
+  },
+  {
+   "pid": "P008243",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "5(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14) 2(N01) 1(N23)",
+   "baseline_correct": false,
+   "candidates": {
+    "5(N14)": [
+     "D"
+    ]
+   }
+  },
+  {
+   "pid": "P008243",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N14) 2(N01) 1(N23)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "4(N14) 4(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 2(N01) 1(N23)": [
+     "D"
+    ]
+   }
+  },
+  {
+   "pid": "P008243",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "7(N14) 5(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14) 2(N01) 1(N23)",
+   "baseline_correct": false,
+   "candidates": {
+    "7(N14) 5(N01)": [
+     "D"
+    ]
+   }
+  },
+  {
+   "pid": "P008243",
+   "kind": "total",
+   "slot": "total",
+   "truth": "9(N14) 1(N01) 5(N23)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "9(N14) 1(N01) 5(N23)": [
+     "D"
+    ]
+   }
+  },
+  {
+   "pid": "P008267",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N30C)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008267",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N30C)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N30C) 1(N30D)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008267",
+   "kind": "total",
+   "slot": "total",
+   "truth": "2(N30C) 1(N30D)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01) 1(N30C)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008426",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N24) 1(N30C)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N24) 1(N30C)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008426",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N24) 1(N30C)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008426",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N30D)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N30D)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008426",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N39B) 1(N24) 1(N30C) 1(N30D)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N39B) 1(N24) 1(N30C) 1(N30D)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008479",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008479",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008479",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008479",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008479",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008479",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008479",
+   "kind": "total",
+   "slot": "total",
+   "truth": "6(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "6(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008617",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14) 8(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008617",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14) 8(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008617",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14) 8(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008617",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14) 8(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008617",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "4(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N14)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "4(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008617",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14) 8(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008617",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14) 8(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008617",
+   "kind": "entry",
+   "slot": 7,
+   "truth": "1(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 7(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008617",
+   "kind": "entry",
+   "slot": 8,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14) 8(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008617",
+   "kind": "entry",
+   "slot": 9,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14) 8(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008617",
+   "kind": "entry",
+   "slot": 10,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14) 8(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008617",
+   "kind": "entry",
+   "slot": 11,
+   "truth": "4(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N14)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "4(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008617",
+   "kind": "total",
+   "slot": "total",
+   "truth": "4(N14) 3(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N14) 7(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "4(N14) 3(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008619",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "7(N14)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "5(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008619",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "5(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "4(N51)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008619",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "4(N51)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "5(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N14) 4(N01) 3(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008619",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N45) 3(N01) 3(N39B)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N51) 7(N14) 5(N01)": [
+     "D"
+    ],
+    "1(N34) 4(N51) 1(N14) 5(N01)": [
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008641",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "2(N14) 7(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N14) 3(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N14) 7(N01)": [
+     "D"
+    ]
+   }
+  },
+  {
+   "pid": "P008641",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "2(N14) 3(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N14) 4(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N14) 3(N01)": [
+     "D"
+    ]
+   }
+  },
+  {
+   "pid": "P008641",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "2(N14) 9(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N14) 3(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N14) 9(N01)": [
+     "D"
+    ]
+   }
+  },
+  {
+   "pid": "P008641",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "2(N14) 4(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N14) 3(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N14) 4(N01)": [
+     "D"
+    ]
+   }
+  },
+  {
+   "pid": "P008641",
+   "kind": "total",
+   "slot": "total",
+   "truth": "3(N01) 1(N23)",
+   "n_cand": 3,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N34) 4(N14) 3(N01)": [
+     "S",
+     "B"
+    ],
+    "3(N01) 1(N23)": [
+     "D"
+    ],
+    "1(N45) 1(N14) 5(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008709",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "3(N14) 4(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008709",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N14) 4(N01) 1(N39B)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008709",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "4(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008709",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P008709",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "2(N39B) 1(N24)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008709",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P008709",
+   "kind": "total",
+   "slot": "total",
+   "truth": "2(N14) 3(N39B) 1(N24)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "6(N14) 2(N01) 3(N39B) 1(N24)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008715",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N34) 4(N51) 6(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N34) 6(N51)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N34) 4(N51) 1(N01)": [
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008715",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N34) 6(N51)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N34) 4(N51) 6(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "6(N51) 1(N01)": [
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008715",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N54) 1(N51) 1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N34) 1(N54) 1(N51)": [
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008753",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "2(N01) 2(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01) 3(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01) 2(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008753",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N01) 3(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "2(N01) 2(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01) 3(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008753",
+   "kind": "total",
+   "slot": "total",
+   "truth": "4(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008784",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "4(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "8(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "4(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008784",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "4(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "6(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008784",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "3(N14) 2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N14) 6(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "3(N14) 2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008784",
+   "kind": "total",
+   "slot": "total",
+   "truth": "4(N14) 2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N14) 8(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "4(N14) 2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008806",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "2(N45)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "3(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "7(N34) 4(N14)": [
+     "S"
+    ],
+    "2(N45)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008806",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "3(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "3(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "3(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008806",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "3(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "3(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "3(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008806",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "3(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "3(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "3(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008806",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "6(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "3(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "6(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008806",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "3(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008806",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "3(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008806",
+   "kind": "entry",
+   "slot": 7,
+   "truth": "3(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "3(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "3(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008806",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N34) 1(N45)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N34) 2(N45) 2(N14)": [
+     "S"
+    ],
+    "1(N34) 1(N45)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008813",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "4(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N14)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008813",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "2(N14)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "4(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008813",
+   "kind": "total",
+   "slot": "total",
+   "truth": "3(N39B) 1(N24) 1(N30C)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N14) 4(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008825",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P008825",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "5(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008825",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P008825",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P008825",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "2(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008825",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P008825",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "5(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008825",
+   "kind": "total",
+   "slot": "total",
+   "truth": "2(N39B) 1(N24) 2(N30D)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 6(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N14) 4(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N14) 2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 3(N01) 2(N30C)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01) 1(N39B) 2(N30C)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14) 2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01) 2(N30C)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "2(N39B) 1(N24) 2(N30D)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01) 3(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "1(N39B) 1(N24) 1(N30C)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01) 2(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14) 2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01) 2(N30C)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "1(N14) 2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 3(N01) 2(N30C)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "entry",
+   "slot": 7,
+   "truth": "4(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "5(N01) 2(N30C)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "entry",
+   "slot": 8,
+   "truth": "3(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N01) 2(N30C)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "entry",
+   "slot": 9,
+   "truth": "2(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01) 2(N39B) 2(N30C)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "entry",
+   "slot": 10,
+   "truth": "2(N39B) 1(N24) 1(N30C)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01) 3(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "entry",
+   "slot": 11,
+   "truth": "2(N39B) 1(N24)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01) 2(N39B) 1(N24) 2(N30C)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "entry",
+   "slot": 12,
+   "truth": "1(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01) 1(N39B) 2(N30C)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008838",
+   "kind": "total",
+   "slot": "total",
+   "truth": "4(N14) 4(N01) 3(N39B) 1(N24) 2(N30C)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N14) 3(N01) 3(N39B) 1(N24)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008851",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "3(N01) 1(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01) 3(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N01) 2(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008851",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N01) 3(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "3(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01) 4(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008851",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01) 4(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01) 3(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008851",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N01) 1(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01) 3(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01) 2(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008851",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "2(N01) 1(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01) 3(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N01) 2(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008851",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N01) 3(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "3(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01) 4(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008851",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "3(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01) 3(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N01) 4(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008851",
+   "kind": "total",
+   "slot": "total",
+   "truth": "2(N14) 1(N01) 2(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N14) 1(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008895",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 6(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14) 2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008895",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 6(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14) 2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008895",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N14)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N14) 4(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008895",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 5(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14) 1(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008895",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 6(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14) 2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008895",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "3(N14)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N14) 4(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "4(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008895",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "1(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 5(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14) 1(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008895",
+   "kind": "entry",
+   "slot": 7,
+   "truth": "1(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 5(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14) 1(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008895",
+   "kind": "total",
+   "slot": "total",
+   "truth": "6(N14) 3(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N14) 9(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "5(N14) 3(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008922",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "5(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "5(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008922",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008922",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008922",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008922",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008922",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "8(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "8(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008922",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "3(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008922",
+   "kind": "entry",
+   "slot": 7,
+   "truth": "6(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "6(N01)": [
+     "S",
+     "D",
+     "B"
+    ]
+   }
+  },
+  {
+   "pid": "P008922",
+   "kind": "total",
+   "slot": "total",
+   "truth": "5(N14) 4(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "5(N14) 4(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "7(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008980",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P008980",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P008980",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P008980",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "5(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008980",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "2(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008980",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "2(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008980",
+   "kind": "total",
+   "slot": "total",
+   "truth": "4(N39B) 1(N24) 1(N30C)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 2(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "2(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008989",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "2(N01) 3(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01) 2(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008989",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "4(N01) 4(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01) 2(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008989",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "2(N01) 2(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N01) 3(N39B)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008989",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N14) 2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 3(N01) 4(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P008992",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N01) 1(N39B)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008992",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N39B)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008992",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "3(N14)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P008992",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P008992",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P008992",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P008992",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P008992",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N01) 5(N39B) 2(N30C)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N14) 5(N01) 2(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009002",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N14) 5(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 5(N01)": [
+     "S",
+     "B"
+    ],
+    "2(N45) 5(N14) 5(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009002",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "3(N14)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N14)": [
+     "S",
+     "B"
+    ],
+    "2(N45) 7(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009002",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "2(N14)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N14)": [
+     "S",
+     "B"
+    ],
+    "2(N45) 6(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009002",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N14)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "3(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "B"
+    ],
+    "2(N45) 5(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009002",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N34) 1(N14) 5(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N34) 1(N14) 5(N01)": [
+     "S",
+     "B"
+    ],
+    "7(N14) 5(N01)": [
+     "D",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009011",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "4(N39B)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N39B)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009011",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "3(N39B)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N39B)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009011",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "2(N39B)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "3(N39B)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009011",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "2(N39B)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "3(N39B)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009011",
+   "kind": "total",
+   "slot": "total",
+   "truth": "4(N39B)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01) 1(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009014",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009014",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009014",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009014",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009014",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "1(N24)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009014",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009014",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009014",
+   "kind": "entry",
+   "slot": 7,
+   "truth": "1(N24)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009014",
+   "kind": "entry",
+   "slot": 8,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009014",
+   "kind": "entry",
+   "slot": 9,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009014",
+   "kind": "entry",
+   "slot": 10,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009014",
+   "kind": "entry",
+   "slot": 11,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009014",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N01) 1(N24)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 4(N01) 1(N39B)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009032",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "8(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "4(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009032",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "6(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "8(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009032",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "8(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "4(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009032",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "4(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "8(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009032",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N01) 1(N39B) 1(N30C)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N14) 6(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "4(N14) 2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009107",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N14) 2(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 6(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14) 2(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009107",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N14) 3(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14) 7(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14) 3(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009107",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N14) 3(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14) 7(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14) 3(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009107",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N14) 3(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14) 7(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14) 3(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009107",
+   "kind": "total",
+   "slot": "total",
+   "truth": "5(N14) 5(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "5(N14) 1(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "5(N14) 5(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009125",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009125",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009125",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009125",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009125",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009125",
+   "kind": "total",
+   "slot": "total",
+   "truth": "6(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "6(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009130",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "3(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "6(N34) 1(N45) 4(N14) 7(N01)": [
+     "S"
+    ]
+   }
+  },
+  {
+   "pid": "P009130",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "2(N14) 3(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "6(N34) 1(N45) 4(N14)": [
+     "S"
+    ]
+   }
+  },
+  {
+   "pid": "P009130",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "4(N14) 3(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "7(N34) 1(N45)": [
+     "S"
+    ],
+    "4(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009130",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "4(N14) 3(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "7(N34) 1(N45)": [
+     "S"
+    ],
+    "4(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009130",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "1(N14) 2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "6(N34) 1(N45) 2(N14) 9(N01)": [
+     "S"
+    ]
+   }
+  },
+  {
+   "pid": "P009130",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "2(N14) 3(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "6(N34) 1(N45) 4(N14)": [
+     "S"
+    ]
+   }
+  },
+  {
+   "pid": "P009130",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "1(N14) 3(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "6(N34) 1(N45) 3(N14)": [
+     "S"
+    ]
+   }
+  },
+  {
+   "pid": "P009130",
+   "kind": "entry",
+   "slot": 7,
+   "truth": "1(N14) 3(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "6(N34) 1(N45) 3(N14)": [
+     "S"
+    ]
+   }
+  },
+  {
+   "pid": "P009130",
+   "kind": "entry",
+   "slot": 8,
+   "truth": "3(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "6(N34) 1(N45) 2(N14)": [
+     "S"
+    ]
+   }
+  },
+  {
+   "pid": "P009130",
+   "kind": "entry",
+   "slot": 9,
+   "truth": "1(N14) 3(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "6(N34) 1(N45) 3(N14)": [
+     "S"
+    ]
+   }
+  },
+  {
+   "pid": "P009130",
+   "kind": "entry",
+   "slot": 10,
+   "truth": "1(N14) 3(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14) 3(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "6(N34) 1(N45) 3(N14)": [
+     "S"
+    ]
+   }
+  },
+  {
+   "pid": "P009130",
+   "kind": "total",
+   "slot": "total",
+   "truth": "2(N45) 6(N01)",
+   "n_cand": 4,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N34) 4(N14) 9(N01)": [
+     "S"
+    ],
+    "2(N14) 9(N01) 2(N23)": [
+     "D"
+    ],
+    "1(N34) 1(N51) 4(N14) 9(N01)": [
+     "B"
+    ],
+    "2(N45) 4(N14) 5(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009155",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009155",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009155",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N51) 3(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009155",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "3(N39B)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009155",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "3(N39B)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009155",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N30C) 1(N30D)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009155",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009155",
+   "kind": "entry",
+   "slot": 7,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009155",
+   "kind": "entry",
+   "slot": 8,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009155",
+   "kind": "total",
+   "slot": "total",
+   "truth": "5(N01) 3(N39B)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009350",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009350",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009350",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009350",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "2(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009350",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N14) 4(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N14) 4(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009359",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009359",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "4(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "4(N01)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009359",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009359",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009359",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009359",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009359",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "1(N14)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": true,
+   "unique_correct": true,
+   "baseline": "1(N14)",
+   "baseline_correct": true,
+   "candidates": {
+    "1(N14)": [
+     "S",
+     "D",
+     "B",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009359",
+   "kind": "total",
+   "slot": "total",
+   "truth": "6(N14) 4(N01)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": true,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "1(N34) 4(N01)": [
+     "S",
+     "B"
+    ],
+    "6(N14) 4(N01)": [
+     "D",
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009382",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009382",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009382",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009382",
+   "kind": "entry",
+   "slot": 3,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009382",
+   "kind": "entry",
+   "slot": 4,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009382",
+   "kind": "entry",
+   "slot": 5,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009382",
+   "kind": "entry",
+   "slot": 6,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009382",
+   "kind": "entry",
+   "slot": 7,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009382",
+   "kind": "entry",
+   "slot": 8,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009382",
+   "kind": "entry",
+   "slot": 9,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": true,
+   "candidates": {}
+  },
+  {
+   "pid": "P009382",
+   "kind": "entry",
+   "slot": 10,
+   "truth": "2(N14)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009382",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N14)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N14) 2(N01)",
+   "baseline_correct": false,
+   "candidates": {
+    "3(N14)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "3(N14) 4(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P009487",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "8(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009487",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "1(N01)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "8(N01)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P009487",
+   "kind": "total",
+   "slot": "total",
+   "truth": "2(N39B) 2(N30C)",
+   "n_cand": 2,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "9(N01)": [
+     "S",
+     "D",
+     "B"
+    ],
+    "1(N14) 3(N01)": [
+     "C"
+    ]
+   }
+  },
+  {
+   "pid": "P368541",
+   "kind": "entry",
+   "slot": 0,
+   "truth": "2(N39B)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "3(N39B)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P368541",
+   "kind": "entry",
+   "slot": 1,
+   "truth": "3(N39B)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "2(N39B)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P368541",
+   "kind": "entry",
+   "slot": 2,
+   "truth": "1(N01) 1(N39B) 1(N30C)",
+   "n_cand": 0,
+   "unique": false,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "3(N39B)",
+   "baseline_correct": false,
+   "candidates": {}
+  },
+  {
+   "pid": "P368541",
+   "kind": "total",
+   "slot": "total",
+   "truth": "1(N01)",
+   "n_cand": 1,
+   "unique": true,
+   "covered": false,
+   "unique_correct": false,
+   "baseline": "1(N14)",
+   "baseline_correct": false,
+   "candidates": {
+    "2(N01) 1(N39B) 1(N30C)": [
+     "C"
+    ]
+   }
+  }
+ ],
+ "runtime_s": 99.7
+}

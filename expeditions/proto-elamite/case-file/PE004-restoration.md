@@ -3,8 +3,9 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-Status: **pre-registration** (this file and `tools/pe004_restore.py`), committed and published before any
-calibration number (recovery, precision, baseline, null) was computed.
+Status: **results below** (verdict: entry and total targets both **NOT VALIDATED**, gate G2 precision fails; no
+restoration list is published). Pre-registration (this file and `tools/pe004_restore.py`) was published as `5301a04`
+before any calibration number (recovery, precision, baseline, null) was computed.
 Looked at beforehand (disclosed): the structural inventory (`analysis/pe004_inventory.json`: tablet and slot counts
 only), the solver check G0 on **synthetic** tablets (2 000 tablets, 11 994 slots, 0 missed, seed 401; no corpus data),
 and the run time of the null on unshuffled-shape data (no count read). Known from earlier cycles: PE001 (19 of 38
@@ -66,5 +67,54 @@ every field of `analysis/pe003_results.json` and `analysis/pe003_posthoc.json` (
 
 Tool: [`tools/pe004_restore.py`](../tools/pe004_restore.py) (`inventory`, `calibrate`, `apply`, `audit`). Expected
 compute: about 75 s for the null, under a second for the rest.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration was published as `5301a04`)
+
+Order of events (America/Vancouver, 2026-11-08): pre-registration published to `main` (`5301a04`) at ~17:23; stage 1
+(calibration) ran 17:23:48–17:25:28 (99.7 s); PE003 audit and post hoc right after. Outputs:
+`analysis/pe004_calibration.json` (every task with its candidates and the baseline guess),
+`analysis/pe004_calibration_run.log`, `analysis/pe004_pe003_audit.json`, `analysis/pe004_posthoc.json`,
+`analysis/pe004_posthoc_run.log`.
+
+**Stage 1 — calibration on 45 intact single-total tablets** (leave-one-out):
+
+| Target | tasks | unique | unique & correct | recovery | precision (CP95 low) | no candidate | baseline correct | McNemar rule-only / base-only, p | null mean (max), p | Gates G0 G1 G2 G3 G4 | Verdict |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| entry | 266 | 122 | 85 | 0.320 | **0.697** (0.621) | 96 | 102 (0.383) | 47 / 64, p 0.956 | 3.2 (30), 0.0001 | ✓ ✓ **✗** **✗** ✓ | **NOT VALIDATED** |
+| total | 45 | 21 | 8 | 0.178 | **0.381** (0.206) | 1 | 0 (0.000) | 8 / 0, p 0.0039 (Holm ✓) | 0.29 (3), 0.0001 | ✓ ✓ **✗** ✓ ✓ | **NOT VALIDATED** |
+
+G0: 2 000 synthetic tablets, 11 994 slots, 0 missed. The arithmetic beats the destroyed-arithmetic null by far in both
+targets (p 0.0001), but it is not precise enough to put forward a reading: about 3 in 10 unique entry restorations and
+6 in 10 unique total restorations would be wrong, and for entries the plain frequency guess (the tablet's commonest
+entry) is right more often (102 vs 85). **By the rule, stage 2 is not run: no restoration list is published.**
+
+## Post-hoc diagnostics (after the gates; no decision weight; `tools/pe004_posthoc.py`, deterministic)
+- **P1, where the errors come from.** All 37 wrong unique entry outputs and all 13 wrong unique total outputs are on
+  the **23 of 45 tablets that do not balance** in any system. On the 22 balancing tablets there are no unique-but-wrong
+  outputs, and no truth is a non-canonical notation.
+- **P2, the upper bound.** Restricted to balancing tablets: entry precision 85/85 = 1.00 (CP95 low 0.965), recovery
+  0.71 (34 of 119 tasks ambiguous across systems); total precision 8/8 (CP95 low 0.69), recovery 0.36 (14 of 22
+  ambiguous). The solver and the canonical notation are not the problem. The problem is that **a damaged tablet cannot
+  be checked for balance** (the missing slot absorbs any difference) and only about half of intact single-total tablets
+  balance (22/45 here, 19/38 in PE001).
+- **P3, why the baseline is strong.** 62 % of entry tasks hide a notation that occurs again on the same tablet (lists of
+  `1(N01)`, `2(N01)`…), so the frequency guess is a hard baseline for entries.
+
+## PE003 audit
+PE003 stage 2 (seed 302) and post hoc (seed 305) re-run from the published tools in a scratch copy: **identical** to
+the committed `analysis/pe003_results.json` and `analysis/pe003_posthoc.json` in every field except run time
+(`analysis/pe004_pe003_audit.json`).
+
+## What PE004 settles
+- Grand-total arithmetic restores a missing numeral **exactly whenever the tablet balances** (P2), but blind to balance
+  it is right only 70 % (entries) and 38 % (totals) of the times it gives a unique answer. That is below the
+  pre-registered 0.80 bar, so **no restorations are proposed**. A negative, published as such.
+- The next lever is not a better solver but a **balance predictor**: something observable on a damaged tablet that
+  tells balancing from non-balancing tablets (e.g. mixed systems or commodities among the entries; PE001 saw that most
+  non-balancing tablets have total < sum). It must be scored on intact tablets first (open line 6, reframed).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

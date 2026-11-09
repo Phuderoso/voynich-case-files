@@ -1,0 +1,35 @@
+{
+ "balancing_tablets": 22,
+ "tablets": 45,
+ "entry": {
+  "unique_wrong": 37,
+  "unique_wrong_on_balancing_tablets": 0,
+  "of_which_true_notation_non_canonical": 0,
+  "unique_wrong_on_non_balancing_tablets": 37,
+  "balancing_only": {
+   "tasks": 119,
+   "unique": 85,
+   "unique_correct": 85,
+   "precision": 1.0,
+   "cp95_low": 0.9653699250293128,
+   "recovery": 0.7142857142857143,
+   "ambiguous": 34
+  }
+ },
+ "total": {
+  "unique_wrong": 13,
+  "unique_wrong_on_balancing_tablets": 0,
+  "of_which_true_notation_non_canonical": 0,
+  "unique_wrong_on_non_balancing_tablets": 13,
+  "balancing_only": {
+   "tasks": 22,
+   "unique": 8,
+   "unique_correct": 8,
+   "precision": 1.0,
+   "cp95_low": 0.6876560219336321,
+   "recovery": 0.36363636363636365,
+   "ambiguous": 14
+  }
+ },
+ "P3_entry_repeats_on_tablet": 0.6165413533834586
+}

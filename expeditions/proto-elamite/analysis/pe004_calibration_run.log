@@ -1,0 +1,82 @@
+null rep 0 1.0
+null rep 2000 20.2
+null rep 4000 37.8
+null rep 6000 57.4
+null rep 8000 77.8
+{
+ "calibration_tablets": 45,
+ "G0_solver_plant": {
+  "synthetic_tablets": 2000,
+  "slots": 11994,
+  "missed": 0,
+  "pass": true,
+  "seed": 401
+ },
+ "entry": {
+  "tasks": 266,
+  "unique": 122,
+  "unique_correct": 85,
+  "covered": 119,
+  "mean_candidates": 0.8195488721804511,
+  "no_candidate": 96,
+  "recovery_rate": 0.31954887218045114,
+  "precision_unique": 0.6967213114754098,
+  "precision_cp95_low": 0.6210385514223561,
+  "baseline_correct": 102,
+  "baseline_rate": 0.38345864661654133,
+  "mcnemar": {
+   "rule_only": 47,
+   "baseline_only": 64,
+   "p": 0.9564554363881258
+  },
+  "null": {
+   "R": 9999,
+   "seed": 404,
+   "mean": 3.1573157315731573,
+   "max": 30,
+   "p": 0.0001
+  },
+  "gates": {
+   "G0_solver": true,
+   "G1_tasks": true,
+   "G2_precision": false,
+   "G3_beats_baseline_holm": false,
+   "G4_beats_null": true
+  },
+  "verdict": "NOT VALIDATED"
+ },
+ "total": {
+  "tasks": 45,
+  "unique": 21,
+  "unique_correct": 8,
+  "covered": 22,
+  "mean_candidates": 1.5555555555555556,
+  "no_candidate": 1,
+  "recovery_rate": 0.17777777777777778,
+  "precision_unique": 0.38095238095238093,
+  "precision_cp95_low": 0.205749898750653,
+  "baseline_correct": 0,
+  "baseline_rate": 0.0,
+  "mcnemar": {
+   "rule_only": 8,
+   "baseline_only": 0,
+   "p": 0.00390625
+  },
+  "null": {
+   "R": 9999,
+   "seed": 404,
+   "mean": 0.29002900290029004,
+   "max": 3,
+   "p": 0.0001
+  },
+  "gates": {
+   "G0_solver": true,
+   "G1_tasks": true,
+   "G2_precision": false,
+   "G3_beats_baseline_holm": true,
+   "G4_beats_null": true
+  },
+  "verdict": "NOT VALIDATED"
+ },
+ "runtime_s": 99.7
+}
