@@ -89,4 +89,8 @@ vs 0.020; p 0.001 both; negative control 0/20). Planted sizes: H1 m* 60 and host
 (power at 30 was 0.76 with seed 4004, 0.81 with 4006: a borderline floor, ±10 strokes). Files:
 [`analysis/rr007_auditD_rr004.json`](../analysis/rr007_auditD_rr004.json), [`analysis/rr007_auditD.log`](../analysis/rr007_auditD.log).
 
+## Audit note (RR009, audit F, seed 7008)
+Re-run with seed 7008: all 25 verdicts and both controls unchanged; k* ±1 in 4 pairs (range 1–4); Ab–Ca p 0.024
+(was 0.042), still far from Holm 0.002. See [RR009](RR009-fusion-conservation.md).
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

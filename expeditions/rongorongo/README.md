@@ -26,6 +26,7 @@ publish negatives. **No decipherment is claimed.**
 | RR006 | Same 25 pairs, allowing one dropped or extra sign inside the shared run; plus a seed-replication audit of RR005 | same, codes padded | **NOT DETECTED, all 25 pairs powered** (lg* 5–9; controls Hr–Qr 12, Hr–Pr 13; reversed 0/0; smallest p 0.105). Audit C: RR005 seed-stable (l1* ±1 in 3 pairs). The RR005 lead Ab05/Er04 is a published parallel (Horley). [RR006](case-file/RR006-indel-isolation.md) |
 | RR007 | Do two objects share more short exact formulae (head-sign trigrams) than an order-1 Markov text? Plus a seed audit of RR004 | same, codes padded | **NOT DETECTED, all 25 pairs powered** (k* 1–3 planted 4-sign excerpts; controls Hr–Qr 99, Hr–Pr 119; reversed 0 Holm). Known-answer Ab–Er: only 1 shared trigram, because Horley's parallel differs by one sign, so exact n-grams are blind to variant parallels. Audit D: RR004 seed-stable. [RR007](case-file/RR007-shared-formulae.md) |
 | RR008 | Same trigram count after merging sign families learned from the H/P/Q copies only (14 swaps, 11 classes); plus a seed audit of RR006 | same, codes padded | **NOT DETECTED, all 25 pairs powered** (k* 1–4; controls Hr–Qr 103, Hr–Pr 148; reversed 0 Holm). Six pairs gained 1–2 trigrams but the null rose too (min p 0.062). Known answer Ab–Er stays at 1, as declared: three copies of one text are too small a dictionary. Audit E: RR006 verdicts stable, lg* ±1. [RR008](case-file/RR008-equivalence-formulae.md) |
+| RR009 | When two of the H/P/Q copies write the same host sign, do they agree on its fused stroke? Plus a seed audit of RR007 | same, codes padded | **DETECTED** (41 of 163 aligned pairs disagree vs 120–170 under a per-host shuffle, p 0.001; f* 0.20; negative control 1/20). Rules out strokes added at random; affix vs faithfully copied ligature still open. Exploratory: 9 of the 41 disagreements write the stroke loose beside the host. Audit F: RR007 stable, k* ±1. [RR009](case-file/RR009-fusion-conservation.md) |
 
 ## Data (pinned 2026-11-09, see [data/MANIFEST.md](data/MANIFEST.md))
 - **CEIPP numerical transliteration** (Cercle d'Études sur l'Île de Pâques et la Polynésie, after T. Barthel 1958),
@@ -48,8 +49,11 @@ publish negatives. **No decipherment is claimed.**
 3. ~~**Small-sign chains (4, 2, 1, 9)**~~ closed for free strokes by RR002 (order NOT TESTABLE) and RR003 (clumping and
    entry-edge position NOT DETECTED, powered). Lead left: strokes may avoid the entry-initial slot (post hoc).
 4. ~~**Fused strokes: host selectivity**~~ (RR004): **DETECTED**. Each stroke type has its own hosts and its own side,
-   beyond a within-tablet shuffle, and this holds at the type level. Still open (4b): affix or ligature? Test whether
-   host+stroke and bare host alternate at the same slot in the H/P/Q parallel passages, against a slot-shuffle null.
+   beyond a within-tablet shuffle, and this holds at the type level.
+   4b answered (RR009): **DETECTED**, the H/P/Q copies keep the fused stroke on 3 of 4 shared hosts (p 0.001), far
+   beyond a per-host shuffle. Affix vs faithfully copied ligature is still open. Next (4c): when the copies disagree,
+   is the stroke written loose beside the host more often than a free stroke sits next to that host by chance?
+   (Exploratory count: 9 of 41.)
 5. ~~**Fuzzy-copy calibration**~~ closed by RR005: no shared one-substitution run of l1* (5–8) or more head signs.
    5b resolved (RR006): the Ab05 / Er04 lead is a published parallel (Horley, Er4 ref. Ab5–6, Bv11), not new.
    5c closed (RR006): no one-indel copy of lg* (5–9) or more. Lesson: these tests miss the short catalogued parallels;
@@ -71,3 +75,4 @@ publish negatives. **No decipherment is claimed.**
 - 2026-11-09 (RR006): none new. The rochal draft stays pending; no new issue raised.
 - 2026-11-09 (RR007): none new; the rochal draft stays pending.
 - 2026-11-09 (RR008): none new; the rochal draft stays pending.
+- 2026-11-09 (RR009): none new; the rochal draft stays pending.
