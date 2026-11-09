@@ -1,0 +1,52 @@
+POSITIVE [{'pair': 'Hr-Qr', 'T': 99, 'null_max': 49, 'p': 0.001, 'passes': True}, {'pair': 'Hr-Pr', 'T': 119, 'null_max': 54, 'p': 0.001, 'passes': True}]
+Aa Br T 2 null max 4 p 0.235 k* 2 2s
+Aa Bv T 1 null max 3 p 0.373 k* 2 3s
+Aa Ca T 1 null max 4 p 0.382 k* 2 4s
+Aa Cb T 2 null max 5 p 0.446 k* 2 4s
+Aa Er T 0 null max 2 p 1.0 k* 2 5s
+Aa Ia T 0 null max 4 p 1.0 k* 3 9s
+Ab Br T 2 null max 4 p 0.237 k* 2 10s
+Ab Bv T 2 null max 7 p 0.456 k* 3 11s
+Ab Ca T 8 null max 10 p 0.024 k* 1 12s
+Ab Cb T 5 null max 8 p 0.113 k* 2 12s
+Ab Er T 1 null max 4 p 0.593 k* 2 13s
+Ab Ia T 2 null max 4 p 0.208 k* 2 16s
+Br Ca T 0 null max 0 p 1.0 k* 1 17s
+Br Cb T 0 null max 4 p 1.0 k* 3 18s
+Br Er T 1 null max 1 p 0.063 k* 1 19s
+Br Ia T 0 null max 3 p 1.0 k* 2 22s
+Bv Ca T 2 null max 3 p 0.318 k* 1 23s
+Bv Cb T 2 null max 4 p 0.276 k* 2 24s
+Bv Er T 1 null max 4 p 0.839 k* 2 24s
+Bv Ia T 1 null max 3 p 0.168 k* 1 28s
+Ca Er T 1 null max 7 p 0.859 k* 4 28s
+Ca Ia T 2 null max 4 p 0.113 k* 2 32s
+Cb Er T 1 null max 2 p 0.479 k* 1 32s
+Cb Ia T 0 null max 2 p 1.0 k* 2 36s
+Er Ia T 0 null max 3 p 1.0 k* 2 39s
+GATES {'positive_controls_pass': True, 'reversed_holm_detections': 0, 'reversed_unadjusted_hits': 1, 'gate_reversed_ok': True}
+Aa-Br 2 4 0.235 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Aa-Bv 1 3 0.373 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Aa-Ca 1 4 0.382 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Aa-Cb 2 5 0.446 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Aa-Er 0 2 1.0 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Aa-Ia 0 4 1.0 3 NOT DETECTED (3 shared 4-sign excerpts would be seen)
+Ab-Br 2 4 0.237 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Ab-Bv 2 7 0.456 3 NOT DETECTED (3 shared 4-sign excerpts would be seen)
+Ab-Ca 8 10 0.024 1 NOT DETECTED (1 shared 4-sign excerpts would be seen)
+Ab-Cb 5 8 0.113 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Ab-Er 1 4 0.593 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Ab-Ia 2 4 0.208 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Br-Ca 0 0 1.0 1 NOT DETECTED (1 shared 4-sign excerpts would be seen)
+Br-Cb 0 4 1.0 3 NOT DETECTED (3 shared 4-sign excerpts would be seen)
+Br-Er 1 1 0.063 1 NOT DETECTED (1 shared 4-sign excerpts would be seen)
+Br-Ia 0 3 1.0 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Bv-Ca 2 3 0.318 1 NOT DETECTED (1 shared 4-sign excerpts would be seen)
+Bv-Cb 2 4 0.276 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Bv-Er 1 4 0.839 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Bv-Ia 1 3 0.168 1 NOT DETECTED (1 shared 4-sign excerpts would be seen)
+Ca-Er 1 7 0.859 4 NOT DETECTED (4 shared 4-sign excerpts would be seen)
+Ca-Ia 2 4 0.113 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Cb-Er 1 2 0.479 1 NOT DETECTED (1 shared 4-sign excerpts would be seen)
+Cb-Ia 0 2 1.0 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)
+Er-Ia 0 3 1.0 2 NOT DETECTED (2 shared 4-sign excerpts would be seen)

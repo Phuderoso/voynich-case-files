@@ -1,0 +1,714 @@
+{
+ "seed": 7007,
+ "R": 999,
+ "plants": 100,
+ "n": 3,
+ "bonferroni_alpha": 0.002,
+ "positive": [
+  {
+   "pair": "Hr-Qr",
+   "T": 99,
+   "null_max": 49,
+   "p": 0.001,
+   "passes": true
+  },
+  {
+   "pair": "Hr-Pr",
+   "T": 119,
+   "null_max": 54,
+   "p": 0.001,
+   "passes": true
+  }
+ ],
+ "gates": {
+  "positive_controls_pass": true,
+  "reversed_holm_detections": 0,
+  "reversed_unadjusted_hits": 1,
+  "gate_reversed_ok": true
+ },
+ "reversed_p": [
+  0.152,
+  1.0,
+  1.0,
+  0.154,
+  1.0,
+  0.677,
+  1.0,
+  0.512,
+  0.136,
+  0.102,
+  1.0,
+  0.421,
+  1.0,
+  1.0,
+  0.249,
+  1.0,
+  0.939,
+  0.149,
+  0.713,
+  0.474,
+  1.0,
+  0.025,
+  1.0,
+  1.0,
+  1.0
+ ],
+ "results": [
+  {
+   "pair": "Aa-Br",
+   "T": 2,
+   "null_mean": 0.93,
+   "null_max": 4,
+   "p": 0.235,
+   "kstar": 2,
+   "power": {
+    "1": 0.02,
+    "2": 0.95,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "004 004 004",
+    "600 004 600"
+   ],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Aa-Bv",
+   "T": 1,
+   "null_mean": 0.42,
+   "null_max": 3,
+   "p": 0.373,
+   "kstar": 2,
+   "power": {
+    "1": 0.02,
+    "2": 0.92,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "044 002 001"
+   ],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Aa-Ca",
+   "T": 1,
+   "null_mean": 0.48,
+   "null_max": 4,
+   "p": 0.382,
+   "kstar": 2,
+   "power": {
+    "1": 0.01,
+    "2": 0.93,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "254 005 380"
+   ],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Aa-Cb",
+   "T": 2,
+   "null_mean": 1.42,
+   "null_max": 5,
+   "p": 0.446,
+   "kstar": 2,
+   "power": {
+    "1": 0.03,
+    "2": 0.96,
+    "3": 0.99,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "001 001 001",
+    "005 430 002"
+   ],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Aa-Er",
+   "T": 0,
+   "null_mean": 0.27,
+   "null_max": 2,
+   "p": 1.0,
+   "kstar": 2,
+   "power": {
+    "1": 0.03,
+    "2": 0.9,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Aa-Ia",
+   "T": 0,
+   "null_mean": 0.9,
+   "null_max": 4,
+   "p": 1.0,
+   "kstar": 3,
+   "power": {
+    "1": 0.0,
+    "2": 0.02,
+    "3": 0.89,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [],
+   "verdict": "NOT DETECTED (3 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Ab-Br",
+   "T": 2,
+   "null_mean": 0.97,
+   "null_max": 4,
+   "p": 0.237,
+   "kstar": 2,
+   "power": {
+    "1": 0.05,
+    "2": 0.96,
+    "3": 0.99,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "004 005 001",
+    "004 600 040"
+   ],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Ab-Bv",
+   "T": 2,
+   "null_mean": 1.54,
+   "null_max": 7,
+   "p": 0.456,
+   "kstar": 3,
+   "power": {
+    "1": 0.0,
+    "2": 0.1,
+    "3": 0.91,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "002 002 002",
+    "005 005 001"
+   ],
+   "verdict": "NOT DETECTED (3 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Ab-Ca",
+   "T": 8,
+   "null_mean": 4.18,
+   "null_max": 10,
+   "p": 0.024,
+   "kstar": 1,
+   "power": {
+    "1": 0.89,
+    "2": 0.98,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "001 280 001",
+    "002 002 002",
+    "002 004 002",
+    "005 002 002",
+    "005 005 001",
+    "005 005 005",
+    "008 600 040",
+    "400 002 002"
+   ],
+   "verdict": "NOT DETECTED (1 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Ab-Cb",
+   "T": 5,
+   "null_mean": 2.56,
+   "null_max": 8,
+   "p": 0.113,
+   "kstar": 2,
+   "power": {
+    "1": 0.03,
+    "2": 0.88,
+    "3": 0.97,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "002 002 005",
+    "002 004 002",
+    "002 005 002",
+    "004 002 004",
+    "005 002 208"
+   ],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Ab-Er",
+   "T": 1,
+   "null_mean": 0.77,
+   "null_max": 4,
+   "p": 0.593,
+   "kstar": 2,
+   "power": {
+    "1": 0.02,
+    "2": 0.93,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "739 006 090"
+   ],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Ab-Ia",
+   "T": 2,
+   "null_mean": 0.9,
+   "null_max": 4,
+   "p": 0.208,
+   "kstar": 2,
+   "power": {
+    "1": 0.05,
+    "2": 0.95,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "002 002 002",
+    "005 005 005"
+   ],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Br-Ca",
+   "T": 0,
+   "null_mean": 0.0,
+   "null_max": 0,
+   "p": 1.0,
+   "kstar": 1,
+   "power": {
+    "1": 0.99,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [],
+   "verdict": "NOT DETECTED (1 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Br-Cb",
+   "T": 0,
+   "null_mean": 0.75,
+   "null_max": 4,
+   "p": 1.0,
+   "kstar": 3,
+   "power": {
+    "1": 0.0,
+    "2": 0.12,
+    "3": 0.94,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [],
+   "verdict": "NOT DETECTED (3 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Br-Er",
+   "T": 1,
+   "null_mean": 0.06,
+   "null_max": 1,
+   "p": 0.063,
+   "kstar": 1,
+   "power": {
+    "1": 0.96,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "063 001 063"
+   ],
+   "verdict": "NOT DETECTED (1 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Br-Ia",
+   "T": 0,
+   "null_mean": 0.37,
+   "null_max": 3,
+   "p": 1.0,
+   "kstar": 2,
+   "power": {
+    "1": 0.0,
+    "2": 0.97,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Bv-Ca",
+   "T": 2,
+   "null_mean": 1.28,
+   "null_max": 3,
+   "p": 0.318,
+   "kstar": 1,
+   "power": {
+    "1": 0.92,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "002 002 002",
+    "005 005 001"
+   ],
+   "verdict": "NOT DETECTED (1 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Bv-Cb",
+   "T": 2,
+   "null_mean": 1.04,
+   "null_max": 4,
+   "p": 0.276,
+   "kstar": 2,
+   "power": {
+    "1": 0.01,
+    "2": 0.94,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "022 050 022",
+    "059 059 059"
+   ],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Bv-Er",
+   "T": 1,
+   "null_mean": 1.29,
+   "null_max": 4,
+   "p": 0.839,
+   "kstar": 2,
+   "power": {
+    "1": 0.0,
+    "2": 0.87,
+    "3": 0.99,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "017 004 022"
+   ],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Bv-Ia",
+   "T": 1,
+   "null_mean": 0.18,
+   "null_max": 3,
+   "p": 0.168,
+   "kstar": 1,
+   "power": {
+    "1": 0.95,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "002 002 002"
+   ],
+   "verdict": "NOT DETECTED (1 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Ca-Er",
+   "T": 1,
+   "null_mean": 1.82,
+   "null_max": 7,
+   "p": 0.859,
+   "kstar": 4,
+   "power": {
+    "1": 0.0,
+    "2": 0.02,
+    "3": 0.75,
+    "4": 0.96,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "755 050 005"
+   ],
+   "verdict": "NOT DETECTED (4 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Ca-Ia",
+   "T": 2,
+   "null_mean": 0.59,
+   "null_max": 4,
+   "p": 0.113,
+   "kstar": 2,
+   "power": {
+    "1": 0.03,
+    "2": 0.89,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "002 002 002",
+    "005 005 005"
+   ],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Cb-Er",
+   "T": 1,
+   "null_mean": 0.56,
+   "null_max": 2,
+   "p": 0.479,
+   "kstar": 1,
+   "power": {
+    "1": 0.86,
+    "2": 1.0,
+    "3": 1.0,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [
+    "670 040 040"
+   ],
+   "verdict": "NOT DETECTED (1 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Cb-Ia",
+   "T": 0,
+   "null_mean": 0.18,
+   "null_max": 2,
+   "p": 1.0,
+   "kstar": 2,
+   "power": {
+    "1": 0.06,
+    "2": 0.86,
+    "3": 0.97,
+    "4": 0.99,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  },
+  {
+   "pair": "Er-Ia",
+   "T": 0,
+   "null_mean": 0.37,
+   "null_max": 3,
+   "p": 1.0,
+   "kstar": 2,
+   "power": {
+    "1": 0.02,
+    "2": 1.0,
+    "3": 0.99,
+    "4": 1.0,
+    "5": 1.0,
+    "6": 1.0,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0
+   },
+   "shared": [],
+   "verdict": "NOT DETECTED (2 shared 4-sign excerpts would be seen)"
+  }
+ ],
+ "runtime_s": 39.0
+}

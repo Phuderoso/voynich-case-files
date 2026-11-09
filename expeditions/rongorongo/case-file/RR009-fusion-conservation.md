@@ -35,4 +35,27 @@ Conservation does not prove an affix: a careful copyist keeps flourishes too. A 
 optional strokes; DETECTED only says the copies agree. The CEIPP transcription's own choices about what is fused can
 make both copies agree by convention.
 
+## Results (seed 9009, R 999, run 2026-11-09)
+**Verdict: DETECTED.** Of 163 aligned same-host pairs with a stroke on at least one side, only **A = 41** disagree
+(one copy fused, the other bare). The per-host shuffle gives 120 to 170 (mean 146), so p = 0.001. Power and controls
+pass: f* = 0.20 (power 0.955; 0.795 at 0.15), negative control 1 rejection in 20. Pair counts: 976 aligned pairs;
+fused units per side Hr 71, Pr 80, Qr 44, Hv 54, Pv 45, Qv 22. Hosts kept most often: 010 (14 agreements), 064 (13),
+006 (8). Host 600 splits evenly (7 agree, 7 differ). Full table: [`analysis/rr009_results.json`](../analysis/rr009_results.json).
+
+**How far this goes.** The copies agree on the stroke three times out of four, far above chance. That is what a
+faithful copy of an obligatory piece would look like, but the null assumes the two copies are independent, and a
+careful copyist would keep a flourish too. So this rules out "added at random" and does not yet separate an affix from
+a faithfully copied ligature. The transcription's own conventions could add to the agreement (see Known limits).
+
+**Exploratory (not pre-registered, no null).** In 9 of the 41 disagreements, the copy without the fused stroke writes
+the same stroke as a free unit right next to the host (for example Pr `306.003a` against Hr `306`, followed by a free
+stroke). Those look like fused-versus-separate spellings of the same thing, which is ligature-like. Open line 4c will
+test that with a null.
+
+## Audit F (RR007, seed 7008)
+All 25 verdicts unchanged (NOT DETECTED); controls identical (Hr–Qr 99, Hr–Pr 119); reversed 0 Holm, 1 unadjusted.
+k* moved by 1 in 4 pairs (Ab–Ca, Ab–Cb, Ca–Er, Ca–Ia), range 1–4; largest p change 0.047. Ab–Ca fell from 0.042 to
+0.024, still far above the Holm threshold of 0.002. Files: [`analysis/rr009_auditF_rr007.json`](../analysis/rr009_auditF_rr007.json),
+[`analysis/rr009_auditF.log`](../analysis/rr009_auditF.log).
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
