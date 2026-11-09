@@ -37,4 +37,56 @@ as seed-unstable.
 ## Known limits
 One gap of one sign only; head signs only; no combination of a substitution and a gap.
 
+## Results (run 2026-11-09, seed 6006, 265.7 s)
+**Gates pass.** Hr–Qr Mg = 12 (null max 11, p 0.001), Hr–Pr Mg = 13 (null max 9, p 0.001); reversed-line control 0 Holm
+detections, 0 unadjusted hits.
+
+**All 25 pairs NOT DETECTED, each powered** (lg* 5–9 signs). Smallest p: Ca–Er 0.105.
+
+| pair | Mg | null median | null max | p | lg* | verdict |
+|---|---|---|---|---|---|---|
+| Aa-Br | 3 | 3 | 6 | 0.919 | 8 | NOT DETECTED |
+| Aa-Bv | 3 | 3 | 5 | 0.852 | 6 | NOT DETECTED |
+| Aa-Ca | 3 | 3 | 5 | 0.956 | 7 | NOT DETECTED |
+| Aa-Cb | 4 | 3 | 5 | 0.237 | 7 | NOT DETECTED |
+| Aa-Er | 2 | 3 | 4 | 1.000 | 6 | NOT DETECTED |
+| Aa-Ia | 3 | 3 | 6 | 0.978 | 7 | NOT DETECTED |
+| Ab-Br | 3 | 3 | 5 | 0.980 | 7 | NOT DETECTED |
+| Ab-Bv | 3 | 3 | 5 | 0.996 | 7 | NOT DETECTED |
+| Ab-Ca | 4 | 4 | 7 | 0.935 | 9 | NOT DETECTED |
+| Ab-Cb | 4 | 3 | 6 | 0.485 | 7 | NOT DETECTED |
+| Ab-Er | 3 | 3 | 4 | 0.988 | 6 | NOT DETECTED |
+| Ab-Ia | 3 | 3 | 5 | 0.956 | 7 | NOT DETECTED |
+| Br-Ca | 3 | 3 | 4 | 0.597 | 6 | NOT DETECTED |
+| Br-Cb | 2 | 3 | 4 | 1.000 | 6 | NOT DETECTED |
+| Br-Er | 3 | 3 | 3 | 0.535 | 5 | NOT DETECTED |
+| Br-Ia | 3 | 3 | 4 | 0.707 | 6 | NOT DETECTED |
+| Bv-Ca | 3 | 3 | 4 | 1.000 | 6 | NOT DETECTED |
+| Bv-Cb | 3 | 3 | 4 | 0.972 | 6 | NOT DETECTED |
+| Bv-Er | 3 | 4 | 4 | 0.996 | 6 | NOT DETECTED |
+| Bv-Ia | 3 | 3 | 3 | 0.561 | 5 | NOT DETECTED |
+| Ca-Er | 5 | 4 | 6 | 0.105 | 8 | NOT DETECTED |
+| Ca-Ia | 3 | 3 | 5 | 0.763 | 6 | NOT DETECTED |
+| Cb-Er | 3 | 3 | 4 | 0.863 | 6 | NOT DETECTED |
+| Cb-Ia | 2 | 3 | 4 | 1.000 | 6 | NOT DETECTED |
+| Er-Ia | 2 | 3 | 4 | 1.000 | 6 | NOT DETECTED |
+
+So no two of these objects share a copied passage of lg* (5–9) or more head signs with one sign dropped or added,
+beyond an order-1 Markov text. A shift costs one to two more signs of detection floor than a substitution (RR005, 5–8).
+
+## Audit C (of RR005): seed-stable
+RR005 re-run with seed 5006 only: gates identical in outcome (Hr–Qr 15, Hr–Pr 17; reversed 0/0), all 25 verdicts still
+NOT DETECTED, l1* moves by one sign in 3 pairs (Ab–Bv 8 → 7, Ab–Cb 7 → 8, Bv–Ia 5 → 6) and is identical in 22; p moves
+by at most 0.03. Ab–Er p 0.009 → 0.005, still above the Holm threshold 0.002. Files:
+[`analysis/rr006_auditC_rr005.json`](../analysis/rr006_auditC_rr005.json) (its `seed` field still says 5005 because the
+patch swaps the generator, not the label), [`analysis/rr006_auditC.log`](../analysis/rr006_auditC.log).
+Reading: floors carry about ±1 sign of Monte Carlo noise at 100 plants per length.
+
+## Line 5b resolved: the RR005 lead is a published parallel
+The Ab05 / Er04 window (`002 739 [700/027] 739 006 090`) is a known one. Horley's *Structural Analysis of Rongorongo
+Inscriptions* (Rapa Nui Journal) lists Er4 with Ab5–6 and Bv11 among its structured lists ([PDF](https://evols.library.manoa.hawaii.edu/server/api/core/bitstreams/d68c64ef-12c2-4d79-ae8a-afb56a43c762/content)). It is not new.
+Method lesson: a published parallel of six signs with one change reaches p 0.005–0.009 here, which is not significant
+after Holm over 25. Our isolation tests are conservative: they certify the absence of copies of ≥ 5–9 signs, not of
+the short list-like parallels the specialists catalogue.
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
