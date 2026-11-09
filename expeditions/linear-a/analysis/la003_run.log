@@ -1,0 +1,2 @@
+GATE A {"n_usable": 2, "usable": ["HT123+124a", "HT123+124b"], "floor_best_case": 0.5, "pass_n": false, "verdict": "NOT TESTABLE"}
+GATE B {"corpus_sign_roles": ["erasure", "fraction", "logogram", "syllabogram", "transaction"], "independent_numerals": false, "verdict": "NOT TESTABLE (numerals only via lineara.xyz unicode_text)"}

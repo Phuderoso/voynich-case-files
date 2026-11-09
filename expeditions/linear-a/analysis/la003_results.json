@@ -1,0 +1,343 @@
+{
+ "gateA": {
+  "n_usable": 2,
+  "usable": [
+   "HT123+124a",
+   "HT123+124b"
+  ],
+  "floor_best_case": 0.5,
+  "pass_n": false,
+  "verdict": "NOT TESTABLE"
+ },
+ "sides": [
+  {
+   "doc": "HT1",
+   "has_kuro": false,
+   "kuro_damage": false,
+   "kiro": [
+    {
+     "tail": [
+      "197"
+     ],
+     "numeric": true,
+     "value": "197",
+     "unreadable": [],
+     "damage": false
+    }
+   ],
+   "usage": "numeric",
+   "usable": false
+  },
+  {
+   "doc": "HT117a",
+   "has_kuro": true,
+   "kuro_damage": false,
+   "kiro": [
+    {
+     "tail": [
+      "𐄁",
+      "U-MI-NA-SI",
+      "𐄁"
+     ],
+     "numeric": false,
+     "value": "0",
+     "unreadable": [],
+     "damage": false
+    }
+   ],
+   "usage": "header/no numeral",
+   "usable": false
+  },
+  {
+   "doc": "HT123+124a",
+   "has_kuro": true,
+   "kuro_damage": false,
+   "kiro": [
+    {
+     "tail": [
+      "1",
+      ".3"
+     ],
+     "numeric": true,
+     "value": "1",
+     "unreadable": [
+      ".3"
+     ],
+     "damage": false
+    },
+    {
+     "tail": [
+      ".3"
+     ],
+     "numeric": false,
+     "value": "0",
+     "unreadable": [
+      ".3"
+     ],
+     "damage": false
+    },
+    {
+     "tail": [
+      "³⁄₄"
+     ],
+     "numeric": true,
+     "value": "3/4",
+     "unreadable": [],
+     "damage": false
+    },
+    {
+     "tail": [
+      "³⁄₄"
+     ],
+     "numeric": true,
+     "value": "3/4",
+     "unreadable": [],
+     "damage": false
+    },
+    {
+     "tail": [
+      "6"
+     ],
+     "numeric": true,
+     "value": "6",
+     "unreadable": [],
+     "damage": false
+    }
+   ],
+   "usage": "numeric",
+   "usable": true
+  },
+  {
+   "doc": "HT123+124b",
+   "has_kuro": true,
+   "kuro_damage": false,
+   "kiro": [
+    {
+     "tail": [
+      "5"
+     ],
+     "numeric": true,
+     "value": "5",
+     "unreadable": [],
+     "damage": false
+    }
+   ],
+   "usage": "numeric",
+   "usable": true
+  },
+  {
+   "doc": "HT15",
+   "has_kuro": false,
+   "kuro_damage": false,
+   "kiro": [
+    {
+     "tail": [
+      "400"
+     ],
+     "numeric": true,
+     "value": "400",
+     "unreadable": [],
+     "damage": false
+    }
+   ],
+   "usage": "numeric",
+   "usable": false
+  },
+  {
+   "doc": "HT30",
+   "has_kuro": false,
+   "kuro_damage": false,
+   "kiro": [
+    {
+     "tail": [
+      "𐄁",
+      "CYP",
+      "8"
+     ],
+     "numeric": true,
+     "value": "8",
+     "unreadable": [],
+     "damage": false
+    }
+   ],
+   "usage": "numeric",
+   "usable": false
+  },
+  {
+   "doc": "HT34",
+   "has_kuro": false,
+   "kuro_damage": false,
+   "kiro": [
+    {
+     "tail": [
+      "30",
+      "[[7]]"
+     ],
+     "numeric": true,
+     "value": "30",
+     "unreadable": [
+      "[[7]]"
+     ],
+     "damage": true
+    }
+   ],
+   "usage": "numeric",
+   "usable": false
+  },
+  {
+   "doc": "HT37",
+   "has_kuro": false,
+   "kuro_damage": false,
+   "kiro": [
+    {
+     "tail": [
+      "𐄁"
+     ],
+     "numeric": false,
+     "value": "0",
+     "unreadable": [],
+     "damage": false
+    }
+   ],
+   "usage": "header/no numeral",
+   "usable": false
+  },
+  {
+   "doc": "HT55a",
+   "has_kuro": false,
+   "kuro_damage": false,
+   "kiro": [
+    {
+     "tail": [
+      "𐄁"
+     ],
+     "numeric": false,
+     "value": "0",
+     "unreadable": [],
+     "damage": false
+    }
+   ],
+   "usage": "header/no numeral",
+   "usable": false
+  },
+  {
+   "doc": "HT88",
+   "has_kuro": true,
+   "kuro_damage": false,
+   "kiro": [
+    {
+     "tail": [
+      "𐄁"
+     ],
+     "numeric": false,
+     "value": "0",
+     "unreadable": [],
+     "damage": false
+    }
+   ],
+   "usage": "header/no numeral",
+   "usable": false
+  },
+  {
+   "doc": "HT93b",
+   "has_kuro": false,
+   "kuro_damage": false,
+   "kiro": [
+    {
+     "tail": [],
+     "numeric": false,
+     "value": "0",
+     "unreadable": [],
+     "damage": false
+    }
+   ],
+   "usage": "header/no numeral",
+   "usable": false
+  },
+  {
+   "doc": "HT94b",
+   "has_kuro": true,
+   "kuro_damage": false,
+   "kiro": [
+    {
+     "tail": [
+      "𐄁"
+     ],
+     "numeric": false,
+     "value": "0",
+     "unreadable": [],
+     "damage": false
+    }
+   ],
+   "usage": "header/no numeral",
+   "usable": false
+  }
+ ],
+ "gateB": {
+  "corpus_sign_roles": [
+   "erasure",
+   "fraction",
+   "logogram",
+   "syllabogram",
+   "transaction"
+  ],
+  "independent_numerals": false,
+  "verdict": "NOT TESTABLE (numerals only via lineara.xyz unicode_text)"
+ },
+ "lineB": {
+  "HT 39": {
+   "sources": [
+    "lineara",
+    "sigla"
+   ],
+   "sign_roles_present": [
+    "logogram",
+    "syllabogram"
+   ],
+   "numerals_in_unicode_text": 5,
+   "numeral_sign_entries": 0,
+   "words": [
+    "ta-i-*123",
+    "ku-re-ju",
+    "ku",
+    "sa-ma-ti",
+    "ku-re?",
+    "ku-ro"
+   ],
+   "word_source": "sigla"
+  },
+  "HT 122a": {
+   "sources": [
+    "lineara",
+    "sigla"
+   ],
+   "sign_roles_present": [
+    "syllabogram"
+   ],
+   "numerals_in_unicode_text": 19,
+   "numeral_sign_entries": 0,
+   "words": [
+    "ra-ri",
+    "u-de-za",
+    "da-si-*118",
+    "pa",
+    "di",
+    "te-ki",
+    "qa-A310-i",
+    "ja-mi-da-re",
+    "si-da-re",
+    "A324-di-ra",
+    "pa-de",
+    "ku-*56-nu",
+    "pa-ri-ne",
+    "A306-tu",
+    "du",
+    "ku-*56-nu",
+    "da-ri-da",
+    "ku-ro",
+    "ku-da"
+   ],
+   "word_source": "sigla"
+  }
+ }
+}
