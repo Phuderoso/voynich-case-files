@@ -49,4 +49,45 @@ CEIPP transliteration pinned in RR001 (sha256 `6e3e8fd1…`), parsed with the sa
 ## Compute
 Exact binomials plus 200 shuffles of 301 lines; well under a minute. Tool: [`tools/rr002_stroke_order.py`](../tools/rr002_stroke_order.py).
 
+---
+
+## Results (run 2026-11-09 ~02:35 PT, seed 3002, 1.2 s)
+
+Files: [`analysis/rr002_results.json`](../analysis/rr002_results.json), [`analysis/rr002_run.log`](../analysis/rr002_run.log).
+
+### Gates and controls
+- **Feasibility gate:** no pair passes. Exact power for a 2:1 preference at 0.005 needs **n ≥ 120** side-by-side
+  occurrences; the largest pairs have n = 23.
+- **Positive control {700, 600}:** n = 5 as free units (700 before 600 in 4, 600 before 700 in 1), power 0, so it is
+  **uninformative**. In this corpus the formula is mostly written with attachments, which the free-unit rule excludes.
+- **Negative control:** 0 of 200 within-line shuffles gave a Holm detection (pass).
+
+### Primary corpus (copies P, Q, K removed)
+
+| Pair | Order counts | n | Power (2:1 at 0.005) | Exact p | Verdict |
+|---|---|---|---|---|---|
+| 1–2 | 2 before 1: 15, 1 before 2: 8 | 23 | 0.076 | 0.210 | NOT TESTABLE |
+| 2–4 | 4 before 2: 16, 2 before 4: 7 | 23 | 0.076 | 0.093 | NOT TESTABLE |
+| 1–9 | 1 before 9: 9, 9 before 1: 0 | 9 | 0.026 | 0.0039 | NOT TESTABLE |
+| 1–3 | 1 before 3: 2, 3 before 1: 3 | 5 | 0 | 1.000 | NOT TESTABLE |
+| 1–4 | 4 before 1: 4, 1 before 4: 1 | 5 | 0 | 0.375 | NOT TESTABLE |
+| 2–3 | 2 before 3: 3, 3 before 2: 0 | 3 | 0 | 0.250 | NOT TESTABLE |
+| 2–9 | 2 before 9: 2, 9 before 2: 2 | 4 | 0 | 1.000 | NOT TESTABLE |
+| 3–4, 3–9, 4–9 | none | 0 | 0 | — | NOT TESTABLE |
+
+**Verdict: NOT TESTABLE for all 10 pairs.** The corpus is too small to confirm or refute the 4, 2, 1, 9 chain at the
+pre-registered effect size. No chain verdict is given.
+
+### What the numbers do say (descriptive, not verdicts)
+1. **The 2–1 and 4–2 preferences do not reach even unadjusted significance** (p 0.21 and 0.093). Their roughly 2:1
+   ratios are what chance gives quite often at n = 23. "Fixed order" is too strong a word for them on this evidence.
+2. **1 before 9 is 9 of 9** (exact p 0.0039, below the Holm threshold of 0.005). The gate was built for a moderate 2:1
+   effect, and a pair with n = 9 cannot pass it, so the pre-registered verdict stays NOT TESTABLE. A gate built for a
+   near-deterministic order would let this pair through, but choosing that gate now, after seeing the data, would be
+   post hoc. No disjoint corpus exists to confirm it, so it stays a lead rather than a result.
+3. **Copies are not what inflates the counts:** the full corpus adds only 1 to each of the 1–2 and 2–4 pairs
+   (n = 24, p 0.15 and 0.064). My counts are a little below rochal's (23 vs 26, 23 vs 24, 9 vs 10), because RR002
+   drops units marked `?` or `!` and units with attachments.
+4. **Merging sign 22 into 4** (secondary): pair 2–4 becomes 20 against 10, n = 30, p 0.099, still short of the gate.
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

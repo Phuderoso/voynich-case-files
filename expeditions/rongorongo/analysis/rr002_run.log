@@ -1,0 +1,24 @@
+GATE [('001-002', 23, 0.0758), ('001-003', 5, 0), ('001-004', 5, 0), ('001-009', 9, 0.0261), ('002-003', 3, 0), ('002-004', 23, 0.0758), ('002-009', 4, 0), ('003-004', 0, 0.0), ('003-009', 0, 0.0), ('004-009', 0, 0.0)]
+POSITIVE {'pair': '600-700', 'k_x_first': 1, 'n': 5, 'power': 0, 'p': 0.375, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+NEGATIVE familywise 0 /200
+PRIMARY {'pair': '001-002', 'k_x_first': 8, 'n': 23, 'power': 0.0758, 'p': 0.21003961563110352, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+PRIMARY {'pair': '001-003', 'k_x_first': 2, 'n': 5, 'power': 0, 'p': 1.0, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+PRIMARY {'pair': '001-004', 'k_x_first': 1, 'n': 5, 'power': 0, 'p': 0.375, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+PRIMARY {'pair': '001-009', 'k_x_first': 9, 'n': 9, 'power': 0.0261, 'p': 0.00390625, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': True}
+PRIMARY {'pair': '002-003', 'k_x_first': 3, 'n': 3, 'power': 0, 'p': 0.25, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+PRIMARY {'pair': '002-004', 'k_x_first': 7, 'n': 23, 'power': 0.0758, 'p': 0.0931396484375, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+PRIMARY {'pair': '002-009', 'k_x_first': 2, 'n': 4, 'power': 0, 'p': 1.0, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+PRIMARY {'pair': '003-004', 'k_x_first': 0, 'n': 0, 'power': 0.0, 'p': 1.0, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+PRIMARY {'pair': '003-009', 'k_x_first': 0, 'n': 0, 'power': 0.0, 'p': 1.0, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+PRIMARY {'pair': '004-009', 'k_x_first': 0, 'n': 0, 'power': 0.0, 'p': 1.0, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+FULL {'pair': '001-002', 'k_x_first': 8, 'n': 24, 'power': 0.0594, 'p': 0.15158963203430176, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+FULL {'pair': '001-003', 'k_x_first': 2, 'n': 5, 'power': 0, 'p': 1.0, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+FULL {'pair': '001-004', 'k_x_first': 1, 'n': 5, 'power': 0, 'p': 0.375, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+FULL {'pair': '001-009', 'k_x_first': 9, 'n': 9, 'power': 0.0261, 'p': 0.00390625, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': True}
+FULL {'pair': '002-003', 'k_x_first': 4, 'n': 4, 'power': 0, 'p': 0.125, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+FULL {'pair': '002-004', 'k_x_first': 7, 'n': 24, 'power': 0.0594, 'p': 0.06391465663909912, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+FULL {'pair': '002-009', 'k_x_first': 2, 'n': 4, 'power': 0, 'p': 1.0, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+FULL {'pair': '003-004', 'k_x_first': 0, 'n': 0, 'power': 0.0, 'p': 1.0, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+FULL {'pair': '003-009', 'k_x_first': 0, 'n': 0, 'power': 0.0, 'p': 1.0, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+FULL {'pair': '004-009', 'k_x_first': 0, 'n': 1, 'power': 0, 'p': 1.0, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}
+MERGE22 [{'pair': '002-004', 'k_x_first': 10, 'n': 30, 'power': 0.0838, 'p': 0.09873714670538902, 'verdict': 'NOT TESTABLE', 'holm_reject_raw': False}]
