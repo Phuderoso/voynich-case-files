@@ -43,3 +43,45 @@ same-magnitude number would be — the standard reading of KU-RO as "total", now
 language. **No decipherment is claimed.**
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (run 2026-11-08 ~23:25 PT, after pre-registration commit `c506ced`; 29 s)
+
+| Test | Observed | p (B = 20 000) | FPR gate (≤ 0.08) | Power gate (≥ 0.80, k = 3) | Verdict |
+|---|---|---|---|---|---|
+| H1 exact balance | **6 of 11** sections balance | 0.0030 | 0.015 | **0.435** | **NOT TESTABLE** |
+| H2 exact − mean(±1…±5) | 5.9 | 0.0030 | 0.015 | **0.52** | **NOT TESTABLE** |
+
+Holm would reject both, but the pre-registered power gate failed, so **neither test gets a verdict**. This is the
+rule, and it is kept.
+
+Per section (Σentries / total / difference): HT9b 24/24/0 · HT11b 180/180/0 · HT88 6/6/0 · HT89 87/87/0 ·
+HT94b 5/5/0 · HT117a 10/10/0 · HT11a 6/10/−4 · HT122a 22/31/−9 · HT118 50/30/+20 · HT39 28/100/−72 ·
+HT110a 21/100/−79. Full rows in `analysis/la001_results.json`.
+
+## Post-hoc (disclosed after the run; no verdict change) — `tools/la001_posthoc.py`, seed 2002, 66 s
+- **Exact null.** The stratified permutation null has only 2!·6!·3! = **8 640** permutations, so it was enumerated
+  completely: E = 0…6 occur 1 392 / 1 800 / 2 280 / 2 016 / 912 / 216 / 24 times. The null mean is about 2.1, because
+  small totals (5, 6, 10) collide often. **E = 6 is the largest value the null can reach**, so the exact p is the floor,
+  24/8 640 = **0.0028**. The Monte Carlo 0.0030 agrees.
+- **Why the gate failed.** I sized the plant at a quarter of the set (k = 3) before seeing anything; with null mean ≈ 2
+  three planted balances are often swamped. Power curve for H1: k = 3 → 0.50, 4 → 0.745, **5 → 0.92**, 6 → 0.995. The
+  real data show six balances, but choosing k after seeing six would be tuning the gate to the answer, so it is only
+  reported.
+- **Lesson for the expedition:** on a set this small the decision is decided by the plant size and by the p floor of
+  the exact null. Both must be computed *before* the run (exact enumeration is cheap here).
+
+## Reading
+Six of eleven integer-only, undamaged KU-RO sections balance exactly (HT9b, HT11b, HT88, HT89, HT94b, HT117a).
+This **reproduces** the standard reading of KU-RO as a total; it is not new, and as pre-registered it is not a
+calibrated result. The non-balancing five include two (HT39, HT110a) where the KU-RO number is 100 and the entries are
+small, so a missing commodity line or a total of another unit is likely; that is a hunch to test, not a finding.
+
+## Next
+LA002 (fractions) uses a **disjoint** decision set (the fraction-bearing sections excluded here), with fraction values
+fixed from the literature before looking, the exact null enumerated first, and the plant size chosen from a
+pre-computed power curve. That set is also the honest replication venue for "KU-RO is a sum", because no number in it
+was used here.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
