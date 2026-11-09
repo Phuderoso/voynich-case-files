@@ -1,0 +1,12 @@
+{
+ "units": {
+  "Gr": 210,
+  "K": 127
+ },
+ "aligned": 100,
+ "eligible": 34,
+ "disagreements": 4,
+ "relevant_lines": 4,
+ "free_strokes_in_relevant_lines": 10,
+ "units_in_relevant_lines": 91
+}

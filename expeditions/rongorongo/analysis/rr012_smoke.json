@@ -1,0 +1,60 @@
+{
+ "seed": 12012,
+ "R": 999,
+ "R_plant": 199,
+ "plants": 200,
+ "R_floor": 19999,
+ "f_rep": 0.15857320735369515,
+ "units": {
+  "Gr": 210,
+  "K": 127
+ },
+ "aligned": 100,
+ "eligible": 34,
+ "disagreements": 4,
+ "relevant_lines": 4,
+ "free_strokes_in_relevant_lines": 10,
+ "units_in_relevant_lines": 91,
+ "S1max": 3,
+ "p_floor": 0.00655,
+ "power": {
+  "S1": {
+   "0.05": 0.025,
+   "0.1": 0.035,
+   "0.1586": 0.03,
+   "0.2": 0.04,
+   "0.3": 0.155,
+   "0.5": 0.295,
+   "1.0": 1.0
+  },
+  "S2": {
+   "0.05": 0.005,
+   "0.1": 0.03,
+   "0.1586": 0.01,
+   "0.2": 0.035,
+   "0.3": 0.065,
+   "0.5": 0.115,
+   "1.0": 0.995
+  }
+ },
+ "power_S1_at_f_rep": 0.03,
+ "negative_control_rejections_of_40": [
+  1,
+  2
+ ],
+ "gates": {
+  "D_ge_10": false,
+  "free_ge_10": true,
+  "power_at_f_rep_ge_080": false,
+  "floor_le_0025": true,
+  "negctrl_S1_le_5_of_40": true
+ },
+ "testable": false,
+ "mode": "smoke (observed replaced by registered shuffle seed 12099)",
+ "S1_shuffle": 0,
+ "S2_shuffle": 0,
+ "p_shuffle": [
+  1.0,
+  1.0
+ ]
+}
