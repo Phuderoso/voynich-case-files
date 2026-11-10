@@ -1,0 +1,47 @@
+{
+ "controls": {
+  "C1": true,
+  "C2": true
+ },
+ "leads": {
+  "A": {
+   "pair": [
+    "KH0132",
+    "KH0456"
+   ],
+   "verdict": "not_found_in_retrieved_sources",
+   "sources": 12,
+   "usable": 11,
+   "pairing_sources": [],
+   "coverage": {
+    "KH0132": true,
+    "KH0456": true
+   },
+   "unresolved": [
+    "S12"
+   ]
+  },
+  "B": {
+   "pair": [
+    "KH0446",
+    "KH0451"
+   ],
+   "verdict": "not_found_in_retrieved_sources",
+   "sources": 7,
+   "usable": 7,
+   "pairing_sources": [],
+   "coverage": {
+    "KH0446": true,
+    "KH0451": true
+   },
+   "unresolved": []
+  }
+ },
+ "searches": [
+  "Urton \"Quipus de Pachacamac\" 2014 Ministerio de Cultura pdf  -> museos.cultura.pe PDF (fetched, 80 pp.)",
+  "\"UR218\" OR \"UR1118\" khipu Pachacamac Berlin VA 42559  -> KFG pages only",
+  "Urton \"Inka History in Knots\" Pachacamac \"UR1118\" OR \"UR218\" OR \"UR 218\" matching khipus  -> archive.org Spanish full text (fetched); academia Urton 2005 (login)",
+  "khipu \"474\" \"319\" \"453\" \"492\" Pachacamac  -> no relevant hit",
+  "\"UR208\" \"UR213\" khipu Pachacamac Berlin  -> KFG fieldmark lists only"
+ ]
+}

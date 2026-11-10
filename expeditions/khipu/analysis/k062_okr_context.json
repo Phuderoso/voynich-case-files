@@ -1,0 +1,58 @@
+{
+ "KH0132": {
+  "INVESTIGATOR_NUM": "UR1118",
+  "orig_inv_num": "AS118",
+  "PROVENANCE": "Pachacamac",
+  "MUSEUM_NAME": "\"Museum f\u00fcr V\u00f6lkerkunde, Berlin\"",
+  "MUSEUM_NUM": "VA42601",
+  "DUPLICATE_FLAG": 0.0,
+  "DUPLICATE_ID": 0.0,
+  "NOTES": "See AS097 for a complete listing of \"Pachacamac\" quipus.",
+  "NICKNAME": "",
+  "DISCOVERED_BY": "",
+  "CREATED_BY": "katie",
+  "level1_cords": 15
+ },
+ "KH0456": {
+  "INVESTIGATOR_NUM": "UR218",
+  "orig_inv_num": "UR218",
+  "PROVENANCE": "Pachacamac",
+  "MUSEUM_NAME": "\"Ethnologisches Museum, Berlin, Germany\"",
+  "MUSEUM_NUM": "VA 42559",
+  "DUPLICATE_FLAG": 0.0,
+  "DUPLICATE_ID": 0.0,
+  "NOTES": "",
+  "NICKNAME": "",
+  "DISCOVERED_BY": "",
+  "CREATED_BY": "gurton",
+  "level1_cords": 62
+ },
+ "KH0446": {
+  "INVESTIGATOR_NUM": "UR208",
+  "orig_inv_num": "UR208",
+  "PROVENANCE": "Pachacamac",
+  "MUSEUM_NAME": "\"Ethnologisches Museum, Berlin, Germany\"",
+  "MUSEUM_NUM": "42549",
+  "DUPLICATE_FLAG": 0.0,
+  "DUPLICATE_ID": 0.0,
+  "NOTES": "",
+  "NICKNAME": "",
+  "DISCOVERED_BY": "",
+  "CREATED_BY": "gurton",
+  "level1_cords": 148
+ },
+ "KH0451": {
+  "INVESTIGATOR_NUM": "UR213",
+  "orig_inv_num": "UR213",
+  "PROVENANCE": "Pachacamac",
+  "MUSEUM_NAME": "\"Ethnologisches Museum, Berlin, Germany\"",
+  "MUSEUM_NUM": "VA42508(B)",
+  "DUPLICATE_FLAG": 0.0,
+  "DUPLICATE_ID": 0.0,
+  "NOTES": "Observations:\n1) Primary cord of UR 213 passes through drilled holes at the two ends of a wooden bar. Length of bar is 37.0 cm x 1.5 cm. First hole in the reading direction is drilled at 1.5 cm. from the end. The last hole in the reading direction is drilled at 2.0 cm. from the other end. Primary cord is further attached by a cord tied around primary cord and bar about midway along the bar (ca. 18 cm). This cord is loosely tied. \n\n2) Pendant 34 is one cord which is doubled and attached to primar cord of UR 213 with a half hitch knot. This cord (pendant 34) is a pendant (pendant 1) of a separate attached khipu (UR 214). See note #1, UR 214.",
+  "NICKNAME": "",
+  "DISCOVERED_BY": "",
+  "CREATED_BY": "gurton",
+  "level1_cords": 102
+ }
+}
