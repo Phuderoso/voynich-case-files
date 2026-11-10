@@ -1,0 +1,83 @@
+{
+ "cycle": "K062",
+ "leads": {
+  "A": [
+   "KH0132",
+   "KH0456"
+  ],
+  "B": [
+   "KH0446",
+   "KH0451"
+  ]
+ },
+ "subjects": [
+  {
+   "okr": "KH0132",
+   "inv": "UR1118",
+   "aliases": [
+    "UR1118",
+    "AS118",
+    "VA42601",
+    "VA 42601"
+   ],
+   "kfg": "https://www.khipufieldguide.com/catalog/KH0132.html",
+   "xlsx": "https://www.khipufieldguide.com/databook/excel_khipus/KH0132.xlsx"
+  },
+  {
+   "okr": "KH0456",
+   "inv": "UR218",
+   "aliases": [
+    "UR218",
+    "VA 42559",
+    "VA42559"
+   ],
+   "kfg": "https://www.khipufieldguide.com/catalog/KH0456.html",
+   "xlsx": "https://www.khipufieldguide.com/databook/excel_khipus/KH0456.xlsx"
+  },
+  {
+   "okr": "KH0446",
+   "inv": "UR208",
+   "aliases": [
+    "UR208",
+    "42549"
+   ],
+   "kfg": "https://www.khipufieldguide.com/catalog/KH0446.html",
+   "xlsx": "https://www.khipufieldguide.com/databook/excel_khipus/KH0446.xlsx"
+  },
+  {
+   "okr": "KH0451",
+   "inv": "UR213",
+   "aliases": [
+    "UR213",
+    "VA42508"
+   ],
+   "kfg": "https://www.khipufieldguide.com/catalog/KH0451.html",
+   "xlsx": "https://www.khipufieldguide.com/databook/excel_khipus/KH0451.xlsx"
+  }
+ ],
+ "controls": {
+  "C1": {
+   "evidence_class": "E1_similar_field",
+   "okr": "KH0616",
+   "inv": "JC009",
+   "partner_okr": "KH0620",
+   "partner_inv": "JC013",
+   "kfg": "https://www.khipufieldguide.com/catalog/KH0616.html"
+  },
+  "C2": {
+   "evidence_class": "E2_publication_match",
+   "okr": "KH0502",
+   "inv": "UR266",
+   "partner_okr": "KH0514",
+   "partner_inv": "UR275",
+   "kfg": "https://www.khipufieldguide.com/catalog/KH0502.html"
+  }
+ },
+ "appendix_I": "https://static.cambridge.org/content/id/urn:cambridge.org:id:article:S1045663500008786/resource/name/S1045663500008786sup001.pdf",
+ "publications": [
+  "Urton 2014, Quipus de Pachacamac (subject pages per KFG bibliographies)",
+  "Ascher databook entry AS118",
+  "Urton 2017 Inka History in Knots",
+  "any UR-series note (KFG notes, OKR NOTES)"
+ ]
+}
