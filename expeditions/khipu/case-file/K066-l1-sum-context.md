@@ -46,3 +46,36 @@ non-adjacent cords, or across top cords — are not covered).
 Seeds 6409–6412; next free **6413**.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (registered run 05:53:59–05:55:09 PT, prereg `7a66e80`)
+Output [`analysis/k066_results.json`](../analysis/k066_results.json), log [`analysis/k066_run.log`](../analysis/k066_run.log),
+audit [`analysis/k066_a1_k065_audit.json`](../analysis/k066_a1_k065_audit.json). Tool unchanged after the pre-registration.
+
+**A1 audit of K065: reproduced exactly.** The whole K065 results file is identical except its runtime field: P-unit critical W
+29.117799105892537, G1 0/40, G2 power 0.81, L1 W 29.704273125522988 with p_adj 0.005994005994005994 (67 s).
+
+**Gates: pass.** Reference (R 5 000, seed 6409): T_null is 0 in 83.4 % of permutations (quantiles 0.9 → 2, 0.95 → 3, 0.99 → 4).
+G1 FPR **0.005** (1/200; the statistic is discrete and conservative). G2 power **0.885** (177/200; median planted T 6); **0 blind-spot
+plants** (every plant moved T).
+
+**H1: NOT SUPPORTED.** T_obs = **0** (KH0143 0, KH0591 0), p = **1.0**. None of the ten aligned cords is a K001-style adjacent total
+or a summand of one. KH0143 has 9 adjacent sum relations in all, every one among small values at positions 62–101 (totals 10–12),
+far from the segment at 163–167; KH0591 has none. Readable negative: two planted 3-cord totals would have been seen 88.5 % of the time.
+
+**H2 (exploratory, disclosed-motivated).** On the L1 diagonal (offset 46 in collapsed coordinates), the only flank match outside the
+segment and its neighbours is the `55` four cords before `226` (KH0143 collapsed position 61 · KH0591 position 15): F = 6.27,
+p = 0.070 under the flank permutation (42 % of nulls have at least one flank match). Not significant, and could not have confirmed
+anything anyway. The correspondence does not visibly extend beyond the confirmed window.
+
+**Reading.** L1 remains what K065 said: a short, rare-valued cross-site value match that survives two nulls and the 89 489-pair
+search. It is **not** embedded in adjacent summing structure in either khipu (K001 form). This does not rule out other relations
+(non-adjacent sums, top-cord totals, subsidiary levels), and it is not evidence against a shared record — only that the shared
+cords are not, in this database, totals or summands of their neighbours. The lead now rests entirely on the archives (Berlin VA63042,
+Dallas 1983.W.2173; Urton 2017 pp. 261–262 unread).
+
+**Next.** Line 3 inside the database is exhausted for L1. Candidate K067: switch lines (e.g. a held-out replication question that
+needs khipus outside the OKR, or a new family from TRIAGE), unless the archives answer.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

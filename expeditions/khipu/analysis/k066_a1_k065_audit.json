@@ -1,0 +1,23 @@
+{
+ "note": "K066 A1: K065 tool re-run unchanged at registered size (K065_SMOKE=1000,40,100,500, full mode, output /tmp) 2026-11-10 05:54 PT",
+ "identical_keys": {
+  "N": true,
+  "F_x": true,
+  "alpha": true,
+  "null": true,
+  "S0_unit_fixture": true,
+  "G0_fixture": true,
+  "A0_audit_K064": true,
+  "reference": true,
+  "G1": true,
+  "G2": true,
+  "H1": true,
+  "seconds": false
+ },
+ "reference_critical_W": 29.117799105892537,
+ "G1_share": 0.0,
+ "G2_power": 0.81,
+ "L1_W": 29.704273125522988,
+ "L1_p_adj": 0.005994005994005994,
+ "reproduced": true
+}
