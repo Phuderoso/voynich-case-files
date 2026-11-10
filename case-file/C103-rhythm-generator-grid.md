@@ -68,3 +68,53 @@ Next free seed after this cycle: **11693**.
 
 ---
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (appended after the registered run, 2026-11-10 04:31:07–04:34:55 PT, 228 s; registration commit `188a819`)
+Raw output: [`analysis/C103_results.json`](../analysis/C103_results.json), log [`analysis/C103_run_log.txt`](../analysis/C103_run_log.txt).
+
+**Audit of C102: exact.** D recomputed to 1e-12: +0.054292 / +0.076389 (IT2a A/B), +0.067767 / +0.084362 (ZL3b A/B).
+
+**H1 — training (65 cells × 5 seeds, all usable).** 12 cells feasible (surface within ±15 %).
+Grid extremes: max mean D over feasible cells **+0.009**, max single-run D over feasible cells **+0.017**; over all 65
+cells (surface not required, descriptive) max mean D +0.054, max single run +0.067. **No run in any cell reached the
+manuscript's Currier-B D (+0.076 IT2a).**
+Winner (highest feasible mean D) = cell 32: sourceChooser random, combine_split 30, add_remove 20, word-final
+substitutions on, canFollow curveline, default initial line (mean D +0.009).
+
+**H1 — confirmation (winner).** 20 reference runs: D from −0.006 to +0.033 (mean +0.010, sd 0.009); reference surface still
+feasible. Gates: **G1 2/10** held-out outside the range (at the bar), **G2 5/5** plants ABOVE (plant D +0.073…+0.093),
+**G3 20/20** usable — all pass.
+Manuscript Currier B: IT2a +0.076, ZL3b +0.084, both **ABOVE** all 20 reference runs (about 7.7 and 8.6 reference sd above
+the reference mean, descriptive).
+
+**Verdict H1: ROBUST DEPARTURE (within this grid).** Inside the C083 grid, no setting that keeps the surface statistics
+comes near the manuscript's word-length persistence. This applies only to this grid. Settings outside it were not tested.
+
+**Descriptive lever (not registered).** The highest-D cells all have canFollow = none with combine_split 30 (cell 34:
+mean +0.054, runs +0.041…+0.067). Those cells lose the surface (h2 ≈ 2.49–2.67 vs 2.25 reference, rigidity R ≈ 0.17–0.31 vs
+0.49). So the copying machine *can* make lengths persist, but in this grid only by giving up other Voynich-like properties.
+Even so, none of its runs reached +0.076.
+
+**H2 — word 2 dropped too (R = 2,000, seed 11691, Holm over 4).** Gates pass in every subset (FPR 0–2/20, power 20/20 each
+sign, broken meter OK).
+
+| Subset | lines | pairs | D | z | Holm |
+|---|---|---|---|---|---|
+| IT2a A | 637 | 2,751 | **+0.061** | 4.2 | 0.002 |
+| IT2a B | 2,013 | 11,879 | **+0.072** | 9.8 | 0.002 |
+| ZL3b A | 663 | 3,128 | **+0.067** | 4.9 | 0.002 |
+| ZL3b B | 1,988 | 11,945 | **+0.077** | 10.5 | 0.002 |
+
+**Verdict H2: Currier A and B DETECTED-PERSISTENT** without word 2. The short second word does not carry C102's effect.
+D barely moves (B: +0.076 → +0.072 IT2a, +0.084 → +0.077 ZL3b).
+
+**Excluded / not testable.** Nothing was NOT TESTABLE. Excluded, within these limits: (i) "the word-2 dip makes the
+rhythm", and (ii) "a surface-matched setting in the C083 grid reproduces it". Not excluded: other generator settings (for
+example suggestions, same-position probability or line-length parameters), a verbose cipher, or a scribal or layout habit.
+
+**Next (C104).** Options: (a) a wider random generator sweep (C004 S2-style, 120 configs) with the same winner/confirm
+design; (b) a short/long runs test as a second metric; (c) whether the persistence holds *across* line breaks (last word
+→ next line's word 2).
+
+---
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
