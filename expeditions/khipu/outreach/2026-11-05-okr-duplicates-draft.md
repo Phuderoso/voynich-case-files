@@ -15,6 +15,7 @@ Updated 2026-11-08 ~19:00 PT (PE006 run): checked first, issues still only #1 an
 Updated 2026-11-09 ~09:14 PT (RR011 run): checked first, issues still only #1 and #2 (open and closed). One create attempt via user-GitHub-xai `issue_write` opened an approval form; not waited on, not retried → **drafted, not filed**. Text unchanged.
 Updated 2026-11-09 ~18:06 PT (K063): checked first, issues still only #1 and #2 (open and closed), no duplicates issue. Appended the confirmed KH0132·KH0456 correspondence (section below the KH0140/KH0483 paragraph). No create attempt this run → **drafted, not filed**.
 Updated 2026-11-10 ~01:55 PT (K065): checked first, issues still only #1 and #2. One create attempt via user-GitHub-xai `issue_write` opened an approval form; not waited on, not retried → **drafted, not filed**. Text unchanged.
+Updated 2026-11-10 ~05:57 PT (K066): checked first, issues still only #1 and #2. A focused single-topic version on KH0140/KH0483 ([draft](2026-11-10-okr-kh0140-kh0483-draft.md)) was tried once via user-GitHub-xai `issue_write`; it opened an approval form; not waited on, not retried → **drafted, not filed**. Text of this combined draft unchanged.
 
 ---
 
