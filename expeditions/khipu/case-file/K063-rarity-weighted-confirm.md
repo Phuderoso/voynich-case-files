@@ -60,3 +60,54 @@ Seeds: 6301 (reference), 6302 (FPR), 6303 (plants), 6304 (fixture); 6201 re-used
 `analysis/k063_run.log`.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration commit `8430eef`)
+
+`tools/k063_rarity_weighted_confirm.py data/khipu.db full`, 2026-11-09 18:05:10–18:05:58 PT (47.8 s, under `timeout 600`). Outputs:
+[`analysis/k063_results.json`](../analysis/k063_results.json), [`analysis/k063_run.log`](../analysis/k063_run.log). An independent
+re-run from a copy of the tools (18:06 PT, `/tmp`) gave a byte-identical results object (all fields except run time).
+
+**Weights.** Source: 19 868 non-zero collapsed values, 1 554 distinct (four lead khipus removed). w ranges 2.45 (value 1) to 9.28 (seen
+once); unseen floor 9.97. Examples: 5 → 3.40, 10 → 3.15, 20 → 3.88, 50 → 4.77, 100 → 4.53; 319 → 8.59, 453 → 8.18, 474 → 8.59,
+932 → 8.87, 492 and 935 → 9.97 (absent outside the leads).
+
+| Gate | Number | Rule | Outcome |
+|---|---|---|---|
+| G0 weighted brute-force fixture (seed 6304) | 20/20 | 20/20 | pass |
+| **A0 audit of K062** (unit weights, seed 6201) | family-max T counts {4: 7, 5: 621, 6: 329, 7: 40, 8: 3} | = K062 published | **reproduced exactly** |
+| Reference null (seed 6301, R = 1 000) | family max W: median 18.36, 90 % 26.33, 97.5 % 26.62 (critical value at α), 99 % 35.21 | — | — |
+| G1 FPR (seed 6302, 40 fresh nulls) | 1/40 with p_adj ≤ 0.025 (0.003); next lowest 0.061 | ≤ 0.10 | pass (at nominal) |
+| **G2 power** (seed 6303, 200 eight-cord near-copies) | **0.955** (Wilson 0.917–0.976); planted W median 44.5, 5 % quantile 26.96; K = 7 in 189/200 | ≥ 0.80 | **pass** |
+
+All gates passed, so the observed statistic was computed once:
+
+| Lead | W_obs | K | Segment (KH0132 above / KH0456 below; lead B: KH0446 / KH0451) | p_adj (family max-W) | Verdict |
+|---|---|---|---|---|---|
+| **A** KH0132 · KH0456 | **61.95** | 7 | `620 470 528 935 474 319 453 492` / `620 470 528 932 474 319 453 492` (next cords 600 / 663) | **0.000999 = 1/1 001** (no reference null reached 61.95) | **CONFIRMED (post-selection, family-adjusted)** |
+| B KH0446 · KH0451 | 15.20 | 4 | `50 5 20 10` / `50 5 20 10` | 0.995 | NOT CONFIRMED (power for its class not measured) |
+
+p_adj for lead A sits at the resolution floor of R = 1 000; the true family-adjusted p is below about 0.001. Descriptive (selected,
+no decision weight): pair-alone null p for A and B both 1/1 001.
+
+**Real family top 10 (descriptive).** 1. KH0140 · KH0483 W 123.4 (K 14; the known same-object pair, p_adj 0.001); 2. **KH0132 · KH0456**
+61.9 (K 7, 0.001); 3. KH0304 · KH0303 46.8 (K 9, 0.001; known from K012/K061); 4. KH0616 · KH0620 25.0 (K 7, 0.12; a KFG "similar"
+pair); 5. KH0502 · KH0514 23.1 (0.14); the rest ≥ 0.33. No new pair reaches α.
+
+### Reading together
+- **Lead A (KH0132 · KH0456): CONFIRMED and not found in any retrieved source (K062).** Eight consecutive collapsed level-1 cords agree,
+  seven exactly and one by 3 units (935 vs 932), and the agreeing values are rare in the rest of the archive (474, 319, 453, 492
+  occur 3, 3, 5 and 0 times among the 19 868 collapsed values of the other 429 khipus). No run-permuted corpus, in 1 000, produced any within-provenance
+  pair scoring this high. It is beyond chance, run structure and the 4 039-pair search; it does **not** say whether this is one object
+  recorded twice (as KH0140/KH0483) or a partial copy between two objects — KH0132 (UR1118/AS118, VA42601) and KH0456 (UR218, VA 42559)
+  carry different Berlin numbers and different recorders (Ascher; Urton). Urton 2014 p. 36 pairs UR218 with
+  UR1144 (KH0160), so this is a *second*, unlisted correspondence of UR218. Appended to the OKR duplicates draft (descriptively, drafted, not filed).
+- **Lead B:** not confirmed. Its four shared values are common round numbers (w 3.1–4.8), and this statistic cannot separate that from
+  chance at the family level; its class was not the plant class, so this is not evidence of absence.
+- **Method lesson:** the same data, the same null, the same family adjustment and the same plants went from power 0.01 (count) to 0.955
+  (rarity-weighted). The information was in *which* values match.
+- Line 3 next: the camp's cross-khipu exact-match line has now produced its confirmed findings (KH0140/KH0483, KH0304/KH0303 and
+  KH0132/KH0456); further steps are physical/archival (museum records), outside the database.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
