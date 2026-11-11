@@ -55,22 +55,27 @@ class E:
         self.pair = self.run[1:] == self.run[:-1]
         idx = np.arange(len(L))
         # successor lines (index j+1 for paired j) grouped by run; all lines grouped by run
-        succ = idx[1:][self.pair]; self.succ_groups = [succ[self.run[succ] == g] for g in np.unique(self.run[succ])]
-        self.all_groups = [idx[self.run == g] for g in range(len(runs))]
+        succ = idx[1:][self.pair]; ug, st = np.unique(self.run[succ], return_index=True); self.succ_groups = np.split(succ, st[1:])
+        self.all_groups = np.split(idx, np.cumsum([len(r) for r in runs])[:-1])
         self.pi = idx[:-1][self.pair]; self.si = idx[1:][self.pair]
+        self.fS, self.fA = E.flat(self.succ_groups), E.flat(self.all_groups)  # cached for speed (C105 run fix)
     def rE(self, w1): return float(np.corrcoef(self.wn[self.pi], w1[self.si])[0, 1])
     def rN(self, wn): return float(np.corrcoef(self.wm, wn)[0, 1])
     def rS(self, w2): return float(np.corrcoef(self.w1, w2)[0, 1])
     @staticmethod
+    def flat(groups):
+        return np.concatenate(groups), np.concatenate([np.full(len(g), i) for i, g in enumerate(groups)])
+    @staticmethod
     def perm(v, groups, rng):
-        """within-group permutation, vectorised: random keys sorted inside each group label."""
-        idx = np.concatenate(groups); lab = np.concatenate([np.full(len(g), i) for i, g in enumerate(groups)])
+        """within-group permutation, vectorised: random keys sorted inside each group label.
+        groups = list of index arrays, or a precomputed (idx, lab) pair (speed only; identical draws)."""
+        idx, lab = groups if isinstance(groups, tuple) else E.flat(groups)
         o = v.copy(); o[idx] = v[idx[np.lexsort((rng.random(len(idx)), lab))]]
         return o
     def null(self, which, rng, r):
-        if which == 'E': return np.array([self.rE(self.perm(self.w1, self.succ_groups, rng)) for _ in range(r)])
-        if which == 'N': return np.array([self.rN(self.perm(self.wn, self.all_groups, rng)) for _ in range(r)])
-        return np.array([self.rS(self.perm(self.w2, self.all_groups, rng)) for _ in range(r)])
+        if which == 'E': return np.array([self.rE(self.perm(self.w1, self.fS, rng)) for _ in range(r)])
+        if which == 'N': return np.array([self.rN(self.perm(self.wn, self.fA, rng)) for _ in range(r)])
+        return np.array([self.rS(self.perm(self.w2, self.fA, rng)) for _ in range(r)])
     def obs(self, which): return {'E': lambda: self.rE(self.w1), 'N': lambda: self.rN(self.wn), 'S': lambda: self.rS(self.w2)}[which]()
     def test(self, which, rng, r): return C4.ptest(self.obs(which), self.null(which, rng, r))
 
