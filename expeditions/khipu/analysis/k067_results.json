@@ -1,0 +1,658 @@
+{
+ "A0_K026_counts": {
+  "L-turn0": 186,
+  "E-type": 43,
+  "L-shift": 117
+ },
+ "gates_M2": {
+  "L-shift": {
+   "n_readable_u": 100,
+   "n_readable_c": 9,
+   "B_true_units": {
+    "seed": [
+     6415,
+     0
+    ],
+    "trials": 200,
+    "FPR_p2u": 0.0,
+    "power_p2c": 0.0
+   },
+   "A_true_claimed": {
+    "seed": [
+     6416,
+     0
+    ],
+    "trials": 200,
+    "FPR_p2c": 0.04,
+    "power_p2u": 0.0
+   },
+   "testable": true,
+   "FPR_u_ok": true,
+   "FPR_c_ok": true,
+   "power_c_ok": false,
+   "power_u_ok": false
+  },
+  "L-turn0": {
+   "n_readable_u": 42,
+   "n_readable_c": 37,
+   "B_true_units": {
+    "seed": [
+     6415,
+     1
+    ],
+    "trials": 200,
+    "FPR_p2u": 0.0,
+    "power_p2c": 1.0
+   },
+   "A_true_claimed": {
+    "seed": [
+     6416,
+     1
+    ],
+    "trials": 200,
+    "FPR_p2c": 0.015,
+    "power_p2u": 1.0
+   },
+   "testable": true,
+   "FPR_u_ok": true,
+   "FPR_c_ok": true,
+   "power_c_ok": true,
+   "power_u_ok": true
+  },
+  "E-type": {
+   "n_readable_u": 0,
+   "n_readable_c": 0,
+   "testable": false
+  }
+ },
+ "n_flagged_M2_readable": {
+  "L-shift": 100,
+  "L-turn0": 42,
+  "E-type": 0
+ },
+ "scope_losses": {
+  "L-turn0 unscorable value (not a power of ten)": 76,
+  "L-turn0 claimed place is units (value 1): position cannot arbitrate": 4,
+  "L-turn0 no height / top cord": 1
+ },
+ "n_flagged_with_height": {
+  "L-shift": 117,
+  "L-turn0": 43,
+  "E-type": 33
+ },
+ "n_flagged_readable": {
+  "L-shift": 1,
+  "L-turn0": 14,
+  "E-type": 4
+ },
+ "G0": {
+  "poibin_fixture": "20/20",
+  "synthetic_stratum_acc": [
+   1.0,
+   1.0
+  ],
+  "passed": true
+ },
+ "R": 200,
+ "alpha": 0.05,
+ "gates": {
+  "L-shift": {
+   "testable": false,
+   "n_readable": 1
+  },
+  "L-turn0": {
+   "A_true_claimed": {
+    "seed": [
+     6413,
+     1
+    ],
+    "FPR_pc": 0.0,
+    "power_pu": 1.0
+   },
+   "B_true_units": {
+    "seed": [
+     6414,
+     1
+    ],
+    "FPR_pu": 0.0,
+    "power_pc": 1.0
+   },
+   "testable": true,
+   "n_readable": 14,
+   "FPR_ok": true,
+   "power_pc_ok": true,
+   "power_pu_ok": true
+  },
+  "E-type": {
+   "testable": false,
+   "n_readable": 4
+  }
+ },
+ "strata": {
+  "KH0017 AS016 | level 2 | place 10^1": {
+   "readable": false,
+   "nU": 2,
+   "nP": 0
+  },
+  "KH0020 AS019 | level 1 | place 10^2": {
+   "readable": false,
+   "nU": 1,
+   "nP": 0
+  },
+  "KH0020 AS019 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 1,
+   "nP": 0
+  },
+  "KH0025 AS024 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 0,
+   "nP": 0
+  },
+  "KH0029 AS027 | level 2 | place 10^1": {
+   "readable": false,
+   "nU": 3,
+   "nP": 0
+  },
+  "KH0030 AS028 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 14,
+   "nP": 10,
+   "accU": 0.7857142857142857,
+   "accP": 0.8,
+   "e_u": 0.25,
+   "e_c": 0.25,
+   "m_u": 16.75,
+   "m_c": 12.0
+  },
+  "KH0030 AS028 | level 1 | place 10^3": {
+   "readable": false,
+   "nU": 14,
+   "nP": 1
+  },
+  "KH0030 AS028 | level 1 | place 10^2": {
+   "readable": false,
+   "nU": 14,
+   "nP": 3
+  },
+  "KH0030 AS028 | level 2 | place 10^1": {
+   "readable": false,
+   "nU": 1,
+   "nP": 3
+  },
+  "KH0056 AS045 | level 1 | place 10^1": {
+   "readable": true,
+   "nU": 23,
+   "nP": 24,
+   "accU": 1.0,
+   "accP": 0.9166666666666666,
+   "e_u": 0.04,
+   "e_c": 0.11538461538461539,
+   "m_u": 15.0,
+   "m_c": 8.5
+  },
+  "KH0093 AS080 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 11,
+   "nP": 1
+  },
+  "KH0093 AS080 | level 2 | place 10^1": {
+   "readable": false,
+   "nU": 16,
+   "nP": 0
+  },
+  "KH0074 AS063 | level 1 | place 10^2": {
+   "readable": false,
+   "nU": 7,
+   "nP": 0
+  },
+  "KH0103 AS090/N2 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 41,
+   "nP": 0
+  },
+  "KH0103 AS090/N2 | level 1 | place 10^2": {
+   "readable": false,
+   "nU": 41,
+   "nP": 0
+  },
+  "KH0055 AS044 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 71,
+   "nP": 27,
+   "accU": 0.9859154929577465,
+   "accP": 0.8518518518518519,
+   "e_u": 0.0273972602739726,
+   "e_c": 0.1724137931034483,
+   "m_u": 14.5,
+   "m_c": 7.0
+  },
+  "KH0340 UR104 | level 2 | place 10^1": {
+   "readable": false,
+   "nU": 13,
+   "nP": 3
+  },
+  "KH0254 UR018 | level 1 | place 10^3": {
+   "readable": true,
+   "nU": 23,
+   "nP": 6,
+   "accU": 1.0,
+   "accP": 1.0,
+   "e_u": 0.04,
+   "e_c": 0.125,
+   "m_u": 20.5,
+   "m_c": 4.5
+  },
+  "KH0254 UR018 | level 2 | place 10^3": {
+   "readable": false,
+   "nU": 5,
+   "nP": 0
+  },
+  "KH0147 UR1131 | level 2 | place 10^2": {
+   "readable": true,
+   "nU": 69,
+   "nP": 9,
+   "accU": 1.0,
+   "accP": 1.0,
+   "e_u": 0.014084507042253521,
+   "e_c": 0.09090909090909091,
+   "m_u": 22.0,
+   "m_c": 10.0
+  },
+  "KH0165 UR1149 | level 1 | place 10^2": {
+   "readable": true,
+   "nU": 31,
+   "nP": 84,
+   "accU": 0.967741935483871,
+   "accP": 1.0,
+   "e_u": 0.06060606060606061,
+   "e_c": 0.011627906976744186,
+   "m_u": 22.5,
+   "m_c": 9.0
+  },
+  "KH0165 UR1149 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 31,
+   "nP": 95,
+   "accU": 0.9354838709677419,
+   "accP": 0.7578947368421053,
+   "e_u": 0.09090909090909091,
+   "e_c": 0.24742268041237114,
+   "m_u": 22.5,
+   "m_c": 14.0
+  },
+  "KH0172 AS156 | level 1 | place 10^1": {
+   "readable": true,
+   "nU": 10,
+   "nP": 60,
+   "accU": 1.0,
+   "accP": 1.0,
+   "e_u": 0.08333333333333333,
+   "e_c": 0.016129032258064516,
+   "m_u": 23.75,
+   "m_c": 17.0
+  },
+  "KH0014 AS013 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 35,
+   "nP": 8,
+   "accU": 1.0,
+   "accP": 0.875,
+   "e_u": 0.02702702702702703,
+   "e_c": 0.2,
+   "m_u": 17.0,
+   "m_c": 8.0
+  },
+  "KH0279 UR049 | level 1 | place 10^1": {
+   "readable": true,
+   "nU": 90,
+   "nP": 122,
+   "accU": 0.9666666666666667,
+   "accP": 1.0,
+   "e_u": 0.043478260869565216,
+   "e_c": 0.008064516129032258,
+   "m_u": 20.0,
+   "m_c": 12.5
+  },
+  "KH0279 UR049 | level 2 | place 10^1": {
+   "readable": false,
+   "nU": 55,
+   "nP": 34,
+   "accU": 0.9454545454545454,
+   "accP": 0.7941176470588235,
+   "e_u": 0.07017543859649122,
+   "e_c": 0.2222222222222222,
+   "m_u": 11.5,
+   "m_c": 4.0
+  },
+  "KH0083 AS070/UR035 | level 2 | place 10^1": {
+   "readable": false,
+   "nU": 92,
+   "nP": 75,
+   "accU": 0.9347826086956522,
+   "accP": 0.8933333333333333,
+   "e_u": 0.07446808510638298,
+   "e_c": 0.07792207792207792,
+   "m_u": 16.0,
+   "m_c": 9.0
+  },
+  "KH0349 UR113 | level 1 | place 10^2": {
+   "readable": false,
+   "nU": 194,
+   "nP": 0
+  },
+  "KH0349 UR113 | level 3 | place 10^2": {
+   "readable": false,
+   "nU": 13,
+   "nP": 0
+  },
+  "KH0349 UR113 | level 4 | place 10^2": {
+   "readable": false,
+   "nU": 1,
+   "nP": 0
+  },
+  "KH0370 UR131A | level 1 | place 10^2": {
+   "readable": true,
+   "nU": 34,
+   "nP": 15,
+   "accU": 1.0,
+   "accP": 1.0,
+   "e_u": 0.027777777777777776,
+   "e_c": 0.058823529411764705,
+   "m_u": 19.0,
+   "m_c": 4.0
+  },
+  "KH0104 UR1091 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 84,
+   "nP": 15,
+   "accU": 0.7738095238095238,
+   "accP": 0.7333333333333333,
+   "e_u": 0.1744186046511628,
+   "e_c": 0.29411764705882354,
+   "m_u": 14.5,
+   "m_c": 8.5
+  },
+  "KH0108 UR1095 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 161,
+   "nP": 63,
+   "accU": 0.5714285714285714,
+   "accP": 0.5714285714285714,
+   "e_u": 0.4294478527607362,
+   "e_c": 0.4307692307692308,
+   "m_u": 16.5,
+   "m_c": 19.0
+  },
+  "KH0108 UR1095 | level 2 | place 10^1": {
+   "readable": false,
+   "nU": 53,
+   "nP": 22,
+   "accU": 0.49056603773584906,
+   "accP": 0.0,
+   "e_u": 0.45454545454545453,
+   "e_c": 0.5,
+   "m_u": 13.5,
+   "m_c": 13.75
+  },
+  "KH0265 UR032 | level 1 | place 10^2": {
+   "readable": false,
+   "nU": 25,
+   "nP": 5,
+   "accU": 0.84,
+   "accP": 0.8,
+   "e_u": 0.1111111111111111,
+   "e_c": 0.2857142857142857,
+   "m_u": 10.0,
+   "m_c": 4.0
+  },
+  "KH0087 AS074 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 35,
+   "nP": 6,
+   "accU": 0.0,
+   "accP": 0.0,
+   "e_u": 0.4864864864864865,
+   "e_c": 0.875,
+   "m_u": 8.0,
+   "m_c": 8.25
+  },
+  "KH0394 UR154 | level 1 | place 10^2": {
+   "readable": true,
+   "nU": 10,
+   "nP": 9,
+   "accU": 1.0,
+   "accP": 1.0,
+   "e_u": 0.08333333333333333,
+   "e_c": 0.09090909090909091,
+   "m_u": 18.0,
+   "m_c": 3.5
+  },
+  "KH0394 UR154 | level 1 | place 10^1": {
+   "readable": true,
+   "nU": 10,
+   "nP": 10,
+   "accU": 1.0,
+   "accP": 1.0,
+   "e_u": 0.08333333333333333,
+   "e_c": 0.08333333333333333,
+   "m_u": 18.0,
+   "m_c": 10.0
+  },
+  "KH0383 UR143 | level 2 | place 10^1": {
+   "readable": false,
+   "nU": 66,
+   "nP": 40,
+   "accU": 0.5,
+   "accP": 0.5,
+   "e_u": 0.5,
+   "e_c": 0.5,
+   "m_u": 22.25,
+   "m_c": 21.75
+  },
+  "KH0383 UR143 | level 1 | place 10^2": {
+   "readable": false,
+   "nU": 16,
+   "nP": 7,
+   "accU": 1.0,
+   "accP": 0.8571428571428571,
+   "e_u": 0.05555555555555555,
+   "e_c": 0.2222222222222222,
+   "m_u": 40.5,
+   "m_c": 22.0
+  },
+  "KH0383 UR143 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 16,
+   "nP": 17,
+   "accU": 1.0,
+   "accP": 0.7058823529411765,
+   "e_u": 0.05555555555555555,
+   "e_c": 0.3157894736842105,
+   "m_u": 40.5,
+   "m_c": 31.0
+  },
+  "KH0393 UR153 | level 1 | place 10^2": {
+   "readable": true,
+   "nU": 10,
+   "nP": 20,
+   "accU": 1.0,
+   "accP": 1.0,
+   "e_u": 0.08333333333333333,
+   "e_c": 0.045454545454545456,
+   "m_u": 20.25,
+   "m_c": 6.0
+  },
+  "KH0082 AS069 | level 1 | place 10^2": {
+   "readable": true,
+   "nU": 231,
+   "nP": 27,
+   "accU": 1.0,
+   "accP": 1.0,
+   "e_u": 0.004291845493562232,
+   "e_c": 0.034482758620689655,
+   "m_u": 17.0,
+   "m_c": 4.0
+  },
+  "KH0017 AS016 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 6,
+   "nP": 0
+  },
+  "KH0029 AS027 | level 1 | place 10^2": {
+   "readable": false,
+   "nU": 11,
+   "nP": 0
+  },
+  "KH0029 AS027 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 11,
+   "nP": 0
+  },
+  "KH0311 UR074 | level 1 | place 10^1": {
+   "readable": false,
+   "nU": 54,
+   "nP": 10,
+   "accU": 0.8333333333333334,
+   "accP": 0.8,
+   "e_u": 0.17857142857142858,
+   "e_c": 0.25,
+   "m_u": 11.5,
+   "m_c": 9.25
+  },
+  "KH0300 UR063 | level 1 | place 10^1": {
+   "readable": true,
+   "nU": 57,
+   "nP": 11,
+   "accU": 0.9649122807017544,
+   "accP": 0.9090909090909091,
+   "e_u": 0.05084745762711865,
+   "e_c": 0.15384615384615385,
+   "m_u": 19.0,
+   "m_c": 9.5
+  },
+  "KH0283 UR053A | level 1 | place 10^2": {
+   "readable": true,
+   "nU": 45,
+   "nP": 43,
+   "accU": 0.9777777777777777,
+   "accP": 1.0,
+   "e_u": 0.0425531914893617,
+   "e_c": 0.022222222222222223,
+   "m_u": 27.5,
+   "m_c": 10.0
+  },
+  "KH0321 UR085 | level 1 | place 10^2": {
+   "readable": true,
+   "nU": 119,
+   "nP": 77,
+   "accU": 0.9915966386554622,
+   "accP": 0.987012987012987,
+   "e_u": 0.01652892561983471,
+   "e_c": 0.012658227848101266,
+   "m_u": 33.0,
+   "m_c": 16.0
+  },
+  "KH0349 UR113 | level 2 | place 10^2": {
+   "readable": false,
+   "nU": 343,
+   "nP": 0
+  }
+ },
+ "results": {
+  "L-shift": {
+   "verdict": "NOT TESTABLE",
+   "reason": "fewer than 5 flagged clusters in readable strata",
+   "n": 1
+  },
+  "L-turn0": {
+   "n": 14,
+   "V_units": 0,
+   "V_claimed": 14,
+   "ties": 0,
+   "p_c": 0.9999999999999998,
+   "p_u": 7.992012365657587e-18,
+   "per_khipu": {
+    "KH0147 UR1131 C": 1,
+    "KH0165 UR1149 C": 1,
+    "KH0172 AS156 C": 1,
+    "KH0254 UR018 C": 1,
+    "KH0279 UR049 C": 1,
+    "KH0370 UR131A C": 1,
+    "KH0393 UR153 C": 1,
+    "KH0394 UR154 C": 7
+   },
+   "H0c_rejected": false,
+   "H0u_rejected": true,
+   "verdict": "POSITION SAYS CLAIMED PLACE"
+  },
+  "E-type": {
+   "verdict": "NOT TESTABLE",
+   "reason": "fewer than 5 flagged clusters in readable strata",
+   "n": 4
+  }
+ },
+ "results_M2": {
+  "L-shift": {
+   "n": 100,
+   "n_with_Pc_reference": 9,
+   "below": 71,
+   "lowest": 29,
+   "p2_u": 6.998044087412901e-54,
+   "p2_c": 0.8747484930630387,
+   "per_khipu": {
+    "KH0030 AS028 lowest": 6,
+    "KH0030 AS028 below": 6,
+    "KH0055 AS044 below": 1,
+    "KH0056 AS045 below": 1,
+    "KH0074 AS063 below": 1,
+    "KH0093 AS080 lowest": 6,
+    "KH0093 AS080 below": 4,
+    "KH0103 AS090/N2 lowest": 16,
+    "KH0103 AS090/N2 below": 58,
+    "KH0340 UR104 lowest": 1
+   },
+   "H0u_rejected": true,
+   "H0c_rejected": false,
+   "verdict": "ORDER SAYS CLAIMED PLACE (H0c side not testable)"
+  },
+  "L-turn0": {
+   "n": 42,
+   "n_with_Pc_reference": 37,
+   "below": 31,
+   "lowest": 11,
+   "p2_u": 7.871163972078177e-26,
+   "p2_c": 0.7581924603218223,
+   "per_khipu": {
+    "KH0014 AS013 below": 1,
+    "KH0083 AS070/UR035 below": 1,
+    "KH0087 AS074 below": 1,
+    "KH0104 UR1091 below": 1,
+    "KH0108 UR1095 lowest": 4,
+    "KH0108 UR1095 below": 1,
+    "KH0147 UR1131 below": 1,
+    "KH0165 UR1149 below": 2,
+    "KH0172 AS156 lowest": 1,
+    "KH0254 UR018 below": 2,
+    "KH0265 UR032 lowest": 4,
+    "KH0265 UR032 below": 2,
+    "KH0279 UR049 below": 2,
+    "KH0349 UR113 below": 4,
+    "KH0370 UR131A below": 1,
+    "KH0383 UR143 below": 6,
+    "KH0393 UR153 below": 1,
+    "KH0394 UR154 lowest": 2,
+    "KH0394 UR154 below": 5
+   },
+   "H0u_rejected": true,
+   "H0c_rejected": false,
+   "verdict": "ORDER SAYS CLAIMED PLACE"
+  },
+  "E-type": {
+   "verdict": "NOT APPLICABLE",
+   "reason": "circular: K026 E-type is defined by cluster order"
+  }
+ },
+ "holm_m": 6,
+ "runtime_s": 4.4
+}
