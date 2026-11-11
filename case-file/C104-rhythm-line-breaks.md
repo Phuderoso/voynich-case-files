@@ -61,3 +61,63 @@ Seeds 11693 (design), 11694 (gates), 11695 (tests; +1 for D_W), 11696 (natural).
 
 ---
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI designed and registered this test)
+
+## Results (appended after the registered run; registration above unchanged)
+
+**Timing correction.** The registration was committed locally at **20:36:01 PT** (commit `9629757`), not "~20:45" as its
+header estimated. The run followed immediately (65.9 s, `timeout 600`). The GitHub write connector was not reachable this
+cycle, so the registration commit existed only in the local clone until it could be pushed; its local timestamp is the
+evidence of order, and it is published unchanged.
+
+- **Audit C103: exact** (the four H2 observed r equal the published values to 1e−12).
+- **Design:** q = 0.40 for both H1a and H1b (smaller q failed the 9/10 design bar somewhere). The gates therefore certify power
+  only against large plants (40 % of pairs or runs).
+- **Gates H1a:** all four subsets pass (FPR 0–1/20, POS 20/20, NEG 20/20, broken meter OK).
+- **Gates H1b:** IT2a A, IT2a B, ZL3b A pass (NEG 17–20/20); **ZL3b B fails (FPR 3/20)**, so H1b Currier B is NOT TESTABLE.
+
+| test | IT2a A | IT2a B | ZL3b A | ZL3b B |
+|---|---|---|---|---|
+| H1a r_X / null mean / D_X (z, p) | 0.014 / 0.063 / −0.049 (−1.04, 0.29) | 0.053 / 0.035 / +0.018 (0.75, 0.45) | 0.035 / 0.055 / −0.020 (−0.44, 0.67) | 0.027 / 0.032 / −0.005 (−0.20, 0.84) |
+| H1b r_L / null mean / D_L (z, p) | 0.241 / 0.208 / +0.033 (1.11, 0.27) | 0.157 / 0.137 / +0.019 (1.02, 0.31) | 0.213 / 0.204 / +0.009 (0.29, 0.78) | 0.136 / 0.120 / +0.016 (0.83, 0.40) |
+
+All Holm-adjusted p = 1. **Registered verdicts:** H1a Currier A **NOT DETECTED**, H1a Currier B **NOT DETECTED**;
+H1b Currier A **NOT DETECTED**, H1b Currier B **NOT TESTABLE** (gate).
+
+**Descriptive (registered, no verdict).** Within-line D_W of the same kept words: +0.061 / +0.072 / +0.067 / +0.078 (IT2a A, IT2a B,
+ZL3b A, ZL3b B); ratio D_X/D_W −0.80 / +0.25 / −0.30 / −0.06. Natural prose cut into pseudo-lines: D_X −0.016 (Caesar), −0.027
+(Descartes), −0.004 (Dante), −0.037 (Cervantes), +0.036 (Kivi), none with p < 0.14; D_W +0.023, −0.028, −0.107, −0.158, −0.016.
+
+## Correction to the registered reading rule (post hoc, disclosed)
+
+The registered reading rule compared D_X with the within-line *adjacent* D_W. That comparison is wrong. The H1a pair
+(last kept word of line *i*, first kept word of line *i+1*) skips three dropped words: the last word of line *i* and words 1 and 2
+of line *i+1*. In running text it is therefore a **lag-4 pair**, not an adjacent one. The natural-prose reference shows the
+problem: there the breaks are layout-only, yet D_X is about zero even where D_W is strongly negative (Dante, Cervantes). So
+"D_X ≈ 0 while D_W > 0" cannot mean "the rhythm stops at the break".
+
+Post hoc check ([`tools/c104_posthoc_lag.py`](../tools/c104_posthoc_lag.py), seed 11697, R 500, not registered;
+[`analysis/C104_posthoc_lag.json`](../analysis/C104_posthoc_lag.json)): within-line lag-k persistence of the kept words, Currier B,
+IT2a / ZL3b: lag 1 +0.073 / +0.077; lag 2 −0.010 / −0.009; lag 3 −0.032 / −0.041; lag 4 −0.032 / −0.028 (null sd ≈ 0.011). Part
+of the negative sign at lags 3–4 is expected from a fixed within-line multiset once lag 1 is positive, so these are not
+independent findings. The cross-break D_X (−0.005 / +0.018, sd ≈ 0.024) is within about 1–2 sd of the within-line lag-4 value.
+The test cannot tell "runs on" from "stops".
+
+**Corrected reading.** H1a measured a lag-4 relation across the break and found nothing (NOT DETECTED, gates pass at q 0.40).
+Whether the *adjacent* rhythm crosses the line break is **NOT TESTABLE with this design**. H1b: in Currier A, adjacent lines in a
+paragraph run are no more alike in mean word length than any two lines of the same run. The raw r_L of 0.14–0.24 is carried by
+paragraph-level heterogeneity, which the null keeps. Nothing here is a reading or meaning.
+
+**Fix for C105 (to be pre-registered):** pair the actual adjacent words across the break (last word of line *i* → first word of line
+*i+1*). Both are edge words, which are known to be special, so the null must keep positions: it re-pairs line ends with line starts
+of other lines in the same run (or paragraph) rather than permuting words inside lines. The within-line comparator should be the
+word-(n−1) → word-n and word-1 → word-2 edge pairs under the same re-pairing logic.
+
+Compute: 65.9 s registered + 40 s post hoc + 6 s smoke. Seeds 11693–11697 used; **next free 11698**.
+
+**News check (~20:50 PT).** forskning.no (10 Nov 2026) ran an interview piece in which linguist Peter Bakker calls the manuscript
+a 15th-century hoax (an opinion, not new data). Coverage of Layfield & Fagin Davis's singulion re-binding paper (Digital
+Medievalist, doi:10.4000/16k0a) continues; it is already in our backlog. C104 uses adjacency only inside paragraphs, so a page
+re-ordering does not affect it.
+
+---
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI ran this test, found the flaw in its own reading rule, and corrected it)
