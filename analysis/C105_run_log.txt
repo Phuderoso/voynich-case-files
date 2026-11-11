@@ -1,0 +1,7 @@
+n {'IT2a|A': {'lines': 637, 'runs': 187, 'runs_ge3': 100, 'pairs': 450, 'informative_pairs': 419}, 'IT2a|B': {'lines': 2013, 'runs': 242, 'runs_ge3': 192, 'pairs': 1771, 'informative_pairs': 1747}, 'ZL3b|A': {'lines': 663, 'runs': 200, 'runs_ge3': 104, 'pairs': 463, 'informative_pairs': 429}, 'ZL3b|B': {'lines': 1988, 'runs': 259, 'runs_ge3': 200, 'pairs': 1729, 'informative_pairs': 1704}} [0.2s]
+audit True [0.2s]
+design 0.1 [5.9s]
+design 0.2 [11.9s]
+design 0.4 [17.7s]
+gates done [29.3s]
+verdict {'A': 'NOT DETECTED', 'B': 'NOT DETECTED'} [293.3s]
