@@ -62,6 +62,7 @@ would have been usable. Two changes, nothing else: (1) the null rng is derived a
 lines** (the shortest cell checked, the C005 configuration, makes 7.15 tokens/line → ≈ 32.9k). Seeds, statistic, bar, Holm rule,
 gates and labels are unchanged. **Disclosure:** the v1 log printed E_slot for the 84 usable runs it finished (cells 0–62, partial):
 values 0.010–0.191, none above the bar 0.1996. Those numbers come from shorter texts and are not used; the v2 texts are different
-draws (more lines change the generator's output).
+draws (more lines change the generator's output). A first v2 launch (16:30:46) died after 4 s on a typo my edit introduced (a
+comment swallowed `hs = []`), before any statistic was printed; fixed in the next commit, no design change.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

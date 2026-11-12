@@ -76,7 +76,7 @@ def run(args):
     Lg = G.generate(cfg, s); fl = G.flat(Lg or [])
     if not Lg or sum(map(len, Lg)) < 2 * NHALF: return ci, s, None, None
     surf = G.stats(fl[:6000]) if len(fl) >= 6000 else None
-    rng = np.random.default_rng([NSEED, ci + 1, s])  # v2: ci+1 (v1 crashed on ci=-1); hs = []
+    rng = np.random.default_rng([NSEED, ci + 1, s]); hs = []  # v2: ci+1 (v1 crashed on ci=-1)
     for h in halves(Lg):
         r = test([tuple(T.units(w)) for w in flat(h)], rng, NSH); hs.append(dict(E=r['E'], p=r['p'], V=''.join(r['V'])))
     return ci, s, hs, surf
