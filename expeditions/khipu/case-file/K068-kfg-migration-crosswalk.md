@@ -1,6 +1,6 @@
 # K068 · Data-source migration to the Khipu Field Guide (KFG): loader, OKR↔KFG crosswalk, duplicate re-test
 
-**Status:** pre-registered 2026-11-11 ~18:05 PT, before the registered run. Results section is added after the run.
+**Status:** pre-registered 2026-11-11 ~17:57 PT (commit `462e040`), before the registered run; results below.
 
 ## Why
 On 11 Nov 2026 Ashok Khosla (creator of the Khipu Field Guide) answered our OKR issue
@@ -49,6 +49,38 @@ means the KFG already handles it and the follow-up on #3 thanks, reports it and 
   classes (KH0140·KH0483 = C1; KH0132·KH0456 = C2, KH0456 possibly not yet downloaded) and a G2 rate of 0.980. The rules
   above were written with the tool, not changed after the smoke; the registered run uses the complete download.
 - No khipu result is re-tested in K068. All K001–K067 results remain **OKR-based and under KFG re-audit** (K069+, one per run, pre-registered).
+
+## Results (registered run 2026-11-11 ~17:58 PT, 8.4 s; prereg `462e040`)
+Download: 697 ids listed, **695 files fetched** (KH0085 and KH0109 return 404: both are split in KFG into KH0085A–C and KH0109A–C).
+Excel write dates 2026-09-08 and 2026-09-10. Local store `kfg_20261111.db` SHA-256 `582e548d…994d` (+ `.bak`); per-file hashes in `analysis/k068_kfg_manifest.tsv`; full output in `analysis/k068_results.json`.
+
+**Loader gates: all pass.** G1 695/695 parse. G2 42 822 of 43 266 knotted cords (**0.990**) have `Value` = sum of knot clusters
+(the 444 others are listed for later; e.g. KH0004 p2s1 knots `6L` but value 37). G3 0 name mismatches. KFG data is cleared for K069+.
+
+**Crosswalk.** 611 KH ids in both sources; **8 OKR-only** (KH0085, KH0109, KH0604–KH0607 split into lettered parts in KFG;
+KH0483 merged, below; KH0146 'AS130 B' has no clean KFG match, only token hits on KH0145/KH0576/KH0582); **84 KFG-only**
+(new khipus and lettered splits). Alias agreement 609/611. Museum number differs on 157/611 (often an added alternate number or
+reformatting, e.g. `64.19.1.7` → `71.1964.19.1.7`; not classified further here).
+
+**Pendant concordance (how much the numbers changed).** Of 611 shared khipus, the raw level-1 value sequence is **identical in 416**,
+reversed-identical in 2 (KH0034, KH0274: turned around in KFG), **same length but with differing values in 127**, and of
+**different length in 66**. So about a third of the khipus our K-results used carry curated changes in KFG. This sizes the re-audit; it is not yet a verdict on any result.
+
+**Duplicate re-test (issue #3).**
+- **KH0140·KH0483 → C1, resolved in KFG.** KH0483 is absent; KH0140's aliases are `AS125, UR247`, and its ChangeLog (Karen Thompson,
+  30 Jul 2025) records "AS125 = UR247; this coalesces the data", with the museum number corrected **VA42670 → VA42610**
+  ("error in Aschers databook (1 mistaken for 7)") and Urton's twist, attachment and p2 knot positions folded in. Our OKR-based
+  claim was right, and the KFG had already fixed it before we filed.
+- **KH0132·KH0456 → registered class D, but the rule was mis-specified; correct reading: the claim stands on KFG, unflagged.**
+  Both records are present (KH0132 = UR1118/AS118, VA42601; KH0456 = UR218, VA42559), neither names the other in aliases,
+  ChangeLog or notes. The registered classifier used an *exact* shared block ≥ 6, but the claim was a one-mismatch block: the exact
+  longest common block is 4 on KFG **and was 4 on OKR too**, so "D, block no longer holds" is an artefact of my rule, not a change in the
+  data. The pre-registered secondary search finds the 8-value block in both KFG records unchanged
+  (`620 470 528 935 474 319 453 492` in KH0132, `… 932 …` in KH0456). I report the registered label and this correction side by side.
+
+**Verdict.** Migration step 1 done; loader validated. Issue #3: pair 1 already coalesced in KFG (thank and close); pair 2 still
+two unlinked records in KFG with the same 8-value block (offered to the KFG team as an observation, nothing more).
+All K001–K067 results remain OKR-based and are now under KFG re-audit (K069+, starting with verdict-reaching results).
 
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
