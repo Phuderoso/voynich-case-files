@@ -1,0 +1,115 @@
+F0 {'n_r5': 3069, 'n_eligible': 369, 'n_holdout': 367, 'G': 23, 'G_s': 10, 'G_masked': 18, 'G_s_masked': 10, 'KH0359_masked': 4, 'KH0405_masked': 4, 'pass': True}
+gates {"G0_hash_mismatch": 0, "G1_partition_rate": 0.9985611510791367, "GR_r5": {"khipus_identical": 416, "pendants": 18773, "agree": 18704, "rate": 0.9963245086027805, "r5_okr": 1447, "r5_kfg": 1496}, "pass_data": true, "pass_r5": true} 1.1
+data {'n_eligible': 428, 'n_holdout': 426, 'n_holdout_in_okr': 379, 'n_holdout_kfg_only': 47, 'discovery_present': True, 'r5_pendants_holdout': 1704, 'holdout_no_legal_pair': 14}
+nulls 100/426 G=32 6.3s
+nulls 200/426 G=48 9.0s
+nulls 300/426 G=63 11.7s
+nulls 400/426 G=68 13.9s
+observed {'G': 71, 'G_s': 57, 'G_ns': 14, 'G_null_mean': 15.4739, 'G_null_sd': 3.910744020004377, 'p_G': 9.999000099990002e-05, 'G_s_null_mean': 2.3171, 'p_G_s': 9.999000099990002e-05, 'G_ns_null_mean': 13.1568, 'p_G_ns': 0.44245575442455753, 'bh_names': ['KH0005', 'KH0007', 'KH0008', 'KH0055', 'KH0079', 'KH0109B', 'KH0217', 'KH0277', 'KH0358', 'KH0424', 'KH0699'], 'n_bh': 11, 'okr_shared': {'n': 379, 'G': 53, 'G_s': 39, 'G_ns': 14, 'bh': ['KH0055', 'KH0079', 'KH0217', 'KH0277', 'KH0358', 'KH0424']}, 'kfg_only': {'n': 47, 'G': 18, 'G_s': 18, 'G_ns': 0, 'bh': ['KH0005', 'KH0007', 'KH0008', 'KH0109B', 'KH0699']}} 15.1
+calib {'n': 200, 'fpr_G': 0.02, 'fpr_G_s': 0.0, 'fpr_G_ns': 0.01, 'bh_gate': np.float64(0.02)} 20.9
+pow H1 {'K040_H1_m9': {'n': 200, 'hits': 134, 'rate': 0.67}} 25.5
+pow H2 {'K040_H1_m9': {'n': 200, 'hits': 134, 'rate': 0.67}, 'K040_H2_4plant': {'n': 200, 'hits': 194, 'skipped': 91, 'rate': 0.97}, 'K040_H2_1plant_disclosed': {'n': 200, 'hits': 10, 'skipped': 0, 'rate': 0.05}} 36.9
+pow K042 {'K040_H1_m9': {'n': 200, 'hits': 134, 'rate': 0.67}, 'K040_H2_4plant': {'n': 200, 'hits': 194, 'skipped': 91, 'rate': 0.97}, 'K040_H2_1plant_disclosed': {'n': 200, 'hits': 10, 'skipped': 0, 'rate': 0.05}, 'K042_H1_m9': {'n': 200, 'hits': 200, 'attempts': 200, 'rate': 1.0}, 'K042_H2_m9': {'n': 200, 'hits': 109, 'attempts': 200, 'rate': 0.545}} 46.2
+{
+ "K040_H1": {
+  "obs": 71,
+  "null_mean": 15.4739,
+  "p": 9.999000099990002e-05,
+  "fpr": 0.02,
+  "power": 0.67,
+  "borderline": false,
+  "kfg": "supported"
+ },
+ "K040_H2": {
+  "n_bh": 11,
+  "names": [
+   "KH0005",
+   "KH0007",
+   "KH0008",
+   "KH0055",
+   "KH0079",
+   "KH0109B",
+   "KH0217",
+   "KH0277",
+   "KH0358",
+   "KH0424",
+   "KH0699"
+  ],
+  "bh_gate": 0.02,
+  "power_4plant": 0.97,
+  "kfg": "supported"
+ },
+ "K042_H1": {
+  "obs": 57,
+  "null_mean": 2.3171,
+  "p": 9.999000099990002e-05,
+  "fpr": 0.0,
+  "power": 1.0,
+  "borderline": false,
+  "kfg": "supported"
+ },
+ "K042_H2": {
+  "obs": 14,
+  "null_mean": 13.1568,
+  "p": 0.44245575442455753,
+  "fpr": 0.01,
+  "power": 0.545,
+  "borderline": false,
+  "kfg": "not supported"
+ },
+ "K056_KH0359": {
+  "n_r5": 4,
+  "pairs": 47,
+  "pairs_masked": 41,
+  "obs": 4,
+  "null_mean": 0.0132,
+  "p": 4.999750012499375e-05,
+  "fpr": 0.005,
+  "power": 1.0,
+  "kfg": "survives"
+ },
+ "K056_KH0405": {
+  "n_r5": 0,
+  "pairs": 10,
+  "pairs_masked": 10,
+  "obs": 4,
+  "null_mean": 0.00295,
+  "p": 4.999750012499375e-05,
+  "fpr": 0.01,
+  "power": 1.0,
+  "kfg": "survives"
+ },
+ "K056_G": {
+  "obs": 63,
+  "null_mean": 13.8065,
+  "null_sd": 3.68093164158206,
+  "p": 9.999000099990002e-05,
+  "fpr": 0.045,
+  "power_m9": {
+   "n": 200,
+   "hits": 151,
+   "attempts": 200,
+   "rate": 0.755
+  },
+  "n_active": 412,
+  "borderline": false,
+  "kfg": "survives"
+ },
+ "K056_G_s": {
+  "obs": 54,
+  "null_mean": 2.0458,
+  "null_sd": 1.4184859393028892,
+  "p": 9.999000099990002e-05,
+  "fpr": 0.015,
+  "power_m9": {
+   "n": 200,
+   "hits": 200,
+   "attempts": 200,
+   "rate": 1.0
+  },
+  "n_active": 412,
+  "borderline": false,
+  "kfg": "survives"
+ }
+}
+{"K040_H1": "REPLICATED", "K040_H2": "CHANGED", "K042_H1": "REPLICATED", "K042_H2": "REPLICATED", "K056_KH0359": "REPLICATED", "K056_KH0405": "REPLICATED", "K056_G": "CHANGED", "K056_G_s": "REPLICATED"} 72.8

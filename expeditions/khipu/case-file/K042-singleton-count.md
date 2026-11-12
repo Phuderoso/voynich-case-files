@@ -195,3 +195,9 @@ already counted as whole-group totals — or a pre-registered colour/side descri
 that stays non-testing, or line 8 (still low priority).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## KFG re-audit note (K072, 2026-11-12)
+On Khipu Field Guide data ([K072](K072-kfg-line2-corpus.md)) both verdicts **replicate**: G_s 57 vs 2.32 (p 1.0×10⁻⁴, FPR 0,
+power 1.00); G_ns 14 vs 13.16 (p 0.44, power 0.545, readable but only just). The excess still lives in singleton-total pairs.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

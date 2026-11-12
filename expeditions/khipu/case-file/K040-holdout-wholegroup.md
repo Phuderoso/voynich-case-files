@@ -181,3 +181,10 @@ Under the K008 multi-number (R5) mask, H1 is **no longer established**: masked G
 survives the same mask. See [K056](K056-multinumber-wholegroup.md).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## KFG re-audit note (K072, 2026-11-12) — correction
+On Khipu Field Guide data ([K072](K072-kfg-line2-corpus.md)): **H1 replicated** (holdout G 71 vs 15.47, p 1.0×10⁻⁴, FPR 0.02,
+power 0.67). **H2 corrected:** 11 holdout khipus are BH-significant on KFG (gate 0.02, 4-plant power 0.97), so "no third
+UR119" holds only for the OKR extract. The new names come from KFG curation and KFG-only Ascher khipus (K071, K072 post hoc).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

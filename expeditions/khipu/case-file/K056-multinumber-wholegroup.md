@@ -137,3 +137,10 @@ leaned partly on hits that sit on, or sum over, R5 pendants. Most of them are sm
 Same-data sensitivity on the pinned corpus; not an independent replication. No decipherment is claimed.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## KFG re-audit note (K072, 2026-11-12) — correction
+On Khipu Field Guide data ([K072](K072-kfg-line2-corpus.md), KFG-R5 port agreeing 0.9963 with OKR-R5): KH0359, KH0405 and G_s
+**survive again** (replicated). **T3 corrected:** masked holdout G is 63 vs 13.81, p 1.0×10⁻⁴ (FPR 0.045, power 0.755), so the
+pooled count *is* established under the mask on KFG; overall K056 becomes **ROBUST** on KFG (PARTIAL stays the OKR verdict).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
