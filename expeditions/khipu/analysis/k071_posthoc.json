@@ -1,0 +1,124 @@
+[
+ {
+  "khipu": "KH0005",
+  "in_okr": false,
+  "G_kfg": 1
+ },
+ {
+  "khipu": "KH0007",
+  "in_okr": false,
+  "G_kfg": 4
+ },
+ {
+  "khipu": "KH0008",
+  "in_okr": false,
+  "G_kfg": 3
+ },
+ {
+  "khipu": "KH0055",
+  "in_okr": true,
+  "G_kfg": 6,
+  "okr_duplicate_flag": false,
+  "n_pend_okr": 87,
+  "n_pend_kfg": 100,
+  "G_okr": 0,
+  "same_values": false,
+  "same_groups": false
+ },
+ {
+  "khipu": "KH0079",
+  "in_okr": true,
+  "G_kfg": 6,
+  "okr_duplicate_flag": false,
+  "n_pend_okr": 147,
+  "n_pend_kfg": 171,
+  "G_okr": 0,
+  "same_values": false,
+  "same_groups": false
+ },
+ {
+  "khipu": "KH0109B",
+  "in_okr": false,
+  "G_kfg": 5
+ },
+ {
+  "khipu": "KH0217",
+  "in_okr": true,
+  "G_kfg": 7,
+  "okr_duplicate_flag": false,
+  "n_pend_okr": 73,
+  "n_pend_kfg": 85,
+  "G_okr": 0,
+  "same_values": false,
+  "same_groups": false
+ },
+ {
+  "khipu": "KH0277",
+  "in_okr": true,
+  "G_kfg": 2,
+  "okr_duplicate_flag": false,
+  "n_pend_okr": 43,
+  "n_pend_kfg": 47,
+  "G_okr": 0,
+  "same_values": false,
+  "same_groups": false
+ },
+ {
+  "khipu": "KH0358",
+  "in_okr": true,
+  "G_kfg": 6,
+  "okr_duplicate_flag": false,
+  "n_pend_okr": 145,
+  "n_pend_kfg": 167,
+  "G_okr": 0,
+  "same_values": false,
+  "same_groups": false
+ },
+ {
+  "khipu": "KH0359",
+  "in_okr": true,
+  "G_kfg": 4,
+  "okr_duplicate_flag": false,
+  "n_pend_okr": 173,
+  "n_pend_kfg": 173,
+  "G_okr": 4,
+  "same_values": false,
+  "same_groups": true,
+  "G_kfgvalues_okrgroups": 4,
+  "G_okrvalues_kfggroups": 4,
+  "n_values_changed": 4
+ },
+ {
+  "khipu": "KH0405",
+  "in_okr": true,
+  "G_kfg": 4,
+  "okr_duplicate_flag": false,
+  "n_pend_okr": 30,
+  "n_pend_kfg": 30,
+  "G_okr": 4,
+  "same_values": true,
+  "same_groups": true,
+  "G_kfgvalues_okrgroups": 4,
+  "G_okrvalues_kfggroups": 4,
+  "n_values_changed": 0
+ },
+ {
+  "khipu": "KH0424",
+  "in_okr": true,
+  "G_kfg": 2,
+  "okr_duplicate_flag": false,
+  "n_pend_okr": 58,
+  "n_pend_kfg": 58,
+  "G_okr": 2,
+  "same_values": true,
+  "same_groups": true,
+  "G_kfgvalues_okrgroups": 2,
+  "G_okrvalues_kfggroups": 2,
+  "n_values_changed": 0
+ },
+ {
+  "khipu": "KH0699",
+  "in_okr": false,
+  "G_kfg": 2
+ }
+]
