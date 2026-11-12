@@ -2,7 +2,7 @@
 """C110 (F-VC step 3): can any setting in the FIXED C083 grid of the Timm-Schinner generator reach the manuscript's
 neighbour alternation beyond slots (C109 E_slot 0.208-0.225)?
 Statistic: C109's E_slot (Sukhotin re-fitted per shuffle, slot-preserving null N2), NSH 100 per half, imported unchanged.
-Grid: C083's 65 cells (tools/c083_generator_grid.py::grid), 3,400 lines per run, common seeds 11744-11746 (6 halves/cell).
+Grid: C083's 65 cells (tools/c083_generator_grid.py::grid), 4,600 lines per run (v2 amendment), common seeds 11744-11746 (6 halves/cell).
 Bar (fixed from the PUBLISHED C109 Voynich values, Kryptos's review): B = min(Voynich E_slot) - 2*SE, SE = sd(4 halves, ddof 1)/2.
 Per cell (usable iff >= 4 halves): one-sided one-sample t vs B in each direction; Holm across usable cells, alpha 0.05, per
 direction. REACHES = up rejected; BELOW = down rejected; else UNRESOLVED. Grid maximum is descriptive only.
@@ -61,7 +61,7 @@ import c083_generator_grid as C
 from c108_sukhotin_alternation import flat, chars, halves, NHALF
 from c109_sukhotin_slot_null import test
 
-GSEEDS, NSEED, GLINES, NSH, ALPHA = [11744, 11745, 11746], 11747, 3400, 100, 0.05
+GSEEDS, NSEED, GLINES, NSH, ALPHA = [11744, 11745, 11746], 11747, 4600, 100, 0.05  # v2: 4600 lines (v1 3400 left 111/195 runs short)
 POS = [('Latin_Caesar', 0), ('Latin_Descartes', 0), ('Finnish_Kivi', 0), ('Finnish_Kivi', 1),
        ('Spanish_Cervantes', 0), ('Spanish_Cervantes', 1)]
 
@@ -76,7 +76,7 @@ def run(args):
     Lg = G.generate(cfg, s); fl = G.flat(Lg or [])
     if not Lg or sum(map(len, Lg)) < 2 * NHALF: return ci, s, None, None
     surf = G.stats(fl[:6000]) if len(fl) >= 6000 else None
-    rng = np.random.default_rng([NSEED, ci, s]); hs = []
+    rng = np.random.default_rng([NSEED, ci + 1, s])  # v2: ci+1 (v1 crashed on ci=-1); hs = []
     for h in halves(Lg):
         r = test([tuple(T.units(w)) for w in flat(h)], rng, NSH); hs.append(dict(E=r['E'], p=r['p'], V=''.join(r['V'])))
     return ci, s, hs, surf

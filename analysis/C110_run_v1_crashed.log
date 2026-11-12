@@ -1,0 +1,222 @@
+bar 0.1996 [0.2247, 0.2084, 0.224, 0.2101]
+cell 2 11744 None 2.5
+cell 2 11745 None 2.5
+cell 3 11744 None 3.7
+cell 2 11746 None 3.7
+cell 3 11745 None 4.7
+cell 3 11746 None 4.8
+cell 4 11744 None 6.3
+cell 4 11745 None 6.4
+cell 1 11745 [(0.1604, 'aenoy'), (0.1439, 'aenoy')] 6.5
+cell 1 11744 [(0.0451, 'adeno'), (0.0756, 'adnos')] 6.8
+cell 0 11745 [(0.1246, 'aenoy'), (0.1438, 'aenoy')] 6.8
+cell 0 11744 [(0.1386, 'ackhcphenoy'), (0.0868, 'acfhdfknost')] 6.8
+cell 1 11746 [(0.1878, 'acfhckhcthenoy'), (0.1772, 'aenoy')] 7.1
+cell 0 11746 [(0.1469, 'aenoy'), (0.1524, 'aenoy')] 7.6
+cell 6 11745 None 8.5
+cell 6 11744 None 8.6
+cell 5 11744 None 8.6
+cell 4 11746 None 8.8
+cell 6 11746 None 9.0
+cell 7 11744 None 9.5
+cell 5 11745 None 9.6
+cell 5 11746 None 9.7
+cell 7 11745 None 10.4
+cell 7 11746 None 10.6
+cell 8 11745 [(0.0461, 'adno'), (0.065, 'aenosy')] 13.9
+cell 8 11746 [(0.0611, 'acphnoy'), (0.0562, 'adnos')] 14.2
+cell 8 11744 [(0.1505, 'aenosy'), (0.1536, 'aenosy')] 14.2
+cell 9 11746 [(0.0583, 'adnos'), (0.0633, 'adnos')] 14.6
+cell 9 11744 [(0.1491, 'aenoy'), (0.1573, 'aenoy')] 14.6
+cell 10 11744 [(0.105, 'acfhdnox'), (0.1211, 'adeio')] 14.8
+cell 10 11746 None 14.9
+cell 9 11745 [(0.1796, 'aenoy'), (0.1706, 'aenoy')] 15.1
+cell 10 11745 [(0.1786, 'aeioy'), (0.1745, 'aenosy')] 15.4
+cell 12 11746 None 16.5
+cell 11 11744 [(0.1423, 'afknosy'), (0.1589, 'aenosy')] 19.4
+cell 11 11745 [(0.1251, 'adeio'), (0.1327, 'adeio')] 19.6
+cell 11 11746 [(0.1738, 'aenoy'), (0.1736, 'acphenoy')] 19.7
+cell 12 11745 [(0.0103, 'adno'), (0.022, 'adgno')] 20.5
+cell 12 11744 [(0.139, 'aenoy'), (0.131, 'aenoy')] 20.6
+cell 13 11744 [(0.1478, 'aenoy'), (0.125, 'aenoy')] 20.8
+cell 14 11744 None 20.8
+cell 13 11745 [(0.0424, 'adnos'), (0.0484, 'adno')] 21.1
+cell 13 11746 [(0.0582, 'adno'), (0.0613, 'adno')] 22.3
+cell 14 11745 [(0.1859, 'aeioy'), (0.1908, 'aeioy')] 24.3
+cell 14 11746 [(0.1157, 'adenos'), (0.121, 'adenos')] 24.4
+cell 16 11744 [(0.1702, 'acfhcphenoy'), (0.1486, 'aenoy')] 25.0
+cell 15 11744 [(0.1095, 'adeno'), (0.1233, 'adeio')] 25.1
+cell 15 11745 [(0.1057, 'acfhcphcthdio'), (0.1215, 'adno')] 25.5
+cell 15 11746 [(0.1828, 'aenoy'), (0.1769, 'aeioy')] 25.6
+cell 16 11745 [(0.1295, 'acfhckhcphcthenoy'), (0.1375, 'acfhcphenoy')] 25.7
+cell 16 11746 [(0.1919, 'aenoy'), (0.1756, 'aenoy')] 27.1
+cell 17 11744 [(0.1437, 'aenoy'), (0.1508, 'aenoy')] 28.8
+cell 17 11746 [(0.1566, 'aenoy'), (0.1688, 'aenoy')] 29.0
+cell 17 11745 [(0.1219, 'acfhchcthmnoshy'), (0.1102, 'acfhegnoy')] 29.2
+cell 18 11744 [(0.0563, 'adeilo'), (0.0412, 'adeio')] 30.2
+cell 18 11745 [(0.0859, 'achdnosh'), (0.0805, 'achdnosh')] 30.5
+cell 19 11744 [(0.0313, 'acfhchdios'), (0.0359, 'achdiorssh')] 30.6
+cell 18 11746 [(0.0681, 'achdno'), (0.0607, 'achdno')] 31.2
+cell 19 11745 [(0.0975, 'adno'), (0.1021, 'adgno')] 32.2
+cell 22 11744 None 33.6
+cell 19 11746 [(0.1091, 'acheioy'), (0.1248, 'aeiosshy')] 34.7
+cell 20 11744 [(0.1088, 'ackhcphenoy'), (0.1114, 'acphcthegnoy')] 35.0
+cell 20 11745 [(0.1257, 'acthenoy'), (0.1141, 'aenoshy')] 35.2
+cell 20 11746 [(0.1428, 'achcthenoshy'), (0.143, 'achenoshy')] 35.6
+cell 21 11744 [(0.1705, 'aegnoy'), (0.1692, 'achnoy')] 36.2
+cell 21 11746 [(0.169, 'achckhcphcthemnoshy'), (0.1608, 'achckhcphcthemnoshy')] 36.3
+cell 23 11744 None 36.4
+cell 21 11745 [(0.1439, 'acfhegnoshy'), (0.0482, 'achdgno')] 37.3
+cell 22 11745 [(0.0964, 'achcthdno'), (0.0968, 'achckhcphdno')] 38.6
+cell 22 11746 [(0.056, 'achdnosh'), (0.0532, 'achdnosh')] 39.5
+cell 23 11745 [(0.1251, 'achiory'), (0.1421, 'aenosy')] 39.9
+cell 23 11746 [(0.1284, 'aenoy'), (0.1336, 'aenoy')] 40.0
+cell 24 11744 [(0.1587, 'aemnosy'), (0.1745, 'aenoy')] 41.0
+cell 24 11745 [(0.1456, 'aegnoy'), (0.1787, 'aenoy')] 41.1
+cell 24 11746 [(0.1597, 'aenoy'), (0.1922, 'aenoy')] 41.2
+cell 25 11744 [(0.1208, 'acfhegnoshy'), (0.1154, 'acfhenoshy')] 41.9
+cell 25 11745 [(0.1817, 'aegnoy'), (0.1884, 'aegnosy')] 42.9
+cell 25 11746 [(0.1707, 'aenoy'), (0.1779, 'aenoy')] 43.3
+cell 26 11744 [(0.0571, 'dfgiklopst'), (0.0639, 'dfiklopst')] 44.2
+cell 26 11746 [(0.0581, 'achdio'), (0.0874, 'achdno')] 45.6
+cell 26 11745 [(0.1349, 'achdenosh'), (0.1338, 'achdno')] 45.7
+cell 27 11745 [(0.1903, 'ackhcphcthenoy'), (0.1856, 'acfhchcphenoshy')] 45.7
+cell 27 11744 [(0.1151, 'aeioy'), (0.1407, 'aenoy')] 45.8
+cell 27 11746 [(0.1097, 'achcpheioshy'), (0.1493, 'acfhchckhenoshy')] 46.3
+cell 28 11744 [(0.1464, 'aemnoy'), (0.1488, 'aemnoy')] 48.4
+cell 28 11746 [(0.1662, 'aemnoshy'), (0.1281, 'aemnoy')] 49.0
+cell 28 11745 [(0.165, 'aemnoy'), (0.1362, 'aenoy')] 49.5
+cell 29 11744 [(0.1431, 'aenoy'), (0.1292, 'aenoy')] 50.5
+cell 30 11745 [(0.1005, 'achdno'), (0.1196, 'adeno')] 50.7
+cell 30 11744 [(0.1162, 'adeio'), (0.1105, 'adeio')] 50.9
+cell 29 11746 [(0.1239, 'aenoy'), (0.1172, 'aenoy')] 51.2
+cell 29 11745 [(0.1318, 'aeno'), (0.1252, 'aeno')] 51.2
+cell 30 11746 [(0.0881, 'adeno'), (0.0739, 'adeio')] 53.2
+cell 31 11744 [(0.0922, 'cthdefiklmpqrst'), (0.1151, 'ckhcphdefiklmpqrst')] 53.9
+cell 33 11744 None 54.1
+cell 32 11744 None 54.1
+cell 32 11745 None 54.2
+cell 32 11746 None 55.2
+cell 31 11745 [(0.0601, 'adenos'), (0.0849, 'adenosh')] 55.4
+cell 31 11746 [(0.1861, 'aemnoshy'), (0.1909, 'achemnoy')] 56.5
+cell 33 11745 None 57.3
+cell 34 11745 None 57.7
+cell 34 11746 None 57.9
+cell 33 11746 None 57.9
+cell 34 11744 None 58.1
+cell 35 11744 None 59.7
+cell 35 11745 None 59.8
+cell 35 11746 None 60.5
+cell 36 11744 None 60.7
+cell 36 11745 None 61.0
+cell 37 11744 None 61.0
+cell 36 11746 None 61.3
+cell 37 11745 None 62.1
+cell 37 11746 None 63.0
+cell 38 11744 None 64.1
+cell 39 11746 None 64.3
+cell 38 11746 None 64.8
+cell 39 11744 None 64.9
+cell 40 11744 None 65.1
+cell 38 11745 None 65.2
+cell 40 11745 None 66.0
+cell 39 11745 None 66.1
+cell 40 11746 None 68.6
+cell 41 11744 None 68.6
+cell 41 11746 None 68.9
+cell 41 11745 None 69.0
+cell 42 11744 None 69.2
+cell 42 11745 None 69.4
+cell 42 11746 None 70.3
+cell 44 11744 None 72.3
+cell 44 11745 None 72.4
+cell 45 11744 None 72.7
+cell 44 11746 None 72.7
+cell 43 11745 None 72.7
+cell 45 11745 None 73.0
+cell 45 11746 None 75.2
+cell 46 11745 None 75.9
+cell 46 11746 None 76.1
+cell 43 11744 [(0.113, 'acfhenoy'), (0.136, 'aenoshy')] 76.2
+cell 43 11746 [(0.1346, 'acfhenoshy'), (0.1488, 'aenoshy')] 77.7
+cell 48 11744 None 78.7
+cell 48 11746 None 78.9
+cell 48 11745 None 79.2
+cell 46 11744 [(0.1113, 'aenoy'), (0.1203, 'aenosy')] 79.8
+cell 49 11744 None 81.0
+cell 50 11744 None 81.1
+cell 49 11746 None 81.4
+cell 47 11745 [(0.0805, 'aikoy'), (0.1244, 'achenoy')] 81.5
+cell 47 11744 [(0.1387, 'achnoshy'), (0.139, 'acheioshy')] 81.6
+cell 49 11745 None 81.7
+cell 50 11745 None 82.3
+cell 47 11746 [(0.1256, 'acfhchenoshy'), (0.1404, 'acheioshy')] 83.3
+cell 50 11746 None 84.5
+cell 51 11746 None 84.5
+cell 51 11745 None 85.0
+cell 52 11744 None 85.1
+cell 51 11744 None 85.1
+cell 52 11745 None 85.3
+cell 52 11746 None 85.8
+cell 53 11744 None 86.9
+cell 53 11746 None 87.8
+cell 53 11745 None 88.3
+cell 54 11745 None 88.4
+cell 54 11744 None 88.6
+cell 54 11746 None 89.0
+cell 55 11744 None 89.2
+cell 55 11745 None 89.9
+cell 56 11745 None 90.9
+cell 55 11746 None 90.9
+cell 56 11744 None 91.2
+cell 56 11746 None 92.3
+cell 57 11744 None 92.9
+cell 57 11745 None 93.0
+cell 57 11746 None 93.3
+cell 58 11744 None 93.6
+cell 58 11746 None 94.1
+cell 58 11745 None 94.7
+cell 59 11744 None 94.9
+cell 59 11745 None 95.5
+cell 60 11744 None 96.2
+cell 60 11745 None 96.4
+cell 60 11746 None 97.4
+cell 59 11746 None 98.0
+cell 61 11744 None 98.5
+cell 61 11746 None 98.6
+cell 61 11745 None 98.8
+cell 62 11746 None 99.6
+cell 62 11744 None 99.7
+cell 62 11745 None 99.7
+cell 63 11744 None 100.7
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+  File "/workspace/vcf-c104/tools/c110_grid_slot_null.py", line 79, in run
+    rng = np.random.default_rng([NSEED, ci, s]); hs = []
+  File "numpy/random/_generator.pyx", line 5083, in numpy.random._generator.default_rng
+  File "numpy/random/_pcg64.pyx", line 123, in numpy.random._pcg64.PCG64.__init__
+  File "numpy/random/bit_generator.pyx", line 548, in numpy.random.bit_generator.BitGenerator.__init__
+  File "numpy/random/bit_generator.pyx", line 325, in numpy.random.bit_generator.SeedSequence.__init__
+  File "numpy/random/bit_generator.pyx", line 399, in numpy.random.bit_generator.SeedSequence.get_assembled_entropy
+  File "numpy/random/bit_generator.pyx", line 153, in numpy.random.bit_generator._coerce_to_uint32_array
+  File "numpy/random/bit_generator.pyx", line 139, in numpy.random.bit_generator._coerce_to_uint32_array
+  File "numpy/random/bit_generator.pyx", line 69, in numpy.random.bit_generator._int_to_uint32_array
+ValueError: expected non-negative integer
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/vcf-c104/tools/c110_grid_slot_null.py", line 160, in <module>
+    else: main()
+          ~~~~^^
+  File "/workspace/vcf-c104/tools/c110_grid_slot_null.py", line 106, in main
+    for ci, s, hs, surf in P.imap_unordered(run, tasks):
+                           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 873, in next
+    raise value
+ValueError: expected non-negative integer

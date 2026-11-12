@@ -52,3 +52,16 @@ unregistered half (grid cell 0 = page/30/20/true/curveline/default, seed 1, NSH 
 that number is not used.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Amendment v2 (committed before the re-run; 12 Nov 2026 ~16:33 PT)
+
+The first registered run (v1, 16:28:27–16:30:09 PT, prereg `73c9fd1`) **crashed** at 101 s: the negative-panel task has cell index −1,
+which NumPy refuses as a seed entry. Its log is kept as `analysis/C110_run_v1_crashed.log`. It also showed a design flaw: at 3,400
+lines **111 of 195** grid runs fell short of the 30,000 tokens two halves need (they make 24–30k tokens), so far fewer than 33 cells
+would have been usable. Two changes, nothing else: (1) the null rng is derived as `[11747, cell + 1, seed]`; (2) runs use **4,600
+lines** (the shortest cell checked, the C005 configuration, makes 7.15 tokens/line → ≈ 32.9k). Seeds, statistic, bar, Holm rule,
+gates and labels are unchanged. **Disclosure:** the v1 log printed E_slot for the 84 usable runs it finished (cells 0–62, partial):
+values 0.010–0.191, none above the bar 0.1996. Those numbers come from shorter texts and are not used; the v2 texts are different
+draws (more lines change the generator's output).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
