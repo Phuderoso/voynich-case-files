@@ -53,3 +53,44 @@ half 1 only (A 0.820, E +0.214, V = `aeiouy`, token accuracy 1.00); generator ou
 statistic computed.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (registered run 08:35:59–08:38:30 PT, 151 s; prereg `8d86a2c`; log `analysis/C108_run.log`, numbers `analysis/C108_results.json`)
+
+**Gates.** G1 FPR **0/20**, G2 power **20/20** (30 % restored spellings) → pass. G3 tool validity **pass**: Sukhotin recovers the
+true vowels in every voweled half (token accuracy 0.981–1.000; V = `aeiou(y)`, plus a stray `h`, `k` or `f` in four halves).
+G4 separation **pass, narrowly**: voweled E 0.137–0.214, abjad E 0.002–0.129 (gap 0.008; devowelled Dante 0.127/0.129 is the
+highest abjad: its Sukhotin "vowels" are the sonorants `h l n r s x`).
+
+| Text (15k-token halves) | E = A − null mean | Sukhotin class V |
+|---|---|---|
+| Latin Caesar / Descartes | 0.214 / 0.193 | aeiouy / aeikouy |
+| Italian Dante (2) / Machiavelli | 0.137, 0.138 / 0.152 | aehiou / aeiouy |
+| Spanish Cervantes (2) | 0.186, 0.186 | aeiou |
+| Finnish Kalevala (2) / Kivi (2) | 0.205, 0.209 / 0.214, 0.211 | aeiouy (Kivi h1 + f) |
+| Hebrew Genesis / Exodus (unpointed) | 0.045 / 0.050 | 12–14 letters |
+| Devowelled Caesar / Dante (2) / Cervantes (2) | 0.002 (p 0.31) / 0.127, 0.129 / 0.083, 0.082 | sonorants |
+| **Voynich ZL 3b (2)** | **0.205, 0.208** | a c e g h n o y / a c e n o u y z |
+| **Voynich IT2a (2)** | **0.207, 0.208** | a c e g n o y / a c e n o y |
+| Timm–Schinner generator, seeds 11733–11736 (8) | 0.119–0.198 | mostly a e n o y |
+
+All p for H1 are at the floor 1/201 = 0.005 < α/4.
+
+**Verdicts.** **H1 EXCESS** (all four halves). **H2 INSIDE** the voweled range (upper part, beside Finnish and Latin). **H3 ABOVE**
+the abjad range. **H4 ABOVE** the generator range (margin small: best seed 0.198 vs Voynich minimum 0.205; four seeds, default
+settings only). By the registered reading rule: **the manuscript's within-word glyph order alternates between two classes as
+strongly as alphabetic text with written vowels, more than any abjad control, and slightly more than the default copying
+generator.**
+
+**What this does not show.** It does not show that any glyph is a vowel. The within-word shuffle null destroys positional slots
+as well as phonotactics, and the generator, which has slots but no sounds, reaches 0.12–0.20: most of the alternation can come
+from a slot grammar. The Voynich V class (`a c e n o y`, units `ch`/`sh` in C) mixes glyphs that fill fixed positions (`y`
+word-final, `n` after `ai(i)`). Guy (1991) found `o y a c cc` first on two folios; our class agrees on `o y a`, while `c`/`cc`
+are units `ch`/`e`-runs in a different transcription, so the comparison is approximate. Raw-character variant (descriptive):
+ZL 0.140/0.175, IT2a 0.141/0.174, lower because splitting `ch`, `sh` into letters adds artificial contacts.
+Seeds used 11732–11736; next free **11737**.
+
+**Next (F-VC step 2, proposed):** separate slots from alternation: (a) a slot-preserving null (shuffle each glyph among words
+at the same position-from-end and word length) and (b) the C083 generator grid, to see whether any slot generator reaches
+0.205 and whether a residual alternation survives slots.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
