@@ -57,3 +57,49 @@ Next free **11732**.
 **Run.** `timeout 600 python tools/c107_word2_class_stratum.py analysis/C107_results.json`
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+## Results (registered run 2026-11-12 04:31:47–04:32:47 PT; prereg commit 7fd0598)
+
+**Disclosed run incident.** The first run (04:31:47–04:32:47) completed every registered test (H1, H1b) and then crashed in the
+descriptive generator step on a bookkeeping bug (`n_sh` read from a test dict instead of the class subset;
+`analysis/C107_run_log_attempt1_crash.txt`). The two-line fix touched only that line; the full run was repeated at
+04:32:56–04:33:54 (58 s) with the same seeds, and every H1/H1b number is identical to the crashed run's log.
+Outputs: `analysis/C107_results.json` (sha256 f48d0684843a4111…), `analysis/C107_run_log.txt`.
+
+**Sizes.** Currier B lines: IT2a 2,013 (sh 392, other 1,621); ZL 3b 1,988 (sh 367, other 1,621). Word-2 `sh` share 19.5 % / 18.5 %
+vs mid-line 9.3 % / 9.3 % (the Pelling/C070 boost, about 2×, again visible in all of Currier B).
+
+**H1 (primary, N1c = class × run × tercile): all four cells NOT TESTABLE.** No q* ≤ 0.60: the planted coupling in the *other* class
+peaks at mean D +0.141 (IT2a) and +0.143 (ZL), both at q 0.55, just short of the certified +0.15, and in the *sh* class at +0.058 / +0.055 (q 0.50)
+(groups too small; FPR 2/20 and 1/20, POS 9/20 and 6/20). By the registered rule H1 gives **no verdict**. For the record only
+(not a verdict): D_S other +0.113 / +0.073 (null SD 0.019 / 0.018), sh −0.022 / −0.040 (null SD 0.030 / 0.029).
+
+**H1b (registered secondary family, run-free null N2c = class × word-count tercile): all gates pass.**
+| cell | q* | FPR | POS / NEG at q* | power at q_half | D_S | p (Holm) |
+|---|---|---|---|---|---|---|
+| IT2a sh | 0.15 | 1/20 | 19 / 20 | 4/20 (q 0.05) | **+0.035** | 0.97 |
+| IT2a other | 0.15 | 1/20 | 20 / 20 | 19/20 | **+0.212** | 0.002 |
+| ZL 3b sh | 0.15 | 0/20 | 20 / 20 | 11/20 (q 0.10) | **−0.002** | 0.97 |
+| ZL 3b other | 0.20 | 0/20 | 20 / 20 | 20/20 | **+0.182** | 0.002 |
+
+Verdicts (run-free null): *sh* **NOT DETECTED**, *other* **DETECTED-COUPLED** → reading **NOT CARRIED BY sh**. An effect of +0.15 in
+the sh lines would have been caught 19–20/20 times; the observed sh coupling is near zero in both transcriptions. Power to see
+half that size (+0.075) is low (4/20, 11/20), so "small coupling in sh lines" is not excluded.
+
+**Generator family (descriptive).** Manuscript full-B D_S under N1 (recomputed: +0.108 IT2a, +0.066 ZL 3b, matching C106 exactly).
+C083 cell 0: 10 runs, D_S −0.043…−0.006 → **ABOVE** for both transcriptions. C083 cell 33 (winner): −0.041…+0.020 → **ABOVE** for
+both. Neither cell makes a word-2 `sh` boost (mean boost +0.004 and +0.001 vs the manuscript's +0.10), and per-class D_S in the
+generators sits near zero (sh −0.074…+0.047; other −0.053…+0.013). Caveat: generator pseudo-runs are blocks of 8 lines, not real
+paragraphs.
+
+**What this means (plainly).** The Currier B start-pair length coupling sits in the lines whose word 2 is *not* `sh`-initial; the
+`sh` lines, which carry Pelling's positional boost, show no coupling at the size we can certify. So the two LAAFU features look like
+separate mechanisms, not one. The run-aware primary test could not be calibrated after the class split (the split halves the
+groups), so this rests on the weaker run-free null, which C106 R1 had shown gives larger D_S than the run-aware null. Neither
+C083 generator setting reproduces the coupling or the boost. Nothing here reads meaning into the text.
+
+**Next.** A run-aware version needs more lines per group: pool adjacent runs within a page (pre-registered) or a coarser tercile,
+and the same split for word-1 class (gallows vs not).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

@@ -1,0 +1,49 @@
+gate false-fail {'POS_or_NEG_below_16_of_20_at_power_0p95': 0.0025739403346523027, 'FPR_above_2_of_20_at_true_0p05': 0.07548367378849631} [0.0s]
+n {"IT2a|sh": {"lines": 392, "groups": 225, "informative_frac": 0.6505102040816326, "group_size_hist": {"1": 137, "2": 42, "3": 28, "4": 10, "5+": 8}}, "IT2a|other": {"lines": 1621, "groups": 481, "informative_frac": 0.8988278840222085, "group_size_hist": {"1": 164, "2": 103, "3": 67, "4": 44, "5+": 103}}, "ZL3b|sh": {"lines": 367, "groups": 227, "informative_frac": 0.6021798365122616, "group_size_hist": {"1": 146, "2": 47, "3": 22, "4": 4, "5+": 8}}, "ZL3b|other": {"lines": 1621, "groups": 511, "informative_frac": 0.8883405305367057, "group_size_hist": {"1": 181, "2": 106, "3": 76, "4": 46, "5+": 102}}} [0.1s]
+H1 cal IT2a|sh None None [2.5s]
+H1 cal IT2a|other None 0.2 [9.9s]
+H1 cal ZL3b|sh None None [11.9s]
+H1 cal ZL3b|other None 0.3 [19.5s]
+H1 gate IT2a|sh {'q': 0.6, 'FPR': 2, 'POS': 9, 'NEG': 6, 'D_pos_mean': 0.05589179109886484, 'D_neg_mean': -0.04844972729554663, 'q_half': None, 'POS_half': 0, 'degeneracy_ok': True, 'ok': False} [20.6s]
+H1 gate IT2a|other {'q': 0.6, 'FPR': 0, 'POS': 20, 'NEG': 20, 'D_pos_mean': 0.14319337553806127, 'D_neg_mean': -0.14581510560526634, 'q_half': 0.2, 'POS_half': 20, 'degeneracy_ok': True, 'ok': False} [25.8s]
+H1 gate ZL3b|sh {'q': 0.6, 'FPR': 1, 'POS': 6, 'NEG': 2, 'D_pos_mean': 0.034579009653857705, 'D_neg_mean': -0.03359520426252502, 'q_half': None, 'POS_half': 0, 'degeneracy_ok': True, 'ok': False} [26.9s]
+H1 gate ZL3b|other {'q': 0.6, 'FPR': 2, 'POS': 20, 'NEG': 20, 'D_pos_mean': 0.13206631572211291, 'D_neg_mean': -0.1391149320422253, 'q_half': 0.3, 'POS_half': 20, 'degeneracy_ok': True, 'ok': False} [31.9s]
+H1 {"IT2a|sh": [-0.0223, 0.46976511744127936], "IT2a|other": [0.1128, 0.001999000499750125], "ZL3b|sh": [-0.0404, 0.32983508245877063], "ZL3b|other": [0.0727, 0.0029985007496251873]} {'sh': 'NOT TESTABLE', 'other': 'NOT TESTABLE', 'reading': 'DISSOLVED/UNDERPOWERED'} [32.9s]
+H1b cal IT2a|sh 0.15 0.05 [33.4s]
+H1b cal IT2a|other 0.15 0.1 [34.9s]
+H1b cal ZL3b|sh 0.15 0.1 [35.4s]
+H1b cal ZL3b|other 0.2 0.1 [37.4s]
+H1b gate IT2a|sh {'q': 0.15, 'FPR': 1, 'POS': 19, 'NEG': 20, 'D_pos_mean': 0.18252023793956995, 'D_neg_mean': -0.19845792173777455, 'q_half': 0.05, 'POS_half': 4, 'degeneracy_ok': True, 'ok': True} [38.7s]
+H1b gate IT2a|other {'q': 0.15, 'FPR': 1, 'POS': 20, 'NEG': 20, 'D_pos_mean': 0.14490525442258903, 'D_neg_mean': -0.18130731390928778, 'q_half': 0.1, 'POS_half': 19, 'degeneracy_ok': True, 'ok': True} [42.8s]
+H1b gate ZL3b|sh {'q': 0.15, 'FPR': 0, 'POS': 20, 'NEG': 20, 'D_pos_mean': 0.18649800486992113, 'D_neg_mean': -0.1921632462716308, 'q_half': 0.1, 'POS_half': 11, 'degeneracy_ok': True, 'ok': True} [44.1s]
+H1b gate ZL3b|other {'q': 0.2, 'FPR': 0, 'POS': 20, 'NEG': 20, 'D_pos_mean': 0.18240153939173653, 'D_neg_mean': -0.2142302487800846, 'q_half': 0.1, 'POS_half': 20, 'degeneracy_ok': True, 'ok': True} [48.3s]
+H1b {"IT2a|sh": [0.0349, 0.9675162418790605], "IT2a|other": [0.2123, 0.001999000499750125], "ZL3b|sh": [-0.0016, 0.9730134932533733], "ZL3b|other": [0.1821, 0.001999000499750125]} {'sh': 'NOT DETECTED', 'other': 'DETECTED-COUPLED', 'reading': 'NOT CARRIED BY sh'} [49.2s]
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 48, in mapstar
+    return list(map(*args))
+  File "/workspace/vcf-c104/tools/c107_word2_class_stratum.py", line 95, in gen_job
+    return (cell, s, dict(lines=len(L), D_full=full['D'], D_sh=cl['sh']['D'], D_other=cl['other']['D'], n_sh=len(cl['sh'].w1),
+                                                                                                                 ^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'w1'
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/vcf-c104/tools/c107_word2_class_stratum.py", line 162, in <module>
+    main()
+    ~~~~^^
+  File "/workspace/vcf-c104/tools/c107_word2_class_stratum.py", line 148, in main
+    with Pool(8) as p: out = p.map(gen_job, [(c, s, nl) for c, ss in GEN.items() for s in ss])
+                             ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 367, in map
+    return self._map_async(func, iterable, mapstar, chunksize).get()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/multiprocessing/pool.py", line 774, in get
+    raise self._value
+AttributeError: 'dict' object has no attribute 'w1'

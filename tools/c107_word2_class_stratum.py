@@ -90,9 +90,9 @@ def gen_job(a):
     Lg = [l for l in Lg if len(l) >= 6][:nlines]
     runs = [Lg[i:i + RUNLEN] for i in range(0, len(Lg), RUNLEN)]
     L = build(runs); terc = terciles(L); rng = np.random.default_rng([s, cell])
-    full = SC(L, terc).test(rng, RGEN); cl = {k: v.test(rng, RGEN) for k, v in split(L, terc).items()}
+    full = SC(L, terc).test(rng, RGEN); sp = split(L, terc); cl = {k: v.test(rng, RGEN) for k, v in sp.items()}
     w2sh = float(np.mean([l['sh'] for l in L])); mid = sum(l['mid_sh'] for l in L) / max(sum(l['mid_n'] for l in L), 1)
-    return (cell, s, dict(lines=len(L), D_full=full['D'], D_sh=cl['sh']['D'], D_other=cl['other']['D'], n_sh=len(cl['sh'].w1),
+    return (cell, s, dict(lines=len(L), D_full=full['D'], D_sh=cl['sh']['D'], D_other=cl['other']['D'], n_sh=len(sp['sh'].w1),
                           w2_sh_share=w2sh, mid_sh_share=float(mid), sh_boost=w2sh - float(mid)))
 
 def main():
