@@ -1,0 +1,42 @@
+gate 0 Latin_Caesar 0 1 0.0676 4.6
+gate 1 Latin_Descartes 0 2 0.0678 7.8
+gate 2 Italian_Dante 0 3 0.0471 9.9
+gate 3 Italian_Machiavelli 0 4 0.0454 12.3
+gate 4 Spanish_Cervantes 0 5 0.069 15.0
+gate 5 Finnish_Kalevala 0 6 0.0617 18.5
+gate 6 Finnish_Kivi 0 7 0.063 22.2
+gate 7 Latin_Caesar 0 8 0.0687 25.8
+gate 8 Latin_Descartes 1 9 0.0716 29.1
+gate 9 Italian_Dante 1 10 0.0487 31.4
+gate 10 Italian_Machiavelli 1 11 0.0455 33.9
+gate 11 Spanish_Cervantes 1 12 0.0645 36.4
+gate 12 Finnish_Kalevala 1 13 0.056 40.0
+gate 13 Finnish_Kivi 1 14 0.0632 43.7
+gate 14 Latin_Caesar 1 15 0.0706 47.4
+gate 15 Latin_Descartes 1 16 0.0661 50.6
+gate 16 Italian_Dante 1 17 0.0485 52.9
+gate 17 Italian_Machiavelli 1 18 0.0455 55.2
+gate 18 Spanish_Cervantes 1 19 0.0683 57.7
+gate 19 Finnish_Kalevala 1 20 0.0597 61.2
+Latin_Caesar [(0.2261, 0.004975124378109453, 'aeiouy')] 64.7
+Latin_Descartes [(0.2197, 0.004975124378109453, 'aeikouy')] 67.8
+Italian_Dante [(0.1559, 0.004975124378109453, 'aehiou'), (0.1609, 0.004975124378109453, 'aehiou')] 72.2
+Italian_Machiavelli [(0.1594, 0.004975124378109453, 'aeiouy')] 74.5
+Spanish_Cervantes [(0.2155, 0.004975124378109453, 'aeiou'), (0.2105, 0.004975124378109453, 'aeiou')] 79.3
+Hebrew_Genesis [(0.0785, 0.004975124378109453, 'אגדהחטיךכןעףפר')] 81.4
+Hebrew_Exodus [(0.0752, 0.004975124378109453, 'אגדהחיךכעףפר')] 83.4
+Finnish_Kalevala [(0.1992, 0.004975124378109453, 'aeiouy'), (0.2032, 0.004975124378109453, 'aeiouy')] 90.4
+Finnish_Kivi [(0.2216, 0.004975124378109453, 'aefiouy'), (0.22, 0.004975124378109453, 'aeiouy')] 97.8
+Latin_Caesar_devowel [(0.0325, 0.004975124378109453, 'dflrst')] 99.7
+Italian_Dante_devowel [(0.1753, 0.004975124378109453, 'hlnrsx'), (0.1755, 0.004975124378109453, 'hlnrsx')] 102.5
+Spanish_Cervantes_devowel [(0.1331, 0.004975124378109453, 'hjlnrsx'), (0.1246, 0.004975124378109453, 'hjlnrsx')] 105.0
+{'G1_fpr': '1/20', 'G2_power': '20/20', 'ok': True, 'G4_separation': {'voweled': [0.1559, 0.2261], 'abjad': [0.0325, 0.1755], 'ok': False}}
+ZL3b [(0.2247, 0.004975124378109453, ['a', 'c', 'e', 'g', 'h', 'n', 'o', 'y']), (0.2084, 0.004975124378109453, ['a', 'c', 'e', 'n', 'o', 'u', 'y', 'z'])] 110.3
+IT2a [(0.224, 0.004975124378109453, ['a', 'c', 'e', 'g', 'n', 'o', 'y']), (0.2101, 0.004975124378109453, ['a', 'c', 'e', 'n', 'o', 'y'])] 115.4
+gen 11738 [(0.1514, 0.004975124378109453, ['a', 'e', 'n', 'o', 'y']), (0.1522, 0.004975124378109453, ['a', 'e', 'n', 'o', 'y'])] 121.1
+gen 11739 [(0.15, 0.004975124378109453, ['a', 'e', 'n', 'o', 'y']), (0.0625, 0.004975124378109453, ['a', 'd', 'k', 'n', 'o', 's', 't'])] 126.4
+gen 11740 [(0.1428, 0.004975124378109453, ['a', 'e', 'n', 'o', 'y']), (0.1421, 0.004975124378109453, ['a', 'e', 'n', 'o', 's', 'y'])] 131.5
+gen 11741 [(0.0616, 0.004975124378109453, ['a', 'd', 'n', 'o']), (0.0718, 0.004975124378109453, ['a', 'd', 'k', 'n', 'o', 't'])] 136.7
+{'H1': 'RESIDUAL', 'H2': 'NOT SEPARABLE', 'H3': 'NOT SEPARABLE', 'H4': 'ABOVE', 'generator_range': [0.0616, 0.1522], 'voynich_E_slot': [0.2247, 0.2084, 0.224, 0.2101], 'voynich_E_C108': [0.2049, 0.2077, 0.2067, 0.2077], 'slot_share_of_C108_E': [-0.097, -0.003, -0.084, -0.012]} 136.7
+EXIT 0
+12:30:15

@@ -89,6 +89,8 @@ are units `ch`/`e`-runs in a different transcription, so the comparison is appro
 ZL 0.140/0.175, IT2a 0.141/0.174, lower because splitting `ch`, `sh` into letters adds artificial contacts.
 Seeds used 11732–11736; next free **11737**.
 
+**Audit note (C109, 2026-11-12):** the slot caveat above is corrected by [C109](C109-sukhotin-slot-null.md): with a slot-preserving null the Voynich alternation stays at E_slot 0.208–0.225, so slots explain none of it for this statistic.
+
 **Next (F-VC step 2, proposed):** separate slots from alternation: (a) a slot-preserving null (shuffle each glyph among words
 at the same position-from-end and word length) and (b) the C083 generator grid, to see whether any slot generator reaches
 0.205 and whether a residual alternation survives slots.
