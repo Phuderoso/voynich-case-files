@@ -66,3 +66,48 @@ draws (more lines change the generator's output). A first v2 launch (16:30:46) d
 comment swallowed `hs = []`), before any statistic was printed; fixed in the next commit, no design change.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (registered run v2 16:30:59–16:33:59 PT, 181 s; prereg `73c9fd1` + amendment `8e65285` + typo fix `4e1045a`; log `analysis/C110_run.log`, numbers `analysis/C110_results.json`)
+
+**Correction to the v2 amendment's disclosure.** I wrote that the v2 texts are "different draws". That was **wrong**: the generator
+writes lines in sequence, so more lines only extend a run, and the halves use its first 30,000 tokens. The 84 runs that were usable
+in v1 are the same texts in v2 and their E_slot values repeat exactly (e.g. cell 1, seed 11745: 0.1604/0.1439 in both). So 84 of 195
+runs were seen before the amendment; the amendment changed only the run length (which completed the 111 short runs) and the rng
+derivation, not the statistic, bar, rule or gates. Also: cell 0 of the grid is the generator's default setting, so the negative
+panel reuses cell 0's texts (with different null shuffles: 0.1469 vs 0.1471).
+
+**Gate GR passes** at the strictest Holm level α/65 = 0.00077: positive panel E_slot 0.226, 0.220, 0.222, 0.220, 0.216, 0.210, p_up
+0.00016 (above B); negative panel (default generator) 0.125, 0.144, 0.139, 0.087, 0.147, 0.152, p_down 0.00051 (below B).
+65 of 65 cells usable (6 halves each); 10 feasible under the C083 surface rule.
+
+| Label (Holm, α 0.05, per direction) | Cells | Feasible among them |
+|---|---|---|
+| REACHES | **0** | 0 |
+| BELOW | **51** | 8 (cells 32, 33, 37, 50, 51, 54, 55, 64) |
+| UNRESOLVED | **14** | 2 (cells 48 mean 0.165, 49 mean 0.172) |
+
+**H1: UNRESOLVED** by the registered rule (not every cell is called BELOW). No cell reaches the bar. All 14 unresolved cells have
+means **0.122–0.172**, below the bar 0.1996; they are unresolved because their six halves scatter widely (sd 0.019–0.058), not because
+any sits near Voynich.
+
+**Descriptive (no verdict).** Grid maximum cell mean **0.179** (cell 57: random / 0 / 60 / true / curveline / f103r.1; infeasible);
+among feasible cells **0.172** (cell 49). Grid maximum single half **0.215** (cell 7, seed 11744 half 1; its other five halves 0.128–0.155).
+Halves at or above the bar: **1 of 390** (Voynich: 4 of 4). Sukhotin regime: **flip fraction 38/65** cells mix regimes across their six
+halves; 62.8 % of halves land in the 'E' regime (EVA `e` in the vowel class, as in all four Voynich halves); maximum E_slot is 0.215 in
+the 'E' regime and 0.195 in 'N'. Pooled within-cell sd 0.029; minimal detectable excess over the bar at α/65 with 6 halves ≈ **0.075**
+(so a cell would need a mean near 0.275 to be called REACHES with this scatter; a stable cell, like the positive panel with sd 0.006,
+needs only ≈ 0.012).
+
+**Reading (registered rule).** UNRESOLVED is the honest label: 51 of 65 copying settings are credibly below Voynich's neighbour
+alternation beyond slots, none credibly reaches it, and 14 are too unstable to call with six halves. The bistable Sukhotin fit
+(Kryptos asked for it to be printed) is the main source of that instability. In plain words: within C083's grid the generator does
+not show the manuscript's alternation level, but the design cannot exclude the 14 unstable settings.
+
+**Caveats.** (1) C083's grid, not all generators. (2) Regime flips make E_slot a mixture for the generator; a regime-conditional
+comparison would be post hoc here and is left as a proposal. (3) The positive panel's six halves are texts whose C109 values were
+known when the gate was written, so GR certifies the rule, not the data. (4) No statement about meaning or vowels.
+
+**Next (proposed).** A single confirmatory follow-up on the 14 unresolved cells only, with 20 seeds each and Holm over 14 (MDE then
+≈ 0.03), would settle them; or a regime-conditional prereg. Seeds used 11744–11747; next free **11748**.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
