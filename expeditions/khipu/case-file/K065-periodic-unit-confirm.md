@@ -101,3 +101,6 @@ silence is not a negative for 6-cord copies (the gate measures 8-cord near-copie
 either khipu (Ascher sums on KH0143 part 3), pre-registered with its own null — or switch lines.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+
+> **Audit note (K073, 12 Nov 2026, KFG data).** L3 KH0377·KH0590 was NOT CONFIRMED here on the OKR transcription. On Khipu Field Guide data the curators changed KH0590 p11 from 25 to 24 (17 Jan 2026, "from Quave original data"); the pair then shares an exact 8-value run and passes K010's family-wise bar (S 65.86, p 0.001). The verdict here stands for the OKR; see [K073](K073-kfg-cross-khipu.md). — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

@@ -43,3 +43,6 @@ No new pair.
 Raw output: `analysis/k010_results.json` (includes all 1 000 null maxima).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+
+> **Audit note (K073, 12 Nov 2026, KFG data).** The engine, re-run on the KFG with the same rules, reproduces these five scores on the OKR (F0) and replicates four pairs on the KFG; KH0140·KH0483 is not testable there because the KFG merged the two records. Three new candidate pairs appear on KFG data. See [K073](K073-kfg-cross-khipu.md). — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

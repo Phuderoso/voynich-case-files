@@ -1,0 +1,338 @@
+{
+ "design": {
+  "R": 1000,
+  "plants": 200,
+  "CAP": 300,
+  "seeds": {
+   "null": 6424,
+   "plants": 6425
+  },
+  "next_free_seed": 6426,
+  "smoke": false,
+  "alpha": 0.05,
+  "calib_range": [
+   0.037,
+   0.064
+  ],
+  "short_match_power_rule": 0.5
+ },
+ "G0": "pass",
+ "F0_engine_on_okr": {
+  "n_R5": 3069,
+  "n_eligible": 433,
+  "published": {
+   "KH0049\u00b7KH0362": 140.17,
+   "KH0128\u00b7KH0137": 117.15,
+   "KH0140\u00b7KH0483": 86.98,
+   "KH0303\u00b7KH0304": 58.0,
+   "KH0301\u00b7KH0305": 52.56
+  },
+  "reproduced": {
+   "KH0049\u00b7KH0362": 140.17,
+   "KH0128\u00b7KH0137": 117.15,
+   "KH0140\u00b7KH0483": 86.98,
+   "KH0303\u00b7KH0304": 58.0,
+   "KH0301\u00b7KH0305": 52.56
+  },
+  "pass": true
+ },
+ "secs": 154.6,
+ "kfg_corpus": {
+  "n_khipus": 695,
+  "n_with_pendants": 695,
+  "n_eligible": 496,
+  "n_eligible_also_okr": 445,
+  "n_R5_masked": 2588
+ },
+ "null": {
+  "T_S": 49.39,
+  "calib_S": 0.051,
+  "calib_ok": true
+ },
+ "plants": {
+  "n": 200,
+  "recovery": 0.2,
+  "median_S": 37.75,
+  "short_matches_testable": false
+ },
+ "significant_S": [
+  {
+   "a": "KH0049",
+   "b": "KH0362",
+   "score": 140.17,
+   "block_len": 12,
+   "block": [
+    1856,
+    2578,
+    89,
+    974,
+    1146,
+    1095,
+    849,
+    790,
+    6485,
+    875,
+    1348,
+    754
+   ],
+   "p_adj": 0.000999000999000999,
+   "a_museum": "Museo Nacional de Arqueolog\u00eda, Antropolog\u00eda e Historia del Per\u00fa MNAAHP3550",
+   "b_museum": "Museum of World Culture 1938.45.0228",
+   "a_aliases": "AS038, HP036",
+   "b_aliases": "UR122",
+   "a_in_okr": true,
+   "b_in_okr": true,
+   "cls": "inter-khipu match"
+  },
+  {
+   "a": "KH0128",
+   "b": "KH0137",
+   "score": 117.15,
+   "block_len": 10,
+   "block": [
+    40,
+    9,
+    57,
+    30,
+    56,
+    80,
+    21,
+    8,
+    22,
+    12
+   ],
+   "p_adj": 0.000999000999000999,
+   "a_museum": "Museum f\u00fcr V\u00f6lkerkunde (Ethnologische Museum) VA16148",
+   "b_museum": "Museum f\u00fcr V\u00f6lkerkunde (Ethnologische Museum) VA47085",
+   "a_aliases": "UR1114, AS114",
+   "b_aliases": "UR1123, AS123",
+   "a_in_okr": true,
+   "b_in_okr": true,
+   "cls": "inter-khipu match"
+  },
+  {
+   "a": "KH0377",
+   "b": "KH0590",
+   "score": 65.86,
+   "block_len": 8,
+   "block": [
+    22,
+    24,
+    28,
+    12,
+    14,
+    14,
+    8,
+    1
+   ],
+   "p_adj": 0.000999000999000999,
+   "a_museum": "Lowe Art Museum, University of Miami 57.172.002",
+   "b_museum": "Dallas Museum of Art B376,1983.W.2172",
+   "a_aliases": "UR137",
+   "b_aliases": "QU002, QU02",
+   "a_in_okr": true,
+   "b_in_okr": true,
+   "cls": "inter-khipu match"
+  },
+  {
+   "a": "KH0358",
+   "b": "KH0602",
+   "score": 60.97,
+   "block_len": 6,
+   "block": [
+    16,
+    105,
+    55,
+    239,
+    31,
+    52
+   ],
+   "p_adj": 0.000999000999000999,
+   "a_museum": "Museum of World Culture 1931.37.0002b",
+   "b_museum": "Dallas Museum of Art B399,1983.W.2177",
+   "a_aliases": "UR118",
+   "b_aliases": "QU014, QU14",
+   "a_in_okr": true,
+   "b_in_okr": true,
+   "cls": "inter-khipu match"
+  },
+  {
+   "a": "KH0303",
+   "b": "KH0304",
+   "score": 58.0,
+   "block_len": 7,
+   "block": [
+    22,
+    3,
+    9,
+    2,
+    156,
+    13,
+    12
+   ],
+   "p_adj": 0.001998001998001998,
+   "a_museum": "Puruchuco Museum 4a",
+   "b_museum": "Puruchuco Museum s/n",
+   "a_aliases": "UR066",
+   "b_aliases": "UR067",
+   "a_in_okr": true,
+   "b_in_okr": true,
+   "cls": "inter-khipu match"
+  },
+  {
+   "a": "KH0301",
+   "b": "KH0305",
+   "score": 53.15,
+   "block_len": 8,
+   "block": [
+    8,
+    1,
+    3,
+    1,
+    57,
+    5,
+    6,
+    2
+   ],
+   "p_adj": 0.016983016983016984,
+   "a_museum": "Puruchuco Museum #3 Tex 641 Rt 639",
+   "b_museum": "Puruchuco Museum 2",
+   "a_aliases": "UR064",
+   "b_aliases": "UR068",
+   "a_in_okr": true,
+   "b_in_okr": true,
+   "cls": "inter-khipu match"
+  },
+  {
+   "a": "KH0450",
+   "b": "KH0682",
+   "score": 51.22,
+   "block_len": 7,
+   "block": [
+    11,
+    16,
+    3,
+    10,
+    5,
+    3,
+    12
+   ],
+   "p_adj": 0.027972027972027972,
+   "a_museum": "Museum f\u00fcr V\u00f6lkerkunde (Ethnologische Museum) VA42513",
+   "b_museum": "Museum der Kulturen IVc.366.03",
+   "a_aliases": "UR212",
+   "b_aliases": "MM008",
+   "a_in_okr": true,
+   "b_in_okr": false,
+   "cls": "inter-khipu match"
+  }
+ ],
+ "okr_pair_verdicts": [
+  {
+   "pair": "KH0362\u00b7KH0049",
+   "score": 140.17,
+   "block_len": 12,
+   "p_adj": 0.000999000999000999,
+   "verdict": "REPLICATED"
+  },
+  {
+   "pair": "KH0128\u00b7KH0137",
+   "score": 117.15,
+   "block_len": 10,
+   "p_adj": 0.000999000999000999,
+   "verdict": "REPLICATED"
+  },
+  {
+   "pair": "KH0140\u00b7KH0483",
+   "verdict": "NOT TESTABLE as a pair",
+   "why": {
+    "KH0483": "absent from KFG"
+   }
+  },
+  {
+   "pair": "KH0304\u00b7KH0303",
+   "score": 58.0,
+   "block_len": 7,
+   "p_adj": 0.001998001998001998,
+   "verdict": "REPLICATED"
+  },
+  {
+   "pair": "KH0305\u00b7KH0301",
+   "score": 53.15,
+   "block_len": 8,
+   "p_adj": 0.016983016983016984,
+   "verdict": "REPLICATED"
+  }
+ ],
+ "new_pairs": [
+  {
+   "a": "KH0377",
+   "b": "KH0590",
+   "score": 65.86,
+   "block_len": 8,
+   "block": [
+    22,
+    24,
+    28,
+    12,
+    14,
+    14,
+    8,
+    1
+   ],
+   "p_adj": 0.000999000999000999,
+   "a_museum": "Lowe Art Museum, University of Miami 57.172.002",
+   "b_museum": "Dallas Museum of Art B376,1983.W.2172",
+   "a_aliases": "UR137",
+   "b_aliases": "QU002, QU02",
+   "a_in_okr": true,
+   "b_in_okr": true,
+   "cls": "inter-khipu match"
+  },
+  {
+   "a": "KH0358",
+   "b": "KH0602",
+   "score": 60.97,
+   "block_len": 6,
+   "block": [
+    16,
+    105,
+    55,
+    239,
+    31,
+    52
+   ],
+   "p_adj": 0.000999000999000999,
+   "a_museum": "Museum of World Culture 1931.37.0002b",
+   "b_museum": "Dallas Museum of Art B399,1983.W.2177",
+   "a_aliases": "UR118",
+   "b_aliases": "QU014, QU14",
+   "a_in_okr": true,
+   "b_in_okr": true,
+   "cls": "inter-khipu match"
+  },
+  {
+   "a": "KH0450",
+   "b": "KH0682",
+   "score": 51.22,
+   "block_len": 7,
+   "block": [
+    11,
+    16,
+    3,
+    10,
+    5,
+    3,
+    12
+   ],
+   "p_adj": 0.027972027972027972,
+   "a_museum": "Museum f\u00fcr V\u00f6lkerkunde (Ethnologische Museum) VA42513",
+   "b_museum": "Museum der Kulturen IVc.366.03",
+   "a_aliases": "UR212",
+   "b_aliases": "MM008",
+   "a_in_okr": true,
+   "b_in_okr": false,
+   "cls": "inter-khipu match"
+  }
+ ]
+}
