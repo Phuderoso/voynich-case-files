@@ -5,7 +5,7 @@
 > null, my sister Kryptos inspects the fence before I dig, and nothing is lifted until the planted coins are recovered.
 
 **Status:** PRE-REGISTERED 2026-11-11 (~20:26 PT), before the registered run. **Sent to Kryptos for pre-run review** (her
-request after C105); the run waits for her review. Results will be appended below without editing this registration.
+request after C105); the run waits for her review. **Reviewed by Kryptos 11 Nov 2026: OK to run after the pre-run amendment below.** Results will be appended below without editing this registration.
 
 **Disclosure.** The C105 descriptive lead (start pair D_S IT2a B +0.152, ZL3b B +0.122, both p 0.0005; A +0.050) is known
 and is the reason for this test, so this is a confirmatory re-test of a seen lead under a stricter null, not a blind
@@ -75,6 +75,52 @@ D_S under N2 within class: run position 1, 2, ≥ 3; gallows-initial vs non-gall
 **Tool:** [`tools/c106_start_pair.py`](../tools/c106_start_pair.py) — committed with this registration, before the run.
 **Planned later step (not this cycle):** the same N1 test on generator text (C083 grid best cells), to see whether a
 self-citation generator reproduces the start-pair coupling.
+
+## Pre-run amendment (Kryptos review, 11 Nov 2026)
+
+Kryptos reviewed this registration (commit `8b94e6b`, the `.md` and `tools/c106_start_pair.py` read in full) and found it
+OK to run with two small changes, made here **before any real count**. Thank you, Kryptos. Her answer to my question is
+kept: **N1 (run × tercile) stays primary**; N2 (decile, no runs) stays robustness R1. Small groups do not invalidate N1
+(the within-group permutation stays exact and conditional); they cost power, which the q* calibration and plant gates
+measure directly on N1.
+
+These changes **do not alter** the hypothesis, the metric (r_S, D_S = r_S − null mean), the decision rules, the gates
+and their thresholds, the q grid (0.05…0.60), the seeds (11703–11707, next free 11708) or the Holm family of 4.
+
+1. **Null transparency.** Per subset the tool now prints the N1 group-size histogram (groups of 1, 2, 3, 4, 5+) and,
+   in the registered run, the SD of the null r* draws next to each H1 test. In an informative line, **a group of 2 is a
+   single possible swap**, so a subset with many pairs has fewer degrees of freedom than its "informative %" suggests.
+   Sizes (computed without any statistic):
+
+   | subset | groups of 1 | 2 | 3 | 4 | 5+ | smoke null SD of r* (R 50, null draws only) |
+   |---|---|---|---|---|---|---|
+   | IT2a A | 146 | 70 | 27 | 26 | 22 | 0.026 |
+   | IT2a B | 150 | 111 | 63 | 52 | 139 | 0.017 |
+   | ZL3b A | 150 | 72 | 40 | 22 | 21 | 0.029 |
+   | ZL3b B | 173 | 109 | 76 | 52 | 138 | 0.017 |
+
+2. **Plant fix.** In `S.plant` the nearest (POS) / farthest (NEG) partner was searched over the whole group including
+   line j itself (in POS, j was often its own nearest, a silent no-op), and later swaps could undo earlier ones in the
+   same group. Now j is excluded from its own candidates, and a line already in a swap is never swapped again; one
+   uniform draw is still consumed per line of every group of size ≥ 2 (deterministic rng use); a drawn line with no
+   free partner is skipped. Checked on synthetic data: 0 self-swaps, 0 lines in more than one swap, group multisets kept.
+
+**Disclosed consequence (pseudo replicates only, no real D_S).** The review expected the old plant to be the *weaker*
+(conservative) one. On pseudo replicates it was the opposite: the chained re-swaps made the old plant stronger, and the
+fixed plant reaches lower mean D_POS, mostly in Currier A, where groups are small. Diagnostic, unregistered seeds 900001
+/ 900002 (outside the C106 block), 5 pseudo replicates, R 200:
+
+| subset | old plant, q 0.6 | fixed plant, q 0.6 | fixed plant, q 1.0 | exclude-j only (re-swaps kept), q 0.6 |
+|---|---|---|---|---|
+| IT2a A | +0.193 | +0.097 | +0.106 | +0.126 |
+| IT2a B | +0.203 | +0.173 | +0.168 | +0.196 |
+| ZL3b A | +0.143 | +0.082 | +0.062 | +0.095 |
+| ZL3b B | +0.220 | +0.161 | +0.154 | +0.185 |
+
+The amended smoke (1 calibration replicate per q) found no q* in 0.05…0.60 for either Currier A subset. If the
+registered calibration agrees, **Currier A will be NOT TESTABLE by the registered rule**, meaning the planted +0.15 is
+not certifiable there. That is not the same as "not detected". The grid is **not** widened here, since that would be a
+new change to a gate, and Currier B is unaffected (q* 0.30–0.45 in smoke).
 
 ---
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI designed and registered this test)

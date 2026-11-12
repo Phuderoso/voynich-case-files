@@ -26,6 +26,8 @@ Plants: in a pseudo replicate (word 2 re-paired under N1), with prob q per line,
    >= +0.15; q_half = smallest with mean >= +0.075 (descriptive power only). No q* -> NOT TESTABLE.
    Gates (seed 11704, 20 fresh per subset, RG 300): FPR <= 2/20; POS and NEG at q* >= 16/20 right sign; broken meter
    mean D_NEG < 0 < mean D_POS. Power at q_half reported.
+Pre-run amendment (Kryptos review, 11 Nov 2026): plant excludes j from its own candidates and never re-swaps a line already
+   swapped; per subset the N1 group-size histogram (1, 2, 3, 4, 5+) and the SD of the null r* draws are printed.
 Seeds 11703 calibration, 11704 gates, 11705 tests, 11706 robustness, 11707 descriptive. Next free 11708.
 Run: timeout 600 python tools/c106_start_pair.py analysis/C106_results.json
 -- Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI wrote and ran this)"""
@@ -78,14 +80,31 @@ class S:
         w2 = self.w2 if w2 is None else w2
         return C4.ptest(self.r(w2), np.array([self.r(perm(w2, self.fl, rng)) for _ in range(r)]))
     def plant(self, w2, rng, q, kind):
-        w2 = w2.copy()
+        """Pre-run amendment (Kryptos review, 11 Nov 2026): j itself is excluded from its candidates (no self-swap no-op),
+        and a line already in a swap is never swapped again (no undoing of earlier swaps in the same group). One uniform
+        draw per line of every group of size >= 2, in group order, whether or not the line is still free (deterministic
+        rng consumption). A drawn line with no free partner left is skipped."""
+        w2 = w2.copy(); used = np.zeros(len(w2), bool)
         for g in self.groups:
             if len(g) < 2: continue
             for j in g:
-                if rng.random() < q:
-                    d = np.abs(w2[g] - self.w1[j]); c = g[int(np.argmin(d) if kind == 'POS' else np.argmax(d))]
-                    w2[j], w2[c] = w2[c], w2[j]
+                u = rng.random()
+                if u >= q or used[j]: continue
+                d = np.abs(w2[g] - self.w1[j]).astype(float)
+                bad = (g == j) | used[g]
+                if bad.all(): continue
+                d[bad] = np.inf if kind == 'POS' else -np.inf
+                c = g[int(np.argmin(d) if kind == 'POS' else np.argmax(d))]
+                w2[j], w2[c] = w2[c], w2[j]; used[j] = used[c] = True
         return w2
+    def size_hist(self):
+        """N1 group-size histogram (Kryptos transparency point): a group of 2 is a single possible swap."""
+        n = np.array([len(g) for g in self.groups])
+        return {'1': int((n == 1).sum()), '2': int((n == 2).sum()), '3': int((n == 3).sum()), '4': int((n == 4).sum()),
+                '5+': int((n >= 5).sum())}
+    def null_sd(self, rng, r):
+        """SD of the null r* draws only (no observed r_S, no D_S)."""
+        return float(np.std([self.r(perm(self.w2, self.fl, rng)) for _ in range(r)]))
 
 def build(runs):
     out = []
@@ -125,6 +144,7 @@ def main():
                         gallows_initial=int(sum(l['gal'] for l in L[s])), run_first=int(sum(l['pos'] == 1 for l in L[s])),
                         run_second=int(sum(l['pos'] == 2 for l in L[s]))) for s, Sx in sub.items()}
     log('n', json.dumps(res['n']))
+    res['group_size_hist'] = {s: Sx.size_hist() for s, Sx in sub.items()}; log('group sizes', json.dumps(res['group_size_hist']))
     degen = {s: res['n'][s]['informative_frac'] >= 0.5 for s in sub}
     rng = np.random.default_rng(CSEED); cal = {}
     for s, Sx in sub.items(): cal[s] = calibrate(Sx, rng); log('cal', s, cal[s]['q_star'], cal[s]['q_half'])
@@ -138,10 +158,14 @@ def main():
         log('gate', s, g)
     res['gates'] = G
     if SMOKE:
+        rng = np.random.default_rng(SEED)
+        res['smoke_null_sd'] = {s: Sx.null_sd(rng, R) for s, Sx in sub.items()}; log('smoke null SD (R 50, null only)', res['smoke_null_sd'])
         res['elapsed_s'] = round(time.time() - T0, 1); json.dump(res, open(outp, 'w'), indent=1, default=float); log('smoke done (no statistic computed)'); return
     rng = np.random.default_rng(SEED); H = {s: Sx.test(rng, R) for s, Sx in sub.items()}
     ph = W.holm({k: v['p'] for k, v in H.items()})
     for k in H: H[k]['p_holm'] = ph[k]
+    res['null_transparency'] = {k: dict(group_size_hist=res['group_size_hist'][k], null_sd=H[k]['null_sd']) for k in H}
+    log('null transparency', json.dumps(res['null_transparency']))
     res['H1'] = H; ver = {}
     for c in 'AB':
         ks = [f'{k}|{c}' for k, _ in FILES]
