@@ -36,6 +36,32 @@ historical OKR, that pendants equal the sum of their own subsidiaries more often
   beyond a parse count of cords (number of eligible parents is printed only in the registered run).
 
 ## Results
-*(appended after the registered run)*
+Registered run 12 Nov 2026, 01:52:03–01:53:04 PT (61 s; prereg commit `1577d09` made at 01:52, just before; the "~01:55" in the
+header was my estimate when writing). Log `analysis/k070_results.json`. No smoke on real counts.
+
+**Gates.** G0: 0 hash mismatches. G2: per-khipu calibration FPR **0.025** (≤ 0.05, pass). **A0:** the untouched K004 tool, re-run on
+the OKR, reproduced its published corpus numbers exactly (197 khipus, 1315 eligible parents, 25 hits, null mean 7.1412, p 0.0001).
+
+| Test | Khipus | Eligible parents | Hits | Null mean (max) | p |
+|---|---|---|---|---|---|
+| T1 corpus, N_a | 238 | 1503 | **29** | 8.45 (22) | **0.0001** (floor) |
+| T1 corpus, N_b | 238 | 1503 | **29** | 10.14 (23) | **0.0001** (floor) |
+| T3 without KH0349, N_a | 237 | 1421 | 16 | 7.39 (20) | **0.0035** |
+| T4 held-out (KFG-only), N_a | 34 | 187 | 2 | 1.52 (8) | 0.45 |
+
+**T2 per khipu** (118 khipus with ≥ 3 eligible parents): planted recovery **0.97** (0.95–1.00 in every size band), so silence is a real
+negative. Two khipus pass BH:
+- **KH0349 (UR113, Göteborg): 13 of 82 eligible pendants**, p 0.00005 (N_a floor), N_b 0.0005, exactly as on the OKR.
+- **KH0276 (UR046, Museo Larco ML600134): 2 of 9**, p 0.00065 (N_b 0.013). This is a **data change**, not a method change: on the OKR
+  it had 4 eligible parents and 0 hits (p 1.0). The KFG changelog (3 Dec 2025) says the OKR had no information on its subsidiaries
+  ("just that they exist") nor on cords p12 onwards, and that these were added from museum images. The two hits are 378 = 278 + 100
+  and 340 = 36 + 289 + 15. Two hits on image-reconstructed cords are a **lead**, not an established habit.
+
+**Decisions (as registered).** R1 corpus: p 0.0001 ≤ 0.01 → **REPLICATED**. R2 UR113: BH-significant → **REPLICATED**.
+**Headline: K004 REPLICATED on KFG.** R3 (held-out replication of the non-UR113 signal): planted power **0.075** at the expected one
+excess hit (rate 0.0049 × 187 parents), far below 0.5 → **NOT TESTABLE (data-limited)**. The 84 KFG-only khipus are too few (only
+34 have an eligible parent) to replicate a signal that weak. Line 7's held-out replication therefore stays owed and needs new khipus,
+not new statistics. T3 (same data as the OKR, plus KFG corrections) sits at p 0.0035, now meeting the 0.01 rule, but it is a re-analysis
+and not counted as replication. Overlap of the T2 BH set with K069's 15 adjacent-sum names: **0**, again (K004 found 0 with K003).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
