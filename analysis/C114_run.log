@@ -1,0 +1,36 @@
+built {'Latin_Caesar': 15005, 'Latin_Descartes': 15006, 'Italian_Dante': 15005, 'Italian_Machiavelli': 15008, 'Spanish_Cervantes': 15013, 'Hebrew_Genesis': 15006, 'Hebrew_Exodus': 15001, 'Finnish_Kalevala': 15000, 'Finnish_Kivi': 15001, 'Latin_Caesar_devowel': 15007, 'Italian_Dante_devowel': 15000, 'Spanish_Cervantes_devowel': 15008, 'PLANT_twoalpha': 15006, 'GEN_cell0_default': 15000, 'GEN_cell33': 15002, 'GEN_cell49': 15000} {'GEN_cell0_default': {'cell': 0, 'seed': 11777, 'n': 30334, 'ok': True}, 'GEN_cell33': {'cell': 33, 'seed': 11778, 'n': 27690, 'ok': True}, 'GEN_cell49': {'cell': 49, 'seed': 11779, 'n': 27151, 'ok': True}} 4.3
+obs PLANT_twoalpha 0.0 [[1.0, 0.0], [0.0, 1.0]] 7.9
+obs Spanish_Cervantes 0.8304 [[0.164, 0.836], [0.824, 0.176]] 12.3
+obs Hebrew_Genesis 0.3748 [[0.857, 0.143], [0.657, 0.343]] 12.8
+obs Hebrew_Exodus 0.2622 [[0.983, 0.017], [0.571, 0.429]] 16.2
+obs Italian_Dante 0.7661 [[0.26, 0.74], [0.792, 0.208]] 16.4
+obs Finnish_Kalevala 0.7743 [[0.242, 0.758], [0.789, 0.211]] 19.3
+obs Latin_Descartes 0.7999 [[0.244, 0.756], [0.854, 0.146]] 21.1
+obs Latin_Caesar_devowel 0.2593 [[0.455, 0.545], [0.004, 0.996]] 21.3
+obs Latin_Caesar 0.8081 [[0.164, 0.836], [0.784, 0.216]] 21.8
+obs GEN_cell0_default 0.1922 [[0.991, 0.009], [0.327, 0.673]] 22.7
+obs Italian_Machiavelli 0.8126 [[0.314, 0.686], [0.99, 0.01]] 23.0
+obs Italian_Dante_devowel 0.4063 [[0.076, 0.924], [0.028, 0.972]] 23.2
+obs Spanish_Cervantes_devowel 0.4397 [[0.899, 0.101], [0.972, 0.028]] 24.1
+obs GEN_cell33 0.2201 [[0.454, 0.546], [0.001, 0.999]] 24.6
+obs GEN_cell49 0.2133 [[0.491, 0.509], [0.001, 0.999]] 26.5
+obs Finnish_Kivi 0.7583 [[0.258, 0.742], [0.773, 0.227]] 31.1
+PLANT_twoalpha {'cls': 'gate', 'SW': 0.0, 'null_mean': 0.4684, 'null_sd': 0.02095, 'null_min': 0.4431, 'null_max': 0.4974, 'D': -0.4684, 'rel': -1.0, 'z': -22.4, 'below_all': True, 'above_all': False}
+Latin_Caesar {'cls': 'voweled', 'SW': 0.8081, 'null_mean': 0.3413, 'null_sd': 0.0338, 'null_min': 0.2713, 'null_max': 0.4101, 'D': 0.4668, 'rel': 1.368, 'z': 13.8, 'below_all': False, 'above_all': True}
+Latin_Descartes {'cls': 'voweled', 'SW': 0.7999, 'null_mean': 0.4661, 'null_sd': 0.01613, 'null_min': 0.4446, 'null_max': 0.4931, 'D': 0.3338, 'rel': 0.716, 'z': 20.7, 'below_all': False, 'above_all': True}
+Italian_Dante {'cls': 'voweled', 'SW': 0.7661, 'null_mean': 0.5746, 'null_sd': 0.00228, 'null_min': 0.5711, 'null_max': 0.5771, 'D': 0.1915, 'rel': 0.333, 'z': 84.2, 'below_all': False, 'above_all': True}
+Italian_Machiavelli {'cls': 'voweled', 'SW': 0.8126, 'null_mean': 0.5251, 'null_sd': 0.00267, 'null_min': 0.5216, 'null_max': 0.5295, 'D': 0.2875, 'rel': 0.548, 'z': 107.8, 'below_all': False, 'above_all': True}
+Spanish_Cervantes {'cls': 'voweled', 'SW': 0.8304, 'null_mean': 0.4795, 'null_sd': 0.00825, 'null_min': 0.4674, 'null_max': 0.4897, 'D': 0.3509, 'rel': 0.732, 'z': 42.5, 'below_all': False, 'above_all': True}
+Hebrew_Genesis {'cls': 'abjad', 'SW': 0.3748, 'null_mean': 0.2663, 'null_sd': 0.00856, 'null_min': 0.2587, 'null_max': 0.2889, 'D': 0.1085, 'rel': 0.407, 'z': 12.7, 'below_all': False, 'above_all': True}
+Hebrew_Exodus {'cls': 'abjad', 'SW': 0.2622, 'null_mean': 0.2495, 'null_sd': 0.00067, 'null_min': 0.2483, 'null_max': 0.2505, 'D': 0.0127, 'rel': 0.051, 'z': None, 'below_all': False, 'above_all': True}
+Finnish_Kalevala {'cls': 'voweled', 'SW': 0.7743, 'null_mean': 0.5531, 'null_sd': 0.00284, 'null_min': 0.5489, 'null_max': 0.5576, 'D': 0.2212, 'rel': 0.4, 'z': 77.8, 'below_all': False, 'above_all': True}
+Finnish_Kivi {'cls': 'voweled', 'SW': 0.7583, 'null_mean': 0.5068, 'null_sd': 0.00352, 'null_min': 0.5005, 'null_max': 0.5123, 'D': 0.2514, 'rel': 0.496, 'z': 71.3, 'below_all': False, 'above_all': True}
+Latin_Caesar_devowel {'cls': 'abjad', 'SW': 0.2593, 'null_mean': 0.2634, 'null_sd': 0.00391, 'null_min': 0.2584, 'null_max': 0.268, 'D': -0.0041, 'rel': -0.015, 'z': -1.0, 'below_all': False, 'above_all': False}
+Italian_Dante_devowel {'cls': 'abjad', 'SW': 0.4063, 'null_mean': 0.4157, 'null_sd': 0.01374, 'null_min': 0.386, 'null_max': 0.4297, 'D': -0.0094, 'rel': -0.022, 'z': -0.7, 'below_all': False, 'above_all': False}
+Spanish_Cervantes_devowel {'cls': 'abjad', 'SW': 0.4397, 'null_mean': 0.4463, 'null_sd': 0.00832, 'null_min': 0.434, 'null_max': 0.4582, 'D': -0.0065, 'rel': -0.015, 'z': -0.8, 'below_all': False, 'above_all': False}
+GEN_cell0_default {'cls': 'generator', 'SW': 0.1922, 'null_mean': 0.2362, 'null_sd': 0.00036, 'null_min': 0.2356, 'null_max': 0.2366, 'D': -0.044, 'rel': -0.186, 'z': None, 'below_all': True, 'above_all': False}
+GEN_cell33 {'cls': 'generator', 'SW': 0.2201, 'null_mean': 0.2215, 'null_sd': 5e-05, 'null_min': 0.2215, 'null_max': 0.2216, 'D': -0.0015, 'rel': -0.007, 'z': None, 'below_all': True, 'above_all': False}
+GEN_cell49 {'cls': 'generator', 'SW': 0.2133, 'null_mean': 0.2141, 'null_sd': 7e-05, 'null_min': 0.214, 'null_max': 0.2142, 'D': -0.0007, 'rel': -0.003, 'z': None, 'below_all': True, 'above_all': False}
+{'D': -0.4684, 'below_all': True, 'ok': True} {'T': {'D_voynich': -0.0719, 'n_controls_as_sticky': '0/15', 'which': [], 'by_class': {'voweled': 0, 'abjad': 0, 'generator': 0}}, 'h1': {'D_voynich': -0.141, 'n_controls_as_sticky': '0/15', 'which': [], 'by_class': {'voweled': 0, 'abjad': 0, 'generator': 0}}, 'h2': {'D_voynich': -0.0028, 'n_controls_as_sticky': '4/15', 'which': ['GEN_cell0_default', 'Italian_Dante_devowel', 'Latin_Caesar_devowel', 'Spanish_Cervantes_devowel'], 'by_class': {'voweled': 0, 'abjad': 3, 'generator': 1}}, 'primary_label': 'UNUSUAL IN PANEL', 'generator_primary_cell0_D': -0.044} 252.4
+EXIT 0
+08:39:56
