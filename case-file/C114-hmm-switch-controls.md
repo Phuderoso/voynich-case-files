@@ -53,3 +53,51 @@ No claim about vowels, syllables, script type or meaning either way; one half pe
 their sizes was run: all 16 texts have ≥ 15,000 tokens; no SW computed). Run: `timeout 600 python3 tools/c114_hmm_switch_controls.py`.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (registered run 08:35:44–08:39:56 PT, 252 s; prereg `e11b7fb` + wording fix; log `analysis/C114_run.log`, numbers `analysis/C114_results.json`, per-job checkpoint `analysis/C114_checkpoint.jsonl`)
+
+**Gate G-DIR passes.** Two-alphabet Latin plant: SW 0.000 (the HMM puts the two alphabets in two absorbing states) vs slot null
+0.468 ± 0.021 (0.443–0.497), D = −0.468, below all 10 replicates. The null can register "stickier than slots".
+
+Floor line: with 10 replicates the smallest attainable p is 1/11 = 0.091; no per-control p is used (Kryptos's point 2).
+
+| Text | Class | SW | Slot null mean ± sd (range) | D = SW − null | D / null | z (sd ≥ 1e-3 only) |
+|---|---|---|---|---|---|---|
+| Latin Caesar | voweled | 0.808 | 0.341 ± 0.034 (0.271–0.410) | +0.467 | +1.37 | 13.8 |
+| Latin Descartes | voweled | 0.800 | 0.466 ± 0.016 | +0.334 | +0.72 | 20.7 |
+| Italian Dante | voweled | 0.766 | 0.575 ± 0.002 | +0.192 | +0.33 | 84 |
+| Italian Machiavelli | voweled | 0.813 | 0.525 ± 0.003 | +0.288 | +0.55 | 108 |
+| Spanish Cervantes | voweled | 0.830 | 0.480 ± 0.008 | +0.351 | +0.73 | 42 |
+| Finnish Kalevala | voweled | 0.774 | 0.553 ± 0.003 | +0.221 | +0.40 | 78 |
+| Finnish Kivi | voweled | 0.758 | 0.507 ± 0.004 | +0.251 | +0.50 | 71 |
+| Hebrew Genesis | abjad | 0.375 | 0.266 ± 0.009 | +0.109 | +0.41 | 12.7 |
+| Hebrew Exodus | abjad | 0.262 | 0.250 ± 0.0007 | +0.013 | +0.05 | — (degenerate) |
+| Latin Caesar devowelled | abjad | 0.259 | 0.263 ± 0.004 (0.258–0.268) | −0.004 | −0.02 | −1.0 |
+| Italian Dante devowelled | abjad | 0.406 | 0.416 ± 0.014 (0.386–0.430) | −0.009 | −0.02 | −0.7 |
+| Spanish Cervantes devowelled | abjad | 0.440 | 0.446 ± 0.008 (0.434–0.458) | −0.007 | −0.01 | −0.8 |
+| **Generator cell 0 (default, primary)** | generator | 0.192 | 0.236 ± 0.0004 | **−0.044** | −0.19 | — (degenerate) |
+| Generator cell 33 (sensitivity) | generator | 0.220 | 0.2215 ± 0.00005 | −0.0015 | −0.01 | — (degenerate) |
+| Generator cell 49 (sensitivity) | generator | 0.213 | 0.2141 ± 0.00007 | −0.0007 | −0.00 | — (degenerate) |
+| *Voynich ZL3b (C113, reference)* | — | *T 0.151* | *0.2225 ± 0.0002* | ***−0.072*** (h1 −0.141, h2 −0.003) | −0.32 | — (degenerate) |
+
+**Verdict (registered rule, primary unit T).** **UNUSUAL IN PANEL**: 0 of 15 controls have D ≤ −0.072. Every voweled text is far
+*less* sticky than its slots (it alternates, D +0.19 to +0.47); Hebrew is less sticky too (+0.11, +0.01); the devowelled texts sit on
+their slots (D −0.004 to −0.009, inside one null sd); the default generator is the only control clearly stickier than its slots
+(−0.044, below all 10 replicates), at about 60 % of the manuscript's value; generator cells 33 and 49 sit on their slots.
+
+**Secondary (per half, printed as registered).** Against half 1 (D −0.141): 0/15 controls. Against half 2 (D −0.003): **4/15**
+(the three devowelled texts and generator cell 0). So "unusual" is a property of the manuscript's **first half**; the second half
+looks like a devowelled text or the default generator under this instrument.
+
+**What this does and does not say.**
+- One 15,000-token half per control and 10 replicates: control half-to-half variability is not estimated, and the generator was run
+  at one seed per cell. A different half of a control could move D; the panel says "none of these 15 halves", not "no such text".
+- The two Voynich halves differ by 0.14 in D, larger than the spread between any two control classes except voweled vs the rest.
+  The halves follow the **current folio order**, which Layfield & Fagin Davis (*Digital Medievalist*, 19 Oct 2026) argue is a
+  misbinding; half 1 is in practice a block of mostly herbal (largely Currier A) folios. So the split that matters is probably
+  section/Currier language, not "first half"; that is C115's question, not a finding here.
+- The default generator moving in the same direction (−0.044) means a self-citation copying process can produce part of this
+  stickiness; other cells do not. No claim about vowels, syllables, script type or meaning.
+- Several nulls are degenerate (sd < 1e-3: Exodus, generators, Voynich), so z is withheld there and only D is read (Kryptos's point 3).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
