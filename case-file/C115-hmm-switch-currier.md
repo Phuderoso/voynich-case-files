@@ -3,7 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: PRE-REGISTRATION** (committed before any C115 statistic on the manuscript; only token counts and a control-only smoke were computed).
+**Status: RUN 2026-11-13 16:33:51–16:44:57 PT (665.7 s, one call, exit 0).** Registered verdict **SHARED A+B**, with a descriptive check showing the instrument is mode-unstable (see Results). The pre-registration text below is unchanged; it was published as `61962a1` + amendment `2e0a5a1` before the run.
 
 ## Question
 
@@ -113,5 +113,61 @@ statistic.
 **Tool changes** (`tools/c115_hmm_switch_currier.py`, same commit): NNULL 159; line-mix and bootstrap jobs; resumable checkpoint
 with config header; the (A) labelling; printed floor and Holm step; `verdict.confound`; a `dry` mode that builds the texts and job
 list only (1,254 jobs; strata 10,005 / 10,007 / 10,004 tokens, as registered).
+
+## Results (registered run, 2026-11-13 16:33:51–16:44:57 PT)
+
+**Execution note (disclosed).** At 16:33 PT I meant to print the tool's help, but the tool takes no arguments and started the full run
+without the registered `timeout 900` wrapper. I stopped it about 40 s later (82 checkpoint lines, not read), set the file aside, and
+started the registered command fresh at 16:33:51 (`timeout 900 python3 tools/c115_hmm_switch_currier.py`, one call, exit 0). After the
+run I checked that all 82 lines of the accidental start are byte-identical to lines of the registered checkpoint (per-job seeds), so
+the accident changed no number. It is kept as `analysis/C115_accidental_start_checkpoint.jsonl`.
+
+Files: `analysis/C115_results.json`, `analysis/C115_checkpoint.jsonl`, `analysis/C115_run.log`. Min attainable p 0.00625, first Holm step 0.0167.
+
+**Gates.** G-POW: SW 0.000 vs null 0.2666 (sd 0.0056), p_low 0.00625, pass. G-FPR: SW 0.2637 vs 0.2669, D −0.0032, p_low 0.294, pass
+(not flagged). G-SIZE: passes in all three strata (full and half size; margins −0.0013 / −0.0012 / −0.0005).
+
+| stratum | tokens | SW (ZL3b) | slot-null mean (sd) | D | p_low | Holm | SW (IT2a) | line-bootstrap sd / null sd |
+|---|---|---|---|---|---|---|---|---|
+| A | 10,005 | 0.1006 | 0.2409 (0.00038) | −0.1403 | 0.00625 | **pass** | 0.1026 | 0.2195 / 0.00038 = **578** |
+| B1 | 10,007 | 0.8919 | 0.2208 (0.00030) | +0.6711 | 1.0 | fail | 0.8914 | 0.3290 / 0.00030 = **1,097** |
+| B2 | 10,004 | 0.1982 | 0.2056 (0.00020) | −0.0075 | 0.00625 | **pass** | 0.1016 | 0.0447 / 0.00020 = **224** |
+
+Holm (m = 3): A and B2 pass; B1 fails and passed G-SIZE, so it is not LOW-POWER. **Registered label: SHARED A+B.** No stratum is
+LOW-POWER. **Confound (registered):** Currier A is mostly herbal and B mostly biological/stars, so A vs B is partly section vs section.
+This design does not separate language from section.
+
+**Descriptive, no decision role.**
+- Sections (NNULL 20): herbal-A D −0.1495, bio-B −0.0296, stars-B −0.0039; all below every null replicate.
+- Line-mix plant curve (base devowelled Latin, 10 replicates each). Twin source: f 0.1 / 0.2 / 0.3 / 0.5 give D −0.268 / +0.003 /
+  −0.267 / −0.269. Every planted text either collapses to SW 0 or sits at its null, and the result is not monotone in f. Dante source:
+  D −0.014 / −0.015 / −0.018 / −0.031, all below every replicate. These are graded but small: even half the lines from another language
+  reach only −0.03, against C113's −0.07.
+- **Shift-model check: "shift model off" in all three strata**, by factors of 224 to 1,097 (flag threshold 2).
+
+## Reading (what the verdict does and does not say)
+
+1. The registered label stands as **SHARED A+B**. I am not re-labelling after the fact.
+2. The shift check says the slot null's spread (sd 0.0002–0.0004) is two to three orders of magnitude smaller than the spread of the
+   statistic itself under line resampling (0.045–0.33). The likely cause, which I have not yet tested: the best-of-3 HMM has several
+   solution *modes*: a sticky one (SW ≈ 0.10), a slot-like one (≈ 0.20), and an alternating one (≈ 0.89, as B1 shows in both
+   transcriptions). Slot-shuffled texts land in one mode every time. The observed text lands in whichever mode its exact lines favour.
+   ZL3b B2 (0.198) and IT2a B2 (0.102) fall in different modes on nearly the same text. So the p-values of A and B2 certify "different
+   from slot-shuffled fits", not an effect of a calibrated size. **The effect sizes D are not interpretable.** The G-SIZE margins,
+   which use the same shift model, are not interpretable either.
+3. **B1 is not "less sticky".** Its fit is a different solution type (alternation, SW 0.89 in ZL3b and IT2a). It is evidence of mode
+   instability, not of the absence of stickiness.
+4. **The same caveat now applies to C113 and C114** (same instrument, same slot null). Their p-values and their "unusual in panel" ranking
+   assume the HMM mode is stable. A correction note is added to the README for both. Neither is withdrawn, and both must be re-read
+   after a mode-robust re-test.
+5. **What survives without the HMM's mode question:** Currier A / herbal text gives the sticky solution consistently (ZL3b 0.1006,
+   IT2a 0.1026, herbal-A 0.1008).
+
+**Next (C116, pointer):** a mode-robust version of the instrument. Fit many restarts per text, record the distribution of solution
+modes and their log-likelihoods, and take a line-bootstrap (not slot-only) null calibrated on the control panel. Re-test the C113
+pooled text and these three strata under that design, with G-POW and G-FPR rebuilt for a multimodal statistic.
+
+Seeds used: 11780 (main), 11782 (line-mix), 11783 (bootstrap). Seeds 11784 and 11785 went to Kryptos cross-checks (I-287 plants;
+case 197 decode). **Next free Voynich seed: 11786.**
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
