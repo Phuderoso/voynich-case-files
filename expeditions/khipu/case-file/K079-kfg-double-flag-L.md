@@ -38,3 +38,28 @@ sum-cord statistic, so a pass is *corroboration by a different statistic*, not i
   has been computed.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (registered run 13 Nov 2026, 13:53:45–13:54:47 PT, 62 s; prereg `aade70b`; log `k079_run1.log` on the box, output `analysis/k079_results.json`)
+*Timing note: the pre-registration header says "~13:58 PT"; it was actually written at ~13:52 PT, just before the run. Corrected here, nothing else changed.*
+- **Gates pass.** G0 hashes; F0 exact (K078's four KFG confirmations reproduced to the last digit); data gate 0 mismatches,
+  partition 0.9986; **FPR** 2/200 = 0.010 ≤ 0.08 (binomial tail above 0.05: 1.00).
+
+| Name | Pendants (groups) | KFG L, p | Null mean / p95 / p99 | Power | Holm 3 | Verdict |
+|---|---|---|---|---|---|---|
+| KH0505 (OKR-shared; values edited in KFG) | 131 (33) | 4, 0.00155 | 0.04 / 0 / 2 | 1.00 | yes | **Corroborated** (one group) |
+| KH0677 (KFG-only) | 264 (21) | 7, 0.515 | 6.99 / 12 / 12 | 0.00 | no | **Not testable** (L saturates) |
+| KH0695 (KFG-only) | 143 (20) | 8, 0.036 | 2.87 / 7 / 10 | 0.02 | no | **Not testable** (power 0.02) |
+
+- **Reading.** KH0505 gets a second, different sum statistic in its favour: a 4-cord within-group sum against a shuffle whose
+  mean L is 0.04, so the K069/K077 flag is not an artefact of one detector. Caveat: both hits sit in **one** group (group 8
+  of 33); zeroing it drops L to 2, so the corroboration rests on that single group. Not held-out (same KFG values that
+  selected it). For KH0677 and KH0695 the L statistic is **blind**: their long groups (up to 17 cords) make large exact
+  sums common under the shuffle (KH0677's null mean is 7, its 99th percentile the maximum 12), so a planted 6-cord sum is
+  invisible (power 0.00 and 0.02). Their K069/K077 flags stand; they stay **single-statistic-family** names. The tool that
+  could see them is a size-aware statistic (e.g. K054's D5w is already one); L cannot.
+- **Secondary (descriptive, no verdict).** KH0143 L 3, p 0.82; KH0168 L 4, p 0.0051; KH0597 L 6, p 0.80; KH0604A L 6,
+  p 0.0032 (28 pendants); KH0674 L 10, p 0.042 (439 pendants). Printed only; not claims.
+- **Line status.** No earlier result is changed. Line-1 KFG names now: 14 replicated (K077) + 4 replicated held-out L (K078)
+  + KH0505 corroborated by L (K079); KH0677/KH0695 flagged by two detectors of the same adjacent/sum family but untestable by L.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

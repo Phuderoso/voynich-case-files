@@ -1,0 +1,361 @@
+{
+ "cycle": "K079",
+ "mode": "all",
+ "design": {
+  "statistic": "longest_within_group_exact_sum_window_L (K034/K037)",
+  "alpha_per_name": 0.025,
+  "family_holm_alpha": 0.05,
+  "R_CONF": 20000,
+  "R_FPR": 5000,
+  "R_POW": 5000,
+  "N_FPR": 200,
+  "N_POW": 200,
+  "plant": "one within-group exact sum k=6 (fallback k=5)",
+  "seeds": {
+   "KH0505": 6443,
+   "KH0677": 6444,
+   "KH0695": 6445,
+   "fpr": 6446,
+   "power": 6447,
+   "secondary": 6448
+  },
+  "next_free_seed": 6449,
+  "groups": "KFG CordGroups spans (K071)",
+  "universe": ">= 10 nonzero pendants and >= 2 groups of size >= 4 (K034)"
+ },
+ "G0": {
+  "okr_sha_ok": true,
+  "kfg_sha_ok": true
+ },
+ "data_gates": {
+  "G0_xlsx_hash_mismatch": 0,
+  "G1_partition_rate": 0.9985611510791367,
+  "G1_bad": [
+   "KH0521"
+  ],
+  "pass_data": true
+ },
+ "data": {
+  "n_kfg_khipus": 695,
+  "n_grouped": 694,
+  "n_eligible": 524,
+  "n_pop": 440,
+  "targets_in_pop": [
+   "KH0505",
+   "KH0677",
+   "KH0695"
+  ],
+  "targets_missing": [],
+  "okr_shared": [
+   "KH0505",
+   "KH0143",
+   "KH0168"
+  ],
+  "identical_values": [],
+  "identical_groups": [
+   "KH0505",
+   "KH0168"
+  ],
+  "n_pend": {
+   "KH0505": [
+    131,
+    131
+   ],
+   "KH0677": [
+    null,
+    264
+   ],
+   "KH0695": [
+    null,
+    143
+   ],
+   "KH0143": [
+    269,
+    272
+   ],
+   "KH0168": [
+    80,
+    80
+   ],
+   "KH0597": [
+    null,
+    166
+   ],
+   "KH0604A": [
+    null,
+    28
+   ],
+   "KH0674": [
+    null,
+    439
+   ]
+  },
+  "secondary_in_pop": [
+   "KH0143",
+   "KH0168",
+   "KH0597",
+   "KH0604A",
+   "KH0674"
+  ]
+ },
+ "F0_k078_on_kfg": {
+  "KH0322": {
+   "L": 8,
+   "p": 0.0009499525023748813,
+   "exact": true
+  },
+  "KH0420": {
+   "L": 8,
+   "p": 0.0002999850007499625,
+   "exact": true
+  },
+  "KH0502": {
+   "L": 3,
+   "p": 0.014949252537373132,
+   "exact": true
+  },
+  "KH0511": {
+   "L": 3,
+   "p": 0.0022998850057497125,
+   "exact": true
+  },
+  "pass": true
+ },
+ "confirmation": {
+  "KH0505": {
+   "L_obs": 4,
+   "p": 0.0015499225038748063,
+   "detail": {
+    "L": 4,
+    "n_hits": 2,
+    "n_groups_hit": 1,
+    "n_eligible_groups": 18,
+    "max_k_groups": [
+     7
+    ],
+    "loo_L_after_zeroing_max_groups": 2
+   },
+   "null_mean": 0.0429,
+   "null_p95": 0.0,
+   "null_p99": 2.0,
+   "null_max": 6,
+   "n_pend": 131,
+   "sizes": [
+    6,
+    6,
+    4,
+    4,
+    4,
+    4,
+    5,
+    5,
+    4,
+    4,
+    1,
+    5,
+    5,
+    8,
+    7,
+    6,
+    5,
+    6,
+    4,
+    3,
+    3,
+    1,
+    3,
+    3,
+    3,
+    3,
+    1,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+   ],
+   "R": 20000,
+   "seed": 6443
+  },
+  "KH0677": {
+   "L_obs": 7,
+   "p": 0.5152742362881856,
+   "detail": {
+    "L": 7,
+    "n_hits": 20,
+    "n_groups_hit": 10,
+    "n_eligible_groups": 21,
+    "max_k_groups": [
+     11
+    ],
+    "loo_L_after_zeroing_max_groups": 6
+   },
+   "null_mean": 6.98905,
+   "null_p95": 12.0,
+   "null_p99": 12.0,
+   "null_max": 12,
+   "n_pend": 264,
+   "sizes": [
+    7,
+    7,
+    7,
+    6,
+    7,
+    7,
+    7,
+    13,
+    8,
+    8,
+    8,
+    17,
+    8,
+    13,
+    6,
+    8,
+    4,
+    76,
+    8,
+    12,
+    27
+   ],
+   "R": 20000,
+   "seed": 6444
+  },
+  "KH0695": {
+   "L_obs": 8,
+   "p": 0.03619819009049548,
+   "detail": {
+    "L": 8,
+    "n_hits": 7,
+    "n_groups_hit": 5,
+    "n_eligible_groups": 17,
+    "max_k_groups": [
+     18
+    ],
+    "loo_L_after_zeroing_max_groups": 6
+   },
+   "null_mean": 2.8747,
+   "null_p95": 7.0,
+   "null_p99": 10.0,
+   "null_max": 12,
+   "n_pend": 143,
+   "sizes": [
+    6,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    7,
+    1,
+    6,
+    7,
+    7,
+    1,
+    1,
+    8,
+    7,
+    30,
+    6
+   ],
+   "R": 20000,
+   "seed": 6445
+  }
+ },
+ "secs": 62.5,
+ "fpr": {
+  "n": 200,
+  "hits": 2,
+  "fpr": 0.01,
+  "gate_pass": true,
+  "gate_threshold": 0.08,
+  "binom_p_above_0_05": 0.9995959718994731
+ },
+ "power": {
+  "KH0505": {
+   "n_plants": 200,
+   "skipped": 0,
+   "detected": 200,
+   "power": 1.0
+  },
+  "KH0677": {
+   "n_plants": 200,
+   "skipped": 0,
+   "detected": 0,
+   "power": 0.0
+  },
+  "KH0695": {
+   "n_plants": 200,
+   "skipped": 0,
+   "detected": 4,
+   "power": 0.02
+  }
+ },
+ "per_name": {
+  "KH0505": {
+   "L_kfg": 4,
+   "p_kfg": 0.0015499225038748063,
+   "power_kfg": 1.0,
+   "fate": "CORROBORATED",
+   "okr_shared": true,
+   "identical_values": false,
+   "holm3_sig": true
+  },
+  "KH0677": {
+   "L_kfg": 7,
+   "p_kfg": 0.5152742362881856,
+   "power_kfg": 0.0,
+   "fate": "NOT TESTABLE (power < 0.5)",
+   "okr_shared": false,
+   "identical_values": false,
+   "holm3_sig": false
+  },
+  "KH0695": {
+   "L_kfg": 8,
+   "p_kfg": 0.03619819009049548,
+   "power_kfg": 0.02,
+   "fate": "NOT TESTABLE (power < 0.5)",
+   "okr_shared": false,
+   "identical_values": false,
+   "holm3_sig": false
+  }
+ },
+ "summary": {
+  "corroborated": 1,
+  "not_corroborated": 0,
+  "not_testable": 2,
+  "holm3_sig": 1,
+  "fpr_gate": true
+ },
+ "secondary_descriptive": {
+  "KH0143": {
+   "L": 3,
+   "p": 0.8235088245587721,
+   "n_pend": 272
+  },
+  "KH0168": {
+   "L": 4,
+   "p": 0.005149742512874356,
+   "n_pend": 80
+  },
+  "KH0597": {
+   "L": 6,
+   "p": 0.8024598770061497,
+   "n_pend": 166
+  },
+  "KH0604A": {
+   "L": 6,
+   "p": 0.003249837508124594,
+   "n_pend": 28
+  },
+  "KH0674": {
+   "L": 10,
+   "p": 0.04214789260536973,
+   "n_pend": 439
+  }
+ }
+}
