@@ -216,3 +216,9 @@ judgement. A code-*association* test (does A's code predict B's code under the s
 would be same-data and post hoc after these cross-tabs; if run, it must be labelled exploratory.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+> **KFG audit note (K076, 13 Nov 2026):** on Khipu Field Guide data, KH0192·KH0470 **replicates** (7/37 vs 3.27, p 0.0062)
+> and KH0192·KH0469 stays not supported (degenerate). **KH0097·KH0586 is corrected to not supported** (6/89 vs 6.78, p 0.70):
+> the KFG writes compound colours in one component order for both recorders, chance agreement rises, and the six matches
+> are at chance. The OKR support came from Ascher vs Pereyra ordering of compound codes (OKR order-free p 0.69).
+> See [K076](K076-kfg-colour-agreement.md). — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

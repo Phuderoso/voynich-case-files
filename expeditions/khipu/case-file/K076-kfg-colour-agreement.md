@@ -39,3 +39,40 @@ Why this matters on the KFG: the KFG team re-curated colours (K074 found only 0.
   (groups/ΣV 13/89, 14/37, 15/36) and every aligned unit is coloured (n 89, 37, 36). Smoke output deleted.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (registered run 01:53:00–01:53:06 PT, 5 s, prereg `448656c`; output `analysis/k076_results.json`)
+*Time-stamp note: the prereg header says ~02:05 PT; it was written and committed at ~01:52 PT, before the run.*
+
+**Gates: all pass.** G0 (store, OKR, all 695 xlsx). Fixture 14/14. **F0** K046's engine on the OKR reproduces 13/89, 14/37,
+15/36, n 89/37/36 and A 6/7/0 exactly. All five khipus eligible and grouped on KFG; the value alignment is identical to the
+OKR's. Copy-all controls recovered in all three pairs (p 0.0005).
+
+| Pair | n | A (null mean ± sd) | p (α 0.0167) | FPR perm · shift | power (25 %) | KFG verdict | OKR verdict | Decision |
+|---|---|---|---|---|---|---|---|---|
+| H1 KH0192·KH0470 | 37 | **7** (3.27 ± 1.29) | **0.0062** | 0.008 · 0 | 0.98 | SUPPORTED | SUPPORTED (p 0.0059) | **REPLICATED** |
+| H2 KH0097·KH0586 | 89 | 6 (6.78 ± 2.31) | 0.70 | 0.010 · 0 | 1.00 | NOT SUPPORTED | SUPPORTED (p 0.0091) | **CHANGED (correction)** |
+| H3 KH0192·KH0469 | 36 | 0 (0.00) | 1.0 | 0 · 0 | 1.00 | NOT SUPPORTED | NOT SUPPORTED | **REPLICATED** (still degenerate) |
+
+Sensitivities (reported only): H1 `BY`≡`YB` p 0.0048, order-free p 0.0049, N2 within-group p 0.016, with leaders 9/51
+p 0.0006. H2 `BY`≡`YB` p 0.70, order-free p 0.71, N2 p 0.76, with leaders 19/102 p 0.0037. H3 every sensitivity A 0
+except with leaders (15/51, p 1e-4).
+
+**Why H2 changed (read from the colour tables, not a new test).** The colour *content* is the same on both sources; the
+KFG writes compound colours in one order for both recorders (`W:MB`, `W:BL`, `W:BY`), where the OKR stored Ascher's
+KH0097 as `MB:W`, `BL:W`, `BY:W` and Pereyra's KH0586 as `W:MB`, `W:BL`. Under K046's order-sensitive rule on the OKR, the
+compound colours of the two records could never match, so the null was built almost only from plain `W`/`MB` and 6
+matches looked rare (null 2.10). On the KFG compound codes are comparable, chance agreement rises to 6.78, and the same
+6 aligned matches (five plain `W`, one `MB`) are **at chance**. The aligned compound cords do not agree. This is what
+K046's own post-hoc order-free check on the OKR showed (p 0.69), and why K046 called the pair 'fragile'. K046's
+KH0097·KH0586 colour support was a recorder-ordering artefact: **withdrawn**.
+
+**H1** is unchanged to the unit (KFG kept both records' codes; the 7 matches are all `YB`). **H3** stays degenerate:
+KFG still has KH0469 (Urton) with no non-leader colour code shared with KH0192 (Ascher `YB` 17 against Urton `AB` 17),
+so the test has no null mass; the leader-only agreement (15/15 leaders coloured alike, post hoc, leaders selected the
+pair) is a disclosed curiosity, not a verdict.
+
+**Line 6 status after K076.** KFG-standing: K021 shared colour; K021 corpus boundary (corrected, K074); K022 negative;
+K046 KH0192·KH0470 colour agreement. Withdrawn: K023 'apart' (K075) and K046 KH0097·KH0586 (here). Line 6 has no
+OKR verdict left to re-audit. Next KFG step: line 1 (K036 reference list) or line 4 (K007/K026 decoding audit).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
