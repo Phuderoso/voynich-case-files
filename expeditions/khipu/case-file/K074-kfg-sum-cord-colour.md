@@ -3,7 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-*Caderno de campo, 12 Nov 2026, ~17:55 PT.* Sixth stop on the KFG re-audit trail (README line 9), and the first on line 6
+*Caderno de campo, 12 Nov 2026, ~17:48 PT.* Sixth stop on the KFG re-audit trail (README line 9), and the first on line 6
 (colour and value). The reference is K021 on the OKR: among the 10 K001 BH-significant khipus, sum cords are **not**
 colour-isolated (H1 boundary, T1 35 vs 31.4, p 0.19, power 1.00: a real negative) but **do** share colours beyond chance
 (H2, T2 416 same-colour pairs vs 229.5, p < 10⁻⁴); the same two verdicts held on all 245 khipus with a sum cord.
@@ -35,7 +35,36 @@ K074 re-runs K021 on KFG data. K022, K023 and K046 follow in later runs, one at 
   concordance (416 identical-value khipus, 18 559 pendants with both colours known; agreement 0.811 primary, 0.947 sorted)
   and the value-only counts (P1 = 10 khipus, 93 sum cords; P2 = 15 khipus, 144 sum cords). Smoke output deleted.
 
-## Results
-*(to be filled after the registered run)*
+## Results (registered run 17:49:41–17:49:59 PT, 18.1 s, prereg `6170c14`; output `analysis/k074_results.json`)
+**Gates: all pass.** G0 both hashes. **F0** the engine on the OKR reproduces K021's counts exactly (10 / 95 / 1 005 / 35 / 416
+and 245 / 724 / 10 414 / 290 / 782). **GC** 416 khipus with identical value vectors, 18 559 pendants with both colours known:
+KFG primary colour = OKR first-range colour on **0.811**, and on **0.947** once `:` order is ignored (the KFG and the OKR
+write mottled pairs in opposite orders). No khipu was excluded for pendant naming.
+
+| Population (primary coding) | Khipus / sum cords | H1 boundary T1 (null mean, p) | H2 shared T2 (null mean, p) | FPR H1/H2 · power H1/H2 |
+|---|---|---|---|---|
+| P1 OKR K001 BH names on KFG | 10 / 93 | 34 (30.90, p 0.234) **not supported** | 398 (221.03, p 5×10⁻⁵) **supported** | 0.03/0.015 · 1.00/0.98 |
+| P3 all KFG khipus with a sum cord | 289 / 901 | 367 (335.28, **p 0.0012**) **supported** | 966 (829.30, p 0.00095) **supported** | 0.04/0.03 · 1.00/1.00 |
+| P2 K069 KFG BH names (new) | 15 / 144 | 66 (53.83, p 0.0042) supported | 476 (295.95, p 5×10⁻⁵) supported | 0.015/0.02 · 1.00/1.00 |
+
+The sorted (`:`-order-free) coding gives the same verdicts everywhere (P1 p 0.235 / 5×10⁻⁵; P3 p 0.0013 / 0.00095).
+
+**Decision (registered rule).**
+- P1 H1 (no colour boundary at sum cords) **REPLICATED**; P1 H2 (sum cords share colour) **REPLICATED**.
+- P3 H2 **REPLICATED**.
+- **P3 H1 CHANGED (correction):** on the OKR, over all 245 khipus with a sum cord, sum cords were not colour-isolated
+  (290 vs 278.1, p 0.105); on the KFG, over 289 khipus, they are (367 vs 335.3, p 0.0012, power 1.00, FPR 0.04).
+  K021's headline negative (the ten BH khipus) stands; its corpus-wide negative does not.
+
+**Post hoc (disclosed, after the run; `tools/k074_posthoc_split.py` → `analysis/k074_posthoc_split.json`, seed 6427).**
+The boundary excess is not only from khipus the KFG added: on the 249 khipus also in the OKR it is 307 vs 286.4 (p 0.016),
+on the 40 KFG-only khipus 60 vs 49.1 (p 0.009). It also lives outside the ten BH khipus (279 others: 333 vs 304.4,
+p 0.002). The shared-colour effect is the opposite: outside the ten BH khipus it vanishes (568 vs 608.0, p 0.88), and on
+the KFG-only khipus too (169 vs 173.0, p 0.56). So "sum cords share a colour" is a property of a few strongly structured
+khipus (as K021 found), while "sum cords sit at colour changes" is a weak, diffuse corpus-wide lean that the curated KFG
+colours (and the extra khipus) make visible. Reading, not a claim: no meaning is assigned to any colour, and a colour
+change next to a total is the same field mark the Khipu Field Guide already describes for group boundaries.
+
+Next free seed **6428**. Next on line 6: K022 (sum vs summand colour) on KFG, then K023 and K046.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

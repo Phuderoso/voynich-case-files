@@ -1,0 +1,247 @@
+{
+ "design": {
+  "seed": 6426,
+  "next_free_seed": 6427,
+  "R": 20000,
+  "NCAL": 200,
+  "alpha": 0.025,
+  "smoke": false
+ },
+ "published_okr": {
+  "primary": {
+   "n_khipus": 10,
+   "n_sum": 95,
+   "n_elig": 1005,
+   "T1": 35,
+   "T2": 416,
+   "p1": 0.1897,
+   "p2": 5e-05,
+   "verdict_H1": "not supported",
+   "verdict_H2": "supported"
+  },
+  "secondary": {
+   "n_khipus": 245,
+   "n_sum": 724,
+   "n_elig": 10414,
+   "T1": 290,
+   "T2": 782,
+   "p1": 0.1053,
+   "p2": 5e-05,
+   "verdict_H1": "not supported",
+   "verdict_H2": "supported"
+  }
+ },
+ "G0": "pass",
+ "F0": {
+  "got": {
+   "primary": [
+    10,
+    95,
+    1005,
+    35,
+    416
+   ],
+   "secondary": [
+    245,
+    724,
+    10414,
+    290,
+    782
+   ]
+  },
+  "want": {
+   "primary": [
+    10,
+    95,
+    1005,
+    35,
+    416
+   ],
+   "secondary": [
+    245,
+    724,
+    10414,
+    290,
+    782
+   ]
+  },
+  "pass": true
+ },
+ "data": {
+  "n_kfg_khipus": 695,
+  "nonseq_excluded": [
+   "KH0521"
+  ],
+  "okr_bh": [
+   "KH0359",
+   "KH0405",
+   "KH0491",
+   "KH0492",
+   "KH0503",
+   "KH0504",
+   "KH0506",
+   "KH0507",
+   "KH0513",
+   "KH0514"
+  ],
+  "okr_bh_present": [
+   "KH0359",
+   "KH0405",
+   "KH0491",
+   "KH0492",
+   "KH0503",
+   "KH0504",
+   "KH0506",
+   "KH0507",
+   "KH0513",
+   "KH0514"
+  ],
+  "k069_bh": [
+   "KH0217",
+   "KH0358",
+   "KH0359",
+   "KH0405",
+   "KH0491",
+   "KH0492",
+   "KH0503",
+   "KH0504",
+   "KH0505",
+   "KH0506",
+   "KH0507",
+   "KH0513",
+   "KH0514",
+   "KH0677",
+   "KH0695"
+  ]
+ },
+ "GC": {
+  "khipus": 416,
+  "pendants": 18773,
+  "both_known": 18559,
+  "eq_prim": 15049,
+  "eq_sort": 17568,
+  "rate_prim": 0.8108734306805323,
+  "rate_sort": 0.9466027264400022
+ },
+ "results": {
+  "primary_coding": {
+   "P1_okr_bh_names": {
+    "pop": "OKR K001 BH names on KFG",
+    "n_khipus": 10,
+    "n_sum": 93,
+    "n_elig": 1012,
+    "T1": 34,
+    "T1_null_mean": 30.90315,
+    "p1": 0.23398830058497075,
+    "T2": 398,
+    "T2_null_mean": 221.0268,
+    "p2": 4.999750012499375e-05,
+    "calib_fpr_H1": 0.03,
+    "calib_fpr_H2": 0.015,
+    "power_H1": 1.0,
+    "power_H2": 0.98,
+    "verdict_H1": "not supported",
+    "verdict_H2": "supported"
+   },
+   "P2_k069_bh": {
+    "pop": "K069 KFG BH names",
+    "n_khipus": 15,
+    "n_sum": 144,
+    "n_elig": 1615,
+    "T1": 66,
+    "T1_null_mean": 53.82695,
+    "p1": 0.004199790010499475,
+    "T2": 476,
+    "T2_null_mean": 295.9512,
+    "p2": 4.999750012499375e-05,
+    "calib_fpr_H1": 0.015,
+    "calib_fpr_H2": 0.02,
+    "power_H1": 1.0,
+    "power_H2": 1.0,
+    "verdict_H1": "supported",
+    "verdict_H2": "supported"
+   },
+   "P3_all": {
+    "pop": "all KFG khipus with a sum cord",
+    "n_khipus": 289,
+    "n_sum": 901,
+    "n_elig": 12672,
+    "T1": 367,
+    "T1_null_mean": 335.2821,
+    "p1": 0.0012499375031248437,
+    "T2": 966,
+    "T2_null_mean": 829.30385,
+    "p2": 0.0009499525023748813,
+    "calib_fpr_H1": 0.04,
+    "calib_fpr_H2": 0.03,
+    "power_H1": 1.0,
+    "power_H2": 1.0,
+    "verdict_H1": "supported",
+    "verdict_H2": "supported"
+   }
+  },
+  "sorted_coding": {
+   "P1_okr_bh_names": {
+    "pop": "OKR K001 BH names on KFG",
+    "n_khipus": 10,
+    "n_sum": 93,
+    "n_elig": 1012,
+    "T1": 34,
+    "T1_null_mean": 30.915,
+    "p1": 0.23458827058647067,
+    "T2": 398,
+    "T2_null_mean": 221.04115,
+    "p2": 4.999750012499375e-05,
+    "calib_fpr_H1": 0.015,
+    "calib_fpr_H2": 0.01,
+    "power_H1": 1.0,
+    "power_H2": 0.985,
+    "verdict_H1": "not supported",
+    "verdict_H2": "supported"
+   },
+   "P2_k069_bh": {
+    "pop": "K069 KFG BH names",
+    "n_khipus": 15,
+    "n_sum": 144,
+    "n_elig": 1615,
+    "T1": 66,
+    "T1_null_mean": 53.77375,
+    "p1": 0.0038998050097495125,
+    "T2": 476,
+    "T2_null_mean": 295.91095,
+    "p2": 4.999750012499375e-05,
+    "calib_fpr_H1": 0.01,
+    "calib_fpr_H2": 0.025,
+    "power_H1": 1.0,
+    "power_H2": 1.0,
+    "verdict_H1": "supported",
+    "verdict_H2": "supported"
+   },
+   "P3_all": {
+    "pop": "all KFG khipus with a sum cord",
+    "n_khipus": 289,
+    "n_sum": 901,
+    "n_elig": 12672,
+    "T1": 367,
+    "T1_null_mean": 335.32295,
+    "p1": 0.0012999350032498376,
+    "T2": 966,
+    "T2_null_mean": 829.00095,
+    "p2": 0.0009499525023748813,
+    "calib_fpr_H1": 0.005,
+    "calib_fpr_H2": 0.02,
+    "power_H1": 1.0,
+    "power_H2": 1.0,
+    "verdict_H1": "supported",
+    "verdict_H2": "supported"
+   }
+  }
+ },
+ "decision": {
+  "primary_H1": "REPLICATED",
+  "primary_H2": "REPLICATED",
+  "secondary_H1": "CHANGED (correction)",
+  "secondary_H2": "REPLICATED"
+ },
+ "secs": 18.1
+}

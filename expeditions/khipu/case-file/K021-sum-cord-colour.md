@@ -89,3 +89,6 @@ removes 26 of 95 primary sum cords (24 R5 targets, 2 R5-only windows). H1 was no
 [K057](K057-multinumber-sum-colour.md).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+
+> **Audit note (K074, 12 Nov 2026, KFG re-audit).** On Khipu Field Guide data the primary verdicts (ten BH khipus) and the corpus shared-colour verdict replicate; the **secondary boundary verdict does not**: over 289 KFG khipus, sum cords differ in colour from both neighbours more than chance (367 vs 335.3, p 0.0012). 'Not supported' above is true of the OKR only. See [K074](K074-kfg-sum-cord-colour.md).
