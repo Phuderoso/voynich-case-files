@@ -10,7 +10,7 @@ Two-sided alpha 0.05 -> each direction at 0.025; floor 1/(1+NNULL) printed. Cali
 observed text under H0 is one more slot draw); a leave-one-out rank check on the null replicates is printed.
 Gate G-PLANT (power, two-sided): plant A = Latin Caesar half 1 with only 30 % of words intact and 70 % replaced by their
 slot-shuffled version (a diluted departure from slots); it must give min(p_low, p_high) < 0.025. Plant B (sensitivity, printed,
-decides nothing) = Latin Caesar half 2 with 50 % of words re-ordered front/back (units of class F first, then class K, order kept
+decides nothing) = Latin Descartes half 1 (amendment v2: Caesar has only one half) with 50 % of words re-ordered front/back (units of class F first, then class K, order kept
 inside each class; classes = alternate frequency ranks), a structure whose switch point follows word content, not position.
 Smoke disclosed (controls only): Latin h1 SW 0.81 vs two slot replicates 0.39/0.40; front/back q 0.5 SW 0.176 vs 0.154/0.153.
 Pre-registered in case-file/C113-hmm-switch-slot-null.md. Seed 11775 (main); next free 11776.
@@ -69,7 +69,7 @@ def main():
         pl, lang, _ = ivtff_pages_lang(f); lines = [l for p, l in pl]
         texts[k] = [[tuple(T.units(w)) for w in flat(L)] for L in halves(lines)]
     Hc = halves(nat['Latin_Caesar'])
-    texts['plantA'] = [dilute(chars(flat(Hc[0])), rng, QA)]; texts['plantB'] = [plant(chars(flat(Hc[1])), rng, QB)]
+    texts['plantA'] = [dilute(chars(flat(Hc[0])), rng, QA)]; texts['plantB'] = [plant(chars(flat(halves(nat['Latin_Descartes'])[0])), rng, QB)]   # amendment v2: Caesar has one half
     jobs = [(k, r, h, w) for k in ('plantA', 'plantB', 'ZL3b', 'IT2a') for r in range(NNULL[k] + 1) for h, w in enumerate(texts[k])]
     print('jobs', len(jobs), round(time.time() - t0, 1), flush=True)
     res = {}; ck = 'analysis/C113_checkpoint.jsonl'; fck = open(ck, 'w')

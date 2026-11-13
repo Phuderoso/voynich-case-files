@@ -43,6 +43,10 @@ only) was therefore replaced, before any Voynich run, by the two-sided test and 
 C109's slots". LESS STICKY → "beyond its slots the manuscript's HMM alternates, in line with C109's Sukhotin residual". STICKIER →
 "a front/back structure beyond position slots". No claim about vowels, syllables or meaning either way.
 
+**Amendment v2 (committed before the re-run; no statistic of any text was computed).** The first launch (04:38:18 PT) stopped at
+input building: Latin Caesar has only one 15,000-token half, so plant B's source "Caesar half 2" does not exist (IndexError before
+any HMM fit; log kept as `analysis/C113_run_v1_crash.log`). Plant B now uses Latin Descartes half 1. Nothing else changes.
+
 **Seeds.** 11775 (main; every job rng SeedSequence([11775, name hash, replicate, half])); next free **11776**.
 
 **Code.** `tools/c113_hmm_switch_slot_null.py`, committed with this pre-registration. Run: `timeout 600 python3 tools/c113_hmm_switch_slot_null.py`.

@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/workspace/vcf-c104/tools/c113_hmm_switch_slot_null.py", line 109, in <module>
+    else: main()
+          ~~~~^^
+  File "/workspace/vcf-c104/tools/c113_hmm_switch_slot_null.py", line 72, in main
+    texts['plantA'] = [dilute(chars(flat(Hc[0])), rng, QA)]; texts['plantB'] = [plant(chars(flat(Hc[1])), rng, QB)]
+                                                                                                 ~~^^^
+IndexError: list index out of range
