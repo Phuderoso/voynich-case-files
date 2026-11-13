@@ -1,0 +1,57 @@
+G0 {'okr_sha_ok': True, 'kfg_sha_ok': True} F0 {'n_eligible': 457, 'n_pop': 378, 'pop_ids_equal_k036': True, 'f1_list_equal': True, 'k054_stat_reproduced': '365/365', 'names_found': 14, 'pass': True} 1.7
+data gates {'G0_xlsx_hash_mismatch': 0, 'G1_partition_rate': 0.9985611510791367, 'pass_data': True}
+data {'n_kfg_khipus': 695, 'n_grouped': 694, 'n_eligible': 524, 'n_pop': 440, 'n_pop_okr_shared': 389, 'n_pop_kfg_only': 51, 'f1_in_pop': ['KH0322', 'KH0395', 'KH0420', 'KH0428', 'KH0478', 'KH0491', 'KH0492', 'KH0502', 'KH0504', 'KH0506', 'KH0507', 'KH0511', 'KH0513', 'KH0514'], 'f1_not_in_pop': [], 'f1_not_in_kfg': [], 'f1_identical_values': ['KH0322', 'KH0420', 'KH0428', 'KH0478', 'KH0504', 'KH0511', 'KH0514'], 'f1_identical_groups': ['KH0322', 'KH0395', 'KH0420', 'KH0428', 'KH0478', 'KH0492', 'KH0502', 'KH0504', 'KH0506', 'KH0507', 'KH0511', 'KH0513', 'KH0514']}
+gates 50 / 440 10.2 s
+gates 100 / 440 21.4 s
+gates 150 / 440 29.1 s
+gates 200 / 440 38.2 s
+gates 250 / 440 46.4 s
+gates 300 / 440 56.4 s
+gates 350 / 440 63.4 s
+gates 400 / 440 69.9 s
+gates {'calib_n': 440, 'fpr': 0.02727272727272727, 'calib_bh_flags': 0, 'plant_n': 419, 'power': 0.9498806682577565, 'power_bh': 0.8926014319809069, 'G1': True, 'G2': True} 78.4
+scan 50 / 440 82.0 s
+scan 100 / 440 87.5 s
+scan 150 / 440 91.2 s
+scan 200 / 440 95.7 s
+scan 250 / 440 99.9 s
+scan 300 / 440 104.8 s
+scan 350 / 440 108.1 s
+scan 400 / 440 111.1 s
+{
+ "n_tested": 440,
+ "n_bh": 22,
+ "bh_rank": 22,
+ "bh_bar": 0.0025,
+ "replicated": 14,
+ "changed": 0,
+ "not_testable": 0,
+ "new_okr_shared": [
+  "KH0143",
+  "KH0168",
+  "KH0505",
+  "KH0597"
+ ],
+ "new_kfg_only": [
+  "KH0604A",
+  "KH0674",
+  "KH0677",
+  "KH0695"
+ ],
+ "gates_pass": true
+}
+F1 {'name': 'KH0322/UR086', 'kfg': 'KH0322', 'fate': 'REPLICATED', 'stat_okr': 4.677068312644881, 'stat_kfg': 4.677068312644881, 'p_okr': 0.0006999300069993001, 'p_kfg': 0.0005999400059994001, 'identical_values': True, 'identical_groups': True}
+F1 {'name': 'KH0395/UR155', 'kfg': 'KH0395', 'fate': 'REPLICATED', 'stat_okr': 8.15836249209525, 'stat_kfg': 8.15836249209525, 'p_okr': 0.0010998900109989002, 'p_kfg': 0.0004999500049995, 'identical_values': False, 'identical_groups': True}
+F1 {'name': 'KH0420/UR182', 'kfg': 'KH0420', 'fate': 'REPLICATED', 'stat_okr': 2.0718820073061255, 'stat_kfg': 2.0718820073061255, 'p_okr': 0.0013998600139986002, 'p_kfg': 0.0018998100189981002, 'identical_values': True, 'identical_groups': True}
+F1 {'name': 'KH0428/UR190', 'kfg': 'KH0428', 'fate': 'REPLICATED', 'stat_okr': 32.70553639766403, 'stat_kfg': 32.70553639766403, 'p_okr': 0.000999900009999, 'p_kfg': 0.0010998900109989002, 'identical_values': True, 'identical_groups': True}
+F1 {'name': 'KH0478/UR242', 'kfg': 'KH0478', 'fate': 'REPLICATED', 'stat_okr': 12.664696059065276, 'stat_kfg': 12.664696059065276, 'p_okr': 0.0010998900109989002, 'p_kfg': 0.0010998900109989002, 'identical_values': True, 'identical_groups': True}
+F1 {'name': 'KH0491/UR255', 'kfg': 'KH0491', 'fate': 'REPLICATED', 'stat_okr': 20.329257475882123, 'stat_kfg': 20.329257475882123, 'p_okr': 9.999000099990002e-05, 'p_kfg': 0.00029997000299970003, 'identical_values': False, 'identical_groups': False}
+F1 {'name': 'KH0492/UR256', 'kfg': 'KH0492', 'fate': 'REPLICATED', 'stat_okr': 23.630801564617435, 'stat_kfg': 23.630801564617435, 'p_okr': 0.0006999300069993001, 'p_kfg': 0.0008999100089991, 'identical_values': False, 'identical_groups': True}
+F1 {'name': 'KH0502/UR266', 'kfg': 'KH0502', 'fate': 'REPLICATED', 'stat_okr': 6.805213272247636, 'stat_kfg': 6.805213272247636, 'p_okr': 0.0008999100089991, 'p_kfg': 0.0015998400159984002, 'identical_values': False, 'identical_groups': True}
+F1 {'name': 'KH0504/UR267B', 'kfg': 'KH0504', 'fate': 'REPLICATED', 'stat_okr': 34.01485427181407, 'stat_kfg': 34.01485427181407, 'p_okr': 0.00039996000399960006, 'p_kfg': 0.0004999500049995, 'identical_values': True, 'identical_groups': True}
+F1 {'name': 'KH0506/UR269', 'kfg': 'KH0506', 'fate': 'REPLICATED', 'stat_okr': 47.81510109918057, 'stat_kfg': 44.44182120590308, 'p_okr': 0.00039996000399960006, 'p_kfg': 0.00039996000399960006, 'identical_values': False, 'identical_groups': True}
+F1 {'name': 'KH0507/UR270', 'kfg': 'KH0507', 'fate': 'REPLICATED', 'stat_okr': 11.324693913861775, 'stat_kfg': 11.324693913861775, 'p_okr': 0.0005999400059994001, 'p_kfg': 0.0005999400059994001, 'identical_values': False, 'identical_groups': True}
+F1 {'name': 'KH0511/UR273B', 'kfg': 'KH0511', 'fate': 'REPLICATED', 'stat_okr': 3.2041199826559246, 'stat_kfg': 3.2041199826559246, 'p_okr': 0.0015998400159984002, 'p_kfg': 0.0012998700129987, 'identical_values': True, 'identical_groups': True}
+F1 {'name': 'KH0513/UR274B', 'kfg': 'KH0513', 'fate': 'REPLICATED', 'stat_okr': 6.260691365937477, 'stat_kfg': 6.260691365937477, 'p_okr': 0.00019998000199980003, 'p_kfg': 0.0005999400059994001, 'identical_values': False, 'identical_groups': True}
+F1 {'name': 'KH0514/UR275', 'kfg': 'KH0514', 'fate': 'REPLICATED', 'stat_okr': 33.239666680245, 'stat_kfg': 33.239666680245, 'p_okr': 0.00029997000299970003, 'p_kfg': 0.00029997000299970003, 'identical_values': True, 'identical_groups': True}
+seconds 115.2
