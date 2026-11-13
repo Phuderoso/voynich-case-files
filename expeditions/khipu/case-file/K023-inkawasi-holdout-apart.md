@@ -61,3 +61,6 @@ colour convention until new Inkawasi records are published.
 
 ---
 **Audit note (K058, 2026-11-08 ~14:35 PT).** Re-run under the multi-number (R5) mask, pre-registered in K058: 39 sum cords / 13 khipus, A = 8.56 vs null 12.76 ± 1.74, p = 0.0084 (five seeds 0.0067–0.0082; without KH0502 p = 0.0090); gates FPR 0.075, power 0.715 → **robust under the mask**. The original wording ("weakly supported, not established", data-limited) stands: same data, same 15 khipus, one OKR commit.
+
+
+> **KFG audit note (K075, 12 Nov 2026):** on Khipu Field Guide data the same 15 khipus give A 13.58 vs 16.77, p 0.059 (power 0.795): **not supported**. Quote this result as *not established on either source*. See [K075](K075-kfg-sum-summand-colour.md). — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

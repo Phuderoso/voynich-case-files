@@ -38,3 +38,34 @@ p 0.048, one-sided; fragile: p 0.062 without KH0502).
   H2 15 / 49 (colour-known counts under shuffled colours; real counts may differ slightly). Smoke output deleted.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (registered run 21:53:28–21:53:32 PT, 4 s, prereg `d9870f6`; output `analysis/k075_results.json`)
+*Time-stamp correction: the prereg header says ~21:58 PT; it was written and committed at ~21:53 PT, before the run.*
+
+**Gates: all pass.** G0 both hashes. **F0** the engine on the OKR reproduces K022 and K023 exactly (95 / A 50.6667;
+712 / A 298.1305; 49 / A 13.8621). No khipu excluded for pendant naming.
+
+| Hypothesis (primary coding) | Khipus / sum cords | A (null mean) | p | FPR · power | KFG verdict |
+|---|---|---|---|---|---|
+| H1 K022 on the ten OKR BH names | 10 / 93 | 49.33 (44.15) | 0.088 two-sided | 0.03 · 1.00 / 1.00 | not supported |
+| H2 K023 Inkawasi set ('apart', one-sided) | 15 / 49 | 13.58 (16.77) | **0.059** | 0.065 · 0.795 | **not supported** |
+| H3 KFG-only Incahuasi | 0 | — | — | — | not testable (empty, declared) |
+| S all KFG khipus with a sum cord (descriptive) | 276 / 885 | 369.57 (380.96) | 0.19 two-sided | 0.035 · 1.00 | not supported |
+
+Sorted (`:`-order-free) coding: same verdicts (H1 p 0.088; H2 p 0.061, FPR 0.035, power 0.82; S p 0.19).
+
+**Decision (registered rule).**
+- **H1 REPLICATED:** totals are not coloured like (or unlike) their summands on the ten BH khipus, a real negative on both sources.
+- **H2 CHANGED (correction):** K023's 'Inkawasi totals coloured apart' was weakly supported on the OKR (p 0.048) and is
+  **not supported** on the KFG (p 0.059, power 0.795). The direction and size are almost the same (A − null −3.19 vs −3.46);
+  it is the same fragile result falling on the other side of α = 0.05, which K023 itself warned about (other seeds 0.048–0.050,
+  0.062 without KH0502). Quote it from now on as **not established on either source**; the 'apart' line stays closed for
+  lack of new Inkawasi data (H3 has no population: the KFG adds no Inkawasi khipu).
+- **S:** the OKR's corpus-wide lean 'apart' (p 0.059, reported only) is not seen on KFG (p 0.19).
+- K058's R5-masked result for K023 (p 0.0084 on OKR) was conditional on K023 and is **not re-run here**; it is now owed as
+  a KFG audit item only if line 6 reopens (it cannot rescue H2: masking is a robustness check, not a new test).
+
+**Line 6 status.** K021 (shared colour) stands; K021's corpus boundary is corrected (K074); K022 stands as a negative;
+K023 is withdrawn to 'not established'. Next KFG step: K046 colour concordance on the K019 pairs, or line 1 (K036 reference list).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

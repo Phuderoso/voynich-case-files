@@ -1,0 +1,190 @@
+{
+ "design": {
+  "seed": 6428,
+  "next_free_seed": 6429,
+  "R": 20000,
+  "NC": 200,
+  "alpha": 0.05,
+  "smoke": false
+ },
+ "published_okr": {
+  "K022_primary": {
+   "n": 95,
+   "A": 50.666666666666664,
+   "verdict": "not supported"
+  },
+  "K022_secondary": {
+   "n": 712,
+   "A": 298.1304834054834,
+   "p": 0.0588,
+   "direction": "apart"
+  },
+  "K023": {
+   "n": 49,
+   "n_khipus": 15,
+   "A": 13.862121212121211,
+   "verdict": "supported"
+  }
+ },
+ "G0": "pass",
+ "F0": {
+  "got": {
+   "K022_primary": [
+    95,
+    50.666666666666664
+   ],
+   "K022_secondary": [
+    712,
+    298.1304834054834
+   ],
+   "K023": [
+    49,
+    13.862121212121211
+   ]
+  },
+  "pass_": true
+ },
+ "data": {
+  "n_kfg": 695,
+  "nonseq_excluded": [
+   "KH0521"
+  ],
+  "kfg_incahuasi": 52,
+  "H3_population_kfg_only_incahuasi": []
+ },
+ "results": {
+  "primary_coding": {
+   "H1_K022_primary": {
+    "pop": "OKR K001 BH names on KFG",
+    "n_khipus": 10,
+    "n_sum_cords": 93,
+    "A": 49.333333333333336,
+    "A_null_mean": 44.15365833333333,
+    "A_null_sd": 3.024592755863084,
+    "p_two_sided": 0.087895605219739,
+    "direction": "match",
+    "calib_fpr": 0.03,
+    "power_match": 1.0,
+    "power_apart": 1.0,
+    "verdict": "not supported"
+   },
+   "S_K022_all": {
+    "pop": "all KFG khipus with a sum cord",
+    "n_khipus": 276,
+    "n_sum_cords": 885,
+    "A": 369.5676406926407,
+    "A_null_mean": 380.9604478661617,
+    "A_null_sd": 8.76086658198252,
+    "p_two_sided": 0.19359032048397581,
+    "direction": "apart",
+    "calib_fpr": 0.035,
+    "power_match": 1.0,
+    "power_apart": 1.0,
+    "verdict": "not supported"
+   },
+   "H2_K023_set": {
+    "pop": "Incahuasi minus K001 BH names (KFG provenance)",
+    "n_khipus": 15,
+    "khipus": [
+     "KH0498",
+     "KH0499",
+     "KH0500",
+     "KH0502",
+     "KH0505",
+     "KH0509",
+     "KH0511",
+     "KH0512",
+     "KH0516",
+     "KH0608",
+     "KH0612",
+     "KH0616",
+     "KH0617",
+     "KH0618",
+     "KH0620"
+    ],
+    "n_sum_cords": 49,
+    "A": 13.576406926406927,
+    "A_null_mean": 16.771306201298703,
+    "A_null_sd": 2.0572827629371586,
+    "p_one_sided_apart": 0.058997050147492625,
+    "calib_fpr": 0.065,
+    "power_apart": 0.795,
+    "verdict": "not supported"
+   },
+   "H3_kfg_only_incahuasi": {
+    "n_sum_cords": 0,
+    "verdict": "not testable (empty population)"
+   }
+  },
+  "sorted_coding": {
+   "H1_K022_primary": {
+    "pop": "OKR K001 BH names on KFG",
+    "n_khipus": 10,
+    "n_sum_cords": 93,
+    "A": 49.333333333333336,
+    "A_null_mean": 44.15786666666666,
+    "A_null_sd": 3.021260830256872,
+    "p_two_sided": 0.08849557522123894,
+    "direction": "match",
+    "calib_fpr": 0.055,
+    "power_match": 0.995,
+    "power_apart": 0.99,
+    "verdict": "not supported"
+   },
+   "S_K022_all": {
+    "pop": "all KFG khipus with a sum cord",
+    "n_khipus": 276,
+    "n_sum_cords": 885,
+    "A": 369.5676406926407,
+    "A_null_mean": 381.01679876623393,
+    "A_null_sd": 8.747515712768589,
+    "p_two_sided": 0.19289035548222588,
+    "direction": "apart",
+    "calib_fpr": 0.04,
+    "power_match": 1.0,
+    "power_apart": 1.0,
+    "verdict": "not supported"
+   },
+   "H2_K023_set": {
+    "pop": "Incahuasi minus K001 BH names (KFG provenance)",
+    "n_khipus": 15,
+    "khipus": [
+     "KH0498",
+     "KH0499",
+     "KH0500",
+     "KH0502",
+     "KH0505",
+     "KH0509",
+     "KH0511",
+     "KH0512",
+     "KH0516",
+     "KH0608",
+     "KH0612",
+     "KH0616",
+     "KH0617",
+     "KH0618",
+     "KH0620"
+    ],
+    "n_sum_cords": 49,
+    "A": 13.576406926406927,
+    "A_null_mean": 16.76250015151515,
+    "A_null_sd": 2.055310415301078,
+    "p_one_sided_apart": 0.061246937653117346,
+    "calib_fpr": 0.035,
+    "power_apart": 0.82,
+    "verdict": "not supported"
+   },
+   "H3_kfg_only_incahuasi": {
+    "n_sum_cords": 0,
+    "verdict": "not testable (empty population)"
+   }
+  }
+ },
+ "decision": {
+  "H1_K022": "REPLICATED",
+  "H2_K023": "CHANGED (correction)",
+  "H3_new_heldout": "not testable (empty population)",
+  "S_K022_all": "descriptive (OKR lean apart p 0.059, reported only)"
+ },
+ "secs": 3.9
+}
