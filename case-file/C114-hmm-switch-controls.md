@@ -20,8 +20,10 @@ re-fitted per replicate). Unit: one 15,000-token half (half 1 = `halves(...)[0]`
 Abjad (5): Hebrew Genesis, Hebrew Exodus, and devowelled Latin Caesar, Italian Dante, Spanish Cervantes (C111 classes, unchanged).
 Generator (3): Timm & Schinner generator, **primary cell 0 = the generator's default setting** (seed 11777). Declared choice (Kryptos
 point 1): cell 0 is primary because it is the default and the C110/C111 negative panel, chosen now with no switch-rate result on any
-generator text; sensitivity cells **33** and **49** (seeds 11778, 11779), the C083-feasible cells with the lowest and highest
-C110 E_slot means among feasible cells reported (33 BELOW, 49 unresolved at 0.172), also chosen before any switch-rate result.
+generator text; sensitivity cells **33** and **49** (seeds 11778, 11779), two C083-feasible cells, also chosen before any switch-rate
+result: 33 (C110 E_slot mean 0.121, BELOW) was the cell named in my C114 plan that Kryptos reviewed; 49 (0.172, unresolved) is the
+feasible cell with the highest E_slot mean. *(Wording corrected before the run: the first commit called 33 the lowest feasible cell;
+it is not — cell 50, 0.032, is.)*
 3,400 lines each; only half 1 is used.
 
 **Descriptive framing (Kryptos point 2).** NNULL = **10** replicates per text (compute budget). The p floor 1/11 = 0.091 cannot
