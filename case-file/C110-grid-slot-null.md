@@ -111,3 +111,7 @@ known when the gate was written, so GR certifies the rule, not the data. (4) No 
 ≈ 0.03), would settle them; or a regime-conditional prereg. Seeds used 11744–11747; next free **11748**.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+**Follow-up (C112, 13 Nov 2026).** The 14 UNRESOLVED cells were re-run with 20 seeds each (seed-mean unit, Holm over 14,
+Kryptos's regime-stratified condition): **all 14 BELOW**, also in the 'E' regime alone. So all 65 cells of the grid are below the
+bar; see [C112](C112-unresolved-cells-followup.md).

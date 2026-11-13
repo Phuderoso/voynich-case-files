@@ -53,3 +53,48 @@ grid is C083's, not all generators.
 on unregistered seeds 1–4 (half values 0.076–0.183, plus the default generator on the same seeds); none of those numbers is used.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (registered run 00:31:49–00:35:25 PT, 13 Nov 2026, 216 s; prereg `93a1697`; log `analysis/C112_run.log`, numbers `analysis/C112_results.json`)
+
+**Gates pass.** G-NEG: default generator, 20 seeds, mean 0.122, p_down 4e-8 (BELOW at α/14 = 0.00357). G-SHIFT: the ±0.03
+recentred plants are called correctly in **14/14** cells in both directions. All 14 cells usable (20 seeds × 2 halves each).
+
+| Cell | Mean (20 seeds) | sd (seed means) | Label | E-regime label (E halves of 40) | Feasible |
+|---|---|---|---|---|---|
+| 1 | 0.128 | 0.030 | BELOW | BELOW (32) | no |
+| 2 | 0.148 | 0.017 | BELOW | BELOW (19) | no |
+| 7 | 0.151 | 0.027 | BELOW | BELOW (32) | no |
+| 9 | 0.126 | 0.042 | BELOW | BELOW (30) | no |
+| 10 | 0.148 | 0.027 | BELOW | BELOW (37) | no |
+| 14 | 0.149 | 0.036 | BELOW | BELOW (30) | no |
+| 16 | 0.166 | 0.023 | BELOW | BELOW (39) | no |
+| 21 | 0.153 | 0.036 | BELOW | BELOW (27) | no |
+| 25 | 0.170 | 0.019 | BELOW | BELOW (40) | no |
+| 27 | 0.107 | 0.044 | BELOW | BELOW (29) | no |
+| 31 | 0.106 | 0.044 | BELOW | BELOW (32) | no |
+| 40 | 0.150 | 0.016 | BELOW | BELOW (28) | no |
+| 48 | 0.162 | 0.015 | BELOW | BELOW (18) | yes |
+| 49 | 0.153 | 0.018 | BELOW | BELOW (27) | yes |
+
+All p_down ≤ 6.4e-6 (largest, cell 21), every p_up = 1.0. **H1: NOT REACHED** — all 14 cells BELOW, in the pooled test and in the
+'E' regime alone. With C110's 51 BELOW, **all 65 cells of C083's grid are credibly below the manuscript's E_slot bar**.
+
+**Descriptive.** Highest cell mean 0.170 (cell 25), bar 0.1996, Voynich 0.208–0.225. Halves at or above the bar: **11 of 560**
+(Voynich 4 of 4); highest single half 0.225 (cell 10). Regime flips in **13/14** cells; 75 % of halves land in the 'E' regime.
+Pooled sd of the seed means **0.030** (the same as C110's per-half sd 0.029, so the two halves of a run are strongly correlated:
+treating the seed as the unit was needed); realized MDE 0.020 / 0.026 (50 / 80 % power).
+
+**Reading (registered rule).** No copying setting in C083's grid makes neighbour alternation beyond slots at the manuscript's
+level. The gap C109 found between the manuscript and the default generator is not a default-settings artefact within that grid.
+This says nothing about meaning or vowels, and it covers C083's 65 settings, not every possible generator.
+
+**Caveats.** (1) C083's grid only. (2) A few single halves (11/560) reach the bar, so a generator text *can* show Voynich-level
+E_slot by chance; what it does not do is show it reliably. (3) Cell 49 was 'N' in 5 of 6 C110 halves and is 'E' in 27 of 40 here:
+the regime is bistable, as C110 said, and six halves were not enough to see the mixture.
+
+**Audit note on C110.** C110's H1 UNRESOLVED is now settled by this follow-up: the 14 unresolved cells are BELOW.
+
+**Next (proposed).** F-HMM step 2 (registered test of the 'sticky' HMM observation from C111 against a slot-keeping null), or the
+independent replication of Nick Pelling's Word-2 sh-initial boost with the C107 stratified null. Seeds used 11753–11774; next free **11775**.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
