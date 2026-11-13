@@ -35,3 +35,24 @@ KH0511/UR273B (L 3, p 0.0020). This cycle re-runs those four confirmations on KF
   deleted. No L on real KFG values has been computed.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (registered run 13 Nov 2026, 09:55:48–09:56:20 PT, 32 s; prereg `547ae82`; log `k078_run1.log` on the box, output `analysis/k078_results.json`)
+*Timing note: the pre-registration header says "~10:05 PT"; it was actually written at ~09:55 PT, just before the run. Corrected here, nothing else changed.*
+- **Gates pass.** G0 hashes; F0 exact for all four names; data gate 0 mismatches, partition 0.9986; **FPR** 1/200 = 0.005 ≤ 0.08
+  (binomial tail above 0.05: 1.00).
+- **All four REPLICATED** (each p ≤ 0.025; all four also survive Holm over 4 at 0.05). Hit detail (L, hits, groups, leave-one-out L)
+  is identical to the OKR for every name.
+
+| Name | Origin | OKR L, p | KFG L, p | KFG power | Values = OKR | Verdict |
+|---|---|---|---|---|---|---|
+| KH0322/UR086 | K034 | 8, 0.0014 | 8, 0.00095 | 0.11 | yes | Replicated (low power, as on OKR) |
+| KH0420/UR182 | K034 | 8, 0.0002 | 8, 0.0003 | 1.00 | yes | Replicated |
+| KH0502/UR266 | K037 | 3, 0.0146 | 3, 0.0149 | 1.00 | no (p100 100→1000, p108 1000→10000) | Replicated |
+| KH0511/UR273B | K037 | 3, 0.0020 | 3, 0.0023 | 1.00 | yes | Replicated |
+
+- **Reading.** For three names the KFG pendant values and groups equal the OKR's, so this is a fresh-seed re-draw of the same p,
+  not new evidence; it confirms the result is not a Monte-Carlo accident and not an OKR-recording artefact. KH0502's two KFG
+  value edits (both a factor of ten, at p100 and p108) lie outside the hit group and leave L at 3. KH0322's power stays 0.11:
+  its confirmation is real but the test could not have reliably caught a single planted sum there. **No correction.**
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
