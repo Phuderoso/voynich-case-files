@@ -1,0 +1,893 @@
+{
+ "mode": "all",
+ "seeds": {
+  "H1": 6460,
+  "power": 6461,
+  "plant": 6462,
+  "next_free": 6463
+ },
+ "G0": {
+  "kfg_sha_ok": true
+ },
+ "data": {
+  "n_khipus": 695,
+  "n_tokens_SLE": 68844,
+  "unparsed": 0,
+  "not_auditable_types": {
+   "SP": 218,
+   "EE": 118,
+   "LL": 27,
+   "BL": 11,
+   "U": 151,
+   "TF": 110
+  },
+  "by_type": {
+   "S": 29014,
+   "L": 30377,
+   "E": 9453
+  }
+ },
+ "plant_gate": {
+  "found_of_50": {
+   "R1": 50,
+   "R2": 50,
+   "R3": 50
+  },
+  "passed": true
+ },
+ "K007": {
+  "R1": {
+   "kfg": [
+    58,
+    9453,
+    0.00614
+   ],
+   "kfg_ci95": [
+    0.00466,
+    0.00792
+   ],
+   "okr": [
+    89,
+    8356,
+    0.01065
+   ],
+   "kfg_class": "slightly inconsistent (0.1-5%)",
+   "okr_class": "slightly inconsistent (0.1-5%)",
+   "verdict": "REPLICATED"
+  },
+  "R2": {
+   "kfg": [
+    487,
+    30377,
+    0.01603
+   ],
+   "kfg_ci95": [
+    0.01465,
+    0.01751
+   ],
+   "okr": [
+    490,
+    21893,
+    0.02238
+   ],
+   "kfg_class": "slightly inconsistent (0.1-5%)",
+   "okr_class": "slightly inconsistent (0.1-5%)",
+   "verdict": "REPLICATED"
+  },
+  "R3": {
+   "kfg": [
+    34,
+    29014,
+    0.00117
+   ],
+   "kfg_ci95": [
+    0.00081,
+    0.00164
+   ],
+   "okr": [
+    31,
+    75055,
+    0.00041
+   ],
+   "kfg_class": "slightly inconsistent (0.1-5%)",
+   "okr_class": "consistent (<0.1%)",
+   "verdict": "CHANGED"
+  },
+  "R7": {
+   "kfg": [
+    2945,
+    64687,
+    0.04553
+   ],
+   "kfg_ci95": [
+    0.04393,
+    0.04716
+   ],
+   "okr": [
+    2749,
+    90956,
+    0.03022
+   ],
+   "kfg_class": "slightly inconsistent (0.1-5%)",
+   "okr_class": "slightly inconsistent (0.1-5%)",
+   "verdict": "REPLICATED"
+  },
+  "R5": {
+   "kfg_pendants_r5": [
+    2588,
+    44511,
+    0.0581
+   ],
+   "okr_share": 0.097,
+   "all_cords_r5": [
+    3375,
+    62024
+   ],
+   "verdict": "REPLICATED"
+  },
+  "R4": "NOT TESTABLE (KFG tokens are single-type clusters)",
+  "R6": "NOT TESTABLE (KFG tokens are single-type clusters)",
+  "R8": "NOT COMPARABLE (OKR TOTAL_VALUE semantics)"
+ },
+ "K026_H1": {
+  "n_audited": 39830,
+  "n_viol": 545,
+  "nE_viol": 58,
+  "nL_viol": 487,
+  "n_khipus": 667,
+  "n_series": 15,
+  "khipu": {
+   "G_obs": 2897.604169918205,
+   "null_mean": 554.1356652095728,
+   "null_q99": 617.0592694475868,
+   "p": 9.999000099990002e-05,
+   "supported": true,
+   "top_excess": [
+    {
+     "group": "KH0676 JS001",
+     "obs": 131,
+     "exp": 3.6
+    },
+    {
+     "group": "KH0103 AS090/N2",
+     "obs": 99,
+     "exp": 1.95
+    },
+    {
+     "group": "KH0108 UR1095, AS095/N4",
+     "obs": 34,
+     "exp": 3.17
+    },
+    {
+     "group": "KH0001 LL01, UR176",
+     "obs": 32,
+     "exp": 3.76
+    },
+    {
+     "group": "KH0005 AS004",
+     "obs": 25,
+     "exp": 0.43
+    },
+    {
+     "group": "KH0431 UR193",
+     "obs": 30,
+     "exp": 5.47
+    },
+    {
+     "group": "KH0030 AS028",
+     "obs": 18,
+     "exp": 0.46
+    },
+    {
+     "group": "KH0100 UR1087, AS087/N3",
+     "obs": 15,
+     "exp": 1.4
+    },
+    {
+     "group": "KH0289 UR055",
+     "obs": 24,
+     "exp": 11.2
+    },
+    {
+     "group": "KH0029 AS027",
+     "obs": 13,
+     "exp": 0.29
+    },
+    {
+     "group": "KH0601 QU013, QU13",
+     "obs": 10,
+     "exp": 1.96
+    },
+    {
+     "group": "KH0020 AS019",
+     "obs": 7,
+     "exp": 0.13
+    }
+   ],
+   "power_50_in_3": 0.94,
+   "verdict": "REPLICATED (concentrated)"
+  },
+  "series": {
+   "G_obs": 1103.977905737941,
+   "null_mean": 14.544219894074486,
+   "null_q99": 28.914647815837615,
+   "p": 9.999000099990002e-05,
+   "supported": true,
+   "top_excess": [
+    {
+     "group": "JS",
+     "obs": 131,
+     "exp": 3.6
+    },
+    {
+     "group": "AS",
+     "obs": 189,
+     "exp": 81.88
+    },
+    {
+     "group": "LL",
+     "obs": 32,
+     "exp": 3.76
+    },
+    {
+     "group": "BA",
+     "obs": 2,
+     "exp": 1.52
+    },
+    {
+     "group": "AB",
+     "obs": 1,
+     "exp": 1.27
+    },
+    {
+     "group": "SH",
+     "obs": 0,
+     "exp": 0.35
+    },
+    {
+     "group": "SB",
+     "obs": 0,
+     "exp": 1.01
+    },
+    {
+     "group": "KT",
+     "obs": 0,
+     "exp": 2.54
+    },
+    {
+     "group": "?",
+     "obs": 0,
+     "exp": 3.83
+    },
+    {
+     "group": "AK",
+     "obs": 3,
+     "exp": 7.36
+    },
+    {
+     "group": "JC",
+     "obs": 0,
+     "exp": 10.46
+    },
+    {
+     "group": "MM",
+     "obs": 3,
+     "exp": 14.26
+    }
+   ],
+   "verdict": "REPLICATED (concentrated)"
+  }
+ },
+ "K026_H2": {
+  "E-other": {
+   "n": 1,
+   "noteworthy": false,
+   "k026_noteworthy": false,
+   "k026_n": null,
+   "verdict": "REPLICATED",
+   "khipus": [
+    [
+     "KH0351 UR115, UR126",
+     1
+    ]
+   ],
+   "values": [
+    [
+     [
+      1,
+      2
+     ],
+     1
+    ]
+   ],
+   "examples": [
+    "KH0351 p5 tok0"
+   ]
+  },
+  "E-type": {
+   "n": 38,
+   "noteworthy": true,
+   "k026_noteworthy": true,
+   "k026_n": 43,
+   "verdict": "REPLICATED",
+   "khipus": [
+    [
+     "KH0103 AS090/N2",
+     22
+    ],
+    [
+     "KH0005 AS004",
+     5
+    ],
+    [
+     "KH0349 UR113",
+     3
+    ],
+    [
+     "KH0029 AS027",
+     2
+    ],
+    [
+     "KH0017 AS016",
+     1
+    ]
+   ],
+   "values": [
+    [
+     [
+      1,
+      100
+     ],
+     19
+    ],
+    [
+     [
+      1,
+      10
+     ],
+     16
+    ],
+    [
+     [
+      7,
+      700
+     ],
+     1
+    ],
+    [
+     [
+      4,
+      40
+     ],
+     1
+    ],
+    [
+     [
+      3,
+      30
+     ],
+     1
+    ]
+   ],
+   "examples": [
+    "KH0005 p7 tok1",
+    "KH0005 p8 tok0",
+    "KH0005 p14 tok0",
+    "KH0005 p16 tok1",
+    "KH0005 p18 tok0",
+    "KH0017 p1 tok0"
+   ]
+  },
+  "E-value": {
+   "n": 16,
+   "noteworthy": false,
+   "k026_noteworthy": false,
+   "k026_n": null,
+   "verdict": "REPLICATED",
+   "khipus": [
+    [
+     "KH0029 AS027",
+     7
+    ],
+    [
+     "KH0005 AS004",
+     4
+    ],
+    [
+     "KH0103 AS090/N2",
+     2
+    ],
+    [
+     "KH0017 AS016",
+     1
+    ],
+    [
+     "KH0025 AS024",
+     1
+    ]
+   ],
+   "values": [
+    [
+     [
+      1,
+      10
+     ],
+     12
+    ],
+    [
+     [
+      1,
+      100
+     ],
+     4
+    ]
+   ],
+   "examples": [
+    "KH0005 p1 tok0",
+    "KH0005 p11 tok0",
+    "KH0005 p12 tok0",
+    "KH0005 p13 tok1",
+    "KH0017 p1s1 tok0",
+    "KH0025 p3 tok0"
+   ]
+  },
+  "E-zero": {
+   "n": 3,
+   "noteworthy": false,
+   "k026_noteworthy": true,
+   "k026_n": 22,
+   "verdict": "CHANGED",
+   "khipus": [
+    [
+     "KH0239 UR003",
+     2
+    ],
+    [
+     "KH0242 UR006",
+     1
+    ]
+   ],
+   "values": [
+    [
+     [
+      0,
+      0
+     ],
+     3
+    ]
+   ],
+   "examples": [
+    "KH0239 p250 tok0",
+    "KH0239 p253s1 tok0",
+    "KH0242 p412s4 tok0"
+   ]
+  },
+  "L-off1": {
+   "n": 8,
+   "noteworthy": false,
+   "k026_noteworthy": false,
+   "k026_n": null,
+   "verdict": "REPLICATED",
+   "khipus": [
+    [
+     "KH0009 AS008",
+     1
+    ],
+    [
+     "KH0022 AS021",
+     1
+    ],
+    [
+     "KH0055 AS044",
+     1
+    ],
+    [
+     "KH0058 AS047, HP035",
+     1
+    ],
+    [
+     "KH0228 AS208, UR083",
+     1
+    ]
+   ],
+   "values": [
+    [
+     [
+      6,
+      5
+     ],
+     1
+    ],
+    [
+     [
+      2,
+      1
+     ],
+     1
+    ],
+    [
+     [
+      4,
+      5
+     ],
+     1
+    ],
+    [
+     [
+      8,
+      7
+     ],
+     1
+    ],
+    [
+     [
+      6,
+      7
+     ],
+     1
+    ]
+   ],
+   "examples": [
+    "KH0009 p207 tok1",
+    "KH0022 p37 tok1",
+    "KH0055 p67s1 tok0",
+    "KH0058 p26s1 tok0",
+    "KH0228 p154 tok1",
+    "KH0665 p17 tok1"
+   ]
+  },
+  "L-other": {
+   "n": 13,
+   "noteworthy": false,
+   "k026_noteworthy": false,
+   "k026_n": null,
+   "verdict": "REPLICATED",
+   "khipus": [
+    [
+     "KH0404 UR165",
+     3
+    ],
+    [
+     "KH0009 AS008",
+     1
+    ],
+    [
+     "KH0289 UR055",
+     1
+    ],
+    [
+     "KH0358 UR118",
+     1
+    ],
+    [
+     "KH0431 UR193",
+     1
+    ]
+   ],
+   "values": [
+    [
+     [
+      6,
+      9
+     ],
+     2
+    ],
+    [
+     [
+      2,
+      9
+     ],
+     1
+    ],
+    [
+     [
+      3,
+      13
+     ],
+     1
+    ],
+    [
+     [
+      5,
+      3
+     ],
+     1
+    ],
+    [
+     [
+      8,
+      6
+     ],
+     1
+    ]
+   ],
+   "examples": [
+    "KH0009 p10s1 tok1",
+    "KH0289 p1 tok1",
+    "KH0358 p154s1 tok1",
+    "KH0404 p21s1 tok3",
+    "KH0404 p30s1 tok2",
+    "KH0404 p79s2 tok1"
+   ]
+  },
+  "L-shift": {
+   "n": 262,
+   "noteworthy": true,
+   "k026_noteworthy": true,
+   "k026_n": 117,
+   "verdict": "REPLICATED",
+   "khipus": [
+    [
+     "KH0676 JS001",
+     125
+    ],
+    [
+     "KH0103 AS090/N2",
+     75
+    ],
+    [
+     "KH0030 AS028",
+     18
+    ],
+    [
+     "KH0005 AS004",
+     16
+    ],
+    [
+     "KH0020 AS019",
+     7
+    ]
+   ],
+   "values": [
+    [
+     [
+      3,
+      30
+     ],
+     36
+    ],
+    [
+     [
+      2,
+      20
+     ],
+     26
+    ],
+    [
+     [
+      5,
+      50
+     ],
+     26
+    ],
+    [
+     [
+      5,
+      500
+     ],
+     25
+    ],
+    [
+     [
+      4,
+      400
+     ],
+     24
+    ]
+   ],
+   "examples": [
+    "KH0005 p2 tok0",
+    "KH0005 p3 tok0",
+    "KH0005 p3s1 tok0",
+    "KH0005 p4 tok1",
+    "KH0005 p4s1 tok0",
+    "KH0005 p5 tok0"
+   ]
+  },
+  "L-turn0": {
+   "n": 14,
+   "noteworthy": false,
+   "k026_noteworthy": true,
+   "k026_n": 186,
+   "verdict": "CHANGED",
+   "khipus": [
+    [
+     "KH0280 UR050",
+     3
+    ],
+    [
+     "KH0325 UR089",
+     3
+    ],
+    [
+     "KH0239 UR003",
+     1
+    ],
+    [
+     "KH0242 UR006",
+     1
+    ],
+    [
+     "KH0249 UR013",
+     1
+    ]
+   ],
+   "values": [
+    [
+     [
+      0,
+      0
+     ],
+     14
+    ]
+   ],
+   "examples": [
+    "KH0239 p214s5 tok0",
+    "KH0242 p388 tok0",
+    "KH0249 p11 tok0",
+    "KH0280 p7 tok2",
+    "KH0280 p65 tok1",
+    "KH0280 p65 tok2"
+   ]
+  },
+  "L-turn1": {
+   "n": 22,
+   "noteworthy": true,
+   "k026_noteworthy": false,
+   "k026_n": null,
+   "verdict": "CHANGED",
+   "khipus": [
+    [
+     "KH0601 QU013, QU13",
+     10
+    ],
+    [
+     "KH0349 UR113",
+     5
+    ],
+    [
+     "KH0265 UR032",
+     4
+    ],
+    [
+     "KH0404 UR165",
+     2
+    ],
+    [
+     "KH0254 UR018",
+     1
+    ]
+   ],
+   "values": [
+    [
+     [
+      1,
+      1
+     ],
+     10
+    ],
+    [
+     [
+      1,
+      100
+     ],
+     9
+    ],
+    [
+     [
+      1,
+      1000
+     ],
+     1
+    ],
+    [
+     [
+      1,
+      6
+     ],
+     1
+    ],
+    [
+     [
+      1,
+      0
+     ],
+     1
+    ]
+   ],
+   "examples": [
+    "KH0254 p10s1 tok0",
+    "KH0265 p29 tok0",
+    "KH0265 p30 tok0",
+    "KH0265 p35 tok0",
+    "KH0265 p36 tok0",
+    "KH0349 p317 tok0"
+   ]
+  },
+  "L-turn10+": {
+   "n": 168,
+   "noteworthy": true,
+   "k026_noteworthy": true,
+   "k026_n": 155,
+   "verdict": "REPLICATED",
+   "khipus": [
+    [
+     "KH0108 UR1095, AS095/N4",
+     34
+    ],
+    [
+     "KH0001 LL01, UR176",
+     32
+    ],
+    [
+     "KH0431 UR193",
+     29
+    ],
+    [
+     "KH0289 UR055",
+     22
+    ],
+    [
+     "KH0100 UR1087, AS087/N3",
+     15
+    ]
+   ],
+   "values": [
+    [
+     [
+      10,
+      10
+     ],
+     80
+    ],
+    [
+     [
+      11,
+      11
+     ],
+     45
+    ],
+    [
+     [
+      12,
+      12
+     ],
+     20
+    ],
+    [
+     [
+      13,
+      13
+     ],
+     12
+    ],
+    [
+     [
+      16,
+      16
+     ],
+     2
+    ]
+   ],
+   "examples": [
+    "KH0001 p8s1 tok1",
+    "KH0001 p17 tok0",
+    "KH0001 p21 tok1",
+    "KH0001 p22 tok2",
+    "KH0001 p24 tok1",
+    "KH0001 p30 tok1"
+   ]
+  },
+  "L-zero": {
+   "n": 0,
+   "noteworthy": false,
+   "k026_noteworthy": false,
+   "k026_n": null,
+   "verdict": "REPLICATED",
+   "khipus": [],
+   "values": [],
+   "examples": []
+  }
+ },
+ "runtime_s": 1.7
+}
