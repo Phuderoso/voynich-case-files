@@ -1,0 +1,89 @@
+start 21:49:23
+F0 {'T1': {'n_khipus': 238, 'n_eligible': 1503, 'H_obs': 29}, 'T3': {'n_khipus': 237, 'n_eligible': 1421, 'H_obs': 16}, 'KH0349': (82, 13), 'pass_': True} R5 {'pendants': 2588, 'subsidiaries': 618} G0 bad 0 0.2
+M1 {'n_khipus': 215, 'n_eligible': 1325, 'H_obs': 27, 'null_mean': 7.0362, 'null_max': 20, 'p': np.float64(9.999000099990002e-05)}
+M2 {'n_khipus': 214, 'n_eligible': 1251, 'H_obs': 14, 'null_mean': 6.0347, 'null_max': 16, 'p': np.float64(0.0040995900409959)}
+M3 {'eligible_after_mask': True, 'n_eligible': 74, 'H': 13, 'p': np.float64(4.999750012499375e-05)}
+KH0276 {'eligible_after_mask': True, 'n_eligible': 7, 'H': 1, 'p': np.float64(0.04924753762311884)}
+G2 {'n': 20, 'n_le_05': 0, 'binom_tail': 0.9999999999999991, 'pass_': True} G3 {'power_p01': 0.65, 'readable': False} 56.5
+{
+ "seeds": [
+  6451,
+  6452
+ ],
+ "next_free_seed": 6453,
+ "G0_hash_mismatch": 0,
+ "F0": {
+  "T1": {
+   "n_khipus": 238,
+   "n_eligible": 1503,
+   "H_obs": 29
+  },
+  "T3": {
+   "n_khipus": 237,
+   "n_eligible": 1421,
+   "H_obs": 16
+  },
+  "KH0349": [
+   82,
+   13
+  ],
+  "pass_": true
+ },
+ "r5_counts": {
+  "pendants": 2588,
+  "subsidiaries": 618
+ },
+ "M1_masked_corpus": {
+  "n_khipus": 215,
+  "n_eligible": 1325,
+  "H_obs": 27,
+  "null_mean": 7.0362,
+  "null_max": 20,
+  "p": 9.999000099990002e-05
+ },
+ "M2_masked_without_KH0349": {
+  "n_khipus": 214,
+  "n_eligible": 1251,
+  "H_obs": 14,
+  "null_mean": 6.0347,
+  "null_max": 16,
+  "p": 0.0040995900409959
+ },
+ "M3_KH0349_masked": {
+  "eligible_after_mask": true,
+  "n_eligible": 74,
+  "H": 13,
+  "p": 4.999750012499375e-05
+ },
+ "KH0276_masked_descriptive": {
+  "eligible_after_mask": true,
+  "n_eligible": 7,
+  "H": 1,
+  "p": 0.04924753762311884
+ },
+ "G2_calibration": {
+  "n": 20,
+  "n_le_05": 0,
+  "binom_tail": 0.9999999999999991,
+  "pass_": true
+ },
+ "G3_planted": {
+  "power_p01": 0.65,
+  "readable": false
+ },
+ "labels": {
+  "M1": "REPLICATED",
+  "M2": "REPLICATED",
+  "M3": "REPLICATED"
+ },
+ "holm_alpha01": [
+  true,
+  true,
+  true
+ ],
+ "holm_agrees_with_raw": true,
+ "headline": "REPLICATED",
+ "seconds": 56.5
+}
+exit 0
+end 21:50:20
