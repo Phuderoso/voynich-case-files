@@ -38,3 +38,36 @@ K008's K004 arm (subsidiary sums, masked) is left for a later cycle and stays *p
   No masked p has been computed. Tool: `tools/k080_kfg_k008_r5_mask.py`.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (registered run 13 Nov 2026, 17:55:21–17:56:24 PT, 63.5 s, one call under `timeout 600`; prereg `d121252`; output `analysis/k080_results.json`, log `analysis/k080_run.log`)
+- **Gates pass.** G0 0 mismatches; F0 exact (525/525 S_obs, universe = K069's); **G2** 4 of 214 masked calibration shuffles
+  at p ≤ 0.05 (rate 0.019, binomial tail 0.995). 496 khipus testable, 29 not testable (< 10 non-zero non-R5 pendants);
+  11 BH-significant under masking (BH bar 11 × 0.05 / 496 = 0.00111).
+
+| Name | R5 pendants | S unmasked → masked | p unmasked → masked | OKR K008 | KFG | Label |
+|---|---|---|---|---|---|---|
+| KH0359 | 4 | 8 → 8 | 0.0002 → 0.0002 | survives | survives | **Replicated** |
+| KH0405 | 0 | 4 → 4 | 0.0002 (inherited) | survives | survives | **Replicated** |
+| KH0491 (UR255) | 13 | 10 → 4 | 0.0002 → 0.0046 | drops | drops | **Replicated** |
+| KH0492 | 13 | 8 → 5 | 0.0002 → 0.0002 | survives | survives | **Replicated** |
+| KH0503 | 14 | 16 → 10 | 0.0002 → 0.0002 | survives | survives | **Replicated** |
+| KH0504 | 17 | 13 → 9 | 0.0002 → 0.0002 | survives | survives | **Replicated** |
+| KH0506 | 21 | 16 → 14 | 0.0002 → 0.0002 | survives | survives | **Replicated** |
+| KH0507 (UR270) | 22 | 5 → 4 | 0.0014 → 0.0028 | drops | drops | **Replicated** |
+| KH0513 | 0 | 3 → 3 | 0.0004 (inherited) | survives | survives | **Replicated** |
+| KH0514 | 13 | 10 → 7 | 0.0002 → 0.0002 | survives | survives | **Replicated** |
+
+- **Headline: REPLICATED 10/10.** The same 8 names survive the R5 mask on KFG data, and the same two (KH0491, KH0507)
+  drop below the BH bar, exactly as on the OKR. No correction. As on the OKR, a drop means "not established under masking",
+  not "excluded": both stay nominally small (p 0.0046, 0.0028).
+- **Secondary (descriptive, K069's five new KFG names).** KH0217 (0 R5, p 0.0002), KH0358 (2 R5, S 7 → 7, p 0.0006) and
+  KH0677 (0 R5, p 0.0004) **survive**. KH0505 **drops** because of the mask: 21 R5 pendants, S 2 → 1, p 0.0008 → 0.021, so
+  its K069 adjacent-sum flag rests on a multi-number cord (its K079 L corroboration used unmasked values and is not
+  re-tested here). KH0695 **drops without any R5 pendant** (p unchanged, 0.0014): this is a BH-bar effect (11 vs 15
+  discoveries moves the bar from 0.0014 to 0.0011), not a masking effect; disclosed so it is not read as fragility.
+  No khipu becomes BH-significant under masking that was not a K069 name.
+- **Lesson.** The two OKR drops are not OKR artefacts: they carry over to curated data with the same R5 counts within a
+  cord or two, so K008's robustness map is a property of the cords, not of the database version.
+- **Not done here.** K008's K004 arm (subsidiary sums with R5 masked) stays *pending* in the OKR-vs-KFG table.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
