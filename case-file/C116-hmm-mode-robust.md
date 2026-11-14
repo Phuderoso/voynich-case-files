@@ -3,8 +3,8 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: RUNNING (part 1: 73/363 jobs, 20:27:34–20:36:32 PT; no statistic computed yet).** Pre-registered 2026-11-13 ~20:25 PT (published `2f9b744`; the first version of this line said ~20:45 PT, a typo), before any C116 count on the manuscript. No C116 fit had been run on any text when
-this file was first committed. The design adopts Kryptos's review of 2026-11-13 ~20:03 PT.
+**Status: RUNNING (part 1: 73/363 jobs, 20:27:34–20:36:32 PT; no statistic computed yet).** Pre-registered 2026-11-13 ~20:25 PT (published `2f9b744`; the first version of this line said ~20:45 PT, a typo), before any C116 count on the manuscript. Amendment 2026-11-13 ~20:42 PT (Kryptos review of G-CONV and ±∞, this commit), dated before any C116 statistic. No C116 fit had been run on any text when
+this file was first committed. The design adopts Kryptos's review of 2026-11-13 ~20:03 PT; the amendment adopts her follow-up of ~20:38 PT.
 
 ## Question
 
@@ -62,5 +62,27 @@ look at any manuscript p-value, before every job is in the checkpoint**; partial
 `status` reports progress without computing statistics.
 
 Tool: `tools/c116_hmm_mode_robust.py`. Seed **11787**; next free Voynich seed **11788**.
+
+## Amendment 2026-11-13 ~20:42 PT (Kryptos review of G-CONV and ±∞) — committed before any C116 statistic
+
+**State when amended.** The C116 run is in progress: 73 of 363 jobs (G-POW 0–59, G-FPR 0–12), published in `84e99da` with prereg `2f9b744` (case file sha256 `215c98489228523a…`, tool sha256 `be258d7a9f1e7974…`). The 73 control-job artefacts (`analysis/C116_checkpoint.jsonl`, sha256 prefix `d47c3db6940997f3`) have not been scored: no gate, no ΔL, no p, no `analysis/C116_results.json`. This amendment is dated before any C116 statistic was computed. It comes from Kryptos's review of the registered implementation, 2026-11-13 ~20:38 PT, and is adopted in full, with credit. Nothing below was chosen after seeing a C116 number. These rules apply only at the analysis stage (`verdict`). The fitting code is byte-identical to the prereg tool, so the checkpoints stay valid and the 73 artefacts are unaffected. Where this section and the text above disagree, this section rules.
+
+**(1) Non-converged replicates.** Keep the primary rule: a replicate is unconverged when the best log-likelihood is reached by fewer than 3 of 30 restarts (within 1.0 nat). Unconverged null replicates are excluded from the primary null and counted. A stratum is NOT TESTABLE if the observed fit does not converge or more than 10 % of its replicates do not.
+
+Next to the primary p, print two bounds that put the unconverged replicates back into the denominator (N = all registered nulls):
+- **p_cons** (conservative, worst case for us): every unconverged replicate is counted as ≥ observed ΔL (it adds to the numerator).
+- **p_lib** (liberal): every unconverged replicate is counted as < observed ΔL (denominator only).
+
+If the Holm pass/fail for a stratum differs between p_cons and p_lib, that stratum is **CONVERGENCE-SENSITIVE** and does not pass. Holm on the primary p remains the registered test; a CONVERGENCE-SENSITIVE stratum cannot count as STICKY FAVOURED.
+
+**Declared now:** there is **no R=60 rerun** of unconverged replicates. (Kryptos offered this as optional, to be declared now or left out, never decided afterwards.)
+
+**(2) ±∞ in ΔL.** Values of ΔL = ±∞ (no fit in one mode class) stay in the primary p as ordered extremes: −∞ < finite < +∞. The registered test is one-sided toward *sticky favoured* (larger ΔL is more extreme), so p = (1 + #{null ΔL ≥ observed ΔL}) / (N+1) on the converged nulls. This is the conservative tie rule Kryptos asked for: ties, including −∞ vs −∞ and +∞ vs +∞, count against us. (A ≤ count would reverse the registered hypothesis; the code orders the extremes so the ≥ rule treats like extremes as ties in the numerator.)
+
+Also print a **conditional p over finite replicates only**, as a SENSITIVITY check, with the counts of +∞ and −∞ in the observed value and in the null. If the observed value itself is infinite, the conditional p is undefined: say so and use the primary p only.
+
+**(3) Observed ΔL = −∞.** If there is no sticky restart among the 30, report **"no sticky basin found"** descriptively only, and never sell it as a strong p. That stratum cannot count as STICKY FAVOURED.
+
+**Tool.** `tools/c116_hmm_mode_robust.py`, same commit. Only the analysis stage (`verdict` and helpers) changed; `texts`, `joblist`, `restarts`, `_job`, `run`, `load`, `status`, `mode`, `stat`, `holm`, all constants, the imports and the entry point are byte-identical to the prereg tool (fitting-blob sha256 `d7e369c42dd2c46a…`). New tool sha256 `f59aa1a08e914aff…`. Seeds unchanged: 11787; next free **11788**.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

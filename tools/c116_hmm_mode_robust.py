@@ -19,6 +19,7 @@ mode boundary (0.15 or 0.5), else the boundaries are ill-posed and the run is NO
 Compute: ~360 jobs x 30 fits; resumable checkpoint (per-job seeds, so resumed = identical); each call runs under timeout 600 with a
 soft deadline (SOFT_S) and is repeated in later cycles until all jobs are done. Verdict only when every job is in the checkpoint.
 Pre-registered in case-file/C116-hmm-mode-robust.md. Seed 11787; next free 11788.
+Amendment 2026-11-13 (Kryptos review ~20:38 PT), dated before any statistic: analysis-stage only (fitting and checkpoint code unchanged). (1) primary p still excludes unconverged nulls and counts them; a stratum is NOT TESTABLE if the observed fit is unconverged or more than 10% of replicates are; also print p_cons (each unconverged null counted as >= obs, conservative) and p_lib (each counted as < obs, liberal); if the Holm pass/fail differs between p_cons and p_lib the stratum is CONVERGENCE-SENSITIVE (no pass); NO R=60 rerun of unconverged replicates, declared now. (2) +/-inf stay in the primary p as ordered extremes (-inf < finite < +inf); p = (1 + #{null DL >= obs DL}) / (N+1), so ties (including -inf vs -inf) count against us; also print a conditional p over finite replicates only as a SENSITIVITY check, with +inf/-inf counts in observed and null; if the observed value is infinite the conditional p is undefined: say so and use the primary p only. (3) if the observed DL is -inf (no sticky restart among the 30), report 'no sticky basin found' descriptively only, never as a strong p.
 Run: timeout 600 python3 tools/c116_hmm_mode_robust.py run   (repeat until 'status' shows all done; then 'verdict')
 - Pimpolha Voynich, do Phuderoso · AI born 2026-11-04"""
 import sys, os, json, time
@@ -106,23 +107,56 @@ def holm(ps):
         bar = ALPHA / (len(ps) - i); ok = ok and ps[k] <= bar + 1e-12; out[k] = dict(p=ps[k], bar=round(bar, 5), pass_=ok)
     return out
 
+def _dl_key(d):
+    """Total order for ΔL: -inf < finite < +inf; like extremes tie."""
+    d = float(d)
+    if d == float('-inf') or (d < 0 and not np.isfinite(d)):
+        return (-1, 0.0)
+    if d == float('inf') or (d > 0 and not np.isfinite(d)):
+        return (1, 0.0)
+    return (0, d)
+
+def _ge(a, b):
+    return _dl_key(a) >= _dl_key(b)
+
+def p_upper(obs, nulls):
+    """One-sided toward sticky favoured. Ties (incl. -inf vs -inf) count against us."""
+    n = len(nulls)
+    if n == 0:
+        return None
+    return (1 + sum(_ge(d, obs) for d in nulls)) / (1 + n)
+
 def verdict():
     D = load(); J, nn = joblist(); missing = [j for j in J if j not in D]
     assert not missing, f'{len(missing)} jobs missing: run more calls first'
     S = {k: stat(v) for k, v in D.items()}; R = dict(per_text={}, gates={}, seed=SEED)
     for k in GATES + PRIMARY + DESC:
-        o = S[(k, 0)]; nul = [S[(k, r)] for r in range(1, nn[k] + 1)]; cn = [s['DL'] for s in nul if s['conv']]
-        unc = sum(not s['conv'] for s in nul)
-        p = (1 + sum(d >= o['DL'] for d in cn)) / (1 + len(cn)) if nn[k] else None
+        o = S[(k, 0)]; nul = [S[(k, r)] for r in range(1, nn[k] + 1)]
+        cn = [s['DL'] for s in nul if s['conv']]; unc = sum(not s['conv'] for s in nul)
+        n_ge = sum(_ge(d, o['DL']) for d in cn)
+        p = (1 + n_ge) / (1 + len(cn)) if nn[k] else None
+        p_cons = (1 + n_ge + unc) / (1 + nn[k]) if nn[k] else None   # unconverged as >= obs (conservative)
+        p_lib = (1 + n_ge) / (1 + nn[k]) if nn[k] else None           # unconverged as < obs (liberal)
         fin = [d for d in cn if np.isfinite(d)]
-        R['per_text'][k] = dict(obs=o, n_null=nn[k], unconverged=unc, p=p, floor=(1 / (1 + len(cn)) if nn[k] else None),
+        obs_inf = not np.isfinite(o['DL'])
+        p_finite = None if obs_inf else (p_upper(o['DL'], fin) if nn[k] else None)
+        p_finite_note = ('undefined (observed ΔL is infinite); primary p only' if obs_inf
+                         else 'sensitivity (finite replicates only)')
+        no_sticky = bool(o['DL'] == float('-inf'))
+        R['per_text'][k] = dict(obs=o, n_null=nn[k], unconverged=unc, p=p, p_cons=p_cons, p_lib=p_lib,
+                                p_finite=p_finite, p_finite_note=p_finite_note, no_sticky_basin=no_sticky,
+                                floor=(1 / (1 + len(cn)) if nn[k] else None),
                                 testable=bool(o['conv'] and (nn[k] == 0 or unc <= MAX_UNCONV * nn[k])),
                                 null_DL_finite=len(fin), null_DL_mean=(float(np.mean(fin)) if fin else None),
                                 null_DL_sd=(float(np.std(fin, ddof=1)) if len(fin) > 1 else None),
-                                null_neg_inf=sum(d == -np.inf for d in cn), null_pos_inf=sum(d == np.inf for d in cn),
+                                obs_neg_inf=int(no_sticky), obs_pos_inf=int(o['DL'] == float('inf')),
+                                null_neg_inf=sum(d == float('-inf') for d in cn),
+                                null_pos_inf=sum(d == float('inf') for d in cn),
                                 null_modes={m: sum(s['modes'][m] for s in nul) for m in ('sticky', 'slot', 'alt')},
                                 null_ML_SW_mean=(float(np.mean([s['ML_SW'] for s in nul])) if nul else None))
         print(k, json.dumps(R['per_text'][k], default=float), flush=True)
+        if no_sticky:
+            print(k, 'no sticky basin found (descriptive only; not a strong p)', flush=True)
     sws = [r[1] for (k, rep), v in D.items() if k in GATES for r in v['R']]
     band = float(np.mean([abs(s - STICKY) <= BAND or abs(s - ALT) <= BAND for s in sws]))
     pt = R['per_text']; bar1 = ALPHA / 3
@@ -130,13 +164,26 @@ def verdict():
                       G_POW=dict(p=pt['GPOW']['p'], pass_=bool(pt['GPOW']['testable'] and pt['GPOW']['p'] <= bar1 + 1e-12)),
                       G_FPR=dict(p=pt['GFPR']['p'], pass_=bool(pt['GFPR']['testable'] and pt['GFPR']['p'] > bar1 + 1e-12)))
     gok = all(g['pass_'] for g in R['gates'].values())
-    H = holm({k: (pt[k]['p'] if pt[k]['testable'] else 1.0) for k in PRIMARY})
-    passed = [k for k in PRIMARY if H[k]['pass_'] and pt[k]['testable']]; untest = [k for k in PRIMARY if not pt[k]['testable']]
+    def pvec(field):
+        return {k: (pt[k][field] if pt[k]['testable'] else 1.0) for k in PRIMARY}
+    H = holm(pvec('p')); Hc = holm(pvec('p_cons')); Hl = holm(pvec('p_lib'))
+    for k in PRIMARY:
+        pt[k]['convergence_sensitive'] = bool(pt[k]['testable'] and Hc[k]['pass_'] != Hl[k]['pass_'])
+    passed = [k for k in PRIMARY if H[k]['pass_'] and pt[k]['testable']
+              and not pt[k]['convergence_sensitive'] and not pt[k]['no_sticky_basin']]
+    untest = [k for k in PRIMARY if not pt[k]['testable']]
+    cs = [k for k in PRIMARY if pt[k]['convergence_sensitive']]
+    nob = [k for k in PRIMARY if pt[k]['no_sticky_basin']]
     if not gok: lab = 'NOT TESTABLE (gates)'
     elif passed: lab = 'STICKY FAVOURED in ' + '+'.join(passed)
     elif len(untest) == 3: lab = 'NOT TESTABLE (convergence)'
     else: lab = 'NOT SUPPORTED' + (f' (not testable: {"+".join(untest)})' if untest else '')
-    R['holm'] = H; R['verdict'] = lab; print(R['gates'], H, lab)
+    extra = []
+    if cs: extra.append('CONVERGENCE-SENSITIVE: ' + '+'.join(cs) + ' (no pass)')
+    if nob: extra.append('no sticky basin found: ' + '+'.join(nob) + ' (descriptive only)')
+    if extra: lab = lab + ' (' + '; '.join(extra) + ')'
+    R['holm'] = H; R['holm_cons'] = Hc; R['holm_lib'] = Hl; R['verdict'] = lab
+    print(R['gates'], H, lab)
     json.dump(R, open('analysis/C116_results.json', 'w'), indent=1, default=float)
 
 if __name__ == '__main__':
