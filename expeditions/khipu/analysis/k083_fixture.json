@@ -1,0 +1,38 @@
+{
+ "mode": "fixture",
+ "seeds": {
+  "H1": 6460,
+  "power": 6461,
+  "plant": 6462,
+  "next_free": 6463
+ },
+ "G0": {
+  "kfg_sha_ok": true
+ },
+ "data": {
+  "n_khipus": 695,
+  "n_tokens_SLE": 68844,
+  "unparsed": 0,
+  "not_auditable_types": {
+   "SP": 218,
+   "EE": 118,
+   "LL": 27,
+   "BL": 11,
+   "U": 151,
+   "TF": 110
+  },
+  "by_type": {
+   "S": 29014,
+   "L": 30377,
+   "E": 9453
+  }
+ },
+ "plant_gate": {
+  "found_of_50": {
+   "R1": 50,
+   "R2": 50,
+   "R3": 50
+  },
+  "passed": true
+ }
+}
