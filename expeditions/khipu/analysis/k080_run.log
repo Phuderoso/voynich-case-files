@@ -1,0 +1,177 @@
+F0 {'n_universe': 525, 'n_k069': 525, 'mismatches': [], 'pass_': True} R5 pendants 2535 khipus with R5 243 G0 bad 0 0.4
+{
+ "seeds": [
+  6449,
+  6450
+ ],
+ "next_free_seed": 6451,
+ "K": 5000,
+ "KC": 2000,
+ "G2_calibration": {
+  "n": 214,
+  "n_le_05": 4,
+  "rate": 0.018691588785046728,
+  "binom_tail": 0.9946972354140462,
+  "pass_": true
+ },
+ "n_testable": 496,
+ "n_untestable": 29,
+ "n_bh_masked": 11,
+ "R1_okr_k008_names": {
+  "KH0359": {
+   "okr_k008": "SURVIVES",
+   "kfg": "SURVIVES",
+   "label": "REPLICATED",
+   "n_r5": 4,
+   "S_unmasked": 8,
+   "S_masked": 8,
+   "p_unmasked": 0.0001999600079984003,
+   "p_masked": 0.0001999600079984003
+  },
+  "KH0405": {
+   "okr_k008": "SURVIVES",
+   "kfg": "SURVIVES",
+   "label": "REPLICATED",
+   "n_r5": 0,
+   "S_unmasked": 4,
+   "S_masked": 4,
+   "p_unmasked": 0.0001999600079984003,
+   "p_masked": 0.0001999600079984003
+  },
+  "KH0491": {
+   "okr_k008": "DROPS",
+   "kfg": "DROPS",
+   "label": "REPLICATED",
+   "n_r5": 13,
+   "S_unmasked": 10,
+   "S_masked": 4,
+   "p_unmasked": 0.0001999600079984003,
+   "p_masked": 0.004599080183963208
+  },
+  "KH0492": {
+   "okr_k008": "SURVIVES",
+   "kfg": "SURVIVES",
+   "label": "REPLICATED",
+   "n_r5": 13,
+   "S_unmasked": 8,
+   "S_masked": 5,
+   "p_unmasked": 0.0001999600079984003,
+   "p_masked": 0.0001999600079984003
+  },
+  "KH0503": {
+   "okr_k008": "SURVIVES",
+   "kfg": "SURVIVES",
+   "label": "REPLICATED",
+   "n_r5": 14,
+   "S_unmasked": 16,
+   "S_masked": 10,
+   "p_unmasked": 0.0001999600079984003,
+   "p_masked": 0.0001999600079984003
+  },
+  "KH0504": {
+   "okr_k008": "SURVIVES",
+   "kfg": "SURVIVES",
+   "label": "REPLICATED",
+   "n_r5": 17,
+   "S_unmasked": 13,
+   "S_masked": 9,
+   "p_unmasked": 0.0001999600079984003,
+   "p_masked": 0.0001999600079984003
+  },
+  "KH0506": {
+   "okr_k008": "SURVIVES",
+   "kfg": "SURVIVES",
+   "label": "REPLICATED",
+   "n_r5": 21,
+   "S_unmasked": 16,
+   "S_masked": 14,
+   "p_unmasked": 0.0001999600079984003,
+   "p_masked": 0.0001999600079984003
+  },
+  "KH0507": {
+   "okr_k008": "DROPS",
+   "kfg": "DROPS",
+   "label": "REPLICATED",
+   "n_r5": 22,
+   "S_unmasked": 5,
+   "S_masked": 4,
+   "p_unmasked": 0.0013997200559888023,
+   "p_masked": 0.0027994401119776045
+  },
+  "KH0513": {
+   "okr_k008": "SURVIVES",
+   "kfg": "SURVIVES",
+   "label": "REPLICATED",
+   "n_r5": 0,
+   "S_unmasked": 3,
+   "S_masked": 3,
+   "p_unmasked": 0.0003999200159968006,
+   "p_masked": 0.0003999200159968006
+  },
+  "KH0514": {
+   "okr_k008": "SURVIVES",
+   "kfg": "SURVIVES",
+   "label": "REPLICATED",
+   "n_r5": 13,
+   "S_unmasked": 10,
+   "S_masked": 7,
+   "p_unmasked": 0.0001999600079984003,
+   "p_masked": 0.0001999600079984003
+  }
+ },
+ "R2_new_k069_names": {
+  "KH0217": {
+   "kfg": "SURVIVES",
+   "n_r5": 0,
+   "S_unmasked": 9,
+   "S_masked": 9,
+   "p_unmasked": 0.0001999600079984003,
+   "p_masked": 0.0001999600079984003
+  },
+  "KH0358": {
+   "kfg": "SURVIVES",
+   "n_r5": 2,
+   "S_unmasked": 7,
+   "S_masked": 7,
+   "p_unmasked": 0.0009998000399920016,
+   "p_masked": 0.0005998800239952009
+  },
+  "KH0505": {
+   "kfg": "DROPS",
+   "n_r5": 21,
+   "S_unmasked": 2,
+   "S_masked": 1,
+   "p_unmasked": 0.0007998400319936012,
+   "p_masked": 0.020995800839832032
+  },
+  "KH0677": {
+   "kfg": "SURVIVES",
+   "n_r5": 0,
+   "S_unmasked": 25,
+   "S_masked": 25,
+   "p_unmasked": 0.0003999200159968006,
+   "p_masked": 0.0003999200159968006
+  },
+  "KH0695": {
+   "kfg": "DROPS",
+   "n_r5": 0,
+   "S_unmasked": 8,
+   "S_masked": 8,
+   "p_unmasked": 0.0013997200559888023,
+   "p_masked": 0.0013997200559888023
+  }
+ },
+ "kfg_survivors_of_okr10": [
+  "KH0359",
+  "KH0405",
+  "KH0492",
+  "KH0503",
+  "KH0504",
+  "KH0506",
+  "KH0513",
+  "KH0514"
+ ],
+ "new_masked_bh_not_in_k069": [],
+ "headline": "REPLICATED",
+ "seconds": 63.5
+}
