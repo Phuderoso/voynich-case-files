@@ -42,3 +42,30 @@ depend on R5 cords"; a DROPS label does **not** overturn K078/K079 (they were re
   (sha256 in the commit message), one call under `timeout 600`.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Results (registered run 14 Nov 2026, 01:54:55–01:55:27 PT, 31 s, one call under `timeout 600`, exit 0; prereg `aa6737d`; output `analysis/k082_results.json`, log `analysis/k082_run1.log`)
+- **Gates pass.** G0 (KFG db hash; 0 xlsx mismatches; partition 0.9986); **F0 exact** for all five names with an empty
+  mask; **masked FPR** 3/200 = 0.015 ≤ 0.08 (95 of the 200 carry R5 cords; binomial tail above 0.05: 1.00).
+
+| Name | R5 / pendants | Unmasked L, p (F0) | Masked L, p | Masked null mean / p99 | Masked power | Holm (4) | Verdict |
+|---|---|---|---|---|---|---|---|
+| KH0505 (K079) | 21 / 131 | 4, 0.00155 | 4, **0.00105** | 0.024 / 0 | 1.00 | yes | **SURVIVES MASK** |
+| KH0322 (K078) | 0 / 107 | 8, 0.00095 | 8, 0.00075 | 1.95 / 6 | 0.15 | — | **UNAFFECTED** (no R5 cord) |
+| KH0420 (K078) | 3 / 30 | 8, 0.00030 | 8, **0.00025** | 0.27 / 4 | 1.00 | yes | **SURVIVES MASK** |
+| KH0502 (K078) | 10 / 132 | 3, 0.0149 | 3, **0.0106** | 0.053 / 3 | n/a (no plant fits) | yes | **SURVIVES MASK** |
+| KH0511 (K078) | 3 / 114 | 3, 0.0023 | 3, **0.0027** | 0.012 / 0 | 1.00 | yes | **SURVIVES MASK** |
+
+- **Verdict: 4/4 tested names SURVIVE the R5 mask, 1 unaffected; Holm over the four agrees. No qualification of K078 or
+  K079 is needed.** The L witness does not depend on multi-number cords for any of the five names.
+- **KH0505 in detail.** The longest window (L 4, group index 7, no R5 cord) is untouched; the mask removes KH0505's
+  second, shorter hit (2 hits → 1), so leave-one-group-out L falls from 2 to 0: the corroboration now rests on **one
+  window in one group**. Masking also empties the null further (mean 0.04 → 0.024), so p tightens. So KH0505's status
+  becomes: K069 adjacent-sum flag leans on R5 cords (K080), but the K079 L witness does not (K082). Still not held-out.
+- **Disclosures.** KH0322's masked p differs from its F0 value only because the registered seed (6454) differs from
+  K078's (6437); the mask is empty, so this is the same test re-drawn. KH0322's masked plant power 0.15 is descriptive
+  (no label uses it; L saturates on its long groups). KH0502: no non-R5 within-group run is long enough for a k = 5 or 6
+  plant (200/200 skipped), so its power is not computable; the SURVIVES label needs no power by the registered rule.
+- **Line status.** Line 1 KFG names after K082: 14 replicated (K077) + 4 held-out L (K078, now also R5-robust) + KH0505
+  corroborated by L and R5-robust in that witness. Seeds 6453–6459 used; next free **6460**.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
