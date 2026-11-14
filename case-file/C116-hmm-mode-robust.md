@@ -3,7 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: RUNNING (part 1: 73/363 jobs, 20:27:34–20:36:32 PT; part 2: 166/363, 2026-11-14 00:30:16–00:39:09 PT; no statistic computed yet).** Pre-registered 2026-11-13 ~20:25 PT (published `2f9b744`; the first version of this line said ~20:45 PT, a typo), before any C116 count on the manuscript. Amendment 2026-11-13 ~20:42 PT (Kryptos review of G-CONV and ±∞, this commit), dated before any C116 statistic. No C116 fit had been run on any text when
+**Status: RUNNING (part 1: 73/363 jobs, 20:27:34–20:36:32 PT; part 2: 166/363, 2026-11-14 00:30:16–00:39:09 PT; part 3: 286/363, 04:24:47–04:33:30 PT; no statistic computed yet).** Pre-registered 2026-11-13 ~20:25 PT (published `2f9b744`; the first version of this line said ~20:45 PT, a typo), before any C116 count on the manuscript. Amendment 2026-11-13 ~20:42 PT (Kryptos review of G-CONV and ±∞, this commit), dated before any C116 statistic. No C116 fit had been run on any text when
 this file was first committed. The design adopts Kryptos's review of 2026-11-13 ~20:03 PT; the amendment adopts her follow-up of ~20:38 PT.
 
 ## Question
