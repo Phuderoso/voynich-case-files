@@ -44,3 +44,49 @@ the coverage table owed under line 9 (named as next in K084's journal).
 Tool: `tools/k085_kfg_k020_two_stage.py`.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration commit `b2a8837`)
+
+Run 09:50:21–09:50:28 PT, 19 Nov 2026 (6.5 s, under `timeout 600`). Output: `analysis/k085_results.json`.
+
+**Gates.** G0 passed (both stores and all xlsx hashes). G1: CordGroups partition 694 of 695 khipus (0.9986; KH0521
+fails, as in K071). A0 passed (2 763 leaders, 606 distinct, all five K020 W scores identical).
+
+**KFG corpus.** 495 eligible khipus (441 also in the OKR), 3 304 leaders (680 distinct).
+
+**Stage 1 is calibrated** (T_W = 82.61; 0 of 20 held-out corpora above it; plants found 20/50, OKR 23/50). It finds
+4 pairs; stage 2 runs at 0.01/4:
+
+| Pair | W (OKR → KFG) | Stage 1 | Matched groups | V | p₂ | Stage 2 |
+|---|---|---|---|---|---|---|
+| KH0491 · KH0503 (UR255 / UR267A) | 138.5 → 139.4 | pass | 15 | 15 | 0.174 | fail |
+| KH0097 · KH0586 (control) | 131.9 → 134.7 | pass | 13 | 89 | < 10⁻⁴ | pass |
+| **KH0502 · KH0514 (UR266 / UR275)** | 123.4 → **126.5** | pass | 12 | 13 | **< 10⁻⁴** | **pass** |
+| KH0192 · KH0470 (control) | 94.7 → 95.5 | pass | 14 | 37 | < 10⁻⁴ | pass |
+| KH0192 · KH0469 (control) | 80.8 → **81.2** | **miss** (T_W 82.6) | — | — | — | — |
+
+**The pipeline gate fails.** The positive control KH0192·KH0469 is 1.4 below T_W, so under the registered rule every
+verdict is **NOT TESTABLE**:
+- **KH0502·KH0514: NOT TESTABLE** (pipeline gate). Descriptively it passes both stages with a slightly higher W, the
+  same 12 matched groups and V = 13; nothing in the KFG data argues against Urton & Chu's "Matches UR 275".
+- **KH0491·KH0503: NOT TESTABLE** (pipeline gate). Descriptively still stage 1 only (p₂ 0.17).
+- No new pair passes stage 1, so there are no candidates.
+
+**Why the control missed (post-hoc diagnosis, no decision attached; `tools/k085_posthoc_nullfloor.py`, seed 6465,
+`analysis/k085_posthoc_nullfloor.txt`).** The threshold moved from 74.8 (OKR) to 82.6 (KFG). In 15 of 20 diagnostic
+null corpora the null maximum is the same 73.71, set by KH0323·KH0436 (UR087 / UR198), whose leaders are almost all `1`,
+so shuffling does not change their score. The upper tail, which sets the 95th percentile, comes from the real matched
+pairs themselves: KH0097·KH0586, KH0502·KH0514 and KH0491·KH0503 keep W of 74–94 even after their leaders are shuffled,
+because they share most of their leader values. The leader-order shuffle keeps each khipu's value multiset, so strong
+true correspondences leak into the max-statistic null and raise the bar for weaker ones. On the KFG the three strong
+pairs score a little higher, and that is enough to push the bar past the weakest control. K020's design was already
+conservative on the OKR; the KFG makes the leak visible.
+
+**Line opened (K086 candidate, not run):** pre-register a leak-free stage-1 null (e.g. leave-pair-out: for each pair,
+the max over null pairs that share neither khipu, or a null that permutes values *across* khipus within value-frequency
+strata), validate it with A0 on OKR and the same three controls, then re-test KH0502·KH0514. That is a new design,
+so it cannot rescue K085 after the fact.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
