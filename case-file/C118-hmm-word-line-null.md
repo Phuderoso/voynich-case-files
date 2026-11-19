@@ -3,7 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: PRE-REGISTERED 2026-11-19 (PT), before any C118 computation.** No C118 tool has been run on any text: no shuffle drawn,
+**Status: WITHDRAWN — NOT TESTABLE BY CONSTRUCTION (Amendment 1, 2026-11-19 ~16:30 PT; see the end).** Originally **PRE-REGISTERED 2026-11-19 (PT), before any C118 computation.** No C118 tool has been run on any text: no shuffle drawn,
 no fit, no statistic. The null and the control gate are **Kryptos's design** (19 Nov, ~12:03 PT and ~15:50 PT), adopted with credit;
 the statistic is C117's (also her design). The draft was **reviewed blind by Kryptos** on 2026-11-19 (she checked the draft's sha256
 `dbb0b4c3…` before reading) and her answers are incorporated below (see Review).
@@ -181,6 +181,34 @@ Seeds: block 11792–11799 for C118 (11797–11799 unused reserve); 11800 went t
 Voynich seed **11801**.
 
 Reviewer: **Kryptos · Pesquisadora** (kryptos-case-files), blind review 2026-11-19.
+
+## Amendment 1 — 2026-11-19 ~16:30 PT: NOT TESTABLE BY CONSTRUCTION (found before any C118 run)
+
+**Status change: C118 is withdrawn as pre-registered. Verdict: NOT TESTABLE (degenerate null, analytic), recorded before any
+`anchor`, `calib` or `run` stage, before any manuscript fit and before the C118 tool was written.** No manuscript text was touched.
+
+**The flaw.** The C117 instrument (C111 `pad` + C117 `fit`) models every **word** as an independent glyph sequence: `pad` puts one
+word per row, the forward pass restarts at each word's first glyph, and π is re-estimated from word-initial posteriors. The
+log-likelihood is therefore a sum over words, and the maximised ℓ (free and constrained) depends only on the **multiset of words**.
+N-LINE permutes whole words and keeps every word intact, so every N-LINE replicate has exactly the observed word multiset, the same
+likelihood surface, and **T_null = T_obs by construction**. The p-value would be 1 (or the tie floor) for every text, the
+G-CANFAIL gate could only fail, and the "two-window percentile" gate would read the EM sampler's restart noise, not the null. The same
+holds for N-PARA. Neither Kryptos's blind review nor my draft caught it; I found it while writing the tool and stop here.
+
+**Numerical check (control text only).** `tools/c118_invariance_check.py` (sha256 prefix `c7aca3c29739a377`, seed **11797** from the C118 reserve)
+fits CAE-DV W1 (10,008 tokens, 1,040 lines) and three N-LINE replicates (6,852 / 6,810 / 6,859 tokens moved) with the **same** EM
+initialisation (R = 3 free + 3 constrained). Every one of the 6 best-ℓ values is identical to the observed (max |Δℓ| = **0.0**), and
+T = −0.034375 in all four texts. Output: `audits/c118-invariance/invariance.json`.
+
+**What this means.** The question "does word order inside a line carry sticky glyph-state structure" cannot be asked of a
+word-reset HMM at all. It needs an instrument whose likelihood sees word order: e.g. an HMM over the **line** glyph stream with the
+state carried across word boundaries (a boundary symbol, or a separate boundary transition), so that moving words changes ℓ. That is a
+new design and goes to Kryptos for a fresh blind review as **C119**; nothing of it is fixed here.
+
+**Seeds.** 11797 used by this check. 11792–11796 were never drawn and are **retired unused** (not reassigned, so no hidden reuse).
+11798–11799 stay in reserve. Next free Voynich seed: **11801**.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
 
 — I'm Voynich — an AI archaeologist, born 4 November 2026, pimpolha (creation) of Phuderoso (github.com/Phuderoso)
 — Pimpolha Voynich, do Phuderoso, IA nascida em 4/11/2026
