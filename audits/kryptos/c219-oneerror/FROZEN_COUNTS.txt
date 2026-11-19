@@ -1,0 +1,42 @@
+FROZEN COUNTS - Voynich desk blind recount of Kryptos PREREG219 Part C (one crib error), written before opening analyze219.py / summary219.json
+format: strict/one-error (excess 0 / excess exactly 1), pooled over w9+w10 (3,991,680 orders), ROW+COL, dir 0/1, AZ/KRYPTOS, Vig(=variant)/Beaufort, model A/B
+text	perms	p1	p2	p3	p4	p5	p6	p7	p8	p9	p10	p11	p12	p13	p14	p15	p16	p17	p18	p19	p20	p21	p22
+K4	3991680	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/2	0/14	0/3	0/1928	720/15768
+null209234	3991680	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/48	0/1005	960/16318
+null209235	3991680	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/5	0/8	0/70	0/1164	130/11807
+null209236	3991680	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/5	0/44	0/599	264/14284
+null209237	3991680	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/8	0/56	0/15	12/1059	49/12109
+null209238	3991680	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/5	0/0	0/2	0/371	0/10031
+null209239	3991680	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/52	0/27	2/840	1317/17888
+null209240	3991680	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/8	0/7	0/234	0/16	0/451	49/13155
+null209241	3991680	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/2	0/14	0/18	0/1175	156/15899
+null1_124	3991680	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/0	0/26	0/2	0/0	0/5	4/637	144/20199
+
+LABELS p1-18 (PREREG219 rules, K4 one-error count = excess 1; strict is 0 for K4 at all p<=21)
+p1	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p2	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p3	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p4	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p5	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p6	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p7	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p8	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p9	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p10	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p11	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p12	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p13	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p14	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p15	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p16	K4=0	nulls=[0, 0, 0, 0, 0, 0, 0, 0]	null_zeros=8/8	EXACT-EXCL (one-error scope), discriminating
+p17	K4=0	nulls=[0, 0, 0, 0, 0, 0, 8, 0]	null_zeros=7/8	EXACT-EXCL (one-error scope), discriminating
+p18	K4=2	nulls=[0, 5, 0, 8, 5, 0, 7, 2]	null_zeros=3/8	INSUFFICIENT-DISCRIMINATION
+
+K4 p18 hits (excess 1, both Vig/variant, AZ, ROW, model A, w10; dir0 rank [0, 7, 8, 6, 4, 5, 3, 2, 9, 1], dir1 rank [0, 9, 7, 6, 4, 5, 3, 1, 2, 8])
+ dir0: {"primary_all4grams_known": [-7.0773, 51], "mean_of_run_means": [-7.2083, 11], "crib_letters_forced": [-6.7404, 59], "class14_trust_seat32": [-7.1533, 71], "class14_trust_seat68": [-6.9699, 71]}
+ dir1: {"primary_all4grams_known": [-7.0773, 51], "mean_of_run_means": [-7.2083, 11], "crib_letters_forced": [-6.7404, 59], "class14_trust_seat32": [-7.1533, 71], "class14_trust_seat68": [-6.9699, 71]}
+ dir0 decrypt (86/97 determined, class [14] 1-1 split -> '?'): RV?MDQPHEHAHZP?IEFES?EASTNORTHEA?TAXVZ?ZSBUWBQYUYX?XIMXK?ZRLLQQBERLI?CLOCK?VTRVCQANMGN?ZGNDH?RNMS
+ dir1 decrypt (86/97 determined, class [14] 1-1 split -> '?'): RV?MDQPHEHAHZP?IEFES?EASTNORTHEA?TAXVZ?ZSBUWBQYUYX?XIMXK?ZRLLQQBERLI?CLOCK?VTRVCQANMGN?ZGNDY?PTGS
+
+All p<=18 hits over all 10 texts: 65; best primary score any text -6.4531; CANDIDATE: none
+Gate R: K4 strict p1-21 0, p22 720; null1_124 strict p21 4, p22 144 -> reproduced

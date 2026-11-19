@@ -1,0 +1,88 @@
+[
+ {
+  "rank": [
+   0,
+   7,
+   8,
+   6,
+   4,
+   5,
+   3,
+   2,
+   9,
+   1
+  ],
+  "dir": 0,
+  "mode": "ROW",
+  "form": "Vig/variant",
+  "model": "A",
+  "alpha": "AZ",
+  "variants": {
+   "primary_all4grams_known": [
+    -7.0773,
+    51
+   ],
+   "mean_of_run_means": [
+    -7.2083,
+    11
+   ],
+   "crib_letters_forced": [
+    -6.7404,
+    59
+   ],
+   "class14_trust_seat32": [
+    -7.1533,
+    71
+   ],
+   "class14_trust_seat32_plain": "RV?MDQPHEHAHZPQIEFES?EASTNORTHEASTAXVZ?ZSBUWBQYUYXVXIMXK?ZRLLQQBERLIOCLOCK?VTRVCQANMGNFZGNDH?RNMS",
+   "class14_trust_seat68": [
+    -6.9699,
+    71
+   ],
+   "class14_trust_seat68_plain": "RV?MDQPHEHAHZPPIEFES?EASTNORTHEARTAXVZ?ZSBUWBQYUYXUXIMXK?ZRLLQQBERLINCLOCK?VTRVCQANMGNEZGNDH?RNMS"
+  }
+ },
+ {
+  "rank": [
+   0,
+   9,
+   7,
+   6,
+   4,
+   5,
+   3,
+   1,
+   2,
+   8
+  ],
+  "dir": 1,
+  "mode": "ROW",
+  "form": "Vig/variant",
+  "model": "A",
+  "alpha": "AZ",
+  "variants": {
+   "primary_all4grams_known": [
+    -7.0773,
+    51
+   ],
+   "mean_of_run_means": [
+    -7.2083,
+    11
+   ],
+   "crib_letters_forced": [
+    -6.7404,
+    59
+   ],
+   "class14_trust_seat32": [
+    -7.1533,
+    71
+   ],
+   "class14_trust_seat32_plain": "RV?MDQPHEHAHZPQIEFES?EASTNORTHEASTAXVZ?ZSBUWBQYUYXVXIMXK?ZRLLQQBERLIOCLOCK?VTRVCQANMGNFZGNDY?PTGS",
+   "class14_trust_seat68": [
+    -6.9699,
+    71
+   ],
+   "class14_trust_seat68_plain": "RV?MDQPHEHAHZPPIEFES?EASTNORTHEARTAXVZ?ZSBUWBQYUYXUXIMXK?ZRLLQQBERLINCLOCK?VTRVCQANMGNEZGNDY?PTGS"
+  }
+ }
+]

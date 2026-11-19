@@ -1,0 +1,17 @@
+K4 strict+one-error p1-22 and nperm identical: True
+null209234 strict+one-error p1-22 and nperm identical: True
+null209235 strict+one-error p1-22 and nperm identical: True
+null209236 strict+one-error p1-22 and nperm identical: True
+null209237 strict+one-error p1-22 and nperm identical: True
+null209238 strict+one-error p1-22 and nperm identical: True
+null209239 strict+one-error p1-22 and nperm identical: True
+null209240 strict+one-error p1-22 and nperm identical: True
+null209241 strict+one-error p1-22 and nperm identical: True
+null1_124 strict+one-error p1-22 and nperm identical: True
+ALL COUNTS IDENTICAL: True
+gateR hers: {'K4_strict_p1_21_zero': True, 'K4_strict_p22': 720, 'null1_p21': 4, 'null1_p22': 144, 'null1_p1_20_zero': True, 'nperm_K4': 3991680, 'PASS': True}
+p17 hers: {'K4': 0, 'nulls': [0, 0, 0, 0, 0, 0, 8, 0], 'K4_distinct': 0, 'null_distinct': [0, 0, 0, 0, 0, 0, 8, 0], 'label': 'EXACT-EXCL (one-error scope, discriminating)'}
+p18 hers: {'K4': 2, 'nulls': [0, 5, 0, 8, 5, 0, 7, 2], 'K4_distinct': 2, 'null_distinct': [0, 5, 0, 8, 5, 0, 7, 2], 'label': 'INSUFFICIENT-DISCRIMINATION'}
+her K4 hit: cfg [10, 0, 0, 0, 0, 0, 18, 1, -1] known 91 qg -7.1533 nq 71 ?count 6
+her K4 hit: cfg [10, 0, 1, 0, 0, 0, 18, 1, -1] known 91 qg -7.1533 nq 71 ?count 6
+my trust-seat32 plaintexts == hers: [True, True]
