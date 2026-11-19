@@ -1,0 +1,1108 @@
+{
+ "summary": {
+  "direct": {
+   "lines": 41,
+   "rederive_mismatch": 0,
+   "counts": {
+    "P25/ixany": 1,
+    "P25/ix0": 1
+   }
+  },
+  "bank": {
+   "lines": 44,
+   "rederive_mismatch": 0,
+   "counts": {
+    "G22-25/ixany": 4,
+    "G24/ixany": 4,
+    "G24/ix1": 4,
+    "G25/ixany": 2,
+    "G25/ix1": 2
+   }
+  },
+  "all": {
+   "lines": 78,
+   "rederive_mismatch": 0,
+   "counts": {
+    "G22-25/ixany": 30,
+    "G22/ixany": 2,
+    "G22/ix1": 2,
+    "G23/ixany": 8,
+    "G23/ix1": 8,
+    "G24/ixany": 12,
+    "G24/ix1": 12,
+    "G25/ixany": 16,
+    "G25/ix1": 16,
+    "G22-25&P25/ixany": 2,
+    "P25/ixany": 4,
+    "P25/ix0": 2,
+    "P25/ix1": 2
+   }
+  }
+ },
+ "lines": [
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=3604 Y=69277 form=2 bad=0 badk=25 k=25,6,6,4,0,2,1,5,4,1,1,8,7,0,6,1,7,1,3,1,3,4,5,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=7839 Y=69211 form=2 bad=8 badk=18 k=0,7,3,3,8,4,9,6,18,6,0,5,8,8,7,9,6,3,5,9,2,2,7,1",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=17196 Y=83982 form=2 bad=16 badk=17 k=0,7,3,0,5,7,3,6,6,3,6,5,8,9,2,3,17,0,4,0,6,9,9,7",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=18135 Y=6228 form=2 bad=0 badk=23 k=23,5,1,7,0,8,4,5,1,0,7,4,8,9,2,4,9,5,3,0,0,7,2,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=20816 Y=20203 form=2 bad=4 badk=18 k=0,7,8,1,18,6,4,7,6,9,8,1,0,9,8,4,6,7,6,7,9,9,1,2",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=22808 Y=2853 form=2 bad=0 badk=15 k=15,3,1,1,7,9,4,4,2,7,9,4,7,1,9,4,9,5,1,2,5,4,0,5",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=27365 Y=880 form=0 bad=22 badk=11 k=7,2,3,8,0,5,1,1,9,3,9,5,3,8,9,1,6,9,8,9,2,4,11,7",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=30195 Y=48972 form=0 bad=5 badk=10 k=4,4,6,6,3,10,4,4,5,5,3,9,7,6,0,4,9,9,4,0,6,2,1,2",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=31830 Y=7294 form=0 bad=5 badk=12 k=8,5,2,2,5,12,1,7,8,9,4,4,9,4,3,1,1,9,6,0,4,4,3,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=31830 Y=23670 form=2 bad=2 badk=13 k=3,7,13,3,7,0,7,8,4,8,2,5,0,8,0,7,4,2,5,1,8,7,5,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=31795 Y=36063 form=2 bad=16 badk=13 k=5,2,1,7,7,5,0,0,3,0,0,4,3,7,1,0,13,3,2,3,3,7,9,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=39552 Y=74174 form=2 bad=1 badk=16 k=7,16,5,3,7,1,0,6,9,8,3,7,8,4,2,0,5,3,1,6,3,5,1,9",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=39540 Y=74174 form=2 bad=1 badk=16 k=7,16,6,2,7,1,0,5,9,8,3,8,7,4,2,0,5,3,1,6,3,5,1,9",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=39912 Y=37718 form=0 bad=0 badk=24 k=24,8,5,9,5,3,9,3,2,4,4,6,4,3,6,9,2,9,8,6,8,5,2,2",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=41109 Y=7076 form=0 bad=4 badk=12 k=9,3,9,7,12,9,5,2,7,3,9,7,0,1,1,5,6,5,0,1,7,0,9,8",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=41109 Y=13578 form=0 bad=4 badk=12 k=9,3,9,7,12,9,5,2,7,3,9,7,0,1,1,5,6,5,0,1,7,0,9,8",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=41286 Y=78735 form=2 bad=8 badk=13 k=2,9,7,5,7,1,3,1,13,0,5,9,3,5,5,3,7,4,5,4,0,5,0,1",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=41986 Y=66889 form=0 bad=2 badk=11 k=0,6,11,3,0,4,1,4,8,3,7,7,0,4,8,1,4,8,3,4,2,2,3,5",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=47306 Y=75811 form=2 bad=0 badk=18 k=18,8,6,3,0,4,3,0,4,1,2,8,2,0,2,3,4,2,8,3,0,6,7,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=53453 Y=56040 form=0 bad=10 badk=20 k=5,7,0,4,6,9,3,2,8,6,20,6,8,4,0,3,5,9,8,5,8,0,7,8",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=60337 Y=21471 form=2 bad=21 badk=14 k=3,7,3,4,3,5,6,0,9,9,6,4,1,2,7,6,5,0,6,1,8,14,3,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=60337 Y=24219 form=2 bad=21 badk=14 k=3,7,3,3,3,5,6,0,9,6,6,4,1,2,1,6,4,0,6,1,8,14,3,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=60337 Y=60536 form=1 bad=0 badk=15 k=15,3,4,4,4,6,7,1,9,8,9,5,2,2,2,7,5,1,7,3,9,0,4,6",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=60337 Y=60729 form=2 bad=21 badk=19 k=8,7,3,3,3,5,6,0,8,7,6,4,1,1,1,6,4,0,6,1,8,19,3,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=60337 Y=60731 form=1 bad=21 badk=20 k=9,8,4,4,4,6,7,1,9,8,7,5,2,2,2,7,5,1,7,2,9,20,4,4",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=60337 Y=60978 form=2 bad=21 badk=16 k=5,7,3,3,3,5,6,0,8,8,6,4,1,1,1,6,4,0,6,1,8,16,3,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=60337 Y=60980 form=1 bad=21 badk=17 k=6,8,4,4,4,6,7,1,9,9,7,5,2,2,2,7,5,1,7,2,9,17,4,4",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=60337 Y=62787 form=2 bad=21 badk=18 k=7,0,4,8,4,6,7,1,9,6,8,5,2,2,1,7,9,1,7,2,8,18,4,5",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=70359 Y=83982 form=2 bad=16 badk=17 k=0,6,4,0,5,7,0,6,7,3,5,6,8,3,2,0,17,0,4,0,6,9,9,6",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=70330 Y=83982 form=2 bad=16 badk=18 k=1,6,4,0,6,5,0,6,8,4,5,6,8,3,3,0,18,1,5,0,7,7,9,0",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=71402 Y=57190 form=2 bad=22 badk=15 k=0,3,0,0,4,1,2,6,1,7,7,2,8,0,4,2,2,5,6,1,3,5,15,9",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=71883 Y=54457 form=0 bad=16 badk=19 k=8,0,3,7,4,1,1,0,9,4,8,7,4,2,3,1,19,9,8,6,4,0,0,5",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=73713 Y=79663 form=2 bad=0 badk=20 k=20,8,4,8,5,6,0,6,9,3,3,7,9,4,2,0,1,3,6,3,7,2,8,4",
+   "rederive_match": true,
+   "consistent": {
+    "P25/ix0": 10000
+   }
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=73713 Y=83982 form=2 bad=16 badk=19 k=1,6,4,0,6,7,1,6,8,4,5,6,8,3,3,1,19,2,5,0,8,9,9,6",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=81828 Y=46721 form=1 bad=16 badk=21 k=5,3,0,0,8,1,8,3,3,2,5,6,9,8,3,8,21,3,4,5,3,2,9,4",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=82352 Y=15801 form=0 bad=4 badk=14 k=2,1,1,8,14,2,2,0,4,6,2,3,2,9,9,2,3,8,5,2,0,9,1,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=82352 Y=86571 form=0 bad=4 badk=13 k=1,0,9,6,13,1,1,8,1,0,1,1,0,6,9,1,1,3,0,1,0,8,0,2",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=82353 Y=15799 form=1 bad=4 badk=14 k=2,1,1,8,14,2,2,0,4,6,2,3,2,9,9,2,3,8,5,2,0,9,1,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=82353 Y=86570 form=1 bad=4 badk=13 k=1,0,9,6,13,1,1,8,1,0,1,1,0,6,9,1,1,3,0,1,0,8,0,2",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=82799 Y=12098 form=0 bad=23 badk=19 k=8,2,4,1,7,3,8,3,1,4,5,8,7,4,6,8,6,8,4,9,9,6,5,19",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "direct",
+   "line": "S perm=-1 dir=0 X=82800 Y=12098 form=2 bad=23 badk=18 k=7,1,3,0,6,2,7,2,0,3,4,7,6,3,5,7,5,7,3,8,8,5,4,18",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=4625 dir=0 X=1 Y=7 form=1 bad=16 badk=21 k=5,3,1,5,6,1,7,4,4,8,4,1,8,5,6,8,21,3,8,3,2,5,9,9",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=4626 dir=1 X=1 Y=7 form=1 bad=16 badk=21 k=5,3,1,5,6,1,7,4,4,8,4,1,8,5,6,8,21,3,8,3,2,5,9,9",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=4835 dir=1 X=95 Y=51 form=0 bad=9 badk=20 k=7,3,9,1,3,8,6,2,6,20,3,2,8,7,5,3,2,9,6,8,4,5,9,6",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=4836 dir=0 X=95 Y=51 form=0 bad=9 badk=20 k=7,3,9,1,3,8,6,2,6,20,3,2,8,7,5,3,2,9,6,8,4,5,9,6",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=6065 dir=0 X=1 Y=7 form=1 bad=16 badk=21 k=5,3,1,5,6,1,7,4,4,8,4,1,8,5,6,8,21,3,8,3,2,5,9,9",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=6066 dir=1 X=1 Y=7 form=1 bad=16 badk=21 k=5,3,1,5,6,1,7,4,4,8,4,1,8,5,6,8,21,3,8,3,2,5,9,9",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=6499 dir=1 X=105 Y=52 form=2 bad=8 badk=25 k=8,6,7,8,5,0,8,6,25,5,0,5,6,5,9,2,4,5,0,6,5,5,3,2",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 100,
+    "G25/ix1": 200
+   }
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=6500 dir=0 X=105 Y=52 form=2 bad=8 badk=25 k=8,6,7,8,5,0,8,6,25,5,0,5,6,5,9,2,4,5,0,6,5,5,3,2",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 100,
+    "G25/ix1": 200
+   }
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=58129 dir=1 X=110 Y=33 form=0 bad=13 badk=17 k=0,3,9,7,6,4,9,9,5,9,0,8,3,17,4,8,8,3,8,9,9,6,6,1",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=58130 dir=0 X=110 Y=33 form=0 bad=13 badk=17 k=0,3,9,7,6,4,9,9,5,9,0,8,3,17,4,8,8,3,8,9,9,6,6,1",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=70455 dir=1 X=81 Y=35 form=0 bad=21 badk=15 k=5,2,7,7,9,9,5,4,1,6,3,0,0,5,1,3,9,3,9,4,4,15,6,4",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=70456 dir=0 X=81 Y=35 form=0 bad=21 badk=15 k=5,2,7,7,9,9,5,4,1,6,3,0,0,5,1,3,9,3,9,4,4,15,6,4",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=100325 dir=0 X=141 Y=31 form=0 bad=10 badk=12 k=2,8,7,4,0,6,4,1,4,7,12,7,6,1,1,3,5,9,3,0,8,5,4,2",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=100326 dir=1 X=141 Y=31 form=0 bad=10 badk=12 k=2,8,7,4,0,6,4,1,4,7,12,7,6,1,1,3,5,9,3,0,8,5,4,2",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=103483 dir=1 X=54 Y=53 form=0 bad=1 badk=17 k=0,17,3,9,6,3,4,5,7,6,6,1,8,7,8,4,1,1,5,2,5,9,0,1",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=103484 dir=0 X=54 Y=53 form=0 bad=1 badk=17 k=0,17,3,9,6,3,4,5,7,6,6,1,8,7,8,4,1,1,5,2,5,9,0,1",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=104501 dir=0 X=79 Y=135 form=0 bad=2 badk=22 k=1,8,22,3,4,7,5,1,6,9,8,3,7,7,1,1,9,9,0,6,8,9,1,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=104502 dir=1 X=79 Y=135 form=0 bad=2 badk=22 k=1,8,22,3,4,7,5,1,6,9,8,3,7,7,1,1,9,9,0,6,8,9,1,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=105921 dir=0 X=98 Y=77 form=0 bad=22 badk=10 k=4,9,4,0,4,2,8,2,6,3,1,2,2,1,8,2,7,5,1,3,1,6,10,7",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=105922 dir=1 X=98 Y=77 form=0 bad=22 badk=10 k=4,9,4,0,4,2,8,2,6,3,1,2,2,1,8,2,7,5,1,3,1,6,10,7",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=107845 dir=0 X=63 Y=64 form=1 bad=3 badk=24 k=1,9,7,24,7,7,5,2,9,3,4,3,7,5,8,8,4,9,2,2,6,8,9,2",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=107846 dir=1 X=63 Y=64 form=1 bad=3 badk=24 k=1,9,7,24,7,7,5,2,9,3,4,3,7,5,8,8,4,9,2,2,6,8,9,2",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=116067 dir=1 X=80 Y=139 form=0 bad=9 badk=12 k=6,2,0,3,8,6,5,1,7,12,5,9,7,4,1,1,0,6,2,8,5,8,2,5",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=116068 dir=0 X=80 Y=139 form=0 bad=9 badk=12 k=6,2,0,3,8,6,5,1,7,12,5,9,7,4,1,1,0,6,2,8,5,8,2,5",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=118247 dir=1 X=5 Y=78 form=0 bad=6 badk=20 k=8,3,5,0,1,5,20,8,8,0,4,1,1,3,1,5,5,7,8,9,5,6,8,5",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=118248 dir=0 X=5 Y=78 form=0 bad=6 badk=20 k=8,3,5,0,1,5,20,8,8,0,4,1,1,3,1,5,5,7,8,9,5,6,8,5",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=127694 dir=0 X=42 Y=141 form=0 bad=7 badk=17 k=9,1,1,0,2,7,9,17,0,0,5,5,4,1,4,9,4,2,3,8,0,4,9,4",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=127695 dir=1 X=42 Y=141 form=0 bad=7 badk=17 k=9,1,1,0,2,7,9,17,0,0,5,5,4,1,4,9,4,2,3,8,0,4,9,4",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=128244 dir=0 X=81 Y=65 form=0 bad=11 badk=12 k=4,0,5,4,6,0,1,6,0,5,9,12,1,6,5,1,8,6,7,2,0,2,4,1",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=128245 dir=1 X=81 Y=65 form=0 bad=11 badk=12 k=4,0,5,4,6,0,1,6,0,5,9,12,1,6,5,1,8,6,7,2,0,2,4,1",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=132704 dir=1 X=101 Y=64 form=0 bad=2 badk=21 k=7,1,21,2,0,0,5,0,3,9,5,0,0,1,9,4,5,2,4,9,1,8,4,4",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 200
+   }
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=132705 dir=0 X=101 Y=64 form=0 bad=2 badk=21 k=7,1,21,2,0,0,5,0,3,9,5,0,0,1,9,4,5,2,4,9,1,8,4,4",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 200
+   }
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=142745 dir=1 X=38 Y=61 form=0 bad=4 badk=16 k=1,1,9,7,16,2,2,8,3,1,2,0,9,9,5,5,1,1,2,3,9,1,7,4",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=142746 dir=0 X=38 Y=61 form=0 bad=4 badk=16 k=1,1,9,7,16,2,2,8,3,1,2,0,9,9,5,5,1,1,2,3,9,1,7,4",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=144763 dir=0 X=22 Y=83 form=0 bad=21 badk=17 k=5,3,6,2,9,5,0,7,9,2,7,1,5,0,1,3,4,4,6,5,0,17,2,9",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=144763 dir=0 X=22 Y=106 form=0 bad=21 badk=19 k=6,6,6,3,9,5,2,8,9,4,2,1,0,1,2,4,4,6,6,6,2,19,4,9",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=144764 dir=1 X=22 Y=83 form=0 bad=21 badk=17 k=5,3,6,2,9,5,0,7,9,2,7,1,5,0,1,3,4,4,6,5,0,17,2,9",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=144764 dir=1 X=22 Y=106 form=0 bad=21 badk=19 k=6,6,6,3,9,5,2,8,9,4,2,1,0,1,2,4,4,6,6,6,2,19,4,9",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=148599 dir=0 X=139 Y=128 form=2 bad=7 badk=25 k=7,8,5,5,0,6,7,25,8,0,7,7,9,4,4,3,8,6,3,1,1,1,0,0",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=148600 dir=1 X=139 Y=128 form=2 bad=7 badk=25 k=7,8,5,5,0,6,7,25,8,0,7,7,9,4,4,3,8,6,3,1,1,1,0,0",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=160763 dir=0 X=135 Y=135 form=0 bad=18 badk=16 k=7,7,4,6,1,7,8,4,5,1,7,1,0,0,1,3,9,6,16,4,2,8,8,7",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=160764 dir=1 X=135 Y=135 form=0 bad=18 badk=16 k=7,7,4,6,1,7,8,4,5,1,7,1,0,0,1,3,9,6,16,4,2,8,8,7",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=164789 dir=1 X=71 Y=134 form=0 bad=16 badk=14 k=8,9,7,2,6,2,9,3,0,3,4,9,6,2,6,3,14,6,6,0,1,4,4,6",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "bank",
+   "line": "S perm=164790 dir=0 X=71 Y=134 form=0 bad=16 badk=14 k=8,9,7,2,6,2,9,3,0,3,4,9,6,2,6,3,14,6,6,0,1,4,4,6",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=1954 dir=0 X=13 Y=18 form=2 bad=15 badk=13 k=8,6,1,8,0,0,8,5,4,2,8,6,3,1,7,13,1,1,0,7,3,0,9,7",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=1955 dir=1 X=13 Y=18 form=2 bad=15 badk=13 k=8,6,1,8,0,0,8,5,4,2,8,6,3,1,7,13,1,1,0,7,3,0,9,7",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=4154 dir=0 X=20 Y=52 form=2 bad=9 badk=11 k=2,4,4,8,1,1,8,8,4,11,0,8,0,8,7,8,5,2,9,1,5,9,6,8",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=4155 dir=1 X=20 Y=52 form=2 bad=9 badk=11 k=2,4,4,8,1,1,8,8,4,11,0,8,0,8,7,8,5,2,9,1,5,9,6,8",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=11146 dir=0 X=106 Y=128 form=0 bad=13 badk=14 k=7,4,7,3,9,2,1,6,2,6,2,1,7,14,9,4,8,6,4,1,0,4,3,0",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=11147 dir=1 X=106 Y=128 form=0 bad=13 badk=14 k=7,4,7,3,9,2,1,6,2,6,2,1,7,14,9,4,8,6,4,1,0,4,3,0",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=29596 dir=1 X=0 Y=70 form=1 bad=18 badk=16 k=7,4,6,2,3,6,9,0,9,2,7,2,3,0,8,2,7,2,16,4,8,7,7,0",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=29597 dir=0 X=0 Y=70 form=1 bad=18 badk=16 k=7,4,6,2,3,6,9,0,9,2,7,2,3,0,8,2,7,2,16,4,8,7,7,0",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=29844 dir=1 X=29 Y=29 form=0 bad=23 badk=24 k=7,2,6,4,2,0,8,1,0,2,3,8,4,8,4,8,4,2,6,9,4,2,6,24",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=29845 dir=0 X=29 Y=29 form=0 bad=23 badk=24 k=7,2,6,4,2,0,8,1,0,2,3,8,4,8,4,8,4,2,6,9,4,2,6,24",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=32514 dir=1 X=9 Y=109 form=1 bad=21 badk=19 k=1,9,5,3,9,5,5,0,5,8,8,9,4,1,1,2,6,4,7,5,3,19,6,5",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 20
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=32515 dir=0 X=9 Y=109 form=1 bad=21 badk=19 k=1,9,5,3,9,5,5,0,5,8,8,9,4,1,1,2,6,4,7,5,3,19,6,5",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 20
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=34662 dir=0 X=111 Y=66 form=0 bad=9 badk=12 k=5,2,3,9,9,4,2,0,1,12,2,3,7,9,9,8,4,1,0,3,7,8,1,8",
+   "rederive_match": true,
+   "consistent": {
+    "G23/ix1": 1
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=34663 dir=1 X=111 Y=66 form=0 bad=9 badk=12 k=5,2,3,9,9,4,2,0,1,12,2,3,7,9,9,8,4,1,0,3,7,8,1,8",
+   "rederive_match": true,
+   "consistent": {
+    "G23/ix1": 1
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=36030 dir=0 X=86 Y=18 form=0 bad=1 badk=23 k=7,23,8,4,0,4,8,4,5,8,6,1,4,6,1,7,1,3,3,4,7,6,5,6",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=36031 dir=1 X=86 Y=18 form=0 bad=1 badk=23 k=7,23,8,4,0,4,8,4,5,8,6,1,4,6,1,7,1,3,3,4,7,6,5,6",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=36618 dir=1 X=69 Y=105 form=2 bad=11 badk=13 k=7,3,8,8,0,7,2,7,4,3,8,13,6,5,0,7,0,9,9,7,4,2,9,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=36619 dir=0 X=69 Y=105 form=2 bad=11 badk=13 k=7,3,8,8,0,7,2,7,4,3,8,13,6,5,0,7,0,9,9,7,4,2,9,3",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=42668 dir=0 X=111 Y=39 form=0 bad=15 badk=19 k=5,3,0,4,1,3,4,3,4,1,9,3,8,7,0,19,4,1,2,4,8,8,8,7",
+   "rederive_match": true,
+   "consistent": {
+    "G25/ix1": 1000
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=42669 dir=1 X=111 Y=39 form=0 bad=15 badk=19 k=5,3,0,4,1,3,4,3,4,1,9,3,8,7,0,19,4,1,2,4,8,8,8,7",
+   "rederive_match": true,
+   "consistent": {
+    "G25/ix1": 1000
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=46222 dir=1 X=25 Y=8 form=1 bad=22 badk=13 k=9,4,3,2,1,1,3,0,2,8,9,0,6,3,5,0,6,8,0,2,5,6,13,8",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=46223 dir=0 X=25 Y=8 form=1 bad=22 badk=13 k=9,4,3,2,1,1,3,0,2,8,9,0,6,3,5,0,6,8,0,2,5,6,13,8",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=52384 dir=0 X=96 Y=57 form=0 bad=21 badk=21 k=5,6,4,8,4,0,5,6,8,4,3,8,8,4,9,7,1,6,0,6,8,21,8,4",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 20
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=52385 dir=1 X=96 Y=57 form=0 bad=21 badk=21 k=5,6,4,8,4,0,5,6,8,4,3,8,8,4,9,7,1,6,0,6,8,21,8,4",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 20
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=54588 dir=0 X=24 Y=96 form=1 bad=7 badk=23 k=6,9,1,2,7,8,3,23,0,3,9,9,1,4,0,9,5,5,6,1,2,1,1,7",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=54589 dir=1 X=24 Y=96 form=1 bad=7 badk=23 k=6,9,1,2,7,8,3,23,0,3,9,9,1,4,0,9,5,5,6,1,2,1,1,7",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=55152 dir=1 X=131 Y=71 form=0 bad=23 badk=22 k=0,8,6,9,9,4,3,1,7,4,7,3,9,5,5,5,8,9,8,4,5,9,5,22",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=55153 dir=0 X=131 Y=71 form=0 bad=23 badk=22 k=0,8,6,9,9,4,3,1,7,4,7,3,9,5,5,5,8,9,8,4,5,9,5,22",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=55282 dir=0 X=75 Y=40 form=0 bad=19 badk=23 k=1,0,6,8,1,8,4,9,9,6,2,6,3,5,1,2,8,5,0,23,1,3,9,8",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=55283 dir=1 X=75 Y=40 form=0 bad=19 badk=23 k=1,0,6,8,1,8,4,9,9,6,2,6,3,5,1,2,8,5,0,23,1,3,9,8",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=55286 dir=0 X=4 Y=107 form=0 bad=4 badk=13 k=1,1,1,8,13,4,2,5,3,2,4,6,8,5,2,3,3,2,5,6,2,2,7,8",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=55287 dir=1 X=4 Y=107 form=0 bad=4 badk=13 k=1,1,1,8,13,4,2,5,3,2,4,6,8,5,2,3,3,2,5,6,2,2,7,8",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=62752 dir=1 X=111 Y=124 form=0 bad=2 badk=14 k=8,3,14,3,9,4,7,0,3,3,4,9,8,6,5,5,7,8,1,2,8,3,6,4",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=62753 dir=0 X=111 Y=124 form=0 bad=2 badk=14 k=8,3,14,3,9,4,7,0,3,3,4,9,8,6,5,5,7,8,1,2,8,3,6,4",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=65168 dir=0 X=38 Y=20 form=1 bad=15 badk=20 k=4,9,1,3,4,1,0,1,1,3,9,2,7,6,1,20,4,2,8,6,7,0,4,2",
+   "rederive_match": true,
+   "consistent": {
+    "G25/ix1": 100
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=65169 dir=1 X=38 Y=20 form=1 bad=15 badk=20 k=4,9,1,3,4,1,0,1,1,3,9,2,7,6,1,20,4,2,8,6,7,0,4,2",
+   "rederive_match": true,
+   "consistent": {
+    "G25/ix1": 100
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=69582 dir=0 X=52 Y=0 form=0 bad=20 badk=18 k=0,1,4,8,9,3,8,3,5,5,5,0,5,1,5,1,2,7,6,2,18,6,3,1",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 10
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=69583 dir=1 X=52 Y=0 form=0 bad=20 badk=18 k=0,1,4,8,9,3,8,3,5,5,5,0,5,1,5,1,2,7,6,2,18,6,3,1",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 10
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=71000 dir=1 X=52 Y=118 form=0 bad=23 badk=17 k=2,5,4,4,3,4,5,8,5,9,0,6,7,3,2,9,1,5,4,1,4,1,4,17",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 50
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=71001 dir=0 X=52 Y=118 form=0 bad=23 badk=17 k=2,5,4,4,3,4,5,8,5,9,0,6,7,3,2,9,1,5,4,1,4,1,4,17",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 50
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=71360 dir=0 X=132 Y=134 form=0 bad=21 badk=11 k=5,9,2,0,4,7,1,6,8,2,8,5,0,9,7,9,4,8,0,5,0,11,4,2",
+   "rederive_match": true,
+   "consistent": {
+    "G23/ix1": 20
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=71361 dir=1 X=132 Y=134 form=0 bad=21 badk=11 k=5,9,2,0,4,7,1,6,8,2,8,5,0,9,7,9,4,8,0,5,0,11,4,2",
+   "rederive_match": true,
+   "consistent": {
+    "G23/ix1": 20
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=72274 dir=1 X=89 Y=114 form=1 bad=5 badk=14 k=9,6,5,1,3,14,6,9,6,5,7,5,3,7,8,5,0,8,8,9,4,9,1,0",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=72275 dir=0 X=89 Y=114 form=1 bad=5 badk=14 k=9,6,5,1,3,14,6,9,6,5,7,5,3,7,8,5,0,8,8,9,4,9,1,0",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=76462 dir=1 X=41 Y=53 form=2 bad=20 badk=18 k=2,1,9,8,0,2,1,0,8,5,2,5,3,0,9,6,6,5,6,6,18,0,9,5",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 100,
+    "G25/ix1": 100
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=76463 dir=0 X=41 Y=53 form=2 bad=20 badk=18 k=2,1,9,8,0,2,1,0,8,5,2,5,3,0,9,6,6,5,6,6,18,0,9,5",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 100,
+    "G25/ix1": 100
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=94432 dir=1 X=49 Y=99 form=2 bad=-1 badk=-1 k=3,5,3,0,9,3,4,3,1,5,5,0,2,3,9,6,9,4,7,6,6,3,2,3",
+   "rederive_match": true,
+   "consistent": {
+    "P25/ix0": 10000
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=94432 dir=1 X=120 Y=99 form=2 bad=23 badk=22 k=3,5,3,0,9,3,4,3,2,5,5,0,2,4,9,6,9,5,7,7,6,3,3,22",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=94432 dir=1 X=49 Y=126 form=2 bad=20 badk=11 k=3,5,1,0,9,7,4,3,0,5,5,4,2,3,7,6,7,3,6,6,11,7,2,1",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=94433 dir=0 X=49 Y=99 form=2 bad=-1 badk=-1 k=3,5,3,0,9,3,4,3,1,5,5,0,2,3,9,6,9,4,7,6,6,3,2,3",
+   "rederive_match": true,
+   "consistent": {
+    "P25/ix0": 10000
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=94433 dir=0 X=120 Y=99 form=2 bad=23 badk=22 k=3,5,3,0,9,3,4,3,2,5,5,0,2,4,9,6,9,5,7,7,6,3,3,22",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=94433 dir=0 X=49 Y=126 form=2 bad=20 badk=11 k=3,5,1,0,9,7,4,3,0,5,5,4,2,3,7,6,7,3,6,6,11,7,2,1",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=116918 dir=1 X=26 Y=96 form=2 bad=11 badk=17 k=7,4,8,9,0,3,1,0,9,4,3,17,1,3,8,9,0,5,6,2,6,0,6,4",
+   "rederive_match": true,
+   "consistent": {
+    "G25/ix1": 100
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=116919 dir=0 X=26 Y=96 form=2 bad=11 badk=17 k=7,4,8,9,0,3,1,0,9,4,3,17,1,3,8,9,0,5,6,2,6,0,6,4",
+   "rederive_match": true,
+   "consistent": {
+    "G25/ix1": 100
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=117100 dir=0 X=23 Y=56 form=1 bad=10 badk=10 k=1,8,4,1,0,8,8,6,6,9,10,1,6,5,5,7,2,1,9,6,8,8,8,8",
+   "rederive_match": true,
+   "consistent": {
+    "G23/ix1": 10,
+    "G25/ix1": 100
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=117101 dir=1 X=23 Y=56 form=1 bad=10 badk=10 k=1,8,4,1,0,8,8,6,6,9,10,1,6,5,5,7,2,1,9,6,8,8,8,8",
+   "rederive_match": true,
+   "consistent": {
+    "G23/ix1": 10,
+    "G25/ix1": 100
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=126136 dir=1 X=47 Y=90 form=1 bad=8 badk=25 k=3,1,3,4,8,6,9,5,25,6,1,6,7,3,7,8,4,5,9,4,6,0,0,0",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=126137 dir=0 X=47 Y=90 form=1 bad=8 badk=25 k=3,1,3,4,8,6,9,5,25,6,1,6,7,3,7,8,4,5,9,4,6,0,0,0",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=128606 dir=1 X=129 Y=84 form=2 bad=3 badk=13 k=4,9,4,13,4,0,2,7,0,2,1,1,7,3,3,8,2,8,6,8,5,7,6,2",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=128607 dir=0 X=129 Y=84 form=2 bad=3 badk=13 k=4,9,4,13,4,0,2,7,0,2,1,1,7,3,3,8,2,8,6,8,5,7,6,2",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=134774 dir=0 X=5 Y=110 form=0 bad=3 badk=24 k=2,1,4,24,3,4,4,9,0,7,4,5,4,6,0,4,1,2,5,1,0,9,9,6",
+   "rederive_match": true,
+   "consistent": {
+    "G23/ix1": 2
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=134775 dir=1 X=5 Y=110 form=0 bad=3 badk=24 k=2,1,4,24,3,4,4,9,0,7,4,5,4,6,0,4,1,2,5,1,0,9,9,6",
+   "rederive_match": true,
+   "consistent": {
+    "G23/ix1": 2
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=135408 dir=0 X=142 Y=80 form=0 bad=11 badk=17 k=3,5,9,4,6,4,2,7,6,3,2,17,9,1,3,0,6,4,9,6,1,6,2,4",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=135409 dir=1 X=142 Y=80 form=0 bad=11 badk=17 k=3,5,9,4,6,4,2,7,6,3,2,17,9,1,3,0,6,4,9,6,1,6,2,4",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=137898 dir=0 X=68 Y=142 form=2 bad=9 badk=10 k=6,4,5,2,9,1,2,6,0,10,0,0,5,0,1,8,0,6,5,0,1,2,6,9",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=137899 dir=1 X=68 Y=142 form=2 bad=9 badk=10 k=6,4,5,2,9,1,2,6,0,10,0,0,5,0,1,8,0,6,5,0,1,2,6,9",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=144832 dir=1 X=93 Y=138 form=0 bad=9 badk=18 k=1,2,0,4,4,9,6,2,7,18,0,1,3,6,4,1,2,6,7,0,1,1,9,1",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 10,
+    "G25/ix1": 100
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=144833 dir=0 X=93 Y=138 form=0 bad=9 badk=18 k=1,2,0,4,4,9,6,2,7,18,0,1,3,6,4,1,2,6,7,0,1,1,9,1",
+   "rederive_match": true,
+   "consistent": {
+    "G24/ix1": 10,
+    "G25/ix1": 100
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=148318 dir=0 X=50 Y=139 form=0 bad=19 badk=21 k=6,0,8,7,4,2,3,7,9,7,4,1,6,2,0,6,5,9,7,21,5,3,3,0",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=148319 dir=1 X=50 Y=139 form=0 bad=19 badk=21 k=6,0,8,7,4,2,3,7,9,7,4,1,6,2,0,6,5,9,7,21,5,3,3,0",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=150230 dir=1 X=71 Y=72 form=0 bad=13 badk=16 k=8,5,8,4,2,4,0,9,4,8,6,2,0,16,6,3,1,5,1,6,6,5,8,1",
+   "rederive_match": true,
+   "consistent": {
+    "G25/ix1": 100
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=150231 dir=0 X=71 Y=72 form=0 bad=13 badk=16 k=8,5,8,4,2,4,0,9,4,8,6,2,0,16,6,3,1,5,1,6,6,5,8,1",
+   "rederive_match": true,
+   "consistent": {
+    "G25/ix1": 100
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=151840 dir=0 X=89 Y=92 form=1 bad=15 badk=23 k=5,9,6,4,6,3,4,0,2,0,6,2,3,9,4,23,3,3,8,9,4,5,0,7",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=151841 dir=1 X=89 Y=92 form=1 bad=15 badk=23 k=5,9,6,4,6,3,4,0,2,0,6,2,3,9,4,23,3,3,8,9,4,5,0,7",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=159322 dir=0 X=15 Y=47 form=0 bad=14 badk=19 k=2,7,3,0,3,9,5,9,2,8,8,8,3,4,19,9,5,5,7,2,8,2,6,8",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=159323 dir=1 X=15 Y=47 form=0 bad=14 badk=19 k=2,7,3,0,3,9,5,9,2,8,8,8,3,4,19,9,5,5,7,2,8,2,6,8",
+   "rederive_match": true,
+   "consistent": {}
+  },
+  {
+   "scope": "all",
+   "line": "S perm=161962 dir=1 X=38 Y=80 form=1 bad=19 badk=19 k=6,0,2,8,1,5,0,8,6,2,5,4,5,7,3,4,4,5,7,19,3,9,8,9",
+   "rederive_match": true,
+   "consistent": {
+    "G22/ix1": 1,
+    "G25/ix1": 100,
+    "P25/ix1": 100
+   }
+  },
+  {
+   "scope": "all",
+   "line": "S perm=164824 dir=0 X=38 Y=80 form=1 bad=19 badk=19 k=6,0,2,8,1,5,0,8,6,2,5,4,5,7,3,4,4,5,7,19,3,9,8,9",
+   "rederive_match": true,
+   "consistent": {
+    "G22/ix1": 1,
+    "G25/ix1": 100,
+    "P25/ix1": 100
+   }
+  }
+ ]
+}

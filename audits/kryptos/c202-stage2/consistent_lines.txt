@@ -1,0 +1,37 @@
+direct S perm=-1 dir=0 X=73713 Y=79663 form=2 bad=0 badk=20 {'P25/ix0': 10000}
+bank S perm=6499 dir=1 X=105 Y=52 form=2 bad=8 badk=25 {'G24/ix1': 100, 'G25/ix1': 200}
+bank S perm=6500 dir=0 X=105 Y=52 form=2 bad=8 badk=25 {'G24/ix1': 100, 'G25/ix1': 200}
+bank S perm=132704 dir=1 X=101 Y=64 form=0 bad=2 badk=21 {'G24/ix1': 200}
+bank S perm=132705 dir=0 X=101 Y=64 form=0 bad=2 badk=21 {'G24/ix1': 200}
+all S perm=32514 dir=1 X=9 Y=109 form=1 bad=21 badk=19 {'G24/ix1': 20}
+all S perm=32515 dir=0 X=9 Y=109 form=1 bad=21 badk=19 {'G24/ix1': 20}
+all S perm=34662 dir=0 X=111 Y=66 form=0 bad=9 badk=12 {'G23/ix1': 1}
+all S perm=34663 dir=1 X=111 Y=66 form=0 bad=9 badk=12 {'G23/ix1': 1}
+all S perm=42668 dir=0 X=111 Y=39 form=0 bad=15 badk=19 {'G25/ix1': 1000}
+all S perm=42669 dir=1 X=111 Y=39 form=0 bad=15 badk=19 {'G25/ix1': 1000}
+all S perm=52384 dir=0 X=96 Y=57 form=0 bad=21 badk=21 {'G24/ix1': 20}
+all S perm=52385 dir=1 X=96 Y=57 form=0 bad=21 badk=21 {'G24/ix1': 20}
+all S perm=65168 dir=0 X=38 Y=20 form=1 bad=15 badk=20 {'G25/ix1': 100}
+all S perm=65169 dir=1 X=38 Y=20 form=1 bad=15 badk=20 {'G25/ix1': 100}
+all S perm=69582 dir=0 X=52 Y=0 form=0 bad=20 badk=18 {'G24/ix1': 10}
+all S perm=69583 dir=1 X=52 Y=0 form=0 bad=20 badk=18 {'G24/ix1': 10}
+all S perm=71000 dir=1 X=52 Y=118 form=0 bad=23 badk=17 {'G24/ix1': 50}
+all S perm=71001 dir=0 X=52 Y=118 form=0 bad=23 badk=17 {'G24/ix1': 50}
+all S perm=71360 dir=0 X=132 Y=134 form=0 bad=21 badk=11 {'G23/ix1': 20}
+all S perm=71361 dir=1 X=132 Y=134 form=0 bad=21 badk=11 {'G23/ix1': 20}
+all S perm=76462 dir=1 X=41 Y=53 form=2 bad=20 badk=18 {'G24/ix1': 100, 'G25/ix1': 100}
+all S perm=76463 dir=0 X=41 Y=53 form=2 bad=20 badk=18 {'G24/ix1': 100, 'G25/ix1': 100}
+all S perm=94432 dir=1 X=49 Y=99 form=2 bad=-1 badk=-1 {'P25/ix0': 10000}
+all S perm=94433 dir=0 X=49 Y=99 form=2 bad=-1 badk=-1 {'P25/ix0': 10000}
+all S perm=116918 dir=1 X=26 Y=96 form=2 bad=11 badk=17 {'G25/ix1': 100}
+all S perm=116919 dir=0 X=26 Y=96 form=2 bad=11 badk=17 {'G25/ix1': 100}
+all S perm=117100 dir=0 X=23 Y=56 form=1 bad=10 badk=10 {'G23/ix1': 10, 'G25/ix1': 100}
+all S perm=117101 dir=1 X=23 Y=56 form=1 bad=10 badk=10 {'G23/ix1': 10, 'G25/ix1': 100}
+all S perm=134774 dir=0 X=5 Y=110 form=0 bad=3 badk=24 {'G23/ix1': 2}
+all S perm=134775 dir=1 X=5 Y=110 form=0 bad=3 badk=24 {'G23/ix1': 2}
+all S perm=144832 dir=1 X=93 Y=138 form=0 bad=9 badk=18 {'G24/ix1': 10, 'G25/ix1': 100}
+all S perm=144833 dir=0 X=93 Y=138 form=0 bad=9 badk=18 {'G24/ix1': 10, 'G25/ix1': 100}
+all S perm=150230 dir=1 X=71 Y=72 form=0 bad=13 badk=16 {'G25/ix1': 100}
+all S perm=150231 dir=0 X=71 Y=72 form=0 bad=13 badk=16 {'G25/ix1': 100}
+all S perm=161962 dir=1 X=38 Y=80 form=1 bad=19 badk=19 {'G22/ix1': 1, 'G25/ix1': 100, 'P25/ix1': 100}
+all S perm=164824 dir=0 X=38 Y=80 form=1 bad=19 badk=19 {'G22/ix1': 1, 'G25/ix1': 100, 'P25/ix1': 100}

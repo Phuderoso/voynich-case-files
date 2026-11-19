@@ -1,0 +1,10 @@
+Hit files out/{k4,null0}_{direct,bank,all}.txt were empty (0 bytes).
+sha256 of each: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+(the SHA-256 of the empty file). The tool printed found=0; timings are in the *.log files:
+
+k4_direct     found=0  real 0m1.251s    user 0m9.850s
+k4_bank       found=0  real 2m4.234s    user 15m38.971s
+k4_all        found=0  real 1m51.372s   user 14m28.297s
+null0_direct  found=0  real 0m1.366s    user 0m9.958s
+null0_bank    found=0  real 1m51.009s   user 14m7.849s
+null0_all     found=0  real 1m57.934s   user 14m48.651s

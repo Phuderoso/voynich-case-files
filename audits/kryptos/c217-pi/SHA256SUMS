@@ -1,0 +1,43 @@
+# Published files
+ecd4206e9124f7e27bc11a15f16e9603eb842c8e942c9d8d0db3df5ce57e166c  README.md
+84e55fc1e0dffe2409a533d86163318627c8998a2b2551a0c49c1ae40e9a0d71  anchor_gate.txt
+8677193264845f5a03cfe8cac1204e51f2d2cc1d183d172ab395c3e7c8f410dc  anchor_pi.py
+9afa2b6b4b5786f9e85dbf98e0e4cc3d13b5d2566a4f4dbd761a579654450b1b  inputs/alpha_themed180.txt
+b81e8e7bd91e55e060e7c0be69d445ce97017d42b115501e90f389deb65d2615  inputs/k123_eng.txt
+2797de1451ab97118211735dcef370fc5acd70829f164aa043c47cbf40f0a5a3  inputs/k4.txt
+d7aa40af3bd04bed0df6d2f24f3e10edcdb426873dccbb242c753168f237f74e  inputs/keys217.tsv
+f8772370d624d403f056e3e3d4aadb15fec135d5075b5506053eb86460f4e20b  inputs/oeis_b000796.txt
+cc79f6159da43cf1db76fc473cb69959a135c75438c7b270c73094977d3ba8a5  null0.txt
+10f8ffd7535082c03299302fd272664d5d1fe12cadf0e72c4fd058a73ec97906  out/SUMMARY.txt
+121e01a9c6289cd975b2382de3795342d535f85a3ed5c2f3429ee627b0417712  out/k4_all.log
+e4478ec27ff4b07ee0cb6bfbfe0a741dadd884fa818578582d3838e011a94bad  out/k4_bank.log
+626f78ee235af9cde45a758c7e4b780bef944c32bf403c485b155e728d7326dd  out/k4_direct.log
+baf5bdcb3a079d13756b2f525cbb38e1b912070a456f811102712e1f160f49e2  out/null0_all.log
+dc6556c452da2dbe1fc0b725e267bfd9e28c14db35f4f2ebafc85d6166afed14  out/null0_bank.log
+526fc787a302be50cf797478766262b4721612fa12a590a2f3222e6527414f9c  out/null0_direct.log
+9b4396eb1d6712664e565e79aeb92398f00b746ddf39c8ec89e4da4659218ea5  per_offset_k4.tsv
+7bc3618bee75874f9824222f10bf1e31dd971801ce452d702ef3829ed9d8f151  pi217x.c
+6e52d12c47b86978a5aac7db7de501046a2f395deda0b04417d017a9645d617e  pi700.txt
+a00e7193a1f2a4197c5aa283f13c80c4b564335ec713ccc82cef39a9de69fabc  pi_windows.tsv
+d910f9db95ca9f2cd975bea3d0c8cf21c797eede946833ace4b838b87e5a27e1  plant_pi.py
+aba17de8cba546ffc03b8325192c3906c738949285a86d2bd9a9a940b1e16998  plants_pi.json
+d47c24b5711fb86e985c849ea9f670775ea90ac7ac4c566fa68cf1602b06f62e  plants_pi.txt
+8221ac66be71558c921fb44cfb66f7997699aea754d917763882d6d9eddc836e  run_all.log
+abf7c58cda553b69d9649654f7027d88a33b37ec7a062cae76d83a6f77d22f86  run_all.sh
+
+# Not published (large binaries, files > 1 MB, compiled binary, or empty hit files).
+# sha256 of the local copies used in the recount:
+2b4ffb693ddd62965ba0e30ccf165f63cdc3916c950d8a28370c0ec05113c84b  inputs/alpha.bin   # skipped, 2.3 MB
+004ffc248d17e1a3fbb918122d580c4a0b2461ab4f4d43f3efbdc2e006e7e862  inputs/bank.bin    # skipped, 32 MB
+8a9e1b3200cf803cc03fda7f60d0e181dacf479b127077c2632d818a45f9e857  inputs/all.bin     # skipped, 32 MB
+d9674e6512582e9a3c7f04e3170c2a3cc0f3b62b3e506e6098b40e048623c42d  inputs/keys217.bin # skipped, binary from her repo
+e0c1b627f6316b89d2cc4a5158e01374ccd1350f8c7b41e91eb55c0608e2a790  inputs/themed144.bin # skipped, binary from her repo
+70c628cf1420cc6f6bae03450c068e2be9a53fe6e737c1e647b9e5bb2e99ee1c  inputs/quadgrams.json # skipped, 1.8 MB
+6eb1da76e364ac2705b0db87ba4a90e1151e2b10021f79e3a4c8a36b524eea7d  pi_windows.bin     # skipped (binary); see pi_windows.tsv
+e422b863e3fedd4418f1b18b2afe15401dc90af481dad86bad38f3aab1be58c3  pi217x             # skipped, compiled binary
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  out/k4_direct.txt  # skipped, empty
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  out/k4_bank.txt    # skipped, empty
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  out/k4_all.txt     # skipped, empty
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  out/null0_direct.txt # skipped, empty
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  out/null0_bank.txt  # skipped, empty
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  out/null0_all.txt   # skipped, empty

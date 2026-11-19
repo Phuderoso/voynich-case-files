@@ -1,0 +1,3 @@
+Gromark planted consistent: 200/200
+random digits consistent at L 2-11 (expect ~0): 0 /200
+periodic planted consistent: 200/200

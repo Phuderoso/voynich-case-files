@@ -1,0 +1,57 @@
+direct lines 41 re-derive mismatches 0
+   G22/ix0 0
+   G22/ix1 0
+   G22/ixany 0
+   G23/ix0 0
+   G23/ix1 0
+   G23/ixany 0
+   G24/ix0 0
+   G24/ix1 0
+   G24/ixany 0
+   G25/ix0 0
+   G25/ix1 0
+   G25/ixany 0
+   G22-25/ixany 0
+   P25/ix0 1
+   P25/ix1 0
+   P25/ixany 1
+   G22-25&P25/ixany 0
+   any Gromark L<=21 consistent: []  any periodic P<=24: []
+bank lines 44 re-derive mismatches 0
+   G22/ix0 0
+   G22/ix1 0
+   G22/ixany 0
+   G23/ix0 0
+   G23/ix1 0
+   G23/ixany 0
+   G24/ix0 0
+   G24/ix1 4
+   G24/ixany 4
+   G25/ix0 0
+   G25/ix1 2
+   G25/ixany 2
+   G22-25/ixany 4
+   P25/ix0 0
+   P25/ix1 0
+   P25/ixany 0
+   G22-25&P25/ixany 0
+   any Gromark L<=21 consistent: []  any periodic P<=24: []
+all lines 78 re-derive mismatches 0
+   G22/ix0 0
+   G22/ix1 2
+   G22/ixany 2
+   G23/ix0 0
+   G23/ix1 8
+   G23/ixany 8
+   G24/ix0 0
+   G24/ix1 12
+   G24/ixany 12
+   G25/ix0 0
+   G25/ix1 16
+   G25/ixany 16
+   G22-25/ixany 30
+   P25/ix0 2
+   P25/ix1 2
+   P25/ixany 4
+   G22-25&P25/ixany 2
+   any Gromark L<=21 consistent: []  any periodic P<=24: []

@@ -1,0 +1,6 @@
+direct G22-25 (any ix)  lines   0  distinct effective crib maps (S on crib seats, X, Y, form) 0
+direct P25 (any ix)     lines   1  distinct effective crib maps (S on crib seats, X, Y, form) 1
+bank   G22-25 (any ix)  lines   4  distinct effective crib maps (S on crib seats, X, Y, form) 2
+bank   P25 (any ix)     lines   0  distinct effective crib maps (S on crib seats, X, Y, form) 0
+all    G22-25 (any ix)  lines  30  distinct effective crib maps (S on crib seats, X, Y, form) 15
+all    P25 (any ix)     lines   4  distinct effective crib maps (S on crib seats, X, Y, form) 2

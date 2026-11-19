@@ -1,0 +1,3 @@
+k4_all.txt: OK
+k4_bank.txt: OK
+k4_direct.txt: OK

@@ -1,0 +1,21 @@
+{'pid': 0, 'mode': 'direct', 'row': -1, 'dir': 0, 'ix': 1, 'X': 83706, 'Y': 58566, 'form': 0, 'wid': 382, 'corrupt_seat': None, 'hits_in_slice': 2, 'pass_': True}
+{'pid': 1, 'mode': 'direct', 'row': -1, 'dir': 0, 'ix': 0, 'X': 30739, 'Y': 85960, 'form': 2, 'wid': 403, 'corrupt_seat': 15, 'hits_in_slice': 2, 'pass_': True}
+{'pid': 2, 'mode': 'direct', 'row': -1, 'dir': 0, 'ix': 1, 'X': 19867, 'Y': 32265, 'form': 2, 'wid': 595, 'corrupt_seat': None, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 3, 'mode': 'direct', 'row': -1, 'dir': 0, 'ix': 1, 'X': 31764, 'Y': 82177, 'form': 2, 'wid': 277, 'corrupt_seat': 20, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 4, 'mode': 'direct', 'row': -1, 'dir': 0, 'ix': 1, 'X': 85482, 'Y': 13850, 'form': 1, 'wid': 422, 'corrupt_seat': None, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 5, 'mode': 'direct', 'row': -1, 'dir': 0, 'ix': 0, 'X': 25103, 'Y': 52271, 'form': 1, 'wid': 18, 'corrupt_seat': 23, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 6, 'mode': 'direct', 'row': -1, 'dir': 0, 'ix': 1, 'X': 43446, 'Y': 38203, 'form': 1, 'wid': 16, 'corrupt_seat': None, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 7, 'mode': 'direct', 'row': -1, 'dir': 0, 'ix': 1, 'X': 58600, 'Y': 48418, 'form': 2, 'wid': 516, 'corrupt_seat': 1, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 8, 'mode': 'bank', 'row': 39950, 'dir': 0, 'ix': 0, 'X': 31, 'Y': 57, 'form': 2, 'wid': 110, 'corrupt_seat': None, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 9, 'mode': 'bank', 'row': 123648, 'dir': 1, 'ix': 0, 'X': 26, 'Y': 142, 'form': 2, 'wid': 39, 'corrupt_seat': 15, 'hits_in_slice': 2, 'pass_': True}
+{'pid': 10, 'mode': 'bank', 'row': 116874, 'dir': 0, 'ix': 1, 'X': 42, 'Y': 61, 'form': 0, 'wid': 92, 'corrupt_seat': None, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 11, 'mode': 'bank', 'row': 43489, 'dir': 1, 'ix': 1, 'X': 61, 'Y': 19, 'form': 2, 'wid': 182, 'corrupt_seat': 5, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 12, 'mode': 'bank', 'row': 12580, 'dir': 1, 'ix': 1, 'X': 33, 'Y': 131, 'form': 2, 'wid': 588, 'corrupt_seat': None, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 13, 'mode': 'bank', 'row': 156951, 'dir': 0, 'ix': 1, 'X': 85, 'Y': 49, 'form': 2, 'wid': 707, 'corrupt_seat': 2, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 14, 'mode': 'all', 'row': 113994, 'dir': 0, 'ix': 0, 'X': 96, 'Y': 9, 'form': 1, 'wid': 305, 'corrupt_seat': None, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 15, 'mode': 'all', 'row': 72508, 'dir': 0, 'ix': 0, 'X': 26, 'Y': 37, 'form': 1, 'wid': 428, 'corrupt_seat': 4, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 16, 'mode': 'all', 'row': 63623, 'dir': 1, 'ix': 0, 'X': 73, 'Y': 130, 'form': 2, 'wid': 509, 'corrupt_seat': None, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 17, 'mode': 'all', 'row': 69670, 'dir': 1, 'ix': 1, 'X': 21, 'Y': 60, 'form': 1, 'wid': 411, 'corrupt_seat': 2, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 18, 'mode': 'all', 'row': 27956, 'dir': 1, 'ix': 1, 'X': 139, 'Y': 86, 'form': 1, 'wid': 432, 'corrupt_seat': None, 'hits_in_slice': 1, 'pass_': True}
+{'pid': 19, 'mode': 'all', 'row': 140055, 'dir': 1, 'ix': 1, 'X': 86, 'Y': 86, 'form': 0, 'wid': 716, 'corrupt_seat': 22, 'hits_in_slice': 1, 'pass_': True}
+GATE P (own plants, seed 11789): 20/20 pass (bar >= 19/20)

@@ -1,0 +1,7 @@
+pi digits 700: mpmath==Machin==OEIS A000796: True
+first 50: 31415926535897932384626433832795028841971693993751
+sha256(700 digits): 392e10822520a21731bc35da0ca9e7d9f88735c7f4ca33c10c1c1a2407756527
+offset0 s=0 window: [5, 15, 7, 0, 1, 6, 19, 15, 23, 6, 10, 12] ... keys217 id 0 match True
+offset0 s=-1 window: [4, 14, 6, 25, 0, 5, 18, 14, 22, 5, 9, 11] ... keys217 id 1 match True
+pi windows in my set: 800; distinct: 800; absent from keys217.tsv: 0; byte mismatches: 0
+sha256 pi_windows.bin: 6eb1da76e364ac2705b0db87ba4a90e1151e2b10021f79e3a4c8a36b524eea7d
