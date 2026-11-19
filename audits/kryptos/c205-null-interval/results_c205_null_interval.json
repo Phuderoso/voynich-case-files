@@ -1,0 +1,352 @@
+{
+ "seed": 11800,
+ "B": 100000,
+ "alpha": 0.05,
+ "inputs": {
+  "K4": "31dc7a4312f3dee13647b8681434d01923289c0354a94fb77fd769c5ef27b83b",
+  "null209234": "32817f7da0e77ed83cb014557d1d976e34739289df788e3f5cca12373fe20157",
+  "null209235": "42b149fbfdb2c498bac8f06eb665b5d5952eff78d2c9f38c9c248a406cba2191",
+  "null209236": "0259d012f7c51ab2ca22fa68f26046e6088da9d34a22c3718434e2f468666317",
+  "null209237": "8562a35f4041ffe84f80ce69fe94bf3cc336bbc75f71b6b251329607aeed4ab0",
+  "null209238": "ff0b35a5a03500c44acf7bb9f2c3a8767559291bea2b0197b782c8c82b9b1c96",
+  "null209239": "fdd19e9cf520098206a67c9b18cb17dbd825a8eb2ee8de337fecd3889c413498",
+  "null209240": "01a80519e021345e1e67dddef96a6e849795cfa5ab45a6456335e5c230ed1c4f",
+  "null209241": "c50109c5fbcdbb5cf5ecdcf0c9ddd4216e88e445a7bd5c59ca4fcd56281ec882",
+  "summary219.json": "a5ffb23fc02e9ad000fea1f9c389c1c35549b4ad90d8239045e913ddf205e79e",
+  "tools/cycle219/PREREG219.md": "891c594bb95432e5dfbd34340e6aba0367432c4f5240733ef2e215f756199715",
+  "tools/cycle219/col1e.c": "1a602f0e18912a1018627f38735fbb8827349ad53a11418e767e71c1193d6c47",
+  "case-file/205-columnar-w9-w10-one-error-audit.md": "2905d44fc902473d1472ba40ffb074d60324902dbad1641942c5d88b86be76d3"
+ },
+ "cells": {
+  "18": {
+   "K4": 2,
+   "nulls": [
+    0,
+    5,
+    0,
+    8,
+    5,
+    0,
+    7,
+    2
+   ],
+   "null_min": 0,
+   "null_max": 8,
+   "null_median": 3.5,
+   "inside_range": true,
+   "n_ge": 5,
+   "n_le": 4,
+   "n_eq": 1,
+   "side": "lo",
+   "tail_k": 4,
+   "tail_hat": 0.5,
+   "tail_mid": 0.4375,
+   "tail_CP95": [
+    0.157,
+    0.843
+   ],
+   "CP95_ge": [
+    0.2449,
+    0.9148
+   ],
+   "CP95_le": [
+    0.157,
+    0.843
+   ],
+   "boot_min95": [
+    0.0,
+    0.0
+   ],
+   "boot_max95": [
+    5.0,
+    8.0
+   ],
+   "boot_median95": [
+    0.0,
+    7.0
+   ],
+   "boot_tail95": [
+    0.125,
+    0.875
+   ],
+   "boot_P_inside_range": 0.99573,
+   "rule_at_8": "TYPICAL",
+   "P_above_all_N": {
+    "8": 0.0004,
+    "16": 0.0,
+    "40": 0.0,
+    "80": 0.0,
+    "160": 0.0
+   },
+   "N_expected_point": 8,
+   "N_expected_mid": 8,
+   "N_power80_point": 8,
+   "N_power80_CPlow": 34,
+   "CPlow": 0.157
+  },
+  "19": {
+   "K4": 14,
+   "nulls": [
+    0,
+    8,
+    5,
+    56,
+    0,
+    52,
+    234,
+    14
+   ],
+   "null_min": 0,
+   "null_max": 234,
+   "null_median": 11.0,
+   "inside_range": true,
+   "n_ge": 4,
+   "n_le": 5,
+   "n_eq": 1,
+   "side": "hi",
+   "tail_k": 4,
+   "tail_hat": 0.5,
+   "tail_mid": 0.4375,
+   "tail_CP95": [
+    0.157,
+    0.843
+   ],
+   "CP95_ge": [
+    0.157,
+    0.843
+   ],
+   "CP95_le": [
+    0.2449,
+    0.9148
+   ],
+   "boot_min95": [
+    0.0,
+    5.0
+   ],
+   "boot_max95": [
+    52.0,
+    234.0
+   ],
+   "boot_median95": [
+    0.0,
+    56.0
+   ],
+   "boot_tail95": [
+    0.125,
+    0.875
+   ],
+   "boot_P_inside_range": 0.99576,
+   "rule_at_8": "TYPICAL",
+   "P_above_all_N": {
+    "8": 0.0039,
+    "16": 0.0,
+    "40": 0.0,
+    "80": 0.0,
+    "160": 0.0
+   },
+   "N_expected_point": 8,
+   "N_expected_mid": 8,
+   "N_power80_point": 8,
+   "N_power80_CPlow": 34,
+   "CPlow": 0.157
+  },
+  "20": {
+   "K4": 3,
+   "nulls": [
+    48,
+    70,
+    44,
+    15,
+    2,
+    27,
+    16,
+    18
+   ],
+   "null_min": 2,
+   "null_max": 70,
+   "null_median": 22.5,
+   "inside_range": true,
+   "n_ge": 7,
+   "n_le": 1,
+   "n_eq": 0,
+   "side": "lo",
+   "tail_k": 1,
+   "tail_hat": 0.125,
+   "tail_mid": 0.125,
+   "tail_CP95": [
+    0.0032,
+    0.5265
+   ],
+   "CP95_ge": [
+    0.4735,
+    0.9968
+   ],
+   "CP95_le": [
+    0.0032,
+    0.5265
+   ],
+   "boot_min95": [
+    2.0,
+    16.0
+   ],
+   "boot_max95": [
+    44.0,
+    70.0
+   ],
+   "boot_median95": [
+    15.0,
+    48.0
+   ],
+   "boot_tail95": [
+    0.0,
+    0.375
+   ],
+   "boot_P_inside_range": 0.65564,
+   "rule_at_8": null,
+   "P_above_all_N": {
+    "8": 0.0,
+    "16": 0.0,
+    "40": 0.0,
+    "80": 0.0,
+    "160": 0.0
+   },
+   "N_expected_point": 21,
+   "N_expected_mid": 21,
+   "N_power80_point": 43,
+   "N_power80_CPlow": 221,
+   "CPlow": 0.0032
+  },
+  "21": {
+   "K4": 1928,
+   "nulls": [
+    1005,
+    1164,
+    599,
+    1071,
+    371,
+    842,
+    451,
+    1175
+   ],
+   "null_min": 371,
+   "null_max": 1175,
+   "null_median": 923.5,
+   "inside_range": false,
+   "n_ge": 0,
+   "n_le": 8,
+   "n_eq": 0,
+   "side": "hi",
+   "tail_k": 0,
+   "tail_hat": 0.0,
+   "tail_mid": 0.0,
+   "tail_CP95": [
+    0.0,
+    0.3694
+   ],
+   "CP95_ge": [
+    0.0,
+    0.3694
+   ],
+   "CP95_le": [
+    0.6306,
+    1.0
+   ],
+   "boot_min95": [
+    371.0,
+    599.0
+   ],
+   "boot_max95": [
+    1071.0,
+    1175.0
+   ],
+   "boot_median95": [
+    451.0,
+    1164.0
+   ],
+   "boot_tail95": [
+    0.0,
+    0.0
+   ],
+   "boot_P_inside_range": 0.0,
+   "rule_at_8": null,
+   "P_above_all_N": {
+    "8": 1.0,
+    "16": 1.0,
+    "40": 1.0,
+    "80": 1.0,
+    "160": 1.0
+   },
+   "N_expected_point": 146,
+   "N_expected_mid": 146,
+   "N_power80_point": 146,
+   "N_power80_CPlow": 146,
+   "CPlow": 0.0
+  },
+  "22": {
+   "K4": 16488,
+   "nulls": [
+    17278,
+    11937,
+    14548,
+    12158,
+    10031,
+    19205,
+    13204,
+    16055
+   ],
+   "null_min": 10031,
+   "null_max": 19205,
+   "null_median": 13876.0,
+   "inside_range": true,
+   "n_ge": 2,
+   "n_le": 6,
+   "n_eq": 0,
+   "side": "hi",
+   "tail_k": 2,
+   "tail_hat": 0.25,
+   "tail_mid": 0.25,
+   "tail_CP95": [
+    0.0319,
+    0.6509
+   ],
+   "CP95_ge": [
+    0.0319,
+    0.6509
+   ],
+   "CP95_le": [
+    0.3491,
+    0.9681
+   ],
+   "boot_min95": [
+    10031.0,
+    12158.0
+   ],
+   "boot_max95": [
+    16055.0,
+    19205.0
+   ],
+   "boot_median95": [
+    11937.0,
+    17278.0
+   ],
+   "boot_tail95": [
+    0.0,
+    0.625
+   ],
+   "boot_P_inside_range": 0.89988,
+   "rule_at_8": "TYPICAL",
+   "P_above_all_N": {
+    "8": 0.1001,
+    "16": 0.01,
+    "40": 0.0,
+    "80": 0.0,
+    "160": 0.0
+   },
+   "N_expected_point": 8,
+   "N_expected_mid": 8,
+   "N_power80_point": 16,
+   "N_power80_CPlow": ">2000",
+   "CPlow": 0.0319
+  }
+ }
+}
