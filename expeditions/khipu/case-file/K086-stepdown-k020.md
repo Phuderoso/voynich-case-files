@@ -53,3 +53,50 @@ parser), eligibility, leaders and weights exactly as K085; gates **G0** (hashes)
 Tool: `tools/k086_kfg_k020_stepdown.py` (K085 tool with stage 1 replaced; committed with this file).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration commit `fb21b56`)
+
+Run 13:51:15–13:51:31 PT, 19 Nov 2026 (16.5 s, under `timeout 600`). Output: `analysis/k086_results.json`
+(md5 `eec257e0`).
+
+**Gates.** G0 passed; G1 694/695 (KH0521 fails, as in K071/K085); A0 passed (2 763 leaders, 606 distinct, five W exact).
+KFG corpus as K085: 495 eligible khipus, 3 304 leaders (680 distinct).
+
+**Stage 1 (KFG, seed 6466).** Step 1 bar T = 76.17 → 5 rejections; step 2 bar (null max over the remaining pairs)
+T = 73.71 → no new rejection; stop. Calibrated: 2 of 20 held-out corpora with any discovery (bar ≤ 3). Plants 26/50
+(step-down) and 26/50 (single step). Stage 2 at 0.01/5:
+
+| Pair | W | Matched groups | V | p₂ | Both stages |
+|---|---|---|---|---|---|
+| KH0491 · KH0503 (UR255 / UR267A) | 139.4 | 15 | 15 | 0.163 | no (stage 1 only) |
+| KH0097 · KH0586 (control) | 134.7 | 13 | 89 | < 10⁻⁴ | **yes** |
+| **KH0502 · KH0514 (UR266 / UR275)** | **126.5** | 12 | 13 | **< 10⁻⁴** | **yes** |
+| KH0192 · KH0470 (control) | 95.5 | 14 | 37 | < 10⁻⁴ | **yes** |
+| KH0192 · KH0469 (control) | 81.2 | 15 | 36 | < 10⁻⁴ | **yes** |
+
+**Decision (as registered).** Pipeline OK (calibrated, three controls in both stages).
+- **KH0502·KH0514: CONFIRMED** on KFG under the step-down stage 1. K020's blind rediscovery of Urton & Chu's
+  "Matches UR 275" replicates on the curated data.
+- KH0491·KH0503: stage 1 only (p₂ 0.16), as in K020 and K085.
+- No new candidate pair.
+
+**OKR arm (descriptive, seed 6467).** Step 1 T = 80.30 (5 rejections, the same five pairs as K020), step 2
+T = 74.52, no new rejection; 0/20 held-out; plants 20/50 step-down vs 18/50 single step. Stage 2 identical in outcome
+to K020 (KH0491·KH0503 p₂ 0.37, the other four < 10⁻⁴).
+
+**What this teaches, honestly.** The step-down did *not* do the rescuing here: with seed 6466 the single-step bar is
+already 76.2, below the control's 81.2, and all five pairs cross at step 1. The step-2 bar (73.7 KFG, 74.5 OKR) is the
+leak-free floor, the KH0323·KH0436 value K085 identified. So the bar of the 95th percentile of **100** null maxima
+moves between ~74 and ~83 depending on how many null corpora happen to contain a leaked high (K020 seed 74.8, K085
+82.6, this OKR arm 80.3, this KFG run 76.2). K085's miss was a Monte Carlo draw of a leaky null, not a property of the
+KFG pair. The step-down removes that dependence by construction (its final bar never contains a rejected pair), which is
+why it is the right rule to keep; but the four single-step bars also say that K020-family verdicts that hinge on a
+control 1–2 points from T_W should not be read from 100 null corpora. Proposed next design for this family (not run):
+step-down with 1 000 null corpora and a printed bootstrap interval for every T.
+
+K085's published verdict (NOT TESTABLE under its own rule) stands as a record; the K020 row of the replication table is
+now answered by K086.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
