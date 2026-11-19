@@ -1,4 +1,4 @@
-# K084 · KFG re-audit of K024: do deeper subsidiaries record the sum of their own subsidiaries? (line 9, step 16)
+# K084 · KFG re-audit of K024: do deeper subsidiaries record the sum of their own subsidiaries? (line 9, step 14)
 
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
@@ -46,5 +46,37 @@ the coverage table owed under line 9 (KFG re-audit).
 
 Seeds: 6463 (main), next free **6464**. Tool: `tools/k084_kfg_k024_deeper_sums.py`. Compute: under a minute, one
 call under `timeout 600`.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (computed after the pre-registration commit `d2caa59`)
+
+Tool: `tools/k084_kfg_k024_deeper_sums.py` (one call under `timeout 600`, 19 Nov 2026 ~05:58 PT, 12.6 s).
+Output: `analysis/k084_results.json`, log `analysis/k084_run1.log`.
+
+**Gates pass.** G0: 0 hash mismatches. A0: the OKR anchor rebuilds K024 exactly (109 eligible, 2 hits).
+Calibration FPR at 0.01: **0.005** (1/200, bar 0.03).
+
+The KFG adds deeper parents but not enough: **162 eligible parents** in 55 khipus (135 at depth 2, 26 at depth 3,
+1 at depth 4), against the OKR's 109. Only 10 of them sit in the 3 KFG-only khipus.
+
+| Test | Hits | Null mean ± sd | Null max (10 000) | p |
+|---|---|---|---|---|
+| **Primary** (all KFG) | 2 | 1.07 ± 1.01 | 6 | 0.296 |
+| Without KH0349 (UR113) | 2 | 1.09 ± 1.03 | 7 | 0.302 |
+| KFG-only khipus (descriptive) | 0 | 0.09 ± 0.29 | 2 | 1.0 |
+
+Power with **3** planted parents: **0.28** (< 0.5). Disclosed power with 5 planted: **0.815**.
+
+**Verdict: not testable** by the pre-registered rule → KFG status **REPLICATED** (same verdict as K024).
+The two hits are the **same two cords** as on the OKR: KH0183 `p157s1` (= 42) and KH0536 `p1s1` (= 44); UR113 still
+has no eligible deeper parent. The K024 add-on reading carries over with the KFG's numbers: a habit that puts the sum
+on 5 or more of the 162 deeper parents (about 3 %) would very likely (0.815) have been seen, and it was not; deeper
+summation is at most a rare practice in both databases.
+
+Line 7 (deeper levels) stays closed as data-limited; nothing to correct. Next free seed **6464**.
+Erratum to the prereg title only: "step 16" corrected to "step 14" (numbering typo; no rule changed).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
