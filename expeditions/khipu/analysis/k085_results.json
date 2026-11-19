@@ -29,5 +29,177 @@
   },
   "pass": true
  },
- "sec": 0.8
+ "sec": 5.8,
+ "gates": {
+  "G0_xlsx_mismatch": [],
+  "G1_partition_rate": 0.9986,
+  "G1_bad": [
+   "KH0521"
+  ],
+  "n_R5_masked": 2588
+ },
+ "named_presence": {
+  "KH0097": "ok",
+  "KH0586": "ok",
+  "KH0192": "ok",
+  "KH0470": "ok",
+  "KH0469": "ok",
+  "KH0502": "ok",
+  "KH0514": "ok",
+  "KH0491": "ok",
+  "KH0503": "ok"
+ },
+ "kfg_corpus": {
+  "n_parsed": 694,
+  "n_elig": 495,
+  "leaders": 3304,
+  "distinct": 680,
+  "elig_also_okr": 441
+ },
+ "stage1": {
+  "T_W": 82.61309317574703,
+  "null_max": {
+   "min": 73.71336929213946,
+   "median": 73.71336929213946,
+   "max": 94.45509424061153
+  },
+  "heldout_with_discovery": 0,
+  "calibrated": true,
+  "plants_found": 20,
+  "plants": 50,
+  "n_disc": 4
+ },
+ "stage2": [
+  {
+   "A": "KH0491",
+   "B": "KH0503",
+   "W": 139.385,
+   "matched": 15,
+   "V": 15,
+   "p2": 0.1735826417358264,
+   "null_mean": 13.6287,
+   "stage2": false,
+   "known": true,
+   "A_in_okr": true,
+   "B_in_okr": true,
+   "A_meta": {
+    "aliases": "UR255",
+    "museum": "Proyecto Arqueol\u00f3gico Incahuasi",
+    "mnum": "9228-13"
+   },
+   "B_meta": {
+    "aliases": "UR267A",
+    "museum": "Proyecto Arqueol\u00f3gico Incahuasi",
+    "mnum": "13092"
+   }
+  },
+  {
+   "A": "KH0097",
+   "B": "KH0586",
+   "W": 134.741,
+   "matched": 13,
+   "V": 89,
+   "p2": 9.999000099990002e-05,
+   "null_mean": 50.8901,
+   "stage2": true,
+   "known": false,
+   "A_in_okr": true,
+   "B_in_okr": true,
+   "A_meta": {
+    "aliases": "UR1084, AS084",
+    "museum": "Musee Quai Branly (previous names: Musee de l Homme, Mus\u00e9e d'Ethnographie du Trocad\u00e9ro)",
+    "mnum": "71.1930.19.470"
+   },
+   "B_meta": {
+    "aliases": "HP055",
+    "museum": "Museo Nacional de Arqueolog\u00eda, Antropolog\u00eda e Historia del Per\u00fa",
+    "mnum": "MNAAHP 29934"
+   }
+  },
+  {
+   "A": "KH0502",
+   "B": "KH0514",
+   "W": 126.525,
+   "matched": 12,
+   "V": 13,
+   "p2": 9.999000099990002e-05,
+   "null_mean": 10.2507,
+   "stage2": true,
+   "known": true,
+   "A_in_okr": true,
+   "B_in_okr": true,
+   "A_meta": {
+    "aliases": "UR266",
+    "museum": "Proyecto Arqueol\u00f3gico Incahuasi",
+    "mnum": "13829"
+   },
+   "B_meta": {
+    "aliases": "UR275",
+    "museum": "Proyecto Arqueol\u00f3gico Incahuasi",
+    "mnum": "13836-2014"
+   }
+  },
+  {
+   "A": "KH0192",
+   "B": "KH0470",
+   "W": 95.546,
+   "matched": 14,
+   "V": 37,
+   "p2": 9.999000099990002e-05,
+   "null_mean": 12.6656,
+   "stage2": true,
+   "known": false,
+   "A_in_okr": true,
+   "B_in_okr": true,
+   "A_meta": {
+    "aliases": "UR1175, AS175",
+    "museum": "Museum f\u00fcr V\u00f6lkerkunde (Ethnologische Museum)",
+    "mnum": "VA42518"
+   },
+   "B_meta": {
+    "aliases": "UR233",
+    "museum": "Museum f\u00fcr V\u00f6lkerkunde (Ethnologische Museum)",
+    "mnum": "VA63038(B)"
+   }
+  }
+ ],
+ "K": 4,
+ "decision": {
+  "pipeline_ok": false,
+  "positive_controls": {
+   "KH0097/KH0586": true,
+   "KH0192/KH0470": true,
+   "KH0192/KH0469": false
+  },
+  "named": {
+   "KH0097/KH0586": {
+    "W": 134.74115493795688,
+    "stage1": true,
+    "stage2": true
+   },
+   "KH0192/KH0470": {
+    "W": 95.54580622330683,
+    "stage1": true,
+    "stage2": true
+   },
+   "KH0192/KH0469": {
+    "W": 81.22220345240358,
+    "stage1": false,
+    "stage2": false
+   },
+   "KH0502/KH0514": {
+    "W": 126.52508815486985,
+    "stage1": true,
+    "stage2": true
+   },
+   "KH0491/KH0503": {
+    "W": 139.38523132027132,
+    "stage1": true,
+    "stage2": false
+   }
+  },
+  "target_verdict": "NOT TESTABLE (pipeline failed: calibration or a positive control missed)",
+  "KH0491_KH0503_verdict": "NOT TESTABLE (pipeline failed)",
+  "confirmed_new_candidates": []
+ }
 }
