@@ -1,0 +1,68 @@
+{
+ "seed": 6463,
+ "next_free_seed": 6464,
+ "A0": {
+  "n_eligible": 109,
+  "hits": 2,
+  "pass": true
+ },
+ "G0_hash_mismatch": [],
+ "skipped_non_path_cords": 23,
+ "n_units": 65,
+ "n_khipus": 55,
+ "n_eligible": 162,
+ "eligible_by_parent_depth": {
+  "2": 135,
+  "3": 26,
+  "4": 1
+ },
+ "primary": {
+  "H": 2,
+  "null_mean": 1.0746,
+  "null_sd": 1.0108584668488463,
+  "null_max": 6,
+  "p": 0.29617038296170384
+ },
+ "without_KH0349": {
+  "H": 2,
+  "null_mean": 1.0892,
+  "null_sd": 1.0251065115391667,
+  "null_max": 7,
+  "p": 0.30186981301869814
+ },
+ "heldout_descriptive": {
+  "H": 0,
+  "null_mean": 0.0907,
+  "null_sd": 0.292016283792531,
+  "null_max": 2,
+  "p": 1.0,
+  "n_khipus": 3,
+  "n_eligible": 10
+ },
+ "controls": {
+  "calib_fpr_01": 0.005,
+  "power_3planted": 0.28,
+  "power_5planted_disclosed": 0.815,
+  "K_control": 1000,
+  "n_corpora": 200
+ },
+ "verdict": "not testable",
+ "kfg_status": "REPLICATED",
+ "hits": [
+  {
+   "khipu": "KH0183",
+   "parent": "p157s1",
+   "parent_depth": 2,
+   "value": 42,
+   "heldout": false
+  },
+  {
+   "khipu": "KH0536",
+   "parent": "p1s1",
+   "parent_depth": 2,
+   "value": 44,
+   "heldout": false
+  }
+ ],
+ "seconds": 12.6
+}
