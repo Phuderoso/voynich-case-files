@@ -3,8 +3,8 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: pre-registration** (written and pushed with the tool and a shuffled-colour smoke before any real KFG colour
-number on these pairs is computed).
+**Status: results appended** (pre-registration, tool and shuffled-colour smoke pushed as `72a18e1` before the real
+run; artefacts `4314e5e`).
 
 ## Why
 K088 closed the physical / rare-mark block of line 6 and named the next stop: K049 on the KFG, with the p_floor gate.
@@ -95,5 +95,81 @@ KFG statistics are shuffled noise and were not kept (smoke output deleted).
 ## Output
 `analysis/k089_results.json`, log `analysis/k089_run.log`. Run from `expeditions/khipu/`:
 `timeout 600 python3 tools/k089_kfg_block_colour_ceiling.py run`.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (run 20 Nov 2026 ~01:51 PT, America/Vancouver; 2.3 s; [`analysis/k089_results.json`](../analysis/k089_results.json), [log](../analysis/k089_run.log))
+Run after the pre-registration, tool and smoke were published as `72a18e1` (connector `push_files`); the tool on disk
+was byte-identical to the pushed one. Artefacts `4314e5e`. Nothing was cut by the wall.
+
+**Gates (all pass).** G0 hashes (OKR, KFG, 695 xlsx); K046 fixture 14/14; ceiling fixture 7/7 hand cases + 40/40
+random inventories equal to brute-force enumeration; **A0 values** (K010 starts 46/82, 39/40, 0/0, 20/20, 41/40);
+**A0 full**: the copied K049 loop on the OKR with K049's seeds reproduces `k049_results.json` with **zero mismatches**
+on all five pairs (n, A, verdicts, degeneracy reasons, p, null means, colour counts, copy-all, FPRs, power and curve,
+N2 p). KFG layer: 695 khipus with pendants, 694 grouped, 2 588 R5 pendants masked (= K073/K076).
+
+| Pair | n | A (KFG) | null mean | p (N1, R 10 000) | **A_max · p_floor (exact)** | copy-all | FPR perm / shift | power 25 % | Track A (frozen K049) | **Track B (with ceiling)** | OKR K049 → with ceiling | Mapping |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| KH0362·KH0049 | 12 | 6 | 5.50 | 0.496 | 6 · **1/2 ≥ α** | **fail** (A 12, p 0.093) | 0 / 0 | 0.00 | TOOL EXCLUDED | **NOT TESTABLE (margin ceiling)** | TOOL EXCLUDED → **NOT TESTABLE (ceiling 1/2)** | REPLICATED (not readable on either) |
+| KH0128·KH0137 | 10 | 0 | — | — | — | (p 1.00) | — | — | DEGENERATE (`HB` vs `EB`) | DEGENERATE | DEGENERATE | REPLICATED (not readable on either) |
+| KH0140·KH0483 | — | — | — | — | — | — | — | — | NOT TESTABLE (data) | **NOT TESTABLE (data)** | DEGENERATE (all `W`, 12/12) | NOT TESTABLE (data): KH0483 merged into KH0140 by the KFG |
+| KH0304·KH0303 | 7 | 3 | 0.85 | 0.0195 | 3 · **2/105 = 0.0190 ≥ α** | pass (A 7, p 0.0005) | 0 / 0 | 0.03 | NOT TESTABLE (power) | **NOT TESTABLE (margin ceiling)** | NOT TESTABLE → **NOT TESTABLE (ceiling 2/105)** | REPLICATED (not readable on either) |
+| KH0305·KH0301 | 8 | 4 | 1.00 | 0.0060 | 4 · 1/210 = 0.00476 < α | pass (A 8, p 0.0010) | 0.003 / **0.143** | 0.03 | TOOL EXCLUDED | **TOOL EXCLUDED** (shift) | TOOL EXCLUDED (unchanged) | REPLICATED (not readable on either) |
+
+**Same colours, recoded order.** On every pair the KFG colour inventory equals the OKR one up to the order of
+mottled components (OKR `KB:W`, `GG:AB`, `CB:W`, `KB:MB`, `AB:W`, `GG:AB:W` → KFG `W:KB`, `AB:GG`, `W:CB`,
+`MB:KB`, `W:AB`, `W:AB:GG`), none of which has a matching partner on either database, so no match is created or lost. Matching cords are the
+same ones K049 listed: KH0362·KH0049 the six `AB`=`AB` (values 1856, 974, 1146, 1095, 849, 790); KH0304·KH0303 `W`
+(22, 156) and `AB` (13); KH0305·KH0301 `W` (8, 57), `AB` (1), `GG` (3). n is unchanged (no `no_colour` units).
+The Monte Carlo p moved only by seed (0.500 → 0.496, 0.0173 → 0.0195, 0.00470 → 0.00600); the exact p of the observed
+A is 1/2, 2/105 and 1/210 on both databases.
+
+**Mapping.** Track A: 4/4 testable pairs REPLICATED (not readable on either); KH0140·KH0483 NOT TESTABLE (data).
+Track B (verdict of record): the same, **4/4 REPLICATED (not readable on either) + 1 NOT TESTABLE (data)**.
+**Corrections of K049 (published here, relabels of unreadable verdicts):** KH0362·KH0049 TOOL EXCLUDED → **NOT
+TESTABLE (margin ceiling, p_floor 1/2)**; KH0304·KH0303 NOT TESTABLE (power) → **NOT TESTABLE (margin ceiling,
+p_floor 2/105)**. No verdict becomes readable and no positive result changes.
+
+### Why the ceiling is the honest reading here
+- **KH0362·KH0049.** Urton's side has a single non-`AB` cord, so A can only be 5 or 6 and P(A = 6) = 1/2 exactly
+  (the `MB` cord must land on one of the six non-`AB` cords of KH0049). K049 blamed the copy-all control; the real cause
+  is the inventory: no arrangement of these colours can get below p = 1/2.
+- **KH0304·KH0303.** Two `W` and two `AB` on each side give at most 2 + 1 = 3 matches, reached with probability
+  2/105 = 0.0190 — almost double α. The observed 3 is that maximum; "power 0.03" was a symptom, the ceiling is the cause.
+- **KH0305·KH0301** is the only pair whose margins can reach α (1/210), and its observed 4 is that maximum (exact
+  p 0.00476 < 0.01). It is still not interpretable: one of seven cyclic offsets of B's colours is as extreme as the real
+  alignment (shift FPR 1/7 > 0.08), on both databases. Colour runs along the block can produce this agreement without
+  the cord-to-cord correspondence. Holm (descriptive) would reject it at its first step (0.0060 < 0.01); the shift gate
+  decides, as pre-registered.
+
+### Disclosed, not verdicts
+- **Every readable pair sits at its inventory maximum.** On KH0362·KH0049, KH0304·KH0303 and KH0305·KH0301 the
+  observed A equals A_max (6, 3, 4) on both databases — every possible colour match is realised. A joint probability
+  across pairs (1/2 · 2/105 · 1/210 ≈ 4.5 × 10⁻⁵ under independent N1) is **post hoc** and is not a result; it is a
+  candidate for a pre-registered pooled test with a shift-aware null (line 6), named here so it cannot be smuggled in.
+- **N2 within (cluster A, cluster B)** — CordGroups keys on KFG, same partitions as OKR: KH0362·KH0049 (8+4) p 0.251;
+  KH0304·KH0303 (4+3) p 0.0437; KH0305·KH0301 (4+4) p 0.0117. Agreement shrinks once colour blocks inside groups are
+  respected.
+- **`BY` ≡ `YB`:** no `BY`/`YB` on the units; p 0.507 / 0.0195 / 0.0052 (the last not interpreted). Non-zero units
+  identical to the primary (blocks have no zeros). Plant curves (0.10/0.15/0.25/0.40): KH0362·KH0049 all 0;
+  KH0304·KH0303 0.01/0.01/0.08/0.22; KH0305·KH0301 0.03/0.03/0.03/0.14.
+- **KFG census:** KH0362 UR122 (Museum of World Culture 1938.45.0228, Nazca) · KH0049 AS038/HP036 (MNAAHP 3550, Costa
+  Sur); KH0128 UR1114/AS114 (Berlin VA16148) · KH0137 UR1123/AS123 (Berlin VA47085); KH0304 UR067 · KH0303 UR066
+  (Puruchuco Museum s/n · 4a); KH0305 UR068 · KH0301 UR064 (Puruchuco Museum 2 · #3). KH0140 now carries the aliases
+  AS125, UR247 (VA42610), 16 pendants, 3 groups; the shared block sits at its start.
+
+**Headline: NOT READABLE, replicated; K049 corrected (two relabels).** On both databases the colour witness on the
+five K010 value blocks cannot speak at α = 0.01: one pair is degenerate, one is resolved away by the KFG merge, two are
+capped below α by their own colour margins, and the only pair whose margins can reach α fails the shift control.
+This does not touch K010/K073's value correspondences, says nothing about same object vs copy, and reads no khipu.
+No decipherment.
+
+### Next (line 9)
+K046–K049 (line 6 colour + physical block) is fully re-audited on KFG. Next: the K020 family with 1 000 null corpora
+and bar intervals (K085/K086 bars 74.8–82.6 across seeds), or a pre-registered pooled colour test with a shift-aware
+null on the K010 / K073 value blocks (the "all at maximum" observation above), with the p_floor gate from the start.
+Seeds 6478–6482 used; next free **6483**.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

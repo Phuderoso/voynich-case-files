@@ -310,3 +310,14 @@ design. The unconfirmed KH0240·KH0496 lead stays a lead. A colour code-*associa
 the K046 cross-tabs remains same-data and must stay labelled exploratory if run.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+## Correction (K089, 20 Nov 2026)
+[K089](K089-kfg-block-colour-ceiling.md) applied the K088 exact **margin-ceiling gate**, generalised to multi-colour
+equality (exact N1 distribution by dynamic programming): if p_floor = P(A = A_max) ≥ α, the pair is NOT TESTABLE by
+construction. Here: **KH0362·KH0049** A_max 6, p_floor = 1/2 → **NOT TESTABLE (margin ceiling)** rather than TOOL
+EXCLUDED (the copy-all failure was a symptom of the 11 + 1 `AB` margin); **KH0304·KH0303** A_max 3, p_floor = 2/105 =
+0.0190 ≥ 0.01 → **NOT TESTABLE (margin ceiling)** rather than NOT TESTABLE (power). KH0305·KH0301 (p_floor 1/210 < α)
+stays TOOL EXCLUDED by the shift control; the two degenerate pairs are unchanged. The K049 headline "no primary pair
+supported" stands. Replicated on KFG in K089 (KH0140·KH0483 not testable there: KH0483 merged into KH0140).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
