@@ -1,0 +1,12 @@
+A0 observed {'n': 23, 'modal_count': 4, 'modal_share': 0.17391304347826086, 'modal_key': ['L', 4], 'q_sing': 0.43478260869565216, 'r_left': 0.6956521739130435, 'n_left': 16, 'n_sing': 10, 'G_distinct': 23, 'n_both': 0, 'D_distinct': {'n': 23, 'n_sing': 10, 'q_d': 0.43478260869565216}}
+A0 p {'p1': 0.9308069193080692, 'p2': 0.0032996700329967, 'p3': 0.148985101489851, 'p_q_d_descriptive': 0.0031996800319968005} {'pi_mean': 0.2705386840983986, 'pi_sd': 0.07816386760466261, 'q_mean': 0.12479154718663699, 'q_sd': 0.09191300102156859, 'r_mean': 0.500618714541425, 'r_sd': 0.13487815348638854, 'G_mean': 14.1134, 'n_pairs_mean': 14.1195, 'q_d_mean': 0.12445579748733389, 'q_d_sd': 0.09161249545955737, 'rank_q': 32, 'rank_pi': 9308} 10.4
+A0 calib {'capped': False, 'n': 200, 'fpr_H1': 0.01, 'fpr_H2': 0.005, 'fpr_H3': 0.025, 'fpr_any': 0.035} 12.0
+A0 power {'H1': (0.16, 200), 'H2': (0.975, 200), 'H3': (0.045, 200)} 18.2
+A0 exact True
+gates {'G0_hash_mismatch': 0, 'G1_partition_rate': 0.9985611510791367, 'pass_data': True}
+data {'n_eligible': 428, 'n_holdout': 426, 'n_holdout_okr_shared': 379, 'n_holdout_kfg_only': 47, 'discovery_present': True}
+KFG observed {'n': 72, 'modal_count': 33, 'modal_share': 0.4583333333333333, 'modal_key': ['R', 6], 'q_sing': 0.8055555555555556, 'r_left': 0.3611111111111111, 'n_left': 26, 'n_sing': 58, 'G_distinct': 71, 'n_both': 1, 'D_distinct': {'n': 71, 'n_sing': 57, 'q_d': 0.8028169014084507}}
+KFG p {'p1': 0.014298570142985701, 'p2': 9.999000099990002e-05, 'p3': 0.27857214278572145, 'p_q_d_descriptive': 9.999000099990002e-05} {'pi_mean': 0.25264320406381274, 'pi_sd': 0.0734576141761784, 'q_mean': 0.15004904196440508, 'q_sd': 0.09337676978725952, 'r_mean': 0.5006366489293652, 'r_sd': 0.1303210942951473, 'G_mean': 15.5123, 'n_pairs_mean': 15.5229, 'q_d_mean': 0.14956717157142702, 'q_d_sd': 0.09295319882076897, 'rank_q': 0, 'rank_pi': 142} 12.7
+KFG calib {'capped': False, 'n': 200, 'fpr_H1': 0.025, 'fpr_H2': 0.01, 'fpr_H3': 0.005, 'fpr_any': 0.04} 14.5
+KFG power {'H1': (0.16, 200), 'H2': (0.905, 200), 'H3': (0.065, 200)} 21.9
+verdicts {'H1': 'not testable', 'H2': 'supported', 'H3': 'not testable'} replication {'H1': 'REPLICATED (not testable)', 'H2': 'REPLICATED', 'H3': 'REPLICATED (not testable)'} secs 41.0
