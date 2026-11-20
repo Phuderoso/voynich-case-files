@@ -1,0 +1,1030 @@
+{
+ "cycle": "K088",
+ "smoke": false,
+ "seeds": {
+  "null": 6473,
+  "calib": 6474,
+  "power": 6475,
+  "n2": 6476,
+  "sens": 6477
+ },
+ "copy_all_seed": 6575,
+ "next_free_seed": 6478,
+ "alpha": 0.008333333333333333,
+ "fpr_gate": 0.08,
+ "power_bar": 0.5,
+ "f_plant": 0.5,
+ "published_okr_verdicts": {
+  "KH0097/KH0586": {
+   "termination": "NOT SUPPORTED",
+   "knot_dir": "DEGENERATE"
+  },
+  "KH0192/KH0470": {
+   "termination": "TOOL EXCLUDED",
+   "knot_dir": "DEGENERATE"
+  },
+  "KH0192/KH0469": {
+   "termination": "NOT TESTABLE",
+   "knot_dir": "DEGENERATE"
+  }
+ },
+ "pairs": {
+  "KH0097/KH0586": {
+   "matched_groups": 13,
+   "V": [
+    7,
+    7,
+    5,
+    7,
+    6,
+    7,
+    7,
+    7,
+    7,
+    4,
+    9,
+    8,
+    8
+   ],
+   "V_tot": 89,
+   "aligned_nonleader_units": 89,
+   "primary": {
+    "termination": {
+     "field": "termination",
+     "rare_label": "B",
+     "n": 89,
+     "n_rare_A": 4,
+     "n_rare_B": 1,
+     "observed_A": 1,
+     "excluded_units": {},
+     "counts_A": {
+      "K": 83,
+      "B": 4,
+      "U": 2
+     },
+     "counts_B": {
+      "K": 87,
+      "B": 1,
+      "U": 1
+     },
+     "degenerate": false,
+     "role": "primary",
+     "expected_hypergeometric": 0.0449438202247191,
+     "positive_control_copy_all": {
+      "A": 4,
+      "expected": 4,
+      "p": 0.0004997501249375312,
+      "passed": true
+     },
+     "null_mean": 0.0448,
+     "null_sd": 0.206864593393843,
+     "null_q95": 0.0,
+     "null_max": 1,
+     "null_min": 0,
+     "p": 0.0448955104489551,
+     "calibration": {
+      "fpr_perm": 0.0,
+      "n": 1000,
+      "shift_offsets": 72,
+      "min_offset": 9,
+      "fpr_shift": 0.0,
+      "shift_p_min": 0.0448955104489551
+     },
+     "power": {
+      "f": 0.5,
+      "k_planted": 2,
+      "power": 0.975,
+      "median_p": 0.004997501249375313,
+      "n": 200,
+      "curve": {
+       "0.25": 0.03,
+       "0.5": 0.98,
+       "0.75": 1.0,
+       "1.0": 1.0
+      },
+      "curve_n": 100,
+      "note": "50% sharing plant of A's rare marks; curve is descriptive"
+     },
+     "N2_within_group": {
+      "null_mean": 0.1422,
+      "p": 0.14228577142285773,
+      "note": "descriptive, not a verdict"
+     },
+     "verdict": "NOT SUPPORTED",
+     "matching_units": [
+      {
+       "gA": 10,
+       "gB": 10,
+       "posA": 7,
+       "posB": 9,
+       "value": 0,
+       "featA": "B",
+       "featB": "B"
+      }
+     ],
+     "ceiling": {
+      "applicable": true,
+      "A_max": 1,
+      "p_floor": 0.0449438202247191,
+      "p_exact_obs": 0.0449438202247191,
+      "fires": true,
+      "min_equal_margin_for_alpha": 2,
+      "conditional_power_at_alpha": 0.0
+     },
+     "verdict_with_ceiling": "NOT TESTABLE (margin ceiling)"
+    },
+    "knot_dir": {
+     "field": "knot_dir",
+     "rare_label": "S",
+     "n": 82,
+     "n_rare_A": 18,
+     "n_rare_B": 0,
+     "observed_A": 0,
+     "excluded_units": {
+      "A:no_usable_direction|B:no_usable_direction": 7
+     },
+     "counts_A": {
+      "TIE": 9,
+      "Z": 55,
+      "S": 18
+     },
+     "counts_B": {
+      "Z": 82
+     },
+     "degenerate": true,
+     "role": "primary",
+     "expected_hypergeometric": 0.0,
+     "verdict": "DEGENERATE",
+     "p": null,
+     "note": "either side has 0 rares or is all-rare on the n units; A is fixed by the margins and N1 has max = min",
+     "ceiling": {
+      "applicable": false,
+      "reason": "degenerate"
+     },
+     "verdict_with_ceiling": "DEGENERATE"
+    }
+   },
+   "sensitivities": {
+    "termination_with_leaders": {
+     "field": "termination",
+     "rare_label": "B",
+     "n": 102,
+     "n_rare_A": 4,
+     "n_rare_B": 1,
+     "observed_A": 1,
+     "excluded_units": {},
+     "counts_A": {
+      "K": 96,
+      "B": 4,
+      "U": 2
+     },
+     "counts_B": {
+      "K": 100,
+      "B": 1,
+      "U": 1
+     },
+     "degenerate": false,
+     "note": "disclosed, not a verdict",
+     "p": 0.039896010398960104,
+     "null_mean": 0.0392156862745098
+    },
+    "termination_nonzero_value_units": {
+     "field": "termination",
+     "rare_label": "B",
+     "n": 82,
+     "n_rare_A": 3,
+     "n_rare_B": 0,
+     "observed_A": 0,
+     "excluded_units": {},
+     "counts_A": {
+      "K": 78,
+      "B": 3,
+      "U": 1
+     },
+     "counts_B": {
+      "K": 81,
+      "U": 1
+     },
+     "degenerate": true,
+     "note": "disclosed, not a verdict",
+     "p": null
+    },
+    "knot_dir_with_leaders": {
+     "field": "knot_dir",
+     "rare_label": "S",
+     "n": 95,
+     "n_rare_A": 21,
+     "n_rare_B": 0,
+     "observed_A": 0,
+     "excluded_units": {
+      "A:no_usable_direction|B:no_usable_direction": 7
+     },
+     "counts_A": {
+      "TIE": 9,
+      "Z": 65,
+      "S": 21
+     },
+     "counts_B": {
+      "Z": 95
+     },
+     "degenerate": true,
+     "note": "disclosed, not a verdict",
+     "p": null
+    },
+    "knot_dir_nonzero_value_units": {
+     "field": "knot_dir",
+     "rare_label": "S",
+     "n": 82,
+     "n_rare_A": 18,
+     "n_rare_B": 0,
+     "observed_A": 0,
+     "excluded_units": {},
+     "counts_A": {
+      "TIE": 9,
+      "Z": 55,
+      "S": 18
+     },
+     "counts_B": {
+      "Z": 82
+     },
+     "degenerate": true,
+     "note": "disclosed, not a verdict",
+     "p": null
+    }
+   }
+  },
+  "KH0192/KH0470": {
+   "matched_groups": 14,
+   "V": [
+    1,
+    2,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    1,
+    1,
+    1,
+    1
+   ],
+   "V_tot": 37,
+   "aligned_nonleader_units": 37,
+   "primary": {
+    "termination": {
+     "field": "termination",
+     "rare_label": "B",
+     "n": 37,
+     "n_rare_A": 1,
+     "n_rare_B": 3,
+     "observed_A": 0,
+     "excluded_units": {},
+     "counts_A": {
+      "K": 36,
+      "B": 1
+     },
+     "counts_B": {
+      "B": 3,
+      "K": 34
+     },
+     "degenerate": false,
+     "role": "primary",
+     "expected_hypergeometric": 0.08108108108108109,
+     "positive_control_copy_all": {
+      "A": 1,
+      "expected": 1,
+      "p": 0.02498750624687656,
+      "passed": false
+     },
+     "null_mean": 0.0781,
+     "null_sd": 0.26832888402108335,
+     "null_q95": 1.0,
+     "null_max": 1,
+     "null_min": 0,
+     "p": 1.0,
+     "calibration": {
+      "fpr_perm": 0.0,
+      "n": 1000,
+      "shift_offsets": 30,
+      "min_offset": 4,
+      "fpr_shift": 0.0,
+      "shift_p_min": 0.0781921807819218
+     },
+     "power": {
+      "f": 0.5,
+      "k_planted": 1,
+      "power": 0.0,
+      "median_p": 0.10744627686156921,
+      "n": 200,
+      "curve": {
+       "0.25": 0.0,
+       "0.5": 0.0,
+       "0.75": 0.0,
+       "1.0": 0.0
+      },
+      "curve_n": 100,
+      "note": "50% sharing plant of A's rare marks; curve is descriptive"
+     },
+     "N2_within_group": {
+      "null_mean": 0.0,
+      "p": 1.0,
+      "note": "descriptive, not a verdict"
+     },
+     "verdict": "TOOL EXCLUDED",
+     "matching_units": [],
+     "ceiling": {
+      "applicable": true,
+      "A_max": 1,
+      "p_floor": 0.08108108108108109,
+      "p_exact_obs": 1.0,
+      "fires": true,
+      "min_equal_margin_for_alpha": 2,
+      "conditional_power_at_alpha": 0.0
+     },
+     "verdict_with_ceiling": "NOT TESTABLE (margin ceiling)"
+    },
+    "knot_dir": {
+     "field": "knot_dir",
+     "rare_label": "S",
+     "n": 27,
+     "n_rare_A": 0,
+     "n_rare_B": 6,
+     "observed_A": 0,
+     "excluded_units": {
+      "A:no_usable_direction|B:no_usable_direction": 10
+     },
+     "counts_A": {
+      "Z": 25,
+      "TIE": 2
+     },
+     "counts_B": {
+      "Z": 21,
+      "S": 6
+     },
+     "degenerate": true,
+     "role": "primary",
+     "expected_hypergeometric": 0.0,
+     "verdict": "DEGENERATE",
+     "p": null,
+     "note": "either side has 0 rares or is all-rare on the n units; A is fixed by the margins and N1 has max = min",
+     "ceiling": {
+      "applicable": false,
+      "reason": "degenerate"
+     },
+     "verdict_with_ceiling": "DEGENERATE"
+    }
+   },
+   "sensitivities": {
+    "termination_with_leaders": {
+     "field": "termination",
+     "rare_label": "B",
+     "n": 51,
+     "n_rare_A": 1,
+     "n_rare_B": 3,
+     "observed_A": 0,
+     "excluded_units": {},
+     "counts_A": {
+      "K": 50,
+      "B": 1
+     },
+     "counts_B": {
+      "B": 3,
+      "K": 48
+     },
+     "degenerate": false,
+     "note": "disclosed, not a verdict",
+     "p": 1.0,
+     "null_mean": 0.058823529411764705
+    },
+    "termination_nonzero_value_units": {
+     "field": "termination",
+     "rare_label": "B",
+     "n": 27,
+     "n_rare_A": 0,
+     "n_rare_B": 1,
+     "observed_A": 0,
+     "excluded_units": {},
+     "counts_A": {
+      "K": 27
+     },
+     "counts_B": {
+      "K": 26,
+      "B": 1
+     },
+     "degenerate": true,
+     "note": "disclosed, not a verdict",
+     "p": null
+    },
+    "knot_dir_with_leaders": {
+     "field": "knot_dir",
+     "rare_label": "S",
+     "n": 41,
+     "n_rare_A": 1,
+     "n_rare_B": 9,
+     "observed_A": 1,
+     "excluded_units": {
+      "A:no_usable_direction|B:no_usable_direction": 10
+     },
+     "counts_A": {
+      "Z": 38,
+      "TIE": 2,
+      "S": 1
+     },
+     "counts_B": {
+      "Z": 29,
+      "S": 9,
+      "TIE": 3
+     },
+     "degenerate": false,
+     "note": "disclosed, not a verdict",
+     "p": 0.21207879212078792,
+     "null_mean": 0.21951219512195122
+    },
+    "knot_dir_nonzero_value_units": {
+     "field": "knot_dir",
+     "rare_label": "S",
+     "n": 27,
+     "n_rare_A": 0,
+     "n_rare_B": 6,
+     "observed_A": 0,
+     "excluded_units": {},
+     "counts_A": {
+      "Z": 25,
+      "TIE": 2
+     },
+     "counts_B": {
+      "Z": 21,
+      "S": 6
+     },
+     "degenerate": true,
+     "note": "disclosed, not a verdict",
+     "p": null
+    }
+   }
+  },
+  "KH0192/KH0469": {
+   "matched_groups": 15,
+   "V": [
+    1,
+    0,
+    1,
+    2,
+    3,
+    3,
+    4,
+    3,
+    2,
+    4,
+    2,
+    4,
+    3,
+    2,
+    2
+   ],
+   "V_tot": 36,
+   "aligned_nonleader_units": 36,
+   "primary": {
+    "termination": {
+     "field": "termination",
+     "rare_label": "B",
+     "n": 36,
+     "n_rare_A": 3,
+     "n_rare_B": 2,
+     "observed_A": 0,
+     "excluded_units": {},
+     "counts_A": {
+      "K": 33,
+      "B": 3
+     },
+     "counts_B": {
+      "K": 34,
+      "B": 2
+     },
+     "degenerate": false,
+     "role": "primary",
+     "expected_hypergeometric": 0.16666666666666666,
+     "positive_control_copy_all": {
+      "A": 3,
+      "expected": 3,
+      "p": 0.0004997501249375312,
+      "passed": true
+     },
+     "null_mean": 0.1659,
+     "null_sd": 0.3857164632213668,
+     "null_q95": 1.0,
+     "null_max": 2,
+     "null_min": 0,
+     "p": 1.0,
+     "calibration": {
+      "fpr_perm": 0.001,
+      "n": 1000,
+      "shift_offsets": 29,
+      "min_offset": 4,
+      "fpr_shift": 0.034482758620689655,
+      "shift_p_min": 0.0052994700529947
+     },
+     "power": {
+      "f": 0.5,
+      "k_planted": 2,
+      "power": 0.035,
+      "median_p": 0.027486256871564217,
+      "n": 200,
+      "curve": {
+       "0.25": 0.0,
+       "0.5": 0.06,
+       "0.75": 0.06,
+       "1.0": 1.0
+      },
+      "curve_n": 100,
+      "note": "50% sharing plant of A's rare marks; curve is descriptive"
+     },
+     "N2_within_group": {
+      "null_mean": 0.0,
+      "p": 1.0,
+      "note": "descriptive, not a verdict"
+     },
+     "verdict": "NOT TESTABLE",
+     "matching_units": [],
+     "ceiling": {
+      "applicable": true,
+      "A_max": 2,
+      "p_floor": 0.004761904761904762,
+      "p_exact_obs": 1.0,
+      "fires": false,
+      "min_equal_margin_for_alpha": 2,
+      "conditional_power_at_alpha": null
+     },
+     "verdict_with_ceiling": "NOT TESTABLE"
+    },
+    "knot_dir": {
+     "field": "knot_dir",
+     "rare_label": "S",
+     "n": 21,
+     "n_rare_A": 0,
+     "n_rare_B": 2,
+     "observed_A": 0,
+     "excluded_units": {
+      "A:no_usable_direction|B:no_usable_direction": 15
+     },
+     "counts_A": {
+      "Z": 21
+     },
+     "counts_B": {
+      "S": 2,
+      "Z": 17,
+      "TIE": 2
+     },
+     "degenerate": true,
+     "role": "primary",
+     "expected_hypergeometric": 0.0,
+     "verdict": "DEGENERATE",
+     "p": null,
+     "note": "either side has 0 rares or is all-rare on the n units; A is fixed by the margins and N1 has max = min",
+     "ceiling": {
+      "applicable": false,
+      "reason": "degenerate"
+     },
+     "verdict_with_ceiling": "DEGENERATE"
+    }
+   },
+   "sensitivities": {
+    "termination_with_leaders": {
+     "field": "termination",
+     "rare_label": "B",
+     "n": 51,
+     "n_rare_A": 4,
+     "n_rare_B": 2,
+     "observed_A": 0,
+     "excluded_units": {},
+     "counts_A": {
+      "K": 47,
+      "B": 4
+     },
+     "counts_B": {
+      "K": 49,
+      "B": 2
+     },
+     "degenerate": false,
+     "note": "disclosed, not a verdict",
+     "p": 1.0,
+     "null_mean": 0.1568627450980392
+    },
+    "termination_nonzero_value_units": {
+     "field": "termination",
+     "rare_label": "B",
+     "n": 21,
+     "n_rare_A": 1,
+     "n_rare_B": 0,
+     "observed_A": 0,
+     "excluded_units": {},
+     "counts_A": {
+      "K": 20,
+      "B": 1
+     },
+     "counts_B": {
+      "K": 21
+     },
+     "degenerate": true,
+     "note": "disclosed, not a verdict",
+     "p": null
+    },
+    "knot_dir_with_leaders": {
+     "field": "knot_dir",
+     "rare_label": "S",
+     "n": 36,
+     "n_rare_A": 1,
+     "n_rare_B": 11,
+     "observed_A": 1,
+     "excluded_units": {
+      "A:no_usable_direction|B:no_usable_direction": 15
+     },
+     "counts_A": {
+      "Z": 35,
+      "S": 1
+     },
+     "counts_B": {
+      "S": 11,
+      "Z": 20,
+      "TIE": 5
+     },
+     "degenerate": false,
+     "note": "disclosed, not a verdict",
+     "p": 0.30416958304169583,
+     "null_mean": 0.3055555555555556
+    },
+    "knot_dir_nonzero_value_units": {
+     "field": "knot_dir",
+     "rare_label": "S",
+     "n": 21,
+     "n_rare_A": 0,
+     "n_rare_B": 2,
+     "observed_A": 0,
+     "excluded_units": {},
+     "counts_A": {
+      "Z": 21
+     },
+     "counts_B": {
+      "S": 2,
+      "Z": 17,
+      "TIE": 2
+     },
+     "degenerate": true,
+     "note": "disclosed, not a verdict",
+     "p": null
+    }
+   }
+  }
+ },
+ "G0": "pass",
+ "k048_fixture_passed": true,
+ "k048_fixture_cases": 27,
+ "ceiling_fixture": [
+  {
+   "case": [
+    87,
+    4,
+    1
+   ],
+   "expected": 0.04597701149425287,
+   "got": 0.04597701149425287
+  },
+  {
+   "case": [
+    5,
+    2,
+    2
+   ],
+   "expected": 0.1,
+   "got": 0.1
+  },
+  {
+   "case": [
+    36,
+    3,
+    2
+   ],
+   "expected": 0.004761904761904762,
+   "got": 0.004761904761904762
+  },
+  {
+   "case": [
+    37,
+    1,
+    3
+   ],
+   "expected": 0.08108108108108109,
+   "got": 0.08108108108108109
+  },
+  {
+   "case": [
+    10,
+    5,
+    5
+   ],
+   "expected": 0.003968253968253968,
+   "got": 0.003968253968253968
+  },
+  {
+   "case": "sf(87,4,1,0) == 1",
+   "expected": 1.0,
+   "got": 1.0
+  },
+  {
+   "case": "sf(36,3,2,1) == 1 - C(33,2)/C(36,2)",
+   "expected": 0.16190476190476188,
+   "got": 0.1619047619047619
+  }
+ ],
+ "kfg_knot_fixture": [
+  {
+   "case": "2S(28.0,Z),20;6L(35.5,Z),6",
+   "expected": [
+    "Z",
+    "Z",
+    "Z"
+   ],
+   "got": [
+    "Z",
+    "Z",
+    "Z"
+   ]
+  },
+  {
+   "case": "1S(21.0,S),100",
+   "expected": [
+    "S"
+   ],
+   "got": [
+    "S"
+   ]
+  },
+  {
+   "case": "3S(10.0,SZZ),300",
+   "expected": [
+    "S",
+    "Z",
+    "Z"
+   ],
+   "got": [
+    "S",
+    "Z",
+    "Z"
+   ]
+  },
+  {
+   "case": "2L(9.0,S),2[AXD]",
+   "expected": [
+    "S"
+   ],
+   "got": [
+    "S"
+   ]
+  },
+  {
+   "case": "1E(30.0,U),1",
+   "expected": [
+    "U"
+   ],
+   "got": [
+    "U"
+   ]
+  },
+  {
+   "case": "",
+   "expected": [],
+   "got": []
+  },
+  {
+   "case": null,
+   "expected": [],
+   "got": []
+  }
+ ],
+ "F0": {
+  "got": {
+   "KH0097/KH0586": {
+    "termination": [
+     87,
+     4,
+     1,
+     1
+    ],
+    "knot_dir": [
+     82,
+     18,
+     0,
+     0
+    ]
+   },
+   "KH0192/KH0470": {
+    "termination": [
+     37,
+     1,
+     3,
+     0
+    ],
+    "knot_dir": [
+     27,
+     0,
+     6,
+     0
+    ]
+   },
+   "KH0192/KH0469": {
+    "termination": [
+     36,
+     3,
+     2,
+     0
+    ],
+    "knot_dir": [
+     21,
+     0,
+     2,
+     0
+    ]
+   }
+  },
+  "published": {
+   "KH0097/KH0586": {
+    "termination": [
+     87,
+     4,
+     1,
+     1
+    ],
+    "knot_dir": [
+     82,
+     18,
+     0,
+     0
+    ]
+   },
+   "KH0192/KH0470": {
+    "termination": [
+     37,
+     1,
+     3,
+     0
+    ],
+    "knot_dir": [
+     27,
+     0,
+     6,
+     0
+    ]
+   },
+   "KH0192/KH0469": {
+    "termination": [
+     36,
+     3,
+     2,
+     0
+    ],
+    "knot_dir": [
+     21,
+     0,
+     2,
+     0
+    ]
+   }
+  },
+  "pass_": true
+ },
+ "okr_ceiling": {
+  "KH0097/KH0586": {
+   "termination": {
+    "applicable": true,
+    "A_max": 1,
+    "p_floor": 0.04597701149425287,
+    "p_exact_obs": 0.04597701149425287,
+    "fires": true,
+    "min_equal_margin_for_alpha": 2,
+    "conditional_power_at_alpha": 0.0,
+    "k048_verdict": "NOT SUPPORTED",
+    "verdict_with_ceiling": "NOT TESTABLE (margin ceiling)"
+   },
+   "knot_dir": {
+    "applicable": false,
+    "reason": "degenerate",
+    "k048_verdict": "DEGENERATE",
+    "verdict_with_ceiling": "DEGENERATE"
+   }
+  },
+  "KH0192/KH0470": {
+   "termination": {
+    "applicable": true,
+    "A_max": 1,
+    "p_floor": 0.08108108108108109,
+    "p_exact_obs": 1.0,
+    "fires": true,
+    "min_equal_margin_for_alpha": 2,
+    "conditional_power_at_alpha": 0.0,
+    "k048_verdict": "TOOL EXCLUDED",
+    "verdict_with_ceiling": "NOT TESTABLE (margin ceiling)"
+   },
+   "knot_dir": {
+    "applicable": false,
+    "reason": "degenerate",
+    "k048_verdict": "DEGENERATE",
+    "verdict_with_ceiling": "DEGENERATE"
+   }
+  },
+  "KH0192/KH0469": {
+   "termination": {
+    "applicable": true,
+    "A_max": 2,
+    "p_floor": 0.004761904761904762,
+    "p_exact_obs": 1.0,
+    "fires": false,
+    "min_equal_margin_for_alpha": 2,
+    "conditional_power_at_alpha": null,
+    "k048_verdict": "NOT TESTABLE",
+    "verdict_with_ceiling": "NOT TESTABLE"
+   },
+   "knot_dir": {
+    "applicable": false,
+    "reason": "degenerate",
+    "k048_verdict": "DEGENERATE",
+    "verdict_with_ceiling": "DEGENERATE"
+   }
+  }
+ },
+ "kfg_data": {
+  "n_with_pendants": 695,
+  "n_grouped": 694,
+  "G1_bad": 1,
+  "n_eligible": 495,
+  "n_R5_masked": 2588,
+  "pair_khipus_eligible": {
+   "KH0097": true,
+   "KH0192": true,
+   "KH0469": true,
+   "KH0470": true,
+   "KH0586": true
+  }
+ },
+ "alignment": {
+  "KH0097/KH0586": {
+   "groups": 13,
+   "V": 89
+  },
+  "KH0192/KH0470": {
+   "groups": 14,
+   "V": 37
+  },
+  "KH0192/KH0469": {
+   "groups": 15,
+   "V": 36
+  }
+ },
+ "decision": {
+  "trackA_frozen_k048": {
+   "KH0097/KH0586": {
+    "termination": "REPLICATED",
+    "knot_dir": "REPLICATED (not readable on either)"
+   },
+   "KH0192/KH0470": {
+    "termination": "REPLICATED (not readable on either)",
+    "knot_dir": "REPLICATED (not readable on either)"
+   },
+   "KH0192/KH0469": {
+    "termination": "REPLICATED (not readable on either)",
+    "knot_dir": "REPLICATED (not readable on either)"
+   }
+  },
+  "trackB_with_ceiling": {
+   "KH0097/KH0586": {
+    "termination": "REPLICATED (not readable on either)",
+    "knot_dir": "REPLICATED (not readable on either)"
+   },
+   "KH0192/KH0470": {
+    "termination": "REPLICATED (not readable on either)",
+    "knot_dir": "REPLICATED (not readable on either)"
+   },
+   "KH0192/KH0469": {
+    "termination": "REPLICATED (not readable on either)",
+    "knot_dir": "REPLICATED (not readable on either)"
+   }
+  },
+  "k048_corrections": [
+   {
+    "pair": "KH0097/KH0586",
+    "field": "termination",
+    "published": "NOT SUPPORTED",
+    "with_ceiling": "NOT TESTABLE (margin ceiling)"
+   },
+   {
+    "pair": "KH0192/KH0470",
+    "field": "termination",
+    "published": "TOOL EXCLUDED",
+    "with_ceiling": "NOT TESTABLE (margin ceiling)"
+   }
+  ]
+ },
+ "headline": "NOT READABLE: no primary pair-field readable on KFG once the margin ceiling is applied",
+ "sec": 4.2
+}
