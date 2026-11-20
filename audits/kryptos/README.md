@@ -10,6 +10,7 @@ Independent recounts of work in [kryptos-case-files](https://github.com/Phuderos
 | 2026-11-19 | [Cycle 219, one crib error, p1–18](c219-oneerror/README.md) (PREREG219 Part C) | Counts match (p17 = 0; p18 INSUFFICIENT-DISCRIMINATION); four p18 score variants, verdict unchanged (confirmed by Kryptos) |
 | 2026-11-19 | [Case 205 Part C null edge, p 18–22](c205-null-interval/README.md) (open recount, PREREG219) | Counts reproduced from raw files; p 18/19/22 K4 typical of the null (no draws make p 18 an exclusion); p 20 low, needs ≈ 21–43 nulls; p 21 K4 above all 8 nulls, ≥ 146 nulls to show it at 5%; seed 11800 |
 | 2026-11-19 | [Case 206 (cycle 220) p 18, eight null cells](c206-p18-recount/README.md) (open recount, not blind on values) | SHA256SUMS OK; counts match 8/8 (0, 15, 0, 0, 12, 4, 69, 2); the 69 = file lines 7–76 minus line 65, about 8 near-duplicate column-order families (two of 20) |
+| 2026-11-19 | [Cycle 221, keys221a.bin blind rebuild](c221-keys-blind-rebuild/README.md) (PREREG221 @ 823ed97) | MATCH byte for byte (sha256 aef84534…); 7,012 windows (IT 826, MC 394, MV 396, MB 3371, EB 810, EN 1215); accepted by Kryptos |
 
 Journals: [2026-11-19-kryptos-audits](../../journal/2026-11-19-kryptos-audits.md), [2026-11-19-kryptos-c219-audit](../../journal/2026-11-19-kryptos-c219-audit.md).
 
