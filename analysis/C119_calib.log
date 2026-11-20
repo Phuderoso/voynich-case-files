@@ -1,0 +1,65 @@
+calib phase A (step-1 of the 4 base controls): todo 480
+calib phase B: GPOW step-1 todo 120 ; step-2 todo 20
+{
+ "R1": 10,
+ "CONV_TOL1": 5.0,
+ "flag_step1": false,
+ "RB": 5,
+ "CONV_TOLB": 0.001,
+ "flag_step2": false,
+ "grid_check_observed_controls": {
+  "CAE_DV_W1": {
+   "logit_PASS": true,
+   "fit_minus_logit_grid": 0.0015988751401891932,
+   "fit_minus_lin_grid": 0.21626243292121217
+  },
+  "CAE_DV_W2": {
+   "logit_PASS": true,
+   "fit_minus_logit_grid": 0.00015218650514725596,
+   "fit_minus_lin_grid": 0.0
+  },
+  "CAE_V": {
+   "logit_PASS": true,
+   "fit_minus_logit_grid": 2.5411526370735373,
+   "fit_minus_lin_grid": 0.13714135307236575
+  },
+  "HEB_ABJ": {
+   "logit_PASS": true,
+   "fit_minus_logit_grid": 0.017121798227890395,
+   "fit_minus_lin_grid": 0.00013755462714470923
+  },
+  "GPOW": {
+   "logit_PASS": true,
+   "fit_minus_logit_grid": 0.0004077627672813833,
+   "fit_minus_lin_grid": 0.08690012028091587
+  }
+ },
+ "all_control_grids_PASS": true,
+ "table_step1": {
+  "R1=10 tol=1.0": "7/20",
+  "R1=10 tol=2.0": "11/20",
+  "R1=10 tol=5.0": "20/20",
+  "R1=15 tol=1.0": "7/20",
+  "R1=15 tol=2.0": "12/20",
+  "R1=15 tol=5.0": "20/20",
+  "R1=20 tol=1.0": "8/20",
+  "R1=20 tol=2.0": "15/20",
+  "R1=20 tol=5.0": "20/20",
+  "R1=30 tol=1.0": "13/20",
+  "R1=30 tol=2.0": "16/20",
+  "R1=30 tol=5.0": "20/20"
+ },
+ "table_step2": {
+  "RB=5 tol=0.001": "20/20",
+  "RB=5 tol=0.01": "20/20",
+  "RB=5 tol=0.1": "20/20",
+  "RB=10 tol=0.001": "20/20",
+  "RB=10 tol=0.01": "20/20",
+  "RB=10 tol=0.1": "20/20"
+ },
+ "seed": 11803,
+ "controls_only": true,
+ "manuscript_loaded": false,
+ "tool_sha256": "c65c8077725bb23e97e9bfac332242ec18ee1f1a3e830ae856e5c64ed9ce4a3b",
+ "seconds_last_call": 209.6
+}
