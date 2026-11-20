@@ -204,6 +204,7 @@ Stage `calib` (seed 11803), on the controls only (CAE-DV W1 and W2, CAE-V, HEB-A
 ## 8. Anchor gates (before the run)
 
 - **Tool frozen:** `tools/c119_hmm_line_stream.py` is committed with its sha256 before `calib`.
+  **Frozen 2026-11-20 ~00:45 PT: sha256 `c65c8077725bb23e97e9bfac332242ec18ee1f1a3e830ae856e5c64ed9ce4a3b`** (run amendments R1–R10 below were written before it ran).
 - **A0:** the token streams for ZL3b A/B1/B2 and CAE-DV W1 equal C117/C118's (sha printed). W2 shares no line with W1.
 - **A1 (zero point of S):** for every text, ℓ(B = reset to π) on the line path equals the C117 word-row forward pass at the step-1 parameters, to 1e-6 nats.
   (Pre-check: |diff| = 0.0 on W1.)
@@ -259,6 +260,54 @@ The K086 lesson applies: a bootstrap 95% interval (seed 11804) is printed beside
   - **NOT TESTABLE:** gate 1, 2 or 3 fails, or all three primary strata are not testable.
   - A pass would mean that the order of words inside lines carries information about the hidden state at word boundaries beyond what the word content gives.
     It is **not** a decipherment and does not identify a language.
+
+## Run amendments (written 2026-11-20 ~00:45 PT, before `anchor`, `calib` or any run; no C119 text was fitted or shuffled to decide them)
+
+The design above leaves some implementation choices open. Each is fixed here, before the stage it affects. The only check made was a smoke test of the code paths on a
+**synthetic random text** (7 letters, 120 lines, throwaway seed 0); no Caesar, Hebrew or manuscript text was used, and its numbers are not reported.
+
+- **R1 (stages and anchors).** `anchor` runs before `calib` on the **controls only**: A0 control part (W1 text sha `29df436a…2a2eeb`, 10,008 words, 1,040 lines,
+  32,824 glyphs, 8,968 boundaries, all asserted), **W2 disjoint from W1** (W1 = the first 1,040 source lines; W2's first line index must come after them; the number of
+  W2 lines textually equal to some W1 line is printed), **A1 as an identity at random parameters** (Dirichlet draws from `SeedSequence([11803, 0])`; the identity holds
+  for any parameters) and **A2** on 3 replicates per control from the same stream. The **manuscript part of A0** (ZL3b and IT2a file sha prefixes, A/B1/B2 = 10,005 /
+  10,007 / 10,004 tokens, the line stream flattening exactly to C115/C117's `strata()` stream, sha printed) runs at the start of `run`, after the freeze, because
+  loading the manuscript before `calib` is frozen is not allowed. **A1 at the step-1 parameters** is asserted in every text's observed job (to 1e-6 nats), and **A2** is
+  asserted on every replicate in every stage.
+- **R2 (text names, hash_name).** `CAE_DV_W1` 3442, `CAE_DV_W2` 3451, `CAE_V` 1214, `HEB_ABJ` 2027, `GPOW` 816, `ZL_A` 787, `ZL_B1` 1036, `ZL_B2` 1041; descriptive
+  `IT_A` 786, `IT_B1` 1035, `IT_B2` 1040, `HASH_W1` 2079, `TWIN_W1` 2129 (C113 `hash_name`, all distinct). CAE-V = the first 10,000 tokens of
+  `nat_texts()['Latin_Caesar']` as whole lines (`E.take`); HEB-ABJ = the first 10,000 tokens of `nat_texts()['Hebrew_Genesis']` (`T.hebrew`, final forms kept);
+  W2 = `E.take(devowelled Caesar lines of ≥ 3 words, 10000, 10000)`. Glyph = character for the controls, `T.units` for the manuscript (as C115–C118).
+- **R3 (step 1 per text).** G-POW and the hash plant **reuse CAE-DV W1's step 1** (same word multiset, section 3), so the run has **7 registered step-1 fits** (W1, W2,
+  CAE-V, HEB-ABJ, ZL A/B1/B2; the "8" in section 5 counted G-POW) plus 3 descriptive (IT2a). G-POW is built from the run's W1 step 1 with the registered line draws
+  `SeedSequence([11802, 0])`.
+- **R4 (seed sub-streams).** Run: step-1 restart *i* of text *t* uses `SeedSequence([11802, hash_name(t), 1000, i])` (independent restarts, so they run in parallel);
+  B job (t, rep) uses one generator `default_rng(SeedSequence([11802, hash_name(t), rep]))` that draws the N-LINE shuffle (rep > 0) and then the RB Dirichlet starts;
+  the extension uses `[11805, hash_name(t), rep]`, reps 80–159. Calib: shuffle `[11803, hash_name(t), rep]`, step-1 restart `[11803, hash_name(t), rep, 1, i]`, B starts
+  `[11803, hash_name(t), rep, 2]`; in calib the G-POW text is built from calib's W1 step-1 best with the **same registered line draws** `[11802, 0]` (a deterministic
+  choice of which lines are planted, so calib sees the gate text). Bootstrap: `[11804, hash_name(t), 1]` (rank), `[11804, hash_name(t), 2, 100·q]` (quantile q),
+  `[11804, 0]` (CAE-DV mean rank). Descriptive: twin plant draws `[11802, 2]`, twin step 1 `[11802, 2129, 1000, i]`, twin B starts `[11802, 2129, 0]`;
+  descriptive T `[11802, hash_name(t), 2000]`, tied T `[…, 2001]`. No new seed is used; the next free Voynich seed stays **11809**.
+- **R5 (calib reading of "best").** In section 7, "the text's best" is the best over **all** that text's calibration fits (30 step-1 restarts; 10 B starts), and the rule
+  must hold on **all 20** calibration texts (5 controls × observed + 3 shuffles). The grid check runs on each control's observed calib text; its result is written to
+  the frozen file (a failure is reported there; in the run, FIT-NOT-GLOBAL is decided on the run's own observed fit). In the run, a step 1 converges when ≥ 3 of its R1
+  restarts lie within CONV_TOL1 of the best of those R1; S convergence is as section 7.
+- **R6 (ties, p, rank, SDs).** Ties are |ΔS| ≤ 1e-9. p counts converged nulls with S ≥ obs − 1e-9 (ties count as ≥). Rank = (#{S < obs − 1e-9} + 0.5·ties) / effective N.
+  mid-p = (#{S > obs + 1e-9} + 0.5·ties + 0.5) / (1 + effective N). p_cons = (1 + #≥ + #unconverged) / (1 + NNULL); p_lib = (1 + #≥) / (1 + NNULL). SD(S)_starts is the
+  sample SD (ddof 1) of S over all RB starts of the observed text; SD(S)_null is the sample SD of the converged null S. When SD(S)_starts = 0 the P-NOISE ratio is printed
+  as `null` (infinite) and the condition holds if SD(S)_null > 0.
+- **R7 (gate details).** FIT-NOT-GLOBAL applies to the control texts' observed fits (W1, W2, CAE-V, HEB-ABJ, G-POW). For G-POW, G-CANFAIL is printed but not required
+  (section 9.3 lists only convergence, effective N and P-NOISE). The `gates` stage reads **controls only** and writes `analysis/C119_gates.json`; `verdict` refuses to run
+  until gates are decided, and only then computes any manuscript statistic.
+- **R8 (bootstrap and BORDERLINE).** 10,000 resamples with replacement of the converged null S; 95% interval = 2.5/97.5 percentiles; the CAE-DV mean-rank interval
+  resamples both windows independently. If an interval contains a gate edge, `gates` writes `analysis/C119_extend.json` once (it refuses to overwrite it) and stops; the
+  next `run` adds reps 80–159 for those controls only, and `gates` then decides on the 159-draw estimate (the 79-draw reading is kept in `C119_gates_79draw.json`).
+- **R9 (printed-only items).** The B-EM cross-check (cap 1000, gain < 1e-7) runs from the same RB starts on **observed texts only** (rep 0). The observed-text extras
+  (A1, entropy table, hash-class balance, boundary and movable counts, text sha) are computed in the observed job. The hash plant (q 0.10, `[11802, 1]`) is fitted as
+  an observed job under W1's step 1 and is scored, in `desc`, against **W1's converged nulls** (valid by the section 5 argument). The twin plant and the descriptive
+  T / tied T (cap 500, R = 3 free + 3 constrained restarts) run in the `desc` stage, **after the verdict**; they may run in a later cycle.
+- **R10 (execution).** `Pool(8)`, `imap_unordered`, soft stop 520 s per invocation, every call wrapped in `timeout 600`; `calib` and `run` are resumable
+  (`analysis/C119_calib_checkpoint.jsonl`, `analysis/C119_checkpoint.jsonl`); per-job seeds make a resumed run identical. `calib` writes `analysis/C119_frozen.json`
+  with mode `x` (it refuses to overwrite).
 
 ## 11. Review log
 
