@@ -1,0 +1,35 @@
+# FROZEN — files opened before any recount computation
+
+Written: 2026-11-20 04:03 PT (America/Vancouver, UTC-7).
+Repo: /workspace/c119-blind-recount/repo at 40b032197b13a7db964c39007b6ecc516873b5f8
+This list is closed before load-validation, the W1 fitter self-check, or the main run.
+If a later input must be opened, it will be appended below the freeze line with a new timestamp; none expected.
+
+Not opened (forbidden): analysis/C119_results.json, analysis/C119_checkpoint.jsonl,
+analysis/C119_gates.json, analysis/C119_frozen.json, analysis/C119_calib_checkpoint.jsonl,
+any audits/c119-precheck logs or JSON (section 6 numbers were taken from the case-file prose only),
+tools/c119_hmm_line_stream.py, tools/c119_precheck*.py, README.md, journal, Results section of the case file.
+Independence: recount.py reimplements the procedure from the prose, using only shared C003/C047/C049/C051/C108/C111/C115/C118 loaders and the C111/C117 EM algorithm. It does not import or exec the C119 runner.
+
+| opened_at (PT) | sha256 | mtime (PT) | bytes | file | what was read |
+|---|---|---|---|---|---|
+| 2026-11-20 03:57:31 PT | `d82ce21908beb4c4417c2745d02f3459ca19418537fd19c6d4004cac4f8c32a9` | 2026-11-20 03:57:22 PT | 41081 | `repo/case-file/C119-hmm-line-stream.md` | Procedure sections 1–10, run amendments, review log, Files. SKIPPED Results lines 323–382. |
+| 2026-11-20 03:57:45 PT | `bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc` | 2026-11-20 03:57:22 PT | 411671 | `repo/data/ZL3b-n.txt` | Hashed only at first contact; content loaded later by recount.py via strata(). |
+| 2026-11-20 03:57:45 PT | `7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5` | 2026-11-20 03:57:22 PT | 342104 | `repo/data/IT2a-n.txt` | Hashed only. Descriptive IT2a is outside the primary recount; file not parsed for results. |
+| 2026-11-20 03:58:20 PT | `6a7778cfe0e7a8d7502729effff4eb787c37d3f6146603fc495b9ca0bf61c3c0` | 2026-11-20 03:57:22 PT | 14609 | `repo/tools/c115_hmm_switch_currier.py` | Read lines 1–75: NTOK, strata(), devowel_lines(), imports. Not the C115 runner/results. |
+| 2026-11-20 03:58:20 PT | `f1965d8985271e3f99b0d45fb5d9a79758347615837741defbed4caace81fefc` | 2026-11-20 03:57:22 PT | 12054 | `repo/tools/c117_hmm_constrained_gap.py` | Read lines 1–70: docstring + fit() EM (used as the C111/C117 algorithm description). Not C117 results. |
+| 2026-11-20 03:58:20 PT | `5421090e133746f9a79e8355d01728d84f626072fd3325635764f26a5a80a439` | 2026-11-20 03:57:22 PT | 11777 | `repo/tools/c111_hmm_sukhotin_convergence.py` | Read lines 1–60: pad(), fit_hmm(), NITER/TOL. Algorithm source for step 1; cap in C119 is 500 not 150. |
+| 2026-11-20 03:58:20 PT | `9e97b031b4f70880708110ae9696f8766cbe734f9a7814e54552cd737d2a69fe` | 2026-11-20 03:57:22 PT | 8332 | `repo/tools/c108_sukhotin_alternation.py` | Read lines 1–70: encode(), flat(), chars(). |
+| 2026-11-20 03:58:20 PT | `2dd68d005778988155280c541a6f58221177870342483d64983950f7ae66a44c` | 2026-11-20 03:57:22 PT | 9532 | `repo/tools/c051_context_spelling_ab.py` | Read lines 90–119: nat_texts(). |
+| 2026-11-20 03:58:20 PT | `095dfe23491b0f3848841a2999ac5c51d9cb8111d49f3ff3e7db6e5ecef19488` | 2026-11-20 03:57:22 PT | 7814 | `repo/tools/c049_context_spelling.py` | Read lines 1–25: take(). |
+| 2026-11-20 03:58:20 PT | `233ac24b408098605087eb949aef27364c81ba965a8dd3758bc38cddd08c7a88` | 2026-11-20 03:57:22 PT | 10597 | `repo/tools/c003_position_rigidity.py` | Read lines 1–60: units(), gutenberg(), hebrew(), devowel(). |
+| 2026-11-20 03:58:20 PT | `c7aca3c29739a3776d80ab2f2f0c7a077497fcf5254325fe2b56a1dcda7435e9` | 2026-11-20 03:57:22 PT | 3012 | `repo/tools/c118_invariance_check.py` | Read all 48 lines: nline() (C118 N-LINE definition named by the case file). |
+| 2026-11-20 03:58:20 PT | `2e7554308b584d7ee946b8c586b0803fcb9d2009e23560367313a9d0b0b88f35` | 2026-11-20 03:57:22 PT | 5827 | `repo/tools/c047_pair_currier_split.py` | Read lines 1–35: ivtff_pages_lang(). |
+| 2026-11-20 04:02:20 PT | `7057ee7720d1c354492b773fa9caf313b1bb65cfc17906ca0bd008d4c77267ff` | 2026-11-20 03:57:22 PT | 3217 | `repo/data/MANIFEST.md` | Named input list and sha prefixes for uncommitted corpora. |
+| 2026-11-20 04:02:50 PT | `84ac8411841a4d8f5f4a49b6a2cd1f466917c6a5af72916d5e0b2b1ecb2f659c` | 2026-11-19 02:43:30 PT | 169899 | `repo/data/corpora/pg218.txt` | Copied from /workspace/voynich/backup/corpora/pg218.txt after sha256 matched MANIFEST 84ac8411…cb2f659c. Caesar control. |
+| 2026-11-20 04:02:50 PT | `0526e5c9a5fb4d907847645f954ed3d1268fa69decbd872056cedd2668d86449` | 2026-11-19 02:42:42 PT | 1859928 | `repo/data/corpora/Gen.xml` | Copied from /workspace/voynich/backup/corpora/Gen.xml after sha256 matched MANIFEST 0526e5c9…68d86449. Hebrew Genesis control. |
+| 2026-11-20 04:02:50 PT | `84ac8411841a4d8f5f4a49b6a2cd1f466917c6a5af72916d5e0b2b1ecb2f659c` | 2026-11-19 02:43:30 PT | 169899 | `/workspace/voynich/backup/corpora/pg218.txt` | Source of the Caesar copy; hashed, not otherwise parsed before recount.py. |
+| 2026-11-20 04:02:50 PT | `0526e5c9a5fb4d907847645f954ed3d1268fa69decbd872056cedd2668d86449` | 2026-11-19 02:42:42 PT | 1859928 | `/workspace/voynich/backup/corpora/Gen.xml` | Source of the Hebrew copy; hashed, not otherwise parsed before recount.py. |
+
+## Freeze line
+Frozen at 2026-11-20 04:03 PT. Recount computations start after this file is written.
