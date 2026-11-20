@@ -1,0 +1,21 @@
+# FROZEN before opening any case 212 / cycle 226 (c226) file from kryptos-case-files
+frozen_at: 2026-11-20 16:08:54 MST (America/Dawson_Creek)
+repo state used for inputs: /workspace/k209-d2-recount = Phuderoso/kryptos-case-files @ b304de5 (case 209); no later commit fetched yet.
+PRIMARY (p20+p21, CRIB-OVERLAP, any-hit-in-D2-class passes): K4 passes 0 (raw 1931, D2 101); nulls with >=1 pass 0/168; null passing D2 total 0;
+  K4 max NC -7.3571 (known>=49: -7.3571); null max NC -6.4310 (known>=49: -6.4310, 168/168 nulls have an NC).
+variants: p21 only: same pass counts (0; 0/168), K4 max -7.3571, null max -6.4310 | p20 only: 0; 0/168, K4 max -8.0381, null max -7.0794 (158/168 with NC)
+          CRIB-INSIDE: 0; 0/168, K4 max -7.0821, null max -6.4162
+          first-hit-rep passes: 0 / 0/168 in all variants
+a9a11cc9f2fed5a9d3624d83f973d9f91eeccccfec50f6d2fe8fd184d3e15ac6  RULE.md
+6f94e3725d38519d3d3490dfe2fafa7efde745a015c3f76427c7be89d661be89  LEAKS.md
+8c581a26777c5678c34fcf58c6f5d7e995c904e64f62d3776f3ecb4f16e07bfe  nc_recount.py
+3a06d75f904166d02f5d8fd1bb8d2e732a66ad3cae4741e9c64eafa55dde152d  counts_nc.tsv
+a6dc0cf8064d617b3fcdb810b95bb03c1919f92379980e7636b4e20924a07a6f  summary_nc.txt
+4a02ba4eca0b6840a3a5eafe00678e854b25703c36b99e9e26a7697d4ed89f69  /workspace/k209-d2-work/qg.bin
+8c0d56d266a503591c93a38b8b3ca983029a06f9f5189a46ce931611d3c121ab  /workspace/k209-d2-work/texts.tsv
+9130d744b18ee8e2fc85f603e8fda574ff8bfaa0213748c4e0c7ea4c6596f0ab  /workspace/k209-d2-audit/recount209.py
+raw .raw files (sorted, 1879 files) combined sha256: 6d92f554dbd336b69c971ec43303d9c1e6ce2a8366cee92e7f61c8771c4c450d
+qg.bin vs manifest: 4a02ba4e... = hash declared in PREREG223 (matches).
+02a6bc9247097ab424ff1229d572224590a1cfe7fa6697cb95dfa33257c3df34  diag_postfreeze.py
+35b552a61147645a7a4c24c9242edbade4006b456fd06922df45a9a65e9be66a  diag_postfreeze.out
+post-freeze diagnostics (before opening case 212 files) appended: 16:09:33 MST
