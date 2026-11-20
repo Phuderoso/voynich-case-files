@@ -1,0 +1,114 @@
+{
+ "stage": "anchor",
+ "controls_only": true,
+ "manuscript_loaded": false,
+ "tool_sha256": "c65c8077725bb23e97e9bfac332242ec18ee1f1a3e830ae856e5c64ed9ce4a3b",
+ "A0_W1": {
+  "text_sha256": "29df436a54fbea2c3240fc553b7014ba2c6cb3a401f889d824e87f0d5a2a2eeb",
+  "registered": "29df436a\u20262a2eeb",
+  "PASS": true,
+  "word_tokens": 10008,
+  "lines": 1040,
+  "glyph_tokens": 32824,
+  "boundaries": 8968,
+  "boundaries_movable_lines": 8923,
+  "boundaries_per_line": 8.623076923076923,
+  "mean_line_length": 9.623076923076923,
+  "movable_lines": 1021,
+  "movable_line_share": 0.9817307692307692,
+  "movable_token_share": 0.789568345323741
+ },
+ "W2_disjoint": {
+  "W2_first_line_index": 1040,
+  "W1_last_line_index": 1039,
+  "PASS": true,
+  "W2_lines_textually_equal_to_a_W1_line": 0
+ },
+ "texts": {
+  "CAE_DV_W1": {
+   "text_sha256": "29df436a54fbea2c3240fc553b7014ba2c6cb3a401f889d824e87f0d5a2a2eeb",
+   "symbols": 19,
+   "A1_random_params": {
+    "ll_line_reset": -111785.43882684298,
+    "ll_word_rows": -111785.43882684296,
+    "abs_diff": 1.4551915228366852e-11,
+    "PASS": true
+   },
+   "A2_3_replicates": "PASS",
+   "word_tokens": 10008,
+   "lines": 1040,
+   "glyph_tokens": 32824,
+   "boundaries": 8968,
+   "boundaries_movable_lines": 8923,
+   "boundaries_per_line": 8.623076923076923,
+   "mean_line_length": 9.623076923076923,
+   "movable_lines": 1021,
+   "movable_line_share": 0.9817307692307692,
+   "movable_token_share": 0.789568345323741
+  },
+  "CAE_DV_W2": {
+   "text_sha256": "e852f8edec9aad5b39b9c5f55997d98949e54495250ca161a69d99a729e900e9",
+   "symbols": 17,
+   "A1_random_params": {
+    "ll_line_reset": -102469.0055859077,
+    "ll_word_rows": -102469.0055859077,
+    "abs_diff": 0.0,
+    "PASS": true
+   },
+   "A2_3_replicates": "PASS",
+   "word_tokens": 10007,
+   "lines": 1056,
+   "glyph_tokens": 33810,
+   "boundaries": 8951,
+   "boundaries_movable_lines": 8912,
+   "boundaries_per_line": 8.476325757575758,
+   "mean_line_length": 9.476325757575758,
+   "movable_lines": 1040,
+   "movable_line_share": 0.9848484848484849,
+   "movable_token_share": 0.7866493454581793
+  },
+  "CAE_V": {
+   "text_sha256": "5d72e124cff19d4b0e11681c068184dd870e8e85a7c8ae73a6d5a41e022fc87d",
+   "symbols": 24,
+   "A1_random_params": {
+    "ll_line_reset": -207154.30727688016,
+    "ll_word_rows": -207154.3072768802,
+    "abs_diff": 2.9103830456733704e-11,
+    "PASS": true
+   },
+   "A2_3_replicates": "PASS",
+   "word_tokens": 10005,
+   "lines": 1022,
+   "glyph_tokens": 59245,
+   "boundaries": 8983,
+   "boundaries_movable_lines": 8938,
+   "boundaries_per_line": 8.78962818003914,
+   "mean_line_length": 9.78962818003914,
+   "movable_lines": 1003,
+   "movable_line_share": 0.9814090019569471,
+   "movable_token_share": 0.7931034482758621
+  },
+  "HEB_ABJ": {
+   "text_sha256": "c2d4b24a427a37210d83b02ed5778a1a545c5808893d10df4d846f03d2a59bf8",
+   "symbols": 27,
+   "A1_random_params": {
+    "ll_line_reset": -136423.430687637,
+    "ll_word_rows": -136423.43068763698,
+    "abs_diff": 2.9103830456733704e-11,
+    "PASS": true
+   },
+   "A2_3_replicates": "PASS",
+   "word_tokens": 10016,
+   "lines": 758,
+   "glyph_tokens": 37698,
+   "boundaries": 9258,
+   "boundaries_movable_lines": 9242,
+   "boundaries_per_line": 12.213720316622691,
+   "mean_line_length": 13.213720316622691,
+   "movable_lines": 752,
+   "movable_line_share": 0.9920844327176781,
+   "movable_token_share": 0.8476437699680511
+  }
+ },
+ "seconds": 2.1
+}

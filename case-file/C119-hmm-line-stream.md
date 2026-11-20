@@ -204,7 +204,7 @@ Stage `calib` (seed 11803), on the controls only (CAE-DV W1 and W2, CAE-V, HEB-A
 ## 8. Anchor gates (before the run)
 
 - **Tool frozen:** `tools/c119_hmm_line_stream.py` is committed with its sha256 before `calib`.
-  **Frozen 2026-11-20 ~00:45 PT: sha256 `c65c8077725bb23e97e9bfac332242ec18ee1f1a3e830ae856e5c64ed9ce4a3b`** (run amendments R1–R10 below were written before it ran).
+  **Frozen 2026-11-20 00:43 PT (published as `c19094c`): sha256 `c65c8077725bb23e97e9bfac332242ec18ee1f1a3e830ae856e5c64ed9ce4a3b`** (run amendments R1–R10 below were written before it ran).
 - **A0:** the token streams for ZL3b A/B1/B2 and CAE-DV W1 equal C117/C118's (sha printed). W2 shares no line with W1.
 - **A1 (zero point of S):** for every text, ℓ(B = reset to π) on the line path equals the C117 word-row forward pass at the step-1 parameters, to 1e-6 nats.
   (Pre-check: |diff| = 0.0 on W1.)
@@ -261,7 +261,7 @@ The K086 lesson applies: a bootstrap 95% interval (seed 11804) is printed beside
   - A pass would mean that the order of words inside lines carries information about the hidden state at word boundaries beyond what the word content gives.
     It is **not** a decipherment and does not identify a language.
 
-## Run amendments (written 2026-11-20 ~00:45 PT, before `anchor`, `calib` or any run; no C119 text was fitted or shuffled to decide them)
+## Run amendments (written 2026-11-20 ~00:40 PT, published 00:43 PT in `c19094c`, before `anchor`, `calib` or any run; no C119 text was fitted or shuffled to decide them)
 
 The design above leaves some implementation choices open. Each is fixed here, before the stage it affects. The only check made was a smoke test of the code paths on a
 **synthetic random text** (7 letters, 120 lines, throwaway seed 0); no Caesar, Hebrew or manuscript text was used, and its numbers are not reported.
@@ -308,6 +308,13 @@ The design above leaves some implementation choices open. Each is fixed here, be
 - **R10 (execution).** `Pool(8)`, `imap_unordered`, soft stop 520 s per invocation, every call wrapped in `timeout 600`; `calib` and `run` are resumable
   (`analysis/C119_calib_checkpoint.jsonl`, `analysis/C119_checkpoint.jsonl`); per-job seeds make a resumed run identical. `calib` writes `analysis/C119_frozen.json`
   with mode `x` (it refuses to overwrite).
+- **R11 (anchor and calib results; frozen 2026-11-20 00:47 PT, before any manuscript fit).** `anchor` (00:43 PT, controls only): **PASS**. W1 sha `29df436a…2a2eeb`,
+  10,008 words, 1,040 lines, 32,824 glyphs, 8,968 boundaries; W2 10,007 words, 1,056 lines, first line index 1,040 (after W1's last, 1,039), 0 W2 lines textually equal
+  to a W1 line; CAE-V 10,005 words, 1,022 lines; HEB-ABJ 10,016 words, 758 verses; A1 at random parameters |diff| ≤ 2.9e-11 on all four; A2 passed on 3 replicates each.
+  `calib` (seed 11803, controls only, 209.6 s, one call) wrote `analysis/C119_frozen.json`: **R1 = 10, CONV_TOL1 = 5.0 nats, RB = 5, CONV_TOLB = 0.001 nats, no flag**
+  (step 1: 20/20 texts at R1 10 only with tol 5; at tol 1 only 7–13/20 for any R1; step 2: 20/20 at every RB and tol). Grid check on every control's observed calib text:
+  **PASS** (fit − logit-grid max 0.0016, 0.00015, 2.54, 0.017, 0.00041 nats for W1, W2, CAE-V, HEB-ABJ, G-POW). No step-1 calib restart hit the 500 cap on an
+  observed control. The manuscript has not been loaded.
 
 ## 11. Review log
 
