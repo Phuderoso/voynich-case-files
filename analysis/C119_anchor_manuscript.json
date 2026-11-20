@@ -1,0 +1,37 @@
+{
+ "ZL3b_sha16": "bf5b6d4ac1e3a51b",
+ "IT2a_sha16": "7f27a8b0feed8f6d",
+ "PASS_files": true,
+ "ZL_A": {
+  "text_sha256": "40ec14595446d1edd4daf3ad86d5aeb3f8b3feb9f0dfce772343b201a31906c4",
+  "words": 10005,
+  "lines": 1403
+ },
+ "ZL_B1": {
+  "text_sha256": "45e172fd9f832bb9bd6ae3a1e65cf67aad1ec66856ecddf8ac8aeefb4800aac9",
+  "words": 10007,
+  "lines": 1115
+ },
+ "ZL_B2": {
+  "text_sha256": "cff1e5af1964bf6072db4e38a6ceb3759755f3c220b4764f95d726395714c7a3",
+  "words": 10004,
+  "lines": 1024
+ },
+ "IT_A": {
+  "text_sha256": "4c7c62ed60abcd1a50e212336d8684bf76b808f37b4bd742b2fe3e022580030c",
+  "words": 10004,
+  "lines": 1415
+ },
+ "IT_B1": {
+  "text_sha256": "0c8d57bab6731e96f5d0125ddbd7447c6c90f8f543f3c098ad04362d7aa10c79",
+  "words": 10010,
+  "lines": 1123
+ },
+ "IT_B2": {
+  "text_sha256": "83f0de55f694f01a1d1cdcb2f5181d9023baa16ae3e3eb9f0f0102f7af291dc6",
+  "words": 10005,
+  "lines": 1030
+ },
+ "PASS_counts": true,
+ "A0_stream_equals_C115_C117_strata": true
+}
