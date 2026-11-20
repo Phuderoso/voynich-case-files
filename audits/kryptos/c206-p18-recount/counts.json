@@ -1,0 +1,101 @@
+{
+ "all_hits_by_seed_and_p": {
+  "209243": {},
+  "209244": {
+   "18": 15
+  },
+  "209245": {
+   "17": 24
+  },
+  "209246": {
+   "17": 2
+  },
+  "209247": {
+   "16": 1,
+   "17": 2,
+   "18": 12
+  },
+  "209248": {
+   "18": 4
+  },
+  "209249": {
+   "15": 1,
+   "18": 69
+  },
+  "209250": {
+   "18": 2
+  }
+ },
+ "duplicate_H_lines": {
+  "209243": 0,
+  "209244": 0,
+  "209245": 0,
+  "209246": 0,
+  "209247": 0,
+  "209248": 0,
+  "209249": 0,
+  "209250": 0
+ },
+ "header_crosscheck_ok": {
+  "209243": true,
+  "209244": true,
+  "209245": true,
+  "209246": true,
+  "209247": true,
+  "209248": true,
+  "209249": true,
+  "209250": true
+ },
+ "inputs_sha256_verified": {
+  "results_null209243.txt": {
+   "listed": "73271e14e5dcf78fdbd079fe5c047b5878b9f8e6a3bf2c6aa3c00bf18de9d460",
+   "ok": true,
+   "sha256": "73271e14e5dcf78fdbd079fe5c047b5878b9f8e6a3bf2c6aa3c00bf18de9d460"
+  },
+  "results_null209244.txt": {
+   "listed": "87e04880f8197dd98240a01b4405c0af17e5ef7b4ba8ac4e44caa14d0b062f0e",
+   "ok": true,
+   "sha256": "87e04880f8197dd98240a01b4405c0af17e5ef7b4ba8ac4e44caa14d0b062f0e"
+  },
+  "results_null209245.txt": {
+   "listed": "ed53be381f380c8cea78ba31eea49b4672b8d5bac677e6a4669e32dcede635de",
+   "ok": true,
+   "sha256": "ed53be381f380c8cea78ba31eea49b4672b8d5bac677e6a4669e32dcede635de"
+  },
+  "results_null209246.txt": {
+   "listed": "b66086f0cbc73c58d7ce6603b668db4538f8e974f1a3d9e75786bc25f2bb69f0",
+   "ok": true,
+   "sha256": "b66086f0cbc73c58d7ce6603b668db4538f8e974f1a3d9e75786bc25f2bb69f0"
+  },
+  "results_null209247.txt": {
+   "listed": "30312a8a7de0a4944b6eb2a645c36d7498a6d66eaff0c01d8d8c8c3ef8304459",
+   "ok": true,
+   "sha256": "30312a8a7de0a4944b6eb2a645c36d7498a6d66eaff0c01d8d8c8c3ef8304459"
+  },
+  "results_null209248.txt": {
+   "listed": "4e5cc5ef394fb398f79191fb4417cf14a62da3a83c314cff3e27e3b5db76f27e",
+   "ok": true,
+   "sha256": "4e5cc5ef394fb398f79191fb4417cf14a62da3a83c314cff3e27e3b5db76f27e"
+  },
+  "results_null209249.txt": {
+   "listed": "31f10d95b34e0503908b6854e07fee27328f8a192d13634b7e09a6abdbb2aa55",
+   "ok": true,
+   "sha256": "31f10d95b34e0503908b6854e07fee27328f8a192d13634b7e09a6abdbb2aa55"
+  },
+  "results_null209250.txt": {
+   "listed": "574dc3c3a57715c82de741bbfd51c3016bd91f563778076b09bf1e40cd7a8f7e",
+   "ok": true,
+   "sha256": "574dc3c3a57715c82de741bbfd51c3016bd91f563778076b09bf1e40cd7a8f7e"
+  }
+ },
+ "p18_cells_by_seed": {
+  "209243": 0,
+  "209244": 15,
+  "209245": 0,
+  "209246": 0,
+  "209247": 12,
+  "209248": 4,
+  "209249": 69,
+  "209250": 2
+ }
+}
