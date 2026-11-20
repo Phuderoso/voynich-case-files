@@ -1,0 +1,10 @@
+{
+ "seed": 11820,
+ "control": "Latin Caesar on ZL3b-B template",
+ "M": 0.02404522912736376,
+ "null_sd": 0.0005004531381873459,
+ "share_null_equal_obs": 0.0,
+ "page_multiset_exact": true,
+ "relabel_delta": 0.0,
+ "pass": true
+}

@@ -1,0 +1,273 @@
+{
+ "note": "Summary of analysis/C121_calibration.json (full per-replicate file, sha256 e2a0ca68..., kept on the box and regenerable bit-for-bit with tools/c121_mi_calibrated.py cal + cal2, seeds 11817/11821). Controls only; no manuscript glyph used (only the ZL3b A/B page/line word-count templates). Per-control lines: hits = tests with p <= alpha_g out of 8.",
+ "full_sha256": "e2a0ca6882f06c351d2c4d59bb843bd097ac11b7769eb485b79db89085d14f25",
+ "alpha_g": 0.0125,
+ "RC": 200,
+ "NC": 8,
+ "stage1_seed": 11817,
+ "stage2_seed": 11821,
+ "choice": {
+  "A": {
+   "fpr": "2/160",
+   "chosen": "0.75x5",
+   "comparable": false,
+   "testable": true,
+   "ladder": {
+    "0.25x1": {
+     "dose": 0.25,
+     "power": 0.0,
+     "E_mean": -0.000277,
+     "min_control_power": 0.0
+    },
+    "0.5x1": {
+     "dose": 0.5,
+     "power": 0.0125,
+     "E_mean": -7e-06,
+     "min_control_power": 0.0
+    },
+    "0.25x2": {
+     "dose": 0.5,
+     "power": 0.0125,
+     "E_mean": 0.000675,
+     "min_control_power": 0.0
+    },
+    "0.75x1": {
+     "dose": 0.75,
+     "power": 0.0125,
+     "E_mean": -0.000226,
+     "min_control_power": 0.0
+    },
+    "0.25x3": {
+     "dose": 0.75,
+     "power": 0.0,
+     "E_mean": 0.000641,
+     "min_control_power": 0.0
+    },
+    "1.0x1": {
+     "dose": 1.0,
+     "power": 0.05,
+     "E_mean": 0.001245,
+     "min_control_power": 0.0
+    },
+    "0.5x2": {
+     "dose": 1.0,
+     "power": 0.05,
+     "E_mean": 0.000821,
+     "min_control_power": 0.0
+    },
+    "0.75x2": {
+     "dose": 1.5,
+     "power": 0.025,
+     "E_mean": 0.001525,
+     "min_control_power": 0.0
+    },
+    "0.5x3": {
+     "dose": 1.5,
+     "power": 0.05,
+     "E_mean": 0.002476,
+     "min_control_power": 0.0
+    },
+    "1.0x2": {
+     "dose": 2.0,
+     "power": 0.1,
+     "E_mean": 0.002328,
+     "min_control_power": 0.0
+    },
+    "0.75x3": {
+     "dose": 2.25,
+     "power": 0.225,
+     "E_mean": 0.00381,
+     "min_control_power": 0.0
+    },
+    "1.0x3": {
+     "dose": 3.0,
+     "power": 0.3375,
+     "E_mean": 0.005661,
+     "min_control_power": 0.0
+    },
+    "0.75x4": {
+     "dose": 3.0,
+     "power": 0.7,
+     "E_mean": 0.008742,
+     "min_control_power": 0.375
+    },
+    "0.75x5": {
+     "dose": 3.75,
+     "power": 0.9875,
+     "E_mean": 0.017636,
+     "min_control_power": 0.875
+    },
+    "1.0x4": {
+     "dose": 4.0,
+     "power": 0.8625,
+     "E_mean": 0.012422,
+     "min_control_power": 0.5
+    },
+    "1.0x5": {
+     "dose": 5.0,
+     "power": 1.0,
+     "E_mean": 0.030877,
+     "min_control_power": 1.0
+    }
+   }
+  },
+  "B": {
+   "fpr": "2/160",
+   "chosen": "0.75x4",
+   "comparable": true,
+   "testable": true,
+   "ladder": {
+    "0.25x1": {
+     "dose": 0.25,
+     "power": 0.0375,
+     "E_mean": 3.7e-05,
+     "min_control_power": 0.0
+    },
+    "0.5x1": {
+     "dose": 0.5,
+     "power": 0.0375,
+     "E_mean": 0.000215,
+     "min_control_power": 0.0
+    },
+    "0.25x2": {
+     "dose": 0.5,
+     "power": 0.0125,
+     "E_mean": 9.4e-05,
+     "min_control_power": 0.0
+    },
+    "0.75x1": {
+     "dose": 0.75,
+     "power": 0.05,
+     "E_mean": 0.000266,
+     "min_control_power": 0.0
+    },
+    "0.25x3": {
+     "dose": 0.75,
+     "power": 0.05,
+     "E_mean": 0.000489,
+     "min_control_power": 0.0
+    },
+    "1.0x1": {
+     "dose": 1.0,
+     "power": 0.0,
+     "E_mean": 0.000357,
+     "min_control_power": 0.0
+    },
+    "0.5x2": {
+     "dose": 1.0,
+     "power": 0.1125,
+     "E_mean": 0.000731,
+     "min_control_power": 0.0
+    },
+    "0.75x2": {
+     "dose": 1.5,
+     "power": 0.1625,
+     "E_mean": 0.000955,
+     "min_control_power": 0.0
+    },
+    "0.5x3": {
+     "dose": 1.5,
+     "power": 0.2,
+     "E_mean": 0.001137,
+     "min_control_power": 0.0
+    },
+    "1.0x2": {
+     "dose": 2.0,
+     "power": 0.225,
+     "E_mean": 0.001494,
+     "min_control_power": 0.0
+    },
+    "0.75x3": {
+     "dose": 2.25,
+     "power": 0.4625,
+     "E_mean": 0.002049,
+     "min_control_power": 0.0
+    },
+    "1.0x3": {
+     "dose": 3.0,
+     "power": 0.8625,
+     "E_mean": 0.003515,
+     "min_control_power": 0.25
+    },
+    "0.75x4": {
+     "dose": 3.0,
+     "power": 0.9375,
+     "E_mean": 0.003982,
+     "min_control_power": 0.75
+    },
+    "0.75x5": {
+     "dose": 3.75,
+     "power": 1.0,
+     "E_mean": 0.007033,
+     "min_control_power": 1.0
+    },
+    "1.0x4": {
+     "dose": 4.0,
+     "power": 1.0,
+     "E_mean": 0.006263,
+     "min_control_power": 1.0
+    },
+    "1.0x5": {
+     "dose": 5.0,
+     "power": 1.0,
+     "E_mean": 0.012641,
+     "min_control_power": 1.0
+    }
+   }
+  }
+ },
+ "stage1_choice_before_amendment": {
+  "A": {
+   "fpr": "0/80",
+   "chosen": null
+  },
+  "B": {
+   "fpr": "1/80",
+   "chosen": null
+  }
+ },
+ "per_control_stage1": [
+  "A | Latin Caesar | words 6595 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:0/8 0.25x3:0/8 1.0x1:0/8 0.5x2:0/8 0.75x2:0/8 0.5x3:1/8 1.0x2:0/8 0.75x3:4/8 1.0x3:3/8",
+  "A | Latin Descartes | words 6595 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:0/8 0.25x3:0/8 1.0x1:0/8 0.5x2:0/8 0.75x2:0/8 0.5x3:0/8 1.0x2:0/8 0.75x3:1/8 1.0x3:2/8",
+  "A | Italian Dante | words 6595 | unplanted 0/8 | 0.25x1:0/8 0.5x1:1/8 0.25x2:0/8 0.75x1:0/8 0.25x3:0/8 1.0x1:0/8 0.5x2:1/8 0.75x2:0/8 0.5x3:0/8 1.0x2:1/8 0.75x3:1/8 1.0x3:4/8",
+  "A | Spanish Cervantes | words 6595 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:0/8 0.25x3:0/8 1.0x1:1/8 0.5x2:1/8 0.75x2:0/8 0.5x3:0/8 1.0x2:0/8 0.75x3:2/8 1.0x3:0/8",
+  "A | Italian Machiavelli | words 6595 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:0/8 0.25x3:0/8 1.0x1:0/8 0.5x2:0/8 0.75x2:0/8 0.5x3:1/8 1.0x2:1/8 0.75x3:3/8 1.0x3:4/8",
+  "A | Finnish Kivi | words 6595 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:0/8 0.25x3:0/8 1.0x1:1/8 0.5x2:0/8 0.75x2:0/8 0.5x3:0/8 1.0x2:2/8 0.75x3:0/8 1.0x3:0/8",
+  "A | Finnish Kalevala | words 6595 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:1/8 0.75x1:1/8 0.25x3:0/8 1.0x1:0/8 0.5x2:1/8 0.75x2:1/8 0.5x3:1/8 1.0x2:0/8 0.75x3:2/8 1.0x3:4/8",
+  "A | Hebrew Gen+Exod | words 6595 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:0/8 0.25x3:0/8 1.0x1:0/8 0.5x2:0/8 0.75x2:0/8 0.5x3:0/8 1.0x2:2/8 0.75x3:0/8 1.0x3:2/8",
+  "A | TS gen 11812 | words 6595 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:0/8 0.25x3:0/8 1.0x1:0/8 0.5x2:1/8 0.75x2:0/8 0.5x3:0/8 1.0x2:0/8 0.75x3:4/8 1.0x3:5/8",
+  "A | TS gen 11813 | words 6595 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:0/8 0.25x3:0/8 1.0x1:2/8 0.5x2:0/8 0.75x2:1/8 0.5x3:1/8 1.0x2:2/8 0.75x3:1/8 1.0x3:3/8",
+  "B | Latin Caesar | words 20482 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:1/8 0.25x3:0/8 1.0x1:0/8 0.5x2:1/8 0.75x2:0/8 0.5x3:1/8 1.0x2:1/8 0.75x3:4/8 1.0x3:7/8",
+  "B | Latin Descartes | words 20482 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:0/8 0.25x3:0/8 1.0x1:0/8 0.5x2:0/8 0.75x2:0/8 0.5x3:1/8 1.0x2:0/8 0.75x3:0/8 1.0x3:6/8",
+  "B | Italian Dante | words 20482 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:0/8 0.25x3:1/8 1.0x1:0/8 0.5x2:0/8 0.75x2:0/8 0.5x3:0/8 1.0x2:0/8 0.75x3:4/8 1.0x3:8/8",
+  "B | Spanish Cervantes | words 20482 | unplanted 0/8 | 0.25x1:0/8 0.5x1:1/8 0.25x2:0/8 0.75x1:0/8 0.25x3:0/8 1.0x1:0/8 0.5x2:0/8 0.75x2:0/8 0.5x3:0/8 1.0x2:0/8 0.75x3:4/8 1.0x3:7/8",
+  "B | Italian Machiavelli | words 20482 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:0/8 0.25x3:1/8 1.0x1:0/8 0.5x2:1/8 0.75x2:2/8 0.5x3:2/8 1.0x2:1/8 0.75x3:3/8 1.0x3:8/8",
+  "B | Finnish Kivi | words 20482 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:1/8 0.25x3:0/8 1.0x1:0/8 0.5x2:1/8 0.75x2:0/8 0.5x3:2/8 1.0x2:0/8 0.75x3:5/8 1.0x3:7/8",
+  "B | Finnish Kalevala | words 20482 | unplanted 0/8 | 0.25x1:1/8 0.5x1:0/8 0.25x2:0/8 0.75x1:0/8 0.25x3:0/8 1.0x1:0/8 0.5x2:0/8 0.75x2:0/8 0.5x3:0/8 1.0x2:2/8 0.75x3:0/8 1.0x3:2/8",
+  "B | Hebrew Gen+Exod | words 20482 | unplanted 0/8 | 0.25x1:0/8 0.5x1:0/8 0.25x2:0/8 0.75x1:0/8 0.25x3:1/8 1.0x1:0/8 0.5x2:1/8 0.75x2:0/8 0.5x3:0/8 1.0x2:1/8 0.75x3:3/8 1.0x3:8/8",
+  "B | TS gen 11812 | words 20482 | unplanted 1/8 | 0.25x1:1/8 0.5x1:0/8 0.25x2:1/8 0.75x1:0/8 0.25x3:1/8 1.0x1:0/8 0.5x2:3/8 0.75x2:5/8 0.5x3:4/8 1.0x2:8/8 0.75x3:8/8 1.0x3:8/8",
+  "B | TS gen 11813 | words 20482 | unplanted 0/8 | 0.25x1:1/8 0.5x1:2/8 0.25x2:0/8 0.75x1:2/8 0.25x3:0/8 1.0x1:0/8 0.5x2:2/8 0.75x2:6/8 0.5x3:6/8 1.0x2:5/8 0.75x3:6/8 1.0x3:8/8"
+ ],
+ "per_control_stage2": [
+  "A | Latin Caesar | words 6595 | unplanted 0/8 | 0.75x4:8/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "A | Latin Descartes | words 6595 | unplanted 0/8 | 0.75x4:4/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "A | Italian Dante | words 6595 | unplanted 1/8 | 0.75x4:3/8 0.75x5:7/8 1.0x4:4/8 1.0x5:8/8",
+  "A | Spanish Cervantes | words 6595 | unplanted 0/8 | 0.75x4:6/8 0.75x5:8/8 1.0x4:7/8 1.0x5:8/8",
+  "A | Italian Machiavelli | words 6595 | unplanted 0/8 | 0.75x4:4/8 0.75x5:8/8 1.0x4:7/8 1.0x5:8/8",
+  "A | Finnish Kivi | words 6595 | unplanted 0/8 | 0.75x4:4/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "A | Finnish Kalevala | words 6595 | unplanted 0/8 | 0.75x4:6/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "A | Hebrew Gen+Exod | words 6595 | unplanted 0/8 | 0.75x4:7/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "A | TS gen 11812 | words 6595 | unplanted 1/8 | 0.75x4:6/8 0.75x5:8/8 1.0x4:5/8 1.0x5:8/8",
+  "A | TS gen 11813 | words 6595 | unplanted 0/8 | 0.75x4:8/8 0.75x5:8/8 1.0x4:6/8 1.0x5:8/8",
+  "B | Latin Caesar | words 20482 | unplanted 0/8 | 0.75x4:8/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "B | Latin Descartes | words 20482 | unplanted 0/8 | 0.75x4:7/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "B | Italian Dante | words 20482 | unplanted 1/8 | 0.75x4:8/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "B | Spanish Cervantes | words 20482 | unplanted 0/8 | 0.75x4:6/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "B | Italian Machiavelli | words 20482 | unplanted 0/8 | 0.75x4:8/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "B | Finnish Kivi | words 20482 | unplanted 0/8 | 0.75x4:8/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "B | Finnish Kalevala | words 20482 | unplanted 0/8 | 0.75x4:6/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "B | Hebrew Gen+Exod | words 20482 | unplanted 0/8 | 0.75x4:8/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "B | TS gen 11812 | words 20482 | unplanted 0/8 | 0.75x4:8/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8",
+  "B | TS gen 11813 | words 20482 | unplanted 0/8 | 0.75x4:8/8 0.75x5:8/8 1.0x4:8/8 1.0x5:8/8"
+ ]
+}
