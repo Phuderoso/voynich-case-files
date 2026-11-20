@@ -1,0 +1,9 @@
+# FROZEN before opening case 209 results section / counts223.tsv rows beyond K4 / regenerating results_*.txt
+frozen_at: 2026-11-20 04:44:52 PT (America/Vancouver)
+repo: Phuderoso/kryptos-case-files @ b304de59c2ac8bfb6d4e089dec64365bdb77ec32
+K4 p21: R 1928 D2 99 D3map 99 D3read 1928; null median D2 114; #null>=K4 D2 105/168 p_up 0.6272; R 6/168 p_up 0.0414
+K4 p20: R 3 D2 2 D3map 2
+9130d744b18ee8e2fc85f603e8fda574ff8bfaa0213748c4e0c7ea4c6596f0ab  recount209.py
+6859b2f1183eb1069ec04103aaceabc10213bb3b0c75c4f2b69bd4d31f31e1e8  ranks209.py
+b74f4e93bd1c2f99ea38883c45d975312a142c3bc4e35f54bcf6502130d4e572  counts_voynich.tsv
+c3064d033f5add119301084096b8190284f0d64c2291142e6a2737d705a80883  ranks_voynich.txt
