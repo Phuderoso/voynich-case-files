@@ -1,0 +1,8 @@
+A0 True 2.8
+OKR exact {"KH0097/KH0586": {"matched_groups": 13, "V_tot": 89, "same_as_K019": true, "p_exact": "1/1014454095446016", "p_exact_float": 9.85751848692906e-16, "null_mean": 51.0, "null_max": 89, "shift_offsets": 12, "fpr_shift": 0.16666666666666666}, "KH0192/KH0470": {"matched_groups": 14, "V_tot": 37, "same_as_K019": true, "p_exact": "9801/1677721600000000000000", "p_exact_float": 5.8418512344360355e-18, "null_mean": 12.825, "null_max": 37, "shift_offsets": 13, "fpr_shift": 0.0}, "KH0192/KH0469": {"matched_groups": 15, "V_tot": 36, "same_as_K019": true, "p_exact": "28431/20971520000000000000", "p_exact_float": 1.3556957244873046e-15, "null_mean": 13.55, "null_max": 36, "shift_offsets": 14, "fpr_shift": 0.0}}
+KH0097/KH0586 groups=13 V=89 null_mean=51.00 max=89 p_exact=9.858e-16 p_mc=0.00010 shift=0.167 loo_max=4.87e-13 win=5
+KH0192/KH0470 groups=14 V=37 null_mean=12.80 max=37 p_exact=4.868e-18 p_mc=0.00010 shift=0.000 loo_max=3.81e-13 win=8
+KH0192/KH0469 groups=15 V=36 null_mean=13.53 max=36 p_exact=1.356e-15 p_mc=0.00010 shift=0.000 loo_max=1.10e-11 win=6
+G_FPR {'n_pairs': 92, 'tries': 20000, 'min_groups': 5, 'candidates': 312, 'fpr_at_alpha_pair': 0.010869565217391304, 'fpr_at_0_05': 0.03260869565217391, 'mean_p': 0.4770907707382575, 'pass_': False} hits 1 6.8
+G_POW {'f': 0.25, 'power': 0.13043478260869565, 'curve': {'0.1': 0.043478260869565216, '0.15': 0.07608695652173914, '0.25': 0.17391304347826086, '0.4': 0.3695652173913043}, 'pass_': False} 7.0
+decision {'KH0097/KH0586': 'NOT TESTABLE', 'KH0192/KH0470': 'NOT TESTABLE', 'KH0192/KH0469': 'NOT TESTABLE'} okr {'KH0097/KH0586': 'TOOL EXCLUDED (shift)', 'KH0192/KH0470': 'CONFIRMED', 'KH0192/KH0469': 'CONFIRMED'}

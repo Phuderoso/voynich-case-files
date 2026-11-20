@@ -1,0 +1,470 @@
+{
+ "cycle": "K090",
+ "smoke": false,
+ "seeds": {
+  "mc": 6483,
+  "calib_pairs": 6484,
+  "power": 6485,
+  "curve": 6486
+ },
+ "next_free_seed": 6487,
+ "alpha_family": 0.01,
+ "alpha_pair_first_holm_step": 0.0033333333333333335,
+ "fpr_gate": 0.02,
+ "shift_gate": 0.1,
+ "power_bar": 0.5,
+ "f_plant": 0.25,
+ "pairs": {
+  "KH0097/KH0586": {
+   "matched_groups": 13,
+   "pairs_ij": [
+    [
+     0,
+     0
+    ],
+    [
+     1,
+     1
+    ],
+    [
+     2,
+     2
+    ],
+    [
+     3,
+     3
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     10,
+     10
+    ],
+    [
+     11,
+     11
+    ],
+    [
+     12,
+     12
+    ],
+    [
+     13,
+     13
+    ],
+    [
+     14,
+     14
+    ]
+   ],
+   "V": [
+    7,
+    7,
+    5,
+    7,
+    6,
+    7,
+    7,
+    7,
+    7,
+    4,
+    9,
+    8,
+    8
+   ],
+   "V_tot": 89,
+   "okr_V": [
+    7,
+    7,
+    5,
+    7,
+    6,
+    7,
+    7,
+    7,
+    7,
+    4,
+    9,
+    8,
+    8
+   ],
+   "okr_V_tot": 89,
+   "A_groups": 25,
+   "p_exact": "1/1014454095446016",
+   "p_exact_float": 9.85751848692906e-16,
+   "null_mean": 51.0,
+   "null_max": 89,
+   "p_mc": 9.999000099990002e-05,
+   "mc_null_mean": 50.8978,
+   "mc_null_max": 70,
+   "mc_agrees": true,
+   "shift_offsets": 12,
+   "fpr_shift": 0.16666666666666666,
+   "shift_p_min": 0.0005878993988962491,
+   "loo_max_p": 4.869614132542956e-13,
+   "loo_argmax_group": 10,
+   "strict_winners": 5,
+   "ties_at_max": 4,
+   "pair_gate": "TOOL EXCLUDED (shift)",
+   "verdict": "NOT TESTABLE (pipeline gate)",
+   "bonferroni_K019_rule": true
+  },
+  "KH0192/KH0470": {
+   "matched_groups": 14,
+   "pairs_ij": [
+    [
+     2,
+     0
+    ],
+    [
+     4,
+     4
+    ],
+    [
+     5,
+     5
+    ],
+    [
+     6,
+     6
+    ],
+    [
+     7,
+     7
+    ],
+    [
+     8,
+     8
+    ],
+    [
+     9,
+     9
+    ],
+    [
+     11,
+     10
+    ],
+    [
+     12,
+     11
+    ],
+    [
+     13,
+     12
+    ],
+    [
+     16,
+     13
+    ],
+    [
+     23,
+     14
+    ],
+    [
+     30,
+     15
+    ],
+    [
+     34,
+     16
+    ]
+   ],
+   "V": [
+    1,
+    2,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    1,
+    1,
+    1,
+    1
+   ],
+   "V_tot": 37,
+   "okr_V": [
+    1,
+    2,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    1,
+    1,
+    1,
+    1
+   ],
+   "okr_V_tot": 37,
+   "A_groups": 41,
+   "p_exact": "3267/671088640000000000000",
+   "p_exact_float": 4.8682093620300296e-18,
+   "null_mean": 12.8,
+   "null_max": 37,
+   "p_mc": 9.999000099990002e-05,
+   "mc_null_mean": 12.7899,
+   "mc_null_max": 24,
+   "mc_agrees": true,
+   "shift_offsets": 13,
+   "fpr_shift": 0.0,
+   "shift_p_min": 0.023118008168464266,
+   "loo_max_p": 3.806256353855133e-13,
+   "loo_argmax_group": 4,
+   "strict_winners": 8,
+   "ties_at_max": 1,
+   "pair_gate": "ok",
+   "verdict": "NOT TESTABLE (pipeline gate)",
+   "bonferroni_K019_rule": true
+  },
+  "KH0192/KH0469": {
+   "matched_groups": 15,
+   "pairs_ij": [
+    [
+     14,
+     0
+    ],
+    [
+     15,
+     1
+    ],
+    [
+     16,
+     3
+    ],
+    [
+     23,
+     4
+    ],
+    [
+     27,
+     5
+    ],
+    [
+     28,
+     6
+    ],
+    [
+     29,
+     7
+    ],
+    [
+     30,
+     8
+    ],
+    [
+     32,
+     10
+    ],
+    [
+     33,
+     11
+    ],
+    [
+     34,
+     12
+    ],
+    [
+     35,
+     13
+    ],
+    [
+     36,
+     14
+    ],
+    [
+     37,
+     15
+    ],
+    [
+     39,
+     17
+    ]
+   ],
+   "V": [
+    1,
+    0,
+    1,
+    2,
+    3,
+    3,
+    4,
+    3,
+    2,
+    4,
+    2,
+    4,
+    3,
+    2,
+    2
+   ],
+   "V_tot": 36,
+   "okr_V": [
+    1,
+    0,
+    1,
+    2,
+    3,
+    3,
+    4,
+    3,
+    2,
+    4,
+    2,
+    4,
+    3,
+    2,
+    2
+   ],
+   "okr_V_tot": 36,
+   "A_groups": 41,
+   "p_exact": "28431/20971520000000000000",
+   "p_exact_float": 1.3556957244873046e-15,
+   "null_mean": 13.525,
+   "null_max": 36,
+   "p_mc": 9.999000099990002e-05,
+   "mc_null_mean": 13.5454,
+   "mc_null_max": 25,
+   "mc_agrees": true,
+   "shift_offsets": 14,
+   "fpr_shift": 0.0,
+   "shift_p_min": 0.022579812461097932,
+   "loo_max_p": 1.09926087641716e-11,
+   "loo_argmax_group": 11,
+   "strict_winners": 6,
+   "ties_at_max": 4,
+   "pair_gate": "ok",
+   "verdict": "NOT TESTABLE (pipeline gate)",
+   "bonferroni_K019_rule": true
+  }
+ },
+ "okr_exact": {
+  "KH0097/KH0586": {
+   "matched_groups": 13,
+   "V_tot": 89,
+   "same_as_K019": true,
+   "p_exact": "1/1014454095446016",
+   "p_exact_float": 9.85751848692906e-16,
+   "null_mean": 51.0,
+   "null_max": 89,
+   "shift_offsets": 12,
+   "fpr_shift": 0.16666666666666666,
+   "verdict_new_rules": "TOOL EXCLUDED (shift)",
+   "K019_correction": true
+  },
+  "KH0192/KH0470": {
+   "matched_groups": 14,
+   "V_tot": 37,
+   "same_as_K019": true,
+   "p_exact": "9801/1677721600000000000000",
+   "p_exact_float": 5.8418512344360355e-18,
+   "null_mean": 12.825,
+   "null_max": 37,
+   "shift_offsets": 13,
+   "fpr_shift": 0.0,
+   "verdict_new_rules": "CONFIRMED",
+   "K019_correction": false
+  },
+  "KH0192/KH0469": {
+   "matched_groups": 15,
+   "V_tot": 36,
+   "same_as_K019": true,
+   "p_exact": "28431/20971520000000000000",
+   "p_exact_float": 1.3556957244873046e-15,
+   "null_mean": 13.55,
+   "null_max": 36,
+   "shift_offsets": 14,
+   "fpr_shift": 0.0,
+   "verdict_new_rules": "CONFIRMED",
+   "K019_correction": false
+  }
+ },
+ "G0": "pass",
+ "exact_fixture": {
+  "cases": 42,
+  "passed": 42
+ },
+ "A0": {
+  "pass_": true,
+  "rc": 0,
+  "note": "k019_cord_level.py run unchanged on OKR; results dict compared to the published k019_results.json (sec excluded)"
+ },
+ "sec": 7.0,
+ "kfg_data": {
+  "n_with_pendants": 695,
+  "n_grouped": 694,
+  "G1_bad": 1,
+  "n_eligible": 495,
+  "n_R5_masked": 2588,
+  "pair_khipus_eligible": {
+   "KH0097": true,
+   "KH0192": true,
+   "KH0469": true,
+   "KH0470": true,
+   "KH0586": true
+  }
+ },
+ "G_EX": {
+  "pass_": true,
+  "per_pair": {
+   "KH0097/KH0586": true,
+   "KH0192/KH0470": true,
+   "KH0192/KH0469": true
+  }
+ },
+ "G_FPR": {
+  "n_pairs": 92,
+  "tries": 20000,
+  "min_groups": 5,
+  "candidates": 312,
+  "fpr_at_alpha_pair": 0.010869565217391304,
+  "fpr_at_0_05": 0.03260869565217391,
+  "mean_p": 0.4770907707382575,
+  "hits": [
+   [
+    "KH0323",
+    "KH0563",
+    5,
+    0.0017221976530701875
+   ]
+  ],
+  "pass_": false
+ },
+ "G_POW": {
+  "f": 0.25,
+  "power": 0.13043478260869565,
+  "curve": {
+   "0.1": 0.043478260869565216,
+   "0.15": 0.07608695652173914,
+   "0.25": 0.17391304347826086,
+   "0.4": 0.3695652173913043
+  },
+  "pass_": false
+ },
+ "pipeline_gates_pass": false,
+ "decision": {
+  "KH0097/KH0586": "NOT TESTABLE",
+  "KH0192/KH0470": "NOT TESTABLE",
+  "KH0192/KH0469": "NOT TESTABLE"
+ }
+}
