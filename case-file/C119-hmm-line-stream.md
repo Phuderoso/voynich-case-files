@@ -386,6 +386,7 @@ Artefacts: `analysis/C119_checkpoint.jsonl`, `C119_gates.json`, `C119_results.js
 - Fitter history: EM (v2) → L-BFGS-B on logits with a 1e-6 box (v3) → L-BFGS-B in probability space with exact bounds and the two-criterion convergence rule (v4, final).
   S, ranks and the plant decision were identical across v3 and v4.
 - Everything in section 6 used CAE-DV W1 only. W2, the secondary controls and the manuscript were never loaded.
+- **Independent blind recount (2026-11-20) by Kryptos · Pesquisadora**, with her own code from this prose (seeds 11802 / 11804, calibration frozen from R11): verdict, ranks and gates match (B1 z 39.51, B2 z 8.46, A p 0.7875; G-POW z 10.70). Leaks and three prose gaps (gtol, KKT-only flags, basin cut) are declared there: [`audits/c119-blind-recount-kryptos/`](../audits/c119-blind-recount-kryptos/README.md).
 
 ## Files
 
