@@ -253,3 +253,16 @@ exploratory if run. Line 6's colour and physical-feature questions on the K019 p
 mapped.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Correction (K088, 19 Nov 2026)
+[K088](K088-kfg-rare-label-ceiling.md) added a pre-registered exact **margin-ceiling gate**: if the smallest p the
+observed margins allow, p_floor = P(A = min(n_rare_A, n_rare_B)), is ≥ α, the field is NOT TESTABLE by construction.
+Here: **KH0097·KH0586 termination** p_floor = 4/87 = 0.0460 ≥ 0.00833 → **NOT TESTABLE (margin ceiling)**, not "NOT
+SUPPORTED (powered negative)" — the 0.945 plant power raised HP's `B` count and so did not describe the observed
+margins; **KH0192·KH0470 termination** p_floor = 3/37 → NOT TESTABLE (margin ceiling) rather than TOOL EXCLUDED.
+KH0192·KH0469 and the three knot-direction fields are unchanged. The K048 headline "no primary pair-field supported"
+stands; the phrase "one powered negative" is withdrawn. Replicated on KFG in K088.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

@@ -3,8 +3,8 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: pre-registration** (written, with the tool and a shuffled-feature smoke, before any real KFG dual-rare count
-is computed).
+**Status: results appended** (pre-registration, tool and shuffled-feature smoke pushed as `a272a92` before the real
+run; artefacts `44c4bcb`).
 
 ## Why
 Step 3 of the physical-witness block of the KFG re-audit (K087 did K047). K048 (OKR) asked whether the *rare* marks on
@@ -93,5 +93,65 @@ power and curve, the exact hypergeometric p of each observed A.
 ## Output
 `analysis/k088_results.json`, log `analysis/k088_run.log`. Run from `expeditions/khipu/`:
 `timeout 600 python3 tools/k088_kfg_rare_label_ceiling.py`.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (run 19 Nov 2026 ~21:48 PT, America/Vancouver; 4.2 s; [`analysis/k088_results.json`](../analysis/k088_results.json), [log](../analysis/k088_run.log))
+Run after the pre-registration, tool and smoke were published as `a272a92` (connector `push_files`). Artefacts `44c4bcb`.
+
+**Gates:** G0 hashes pass; K048 fixture 27/27; KFG knot fixture 7/7; ceiling fixture 7/7; **F0 6/6** (the K048 engine
+on the OKR reproduces K048's (n, n_rare_A, n_rare_B, A) exactly); KFG alignment 13/89, 14/37, 15/36 (= K019/K076/K087).
+
+| Pair · field | n | rare A / B | A (dual-rare) | null mean | p (N1) | p_floor (exact) | copy-all | FPR perm / shift | power 50 % | Track A (frozen K048) | **Track B (with ceiling)** | K048 on OKR → with ceiling |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| KH0097·KH0586 termination | 89 | 4 / 1 | 1 | 0.045 | 0.0449 | **0.0449 ≥ α** | pass (A 4, p 0.0005) | 0 / 0 | 0.975 | NOT SUPPORTED | **NOT TESTABLE (margin ceiling)** | NOT SUPPORTED → **NOT TESTABLE (ceiling, 4/87 = 0.0460)** |
+| KH0097·KH0586 knot dir | 82 | 18 / 0 | 0 | — | — | — | — | — | — | DEGENERATE (B all `Z`) | DEGENERATE | DEGENERATE |
+| KH0192·KH0470 termination | 37 | 1 / 3 | 0 | 0.078 | 1.000 | **0.0811 ≥ α** | **fail** (A 1, p 0.025) | 0 / 0 | 0.00 | TOOL EXCLUDED | **NOT TESTABLE (margin ceiling)** | TOOL EXCLUDED → **NOT TESTABLE (ceiling, 3/37)** |
+| KH0192·KH0470 knot dir | 27 | 0 / 6 | 0 | — | — | — | — | — | — | DEGENERATE (A no `S`) | DEGENERATE | DEGENERATE |
+| KH0192·KH0469 termination | 36 | 3 / 2 | 0 | 0.166 | 1.000 | 0.00476 < α | pass (A 3, p 0.0005) | 0.001 / 0.034 | 0.035 | NOT TESTABLE (power) | NOT TESTABLE (power) | NOT TESTABLE (unchanged) |
+| KH0192·KH0469 knot dir | 21 | 0 / 2 | 0 | — | — | — | — | — | — | DEGENERATE (A all `Z`) | DEGENERATE | DEGENERATE |
+
+Labels on the usable units are exactly K087's (termination A {K 83, B 4, U 2} / B {K 87, B 1, U 1}; KH0192·KH0470
+A {K 36, B 1} / B {K 34, B 3}; KH0192·KH0469 A {K 33, B 3} / B {K 34, B 2}); knot-direction margins equal K048's OKR
+ones (KH0097 18 `S` / KH0586 0; KH0192 0 `S` on both Berlin alignments; KH0470 6, KH0469 2). The only data change from
+the OKR is again n 87 → 89 on Paris·Lima (two coded `K` ends): A stays 1, the single dual-`B` unit is the same
+zero-value cord (group pair 10, positions 7 / 9), p 0.0458 → 0.0449. The permutation p equals the exact floor, as it
+must when A = A_max.
+
+**Mapping.** Track A (frozen K048 rules): Paris·Lima termination **REPLICATED** (NOT SUPPORTED on both), the other five
+REPLICATED (not readable on either). Track B (verdict of record): **6/6 REPLICATED (not readable on either)**.
+**Corrections of K048 (published here):** Paris·Lima termination NOT SUPPORTED → **NOT TESTABLE (margin ceiling)**;
+KH0192·KH0470 termination TOOL EXCLUDED → **NOT TESTABLE (margin ceiling)** (both unreadable before and after; the reason
+changes from a gate failure to a property of the data).
+
+### Why the ceiling is the honest reading
+With one broken HP end on the aligned units, the dual-`B` count can be 0 or 1. P(A = 1) = 4/89: the best possible
+arrangement of these labels — the one HP break sitting on one of the four Paris breaks, which is what we observe — is
+already the most extreme outcome and still sits at p 0.045, five times α. A "powered negative" there is impossible:
+the 0.975 plant power describes a world where B carries three broken ends, not this one. So the observed A = 1 is not
+evidence *against* shared breaks; it is the top of a scale too short to reach α. The same holds on KH0192·KH0470
+(one Ascher `B`; best case 3/37). Only KH0192·KH0469 has margins that *could* reach α (both HP-side `B`s on Ascher
+`B`s: 3/630), and there the observed A is 0 and the plant power 0.035.
+
+### Disclosed, not verdicts
+With leaders: Paris·Lima termination n 102, 4 / 1, A 1, p 0.040; Berlin termination A 0, p 1.0 (n 51 each); Berlin knot
+direction with leaders becomes non-degenerate (one Ascher leader `S`): KH0192·KH0470 A 1, p 0.21; KH0192·KH0469 A 1,
+p 0.30. Non-zero-value units: every termination field degenerates (the Paris·Lima dual-`B` is the zero-value cord).
+N2 within-group: Paris·Lima p 0.142, Berlin p 1.0. Plant curve (0.25/0.50/0.75/1.00): Paris·Lima 0.03/0.98/1.00/1.00;
+KH0192·KH0470 0/0/0/0; KH0192·KH0469 0/0.06/0.06/1.00. One of 29 circular shifts on KH0192·KH0469 reached p 0.0053
+(shift FPR 0.034 ≤ 0.08, gate passes).
+
+**Headline: NOT READABLE, replicated; K048 corrected.** On both databases, for these three pairs, the rare-mark witness
+cannot speak at α = 0.05/6: three fields are degenerate, two are capped below α by their own margins, one lacks power.
+K048's "one powered negative" was a gate gap, now closed with an exact rule. This overturns no positive result and says
+nothing about same object vs copy. No decipherment.
+
+### Next (line 9)
+The physical / rare-mark block of the K019 pairs (K046–K048) is fully re-audited on KFG. Next: the K020 family with
+1 000 null corpora and bar intervals (K085/K086 bars vary 74.8–82.6 across seeds), or K049 (colour on the five K010
+value-block pairs) on KFG; any future rare-label or small-margin test carries the p_floor gate from the start.
+Seeds 6473–6477 used (+ derived 6575); next free **6478**.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
