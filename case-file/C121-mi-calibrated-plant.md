@@ -34,4 +34,41 @@ C120 opened F-MID: M = Σ_d MI(d), glyph mutual information at lags 16–256 ins
 - **What a detection would NOT mean:** meaning, a language, or a decipherment; only that within-page word order carries glyph information at 3-words-to-lines range, beyond the page's word multiset.
 - **Scope note.** For Currier A, the smallest plant the instrument can see reliably (E ≈ 0.018 bits) is about twice the ZL3b-A descriptive excess (0.0088). So an A "EXCLUDED" could only exclude echoes of that larger size; it would not exclude an A echo as small as the observed one.
 
+## Results (run 2026-11-20, 08:46 PT)
+Run: `timeout 600 python3 tools/c121_mi_calibrated.py run` (tool sha256 `f6e5caa0…`, byte-identical to the pre-registration commit 3377548), 70 s. Artefacts: `analysis/C121_results.json` (sha256 74aff4fe…), `analysis/C121_run.log` (commit d0ca575).
+
+### Gates — all pass
+| stratum | G-INV | plant | G-FPR (≤ 2/20) | G-POW (≥ 16/20) | mean planted E on manuscript pseudo (bits) | gate |
+|---|---|---|---|---|---|---|
+| ZL3b A | pass | 0.75 × 5 | 0/20 | 20/20 | 0.0239 | PASS |
+| ZL3b B | pass | 0.75 × 4 | 0/20 | 20/20 | 0.0057 | PASS |
+| IT2a A | pass | 0.75 × 5 | 0/20 | 20/20 | 0.0231 | PASS |
+| IT2a B | pass | 0.75 × 4 | 0/20 | 20/20 | 0.0056 | PASS |
+
+The calibrated plants are a little stronger on manuscript pseudo replicates than on the controls (B 0.0057 vs 0.0040), and the B plant stays **below** the observed Voynich-B excess (0.0070), as the comparability rule asked.
+
+### H1 (R 1,000, Holm over 4 at α 0.05)
+| stratum | units | E (bits) | null sd | z | p (floor 1/1001) | effective N | Holm |
+|---|---|---|---|---|---|---|---|
+| ZL3b A | 34,059 | 0.0089 | 0.0037 | 2.40 | 0.0070 | 1000 | reject |
+| ZL3b B | 115,491 | 0.0070 | 0.0009 | 7.82 | 0.0010 | 1000 | reject |
+| IT2a A | 31,950 | 0.0015 | 0.0038 | 0.40 | 0.342 | 1000 | — |
+| IT2a B | 117,167 | 0.0073 | 0.0009 | 8.05 | 0.0010 | 1000 | reject |
+
+Per-lag excess, ZL3b B (×10⁻³ bits): 16: 1.65 · 24: 0.80 · 32: 1.02 · 48: 1.20 · 64: 1.42 · 96: 0.83 · 128: −0.02 · 192: 0.55 · 256: −0.43. IT2a B: 1.06 · 0.60 · 0.60 · 1.56 · 1.26 · 0.55 · 0.44 · 0.47 · 0.71. These replicate C120's printed numbers on fresh seeds (11819 vs 11809).
+
+### Verdict
+- **Currier B: DETECTED** (both transcriptions reject at the p floor; gates pass with a plant whose effect, 0.004–0.006 bits, is smaller than the observed one). Within-page word order in Currier B carries glyph information at 16–96 units (about 3 words to 2 lines) beyond what the page's word multiset carries. Not blind: the C120 B numbers were public.
+- **Currier A: PARTIAL** (ZL3b rejects, p 0.0070, Holm step 3; IT2a does not, p 0.34). The two transcriptions disagree, as in C120. The A plant had to be large (E ≈ 0.024 on manuscript pseudo replicates) to be seen reliably on 6–7k-word strata, so A's non-rejection in IT2a is **not** an exclusion of a small echo; it is a PARTIAL with low resolution.
+- Nothing is **EXCLUDED** this cycle.
+
+### What this does and does not say
+- It says Currier B words are not placed independently inside the page; the order leaves a glyph-level echo up to about two lines. It does **not** say what makes it (verse-like parallelism, formulaic repetition, or a gentle copying process) and it implies no meaning.
+- C120's descriptive panel still frames the size: above every natural text (max Kalevala 0.0061), below every default Timm–Schinner run (0.015–0.027). The calibration adds a scale: on controls, copying 4 words from the line above in 3 of 4 lines gives about 0.004 bits, and copying 4 words in every line gives about 0.006 bits; on controls, Voynich B (0.0070) matches copying 5 words from the line above in 3 of 4 lines (0.0070); on manuscript pseudo replicates the 4-word plant already gives 0.0057. That holds under this one plant family only. That is a size comparison, not a mechanism.
+- Inside-page pairs never cross a page, so the binding-order question (Layfield & Fagin Davis 2026) does not touch the statistic.
+- A/B transcription disagreement in Currier A (ZL3b vs IT2a) is a lead in itself: same pages, different word division or reading choices, different echo.
+
+### Next (C122 pointer)
+F-MID step 3: (1) where the B echo lives: same-position copy (column) vs anywhere-in-line, by lag 48–64 vs 16; per section inside B (herbal B, balneo, stars); (2) the C083 generator grid under E, asking whether any setting falls in the 0.006–0.008 band; (3) a verse panel (Kalevala neighbour); (4) why ZL3b and IT2a disagree on Currier A (word-split audit of the A pages driving E).
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
