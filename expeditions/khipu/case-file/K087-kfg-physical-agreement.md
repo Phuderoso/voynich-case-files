@@ -3,8 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: PRE-REGISTRATION** (written and pushed with the tool before any real KFG pair-feature agreement number was
-computed; the only run so far is a smoke run on KFG features **shuffled within each khipu**, which checks plumbing only).
+**Status: results appended** (pre-registration, tool and shuffled-feature smoke pushed as `3920169` before the real run).
 
 ## Why
 Step 2 of the data-source migration: every published khipu result is re-run on the Khipu Field Guide (KFG,
@@ -56,7 +55,36 @@ both stay census-only as in K047.
   SUPPORTED; otherwise CHANGED. A SUPPORTED pair-field would be a physical witness on the KFG only, labelled as such,
   and would need a held-out confirmation before any claim. No decipherment either way.
 
-## Results
-*(appended after the run)*
+## Results (run 19 Nov 2026 ~18:10 PT, 9.0 s; `analysis/k087_results.json`)
+Gates: G0 hashes pass; K047 fixture pass; KFG knot fixture 7/7; **F0 6/6** (OKR (n, A) = K047's exactly);
+alignment on KFG 13/89, 14/37, 15/36 (identical to K019/K076).
+
+| Pair · field | n | A | null mean | p | copy-all | FPR perm / shift | power (25 %) | KFG verdict | K047 (OKR) | OKR vs KFG |
+|---|---|---|---|---|---|---|---|---|---|---|
+| KH0097·KH0586 termination | 89 | 83 | 81.2 | 0.0686 | pass | 0.001 / 0.000 | 0.42 | NOT TESTABLE | NOT TESTABLE (n 87, p 0.047, power 0.36) | **Replicated (not readable)** |
+| KH0097·KH0586 knot direction | 82 | 55 | — | — | — | — | — | DEGENERATE (B all Z) | DEGENERATE | **Replicated (not readable)** |
+| KH0192·KH0470 termination | 37 | 33 | 33.2 | 1.0 | **fail** | 0 / 0 | 0.00 | TOOL EXCLUDED | TOOL EXCLUDED | **Replicated (not readable)** |
+| KH0192·KH0470 knot direction | 27 | 19 | 19.5 | 1.0 | pass | 0 / 0 | 0.08 | NOT TESTABLE | NOT TESTABLE | **Replicated (not readable)** |
+| KH0192·KH0469 termination | 36 | 31 | 31.3 | 1.0 | pass | 0.005 / 0.034 | 0.04 | NOT TESTABLE | NOT TESTABLE | **Replicated (not readable)** |
+| KH0192·KH0469 knot direction | 21 | 17 | — | — | — | — | — | DEGENERATE (A all Z) | DEGENERATE | **Replicated (not readable)** |
+
+Labels on the aligned units: KH0097·KH0586 termination A {K 83, B 4, U 2} / B {K 87, B 1, U 1}; KH0192·KH0470
+A {K 36, B 1} / B {K 34, B 3}; KH0192·KH0469 A {K 33, B 3} / B {K 34, B 2}. The only data change: the two KH0097
+cords whose termination was empty in the OKR are coded on the KFG, so n rises 87 → 89 with A unchanged (83);
+the null mean rises and p moves 0.047 → 0.069 (never below α = 0.0083 on either), power 0.36 → 0.42.
+
+Disclosed, not verdicts: ordered knot tuples A 21 / 11 / 12 (p 10⁻⁴ each; labels SUPPORTED / TOOL EXCLUDED /
+NOT TESTABLE) and length Spearman ρ 0.206 / 0.242 / −0.078 (p 0.026 / 0.072 / 0.675) — the same values K047
+printed. K047's caveat stands unchanged: KH0586 (and KH0192) record nearly every knot as `Z`, so a tuple match
+is mostly "equal knot counts on cords already paired by equal value", a leak of the alignment, not a physical witness.
+
+**Headline: REPLICATED.** K047's "no primary pair-field readable" holds on the KFG, 6/6. The KFG's curation did not
+change a single label on the aligned cords; it filled two empty ends. Physical-feature *equality* on these fields,
+for these three pairs, stays unreadable: termination is ~93 % `K` on both sides and knot chirality is a recorder
+constant on two of the five records. Nothing is said about same-object vs copy. No decipherment.
+
+### Next (line 9)
+K048 (rare-label concordance: do the few `B` ends land on each other?) on KFG is the natural sequel; the counts above
+already show its ceiling (at most 4 / 1 / 3 `B` units on the KH0097 / KH0470 / KH0469 sides of the aligned pairs).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
