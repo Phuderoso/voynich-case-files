@@ -3,8 +3,8 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: pre-registration** (case file, tool and plumbing smoke pushed before the real run; nothing in the Results
-section exists yet).
+**Status: results appended** (pre-registration, tool and smoke note pushed as `fde05b9` before the real run; artefacts
+`be61423`).
 
 ## Why this one
 Line 9 asks for every verdict-reaching K0xx result to be re-run on the Khipu Field Guide (KFG) data, one at a time.
@@ -88,5 +88,62 @@ re-curated data, not an independent replication.
 MC **6483**, calibration pairs **6484**, power **6485**, curve **6486**; next free **6487**. Run from
 `expeditions/khipu/`: `timeout 600 python3 tools/k090_kfg_k019_cord_level.py run` → `analysis/k090_results.json` and
 log `analysis/k090_run.log`. Smoke took 5 s.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (run 20 Nov 2026 ~05:50 PT, America/Vancouver; 7.0 s; [`analysis/k090_results.json`](../analysis/k090_results.json), [log](../analysis/k090_run.log))
+Run after the pre-registration, tool and smoke note were published as `fde05b9` (connector `push_files`); the tool
+on disk was byte-identical to the pushed one (sha256 `ebd48265…`). Artefacts `be61423`. Nothing was cut by the wall.
+
+**Gates.** G0 pass (OKR, KFG, 695 xlsx). Exact-null fixture **42/42**. **A0 pass**: `k019_cord_level.py`, run
+unchanged on the OKR in a scratch directory, reproduces the published `k019_results.json` exactly. KFG layer as in
+K076: 695 khipus with pendants, 694 grouped, 495 eligible, 2 588 R5 pendants masked. **G-EX pass** 3/3 (every MC p
+is at its floor 1/10 001, consistent with the exact p). **G-FPR FAIL (size)**: only **92** unrelated KFG pairs reach
+≥ 8 — and then ≥ 5 — matched leader groups in 20 000 draws (312 candidate khipus), below the registered 100. Their FPR
+is **1/92 = 0.011** at 0.01/3 (one hit, KH0323·KH0563, 5 groups, p 0.0017; FPR 0.033 at 0.05; mean p 0.48), which is
+under the 0.02 bar, but the gate needed both. **G-POW 0.13** at f = 0.25 (curve 0.04 / 0.08 / 0.17 / 0.37 at
+f = 0.10 / 0.15 / 0.25 / 0.40): on short unrelated alignments a weak copy is rarely seen. It would only gate silence.
+
+| Pair | Groups (A groups) | V_tot KFG = OKR | exact null mean · max | **p_exact KFG** | p_exact OKR | MC p (R 10 000) | shift gate (offsets < α) | LOO max p | strict winners / ties | **KFG verdict** | OKR, new rules | Mapping |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| KH0097·KH0586 (Paris·Lima) | 13 (25) | 89 = 89 | 51.0 · 89 | **1/1 014 454 095 446 016 ≈ 9.9×10⁻¹⁶** | same | 1.0×10⁻⁴ (floor) | **FAIL 2/12** (offsets ±1: p 0.0032, 0.00059) | 4.9×10⁻¹³ | 5 / 4 | NOT TESTABLE (pipeline) + TOOL EXCLUDED (shift) | **TOOL EXCLUDED (shift)** | NOT TESTABLE |
+| KH0192·KH0470 (Berlin) | 14 (41) | 37 = 37 | 12.8 · 37 | **3 267/671 088 640 000 000 000 000 ≈ 4.9×10⁻¹⁸** | 5.8×10⁻¹⁸ | 1.0×10⁻⁴ (floor) | pass 0/13 (min 0.023) | 3.8×10⁻¹³ | 8 / 1 | NOT TESTABLE (pipeline) | **CONFIRMED** | NOT TESTABLE |
+| KH0192·KH0469 (Berlin) | 15 (41) | 36 = 36 | 13.5 · 36 | **28 431/20 971 520 000 000 000 000 ≈ 1.4×10⁻¹⁵** | 1.4×10⁻¹⁵ | 1.0×10⁻⁴ (floor) | pass 0/14 (min 0.023) | 1.1×10⁻¹¹ | 6 / 4 | NOT TESTABLE (pipeline) | **CONFIRMED** | NOT TESTABLE |
+
+**Verdict of record (K090, KFG): 3/3 NOT TESTABLE** — the pipeline gate failed on the size of the calibration corpus
+(92 < 100), not on its rate; Paris·Lima also fails its shift gate. No KFG pair is labelled CONFIRMED or NOT CONFIRMED.
+Descriptively nothing moved: the same 13/14/15 groups, the same per-group V, and exact p between 10⁻¹⁵ and 10⁻¹⁸ on
+both databases (KH0097 and KH0586 identical in the KFG; KH0192's partner pool changed slightly, 5.8 → 4.9 ×10⁻¹⁸).
+
+**Correction of K019 (OKR exact arm, pre-registered rule):** KH0097·KH0586 cord-level **CONFIRMED → TOOL EXCLUDED
+(shift)**. Pairing each Lima group with the Paris partner of its *neighbouring* group (offset +1 or −1) already gives
+p 0.0032 and 0.00059 under the same null, below 0.01/3, in 2 of 12 offsets; the gate is 0.10. The Berlin pairs keep
+**CONFIRMED** (exact p 5.8×10⁻¹⁸ and 1.4×10⁻¹⁵; shift 0/13, 0/14). K019's "p < 10⁻⁴" for all three is replaced by
+the exact values above. K018's leader-level confirmation of Paris·Lima is untouched (K086 found it again on the KFG).
+
+### Reading (and what not to read)
+- **Paris·Lima.** The true alignment is still twelve orders of magnitude beyond its neighbours (10⁻¹⁵ vs 10⁻³), and
+  the leave-one-group-out maximum p is 4.9×10⁻¹³, so this is not one group carrying the result. What the shift gate
+  shows is that KH0097's groups 1–15 resemble their neighbours: a slowly drifting template (K019 already noticed the
+  extra `222` cord repeated in many KH0586 groups). The pre-registered gate cannot tell "neighbour-similar template plus
+  a true group-to-group copy" from "template alone"; the gate fires, the label is TOOL EXCLUDED. A shift-aware null
+  (partners drawn away from i ± 1, or the true partner's rank among offsets) is the K091 candidate; it is not run here.
+- **The Monte Carlo floor hid the structure.** K019's MC null maximum was 71 / 24 / 25; the exact null maximum equals
+  the observed V_tot on all three pairs — a few wrong-partner assignments can reach the observed score, just with
+  probability ~10⁻¹⁵. Ten thousand draws never visit that tail.
+- **Calibration is data-limited, not failing.** Unrelated KFG pairs with ≥ 5 leader-matched groups are rare (92 in
+  20 000 draws); their FPR (0.011) is at the registered rate. Enumerating all 312 × 311 ordered pairs instead of
+  sampling would very likely clear 100 — also a K091 item, to be pre-registered.
+- **Knock-on.** K046–K049 / K076 / K087–K089 used K019's *alignment* (which cords face which), not its p; none of their
+  verdicts depends on this correction.
+- Same caveats as K019: a value correspondence, not a reading; copy vs same object recorded twice stays open.
+
+**Borrowed from Kryptos (cycle 223, distinct witnesses).** Strict winners — groups where the true Paris partner beats
+every other Paris group outright — are 5 of 13 (4 more tie at the top); Berlin 8/14 and 6/15. The excess is spread
+over many rooms, not one witness, which is why LOO barely moves p.
+
+Seeds used 6483–6486; **next free 6487**.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

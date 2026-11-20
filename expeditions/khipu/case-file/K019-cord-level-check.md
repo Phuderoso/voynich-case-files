@@ -68,3 +68,20 @@ covering KH0140/KH0483 (same Berlin khipu recorded twice), the Paris·Lima pair 
 K018/K019.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Correction addendum (K090, 20 Nov 2026)
+Re-audit [K090](K090-kfg-k019-cord-level.md) computed this test's null **exactly** (integer convolution of the
+random-partner choices) and added a pre-registered per-pair cyclic-shift gate (wrong-partner pseudo-observations;
+gate 0.10 at 0.01/3, Holm at 0.01). This file's tool, re-run unchanged on the OKR, reproduced the table above exactly.
+- **KH0097 · KH0586 (Paris · Lima): CONFIRMED → TOOL EXCLUDED (shift).** Neighbour offsets ±1 already reach
+  p 0.0032 and 0.00059 (2/12 offsets), so the cord-level agreement is not shown to be specific to the matched group;
+  KH0097's groups resemble their neighbours. The true alignment's exact p is 1/1 014 454 095 446 016 ≈ 9.9×10⁻¹⁶.
+  K018's leader-level confirmation is unaffected.
+- **KH0192 · KH0470: CONFIRMED stands**, exact p ≈ 5.8×10⁻¹⁸ (shift 0/13). **KH0192 · KH0469: CONFIRMED stands**,
+  exact p ≈ 1.4×10⁻¹⁵ (shift 0/14).
+- "p < 10⁻⁴ (floor)" above is superseded by these exact values. On the KFG all three are NOT TESTABLE (K090's
+  calibration corpus was too small: 92 < 100 pairs).
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
