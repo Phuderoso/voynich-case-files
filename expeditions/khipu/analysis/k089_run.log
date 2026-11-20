@@ -1,0 +1,24 @@
+G0 + fixtures 14/14 + ceiling fixture pass 0.1
+A0 values {'pass_': True} {'KH0362/KH0049': (46, 82), 'KH0128/KH0137': (39, 40), 'KH0140/KH0483': (0, 0), 'KH0304/KH0303': (20, 20), 'KH0305/KH0301': (41, 40)}
+KH0362/KH0049 n=12 fpr_perm=0.0000 fpr_shift=0.0 power=0.000 (0.2s)
+KH0362/KH0049 A=6/12 null_mean=5.50 p=0.50025 -> TOOL EXCLUDED (0.2s)
+KH0128/KH0137 n=10 A=0 DEGENERATE (no_shared_matching_colour)
+KH0140/KH0483 n=12 A=12 DEGENERATE (A_monochromatic)
+KH0304/KH0303 n=7 fpr_perm=0.0000 fpr_shift=0.0 power=0.065 (0.1s)
+KH0304/KH0303 A=3/7 null_mean=0.85 p=0.01730 -> NOT TESTABLE (0.1s)
+KH0305/KH0301 n=8 fpr_perm=0.0040 fpr_shift=0.14285714285714285 power=0.040 (0.1s)
+KH0305/KH0301 A=4/8 null_mean=1.00 p=0.00470 -> TOOL EXCLUDED (0.2s)
+A0 OKR rebuild {'pass_': True, 'mismatches': {'KH0362/KH0049': [], 'KH0128/KH0137': [], 'KH0140/KH0483': [], 'KH0304/KH0303': [], 'KH0305/KH0301': []}, 'note': ''}
+KH0362/KH0049 n=12 fpr_perm=0.0000 fpr_shift=0.0 power=0.000 (0.2s)
+KH0362/KH0049 A=6/12 null_mean=5.50 p=0.49645 -> TOOL EXCLUDED (0.2s)
+KH0128/KH0137 n=10 A=0 DEGENERATE (no_shared_matching_colour)
+KH0304/KH0303 n=7 fpr_perm=0.0000 fpr_shift=0.0 power=0.030 (0.1s)
+KH0304/KH0303 A=3/7 null_mean=0.85 p=0.01950 -> NOT TESTABLE (0.1s)
+KH0305/KH0301 n=8 fpr_perm=0.0030 fpr_shift=0.14285714285714285 power=0.030 (0.1s)
+KH0305/KH0301 A=4/8 null_mean=1.00 p=0.00600 -> TOOL EXCLUDED (0.1s)
+KH0362/KH0049 {'okr_k049': 'TOOL EXCLUDED', 'okr_with_ceiling': 'NOT TESTABLE (margin ceiling)', 'kfg_frozen': 'TOOL EXCLUDED', 'kfg_with_ceiling': 'NOT TESTABLE (margin ceiling)', 'track_A': 'REPLICATED (not readable on either)', 'track_B': 'REPLICATED (not readable on either)'}
+KH0128/KH0137 {'okr_k049': 'DEGENERATE', 'okr_with_ceiling': 'DEGENERATE', 'kfg_frozen': 'DEGENERATE', 'kfg_with_ceiling': 'DEGENERATE', 'track_A': 'REPLICATED (not readable on either)', 'track_B': 'REPLICATED (not readable on either)'}
+KH0140/KH0483 {'okr_k049': 'DEGENERATE', 'okr_with_ceiling': 'DEGENERATE', 'kfg_frozen': 'NOT TESTABLE (data)', 'kfg_with_ceiling': 'NOT TESTABLE (data)', 'track_A': 'NOT TESTABLE (data)', 'track_B': 'NOT TESTABLE (data)'}
+KH0304/KH0303 {'okr_k049': 'NOT TESTABLE', 'okr_with_ceiling': 'NOT TESTABLE (margin ceiling)', 'kfg_frozen': 'NOT TESTABLE', 'kfg_with_ceiling': 'NOT TESTABLE (margin ceiling)', 'track_A': 'REPLICATED (not readable on either)', 'track_B': 'REPLICATED (not readable on either)'}
+KH0305/KH0301 {'okr_k049': 'TOOL EXCLUDED', 'okr_with_ceiling': 'TOOL EXCLUDED', 'kfg_frozen': 'TOOL EXCLUDED', 'kfg_with_ceiling': 'TOOL EXCLUDED', 'track_A': 'REPLICATED (not readable on either)', 'track_B': 'REPLICATED (not readable on either)'}
+headline NOT READABLE K049 corrections {'KH0362/KH0049': ('TOOL EXCLUDED', 'NOT TESTABLE (margin ceiling)'), 'KH0304/KH0303': ('NOT TESTABLE', 'NOT TESTABLE (margin ceiling)')} sec 2.3
