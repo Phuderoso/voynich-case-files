@@ -1,0 +1,91 @@
+{
+ "gate1": {
+  "windows": {
+   "CAE_DV_W1": {
+    "converges": true,
+    "conv_rate": 1.0,
+    "effective_N": 79,
+    "distinct_frac": 0.45569620253164556,
+    "not_FIT_NOT_GLOBAL": true,
+    "p": 0.15,
+    "rank": 0.8607594936708861,
+    "rank_CI95": [
+     0.7848101265822784,
+     0.9367088607594937
+    ],
+    "PASS_window": true
+   },
+   "CAE_DV_W2": {
+    "converges": true,
+    "conv_rate": 1.0,
+    "effective_N": 79,
+    "distinct_frac": 0.21518987341772153,
+    "not_FIT_NOT_GLOBAL": true,
+    "p": 0.2,
+    "rank": 0.810126582278481,
+    "rank_CI95": [
+     0.7215189873417721,
+     0.8987341772151899
+    ],
+    "PASS_window": true
+   }
+  },
+  "mean_rank": 0.8354430379746836,
+  "mean_rank_CI95": [
+   0.7783227848101266,
+   0.8924050632911392
+  ],
+  "G_FPR": true,
+  "PASS": true
+ },
+ "PNOISE": {
+  "CAE_DV_W1": {
+   "SD_null": 1.898916167706254e-05,
+   "SD_starts": 0.0,
+   "ratio": null,
+   "PASS": true
+  },
+  "CAE_DV_W2": {
+   "SD_null": 2.6225123512338255e-06,
+   "SD_starts": 0.0,
+   "ratio": null,
+   "PASS": true
+  },
+  "PASS": true
+ },
+ "gate3": {
+  "p": 0.0125,
+  "p_cons": 0.0125,
+  "rank": 1.0,
+  "z": 10.69674641880895,
+  "lines_planted": 100,
+  "testable": true,
+  "distinct_frac_printed": 0.6962025316455697,
+  "PASS": true
+ },
+ "secondary": {
+  "CAE_V": {
+   "rank": 0.9873417721518988,
+   "rank_CI95": [
+    0.9620253164556962,
+    1.0
+   ],
+   "p": 0.025,
+   "PASS": false
+  },
+  "HEB_ABJ": {
+   "rank": 1.0,
+   "rank_CI95": [
+    1.0,
+    1.0
+   ],
+   "p": 0.0125,
+   "PASS": false
+  }
+ },
+ "borderline": {
+  "needs_extension": [],
+  "extension_file": null
+ },
+ "all_blocking_PASS": true
+}
