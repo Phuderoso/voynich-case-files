@@ -1,0 +1,337 @@
+{
+ "text": "CAE-DV W1 (devowel_lines(Latin_Caesar, 10000))",
+ "control_only": true,
+ "manuscript_loaded": false,
+ "word_tokens": 10008,
+ "lines": 1040,
+ "glyph_tokens": 32824,
+ "text_sha256": "29df436a54fbea2c3240fc553b7014ba2c6cb3a401f889d824e87f0d5a2a2eeb",
+ "within_line_boundaries": 8968,
+ "boundaries_in_movable_lines": 8923,
+ "movable_lines": 1021,
+ "movable_word_share": 0.7896,
+ "seed": 11801,
+ "shuffle_stream": "default_rng(11801)",
+ "em_init": "SeedSequence([11801, 1]) for every text (identical init)",
+ "em_init_tied": "SeedSequence([11801, 2])",
+ "R_free": 3,
+ "R_con": 3,
+ "DMIN": 0.9,
+ "EPS_LL": 0.001,
+ "K": 2,
+ "NITER": 150,
+ "TOL": 1e-06,
+ "texts": {
+  "obs": {
+   "word_tokens_moved": 0,
+   "primary": {
+    "free": [
+     -79624.189906,
+     -79625.022256,
+     -79629.528254
+    ],
+    "con": [
+     -80753.891379,
+     -80753.873476,
+     -80753.903596
+    ],
+    "best_free": -79624.189906,
+    "best_con": -80753.873476,
+    "T": -0.03441639,
+    "n": 32824,
+    "n_boundaries": 8968,
+    "iters_free": [
+     150,
+     150,
+     150
+    ],
+    "iters_con": [
+     101,
+     61,
+     133
+    ],
+    "con_min_Aii": [
+     0.9,
+     0.9,
+     0.9
+    ]
+   },
+   "tied_descriptive": {
+    "free": [
+     -81195.271452,
+     -81457.823308,
+     -81702.789012
+    ],
+    "con": [
+     -81662.588441,
+     -81662.45816,
+     -81662.614689
+    ],
+    "best_free": -81195.271452,
+    "best_con": -81662.45816,
+    "T": -0.01423308,
+    "n": 32824,
+    "n_boundaries": 8968,
+    "iters_free": [
+     150,
+     98,
+     150
+    ],
+    "iters_con": [
+     126,
+     27,
+     41
+    ],
+    "con_min_Aii": [
+     0.9,
+     0.9,
+     0.9
+    ]
+   }
+  },
+  "rep1": {
+   "word_tokens_moved": 6840,
+   "primary": {
+    "free": [
+     -79625.782379,
+     -79625.501921,
+     -79624.578735
+    ],
+    "con": [
+     -80753.94316,
+     -80753.898581,
+     -80753.92954
+    ],
+    "best_free": -79624.578735,
+    "best_con": -80753.898581,
+    "T": -0.03440531,
+    "n": 32824,
+    "n_boundaries": 8968,
+    "iters_free": [
+     150,
+     150,
+     132
+    ],
+    "iters_con": [
+     97,
+     62,
+     133
+    ],
+    "con_min_Aii": [
+     0.9,
+     0.9,
+     0.9
+    ],
+    "dll_best_free": -0.388829,
+    "dll_best_con": -0.025105,
+    "max_abs_dll_same_restart": 4.949519
+   },
+   "tied_descriptive": {
+    "free": [
+     -81188.6563,
+     -81492.241429,
+     -81610.59619
+    ],
+    "con": [
+     -81687.437096,
+     -81686.753938,
+     -81687.232721
+    ],
+    "best_free": -81188.6563,
+    "best_con": -81686.753938,
+    "T": -0.0151748,
+    "n": 32824,
+    "n_boundaries": 8968,
+    "iters_free": [
+     150,
+     107,
+     150
+    ],
+    "iters_con": [
+     91,
+     26,
+     52
+    ],
+    "con_min_Aii": [
+     0.9,
+     0.9,
+     0.9
+    ],
+    "dll_best_free": 6.615152,
+    "dll_best_con": -24.295778,
+    "max_abs_dll_same_restart": 92.192822
+   }
+  },
+  "rep2": {
+   "word_tokens_moved": 6835,
+   "primary": {
+    "free": [
+     -79625.739352,
+     -79626.003488,
+     -79624.40361
+    ],
+    "con": [
+     -80753.921274,
+     -80753.936039,
+     -80753.938634
+    ],
+    "best_free": -79624.40361,
+    "best_con": -80753.921274,
+    "T": -0.03441134,
+    "n": 32824,
+    "n_boundaries": 8968,
+    "iters_free": [
+     150,
+     150,
+     133
+    ],
+    "iters_con": [
+     97,
+     61,
+     133
+    ],
+    "con_min_Aii": [
+     0.9,
+     0.9,
+     0.9
+    ],
+    "dll_best_free": -0.213704,
+    "dll_best_con": -0.047798,
+    "max_abs_dll_same_restart": 5.124644
+   },
+   "tied_descriptive": {
+    "free": [
+     -81199.086368,
+     -81480.503885,
+     -81508.40684
+    ],
+    "con": [
+     -81667.37043,
+     -81667.374954,
+     -81667.449511
+    ],
+    "best_free": -81199.086368,
+    "best_con": -81667.37043,
+    "T": -0.01426651,
+    "n": 32824,
+    "n_boundaries": 8968,
+    "iters_free": [
+     150,
+     105,
+     150
+    ],
+    "iters_con": [
+     67,
+     26,
+     47
+    ],
+    "con_min_Aii": [
+     0.9,
+     0.9,
+     0.9
+    ],
+    "dll_best_free": -3.814916,
+    "dll_best_con": -4.91227,
+    "max_abs_dll_same_restart": 194.382172
+   }
+  },
+  "rep3": {
+   "word_tokens_moved": 6845,
+   "primary": {
+    "free": [
+     -79623.074818,
+     -79623.458122,
+     -79622.615991
+    ],
+    "con": [
+     -80754.025301,
+     -80754.029711,
+     -80754.013953
+    ],
+    "best_free": -79622.615991,
+    "best_con": -80754.013953,
+    "T": -0.03446862,
+    "n": 32824,
+    "n_boundaries": 8968,
+    "iters_free": [
+     150,
+     149,
+     129
+    ],
+    "iters_con": [
+     97,
+     61,
+     129
+    ],
+    "con_min_Aii": [
+     0.9,
+     0.9,
+     0.9
+    ],
+    "dll_best_free": 1.573915,
+    "dll_best_con": -0.140477,
+    "max_abs_dll_same_restart": 6.912263
+   },
+   "tied_descriptive": {
+    "free": [
+     -81222.302163,
+     -81515.855813,
+     -81599.668341
+    ],
+    "con": [
+     -81690.157352,
+     -81689.888747,
+     -81690.29988
+    ],
+    "best_free": -81222.302163,
+    "best_con": -81689.888747,
+    "T": -0.01424527,
+    "n": 32824,
+    "n_boundaries": 8968,
+    "iters_free": [
+     150,
+     126,
+     150
+    ],
+    "iters_con": [
+     90,
+     30,
+     55
+    ],
+    "con_min_Aii": [
+     0.9,
+     0.9,
+     0.9
+    ],
+    "dll_best_free": -27.030711,
+    "dll_best_con": -27.430587,
+    "max_abs_dll_same_restart": 103.120671
+   }
+  }
+ },
+ "precheck_primary": {
+  "dll_nonzero_all_reps": true,
+  "T_values": [
+   -0.03441639,
+   -0.03440531,
+   -0.03441134,
+   -0.03446862
+  ],
+  "T_distinct": 4,
+  "T_variable": true,
+  "PASS": true
+ },
+ "tied_descriptive_check": {
+  "dll_nonzero_all_reps": true,
+  "T_values": [
+   -0.01423308,
+   -0.0151748,
+   -0.01426651,
+   -0.01424527
+  ],
+  "T_distinct": 4,
+  "T_variable": true,
+  "PASS": true
+ },
+ "seconds": 57.0
+}
