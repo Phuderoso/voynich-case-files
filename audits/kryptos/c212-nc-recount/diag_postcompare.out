@@ -1,0 +1,7 @@
+K4 tie-first: first-rep max -7.361955165863037 any-hit max -7.361955165863037 p20 first-rep -8.103656644406525 p21 first-rep -7.361955165863037 passes 0
+nulls tie-first: first-rep max -6.68157185614109 any-hit max -6.68157185614109 null passes 0
+median of first-rep maxima -7.421 hers -7.384
+texts where first-rep max equals hers within rounding: 102 of 168
+top3 first-rep [('null209379', -6.682, -6.682), ('null209276', -6.856, -6.799), ('null209338', -6.913, -6.913)]
+median of any-hit maxima -7.384
+texts where any-hit max equals hers: 168
