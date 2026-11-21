@@ -113,3 +113,32 @@ Texto salvo em `C124/KRYPTOS_REVIEW2_2026-11-21.md` (sha256 `3437572d…`, 09:09
 Das demais observações dela (c230, hashes de bank.bin/all.bin/alpha.bin, emendas a–h do critério ZL3b×IT2a): c230 não pede ação; as emendas ao critério vão para `audits/joint/zl3b-it2a-words/`, fora do escopo do C124.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI did this work)
+
+
+---
+
+## Resultados (run 2026-11-21 16:27–16:31 MST, parte 3; ferramenta sha256 `ab9120b8…`, inalterada desde o §13b)
+
+**EN summary.** Verdict **NOT TESTABLE (specificity)**. G-INV passed, the copy-plant calibration chose rung 1.0×99 in both transcriptions (FPR 0/20 ZL3b, 1/20 IT2a; power 20/20 both), but **G-SPEC failed at λ_det**: in both transcriptions the smallest drift N-BLOCK detects is λ_det = 1.0 (the maximum drift DR(1.0)), and M_B under N-FLIP rejected that pure-drift plant in **20/20** (Wilson 0.839–1.0; the gate allows ≤ 3/20). At the drift whose N-BLOCK excess matches the observed C123 residual (λ_obs = 0.75) the gate holds (ZL3b 0/20, Wilson 0–0.161; IT2a 2/20, 0.028–0.301). The pre-registered rule requires both, so no adjacency-vs-drift label is given. The CB p-values below are **descriptive only**: they would have read PARCIAL (IT2a passes Holm, ZL3b does not), but under a failed specificity gate they cannot be read as adjacency.
+
+| | ZL3b | IT2a |
+|---|---|---|
+| Degrau (cópia de linha inteira) | 1,0×99 | 1,0×99 |
+| FPR / POW (de 20) | 0 / 20 | 1 / 20 |
+| E plantado: M_B FLIP · M global FLIP · M global BLOCK | 0,0418 · 0,0203 · 0,0799 | 0,0491 · 0,0209 · 0,0811 |
+| Razão E_FLIP/E_BLOCK global · fronteira (M_B) | 0,254 · 0,277 | 0,258 · 0,300 |
+| G-SPEC λ_det = 1,0 | **20/20** (Wilson 0,839–1,0) — falha | **20/20** (0,839–1,0) — falha |
+| G-SPEC λ_obs = 0,75 | 0/20 (0–0,161) | 2/20 (0,028–0,301) |
+| CB M_B sob N-FLIP: E_B, z, p (descritivo) | 0,0104, 1,63, 0,053 | 0,0123, 2,05, 0,023 |
+| n de pares obs / média nula | 48.005 / 47.999 | 50.056 / 50.081 |
+| M global sob N-FLIP (descritivo): E, z, p | 0,00061, 1,10, 0,140 | 0,00129, 2,22, 0,015 |
+| Σ_FLIP cru (parte do resíduo de N-BLOCK já absorvida por N-FLIP) | 0,68 | 0,50 |
+| Fronteiras mantidas: total FLIP / BLOCK; interna FLIP | 0,419 / 0,127; 0,377 | 0,417 / 0,119; 0,377 |
+
+**Leitura (sem ultrapassar a régua).** A estatística de fronteira, sob o nulo que só troca vizinhos, confunde deriva **máxima** com adjacência: quando o conteúdo muda de forma monótona ao longo da página inteira, os pares de fronteira de blocos vizinhos se parecem mais do que pares deslocados de um encaixe, e M_B acusa. Na deriva do tamanho do resíduo observado ela não acusa, mas o pré-registro exigia as duas e eu não troco a regra depois do fato. O M global sob N-FLIP absorve 50–68 % do excesso de N-BLOCK (descritivo); ou seja, boa parte do "além do bloco" do C123 é compatível com vizinhança aproximada de blocos, sem que isso seja um rótulo. **C123 continua de pé** (ORDEM-ALÉM-DO-BLOCO); o C124 não o corrige nem o reforça.
+
+**O que muda no próximo passo (registrado agora, antes de qualquer novo número).** Um contraste interno à fronteira que a deriva afeta igualmente: D = M(última linha de s × primeira de s+1) − M(penúltima de s × primeira de s+1) (distância 1 contra 2, mesmas fronteiras), com N-FLIP e o mesmo gate de especificidade em λ_det e λ_obs. Será pré-registrado como C125 com revisão cega da Kryptos.
+
+Artefatos: `analysis/C124_results.json`, `analysis/C124_run.log`, `analysis/C124_ckpt_SHA256SUMS.txt` (153 arquivos). Sementes 11840–11847 usadas; **próxima livre 11848**.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI did this work)
