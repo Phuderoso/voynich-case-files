@@ -1,0 +1,9 @@
+FROZEN 2026-11-21 04:52:10 MST  (America/Dawson_Creek, UTC-7)
+Frozen BEFORE opening data/cycle229/summary229.json, analyze229.log, plants229.tsv, gateT/ (never opened until after this file and SHA256SUMS exist).
+Process disclosure: nq_search.py ran once (RULE.md/LEAKS.md already written) and I read its output; afterwards I added (a) bar-eligible pass accounting (nq>=10) and (b) an nq>=10-only sensitivity labelled "added AFTER first run, not part of the verdict". Fit lines of the pre-existing blocks unchanged; permutation p-values shift in the 4th decimal because the RNG stream is consumed by the new block.
+Headline (primary: pooled V+Q, N_bin>=20, 61 bins nq 2..64, 16 null texts, 15605 null Y cells):
+ - Bar-eligible null passes (NC>=-6.0, nq>=10): 4 Y cells / 8 hits (dir pairs) / 4 distinct nulls (209560 nq12, 209568 nq13, 209573 nq13, 209563 nq19); none at nq 10-11.
+ - Passes with nq<10: 10 cells / 20 hits at nq 4-8 (below the nq floor; not bar passes).
+ - K4: 0 passes; K4 max NC over bins -6.095. Null max over all bins -5.292 (nq 8, N=6).
+ - Fits: M1 (lnN) R2 0.098 AICc -111.54; M2 (nq) R2 0.647 AICc -168.75; M3 (both) R2 0.732 AICc -183.38 best; lnN coef +0.0557, nq coef -0.0241.
+ - RULE verdict at primary: BOTH. Sensitivities: N>=5 BOTH; N>=100 NQ-DOMINATES; N>=1000 NQ-DOMINATES; nq>=10-only (post-hoc) BOTH (M3 R2 0.883, lnN +0.0625, nq -0.0224).
