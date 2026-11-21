@@ -3,9 +3,9 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: pre-registration only.** Written and pushed **before any KFG statistic was computed** (no KFG pendant sequence of KH0240 or KH0496
+**Status: results appended** (pre-registration `5df8589`; artefacts `7d3e961`). Pre-registration was written and pushed **before any KFG statistic was computed** (no KFG pendant sequence of KH0240 or KH0496
 was printed, collapsed or compared with the OKR one; I have only listed the metadata of the two khipus in KFG: both names exist).
-Tool `tools/k095_kfg_k027_k028.py` is written after this commit.
+Tool `tools/k095_kfg_k027_k028.py` (sha256 `ef328c83…`) was written after that commit.
 
 ## What is re-audited
 - **K027** (`case-file/K027-small-number-template.md`): the pattern `P = 1,2,1,2,3,1,2,1,3` (run-collapsed level-1 pendants) of KH0240 (UR004)
@@ -72,5 +72,43 @@ A0 uses K027/K028's own seeds (27027, 28028), not new ones.
 - A replicated K027 means only: on KFG, as on OKR, no other khipu or pair carries the pattern. It still does not show a link between Leymebamba and Incahuasi.
 - A replicated K028 means only: the lead still clears p < 0.05 once, with the selection of 9 and {1,2,3} taken from the lead itself (K028's caveat stands).
 - Because the lead came from the same corpus, KFG is not an independent sample of khipus: this is a re-audit of data curation, not a held-out confirmation.
+
+## Results
+(Written after the run; the pre-registration above is unchanged.)
+
+**Gates.** All passed, 73 s of KFG compute (A0 55 s).
+- **G-DATA** hashes match. **A0 passed:** this tool on OKR with K027's seed 27027 and K028's seed 28028, no time cap, reproduces **every** field of `analysis/k027_results.json` and `analysis/k028_results.json` (differing fields: none; `analysis/k095_a0.json`).
+- **G-LEAD** passed: KH0240 and KH0496 are separate, eligible khipus in KFG (482 and 24 pendants).
+- **G-SHUF** passed: 0 violations in 20 shuffles of each of 496 khipus; shuffles differ for 91.5 % of the 491 with ≥ 3 distinct transitions.
+- **G-FPR** (200 fresh null corpora each): T1 0.010 (Wilson 0.003–0.036), T2 0.000 (0–0.019), S 0.040 (0.020–0.077). All within bound.
+- **G-POW** (100 plants each): T1 **1.00** (0.963–1.00), T2 **1.00**, S **1.00** (detection threshold s* = 1). All ≥ 0.80.
+
+**Input deltas (descriptive).** KFG has 496 eligible khipus against OKR's 433 (65 KFG-only names, 3 OKR-only: KH0109 split into A/B, KH0431 and KH0483 merged away).
+- **KH0496** collapsed sequence: identical to OKR (20 values; P is its first 9).
+- **KH0240**: not identical; 374 collapsed values against 363. Three pure **insertions** (91 after position 199; `0,13,30,1,73,3,9,10` at 200; `19,1` at 330), no value changed, none inside P.
+  P is still present, now at position 340 (329 in OKR). The lead pair's longest shared block D is still 9.
+
+| Test | KFG observed | Null | p | Verdict |
+|---|---|---|---|---|
+| T1 · P in other khipus | **0** | mean 0.0025, q97.5 = 0 | 1.0 | not significant |
+| T2 · other pairs sharing a {1,2,3} 9-block | **0** | mean 0.000, q97.5 = 0 | 1.0 | not significant |
+| S · any pair sharing a {1,2,3} 9-block (lead included) | **1** (KH0240·KH0496 only) | 0 pairs in 972 of 1 000, 1 pair in 28 | **0.029** | survives (p < 0.05) |
+| D · longest shared block, lead pair (descriptive) | 9 | 3: 4 165, 4: 11 799, 5: 3 387, 6: 570, 7: 70, 8: 9 of 20 000 | 5·10⁻⁵ | descriptive |
+
+**Multiplicity.** Holm over {T1, T2} (α 0.05): neither rejected (Bonferroni: same). Holm over all three {T1, T2, S}: S is not rejected (0.029 > 0.0167); that
+was announced in advance as an extra, stricter column that does not change the label.
+
+**Verdicts.**
+- **K027: REPLICATED.** On KFG, as on OKR, only KH0240 and KH0496 contain P and no other pair of the 496 khipus shares any 9-block over 1–3; power 1.00.
+- **K028: REPLICATED ("survives, just"), and it fails the stricter Holm-3 column.** p = 0.029 against 0.027 on OKR (28 against 25 in 1 000 null corpora with one pair; a difference of that size is Monte-Carlo noise).
+  Everything K028 said about the selection of 9 and {1,2,3} still holds; the survival is a statement under the original rule, not strong evidence.
+- **Nothing published is overturned or corrected.** The changes between OKR and KFG (65 new khipus, 3 insertions in KH0240) add no pair, no holder of P and no new transition habit that explains the lead.
+
+**What this does and does not say.** KFG is the same lead corpus recurated, not an independent sample, so this is a **data-curation re-audit, not a held-out confirmation**.
+The remaining test K028 named (new khipus added after that commit) is still data-limited: the 65 KFG-only khipus are the closest thing, and **none** of them
+carries P or shares a 9-block over {1,2,3} with any other khipu (T1 and T2 counted them). It is a lead without a replicate, and a link between Leymebamba and Incahuasi remains unshown.
+
+### Line 9 status
+KFG re-audit of K027 and K028 **done: replicated, no correction**. Next free khipu seed: **6506**.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
