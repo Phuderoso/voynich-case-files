@@ -1,0 +1,86 @@
+[primary] seed 11850 B 1000  77s  th [0.1902 0.0171 0.0094 0.0023]  p [0.002  0.002  0.1119 0.8831]
+[fresh] seed 11851 B 1000  77s  th [0.1896 0.0173 0.0097 0.0021]  p [0.002  0.002  0.1059 0.8911]
+[halfA] seed 11852 B 500  28s  th [0.1868 0.0158 0.0128 0.0021]  p [0.004  0.004  0.0798 0.8822]
+[halfB] seed 11853 B 500  28s  th [0.1904 0.0186 0.0101 0.0022]  p [0.004  0.004  0.1717 0.8024]
+[
+ {
+  "test": "T1 search-size slope b_A (STRAT) vs delta_b",
+  "theta": 0.19016745047829098,
+  "threshold": 0.02171472409516259,
+  "ci95": [
+   0.18186975092984212,
+   0.19653498086422805
+  ],
+  "p": 0.001998001998001998,
+  "holm_threshold": 0.0125,
+  "reject": true,
+  "distance": 6.2562500000000005,
+  "sides_primary_fresh_halfA_halfB": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "label": "robusto"
+ },
+ {
+  "test": "T2 length slope -c_B (STRAT) vs delta_c",
+  "theta": 0.017145201810807625,
+  "threshold": 0.01,
+  "ci95": [
+   0.015345003823020315,
+   0.018487566526018746
+  ],
+  "p": 0.001998001998001998,
+  "holm_threshold": 0.016666666666666666,
+  "reject": true,
+  "distance": 8.341666666666667,
+  "sides_primary_fresh_halfA_halfB": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "label": "robusto"
+ },
+ {
+  "test": "T3 composition effect on b: |b_A(POOL)-b_A(STRAT)| vs margin m_b",
+  "theta": 0.00938953751965757,
+  "threshold": 0.005428681023790648,
+  "ci95": [
+   0.004354984362406187,
+   0.01568644663744057
+  ],
+  "p": 0.11188811188811189,
+  "holm_threshold": 0.025,
+  "reject": false,
+  "distance": 4.475524475524475,
+  "sides_primary_fresh_halfA_halfB": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "label": "robusto"
+ },
+ {
+  "test": "T4 composition effect on c: |c_B(POOL)-c_B(STRAT)| vs margin m_c",
+  "theta": 0.002316406390436787,
+  "threshold": 0.0025,
+  "ci95": [
+   0.0013535945365152047,
+   0.0035495344220999783
+  ],
+  "p": 0.8831168831168831,
+  "holm_threshold": 0.05,
+  "reject": false,
+  "distance": 17.66233766233766,
+  "sides_primary_fresh_halfA_halfB": [
+   -1,
+   -1,
+   -1,
+   -1
+  ],
+  "label": "robusto"
+ }
+]
