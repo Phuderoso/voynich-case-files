@@ -1,0 +1,17 @@
+level  meanN  mean_max   (STRAT, all pools equally weighted per draw)
+10 12.0 -7.6272 draws 60000
+30 36.9 -7.3863 draws 60000
+100 123.3 -7.1544 draws 58000
+300 371.4 -6.9413 draws 54000
+1000 1160.6 -6.7963 draws 48000
+slope per e-fold between successive levels (differences of the level means; pool mix differs by level because of support, so see the paired version below):
+  10->30: mean slope 0.2145 over 30 (family,window) pools; range 0.1250..0.3642
+  30->100: mean slope 0.1928 over 29 (family,window) pools; range 0.0829..0.3872
+  100->300: mean slope 0.1994 over 27 (family,window) pools; range 0.1124..0.3698
+  300->1000: mean slope 0.1679 over 24 (family,window) pools; range 0.1045..0.2347
+mean max by window at each level (all families pooled equally):
+  nq 10-12: [-7.548, -7.241, -6.836, -6.578, -6.368]
+  nq 13-16: [-7.569, -7.282, -7.033, -6.713, -6.51]
+  nq 17-22: [-7.613, -7.425, -7.199, -6.931, -6.719]
+  nq 23-30: [-7.696, -7.457, -7.266, -7.097, -6.932]
+  nq 31-40: [-7.709, -7.527, -7.385, -7.228, -7.071]
