@@ -1,0 +1,8 @@
+FROZEN-PRE 2026-11-21 08:55:05 MST (America/Dawson_Creek)
+RULE.md, LEAKS.md, bsk_recount.py hashed BEFORE any K4 / null scan was run and before any file under data/cycle230/R was opened.
+5ff1ac4e98fb31db409f201e4a8d1cdb94cef5bb1afb0218e3d49bd18b856be1  RULE.md
+9f4647939b5214fcea7033f524c1cf7efa5bcf8028acf5bb8e5012d97a38fc0d  LEAKS.md
+b6fdf39be9b0cfa37a7cc3168e2b719dace323eae4d3e1cca11f1d2cc4f805c2  bsk_recount.py
+88000378c292b49ce4064377d229ee16fa79644a362ae1b84efbaa3e11c51773  nulls230_mine.txt
+580159e6ae668efea9154dfe399be524eb175250a9bc6e5905310a749da21ca5  bsk230.c
+52c8d591b96a631dc5e746c1982d2cda09cdaaeea6bfbe513a0601e8dd085e58  bsk230

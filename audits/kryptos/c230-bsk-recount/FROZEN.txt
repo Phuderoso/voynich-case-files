@@ -1,0 +1,14 @@
+FROZEN 2026-11-21 09:05:24 MST (America/Dawson_Creek)
+My own run (bsk230 built from a96260d source, sha 580159e6…, binary 52c8d591… reproduced with gcc -O3 -march=native -fopenmp; outputs in out/) and my own cluster rule (RULE.md, frozen 08:55:05 MST before the first K4 scan).
+Frozen BEFORE opening data/cycle230/R/*, R_run.log, analyze230.*, clus230.*, recount230.*, winctl230.*, plants230.tsv, decode230.*, smoke*, the cycle 230 journal.
+K4 survivor lines (tool output, W<=10 or D<=6): direct 47, bank 48, all.bin 48.
+K4, my rule (raw lines -> cells = distinct decrypt profiles):
+  direct W<=9: raw 3 -> 1 cell (2 distinct X,Y);  direct D<=6: 0
+  bank   W<=9: 0;                                 bank   D<=6: raw 4 -> 1 cell (1 X,Y)
+  all.bin W<=9: raw 6 -> 2 cells (2 X,Y);         all.bin D<=6: 0
+Nulls (10, 1/20 scale; cells per null; NE = sum*20/10):
+  direct W9 [0,0,1,0,0,1,0,0,0,0] sum 2 NE 4.0 (raw lines sum 4 -> 8.0);   direct D6 sum 0 NE 0
+  bank   W9 [0,0,0,0,0,0,2,0,0,5] sum 7 NE 14.0 (raw 14 -> 28.0);         bank   D6 [..,1] sum 1 NE 2.0 (raw 2 -> 4.0)
+  all    W9 [0,0,1,0,0,0,0,1,1,0] sum 3 NE 6.0 (raw 6 -> 12.0);           all    D6 sum 0 NE 0
+Re-derivation of the 24 shifts, width and pop from (row, dir, X, Y, form) and the alphabets for every survivor line (K4 and nulls): 0 mismatches.
+Nulls regenerated from PREREG230 seeds 209577+i are byte-identical to data/cycle230/nulls230.txt (input).
