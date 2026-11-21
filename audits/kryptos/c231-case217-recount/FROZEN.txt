@@ -1,0 +1,12 @@
+FROZEN 2026-11-21 14:37:03 MST (America/Dawson_Creek)
+My own run (bsk230 built from 36b2871 source, sha 580159e6..., binary 52c8d591... reproduced with gcc -O3 -march=native -fopenmp; outputs in out/) and my own rule (RULE.md, frozen 14:04:17 MST in FROZEN_PRE.txt before the first fresh-null scan).
+Frozen BEFORE opening data/cycle231/R/*, R_run.log, an231.*, pool231.*, the cycle 231 journal, README/IDEAS of 36b2871, her check scripts.
+My results (res/summary231.txt, res/counts231.tsv, res/plants231_recount.txt):
+  Plants (her plants231.tsv, my bsk230 runs): strict 20/20 (Wilson95 0.839-1.000), loose 20/20.
+  Rederive (24 shifts, width, pop) for every K4/null/replica line: 1 mismatch (fresh null6 all, row 26206 form 1: tool prints w=26, true circular arc 19; width>13 is outside the tool's exact range (I-346) and outside W<=10).
+  Fresh nulls (209588+i), W<=9: direct 0/8 texts with a line; bank 1/20; all.bin 2/20. W<=10: direct 3/8, bank 14/20, all.bin 15/20.
+42-    raw   : per-null [0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] sum 2 NE=sum*20/20=2.00 (boot95 0.0-6.0); clusters/hit-text 2.00; K4 0 (per-slice 0.00, null max 2); rank label INSUFFICIENT-DISCRIMINATION (lite
+43-    cells : per-null [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] sum 1 NE=sum*20/20=1.00 (boot95 0.0-3.0); clusters/hit-text 1.00; K4 0 (per-slice 0.00, null max 1); rank label INSUFFICIENT-DISCRIMINATION (lite
+44-    i291r : per-null [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] sum 1 NE=sum*20/20=1.00 (boot95 0.0-3.0); clusters/hit-text 1.00; K4 0 (per-slice 0.00, null max 1); rank label INSUFFICIENT-DISCRIMINATION (lite
+47-    raw   : per-null [0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] sum 2 NE=sum*20/20=2.00 (boot95 0.0-6.0); clusters/hit-text 2.00; K4 0 (per-slice 0.00, null max 2); rank label INSUFFICIENT-DISCRIMINATION (lite
+48-    cells : per-null [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] sum 1 NE=sum*20/20=1.00 (boot95 0.0-3.0); clusters/hit-text 1.00; K4 0 (per-slice 0.00, null max 1); rank label INSUFFICIENT-DISCRIMINATION (lite

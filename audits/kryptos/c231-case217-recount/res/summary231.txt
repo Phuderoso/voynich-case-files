@@ -1,0 +1,109 @@
+# summary231 (my counts; all numbers from my own bsk230 outputs; K4 = my c230 K4 files, same binary)
+
+## direct W<=9: K4 raw 3 cells(house) 1 clusters(I-291R) 2; K4 occupied slices 1/5
+  [fresh] single-text reading (K4 = one text, hit indicator 1): side above, Wilson distance 3.08x
+  [fresh] n=8 scale x5; texts with >=1 line 0/8 (null hit rate 0.000, Wilson95 [0.000,0.324]); K4 slice-hit rate 0.200 -> side inside, Wilson distance 1.62x
+    raw   : per-null [0, 0, 0, 0, 0, 0, 0, 0] sum 0 NE=sum*5/8=0.00 (boot95 0.0-0.0); clusters/hit-text 0.00; K4 3 (per-slice 0.60, null max 0); rank label INSUFFICIENT-DISCRIMINATION (literal-order EXCESS); count-distance infx
+    cells : per-null [0, 0, 0, 0, 0, 0, 0, 0] sum 0 NE=sum*5/8=0.00 (boot95 0.0-0.0); clusters/hit-text 0.00; K4 1 (per-slice 0.20, null max 0); rank label INSUFFICIENT-DISCRIMINATION (literal-order EXCESS); count-distance infx
+    i291r : per-null [0, 0, 0, 0, 0, 0, 0, 0] sum 0 NE=sum*5/8=0.00 (boot95 0.0-0.0); clusters/hit-text 0.00; K4 2 (per-slice 0.40, null max 0); rank label INSUFFICIENT-DISCRIMINATION (literal-order EXCESS); count-distance infx
+  [replica] single-text reading (K4 = one text, hit indicator 1): side above, Wilson distance 1.69x
+  [replica] n=8 scale x5; texts with >=1 line 2/8 (null hit rate 0.250, Wilson95 [0.071,0.591]); K4 slice-hit rate 0.200 -> side inside, Wilson distance 2.80x
+    raw   : per-null [0, 4, 0, 0, 0, 0, 3, 0] sum 7 NE=sum*5/8=4.38 (boot95 0.0-10.0); clusters/hit-text 3.50; K4 3 (per-slice 0.60, null max 4); rank label INSUFFICIENT-DISCRIMINATION (literal-order INSUFFICIENT-DISCRIMINATION); count-distance 6.67x
+    cells : per-null [0, 2, 0, 0, 0, 0, 1, 0] sum 3 NE=sum*5/8=1.88 (boot95 0.0-4.4); clusters/hit-text 1.50; K4 1 (per-slice 0.20, null max 2); rank label INSUFFICIENT-DISCRIMINATION (literal-order INSUFFICIENT-DISCRIMINATION); count-distance 10.00x
+    i291r : per-null [0, 2, 0, 0, 0, 0, 2, 0] sum 4 NE=sum*5/8=2.50 (boot95 0.0-6.2); clusters/hit-text 2.00; K4 2 (per-slice 0.40, null max 2); rank label INSUFFICIENT-DISCRIMINATION (literal-order INSUFFICIENT-DISCRIMINATION); count-distance 5.00x
+  LABEL[raw] fresh INSUFFICIENT-DISCRIMINATION / replica INSUFFICIENT-DISCRIMINATION; Wilson side inside/inside, distance 1.62x / 2.80x -> INSUFFICIENT-DISCRIMINATION-FRONTEIRA
+  LABEL[cells] fresh INSUFFICIENT-DISCRIMINATION / replica INSUFFICIENT-DISCRIMINATION; Wilson side inside/inside, distance 1.62x / 2.80x -> INSUFFICIENT-DISCRIMINATION-FRONTEIRA
+  LABEL[i291r] fresh INSUFFICIENT-DISCRIMINATION / replica INSUFFICIENT-DISCRIMINATION; Wilson side inside/inside, distance 1.62x / 2.80x -> INSUFFICIENT-DISCRIMINATION-FRONTEIRA
+  POOLED old10+fresh8 [raw]: NE 4.44, texts with a line 2/18
+  POOLED old10+fresh8 [cells]: NE 2.22, texts with a line 2/18
+  POOLED old10+fresh8 [i291r]: NE 2.22, texts with a line 2/18
+
+## direct W<=10: K4 raw 47 cells(house) 19 clusters(I-291R) 22; K4 occupied slices 4/5
+  [fresh] single-text reading (K4 = one text, hit indicator 1): side above, Wilson distance 1.44x
+  [fresh] n=8 scale x5; texts with >=1 line 3/8 (null hit rate 0.375, Wilson95 [0.137,0.694]); K4 slice-hit rate 0.800 -> side above, Wilson distance 1.15x
+    raw   : per-null [0, 0, 0, 1, 0, 2, 0, 13] sum 16 NE=sum*5/8=10.00 (boot95 0.6-26.2); clusters/hit-text 5.33; K4 47 (per-slice 9.40, null max 13); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 1.38x
+    cells : per-null [0, 0, 0, 1, 0, 1, 0, 5] sum 7 NE=sum*5/8=4.38 (boot95 0.6-10.6); clusters/hit-text 2.33; K4 19 (per-slice 3.80, null max 5); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 1.32x
+    i291r : per-null [0, 0, 0, 1, 0, 1, 0, 5] sum 7 NE=sum*5/8=4.38 (boot95 0.6-10.6); clusters/hit-text 2.33; K4 22 (per-slice 4.40, null max 5); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 1.14x
+  [replica] single-text reading (K4 = one text, hit indicator 1): side above, Wilson distance 1.27x
+  [replica] n=8 scale x5; texts with >=1 line 4/8 (null hit rate 0.500, Wilson95 [0.215,0.785]); K4 slice-hit rate 0.800 -> side above, Wilson distance 1.02x
+    raw   : per-null [0, 37, 14, 0, 0, 9, 14, 0] sum 74 NE=sum*5/8=46.25 (boot95 8.8-92.5); clusters/hit-text 18.50; K4 47 (per-slice 9.40, null max 37); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 3.94x
+    cells : per-null [0, 21, 6, 0, 0, 3, 6, 0] sum 36 NE=sum*5/8=22.50 (boot95 3.8-48.8); clusters/hit-text 9.00; K4 19 (per-slice 3.80, null max 21); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 5.53x
+    i291r : per-null [0, 20, 9, 0, 0, 3, 7, 0] sum 39 NE=sum*5/8=24.38 (boot95 4.4-49.4); clusters/hit-text 9.75; K4 22 (per-slice 4.40, null max 20); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 4.55x
+  LABEL[raw] fresh NO-SIGNAL / replica NO-SIGNAL; Wilson side above/above, distance 1.15x / 1.02x -> NO-SIGNAL-FRONTEIRA
+  LABEL[cells] fresh NO-SIGNAL / replica NO-SIGNAL; Wilson side above/above, distance 1.15x / 1.02x -> NO-SIGNAL-FRONTEIRA
+  LABEL[i291r] fresh NO-SIGNAL / replica NO-SIGNAL; Wilson side above/above, distance 1.15x / 1.02x -> NO-SIGNAL-FRONTEIRA
+  POOLED old10+fresh8 [raw]: NE 16.67, texts with a line 6/18
+  POOLED old10+fresh8 [cells]: NE 7.50, texts with a line 6/18
+  POOLED old10+fresh8 [i291r]: NE 7.50, texts with a line 6/18
+
+## bank W<=9: K4 raw 0 cells(house) 0 clusters(I-291R) 0; K4 occupied slices 0/20
+  [fresh] single-text reading (K4 = one text, hit indicator 0): side below, Wilson distance 0.02x
+  [fresh] n=20 scale x20; texts with >=1 line 1/20 (null hit rate 0.050, Wilson95 [0.009,0.236]); K4 slice-hit rate 0.000 -> side below, Wilson distance 0.36x
+    raw   : per-null [0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] sum 2 NE=sum*20/20=2.00 (boot95 0.0-6.0); clusters/hit-text 2.00; K4 0 (per-slice 0.00, null max 2); rank label INSUFFICIENT-DISCRIMINATION (literal-order INSUFFICIENT-DISCRIMINATION); count-distance infx
+    cells : per-null [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] sum 1 NE=sum*20/20=1.00 (boot95 0.0-3.0); clusters/hit-text 1.00; K4 0 (per-slice 0.00, null max 1); rank label INSUFFICIENT-DISCRIMINATION (literal-order INSUFFICIENT-DISCRIMINATION); count-distance infx
+    i291r : per-null [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] sum 1 NE=sum*20/20=1.00 (boot95 0.0-3.0); clusters/hit-text 1.00; K4 0 (per-slice 0.00, null max 1); rank label INSUFFICIENT-DISCRIMINATION (literal-order INSUFFICIENT-DISCRIMINATION); count-distance infx
+  [replica] single-text reading (K4 = one text, hit indicator 0): side below, Wilson distance 0.02x
+  [replica] n=20 scale x20; texts with >=1 line 1/20 (null hit rate 0.050, Wilson95 [0.009,0.236]); K4 slice-hit rate 0.000 -> side below, Wilson distance 0.36x
+    raw   : per-null [0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] sum 2 NE=sum*20/20=2.00 (boot95 0.0-6.0); clusters/hit-text 2.00; K4 0 (per-slice 0.00, null max 2); rank label INSUFFICIENT-DISCRIMINATION (literal-order INSUFFICIENT-DISCRIMINATION); count-distance infx
+    cells : per-null [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] sum 1 NE=sum*20/20=1.00 (boot95 0.0-3.0); clusters/hit-text 1.00; K4 0 (per-slice 0.00, null max 1); rank label INSUFFICIENT-DISCRIMINATION (literal-order INSUFFICIENT-DISCRIMINATION); count-distance infx
+    i291r : per-null [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] sum 1 NE=sum*20/20=1.00 (boot95 0.0-3.0); clusters/hit-text 1.00; K4 0 (per-slice 0.00, null max 1); rank label INSUFFICIENT-DISCRIMINATION (literal-order INSUFFICIENT-DISCRIMINATION); count-distance infx
+  LABEL[raw] fresh INSUFFICIENT-DISCRIMINATION / replica INSUFFICIENT-DISCRIMINATION; Wilson side below/below, distance 0.36x / 0.36x -> INSUFFICIENT-DISCRIMINATION-FRONTEIRA
+  LABEL[cells] fresh INSUFFICIENT-DISCRIMINATION / replica INSUFFICIENT-DISCRIMINATION; Wilson side below/below, distance 0.36x / 0.36x -> INSUFFICIENT-DISCRIMINATION-FRONTEIRA
+  LABEL[i291r] fresh INSUFFICIENT-DISCRIMINATION / replica INSUFFICIENT-DISCRIMINATION; Wilson side below/below, distance 0.36x / 0.36x -> INSUFFICIENT-DISCRIMINATION-FRONTEIRA
+  POOLED old10+fresh20 [raw]: NE 10.67, texts with a line 3/30
+  POOLED old10+fresh20 [cells]: NE 5.33, texts with a line 3/30
+  POOLED old10+fresh20 [i291r]: NE 2.00, texts with a line 3/30
+
+## bank W<=10: K4 raw 44 cells(house) 15 clusters(I-291R) 8; K4 occupied slices 17/20
+  [fresh] single-text reading (K4 = one text, hit indicator 1): side above, Wilson distance 1.17x
+  [fresh] n=20 scale x20; texts with >=1 line 14/20 (null hit rate 0.700, Wilson95 [0.481,0.855]); K4 slice-hit rate 0.850 -> side inside, Wilson distance 1.01x
+    raw   : per-null [0, 3, 2, 0, 4, 8, 1, 3, 0, 4, 6, 4, 3, 2, 2, 0, 1, 0, 1, 0] sum 44 NE=sum*20/20=44.00 (boot95 26.0-64.0); clusters/hit-text 3.14; K4 44 (per-slice 2.20, null max 8); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 3.64x
+    cells : per-null [0, 2, 1, 0, 2, 4, 1, 3, 0, 2, 3, 2, 2, 1, 1, 0, 1, 0, 1, 0] sum 26 NE=sum*20/20=26.00 (boot95 16.0-36.0); clusters/hit-text 1.86; K4 15 (per-slice 0.75, null max 4); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 5.33x
+    i291r : per-null [0, 2, 1, 0, 2, 1, 1, 1, 0, 2, 3, 2, 2, 1, 1, 0, 1, 0, 1, 0] sum 21 NE=sum*20/20=21.00 (boot95 14.0-29.0); clusters/hit-text 1.50; K4 8 (per-slice 0.40, null max 3); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 7.50x
+  [replica] single-text reading (K4 = one text, hit indicator 1): side above, Wilson distance 1.22x
+  [replica] n=20 scale x20; texts with >=1 line 13/20 (null hit rate 0.650, Wilson95 [0.433,0.819]); K4 slice-hit rate 0.850 -> side above, Wilson distance 1.04x
+    raw   : per-null [2, 5, 1, 3, 2, 0, 8, 8, 1, 0, 8, 0, 0, 0, 0, 0, 8, 9, 6, 5] sum 66 NE=sum*20/20=66.00 (boot95 37.0-96.0); clusters/hit-text 5.08; K4 44 (per-slice 2.20, null max 9); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 4.09x
+    cells : per-null [1, 3, 1, 2, 2, 0, 8, 4, 1, 0, 4, 0, 0, 0, 0, 0, 6, 6, 3, 3] sum 44 NE=sum*20/20=44.00 (boot95 25.0-65.0); clusters/hit-text 3.38; K4 15 (per-slice 0.75, null max 8); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 10.67x
+    i291r : per-null [1, 2, 1, 2, 2, 0, 1, 4, 1, 0, 3, 0, 0, 0, 0, 0, 6, 4, 3, 3] sum 33 NE=sum*20/20=33.00 (boot95 19.0-48.0); clusters/hit-text 2.54; K4 8 (per-slice 0.40, null max 6); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 15.00x
+  LABEL[raw] fresh NO-SIGNAL / replica NO-SIGNAL; Wilson side inside/above, distance 1.01x / 1.04x -> NO-SIGNAL-FRONTEIRA
+  LABEL[cells] fresh NO-SIGNAL / replica NO-SIGNAL; Wilson side inside/above, distance 1.01x / 1.04x -> NO-SIGNAL-FRONTEIRA
+  LABEL[i291r] fresh NO-SIGNAL / replica NO-SIGNAL; Wilson side inside/above, distance 1.01x / 1.04x -> NO-SIGNAL-FRONTEIRA
+  POOLED old10+fresh20 [raw]: NE 52.00, texts with a line 22/30
+  POOLED old10+fresh20 [cells]: NE 32.00, texts with a line 22/30
+  POOLED old10+fresh20 [i291r]: NE 24.00, texts with a line 22/30
+
+## all W<=9: K4 raw 6 cells(house) 2 clusters(I-291R) 2; K4 occupied slices 2/20
+  [fresh] single-text reading (K4 = one text, hit indicator 1): side above, Wilson distance 3.32x
+  [fresh] n=20 scale x20; texts with >=1 line 2/20 (null hit rate 0.100, Wilson95 [0.028,0.301]); K4 slice-hit rate 0.100 -> side inside, Wilson distance 3.01x
+    raw   : per-null [0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1] sum 3 NE=sum*20/20=3.00 (boot95 0.0-8.0); clusters/hit-text 1.50; K4 6 (per-slice 0.30, null max 2); rank label INSUFFICIENT-DISCRIMINATION (literal-order INSUFFICIENT-DISCRIMINATION); count-distance 6.67x
+    cells : per-null [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1] sum 2 NE=sum*20/20=2.00 (boot95 0.0-5.0); clusters/hit-text 1.00; K4 2 (per-slice 0.10, null max 1); rank label INSUFFICIENT-DISCRIMINATION (literal-order INSUFFICIENT-DISCRIMINATION); count-distance 10.00x
+    i291r : per-null [0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1] sum 2 NE=sum*20/20=2.00 (boot95 0.0-5.0); clusters/hit-text 1.00; K4 2 (per-slice 0.10, null max 1); rank label INSUFFICIENT-DISCRIMINATION (literal-order INSUFFICIENT-DISCRIMINATION); count-distance 10.00x
+  [replica] single-text reading (K4 = one text, hit indicator 1): side above, Wilson distance 2.77x
+  [replica] n=20 scale x20; texts with >=1 line 3/20 (null hit rate 0.150, Wilson95 [0.052,0.360]); K4 slice-hit rate 0.100 -> side inside, Wilson distance 1.91x
+    raw   : per-null [0, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0] sum 7 NE=sum*20/20=7.00 (boot95 0.0-17.0); clusters/hit-text 2.33; K4 6 (per-slice 0.30, null max 4); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 13.33x
+    cells : per-null [0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0] sum 4 NE=sum*20/20=4.00 (boot95 0.0-9.0); clusters/hit-text 1.33; K4 2 (per-slice 0.10, null max 2); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 20.00x
+    i291r : per-null [0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0] sum 4 NE=sum*20/20=4.00 (boot95 0.0-9.0); clusters/hit-text 1.33; K4 2 (per-slice 0.10, null max 2); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 20.00x
+  LABEL[raw] fresh INSUFFICIENT-DISCRIMINATION / replica NO-SIGNAL; Wilson side inside/inside, distance 3.01x / 1.91x -> INSUFFICIENT-DISCRIMINATION-FRONTEIRA
+  LABEL[cells] fresh INSUFFICIENT-DISCRIMINATION / replica NO-SIGNAL; Wilson side inside/inside, distance 3.01x / 1.91x -> INSUFFICIENT-DISCRIMINATION-FRONTEIRA
+  LABEL[i291r] fresh INSUFFICIENT-DISCRIMINATION / replica NO-SIGNAL; Wilson side inside/inside, distance 3.01x / 1.91x -> INSUFFICIENT-DISCRIMINATION-FRONTEIRA
+  POOLED old10+fresh20 [raw]: NE 6.00, texts with a line 5/30
+  POOLED old10+fresh20 [cells]: NE 3.33, texts with a line 5/30
+  POOLED old10+fresh20 [i291r]: NE 3.33, texts with a line 5/30
+
+## all W<=10: K4 raw 48 cells(house) 20 clusters(I-291R) 20; K4 occupied slices 20/20
+  [fresh] single-text reading (K4 = one text, hit indicator 1): side above, Wilson distance 1.13x
+  [fresh] n=20 scale x20; texts with >=1 line 15/20 (null hit rate 0.750, Wilson95 [0.531,0.888]); K4 slice-hit rate 1.000 -> side above, Wilson distance 1.13x
+    raw   : per-null [2, 2, 2, 2, 3, 2, 2, 0, 2, 4, 2, 1, 2, 0, 0, 0, 0, 5, 5, 1] sum 37 NE=sum*20/20=37.00 (boot95 24.0-51.0); clusters/hit-text 2.47; K4 48 (per-slice 2.40, null max 5); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 2.08x
+    cells : per-null [1, 2, 1, 1, 2, 1, 1, 0, 1, 3, 1, 1, 2, 0, 0, 0, 0, 4, 3, 1] sum 25 NE=sum*20/20=25.00 (boot95 16.0-35.0); clusters/hit-text 1.67; K4 20 (per-slice 1.00, null max 4); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 4.00x
+    i291r : per-null [1, 2, 1, 1, 2, 1, 1, 0, 1, 3, 1, 1, 2, 0, 0, 0, 0, 4, 3, 1] sum 25 NE=sum*20/20=25.00 (boot95 16.0-35.0); clusters/hit-text 1.67; K4 20 (per-slice 1.00, null max 4); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 4.00x
+  [replica] single-text reading (K4 = one text, hit indicator 1): side above, Wilson distance 1.09x
+  [replica] n=20 scale x20; texts with >=1 line 16/20 (null hit rate 0.800, Wilson95 [0.584,0.919]); K4 slice-hit rate 1.000 -> side above, Wilson distance 1.09x
+    raw   : per-null [2, 2, 4, 0, 4, 4, 7, 1, 1, 0, 2, 4, 4, 2, 2, 1, 0, 3, 7, 0] sum 50 NE=sum*20/20=50.00 (boot95 33.0-69.0); clusters/hit-text 3.12; K4 48 (per-slice 2.40, null max 7); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 2.92x
+    cells : per-null [2, 2, 2, 0, 2, 2, 4, 1, 1, 0, 1, 4, 3, 1, 1, 1, 0, 2, 4, 0] sum 33 NE=sum*20/20=33.00 (boot95 22.0-45.0); clusters/hit-text 2.06; K4 20 (per-slice 1.00, null max 4); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 4.00x
+    i291r : per-null [2, 2, 2, 0, 2, 2, 4, 1, 1, 0, 1, 4, 3, 1, 1, 1, 0, 2, 4, 0] sum 33 NE=sum*20/20=33.00 (boot95 22.0-45.0); clusters/hit-text 2.06; K4 20 (per-slice 1.00, null max 4); rank label NO-SIGNAL (literal-order NO-SIGNAL); count-distance 4.00x
+  LABEL[raw] fresh NO-SIGNAL / replica NO-SIGNAL; Wilson side above/above, distance 1.13x / 1.09x -> NO-SIGNAL-FRONTEIRA
+  LABEL[cells] fresh NO-SIGNAL / replica NO-SIGNAL; Wilson side above/above, distance 1.13x / 1.09x -> NO-SIGNAL-FRONTEIRA
+  LABEL[i291r] fresh NO-SIGNAL / replica NO-SIGNAL; Wilson side above/above, distance 1.13x / 1.09x -> NO-SIGNAL-FRONTEIRA
+  POOLED old10+fresh20 [raw]: NE 44.00, texts with a line 24/30
+  POOLED old10+fresh20 [cells]: NE 29.33, texts with a line 24/30
+  POOLED old10+fresh20 [i291r]: NE 29.33, texts with a line 24/30
