@@ -1,0 +1,21 @@
+{
+ "A0_K063_rebuilt": {
+  "passed": true,
+  "differing_fields": [],
+  "compared": [
+   "A0_audit_K062",
+   "G0_fixture",
+   "G0_n",
+   "G1",
+   "G2",
+   "H1",
+   "N",
+   "alpha",
+   "family_pairs",
+   "fixtures",
+   "leads",
+   "reference",
+   "weights"
+  ]
+ }
+}
