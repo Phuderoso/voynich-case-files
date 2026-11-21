@@ -1,0 +1,3 @@
+her null bins 63 her K4 bins 60 my bins 64 diffs 0
+my null bins missing from hers: [63]
+floor10 which ['null209560', 'null209563', 'null209568', 'null209573'] hits 8 distinct 4

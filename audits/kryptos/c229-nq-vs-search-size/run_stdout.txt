@@ -1,0 +1,134 @@
+null Y cells 15605; decipherments 24108043; K4 Y cells 985; null texts 16
+PASS cells (Y cells with pass>0): 14; null texts with >=1 pass 8/16; total passing hits 28
+  null209560 null209560_all_V_a.txt V p=24 nq=4 N=4 pass=2 max=-5.846
+  null209568 null209568_all_V_b.txt V p=24 nq=4 N=6 pass=2 max=-5.975
+  null209569 null209569_bank_V_b.txt V p=23 nq=4 N=2 pass=2 max=-5.449
+  null209567 null209567_all_V_b.txt V p=24 nq=5 N=4 pass=2 max=-5.946
+  null209569 null209569_bank_V_b.txt V p=23 nq=5 N=8 pass=2 max=-5.957
+  null209567 null209567_all_V_a.txt V p=24 nq=6 N=12 pass=2 max=-5.963
+  null209569 null209569_all_V_b.txt V p=24 nq=6 N=18 pass=2 max=-5.836
+  null209559 null209559_all_V_a.txt V p=24 nq=7 N=14 pass=2 max=-5.666
+  null209562 null209562_bank_V_a.txt V p=24 nq=8 N=6 pass=2 max=-5.292
+  null209569 null209569_all_V_b.txt V p=24 nq=8 N=42 pass=2 max=-5.958
+  null209560 null209560_bank_V_a.txt V p=23 nq=12 N=6 pass=2 max=-5.998
+  null209568 null209568_bank_V_b.txt V p=24 nq=13 N=48 pass=2 max=-5.994
+  null209573 null209573_all_V_b.txt V p=24 nq=13 N=198 pass=2 max=-5.945
+  null209563 null209563_bank_V_b.txt V p=23 nq=19 N=110 pass=2 max=-5.982
+BAR-ELIGIBLE passes (nq >= 10, the house bar's floor): Y cells 4, hits 8, distinct nulls 4/16, nq values [12, 13, 13, 19], none at nq 10-11: True
+  passes with nq < 10 (below the floor, NOT bar passes): Y cells 10, hits 20, nq range [4, 5, 6, 7, 8]
+null max NC and N by nq 10..25: 10:-6.046/N=3677; 11:-6.168/N=5785; 12:-5.998/N=8351; 13:-5.945/N=11411; 14:-6.104/N=15451; 15:-6.089/N=20096; 16:-6.195/N=26415; 17:-6.275/N=33460; 18:-6.115/N=42074; 19:-5.982/N=49771; 20:-6.278/N=58689; 21:-6.048/N=67329; 22:-6.298/N=78053; 23:-6.088/N=84659; 24:-6.335/N=90361; 25:-6.047/N=98518
+passes by nq: {4: 6, 5: 4, 6: 4, 7: 2, 8: 4, 12: 2, 13: 4, 19: 2}
+nq 10, 11, 12 (pooled): nq 10: N 3677 max -6.046 pass 0; nq 11: N 5785 max -6.168 pass 0; nq 12: N 8351 max -5.998 pass 2
+K4 passes by nq: {}; K4 max over all bins -6.095; null max over all bins -5.292
+== pooled  (N_bin >= 20): bins 61 (nq 2..64)
+  corr(lnN, nq) = 0.662; corr(y, lnN) = -0.313; corr(y, nq) = -0.804
+  M0: k=1 R2=0.000 adjR2=0.000 AIC=-107.69 AICc=-107.48 dAICc=75.90  a=-6.4243(t=-124.3)
+  M1: k=2 R2=0.098 adjR2=0.082 AIC=-111.96 AICc=-111.54 dAICc=71.84  a=-5.9318(t=-29.5), lnN=-0.0446(t=-2.5)
+  M2: k=2 R2=0.647 adjR2=0.641 AIC=-169.17 AICc=-168.75 dAICc=14.63  a=-5.8405(t=-91.1), nq=-0.0182(t=-10.4)
+  M3: k=3 R2=0.732 adjR2=0.723 AIC=-184.09 AICc=-183.38 dAICc=0.00  a=-6.2679(t=-54.9), lnN=0.0557(t=4.3), nq=-0.0241(t=-11.7)
+  M4: k=2 R2=0.531 adjR2=0.524 AIC=-151.94 AICc=-151.52 dAICc=31.86  a=-7.4108(t=-58.9), sqrt(2lnN)/sqrt(nq)=1.0342(t=8.2)
+  M5: k=2 R2=0.259 adjR2=0.246 AIC=-123.97 AICc=-123.54 dAICc=59.83  a=-6.8159(t=-70.1), 1/sqrt(nq)=1.7891(t=4.5)
+  VIF(M3) = 1.78
+  Spearman rho(y, lnN) = -0.541 perm p = 0.0001; rho(y, nq) = -0.830 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.549; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 4.31 p = 0.0004;  c (nq | lnN) t = -11.73 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.242 perm p = 0.0691;  rho(y, nq | lnN) = -0.766 perm p = 0.0001
+  VERDICT (RULE.md rule): BOTH   [AICc M1 -111.54, M2 -168.75, M3 -183.38]
+== pooled  (N_bin >= 5): bins 62 (nq 1..64)
+  corr(lnN, nq) = 0.680; corr(y, lnN) = -0.044; corr(y, nq) = -0.540
+  M0: k=1 R2=0.000 adjR2=0.000 AIC=-88.76 AICc=-88.55 dAICc=36.87  a=-6.4573(t=-106.6)
+  M1: k=2 R2=0.002 adjR2=-0.015 AIC=-86.87 AICc=-86.46 dAICc=38.96  a=-6.3821(t=-27.7), lnN=-0.0069(t=-0.3)
+  M2: k=2 R2=0.292 adjR2=0.280 AIC=-108.13 AICc=-107.72 dAICc=17.70  a=-6.0084(t=-57.8), nq=-0.0142(t=-5.0)
+  M3: k=3 R2=0.487 adjR2=0.469 AIC=-126.12 AICc=-125.42 dAICc=0.00  a=-6.7069(t=-38.9), lnN=0.0954(t=4.7), nq=-0.0251(t=-7.5)
+  M4: k=2 R2=0.079 adjR2=0.064 AIC=-91.88 AICc=-91.47 dAICc=33.95  a=-6.8656(t=-36.3), sqrt(2lnN)/sqrt(nq)=0.4197(t=2.3)
+  M5: k=2 R2=0.001 adjR2=-0.015 AIC=-86.83 AICc=-86.42 dAICc=39.00  a=-6.4312(t=-57.2), 1/sqrt(nq)=-0.1128(t=-0.3)
+  VIF(M3) = 1.86
+  Spearman rho(y, lnN) = -0.468 perm p = 0.0005; rho(y, nq) = -0.743 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.290; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 4.74 p = 0.0015;  c (nq | lnN) t = -7.47 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.243 perm p = 0.0652;  rho(y, nq | lnN) = -0.679 perm p = 0.0001
+  VERDICT (RULE.md rule): BOTH   [AICc M1 -86.46, M2 -107.72, M3 -125.42]
+== pooled  (N_bin >= 100): bins 58 (nq 4..64)
+  corr(lnN, nq) = 0.761; corr(y, lnN) = -0.687; corr(y, nq) = -0.905
+  M0: k=1 R2=0.000 adjR2=0.000 AIC=-111.53 AICc=-111.31 dAICc=110.46  a=-6.3929(t=-130.7)
+  M1: k=2 R2=0.472 adjR2=0.462 AIC=-146.56 AICc=-146.12 dAICc=75.65  a=-5.1595(t=-29.0), lnN=-0.1081(t=-7.1)
+  M2: k=2 R2=0.819 adjR2=0.815 AIC=-208.56 AICc=-208.12 dAICc=13.65  a=-5.7466(t=-125.6), nq=-0.0199(t=-15.9)
+  M3: k=3 R2=0.819 adjR2=0.812 AIC=-206.57 AICc=-205.81 dAICc=15.96  a=-5.7511(t=-47.9), lnN=0.0006(t=0.0), nq=-0.0199(t=-10.3)
+  M4: k=2 R2=0.857 adjR2=0.854 AIC=-222.22 AICc=-221.77 dAICc=0.00  a=-7.7347(t=-102.2), sqrt(2lnN)/sqrt(nq)=1.4320(t=18.3)
+  M5: k=2 R2=0.750 adjR2=0.745 AIC=-189.87 AICc=-189.42 dAICc=32.35  a=-7.1801(t=-109.5), 1/sqrt(nq)=3.8247(t=13.0)
+  VIF(M3) = 2.37
+  Spearman rho(y, lnN) = -0.730 perm p = 0.0001; rho(y, nq) = -0.938 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.347; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 0.04 p = 0.9647;  c (nq | lnN) t = -10.26 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.202 perm p = 0.1285;  rho(y, nq | lnN) = -0.868 perm p = 0.0001
+  VERDICT (RULE.md rule): NQ-DOMINATES   [AICc M1 -146.12, M2 -208.12, M3 -205.81]
+== pooled  (N_bin >= 1000): bins 54 (nq 8..64)
+  corr(lnN, nq) = 0.699; corr(y, lnN) = -0.561; corr(y, nq) = -0.891
+  M0: k=1 R2=-0.000 adjR2=-0.000 AIC=-116.00 AICc=-115.77 dAICc=94.76  a=-6.4425(t=-142.5)
+  M1: k=2 R2=0.314 adjR2=0.301 AIC=-134.38 AICc=-133.90 dAICc=76.63  a=-5.2630(t=-21.5), lnN=-0.0998(t=-4.9)
+  M2: k=2 R2=0.793 adjR2=0.789 AIC=-199.09 AICc=-198.61 dAICc=11.92  a=-5.7966(t=-115.4), nq=-0.0187(t=-14.1)
+  M3: k=3 R2=0.801 adjR2=0.793 AIC=-199.06 AICc=-198.25 dAICc=12.28  a=-5.9888(t=-40.4), lnN=0.0214(t=1.4), nq=-0.0205(t=-11.2)
+  M4: k=2 R2=0.834 adjR2=0.831 AIC=-211.01 AICc=-210.53 dAICc=0.00  a=-7.8211(t=-89.6), sqrt(2lnN)/sqrt(nq)=1.5361(t=16.2)
+  M5: k=2 R2=0.762 adjR2=0.757 AIC=-191.45 AICc=-190.97 dAICc=19.56  a=-7.3966(t=-95.7), 1/sqrt(nq)=5.0499(t=12.9)
+  VIF(M3) = 1.95
+  Spearman rho(y, lnN) = -0.667 perm p = 0.0001; rho(y, nq) = -0.925 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.479; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 1.38 p = 0.1492;  c (nq | lnN) t = -11.15 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.218 perm p = 0.1147;  rho(y, nq | lnN) = -0.867 perm p = 0.0001
+  VERDICT (RULE.md rule): NQ-DOMINATES   [AICc M1 -133.90, M2 -198.61, M3 -198.25]
+== S-nq10 (nq >= 10 only; added AFTER the first run, not part of the verdict)  (N_bin >= 20): bins 53 (nq 10..64)
+  corr(lnN, nq) = 0.425; corr(y, lnN) = -0.072; corr(y, nq) = -0.879
+  M0: k=1 R2=0.000 adjR2=0.000 AIC=-112.63 AICc=-112.39 dAICc=109.28  a=-6.4949(t=-140.7)
+  M1: k=2 R2=0.005 adjR2=-0.014 AIC=-110.90 AICc=-110.41 dAICc=111.25  a=-6.3502(t=-22.3), lnN=-0.0122(t=-0.5)
+  M2: k=2 R2=0.772 adjR2=0.768 AIC=-189.05 AICc=-188.56 dAICc=33.11  a=-5.8089(t=-102.4), nq=-0.0190(t=-13.2)
+  M3: k=3 R2=0.883 adjR2=0.879 AIC=-222.50 AICc=-221.67 dAICc=0.00  a=-6.4266(t=-65.3), lnN=0.0625(t=6.9), nq=-0.0224(t=-19.4)
+  M4: k=2 R2=0.847 adjR2=0.844 AIC=-210.12 AICc=-209.63 dAICc=12.04  a=-7.9020(t=-92.2), sqrt(2lnN)/sqrt(nq)=1.6155(t=16.8)
+  M5: k=2 R2=0.652 adjR2=0.645 AIC=-166.56 AICc=-166.07 dAICc=55.59  a=-7.4900(t=-71.0), 1/sqrt(nq)=5.4686(t=9.8)
+  VIF(M3) = 1.22
+  Spearman rho(y, lnN) = -0.549 perm p = 0.0001; rho(y, nq) = -0.924 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.767; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 6.90 p = 0.0002;  c (nq | lnN) t = -19.40 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.231 perm p = 0.1004;  rho(y, nq | lnN) = -0.896 perm p = 0.0001
+  VERDICT (RULE.md rule): BOTH   [AICc M1 -110.41, M2 -188.56, M3 -221.67]
+== V only  (N_bin >= 20): bins 57 (nq 2..58)
+  corr(lnN, nq) = -0.164; corr(y, lnN) = 0.356; corr(y, nq) = -0.902
+  M0: k=1 R2=-0.000 adjR2=-0.000 AIC=-64.59 AICc=-64.37 dAICc=107.08  a=-6.5729(t=-89.8)
+  M1: k=2 R2=0.127 adjR2=0.111 AIC=-70.33 AICc=-69.88 dAICc=101.57  a=-7.2733(t=-28.3), lnN=0.0808(t=2.8)
+  M2: k=2 R2=0.814 adjR2=0.811 AIC=-158.58 AICc=-158.13 dAICc=13.32  a=-5.6713(t=-85.7), nq=-0.0301(t=-15.5)
+  M3: k=3 R2=0.859 adjR2=0.854 AIC=-172.22 AICc=-171.45 dAICc=0.00  a=-6.1269(t=-49.1), lnN=0.0485(t=4.1), nq=-0.0289(t=-16.7)
+  M4: k=2 R2=0.695 adjR2=0.689 AIC=-130.24 AICc=-129.79 dAICc=41.66  a=-7.7705(t=-67.8), sqrt(2lnN)/sqrt(nq)=1.3307(t=11.2)
+  M5: k=2 R2=0.323 adjR2=0.311 AIC=-84.82 AICc=-84.37 dAICc=87.08  a=-7.1821(t=-53.8), 1/sqrt(nq)=2.7049(t=5.1)
+  VIF(M3) = 1.03
+  Spearman rho(y, lnN) = 0.337 perm p = 0.0105; rho(y, nq) = -0.909 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.687; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 4.13 p = 0.0001;  c (nq | lnN) t = -16.74 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.454 perm p = 0.0002;  rho(y, nq | lnN) = -0.919 perm p = 0.0001
+  VERDICT (RULE.md rule): BOTH   [AICc M1 -69.88, M2 -158.13, M3 -171.45]
+== Q only  (N_bin >= 20): bins 56 (nq 7..64)
+  corr(lnN, nq) = 0.726; corr(y, lnN) = 0.307; corr(y, nq) = -0.254
+  M0: k=1 R2=0.000 adjR2=0.000 AIC=-144.96 AICc=-144.73 dAICc=43.15  a=-6.6671(t=-186.9)
+  M1: k=2 R2=0.094 adjR2=0.077 AIC=-148.50 AICc=-148.04 dAICc=39.85  a=-6.9368(t=-58.4), lnN=0.0256(t=2.4)
+  M2: k=2 R2=0.064 adjR2=0.047 AIC=-146.68 AICc=-146.22 dAICc=41.67  a=-6.5243(t=-79.7), nq=-0.0041(t=-1.9)
+  M3: k=3 R2=0.573 adjR2=0.557 AIC=-188.67 AICc=-187.88 dAICc=0.00  a=-7.0121(t=-84.6), lnN=0.0864(t=8.0), nq=-0.0164(t=-7.7)
+  M4: k=2 R2=0.190 adjR2=0.175 AIC=-154.79 AICc=-154.33 dAICc=33.56  a=-7.4153(t=-34.9), sqrt(2lnN)/sqrt(nq)=0.9054(t=3.6)
+  M5: k=2 R2=0.000 adjR2=-0.018 AIC=-142.96 AICc=-142.50 dAICc=45.38  a=-6.6727(t=-57.0), 1/sqrt(nq)=0.0293(t=0.1)
+  VIF(M3) = 2.11
+  Spearman rho(y, lnN) = 0.086 perm p = 0.5268; rho(y, nq) = -0.264 perm p = 0.0499
+  R2(M1) - R2(M2) = 0.030; shuffled-y two-sided perm p = 0.1585
+  Freedman-Lane: b (lnN | nq) t = 7.95 p = 0.0001;  c (nq | lnN) t = -7.72 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.444 perm p = 0.0004;  rho(y, nq | lnN) = -0.498 perm p = 0.0001
+  VERDICT (RULE.md rule): BOTH   [AICc M1 -148.04, M2 -146.22, M3 -187.88]
+== all.bin scope  (N_bin >= 20): bins 61 (nq 2..64)
+  corr(lnN, nq) = 0.661; corr(y, lnN) = -0.283; corr(y, nq) = -0.814
+  M0: k=1 R2=0.000 adjR2=0.000 AIC=-123.80 AICc=-123.59 dAICc=87.27  a=-6.4681(t=-142.8)
+  M1: k=2 R2=0.080 adjR2=0.064 AIC=-126.88 AICc=-126.45 dAICc=84.41  a=-6.0803(t=-34.4), lnN=-0.0361(t=-2.3)
+  M2: k=2 R2=0.662 adjR2=0.656 AIC=-187.98 AICc=-187.56 dAICc=23.30  a=-5.9504(t=-108.2), nq=-0.0162(t=-10.8)
+  M3: k=3 R2=0.778 adjR2=0.770 AIC=-211.58 AICc=-210.86 dAICc=0.00  a=-6.3819(t=-70.6), lnN=0.0580(t=5.5), nq=-0.0221(t=-13.5)
+  M4: k=2 R2=0.542 adjR2=0.534 AIC=-169.45 AICc=-169.03 dAICc=41.83  a=-7.3495(t=-66.9), sqrt(2lnN)/sqrt(nq)=0.9386(t=8.4)
+  M5: k=2 R2=0.252 adjR2=0.239 AIC=-139.52 AICc=-139.10 dAICc=71.77  a=-6.8067(t=-79.5), 1/sqrt(nq)=1.5472(t=4.5)
+  VIF(M3) = 1.78
+  Spearman rho(y, lnN) = -0.533 perm p = 0.0002; rho(y, nq) = -0.830 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.582; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 5.50 p = 0.0002;  c (nq | lnN) t = -13.50 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.263 perm p = 0.0569;  rho(y, nq | lnN) = -0.772 perm p = 0.0001
+  VERDICT (RULE.md rule): BOTH   [AICc M1 -126.45, M2 -187.56, M3 -210.86]
