@@ -1,0 +1,10 @@
+{
+ "A0_K093_rebuilt": {
+  "passed": true,
+  "differing_fields": [],
+  "crit": 28.853973557786595,
+  "G1": 0.025,
+  "G2": 0.73
+ },
+ "seconds": 60.4
+}
