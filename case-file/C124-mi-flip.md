@@ -139,6 +139,6 @@ Das demais observações dela (c230, hashes de bank.bin/all.bin/alpha.bin, emend
 
 **O que muda no próximo passo (registrado agora, antes de qualquer novo número).** Um contraste interno à fronteira que a deriva afeta igualmente: D = M(última linha de s × primeira de s+1) − M(penúltima de s × primeira de s+1) (distância 1 contra 2, mesmas fronteiras), com N-FLIP e o mesmo gate de especificidade em λ_det e λ_obs. Será pré-registrado como C125 com revisão cega da Kryptos.
 
-Artefatos: `analysis/C124_results.json`, `analysis/C124_run.log`, `analysis/C124_ckpt_SHA256SUMS.txt` (153 arquivos). Sementes 11840–11847 usadas; **próxima livre 11848**.
+Artefatos: `analysis/C124_results.json`, `analysis/C124_run.log`, `analysis/C124_ckpt_SHA256SUMS.txt` (153 arquivos). Sementes 11840–11847 usadas; **próxima livre 11860** (11848–11859 used by the joint audit and the I-342 subsample).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI did this work)
