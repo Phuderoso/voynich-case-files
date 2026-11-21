@@ -1,0 +1,71 @@
+SHA256SUMS data/cycle232: 289 files, 0 bad
+SHA256SUMS data/cycle229: 170 files, 0 bad
+SHA256SUMS(232) file sha a25048282f47ce935b30a3cfde594dec11def21b137e1459e9bb668583b80034
+nulls232 regenerated: 32 texts, mismatches 0
+R null files: 256 over 32 texts (files/text [8]); input_sha256 header mismatches 0
+FIT points 1928 (singles 1040), N range 10 .. 5320479, R2 0.6766
+FIT a -6.8417  b1 0.0786  b2 0.00027  c -0.0192
+  mean residual pooling g=1: -0.0195 (n 1040)
+  mean residual pooling g=2: +0.0087 (n 521)
+  mean residual pooling g=5: +0.0361 (n 209)
+  mean residual pooling g=10: +0.0486 (n 105)
+  mean residual pooling g=20: +0.0583 (n 53)
+  boot95 a: [-7.06543, -6.64626]
+  boot95 b1: [0.03960, 0.12264]
+  boot95 b2: [-0.00223, 0.00210]
+  boot95 c: [-0.01971, -0.01785]
+  curvature detected (b2 CI excludes 0): False
+  local slope b(N=10) = 0.0799  boot95 [0.0488, 0.1118]
+  local slope b(N=1000) = 0.0824  boot95 [0.0667, 0.0926]
+  local slope b(N=100000) = 0.0849  boot95 [0.0695, 0.0879]
+  local slope b(N=1e+06) = 0.0862  boot95 [0.0591, 0.0966]
+k_text 0.8789 (text 209609, unit nq 11 N 300 max -5.717); k05 0.2834; bar intercept a+k -5.9628
+  R_t calibration: 209609:+0.879 209610:+0.378 209611:+0.247 209612:+0.483 209613:+0.446 209614:+0.288 209615:+0.430 209616:+0.442 209617:+0.370 209618:+0.654 209619:+0.244 209620:+0.627 209621:+0.512 209622:+0.379 209623:+0.293 209624:+0.387 209625:+0.353 209626:+0.728 209627:+0.357 209628:+0.327
+  R_t holdout    : 209629:+0.772 209630:+0.824 209631:+0.400 209632:+0.300 209633:+0.546 209634:+0.732 209635:+0.715 209636:+0.379 209637:+0.400 209638:+0.215 209639:+0.586 209640:+0.454
+  plant  0 bad= -1 rec=1 H_p=[22] nq=10 nc=-4.172 Nref=264 bar=-5.708 pass=1
+  plant  1 bad=  4 rec=1 H_p=[23] nq=10 nc=-4.092 Nref=264 bar=-5.708 pass=1
+  plant  2 bad= -1 rec=1 H_p=[18] nq=11 nc=-4.354 Nref=368 bar=-5.700 pass=1
+  plant  3 bad=  4 rec=1 H_p=[21] nq=11 nc=-4.047 Nref=368 bar=-5.700 pass=1
+  plant  4 bad= -1 rec=1 H_p=[4] nq=14 nc=-4.406 Nref=977 bar=-5.678 pass=1
+  plant  5 bad= 19 rec=1 H_p=[14] nq=14 nc=-4.842 Nref=977 bar=-5.678 pass=1
+  plant  6 bad= -1 rec=1 H_p=[24] nq=13 nc=-4.232 Nref=721 bar=-5.684 pass=1
+  plant  7 bad= 21 rec=1 H_p=[21] nq=12 nc=-4.004 Nref=491 bar=-5.696 pass=1
+  plant  8 bad= -1 rec=1 H_p=[23] nq=18 nc=-4.913 Nref=2650 bar=-5.672 pass=1
+  plant  9 bad=  4 rec=1 H_p=[21] nq=18 nc=-6.007 Nref=2650 bar=-5.672 pass=0
+  plant 10 bad= -1 rec=1 H_p=[22] nq=15 nc=-3.984 Nref=1191 bar=-5.681 pass=1
+  plant 11 bad= 23 rec=1 H_p=[23] nq=18 nc=-3.773 Nref=2650 bar=-5.672 pass=1
+  plant 12 bad= -1 rec=1 H_p=[9] nq=25 nc=-5.006 Nref=6182 bar=-5.736 pass=1
+  plant 13 bad=  0 rec=1 H_p=[16] nq=28 nc=-4.953 Nref=8245 bar=-5.770 pass=1
+  plant 14 bad= -1 rec=1 H_p=[17] nq=23 nc=-4.133 Nref=5515 bar=-5.707 pass=1
+  plant 15 bad= 11 rec=1 H_p=[14] nq=27 nc=-4.087 Nref=7743 bar=-5.756 pass=1
+  plant 16 bad= -1 rec=1 H_p=[12] nq=37 nc=-4.443 Nref=12392 bar=-5.909 pass=1
+  plant 17 bad=  5 rec=1 H_p=[17] nq=37 nc=-4.418 Nref=12392 bar=-5.909 pass=1
+  plant 18 bad= -1 rec=1 H_p=[18] nq=30 nc=-4.244 Nref=10609 bar=-5.787 pass=1
+  plant 19 bad=  2 rec=1 H_p=[22] nq=37 nc=-5.275 Nref=12392 bar=-5.909 pass=1
+  plant 20 bad= -1 rec=1 H_p=[9] nq=64 nc=-3.958 Nref=40125 bar=-6.329 pass=1
+  plant 21 bad= 16 rec=1 H_p=[14] nq=64 nc=-5.043 Nref=40125 bar=-6.329 pass=1
+  plant 22 bad= -1 rec=1 H_p=[14] nq=64 nc=-4.203 Nref=40125 bar=-6.329 pass=1
+  plant 23 bad= 16 rec=1 H_p=[11] nq=64 nc=-3.994 Nref=40125 bar=-6.329 pass=1
+GATE P: 23/24 (Wilson95 0.798-0.993) -> PASS; at N 1e6 23/24, at 5e6 23/24; sensitivity form-not-required 23/24
+GATE H: holdout per-text passes 0/12 (Wilson95 0.000-0.242) -> PASS
+  holdout decade 1e1: units 10 mean residual +0.0687 (gated)
+  holdout decade 1e2: units 89 mean residual +0.0679 (gated)
+  holdout decade 1e3: units 281 mean residual +0.0176 (gated)
+  holdout decade 1e4: units 585 mean residual -0.0124 (gated)
+  holdout decade 1e5: units 171 mean residual -0.0001 (gated)
+  holdout decade 1e6: units 8 mean residual +0.0222 (<10 units, not gated)
+GATE M: -> PASS (holdout units 1144)
+GATE C: calibration max N 5320479 -> PASS
+DECISION: ADOPTED (from cycle 233, Y-line families)  gates {'P': np.True_, 'H': np.True_, 'M': True, 'C': np.True_}
+K4 units 52 (N 72 .. 266598, total 1504736); R_K4 +0.3925 at nq 55 N 24177 max -6.685; units >= bar 0; K4 passes: False
+  rank p calibration: (1+9)/(20+1) = 0.4762; distance p/alpha = 9.52x
+  rank p holdout: (1+9)/(12+1) = 0.7692; distance p/alpha = 15.38x
+  rank p c229 nulls (descriptive): (1+12)/(16+1) = 0.7647; distance p/alpha = 15.29x
+K4 LABEL: NO-SIGNAL (robust)
+RETRO c229 nulls: per-text passes of the new bar 0/16 (Wilson95 0.000-0.194)
+  c229 null 209560 unit nq 12 N 570 max -5.998 >= -6.0; bar -5.684 -> below new bar
+  c229 null 209563 unit nq 19 N 3127 max -5.982 >= -6.0; bar -5.678 -> below new bar
+  c229 null 209568 unit nq 13 N 692 max -5.994 >= -6.0; bar -5.687 -> below new bar
+  c229 null 209573 unit nq 13 N 679 max -5.945 >= -6.0; bar -5.689 -> below new bar
+RETRO K4 c229 units with max >= -6.0 (nq>=10): []
+bar examples: bar(10,72)=-5.814 bar(10,1e6)=-5.017 bar(20,1e3)=-5.791 bar(45,1e5)=-5.886

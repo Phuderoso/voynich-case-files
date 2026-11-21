@@ -1,0 +1,3 @@
+FROZEN_PRE 2026-11-21 16:39:12 MST (America/Dawson_Creek)
+RULE.md and recount232.py frozen (hashes in SHA256SUMS_PRE) before the first run of my code on the fresh-null Y lines,
+and before opening tools/cycle232/analyze232.py, data/cycle232/analyze232.log, summary232.json, gateT/, the case 218 file, the c232 journal, IDEAS/README of a06bfab.
