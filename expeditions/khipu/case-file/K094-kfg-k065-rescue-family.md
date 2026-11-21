@@ -3,7 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: pre-registration**, committed with the tool and the A0 audit **before** the registered run. **No observed lead W on KFG
+**Status: results appended** (pre-registration, tool and A0 pushed as `343c7ef` before the registered run; artefacts `c188a21`). **No observed lead W on KFG
 has been computed by anyone in this repository** (K093's gate stopped its tool before that step; this tool computes it only after
 its own gates pass).
 
@@ -72,5 +72,57 @@ K065's published OKR artefacts, listed here.
 
 Seeds 6496 (reference), 6497 (FPR), 6498 (plants); fixtures 6408/6404 reused (data-independent). **Next free 6499.**
 Compute ≈ 1 minute under `timeout 600`.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (registered run 21:51:31–21:52:03 PT, 32.4 s, prereg `343c7ef`; tool unchanged, sha256 `60014447…`)
+Output [`analysis/k094_results.json`](../analysis/k094_results.json) (sha256 `6f66a342…`), log [`analysis/k094_run.log`](../analysis/k094_run.log) (sha256 `f9b4a283…`).
+
+| Gate | K093 (F_x, KFG) | K094 (F_DB, KFG) | Status |
+|---|---|---|---|
+| A0 | K065 on OKR exact | K065 on OKR exact **and** K093 rebuilt on F_x, 0 differing fields | pass |
+| G-DATA | OKR `607913…`, KFG `582e548d…` | same | pass |
+| Family | F_x 118 849 | **F_DB 59 406** (147 khipus: 126 Berlin VA, 21 Dallas); L1–L3 in, D not in | as registered |
+| S0 / G0 | 20/20, 20/20 | 20/20, 20/20 | pass |
+| P-unit reference (R 1 000), critical family-max W at α 0.025 | 28.854 (median 23.021) | **25.635** (median 21.075; q0.99 27.104), seed 6496 | — |
+| G1 FPR (40 nulls) | 1/40 = 0.025 | **0/40 = 0.000**, seed 6497 | pass (≤ 0.10) |
+| G2 power (100 plants, 8-cord near-copies) | 0.73 (Wilson 0.636–0.807) | **0.91** (91/100, Wilson **0.838–0.952**), seed 6498 | **pass** (≥ 0.80) |
+
+Plant W quantiles in F_DB: 5 % 24.48, 20 % 30.45, median 37.86, 80 % 50.94. Halving the family lowered the bar by 3.2 W-units.
+
+**H1 (observed W, computed only now).** Holm over 3 at α 0.025, single-step p_adj against the F_DB maximum of 1 000 P-unit nulls:
+
+| Lead | KFG W (K) | p_adj | Holm thr. | OKR K065 W (K), p_adj over F_x | Input delta (KFG vs OKR, matched segments ±1 context) | K094 verdict |
+|---|---|---|---|---|---|---|
+| L1 KH0143·KH0591 (AS128 Berlin VA63042(B), Nazca · QU03 Dallas B388) | 29.561 (4) | **0.0020** | 0.0125 | 29.704 (4), 0.0060 CONFIRMED | segments **identical** (`98 226 115 124 200 161 80` / `46 226 115 124 357 161 96`); ΔW −0.143 (weights rebuilt on the KFG corpus), ΔK 0 | **REPLICATED (F_DB scope)** |
+| L2 KH0156·KH0432 (UR1140 Berlin VA16636, Nazca · UR194 Berlin VA47082, Ica) | 28.141 (6) | **0.0050** | 0.025 | 28.179 (6), 0.033 not confirmed | segments **identical** (`5 53 8 11 19 25 24 12 21` / `0 53 8 11 17 25 24 12 20`); ΔW −0.038, ΔK 0 | **CHANGED (now confirmed in F_DB)** — by the family, not the data |
+| L3 KH0377·KH0590 (UR137 Miami, Chancay · QU02 Dallas B376) | 30.335 (7) | **0.0010** | 0.0083 | 25.465 (6), 0.201 not confirmed | **one cord differs**: KH0590 KFG `22 24 28 12 14 8 1` vs OKR `22 25 28 …` (p11 24 vs 25, KFG change "from Quave original data", already in K073); the run grows by one match; ΔW +4.870, ΔK +1 | **CHANGED (now confirmed in F_DB)** — by the data (K073's correction) and the family |
+| D KH0309·KH0293 | — | — | — | p 0.121 | not in F_DB | not testable as a pair (as registered) |
+
+**Secondary (registered, descriptive): step-down max-W over F_DB** — 9 significant pairs, stopped at step 10 (KH0450·KH0682, p 0.037).
+In order: KH0128·KH0137 (K010), KH0358·KH0602 (K073 KFG candidate, Dallas QU14), **KH0147·KH0689** (UR1131 Berlin VA42510, Pachacamac
+· MM015 Basel Museum der Kulturen IVc.366.03, Gaffron) W 35.53, K 7, KH0192·KH0470 (K019/K064), **KH0147·KH0690** (· MM016, same
+Basel number) W 33.44, K 5, L3, KH0192·KH0469 (K019/K064), L1, L2. The KH0147·Basel pair is in no earlier case file of this repo:
+a **lead for the archives**, post-hoc label, no decision weight (both Basel khipus share one museum number, so they are probably one
+lot; the two hits are not independent).
+
+**Reading.** All gates pass and the three leads clear the F_DB bar. By the registered rule: **L1 REPLICATED (F_DB scope)**,
+**L2 and L3 CHANGED (now confirmed in F_DB)**. What that does and does not mean, field by field:
+- **Nothing published is overturned.** K065's "not confirmed" for L2 and L3 was a statement about the **whole** cross-provenance
+  family (89 489 OKR pairs). K094 tests a **narrower, named** family. The two statements can both be true, and for L2 they are:
+  its input is byte-identical on both sources, so its change is **entirely the family** — a weaker, scope-limited confirmation.
+- **L3 is the only data-driven change**, and it is K073's: one Dallas cord read 24 instead of 25 lengthens the shared run. Under
+  the K010 engine K073 already called it significant on KFG; under the P-unit engine it now is too, within F_DB.
+- **L1** keeps its OKR status on KFG with identical cords: the Berlin Nazca khipu VA63042(B) and the Dallas fragment B388 share
+  `226 115 124 · 161` on both transcriptions.
+- **Selection caveat (disclosed, not hidden):** F_DB was named in K093 knowing which museums the leads sit in (not their KFG W).
+  The p-values are exact against F_DB's own null maximum, but the family is not blind to the leads. These are confirmations of
+  **leads for the archives** — a museum-catalogue question (do Berlin and Dallas lots share a source?), never a reading.
+- Descriptive only, no decision weight (K093's power gate failed, so its bar cannot be read): against K093's F_x bar 28.854,
+  L1 29.56 and L3 30.33 sit above it, L2 28.14 below.
+
+Seeds 6496–6498 used; **next free 6499**.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
