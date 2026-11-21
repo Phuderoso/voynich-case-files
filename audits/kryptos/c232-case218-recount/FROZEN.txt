@@ -1,0 +1,16 @@
+FROZEN 2026-11-21 16:39:32 MST (America/Dawson_Creek)
+My own code (recount232.py, sha a69b1dcb…, unchanged since FROZEN_PRE 16:39:12 MST) and rule (RULE.md, de4f0f71…), one run (16:39 MST; a second
+identical run checked determinism). Frozen BEFORE opening tools/cycle232/analyze232.py, data/cycle232/analyze232.log, summary232.json, gateT/,
+the case 218 file, the cycle 232 journal, README/IDEAS of a06bfab. Prior knowledge of her headline numbers is disclosed in LEAKS.md.
+My results (res/summary232_voynich.txt, res/summary232_voynich.json):
+  Integrity: SHA256SUMS 232 289/289 OK (file sha a2504828…0034), 229 170/170 OK; nulls232 regenerated 32/32; input_sha256 headers 256/256.
+  Fit (1928 points: 1040 singles + pooled g 2/5/10/20; N 10 .. 5,320,479; R2 0.677):
+    a -6.8417  b1 +0.0786  b2 +0.00027  c -0.0192 ; boot95 (B 1000, seed 11860): b1 [0.0396, 0.1226], b2 [-0.00223, 0.00210], c [-0.0197, -0.0179]
+    curvature NOT detected; local slope b(N) 10: 0.0799 [0.049,0.112]; 1e3: 0.0824 [0.067,0.093]; 1e5: 0.0849 [0.070,0.088]; 1e6: 0.0862 [0.059,0.097]
+    mean residual by pooling g 1/2/5/10/20: -0.020 / +0.009 / +0.036 / +0.049 / +0.058
+  k_text +0.8789 (text 209609, nq 11, N 300, max -5.717); k05 +0.2834; bar = -5.9628 + 0.0786 lnN + 0.00027 lnN^2 - 0.0192 nq
+  Gates: P 23/24 (Wilson 0.798-0.993; fail = plant 9, one-error, nc -6.007 vs bar -5.672) PASS; at 1e6 / 5e6 23/24;
+         H 0/12 (Wilson 0.000-0.242) PASS; M PASS (decades 1e1..1e5 |mean| <= 0.069; 1e6 8 units not gated); C 5.32e6 PASS -> ADOPTED.
+  K4 (c229 files, 52 units, N 72..266,598, total 1,504,736): R_K4 +0.3925 (nq 55, N 24177, max -6.685) < k_text -> 0 passes, NO-SIGNAL;
+     rank p calibration 10/21 = 0.476 (9.5x), holdout 10/13 = 0.769 (15.4x), c229 nulls 13/17 = 0.765 -> robust (my reading of Part C).
+  Retro: c229 nulls 0/16 per-text passes (Wilson 0.000-0.194); case 215's four -6.0 null passes (209560 nq12, 209563 nq19, 209568 nq13, 209573 nq13) all below the new bar.
