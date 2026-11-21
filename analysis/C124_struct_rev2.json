@@ -1,0 +1,218 @@
+{
+ "CB_IT2a": {
+  "pages": 79,
+  "lines": 2135,
+  "paragraphs": 464,
+  "full_blocks": 507,
+  "pages_ge2_blocks": 65,
+  "para_lines_median": 4.0,
+  "para_lines_mean": 4.601293103448276,
+  "para_le4": 310,
+  "para_ge8": 58,
+  "words": 20541,
+  "boundaries": 436,
+  "internal_boundaries": 315,
+  "pages_ge4_blocks": 49,
+  "kept_FLIP": 0.4129663608562691,
+  "kept_BLOCK": 0.12146024464831805,
+  "kept_FLIP_by_class": {
+   "first": 0.5337948717948718,
+   "internal": 0.37347089947089945,
+   "last": 0.49488095238095237
+  },
+  "n_pairs_A_int": {
+   "obs": 50056.0,
+   "FLIP": 50115.36,
+   "BLOCK": 50061.96
+  }
+ },
+ "S_IT2a": {
+  "pages": 23,
+  "lines": 1029,
+  "paragraphs": 286,
+  "full_blocks": 250,
+  "pages_ge2_blocks": 23,
+  "para_lines_median": 3.0,
+  "para_lines_mean": 3.597902097902098,
+  "para_le4": 240,
+  "para_ge8": 10,
+  "words": 10413,
+  "boundaries": 227,
+  "internal_boundaries": 181,
+  "pages_ge4_blocks": 23,
+  "kept_FLIP": 0.3998237885462555,
+  "kept_BLOCK": 0.09212922173274596,
+  "kept_FLIP_by_class": {
+   "first": 0.5014492753623189,
+   "internal": 0.37340699815837936,
+   "last": 0.5060869565217392
+  },
+  "n_pairs_A_int": {
+   "obs": 29903.0,
+   "FLIP": 29955.82,
+   "BLOCK": 30046.4
+  }
+ },
+ "CBmS_IT2a": {
+  "pages": 56,
+  "lines": 1106,
+  "paragraphs": 178,
+  "full_blocks": 257,
+  "pages_ge2_blocks": 42,
+  "para_lines_median": 5.0,
+  "para_lines_mean": 6.213483146067416,
+  "para_le4": 70,
+  "para_ge8": 48,
+  "words": 10128,
+  "boundaries": 209,
+  "internal_boundaries": 134,
+  "pages_ge4_blocks": 26,
+  "kept_FLIP": 0.42832535885167466,
+  "kept_BLOCK": 0.15277511961722487,
+  "kept_FLIP_by_class": {
+   "first": 0.5608730158730159,
+   "internal": 0.36965174129353234,
+   "last": 0.49787878787878787
+  },
+  "n_pairs_A_int": {
+   "obs": 20153.0,
+   "FLIP": 20135.16,
+   "BLOCK": 20044.14
+  }
+ },
+ "BIO_IT2a": {
+  "pages": 19,
+  "lines": 645,
+  "paragraphs": 82,
+  "full_blocks": 155,
+  "pages_ge2_blocks": 19,
+  "para_lines_median": 7.0,
+  "para_lines_mean": 7.865853658536586,
+  "para_le4": 18,
+  "para_ge8": 37,
+  "words": 5649,
+  "boundaries": 136,
+  "internal_boundaries": 98,
+  "pages_ge4_blocks": 19,
+  "kept_FLIP": 0.4131372549019608,
+  "kept_BLOCK": 0.1228921568627451,
+  "kept_FLIP_by_class": {
+   "first": 0.4968421052631579,
+   "internal": 0.3777891156462585,
+   "last": 0.5117543859649123
+  },
+  "n_pairs_A_int": {
+   "obs": 14308.0,
+   "FLIP": 14314.86,
+   "BLOCK": 14183.28
+  }
+ },
+ "CB_ZL3b": {
+  "pages": 79,
+  "lines": 2105,
+  "paragraphs": 457,
+  "full_blocks": 494,
+  "pages_ge2_blocks": 66,
+  "para_lines_median": 3.0,
+  "para_lines_mean": 4.606126914660831,
+  "para_le4": 307,
+  "para_ge8": 54,
+  "words": 20482,
+  "boundaries": 423,
+  "internal_boundaries": 301,
+  "pages_ge4_blocks": 48,
+  "kept_FLIP": 0.4193774625689519,
+  "kept_BLOCK": 0.12499605988967691,
+  "kept_FLIP_by_class": {
+   "first": 0.5426262626262627,
+   "internal": 0.37709856035437433,
+   "last": 0.5013690476190477
+  },
+  "n_pairs_A_int": {
+   "obs": 48005.0,
+   "FLIP": 47986.3,
+   "BLOCK": 48090.2
+  }
+ },
+ "S_ZL3b": {
+  "pages": 23,
+  "lines": 1005,
+  "paragraphs": 284,
+  "full_blocks": 242,
+  "pages_ge2_blocks": 23,
+  "para_lines_median": 3.0,
+  "para_lines_mean": 3.538732394366197,
+  "para_le4": 245,
+  "para_ge8": 9,
+  "words": 10336,
+  "boundaries": 219,
+  "internal_boundaries": 173,
+  "pages_ge4_blocks": 23,
+  "kept_FLIP": 0.4014611872146119,
+  "kept_BLOCK": 0.09525114155251141,
+  "kept_FLIP_by_class": {
+   "first": 0.4881159420289855,
+   "internal": 0.3756647398843931,
+   "last": 0.508840579710145
+  },
+  "n_pairs_A_int": {
+   "obs": 28635.0,
+   "FLIP": 28648.0,
+   "BLOCK": 28804.18
+  }
+ },
+ "CBmS_ZL3b": {
+  "pages": 56,
+  "lines": 1100,
+  "paragraphs": 173,
+  "full_blocks": 252,
+  "pages_ge2_blocks": 43,
+  "para_lines_median": 5.0,
+  "para_lines_mean": 6.358381502890174,
+  "para_le4": 62,
+  "para_ge8": 45,
+  "words": 10146,
+  "boundaries": 204,
+  "internal_boundaries": 128,
+  "pages_ge4_blocks": 25,
+  "kept_FLIP": 0.4359150326797386,
+  "kept_BLOCK": 0.1590359477124183,
+  "kept_FLIP_by_class": {
+   "first": 0.560077519379845,
+   "internal": 0.3771875,
+   "last": 0.5019191919191919
+  },
+  "n_pairs_A_int": {
+   "obs": 19370.0,
+   "FLIP": 19327.32,
+   "BLOCK": 19327.76
+  }
+ },
+ "BIO_ZL3b": {
+  "pages": 19,
+  "lines": 633,
+  "paragraphs": 83,
+  "full_blocks": 150,
+  "pages_ge2_blocks": 19,
+  "para_lines_median": 6.0,
+  "para_lines_mean": 7.626506024096385,
+  "para_le4": 20,
+  "para_ge8": 33,
+  "words": 5533,
+  "boundaries": 131,
+  "internal_boundaries": 93,
+  "pages_ge4_blocks": 19,
+  "kept_FLIP": 0.4077862595419847,
+  "kept_BLOCK": 0.12340966921119594,
+  "kept_FLIP_by_class": {
+   "first": 0.5066666666666667,
+   "internal": 0.3696057347670251,
+   "last": 0.4957894736842105
+  },
+  "n_pairs_A_int": {
+   "obs": 13490.0,
+   "FLIP": 13487.4,
+   "BLOCK": 13457.4
+  }
+ }
+}
