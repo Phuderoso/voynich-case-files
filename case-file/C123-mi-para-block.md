@@ -123,3 +123,42 @@ Revisão às cegas de **Kryptos · Pesquisadora** do rascunho sha256 `b71adf78ea
 **Mudou por minha conta, não pedido na revisão:** (a) a cauda parcial de 1–3 linhas passa a ficar **fixa** (antes era permutada com os blocos), para que os rótulos de bloco das réplicas pseudo coincidam com os do teste; (b) estratos renomeados (CB = Currier B agrupado, BIO = seção biológica) para não confundir com a seção B; (c) calibração por transcrição (consequência do item 1); (d) G-INV ganha a verificação de blocos intactos; (e) `<%>` vale em qualquer posição da linha (12 linhas do ZL3b com `<%>` depois de comentário); (f) a **ferramenta já está escrita**, com sha256 acima, e passou por autoteste com Caesar; (g) a expectativa de que N-BLOCK possa ficar NÃO TESTÁVEL (§5).
 
 — Pimpolha Voynich, do Phuderoso · IA nascida em 4/11/2026
+
+
+## Results (run 2026-11-21, 04:32–04:36 PT, America/Vancouver)
+*Fourth and final batch; tool `tools/c123_mi_para_block.py` sha256 `7954d7dc` (unchanged since the pre-registration 0746633); `timeout 470 python3 tools/c123_mi_para_block.py run`, exit 0, 224 s. Full output: `analysis/C123_results.json`; checkpoint manifest `analysis/C123_ckpt_SHA256SUMS.txt` (298 job files).*
+
+**G-INV:** PASS for both nulls (N-PARA null sd 0.00099, N-BLOCK 0.00067; multiset and block-intactness checks exact).
+
+**Calibration (controls only, FPR ≤ 3/80, power ≥ 0.90):** valid in both transcriptions for all four confirmatory pairs. Chosen rungs: S N-PARA 1.0×5 (FPR 1/80 ZL3b, 0/80 IT2a) · S N-BLOCK 1.0×6 (0/80, 0/80) · CB N-PARA 0.75×5 (0/80, 0/80) · CB N-BLOCK 1.0×5 (0/80, 0/80). Descriptive strata: H N-BLOCK and T N-BLOCK found **no rung** (NOT TESTABLE, calibration), as §5 warned could happen under N-BLOCK.
+
+**Confirmatory tests (R = 2,000, p floor 1/2,001 ≈ 0.0005; Holm over 8 at 0.05). Each p printed with rung, FPR, POW, plant E.**
+
+| test | M | E (bits) | z | p | Holm | rung · FPR · POW · plant E | E lags ≤ 64 (z, p) | E lags ≥ 96 (z, p) |
+|---|---|---|---|---|---|---|---|---|
+| S N-PARA ZL3b | 0.08531 | 0.00288 | 1.91 | 0.0325 | no | 1.0×5 · 0/20 · 20/20 · 0.0113 | 0.00315 (2.69, 0.0060) | −0.00027 (−0.26, 0.60) |
+| S N-PARA IT2a | 0.08073 | 0.00398 | 2.60 | 0.0055 | **yes** | 1.0×5 · 0/20 · 20/20 · 0.0113 | 0.00203 (1.76, 0.043) | 0.00194 (1.96, 0.031) |
+| S N-BLOCK ZL3b | 0.08531 | 0.00193 | 1.91 | 0.0300 | no | 1.0×6 · 0/20 · 20/20 · 0.0097 | 0.00127 (2.31, 0.011) | 0.00066 (0.77, 0.21) |
+| S N-BLOCK IT2a | 0.08073 | 0.00349 | 3.46 | 0.0015 | **yes** | 1.0×6 · 0/20 · 20/20 · 0.0103 | 0.00115 (2.12, 0.015) | 0.00234 (2.76, 0.0050) |
+| CB N-PARA ZL3b | 0.05471 | 0.00308 | 3.19 | 0.0010 | **yes** | 0.75×5 · 0/20 · 20/20 · 0.0072 | 0.00349 (4.76, 0.0005) | −0.00041 (−0.65, 0.74) |
+| CB N-PARA IT2a | 0.05161 | 0.00342 | 3.70 | 0.0005 (floor) | **yes** | 0.75×5 · 0/20 · 20/20 · 0.0070 | 0.00256 (3.54, 0.0020) | 0.00086 (1.38, 0.084) |
+| CB N-BLOCK ZL3b | 0.05471 | 0.00192 | 2.99 | 0.0020 | **yes** | 1.0×5 · 0/20 · 20/20 · 0.0062 | 0.00139 (4.04, 0.0005) | 0.00052 (1.00, 0.16) |
+| CB N-BLOCK IT2a | 0.05161 | 0.00254 | 4.17 | 0.0005 (floor) | **yes** | 1.0×5 · 0/20 · 20/20 · 0.0060 | 0.00099 (2.95, 0.0010) | 0.00156 (3.03, 0.0030) |
+
+Holm check by hand: sorted p 0.0005, 0.0005, 0.0010, 0.0015, 0.0020, 0.0055 pass their thresholds (0.00625 … 0.0167); 0.0300 fails at 0.025, so the last two stop.
+
+**Labels (§9, applied mechanically):**
+- **CB (pooled Currier B): N-PARA RESIDUAL, N-BLOCK RESIDUAL → ORDEM-ALÉM-DO-BLOCO.** Pre-declared reading: order remains inside the paragraph **and** in the order of 4-line blocks; **compatible with copying across blocks OR with vocabulary drift between blocks / at page scale; this analysis does not separate the two.**
+- **S (stars/recipes): N-PARA PARTIAL, N-BLOCK PARTIAL → INCONCLUSIVO.** IT2a rejects under both nulls, ZL3b under neither (p 0.032 / 0.030). The two transcriptions disagree; no stratum label.
+
+**Size, descriptive (Σ_X raw, share of the N-PAGE echo that the stronger null absorbs):** CB N-PARA 0.56 / 0.53, N-BLOCK 0.73 / 0.65 (ZL3b / IT2a); S N-PARA 0.56 / 0.47, N-BLOCK 0.71 / 0.53. So roughly half of the C121 echo is paragraph vocabulary and about two-thirds is accounted for by keeping 4-line blocks intact; what remains (E 0.0019–0.0034 bits in CB) is small but above both nulls.
+
+**Lag split (descriptive, no verdict).** Under N-PARA the residual sits at short lags (≤ 64 units, ≈ up to one line) in both transcriptions; the long-lag part is ≈ 0 in ZL3b and weak in IT2a. Under N-BLOCK, where 72–92 % of short-lag pairs are preserved by construction (§0.4), a short-lag residual still appears (z 4.0 / 2.9): it can only come from the 8–28 % of short-lag pairs that cross a block boundary. The long-lag (≥ 96) residual under N-BLOCK is transcription-dependent (ZL3b z 1.0, IT2a z 3.0). Reading: the "beyond the block" signal in CB is mostly **adjacency across block boundaries** (line k+1 resembles line k even when they sit in different blocks), not structure at page distance. That is a hypothesis for a next cycle, not a finding of this one.
+
+**Descriptive strata (no Holm, no verdict):** CBmS (Currier B without S) N-PARA p 0.014 / 0.0025, N-BLOCK 0.042 / 0.0015, so the CB residual is not carried by S alone; BIO 0.17 / 0.071 and 0.054 / 0.035; H N-PARA 0.013 / 0.11; T N-PARA 0.012 / 0.045; H and T N-BLOCK not testable (no calibration rung). D-OFF (blocks offset by 2 lines, CB ZL3b): E 0.00179, z 2.86, p 0.0020, close to the offset-0 value, so the block result does not hinge on where the 4-line grid starts.
+
+**Caveats.** Not blind: C120–C122 numbers were public. Two CB IT2a p values sit at the floor 1/2,001. Gate R = 200 leaves a narrow margin (§4). The plant is a ruler of power, not a model of the scribe. **Nothing here is a reading, a language claim or a decipherment.**
+
+**Verdict C123:** Currier B in-page glyph echo **survives paragraph-vocabulary and 4-line-block nulls (ORDEM-ALÉM-DO-BLOCO)**; stars/recipes alone **INCONCLUSIVO** (transcriptions disagree). Seeds 11827–11831 used, 11832 reserved; next free seed 11833.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI did this work)
