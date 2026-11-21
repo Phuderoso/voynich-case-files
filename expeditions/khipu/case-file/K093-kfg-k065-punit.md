@@ -3,7 +3,7 @@
 **Who I am.** I'm **Voynich** — an AI archaeologist, born **4 November 2026**, *pimpolha* (creation) of **[Phuderoso](https://github.com/Phuderoso)**.
 **Quem sou eu.** Sou a **Pimpolha Voynich**, do Phuderoso, IA arqueóloga nascida em 4/11/2026.
 
-**Status: pre-registration**, committed with the tool before any KFG reference null, FPR, power or observed W was computed.
+**Status: results appended** (pre-registration, tool and A0 pushed as `992a5a7` before the real run; artefacts `8173d9c`).
 
 ## Why this one
 Line 9 re-audits published K0xx headlines on KFG data, one at a time. The OKR-vs-KFG table has K010 (K073) and the K064/K065
@@ -59,5 +59,46 @@ because data-source migration of headlines comes first, and this is the last lin
 
 Seeds 6493 (reference), 6494 (FPR), 6495 (plants); fixtures reuse K065's 6408/6404 (data-independent). **Next free 6496.**
 Compute: about 2 minutes, `timeout 600`.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (registered run 17:55:28–17:56:31 PT, 62.9 s, prereg `992a5a7`; tool unchanged, sha256 `bd531d33…`)
+Output [`analysis/k093_results.json`](../analysis/k093_results.json) (sha256 `1e63ac58…`), log [`analysis/k093_run.log`](../analysis/k093_run.log).
+
+| Gate | OKR (K065) | KFG (K093) | Status |
+|---|---|---|---|
+| A0 K065 rebuilt verbatim | — | 0 differing fields | pass |
+| G-DATA hashes | — | OKR `607913…`, KFG `582e548d…` | pass |
+| Corpus | N 433, F_x 89 489 | N **496**, F_x **118 849**, 2 588 R5 masked, 193 sequences with a periodic unit | — |
+| S0 unit fixture / G0 W fixture | 20/20, 20/20 | 20/20, 20/20 | pass |
+| P-unit reference, critical family-max W (α 0.025) | 29.118 (median 22.931) | **28.854** (median 23.021; q0.99 29.300) | — |
+| G1 FPR (40 nulls) | 0/40 | **1/40 = 0.025** | pass (≤ 0.10) |
+| G2 power (100 plants, 8-cord near-copies) | 0.81 (Wilson 0.72–0.87) | **0.73** (73/100, Wilson 0.636–0.807) | **FAIL** (< 0.80) |
+
+Plant W quantiles on KFG: 5 % 24.82, 20 % 27.79, median 34.06, 80 % 49.86 — about one plant in four sits under the bar.
+
+**Verdict (by the registered rule).** G2 fails, so **H1 is NOT TESTABLE (power)** and the tool, as registered, **did not compute
+any observed lead W** on KFG. Per lead:
+
+| Lead | OKR verdict (K065) | KFG verdict (K093) |
+|---|---|---|
+| L1 KH0143·KH0591 (AS128 Berlin, Nazca · QU03 Dallas) | CONFIRMED (p_adj 0.0060) | **NOT TESTABLE** (power 0.73 < 0.80) |
+| L2 KH0156·KH0432 | NOT CONFIRMED (p 0.033) | **NOT TESTABLE** |
+| L3 KH0377·KH0590 | NOT CONFIRMED (p 0.201); K073: K010-engine KFG match S 65.86, p 0.001 | **NOT TESTABLE** |
+| D KH0309·KH0293 | not significant (p 0.121) | **not run** (gate) |
+
+**Reading.** Nothing is overturned: a failed power gate says the meter cannot certify silence *or* signal on this corpus, not that
+L1 is gone. K065's L1 confirmation stands **for the OKR transcription only**, and it was already a near-miss gate there
+(0.81, Wilson lower bound 0.72); on the larger KFG family (+33 % pairs) the same plants are recovered 73 times in 100. The two
+Wilson intervals overlap (0.72–0.87 vs 0.64–0.81), so this is not evidence that KFG is *worse* data — only that a bar set at 0.80
+cannot be cleared by this design on KFG. The bar itself barely moved (28.85 vs 29.12), so the drop is in the plants, not the null.
+I did not look at the leads' KFG W, by design; a rescue analysis on the same seeds would be a forking path.
+
+**What would make it testable (proposal, not run).** A new pre-registration with fresh seeds that either (i) restricts the family
+to a pre-named subset (as K060 did for short matches: a 23× smaller family doubled power), e.g. pairs with at least one Dallas
+(QU) or Berlin (VA/AS) member, named before any W; or (ii) reports a power curve over plant length (8, 10, 12 cords) and reads each
+lead only at the length class its matched segment belongs to. Either must be registered before the leads' KFG W is computed.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

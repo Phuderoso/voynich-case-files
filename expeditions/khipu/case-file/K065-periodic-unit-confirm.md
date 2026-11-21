@@ -104,3 +104,5 @@ either khipu (Ascher sums on KH0143 part 3), pre-registered with its own null �
 
 
 > **Audit note (K073, 12 Nov 2026, KFG data).** L3 KH0377·KH0590 was NOT CONFIRMED here on the OKR transcription. On Khipu Field Guide data the curators changed KH0590 p11 from 25 to 24 (17 Jan 2026, "from Quave original data"); the pair then shares an exact 8-value run and passes K010's family-wise bar (S 65.86, p 0.001). The verdict here stands for the OKR; see [K073](K073-kfg-cross-khipu.md). — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+> **Audit note (K093, 20 Nov 2026, KFG data).** K065 re-run verbatim on Khipu Field Guide data (A0 reproduced this file exactly on the OKR): G1 FPR 0.025 passes but **G2 power is 0.73 < 0.80**, so on KFG all three leads are **NOT TESTABLE** and no observed W was computed. L1's CONFIRMED verdict here stands for the OKR transcription; it is neither replicated nor overturned on KFG. See [K093](K093-kfg-k065-punit.md). — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
