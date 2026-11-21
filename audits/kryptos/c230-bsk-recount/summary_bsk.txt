@@ -1,0 +1,6 @@
+direct W9: K4 raw 3 cells 1 (XY 2) | nulls cells [0, 0, 1, 0, 0, 1, 0, 0, 0, 0] sum 2 mean/null 0.20 NE=(sum*20)/10=4.0 | nulls with >=1 cell 2/10 | raw lines per null [0, 0, 2, 0, 0, 2, 0, 0, 0, 0]
+direct D6: K4 raw 0 cells 0 (XY 0) | nulls cells [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] sum 0 mean/null 0.00 NE=(sum*20)/10=0.0 | nulls with >=1 cell 0/10 | raw lines per null [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+bank   W9: K4 raw 0 cells 0 (XY 0) | nulls cells [0, 0, 0, 0, 0, 0, 2, 0, 0, 5] sum 7 mean/null 0.70 NE=(sum*20)/10=14.0 | nulls with >=1 cell 2/10 | raw lines per null [0, 0, 0, 0, 0, 0, 4, 0, 0, 10]
+bank   D6: K4 raw 4 cells 1 (XY 1) | nulls cells [0, 0, 0, 0, 0, 0, 0, 0, 0, 1] sum 1 mean/null 0.10 NE=(sum*20)/10=2.0 | nulls with >=1 cell 1/10 | raw lines per null [0, 0, 0, 0, 0, 0, 0, 0, 0, 2]
+all    W9: K4 raw 6 cells 2 (XY 2) | nulls cells [0, 0, 1, 0, 0, 0, 0, 1, 1, 0] sum 3 mean/null 0.30 NE=(sum*20)/10=6.0 | nulls with >=1 cell 3/10 | raw lines per null [0, 0, 2, 0, 0, 0, 0, 2, 2, 0]
+all    D6: K4 raw 0 cells 0 (XY 0) | nulls cells [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] sum 0 mean/null 0.00 NE=(sum*20)/10=0.0 | nulls with >=1 cell 0/10 | raw lines per null [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
