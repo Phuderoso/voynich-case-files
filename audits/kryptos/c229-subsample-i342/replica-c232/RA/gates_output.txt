@@ -1,0 +1,10 @@
+G1 FPR T3 on P0 (no composition): material-composition call 0/20, Wilson95 [0.00,0.16]  gate <=3/20: PASS
+G1 FPR T4 on P0 (no composition): material-composition call 0/20, Wilson95 [0.00,0.16]  gate <=3/20: PASS
+G2 POW on P1 (composition plant): T3 20/20, T4 14/20, either 20/20, Wilson95 [0.84,1.00]  gate either>=17/20: PASS
+G3 REC P0: |b_A-oracle|<=0.010 in 20/20 (mean err +0.0003), |c_B-oracle|<=0.005 in 20/20 (mean err +0.0000)  gate both>=18/20: PASS
+G3 REC P1: |b_A-oracle|<=0.010 in 20/20 (mean err +0.0004), |c_B-oracle|<=0.005 in 20/20 (mean err -0.0001)  gate both>=18/20: PASS
+G3 REC THIN: |b_A-oracle|<=0.010 in 20/20 (mean err +0.0001), |c_B-oracle|<=0.005 in 20/20 (mean err -0.0000)  gate both>=18/20: PASS
+G4 CLASS P0 (oracle b_A 0.0874 vs delta_b 0.0217; -c_B 0.0134 vs delta_c 0.0100): T1 MATERIAL 20/20, T2 MATERIAL 20/20 (descriptive: -c_B is only 1.34x delta_c)  gate T1 MATERIAL>=17/20: PASS
+G5 CLASS THIN (oracle b_A 0.0119, -c_B 0.0018, both below thresholds): T1 NEGLIGIBLE 20/20, T2 NEGLIGIBLE 20/20, false MATERIAL 0/20  gate both>=17/20 and false<=3/20: PASS
+GATES ALL PASS
+(set RA, elapsed 682s, tool sha256 5185d776f4ce4e60a79bdd337323b908c70367428ce44c94b10c6c2382b348ad, adapter sha256 e9bc33e403e660b32dd8d0a2176936ac557df5be02b1e41ada360a315803b317)
