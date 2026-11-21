@@ -1,0 +1,85 @@
+FIXTURE {"kfg_xlsx_hash_mismatch": 0, "n_universe": 525, "universe_eq_k069": true, "n_okr_universe_shared": 455, "n_kfg_only": 70, "n_okr_not_in_kfg": 2, "r5_pendants": 2535, "khipus_with_r5": 243, "n_testable_masked": 496, "lists_absent": {"U": {"D2": [], "D5": []}, "M": {"D2": [], "D5": []}}, "lists_untestable_masked": {"D2": [], "D5": []}, "n_list": {"U_D2": 16, "U_D5": 20}, "pass": true}
+gates_U {"seed": 6513, "K": 1000, "calib_n": 525, "fpr_D2": 0.045714285714285714, "fpr_D5": 0.04380952380952381, "calib_bh_flags_D2": 0, "calib_bh_flags_D5": 0, "plant_n": 447, "plant_skipped_no_window": [], "power_D2": 0.6062639821029083, "power_D5": 0.6286353467561522, "G1_D2": true, "G1_D5": true, "G2_D2": true, "G2_D5": true, "seconds": 17.9}
+gates_M {"seed": 6514, "K": 1000, "calib_n": 496, "fpr_D2": 0.036290322580645164, "fpr_D5": 0.04435483870967742, "calib_bh_flags_D2": 0, "calib_bh_flags_D5": 0, "plant_n": 432, "plant_skipped_no_window": ["KH0415"], "power_D2": 0.6087962962962963, "power_D5": 0.6689814814814815, "G1_D2": true, "G1_D5": true, "G2_D2": true, "G2_D5": true, "seconds": 17.0}
+U_D2 done 25.6
+U_D5 done 29.7
+M_D2 done 27.8
+M_D5 done 30.4
+U_D2 {"gate_G1": true, "gate_G2": true, "n_tested": 525, "n_bh": 24, "bh_bar": 0.0014999250037498126, "n_replicated": 14, "n_changed": 2, "n_not_testable": 0, "new_kfg_names": ["KH0007", "KH0008", "KH0055", "KH0109B", "KH0217", "KH0358", "KH0505", "KH0677", "KH0695", "KH0696"], "new_kfg_only": ["KH0007", "KH0008", "KH0109B", "KH0677", "KH0695", "KH0696"]}
+U_D5 {"gate_G1": true, "gate_G2": true, "n_tested": 525, "n_bh": 29, "bh_bar": 0.0023998800059997, "n_replicated": 18, "n_changed": 2, "n_not_testable": 0, "new_kfg_names": ["KH0007", "KH0008", "KH0055", "KH0079", "KH0109B", "KH0128", "KH0217", "KH0358", "KH0597", "KH0677", "KH0695"], "new_kfg_only": ["KH0007", "KH0008", "KH0109B", "KH0597", "KH0677", "KH0695"]}
+M_D2 {"gate_G1": true, "gate_G2": true, "n_tested": 496, "n_bh": 26, "bh_bar": 0.0022498875056247186, "n_replicated": 13, "n_changed": 3, "n_not_testable": 0, "new_kfg_names": ["KH0007", "KH0008", "KH0055", "KH0109B", "KH0128", "KH0217", "KH0358", "KH0395", "KH0424", "KH0505", "KH0677", "KH0695", "KH0696"], "new_kfg_only": ["KH0007", "KH0008", "KH0109B", "KH0677", "KH0695", "KH0696"]}
+M_D5 {"gate_G1": true, "gate_G2": true, "n_tested": 496, "n_bh": 31, "bh_bar": 0.0029498525073746312, "n_replicated": 18, "n_changed": 2, "n_not_testable": 0, "new_kfg_names": ["KH0007", "KH0008", "KH0055", "KH0079", "KH0109B", "KH0128", "KH0217", "KH0358", "KH0505", "KH0597", "KH0677", "KH0695"], "new_kfg_only": ["KH0007", "KH0008", "KH0109B", "KH0597", "KH0677", "KH0695"]}
+U_D2 KH0027 {'okr': 'BH', 'kfg': 'not BH', 'label': 'CHANGED', 'n_r5': 0, 'stat_D2': 2.113943352306837, 'p': 0.06493506493506493}
+U_D2 KH0068 {'okr': 'BH', 'kfg': 'not BH', 'label': 'CHANGED', 'n_r5': 0, 'stat_D2': 1.0, 'p': 0.2897102897102897}
+U_D2 KH0168 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 6.92905621504133, 'p': 0.0014999250037498126}
+U_D2 KH0359 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 17.713667179974774, 'p': 4.999750012499375e-05}
+U_D2 KH0385 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 5.368863081898295, 'p': 0.0013499325033748313}
+U_D2 KH0405 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 9.74122211750566, 'p': 4.999750012499375e-05}
+U_D2 KH0447 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 5.698970004336019, 'p': 0.00014999250037498125}
+U_D2 KH0491 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 20.329257475882123, 'p': 4.999750012499375e-05}
+U_D2 KH0492 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 20.85192709261469, 'p': 4.999750012499375e-05}
+U_D2 KH0502 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 6.805213272247636, 'p': 9.99950002499875e-05}
+U_D2 KH0503 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 33.37790253014788, 'p': 4.999750012499375e-05}
+U_D2 KH0504 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 34.01485427181407, 'p': 4.999750012499375e-05}
+U_D2 KH0506 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 51.21419660923212, 'p': 4.999750012499375e-05}
+U_D2 KH0507 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 11.324693913861775, 'p': 0.00044997750112494374}
+U_D2 KH0513 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 9.302084051095703, 'p': 0.00024998750062496874}
+U_D2 KH0514 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 33.239666680244994, 'p': 4.999750012499375e-05}
+U_D5 KH0027 {'okr': 'BH', 'kfg': 'not BH', 'label': 'CHANGED', 'n_r5': 0, 'stat_D2': 2.113943352306837, 'p': 0.1088911088911089}
+U_D5 KH0143 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 7.801815168581438, 'p': 4.999750012499375e-05}
+U_D5 KH0168 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 6.92905621504133, 'p': 0.0004999750012499375}
+U_D5 KH0218 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 0.0, 'p': 4.999750012499375e-05}
+U_D5 KH0359 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 17.713667179974774, 'p': 4.999750012499375e-05}
+U_D5 KH0385 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 5.368863081898295, 'p': 4.999750012499375e-05}
+U_D5 KH0395 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 5.556302500767288, 'p': 0.00039998000099995}
+U_D5 KH0405 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 9.74122211750566, 'p': 4.999750012499375e-05}
+U_D5 KH0424 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 5.764250875438774, 'p': 0.0023998800059997}
+U_D5 KH0428 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 25.973142637841057, 'p': 4.999750012499375e-05}
+U_D5 KH0447 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 5.698970004336019, 'p': 4.999750012499375e-05}
+U_D5 KH0478 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 4.7309436934277365, 'p': 4.999750012499375e-05}
+U_D5 KH0491 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 20.329257475882123, 'p': 4.999750012499375e-05}
+U_D5 KH0492 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 20.85192709261469, 'p': 4.999750012499375e-05}
+U_D5 KH0503 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 33.37790253014788, 'p': 4.999750012499375e-05}
+U_D5 KH0504 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 34.01485427181407, 'p': 4.999750012499375e-05}
+U_D5 KH0506 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 51.21419660923212, 'p': 4.999750012499375e-05}
+U_D5 KH0507 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 11.324693913861775, 'p': 4.999750012499375e-05}
+U_D5 KH0513 {'okr': 'BH', 'kfg': 'not BH', 'label': 'CHANGED', 'n_r5': 0, 'stat_D2': 9.302084051095703, 'p': 0.004349782510874456}
+U_D5 KH0514 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 33.239666680244994, 'p': 4.999750012499375e-05}
+M_D2 KH0027 {'okr': 'BH', 'kfg': 'not BH', 'label': 'CHANGED', 'n_r5': 0, 'stat_D2': 2.113943352306837, 'p': 0.07292707292707293}
+M_D2 KH0068 {'okr': 'BH', 'kfg': 'not BH', 'label': 'CHANGED', 'n_r5': 0, 'stat_D2': 1.0, 'p': 0.26973026973026976}
+M_D2 KH0168 {'okr': 'not BH', 'kfg': 'BH', 'label': 'CHANGED', 'n_r5': 0, 'stat_D2': 6.92905621504133, 'p': 0.0017499125043747813}
+M_D2 KH0359 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 4, 'stat_D2': 17.713667179974774, 'p': 4.999750012499375e-05}
+M_D2 KH0385 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 5.368863081898295, 'p': 0.0014499275036248187}
+M_D2 KH0405 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 9.74122211750566, 'p': 4.999750012499375e-05}
+M_D2 KH0447 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 3, 'stat_D2': 5.698970004336019, 'p': 9.99950002499875e-05}
+M_D2 KH0491 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 13, 'stat_D2': 8.569354816626625, 'p': 0.000999950002499875}
+M_D2 KH0492 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 13, 'stat_D2': 13.369722451706968, 'p': 4.999750012499375e-05}
+M_D2 KH0502 {'okr': 'not BH', 'kfg': 'not BH', 'label': 'REPLICATED', 'n_r5': 10, 'stat_D2': 3.558468562523795, 'p': 0.004149792510374482}
+M_D2 KH0503 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 14, 'stat_D2': 21.791166576930745, 'p': 4.999750012499375e-05}
+M_D2 KH0504 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 17, 'stat_D2': 23.52922289208806, 'p': 4.999750012499375e-05}
+M_D2 KH0506 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 21, 'stat_D2': 45.04386682057803, 'p': 4.999750012499375e-05}
+M_D2 KH0507 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 22, 'stat_D2': 9.204119982655925, 'p': 0.000999950002499875}
+M_D2 KH0513 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 9.302084051095703, 'p': 0.000199990000499975}
+M_D2 KH0514 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 13, 'stat_D2': 23.14684265350612, 'p': 4.999750012499375e-05}
+M_D5 KH0027 {'okr': 'BH', 'kfg': 'not BH', 'label': 'CHANGED', 'n_r5': 0, 'stat_D2': 2.113943352306837, 'p': 0.0969030969030969}
+M_D5 KH0143 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 7.801815168581438, 'p': 4.999750012499375e-05}
+M_D5 KH0168 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 6.92905621504133, 'p': 0.001399930003499825}
+M_D5 KH0218 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 0.0, 'p': 4.999750012499375e-05}
+M_D5 KH0359 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 4, 'stat_D2': 17.713667179974774, 'p': 4.999750012499375e-05}
+M_D5 KH0385 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 5.368863081898295, 'p': 4.999750012499375e-05}
+M_D5 KH0395 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 5.556302500767288, 'p': 0.00044997750112494374}
+M_D5 KH0405 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 9.74122211750566, 'p': 4.999750012499375e-05}
+M_D5 KH0424 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 7, 'stat_D2': 5.764250875438774, 'p': 0.0004999750012499375}
+M_D5 KH0428 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 1, 'stat_D2': 25.973142637841057, 'p': 4.999750012499375e-05}
+M_D5 KH0447 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 3, 'stat_D2': 5.698970004336019, 'p': 0.0016499175041247937}
+M_D5 KH0478 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 4.7309436934277365, 'p': 4.999750012499375e-05}
+M_D5 KH0491 {'okr': 'not BH', 'kfg': 'BH', 'label': 'CHANGED', 'n_r5': 13, 'stat_D2': 8.569354816626625, 'p': 0.0029498525073746312}
+M_D5 KH0492 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 13, 'stat_D2': 13.369722451706968, 'p': 4.999750012499375e-05}
+M_D5 KH0503 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 14, 'stat_D2': 21.791166576930745, 'p': 4.999750012499375e-05}
+M_D5 KH0504 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 17, 'stat_D2': 23.52922289208806, 'p': 4.999750012499375e-05}
+M_D5 KH0506 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 21, 'stat_D2': 45.04386682057803, 'p': 4.999750012499375e-05}
+M_D5 KH0507 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 22, 'stat_D2': 9.204119982655925, 'p': 0.001399930003499825}
+M_D5 KH0513 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 0, 'stat_D2': 9.302084051095703, 'p': 0.0025498725063746812}
+M_D5 KH0514 {'okr': 'BH', 'kfg': 'BH', 'label': 'REPLICATED', 'n_r5': 13, 'stat_D2': 23.14684265350612, 'p': 4.999750012499375e-05}
+seconds 148.7
+exit 0
