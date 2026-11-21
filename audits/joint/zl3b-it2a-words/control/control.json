@@ -1,0 +1,1600 @@
+{
+ "counts": {
+  "A": {
+   "fallback_matched": 1340,
+   "key_match_rate_IT2a": {
+    "k": 3820,
+    "n": 5273,
+    "share": 0.7244452873127252,
+    "wilson": [
+     0.71223,
+     0.73634
+    ]
+   },
+   "key_match_rate_ZL3b": {
+    "k": 3820,
+    "n": 5385,
+    "share": 0.7093779015784587,
+    "wilson": [
+     0.6971,
+     0.72135
+    ]
+   },
+   "key_matched": 3820,
+   "key_released_to_fallback": 1322,
+   "loci_IT2a": 5273,
+   "loci_ZL3b": 5385,
+   "matched": 5160,
+   "matched_rate_IT2a": {
+    "k": 5160,
+    "n": 5273,
+    "share": 0.9785700739616916,
+    "wilson": [
+     0.9743,
+     0.98214
+    ]
+   },
+   "matched_rate_ZL3b": {
+    "k": 5160,
+    "n": 5385,
+    "share": 0.958217270194986,
+    "wilson": [
+     0.95254,
+     0.96324
+    ]
+   },
+   "only_IT2a": 113,
+   "only_ZL3b": 225,
+   "raw_key_match_rate_IT2a": {
+    "k": 5142,
+    "n": 5273,
+    "share": 0.975156457424616,
+    "wilson": [
+     0.9706,
+     0.97902
+    ]
+   },
+   "raw_key_match_rate_ZL3b": {
+    "k": 5142,
+    "n": 5385,
+    "share": 0.954874651810585,
+    "wilson": [
+     0.949,
+     0.9601
+    ]
+   },
+   "raw_key_matched": 5142
+  },
+  "B": {
+   "CB_IT2a": {
+    "classes": {
+     "division_only": {
+      "k": 935,
+      "n": 2207,
+      "share": 0.4236520163117354,
+      "wilson": [
+       0.40319,
+       0.44438
+      ]
+     },
+     "glyph_different": {
+      "k": 516,
+      "n": 2207,
+      "share": 0.2338015405527866,
+      "wilson": [
+       0.21662,
+       0.25191
+      ]
+     },
+     "identical": {
+      "k": 756,
+      "n": 2207,
+      "share": 0.34254644313547805,
+      "wilson": [
+       0.32304,
+       0.3626
+      ]
+     },
+     "unalignable_line": {
+      "k": 0,
+      "n": 2207,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00174
+      ]
+     }
+    },
+    "total": 2207
+   },
+   "CB_ZL3b": {
+    "classes": {
+     "division_only": {
+      "k": 861,
+      "n": 2032,
+      "share": 0.4237204724409449,
+      "wilson": [
+       0.4024,
+       0.44533
+      ]
+     },
+     "glyph_different": {
+      "k": 471,
+      "n": 2032,
+      "share": 0.23179133858267717,
+      "wilson": [
+       0.21396,
+       0.25063
+      ]
+     },
+     "identical": {
+      "k": 700,
+      "n": 2032,
+      "share": 0.34448818897637795,
+      "wilson": [
+       0.32414,
+       0.36543
+      ]
+     },
+     "unalignable_line": {
+      "k": 0,
+      "n": 2032,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00189
+      ]
+     }
+    },
+    "total": 2032
+   },
+   "CurrierA": {
+    "classes": {
+     "division_only": {
+      "k": 540,
+      "n": 1738,
+      "share": 0.31070195627157654,
+      "wilson": [
+       0.28938,
+       0.33286
+      ]
+     },
+     "glyph_different": {
+      "k": 283,
+      "n": 1738,
+      "share": 0.1628308400460299,
+      "wilson": [
+       0.14622,
+       0.18093
+      ]
+     },
+     "identical": {
+      "k": 915,
+      "n": 1738,
+      "share": 0.5264672036823935,
+      "wilson": [
+       0.50296,
+       0.54986
+      ]
+     },
+     "unalignable_line": {
+      "k": 0,
+      "n": 1738,
+      "share": 0.0,
+      "wilson": [
+       -0.0,
+       0.00221
+      ]
+     }
+    },
+    "total": 1738
+   },
+   "CurrierB": {
+    "classes": {
+     "division_only": {
+      "k": 1008,
+      "n": 2696,
+      "share": 0.37388724035608306,
+      "wilson": [
+       0.35581,
+       0.39232
+      ]
+     },
+     "glyph_different": {
+      "k": 552,
+      "n": 2696,
+      "share": 0.20474777448071216,
+      "wilson": [
+       0.18994,
+       0.22039
+      ]
+     },
+     "identical": {
+      "k": 1136,
+      "n": 2696,
+      "share": 0.42136498516320475,
+      "wilson": [
+       0.40285,
+       0.4401
+      ]
+     },
+     "unalignable_line": {
+      "k": 0,
+      "n": 2696,
+      "share": 0.0,
+      "wilson": [
+       -0.0,
+       0.00142
+      ]
+     }
+    },
+    "total": 2696
+   },
+   "P": {
+    "classes": {
+     "division_only": {
+      "k": 1530,
+      "n": 3965,
+      "share": 0.3858764186633039,
+      "wilson": [
+       0.37084,
+       0.40113
+      ]
+     },
+     "glyph_different": {
+      "k": 810,
+      "n": 3965,
+      "share": 0.2042875157629256,
+      "wilson": [
+       0.19203,
+       0.21712
+      ]
+     },
+     "identical": {
+      "k": 1625,
+      "n": 3965,
+      "share": 0.4098360655737705,
+      "wilson": [
+       0.39462,
+       0.42522
+      ]
+     },
+     "unalignable_line": {
+      "k": 0,
+      "n": 3965,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00097
+      ]
+     }
+    },
+    "total": 3965
+   },
+   "P_ret_both": {
+    "classes": {
+     "division_only": {
+      "k": 1132,
+      "n": 2827,
+      "share": 0.40042447824548993,
+      "wilson": [
+       0.38251,
+       0.41861
+      ]
+     },
+     "glyph_different": {
+      "k": 642,
+      "n": 2827,
+      "share": 0.22709586133710646,
+      "wilson": [
+       0.21203,
+       0.2429
+      ]
+     },
+     "identical": {
+      "k": 1053,
+      "n": 2827,
+      "share": 0.3724796604174036,
+      "wilson": [
+       0.35484,
+       0.39046
+      ]
+     },
+     "unalignable_line": {
+      "k": 0,
+      "n": 2827,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00136
+      ]
+     }
+    },
+    "total": 2827
+   },
+   "P_ret_one": {
+    "classes": {
+     "division_only": {
+      "k": 304,
+      "n": 646,
+      "share": 0.47058823529411764,
+      "wilson": [
+       0.43238,
+       0.50914
+      ]
+     },
+     "glyph_different": {
+      "k": 108,
+      "n": 646,
+      "share": 0.16718266253869968,
+      "wilson": [
+       0.14039,
+       0.19791
+      ]
+     },
+     "identical": {
+      "k": 234,
+      "n": 646,
+      "share": 0.3622291021671827,
+      "wilson": [
+       0.32608,
+       0.40001
+      ]
+     },
+     "unalignable_line": {
+      "k": 0,
+      "n": 646,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00591
+      ]
+     }
+    },
+    "total": 646
+   },
+   "all": {
+    "classes": {
+     "division_only": {
+      "k": 1667,
+      "n": 5160,
+      "share": 0.323062015503876,
+      "wilson": [
+       0.31044,
+       0.33595
+      ]
+     },
+     "glyph_different": {
+      "k": 889,
+      "n": 5160,
+      "share": 0.17228682170542636,
+      "wilson": [
+       0.16223,
+       0.18283
+      ]
+     },
+     "identical": {
+      "k": 2604,
+      "n": 5160,
+      "share": 0.5046511627906977,
+      "wilson": [
+       0.49101,
+       0.51828
+      ]
+     },
+     "unalignable_line": {
+      "k": 0,
+      "n": 5160,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00074
+      ]
+     }
+    },
+    "total": 5160
+   }
+  },
+  "C": {
+   "CB_IT2a": {
+    "classes": {
+     "glyph_different": {
+      "k": 1191,
+      "n": 43291,
+      "share": 0.02751149199602689,
+      "wilson": [
+       0.02601,
+       0.02909
+      ]
+     },
+     "identical": {
+      "k": 37074,
+      "n": 43291,
+      "share": 0.8563904737705297,
+      "wilson": [
+       0.85306,
+       0.85966
+      ]
+     },
+     "split_merge": {
+      "k": 5016,
+      "n": 43291,
+      "share": 0.11586703933843062,
+      "wilson": [
+       0.11289,
+       0.11892
+      ]
+     },
+     "unalignable": {
+      "k": 10,
+      "n": 43291,
+      "share": 0.00023099489501282022,
+      "wilson": [
+       0.00013,
+       0.00043
+      ]
+     }
+    },
+    "tokens_in_aligned_lines": 43291
+   },
+   "CB_ZL3b": {
+    "classes": {
+     "glyph_different": {
+      "k": 1093,
+      "n": 39949,
+      "share": 0.027359883851911185,
+      "wilson": [
+       0.02581,
+       0.02901
+      ]
+     },
+     "identical": {
+      "k": 34226,
+      "n": 39949,
+      "share": 0.856742346491777,
+      "wilson": [
+       0.85327,
+       0.86014
+      ]
+     },
+     "split_merge": {
+      "k": 4620,
+      "n": 39949,
+      "share": 0.11564745049938671,
+      "wilson": [
+       0.11255,
+       0.11882
+      ]
+     },
+     "unalignable": {
+      "k": 10,
+      "n": 39949,
+      "share": 0.00025031915692507947,
+      "wilson": [
+       0.00014,
+       0.00046
+      ]
+     }
+    },
+    "tokens_in_aligned_lines": 39949
+   },
+   "CurrierA": {
+    "classes": {
+     "glyph_different": {
+      "k": 637,
+      "n": 22318,
+      "share": 0.02854198404874989,
+      "wilson": [
+       0.02644,
+       0.03081
+      ]
+     },
+     "identical": {
+      "k": 19188,
+      "n": 22318,
+      "share": 0.8597544582847926,
+      "wilson": [
+       0.85514,
+       0.86425
+      ]
+     },
+     "split_merge": {
+      "k": 2493,
+      "n": 22318,
+      "share": 0.11170355766645756,
+      "wilson": [
+       0.10764,
+       0.1159
+      ]
+     },
+     "unalignable": {
+      "k": 0,
+      "n": 22318,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00017
+      ]
+     }
+    },
+    "tokens_in_aligned_lines": 22318
+   },
+   "CurrierB": {
+    "classes": {
+     "glyph_different": {
+      "k": 1279,
+      "n": 46124,
+      "share": 0.027729598473679645,
+      "wilson": [
+       0.02627,
+       0.02927
+      ]
+     },
+     "identical": {
+      "k": 39510,
+      "n": 46124,
+      "share": 0.8566039372127309,
+      "wilson": [
+       0.85338,
+       0.85977
+      ]
+     },
+     "split_merge": {
+      "k": 5325,
+      "n": 46124,
+      "share": 0.11544965744514786,
+      "wilson": [
+       0.11257,
+       0.1184
+      ]
+     },
+     "unalignable": {
+      "k": 10,
+      "n": 46124,
+      "share": 0.00021680686844159224,
+      "wilson": [
+       0.00012,
+       0.0004
+      ]
+     }
+    },
+    "tokens_in_aligned_lines": 46124
+   },
+   "P": {
+    "classes": {
+     "glyph_different": {
+      "k": 1859,
+      "n": 67543,
+      "share": 0.027523207438224537,
+      "wilson": [
+       0.02632,
+       0.02878
+      ]
+     },
+     "identical": {
+      "k": 57934,
+      "n": 67543,
+      "share": 0.8577350724723509,
+      "wilson": [
+       0.85508,
+       0.86035
+      ]
+     },
+     "split_merge": {
+      "k": 7740,
+      "n": 67543,
+      "share": 0.11459366625705106,
+      "wilson": [
+       0.11221,
+       0.11702
+      ]
+     },
+     "unalignable": {
+      "k": 10,
+      "n": 67543,
+      "share": 0.000148053832373451,
+      "wilson": [
+       8e-05,
+       0.00027
+      ]
+     }
+    },
+    "tokens_in_aligned_lines": 67543
+   },
+   "P_ret_both": {
+    "classes": {
+     "glyph_different": {
+      "k": 1471,
+      "n": 52631,
+      "share": 0.027949307442381867,
+      "wilson": [
+       0.02658,
+       0.02939
+      ]
+     },
+     "identical": {
+      "k": 45192,
+      "n": 52631,
+      "share": 0.8586574452318976,
+      "wilson": [
+       0.85565,
+       0.86161
+      ]
+     },
+     "split_merge": {
+      "k": 5958,
+      "n": 52631,
+      "share": 0.1132032452356976,
+      "wilson": [
+       0.11052,
+       0.11594
+      ]
+     },
+     "unalignable": {
+      "k": 10,
+      "n": 52631,
+      "share": 0.00019000209002299024,
+      "wilson": [
+       0.0001,
+       0.00035
+      ]
+     }
+    },
+    "tokens_in_aligned_lines": 52631
+   },
+   "P_ret_one": {
+    "classes": {
+     "glyph_different": {
+      "k": 242,
+      "n": 10454,
+      "share": 0.023149033862636312,
+      "wilson": [
+       0.02044,
+       0.02621
+      ]
+     },
+     "identical": {
+      "k": 8844,
+      "n": 10454,
+      "share": 0.8459919647981634,
+      "wilson": [
+       0.83895,
+       0.85278
+      ]
+     },
+     "split_merge": {
+      "k": 1368,
+      "n": 10454,
+      "share": 0.1308590013392003,
+      "wilson": [
+       0.12453,
+       0.13746
+      ]
+     },
+     "unalignable": {
+      "k": 0,
+      "n": 10454,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00037
+      ]
+     }
+    },
+    "tokens_in_aligned_lines": 10454
+   },
+   "all": {
+    "classes": {
+     "glyph_different": {
+      "k": 2056,
+      "n": 74874,
+      "share": 0.027459465234928013,
+      "wilson": [
+       0.02631,
+       0.02865
+      ]
+     },
+     "identical": {
+      "k": 64270,
+      "n": 74874,
+      "share": 0.8583754040120736,
+      "wilson": [
+       0.85586,
+       0.86085
+      ]
+     },
+     "split_merge": {
+      "k": 8538,
+      "n": 74874,
+      "share": 0.11403157304271176,
+      "wilson": [
+       0.11177,
+       0.11633
+      ]
+     },
+     "unalignable": {
+      "k": 10,
+      "n": 74874,
+      "share": 0.00013355771028661484,
+      "wilson": [
+       7e-05,
+       0.00025
+      ]
+     }
+    },
+    "tokens_in_aligned_lines": 74874
+   }
+  },
+  "C_detail": {
+   "ZL3b_divided_in_IT2a": 1590,
+   "ZL3b_merged_in_IT2a": 1256,
+   "dividing_sep_,": 105,
+   "dividing_sep_.": 2741,
+   "glyph_different_1_1": 1019,
+   "glyph_different_other": 6
+  },
+  "C_separator_cross_at_group_boundaries": {
+   "ZL3b,_IT2a.": 2527,
+   "ZL3b._IT2a.": 28326
+  },
+  "C_top_glyph_substitutions_equal_length": [
+   [
+    "y>k",
+    10
+   ],
+   [
+    "o>t",
+    10
+   ],
+   [
+    "o>i",
+    9
+   ],
+   [
+    "o>g",
+    9
+   ],
+   [
+    "l>s",
+    9
+   ],
+   [
+    "o>k",
+    9
+   ],
+   [
+    "c>q",
+    8
+   ],
+   [
+    "h>r",
+    8
+   ],
+   [
+    "h>n",
+    8
+   ],
+   [
+    "h>x",
+    8
+   ],
+   [
+    "e>c",
+    8
+   ],
+   [
+    "e>r",
+    8
+   ],
+   [
+    "h>y",
+    8
+   ],
+   [
+    "a>r",
+    8
+   ],
+   [
+    "e>h",
+    8
+   ]
+  ],
+  "C_top_split_boundary_pairs": [
+   [
+    "y|q",
+    127
+   ],
+   [
+    "c|h",
+    100
+   ],
+   [
+    "y|o",
+    92
+   ],
+   [
+    "o|l",
+    86
+   ],
+   [
+    "y|c",
+    85
+   ],
+   [
+    "a|i",
+    75
+   ],
+   [
+    "n|o",
+    71
+   ],
+   [
+    "r|o",
+    69
+   ],
+   [
+    "d|y",
+    66
+   ],
+   [
+    "a|l",
+    62
+   ],
+   [
+    "o|k",
+    61
+   ],
+   [
+    "n|c",
+    60
+   ],
+   [
+    "h|e",
+    59
+   ],
+   [
+    "r|a",
+    54
+   ],
+   [
+    "o|r",
+    53
+   ]
+  ],
+  "config": "base",
+  "h_underscore_differs_in_CB_unit_stream": {
+   "IT2a": {
+    "CB_lines": 2251,
+    "table": {
+     "ALL|all": {
+      "differ": 917,
+      "k": 917,
+      "n": 21725,
+      "same": 20808,
+      "share": 0.042209436133486766,
+      "wilson": [
+       0.03962,
+       0.04497
+      ]
+     },
+     "ALL|all_Gidentical": {
+      "differ": 696,
+      "k": 696,
+      "n": 16357,
+      "same": 15661,
+      "share": 0.04255058996148438,
+      "wilson": [
+       0.03956,
+       0.04575
+      ]
+     },
+     "ALL|final": {
+      "differ": 0,
+      "k": 0,
+      "n": 2207,
+      "same": 2207,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00174
+      ]
+     },
+     "ALL|interior": {
+      "differ": 917,
+      "k": 917,
+      "n": 19518,
+      "same": 18601,
+      "share": 0.04698227277384978,
+      "wilson": [
+       0.0441,
+       0.05004
+      ]
+     },
+     "ALL|interior_Gidentical": {
+      "differ": 696,
+      "k": 696,
+      "n": 14666,
+      "same": 13970,
+      "share": 0.04745670257738988,
+      "wilson": [
+       0.04413,
+       0.05102
+      ]
+     },
+     "first|all": {
+      "differ": 220,
+      "k": 220,
+      "n": 5090,
+      "same": 4870,
+      "share": 0.043222003929273084,
+      "wilson": [
+       0.03797,
+       0.04916
+      ]
+     },
+     "first|all_Gidentical": {
+      "differ": 180,
+      "k": 180,
+      "n": 3858,
+      "same": 3678,
+      "share": 0.04665629860031104,
+      "wilson": [
+       0.04044,
+       0.05377
+      ]
+     },
+     "first|final": {
+      "differ": 0,
+      "k": 0,
+      "n": 515,
+      "same": 515,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.0074
+      ]
+     },
+     "first|interior": {
+      "differ": 220,
+      "k": 220,
+      "n": 4575,
+      "same": 4355,
+      "share": 0.048087431693989074,
+      "wilson": [
+       0.04226,
+       0.05468
+      ]
+     },
+     "first|interior_Gidentical": {
+      "differ": 180,
+      "k": 180,
+      "n": 3462,
+      "same": 3282,
+      "share": 0.05199306759098787,
+      "wilson": [
+       0.04508,
+       0.0599
+      ]
+     },
+     "interior|all": {
+      "differ": 441,
+      "k": 441,
+      "n": 10337,
+      "same": 9896,
+      "share": 0.04266228112605205,
+      "wilson": [
+       0.03893,
+       0.04673
+      ]
+     },
+     "interior|all_Gidentical": {
+      "differ": 321,
+      "k": 321,
+      "n": 7586,
+      "same": 7265,
+      "share": 0.04231479040337464,
+      "wilson": [
+       0.03801,
+       0.04708
+      ]
+     },
+     "interior|final": {
+      "differ": 0,
+      "k": 0,
+      "n": 1030,
+      "same": 1030,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00372
+      ]
+     },
+     "interior|interior": {
+      "differ": 441,
+      "k": 441,
+      "n": 9307,
+      "same": 8866,
+      "share": 0.047383689695927794,
+      "wilson": [
+       0.04325,
+       0.05189
+      ]
+     },
+     "interior|interior_Gidentical": {
+      "differ": 321,
+      "k": 321,
+      "n": 6813,
+      "same": 6492,
+      "share": 0.04711580801409071,
+      "wilson": [
+       0.04233,
+       0.05241
+      ]
+     },
+     "last|all": {
+      "differ": 206,
+      "k": 206,
+      "n": 5078,
+      "same": 4872,
+      "share": 0.04056715242221347,
+      "wilson": [
+       0.03548,
+       0.04635
+      ]
+     },
+     "last|all_Gidentical": {
+      "differ": 155,
+      "k": 155,
+      "n": 3992,
+      "same": 3837,
+      "share": 0.03882765531062124,
+      "wilson": [
+       0.03326,
+       0.04528
+      ]
+     },
+     "last|final": {
+      "differ": 0,
+      "k": 0,
+      "n": 521,
+      "same": 521,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00732
+      ]
+     },
+     "last|interior": {
+      "differ": 206,
+      "k": 206,
+      "n": 4557,
+      "same": 4351,
+      "share": 0.045205178845731844,
+      "wilson": [
+       0.03955,
+       0.05163
+      ]
+     },
+     "last|interior_Gidentical": {
+      "differ": 155,
+      "k": 155,
+      "n": 3578,
+      "same": 3423,
+      "share": 0.04332029066517608,
+      "wilson": [
+       0.03713,
+       0.0505
+      ]
+     },
+     "tail|all": {
+      "differ": 50,
+      "k": 50,
+      "n": 1220,
+      "same": 1170,
+      "share": 0.040983606557377046,
+      "wilson": [
+       0.03122,
+       0.05362
+      ]
+     },
+     "tail|all_Gidentical": {
+      "differ": 40,
+      "k": 40,
+      "n": 921,
+      "same": 881,
+      "share": 0.04343105320304017,
+      "wilson": [
+       0.03205,
+       0.0586
+      ]
+     },
+     "tail|final": {
+      "differ": 0,
+      "k": 0,
+      "n": 141,
+      "same": 141,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.02652
+      ]
+     },
+     "tail|interior": {
+      "differ": 50,
+      "k": 50,
+      "n": 1079,
+      "same": 1029,
+      "share": 0.04633920296570899,
+      "wilson": [
+       0.03532,
+       0.06057
+      ]
+     },
+     "tail|interior_Gidentical": {
+      "differ": 40,
+      "k": 40,
+      "n": 813,
+      "same": 773,
+      "share": 0.04920049200492005,
+      "wilson": [
+       0.03634,
+       0.0663
+      ]
+     }
+    },
+    "underscores_in_lines_without_counterpart_or_unalignable": {
+     "ALL": 465,
+     "first": 102,
+     "interior": 283,
+     "last": 65,
+     "tail": 15
+    },
+    "underscores_total_CB_stream": {
+     "ALL": 22190,
+     "first": 5192,
+     "interior": 10620,
+     "last": 5143,
+     "tail": 1235
+    }
+   },
+   "ZL3b": {
+    "CB_lines": 2114,
+    "table": {
+     "ALL|all": {
+      "differ": 716,
+      "k": 716,
+      "n": 19919,
+      "same": 19203,
+      "share": 0.03594557959736935,
+      "wilson": [
+       0.03345,
+       0.03862
+      ]
+     },
+     "ALL|all_Gidentical": {
+      "differ": 569,
+      "k": 569,
+      "n": 15045,
+      "same": 14476,
+      "share": 0.03781987371219674,
+      "wilson": [
+       0.03489,
+       0.04099
+      ]
+     },
+     "ALL|final": {
+      "differ": 0,
+      "k": 0,
+      "n": 2032,
+      "same": 2032,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00189
+      ]
+     },
+     "ALL|interior": {
+      "differ": 716,
+      "k": 716,
+      "n": 17887,
+      "same": 17171,
+      "share": 0.04002907139263152,
+      "wilson": [
+       0.03725,
+       0.043
+      ]
+     },
+     "ALL|interior_Gidentical": {
+      "differ": 569,
+      "k": 569,
+      "n": 13484,
+      "same": 12915,
+      "share": 0.0421981607831504,
+      "wilson": [
+       0.03893,
+       0.04572
+      ]
+     },
+     "first|all": {
+      "differ": 179,
+      "k": 179,
+      "n": 4649,
+      "same": 4470,
+      "share": 0.038502903850290385,
+      "wilson": [
+       0.03334,
+       0.04443
+      ]
+     },
+     "first|all_Gidentical": {
+      "differ": 146,
+      "k": 146,
+      "n": 3523,
+      "same": 3377,
+      "share": 0.04144195288106727,
+      "wilson": [
+       0.03534,
+       0.04854
+      ]
+     },
+     "first|final": {
+      "differ": 0,
+      "k": 0,
+      "n": 473,
+      "same": 473,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00806
+      ]
+     },
+     "first|interior": {
+      "differ": 179,
+      "k": 179,
+      "n": 4176,
+      "same": 3997,
+      "share": 0.0428639846743295,
+      "wilson": [
+       0.03713,
+       0.04944
+      ]
+     },
+     "first|interior_Gidentical": {
+      "differ": 146,
+      "k": 146,
+      "n": 3156,
+      "same": 3010,
+      "share": 0.046261089987325726,
+      "wilson": [
+       0.03947,
+       0.05416
+      ]
+     },
+     "interior|all": {
+      "differ": 352,
+      "k": 352,
+      "n": 9492,
+      "same": 9140,
+      "share": 0.03708386009270965,
+      "wilson": [
+       0.03347,
+       0.04108
+      ]
+     },
+     "interior|all_Gidentical": {
+      "differ": 270,
+      "k": 270,
+      "n": 7011,
+      "same": 6741,
+      "share": 0.038510911424903725,
+      "wilson": [
+       0.03425,
+       0.04327
+      ]
+     },
+     "interior|final": {
+      "differ": 0,
+      "k": 0,
+      "n": 958,
+      "same": 958,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00399
+      ]
+     },
+     "interior|interior": {
+      "differ": 352,
+      "k": 352,
+      "n": 8534,
+      "same": 8182,
+      "share": 0.04124677759550035,
+      "wilson": [
+       0.03723,
+       0.04568
+      ]
+     },
+     "interior|interior_Gidentical": {
+      "differ": 270,
+      "k": 270,
+      "n": 6289,
+      "same": 6019,
+      "share": 0.04293210367307998,
+      "wilson": [
+       0.0382,
+       0.04823
+      ]
+     },
+     "last|all": {
+      "differ": 154,
+      "k": 154,
+      "n": 4773,
+      "same": 4619,
+      "share": 0.03226482296249738,
+      "wilson": [
+       0.02762,
+       0.03767
+      ]
+     },
+     "last|all_Gidentical": {
+      "differ": 131,
+      "k": 131,
+      "n": 3760,
+      "same": 3629,
+      "share": 0.034840425531914895,
+      "wilson": [
+       0.02944,
+       0.04119
+      ]
+     },
+     "last|final": {
+      "differ": 0,
+      "k": 0,
+      "n": 484,
+      "same": 484,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.00787
+      ]
+     },
+     "last|interior": {
+      "differ": 154,
+      "k": 154,
+      "n": 4289,
+      "same": 4135,
+      "share": 0.03590580554907904,
+      "wilson": [
+       0.03074,
+       0.0419
+      ]
+     },
+     "last|interior_Gidentical": {
+      "differ": 131,
+      "k": 131,
+      "n": 3377,
+      "same": 3246,
+      "share": 0.0387918270654427,
+      "wilson": [
+       0.03279,
+       0.04585
+      ]
+     },
+     "tail|all": {
+      "differ": 31,
+      "k": 31,
+      "n": 1005,
+      "same": 974,
+      "share": 0.030845771144278607,
+      "wilson": [
+       0.02181,
+       0.04345
+      ]
+     },
+     "tail|all_Gidentical": {
+      "differ": 22,
+      "k": 22,
+      "n": 751,
+      "same": 729,
+      "share": 0.02929427430093209,
+      "wilson": [
+       0.01942,
+       0.04396
+      ]
+     },
+     "tail|final": {
+      "differ": 0,
+      "k": 0,
+      "n": 117,
+      "same": 117,
+      "share": 0.0,
+      "wilson": [
+       0.0,
+       0.03179
+      ]
+     },
+     "tail|interior": {
+      "differ": 31,
+      "k": 31,
+      "n": 888,
+      "same": 857,
+      "share": 0.03490990990990991,
+      "wilson": [
+       0.0247,
+       0.04913
+      ]
+     },
+     "tail|interior_Gidentical": {
+      "differ": 22,
+      "k": 22,
+      "n": 662,
+      "same": 640,
+      "share": 0.03323262839879154,
+      "wilson": [
+       0.02205,
+       0.0498
+      ]
+     }
+    },
+    "underscores_in_lines_without_counterpart_or_unalignable": {
+     "ALL": 825,
+     "first": 245,
+     "interior": 399,
+     "last": 138,
+     "tail": 43
+    },
+    "underscores_total_CB_stream": {
+     "ALL": 20744,
+     "first": 4894,
+     "interior": 9891,
+     "last": 4911,
+     "tail": 1048
+    }
+   }
+  },
+  "parse_unmatched_lines": {
+   "IT2a": [],
+   "ZL3b": []
+  },
+  "retention_matched_pairs": {
+   "ZL3b_ret=False_IT2a_ret=False": 1620,
+   "ZL3b_ret=False_IT2a_ret=True": 620,
+   "ZL3b_ret=True_IT2a_ret=False": 30,
+   "ZL3b_ret=True_IT2a_ret=True": 2890
+  },
+  "words_per_line_diff_ZL3b_minus_IT2a": {
+   "equal": {
+    "k": 3303,
+    "n": 5160,
+    "share": 0.6401162790697674,
+    "wilson": [
+     0.62692,
+     0.6531
+    ]
+   },
+   "mean": -0.06472868217054263,
+   "mean_abs": 0.4174418604651163
+  }
+ },
+ "h_check": {
+  "IT2a": {
+   "recovered": {
+    "differ": 917,
+    "k": 917,
+    "n": 21725,
+    "same": 20808,
+    "share": 0.042209436133486766,
+    "wilson": [
+     0.03962,
+     0.04497
+    ]
+   },
+   "truth_differ": 916,
+   "truth_inside_wilson": true,
+   "truth_n": 21725,
+   "truth_rate": 0.04216340621403913
+  },
+  "ZL3b": {
+   "recovered": {
+    "differ": 716,
+    "k": 716,
+    "n": 19919,
+    "same": 19203,
+    "share": 0.03594557959736935,
+    "wilson": [
+     0.03345,
+     0.03862
+    ]
+   },
+   "truth_differ": 715,
+   "truth_inside_wilson": true,
+   "truth_n": 19919,
+   "truth_rate": 0.03589537627390933
+  }
+ },
+ "pair_recovery": {
+  "accuracy_clean": {
+   "k": 5139,
+   "n": 5158,
+   "share": 0.9963164017060876,
+   "wilson": [
+    0.99425,
+    0.99764
+   ]
+  },
+  "clean_correct": 5139,
+  "clean_truth_pairs": 5158,
+  "clean_unpaired": 2,
+  "clean_wrong": 17,
+  "garbled_lines": {
+   "clean_correct": 5139,
+   "clean_truth": 5158,
+   "clean_unpaired": 2,
+   "clean_wrong": 17,
+   "garbled_correct": 4,
+   "garbled_truth": 115,
+   "garbled_unpaired": 111
+  },
+  "spurious_pairs_for_deleted_lines": 0
+ },
+ "pass": true,
+ "rates": {
+  "comma_to_dot": 1.0,
+  "delete_line": 0.02,
+  "garble_line": 0.02,
+  "merge": 0.04,
+  "split": 0.04,
+  "swap": 0.03
+ },
+ "seed": 11848,
+ "token_recovery": {
+  "events": {
+   "merges": {
+    "rate_recovered": 0.032978863069449915,
+    "rate_truth": 0.033057634239201786,
+    "recovered": 1256,
+    "truth": 1259,
+    "truth_inside_wilson": true,
+    "wilson_recovered_rate": [
+     0.03123,
+     0.03482
+    ]
+   },
+   "splits": {
+    "rate_recovered": 0.041748719968491534,
+    "rate_truth": 0.04177497702507549,
+    "recovered": 1590,
+    "truth": 1591,
+    "truth_inside_wilson": true,
+    "wilson_recovered_rate": [
+     0.03979,
+     0.0438
+    ]
+   },
+   "swaps": {
+    "rate_recovered": 0.02675594065905212,
+    "rate_truth": 0.026362084810292768,
+    "recovered": 1019,
+    "truth": 1004,
+    "truth_inside_wilson": true,
+    "wilson_recovered_rate": [
+     0.02518,
+     0.02842
+    ]
+   }
+  },
+  "planted_tokens_in_kept_lines": 38085
+ },
+ "truth": {
+  "bounds_total": 38085,
+  "deleted": 112,
+  "garbled": 115,
+  "key_map": 5273,
+  "line_merges": 5273,
+  "line_splits": 5273,
+  "merges": 1259,
+  "splits": 1591,
+  "swaps": 1004,
+  "tokens": 38085
+ }
+}

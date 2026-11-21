@@ -1,0 +1,8 @@
+# Joint ZL3b vs IT2a word-division audit: FROZEN before the real count
+frozen: 2026-11-21 09:20:58 MST (America/Dawson_Creek)
+criterion: audits/joint/zl3b-it2a-words/CRITERION.md v2 (v1 was 94cb5d1 / sha256 7259ace5d71c5c50821dd70f31820447ad5ed1da860f5463c809be28f63a43ad)
+code: tools/joint_words_zl3b_it2a.py (published copy: audits/joint/zl3b-it2a-words/joint_words_zl3b_it2a.py)
+seed (planted control only; the real count uses no randomness): 11848
+control result: PASS (audits/joint/zl3b-it2a-words/control/control.json, CONTROL_LOG.md)
+inputs: data/ZL3b-n.txt, data/IT2a-n.txt (HASHES.txt, re-checked at freeze)
+No real count of any kind (alignment, divisions, tokens, key match rate, '_' differences) existed when this was written; the transcription files had been looked at only for the glyph inventory (CRITERION §1b), locus-line regex failures (two loci) and the absence of duplicate keys.
