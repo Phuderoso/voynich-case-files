@@ -1,0 +1,9 @@
+{
+ "gates_equal": true,
+ "rows_D2_equal": true,
+ "rows_D5_equal": true,
+ "summary_names_equal": true,
+ "G0_equal": true,
+ "pass": true,
+ "seconds": 56.8
+}
