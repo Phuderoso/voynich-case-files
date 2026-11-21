@@ -1,0 +1,48 @@
+== pooled  (N_bin >= 20): bins 61 (nq 2..64)
+  Spearman rho(y, lnN) = -0.541 perm p = 0.0001; rho(y, nq) = -0.830 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.549; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 4.31 p = 0.0004;  c (nq | lnN) t = -11.73 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.242 perm p = 0.0691;  rho(y, nq | lnN) = -0.766 perm p = 0.0001
+  VERDICT (RULE.md rule): BOTH   [AICc M1 -111.54, M2 -168.75, M3 -183.38]
+== pooled  (N_bin >= 5): bins 62 (nq 1..64)
+  Spearman rho(y, lnN) = -0.468 perm p = 0.0005; rho(y, nq) = -0.743 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.290; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 4.74 p = 0.0015;  c (nq | lnN) t = -7.47 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.243 perm p = 0.0652;  rho(y, nq | lnN) = -0.679 perm p = 0.0001
+  VERDICT (RULE.md rule): BOTH   [AICc M1 -86.46, M2 -107.72, M3 -125.42]
+== pooled  (N_bin >= 100): bins 58 (nq 4..64)
+  Spearman rho(y, lnN) = -0.730 perm p = 0.0001; rho(y, nq) = -0.938 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.347; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 0.04 p = 0.9647;  c (nq | lnN) t = -10.26 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.202 perm p = 0.1285;  rho(y, nq | lnN) = -0.868 perm p = 0.0001
+  VERDICT (RULE.md rule): NQ-DOMINATES   [AICc M1 -146.12, M2 -208.12, M3 -205.81]
+== pooled  (N_bin >= 1000): bins 54 (nq 8..64)
+  Spearman rho(y, lnN) = -0.667 perm p = 0.0001; rho(y, nq) = -0.925 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.479; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 1.38 p = 0.1492;  c (nq | lnN) t = -11.15 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.218 perm p = 0.1147;  rho(y, nq | lnN) = -0.867 perm p = 0.0001
+  VERDICT (RULE.md rule): NQ-DOMINATES   [AICc M1 -133.90, M2 -198.61, M3 -198.25]
+== S-nq10 (nq >= 10 only; added AFTER the first run, not part of the verdict)  (N_bin >= 20): bins 53 (nq 10..64)
+  Spearman rho(y, lnN) = -0.549 perm p = 0.0001; rho(y, nq) = -0.924 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.767; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 6.90 p = 0.0002;  c (nq | lnN) t = -19.40 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.231 perm p = 0.1004;  rho(y, nq | lnN) = -0.896 perm p = 0.0001
+  VERDICT (RULE.md rule): BOTH   [AICc M1 -110.41, M2 -188.56, M3 -221.67]
+== V only  (N_bin >= 20): bins 57 (nq 2..58)
+  Spearman rho(y, lnN) = 0.337 perm p = 0.0105; rho(y, nq) = -0.909 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.687; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 4.13 p = 0.0001;  c (nq | lnN) t = -16.74 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.454 perm p = 0.0002;  rho(y, nq | lnN) = -0.919 perm p = 0.0001
+  VERDICT (RULE.md rule): BOTH   [AICc M1 -69.88, M2 -158.13, M3 -171.45]
+== Q only  (N_bin >= 20): bins 56 (nq 7..64)
+  Spearman rho(y, lnN) = 0.086 perm p = 0.5268; rho(y, nq) = -0.264 perm p = 0.0499
+  R2(M1) - R2(M2) = 0.030; shuffled-y two-sided perm p = 0.1585
+  Freedman-Lane: b (lnN | nq) t = 7.95 p = 0.0001;  c (nq | lnN) t = -7.72 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.444 perm p = 0.0004;  rho(y, nq | lnN) = -0.498 perm p = 0.0001
+  VERDICT (RULE.md rule): BOTH   [AICc M1 -148.04, M2 -146.22, M3 -187.88]
+== all.bin scope  (N_bin >= 20): bins 61 (nq 2..64)
+  Spearman rho(y, lnN) = -0.533 perm p = 0.0002; rho(y, nq) = -0.830 perm p = 0.0001
+  R2(M1) - R2(M2) = -0.582; shuffled-y two-sided perm p = 0.0001
+  Freedman-Lane: b (lnN | nq) t = 5.50 p = 0.0002;  c (nq | lnN) t = -13.50 p = 0.0001
+  partial Spearman: rho(y, lnN | nq) = 0.263 perm p = 0.0569;  rho(y, nq | lnN) = -0.772 perm p = 0.0001
+  VERDICT (RULE.md rule): BOTH   [AICc M1 -126.45, M2 -187.56, M3 -210.86]

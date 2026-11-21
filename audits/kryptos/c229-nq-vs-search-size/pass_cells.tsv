@@ -1,0 +1,15 @@
+text	file	model	p	nq	N	pass	max_NC
+null209560	null209560_all_V_a.txt	V	24	4	4	2	-5.846
+null209568	null209568_all_V_b.txt	V	24	4	6	2	-5.975
+null209569	null209569_bank_V_b.txt	V	23	4	2	2	-5.449
+null209567	null209567_all_V_b.txt	V	24	5	4	2	-5.946
+null209569	null209569_bank_V_b.txt	V	23	5	8	2	-5.957
+null209567	null209567_all_V_a.txt	V	24	6	12	2	-5.963
+null209569	null209569_all_V_b.txt	V	24	6	18	2	-5.836
+null209559	null209559_all_V_a.txt	V	24	7	14	2	-5.666
+null209562	null209562_bank_V_a.txt	V	24	8	6	2	-5.292
+null209569	null209569_all_V_b.txt	V	24	8	42	2	-5.958
+null209560	null209560_bank_V_a.txt	V	23	12	6	2	-5.998
+null209568	null209568_bank_V_b.txt	V	24	13	48	2	-5.994
+null209573	null209573_all_V_b.txt	V	24	13	198	2	-5.945
+null209563	null209563_bank_V_b.txt	V	23	19	110	2	-5.982
