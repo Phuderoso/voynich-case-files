@@ -1,0 +1,21 @@
+B01 direct typ w size 5 true w 5 pop 5 key-consistent True; survivors 1122; recovered strict True loose True
+B02 direct typ d size 4 true w 15 pop 4 key-consistent True; survivors 3; recovered strict True loose True
+B03 direct typ w size 7 true w 7 pop 7 key-consistent True; survivors 2; recovered strict True loose True
+B04 direct typ d size 5 true w 15 pop 5 key-consistent True; survivors 2; recovered strict True loose True
+B05 direct typ w size 6 true w 6 pop 6 key-consistent True; survivors 642; recovered strict True loose True
+B06 direct typ d size 6 true w 17 pop 6 key-consistent True; survivors 1; recovered strict True loose True
+B07 direct typ w size 5 true w 5 pop 5 key-consistent True; survivors 81; recovered strict True loose True
+B08 direct typ d size 3 true w 13 pop 3 key-consistent True; survivors 10; recovered strict True loose True
+B09 direct typ w size 5 true w 5 pop 5 key-consistent True; survivors 25; recovered strict True loose True
+B10 direct typ d size 5 true w 15 pop 5 key-consistent True; survivors 3; recovered strict True loose True
+B11 bank typ w size 5 true w 5 pop 5 key-consistent True; survivors 8; recovered strict True loose True
+B12 bank typ d size 3 true w 12 pop 3 key-consistent True; survivors 4; recovered strict True loose True
+B13 bank typ w size 8 true w 8 pop 7 key-consistent True; survivors 22; recovered strict True loose True
+B14 all typ d size 6 true w 20 pop 6 key-consistent True; survivors 8; recovered strict True loose True
+B15 bank typ w size 9 true w 9 pop 8 key-consistent True; survivors 4; recovered strict True loose True
+B16 bank typ d size 5 true w 15 pop 5 key-consistent True; survivors 4; recovered strict True loose True
+B17 all typ w size 8 true w 8 pop 8 key-consistent True; survivors 24; recovered strict True loose True
+B18 bank typ d size 5 true w 13 pop 5 key-consistent True; survivors 2; recovered strict True loose True
+B19 all typ w size 5 true w 5 pop 5 key-consistent True; survivors 12; recovered strict True loose True
+B20 all typ d size 5 true w 14 pop 5 key-consistent True; survivors 4; recovered strict True loose True
+PLANTS strict 20/20 (Wilson95 0.839-1.000); loose 20/20

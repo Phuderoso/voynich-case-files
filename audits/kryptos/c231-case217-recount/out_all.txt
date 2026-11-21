@@ -1,0 +1,488 @@
+### fresh/null0_all.txt
+S perm=43820 dir=0 X=43 Y=46 form=0 w=10 pop=9 k=ZSAAAUZRWWZSVXRZVYUVWWXW
+S perm=43820 dir=0 X=43 Y=46 form=1 w=10 pop=9 k=BIAAAGBJEEBIFDJBFCGFEEDE
+T rows=8290 dirs=2 pairforms=1031408640 survivors=2
+### fresh/null0_bank.txt
+T rows=8254 dirs=2 pairforms=1026929664 survivors=0
+### fresh/null0_direct.txt
+T rows=1 dirs=1 pairforms=4513567971 survivors=0
+### fresh/null1_all.txt
+S perm=24001 dir=0 X=32 Y=63 form=2 w=10 pop=10 k=VVCZYYZDAZWWZCXCBXYYCBXE
+S perm=58021 dir=1 X=87 Y=65 form=0 w=17 pop=6 k=XHHBSHISSHIEBSBIBESIIIBH
+S perm=58021 dir=1 X=87 Y=65 form=1 w=17 pop=6 k=DTTZITSIITSWZIZSZWISSSZT
+S perm=115521 dir=1 X=125 Y=52 form=2 w=10 pop=9 k=HGGCBEJDEFGCBCEBEEGBKDBG
+T rows=8290 dirs=2 pairforms=1031408640 survivors=4
+### fresh/null1_bank.txt
+S perm=95621 dir=1 X=52 Y=77 form=0 w=9 pop=8 k=CVCXCAAWACYWCVDCWAXYYVYZ
+S perm=95621 dir=1 X=52 Y=77 form=1 w=9 pop=8 k=YFYDYAAEAYCEYFXYEADCCFCB
+S perm=101821 dir=1 X=6 Y=100 form=2 w=10 pop=9 k=LKGJEHCEELKCFDGHEHJDCLCD
+T rows=8254 dirs=2 pairforms=1026929664 survivors=3
+### fresh/null1_direct.txt
+T rows=1 dirs=1 pairforms=4513307778 survivors=0
+### fresh/null2_all.txt
+S perm=162882 dir=0 X=49 Y=33 form=0 w=10 pop=9 k=LRKLSNRMPMKNRJQNSPMQQQPP
+S perm=162882 dir=0 X=49 Y=33 form=1 w=10 pop=9 k=PJQPINJOLOQNJRKNILOKKKLL
+T rows=8289 dirs=2 pairforms=1031284224 survivors=2
+### fresh/null2_bank.txt
+S perm=57562 dir=0 X=86 Y=84 form=0 w=10 pop=9 k=XSWXVRVWXWWRYYQWYRZYTXZQ
+S perm=57562 dir=0 X=86 Y=84 form=1 w=10 pop=9 k=DIEDFJFEDEEJCCKECJBCHDBK
+T rows=8254 dirs=2 pairforms=1026929664 survivors=2
+### fresh/null2_direct.txt
+T rows=1 dirs=1 pairforms=4513307778 survivors=0
+### fresh/null3_all.txt
+S perm=158123 dir=1 X=69 Y=31 form=0 w=10 pop=10 k=HNKLHGGFHIJJKHEGGHMLHKLF
+S perm=158123 dir=1 X=69 Y=31 form=1 w=10 pop=10 k=TNQPTUUVTSRRQTWUUTOPTQPV
+T rows=8289 dirs=2 pairforms=1031284224 survivors=2
+### fresh/null3_bank.txt
+T rows=8254 dirs=2 pairforms=1026929664 survivors=0
+### fresh/null3_direct.txt
+S perm=-1 dir=0 X=72213 Y=35075 form=2 w=10 pop=10 k=STRZUVRRYWYUYATZAAYRXVUT
+T rows=1 dirs=1 pairforms=4513307778 survivors=1
+### fresh/null4_all.txt
+S perm=19124 dir=0 X=7 Y=89 form=0 w=10 pop=10 k=LMHHKGEKKLDHHFJGLKGEIIIM
+S perm=19124 dir=0 X=7 Y=89 form=1 w=10 pop=10 k=POTTQUWQQPXTTVRUPQUWSSSO
+S perm=71404 dir=1 X=102 Y=128 form=2 w=10 pop=7 k=TSSLOUUMNLSLNTMOUMONNNMS
+T rows=8289 dirs=2 pairforms=1031284224 survivors=3
+### fresh/null4_bank.txt
+S perm=146504 dir=1 X=15 Y=53 form=0 w=10 pop=8 k=OIPMLGNKLPILPNNPGKMOOLKP
+S perm=146504 dir=1 X=15 Y=53 form=1 w=10 pop=8 k=MSLOPUNQPLSPLNNLUQOMMPQL
+S perm=158444 dir=1 X=74 Y=92 form=0 w=10 pop=9 k=WXTUZWTXBSZUBVYWVZWTWXYV
+S perm=158444 dir=1 X=74 Y=92 form=1 w=10 pop=9 k=EDHGBEHDZIBGZFCEFBEHEDCF
+T rows=8254 dirs=2 pairforms=1026929664 survivors=4
+### fresh/null4_direct.txt
+T rows=1 dirs=1 pairforms=4513307778 survivors=0
+### fresh/null5_all.txt
+S perm=10885 dir=1 X=86 Y=64 form=0 w=10 pop=9 k=JIJCLDFDDJKGIKCDEDJICIKG
+S perm=10885 dir=1 X=86 Y=64 form=1 w=10 pop=9 k=RSRYPXVXXRQUSQYXWXRSYSQU
+S perm=81485 dir=1 X=47 Y=139 form=2 w=14 pop=6 k=KCAKMMKCNKMNCMEECMMMEEMA
+T rows=8289 dirs=2 pairforms=1031284224 survivors=3
+### fresh/null5_bank.txt
+S perm=27645 dir=0 X=52 Y=122 form=0 w=10 pop=10 k=WOPWSVTRSOQSTWQQTVTPWUWX
+S perm=27645 dir=0 X=52 Y=122 form=1 w=10 pop=10 k=EMLEIFHJIMKIHEKKHFHLEGED
+S perm=47745 dir=0 X=52 Y=122 form=0 w=10 pop=10 k=WOPWSVTRSOQSTWQQTVTPWUWX
+S perm=47745 dir=0 X=52 Y=122 form=1 w=10 pop=10 k=EMLEIFHJIMKIHEKKHFHLEGED
+S perm=69345 dir=0 X=52 Y=122 form=0 w=10 pop=10 k=WOPWSVTRSOQSTWQQTVTPWUWX
+S perm=69345 dir=0 X=52 Y=122 form=1 w=10 pop=10 k=EMLEIFHJIMKIHEKKHFHLEGED
+S perm=79425 dir=0 X=52 Y=122 form=0 w=10 pop=10 k=WOPWSVTRSOQSTWQQTVTPWUWX
+S perm=79425 dir=0 X=52 Y=122 form=1 w=10 pop=10 k=EMLEIFHJIMKIHEKKHFHLEGED
+T rows=8253 dirs=2 pairforms=1026805248 survivors=8
+### fresh/null5_direct.txt
+S perm=-1 dir=0 X=11440 Y=65522 form=0 w=10 pop=9 k=UYVZWXBTYVUXBCWTBYUUWUTU
+S perm=-1 dir=0 X=11440 Y=65522 form=1 w=10 pop=9 k=GCFBEDZHCFGDZYEHZCGGEGHG
+T rows=1 dirs=1 pairforms=4513307778 survivors=2
+### fresh/null6_all.txt
+S perm=20626 dir=1 X=56 Y=7 form=0 w=10 pop=10 k=KIDDIMIDGMFKIGLMJHLMGKJE
+S perm=20626 dir=1 X=56 Y=7 form=1 w=10 pop=10 k=QSXXSOSXUOVQSUPORTPOUQRW
+S perm=26206 dir=0 X=80 Y=118 form=0 w=19 pop=6 k=GZZGTZTTUUGGKUUULLZLTLKT
+S perm=26206 dir=0 X=80 Y=118 form=1 w=26 pop=6 k=UBBUHBHHGGUUQGGGPPBPHPQH
+T rows=8289 dirs=2 pairforms=1031284224 survivors=4
+### fresh/null6_bank.txt
+S perm=84026 dir=0 X=86 Y=132 form=2 w=10 pop=10 k=TTOVWRVWRRPXVUSOTSWRQSWW
+T rows=8253 dirs=2 pairforms=1026805248 survivors=1
+### fresh/null6_direct.txt
+T rows=1 dirs=1 pairforms=4513047585 survivors=0
+### fresh/null7_all.txt
+S perm=19287 dir=1 X=0 Y=89 form=2 w=17 pop=6 k=FHFHWDJDDHJDWTWFJDWFFJTW
+T rows=8289 dirs=2 pairforms=1031284224 survivors=1
+### fresh/null7_bank.txt
+S perm=14707 dir=0 X=139 Y=50 form=2 w=10 pop=10 k=NFGNKGHGMFHNKHGLLLHJONNI
+S perm=14747 dir=0 X=139 Y=50 form=2 w=10 pop=9 k=NFGNKGHGMFHNKHGLLLHJONNF
+S perm=14867 dir=0 X=139 Y=50 form=2 w=10 pop=10 k=NFGNKGHGMFHNKHGLLLHJONNI
+T rows=8253 dirs=2 pairforms=1026805248 survivors=3
+### fresh/null7_direct.txt
+S perm=-1 dir=0 X=5542 Y=74305 form=2 w=10 pop=9 k=RPLSQQQKKMJSPPOKMQRMKJKS
+S perm=-1 dir=0 X=5542 Y=74306 form=0 w=10 pop=9 k=IKOHJJJPPNQHKKLPNJINPQPH
+S perm=-1 dir=0 X=5542 Y=74306 form=1 w=10 pop=9 k=SQMTRRRLLNKTQQPLNRSNLKLT
+S perm=-1 dir=0 X=5542 Y=83780 form=2 w=10 pop=10 k=RPLSQQQKKMJSPPOPNRRMKJKQ
+S perm=-1 dir=0 X=5542 Y=83781 form=0 w=10 pop=10 k=IKOHJJJPPNQHKKLKMIINPQPJ
+S perm=-1 dir=0 X=5542 Y=83781 form=1 w=10 pop=10 k=SQMTRRRLLNKTQQPQOSSNLKLR
+S perm=-1 dir=0 X=25452 Y=74305 form=2 w=10 pop=9 k=QQKSQSQKKLKRPJNKMQRMKLKS
+S perm=-1 dir=0 X=25452 Y=74306 form=0 w=10 pop=9 k=JJPHJHJPPOPIKQMPNJINPOPH
+S perm=-1 dir=0 X=25452 Y=74306 form=1 w=10 pop=9 k=RRLTRTRLLMLSQKOLNRSNLMLT
+S perm=-1 dir=0 X=25452 Y=83780 form=2 w=10 pop=9 k=QQKSQSQKKLKRPJNPNRRMKLKQ
+S perm=-1 dir=0 X=25452 Y=83781 form=0 w=10 pop=9 k=JJPHJHJPPOPIKQMKMIINPOPJ
+S perm=-1 dir=0 X=25452 Y=83781 form=1 w=10 pop=9 k=RRLTRTRLLMLSQKOQOSSNLMLR
+S perm=-1 dir=0 X=39877 Y=10058 form=2 w=10 pop=10 k=GGADFBJIIJFBGECDHEEACAGA
+T rows=1 dirs=1 pairforms=4513047585 survivors=13
+### fresh/null8_all.txt
+S perm=52948 dir=0 X=23 Y=125 form=0 w=10 pop=8 k=OOKMKKLIJIMOJKMNMFLLFNML
+S perm=52948 dir=0 X=23 Y=125 form=1 w=10 pop=8 k=MMQOQQPSRSOMRQONOVPPVNOP
+T rows=8289 dirs=2 pairforms=1031284224 survivors=2
+### fresh/null8_bank.txt
+T rows=8253 dirs=2 pairforms=1026805248 survivors=0
+### fresh/null9_all.txt
+S perm=56269 dir=0 X=43 Y=20 form=2 w=10 pop=9 k=FHOHINHJFNNNGOJLKJGNNLHO
+S perm=89509 dir=0 X=123 Y=14 form=0 w=9 pop=9 k=YZEADFCYZXAEAZDBBZZBFBDZ
+S perm=89509 dir=0 X=123 Y=14 form=1 w=9 pop=9 k=CBWAXVYCBDAWABXZZBBZVZXB
+S perm=127869 dir=0 X=124 Y=28 form=2 w=10 pop=10 k=ZSYYVWVRAZUSXWYWXTRSSVSW
+T rows=8289 dirs=2 pairforms=1031284224 survivors=4
+### fresh/null9_bank.txt
+S perm=23109 dir=1 X=36 Y=17 form=0 w=10 pop=8 k=CAEYDCAXXGYEYEDCCACCEGXZ
+S perm=23109 dir=1 X=36 Y=17 form=1 w=10 pop=8 k=YAWCXYADDUCWCWXYYAYYWUDB
+S perm=23109 dir=1 X=36 Y=103 form=0 w=10 pop=9 k=EBEZDCGAAIEEZZFZDCCFEGEB
+S perm=23109 dir=1 X=36 Y=103 form=1 w=10 pop=9 k=WZWBXYUAASWWBBVBXYYVWUWZ
+T rows=8253 dirs=2 pairforms=1026805248 survivors=4
+### fresh/null10_all.txt
+S perm=45050 dir=1 X=139 Y=121 form=0 w=10 pop=8 k=BXDDZVBZWXUBVUUXDZDXYBYX
+S perm=45050 dir=1 X=139 Y=121 form=1 w=10 pop=8 k=ZDXXBFZBEDGZFGGDXBXDCZCD
+T rows=8289 dirs=2 pairforms=1031284224 survivors=2
+### fresh/null10_bank.txt
+S perm=39650 dir=0 X=69 Y=25 form=0 w=10 pop=9 k=TRPSSTTTTQPNTLTOUOUOUOTT
+S perm=39650 dir=0 X=69 Y=25 form=1 w=10 pop=9 k=HJLIIHHHHKLNHPHMGMGMGMHH
+S perm=147410 dir=0 X=113 Y=54 form=0 w=10 pop=8 k=DDDAZXCAXZWZCUAZCWZVDXXU
+S perm=147410 dir=0 X=113 Y=54 form=1 w=10 pop=8 k=XXXABDYADBEBYGABYEBFXDDG
+S perm=162230 dir=0 X=106 Y=79 form=0 w=10 pop=9 k=WATZAXBAXZAXYZYAZYXCBUUB
+S perm=162230 dir=0 X=106 Y=79 form=1 w=10 pop=9 k=EAHBADZADBADCBCABCDYZGGZ
+T rows=8253 dirs=2 pairforms=1026805248 survivors=6
+### fresh/null11_all.txt
+S perm=117971 dir=1 X=139 Y=106 form=2 w=10 pop=10 k=GJLKIIHMLJIHFMJGIOIKNOFN
+T rows=8289 dirs=2 pairforms=1031284224 survivors=1
+### fresh/null11_bank.txt
+S perm=121091 dir=0 X=81 Y=95 form=0 w=10 pop=10 k=AVUXVTBXCYZXYZZZCVWWUBBY
+S perm=121091 dir=0 X=81 Y=95 form=1 w=10 pop=10 k=AFGDFHZDYCBDCBBBYFEEGZZC
+S perm=119771 dir=0 X=47 Y=51 form=0 w=10 pop=9 k=CZWZZAZVDCDDABCEYCDEZYBY
+S perm=119771 dir=0 X=47 Y=51 form=1 w=10 pop=9 k=YBEBBABFXYXXAZYWCYXWBCZC
+T rows=8253 dirs=2 pairforms=1026805248 survivors=4
+### fresh/null12_all.txt
+S perm=44472 dir=0 X=41 Y=113 form=2 w=10 pop=8 k=WDWAEZEXEVEYWAVWAZAZEVVY
+S perm=102032 dir=0 X=70 Y=5 form=2 w=10 pop=10 k=KKKKHOHQQPHJLOOOIINMONNJ
+T rows=8289 dirs=2 pairforms=1031284224 survivors=2
+### fresh/null12_bank.txt
+S perm=94132 dir=0 X=135 Y=66 form=2 w=10 pop=10 k=OWQXVROWWWQQUTXXTTPXPSXW
+S perm=141372 dir=1 X=73 Y=101 form=0 w=10 pop=9 k=PVQUTTSXTXOPUWTVSXOUWWSP
+S perm=141372 dir=1 X=73 Y=101 form=1 w=10 pop=9 k=LFKGHHIDHDMLGEHFIDMGEEIL
+T rows=8253 dirs=2 pairforms=1026805248 survivors=3
+### fresh/null13_all.txt
+T rows=8289 dirs=2 pairforms=1031284224 survivors=0
+### fresh/null13_bank.txt
+S perm=109253 dir=1 X=70 Y=70 form=0 w=10 pop=9 k=PPKHJPQIHPIMJQLJMJMLHQNH
+S perm=109253 dir=1 X=70 Y=70 form=1 w=10 pop=9 k=LLQTRLKSTLSORKPROROPTKNT
+T rows=8253 dirs=2 pairforms=1026805248 survivors=2
+### fresh/null14_all.txt
+T rows=8289 dirs=2 pairforms=1031284224 survivors=0
+### fresh/null14_bank.txt
+S perm=162714 dir=1 X=123 Y=51 form=0 w=10 pop=10 k=LPHKMMGIHJOPKJNLJMJJHHKN
+S perm=162714 dir=1 X=123 Y=51 form=1 w=10 pop=10 k=PLTQOOUSTRMLQRNPRORRTTQN
+T rows=8253 dirs=2 pairforms=1026805248 survivors=2
+### fresh/null15_all.txt
+T rows=8289 dirs=2 pairforms=1031284224 survivors=0
+### fresh/null15_bank.txt
+T rows=8253 dirs=2 pairforms=1026805248 survivors=0
+### fresh/null16_all.txt
+T rows=8289 dirs=2 pairforms=1031284224 survivors=0
+### fresh/null16_bank.txt
+S perm=89736 dir=0 X=107 Y=9 form=2 w=10 pop=8 k=HFDAGCCIAIHJCDJJJCJCADJA
+T rows=8253 dirs=2 pairforms=1026805248 survivors=1
+### fresh/null17_all.txt
+S perm=82377 dir=1 X=1 Y=80 form=2 w=10 pop=10 k=MDMJDFFJEKEHMIIMDIILGJIG
+S perm=155557 dir=0 X=75 Y=0 form=2 w=10 pop=10 k=ROUQPRMNUPNPSOMUVUNPSNTR
+S perm=155757 dir=0 X=115 Y=17 form=0 w=10 pop=10 k=EEADJIBIJCDABIIDJFGHGGJI
+S perm=155757 dir=0 X=115 Y=17 form=1 w=10 pop=10 k=WWAXRSZSRYXAZSSXRVUTUURS
+S perm=157337 dir=1 X=60 Y=36 form=2 w=10 pop=10 k=IJCHEACBGEGCJGFDAFEBHEHB
+T rows=8289 dirs=2 pairforms=1031284224 survivors=5
+### fresh/null17_bank.txt
+T rows=8253 dirs=2 pairforms=1026805248 survivors=0
+### fresh/null18_all.txt
+S perm=8618 dir=0 X=127 Y=32 form=0 w=10 pop=9 k=PPTUPTVSVVUUWVWTUPQVWRTN
+S perm=8618 dir=0 X=127 Y=32 form=1 w=10 pop=9 k=LLHGLHFIFFGGEFEHGLKFEJHN
+S perm=17578 dir=1 X=21 Y=35 form=2 w=10 pop=9 k=MLFILHIJFNFFIEIEHNGLLLIJ
+S perm=70958 dir=1 X=74 Y=8 form=0 w=10 pop=10 k=YBAWVCUWWWWZZACTBWXBZTYY
+S perm=70958 dir=1 X=74 Y=8 form=1 w=10 pop=10 k=CZAEFYGEEEEBBAYHZEDZBHCC
+T rows=8289 dirs=2 pairforms=1031284224 survivors=5
+### fresh/null18_bank.txt
+S perm=163278 dir=0 X=112 Y=32 form=2 w=10 pop=10 k=CDVCYABYZXDUDZBZVCDYWWBZ
+T rows=8253 dirs=2 pairforms=1026805248 survivors=1
+### fresh/null19_all.txt
+S perm=4599 dir=1 X=80 Y=32 form=2 w=9 pop=9 k=HGDBCHJDIGFGGFBCCJIECHBF
+T rows=8289 dirs=2 pairforms=1031284224 survivors=1
+### fresh/null19_bank.txt
+T rows=8253 dirs=2 pairforms=1026805248 survivors=0
+### replica/null0_all.txt
+S perm=129560 dir=1 X=38 Y=19 form=2 w=10 pop=10 k=WTTWQPTVNUNWSUPWVNQOTVOR
+S perm=150320 dir=1 X=24 Y=34 form=2 w=10 pop=10 k=CHYBCZZZGEEZYABBGDYAZHGF
+T rows=8290 dirs=2 pairforms=1031408640 survivors=2
+### replica/null0_bank.txt
+S perm=99920 dir=0 X=50 Y=133 form=0 w=10 pop=10 k=EZDFDHDGZYCYZADBBFAEBCZF
+S perm=99920 dir=0 X=50 Y=133 form=1 w=10 pop=10 k=WBXVXTXUBCYCBAXZZVAWZYBV
+T rows=8254 dirs=2 pairforms=1026929664 survivors=2
+### replica/null0_direct.txt
+T rows=1 dirs=1 pairforms=4513567971 survivors=0
+### replica/null1_all.txt
+S perm=38441 dir=1 X=13 Y=74 form=2 w=10 pop=10 k=LMOJPQNQJQJHKJLHIJHOIOOJ
+S perm=76041 dir=0 X=71 Y=119 form=2 w=10 pop=10 k=MPKNSOQLQOJPNKQMQJOKRLON
+T rows=8290 dirs=2 pairforms=1031408640 survivors=2
+### replica/null1_bank.txt
+S perm=75581 dir=1 X=111 Y=112 form=0 w=9 pop=9 k=CFIJHHHCJKJKHFJEFFDFEKGF
+S perm=75581 dir=1 X=111 Y=112 form=1 w=9 pop=9 k=YVSRTTTYRQRQTVRWVVXVWQUV
+S perm=75821 dir=1 X=111 Y=112 form=0 w=10 pop=10 k=CFIJJHFCJKJKEFJBFIDFEKGJ
+S perm=75821 dir=1 X=111 Y=112 form=1 w=10 pop=10 k=YVSRRTVYRQRQWVRZVSXVWQUR
+S perm=115721 dir=0 X=8 Y=11 form=2 w=10 pop=10 k=WTTNQUVPTOQSVPTSQSURQPVP
+T rows=8254 dirs=2 pairforms=1026929664 survivors=5
+### replica/null1_direct.txt
+S perm=-1 dir=0 X=696 Y=46652 form=0 w=10 pop=9 k=JJKLEHHJMJGGJLGDIGIHDEDD
+S perm=-1 dir=0 X=696 Y=46652 form=1 w=10 pop=9 k=RRQPWTTRORUURPUXSUSTXWXX
+S perm=-1 dir=0 X=136 Y=35588 form=2 w=10 pop=8 k=BDCIGGHCHBIZCBCCDGDDFCGG
+S perm=-1 dir=0 X=8356 Y=5700 form=0 w=10 pop=8 k=SURNQROORSSQOQWTNNTTTWUN
+S perm=-1 dir=0 X=8356 Y=5700 form=1 w=10 pop=8 k=IGJNKJMMJIIKMKEHNNHHHEGN
+S perm=-1 dir=0 X=8601 Y=46652 form=0 w=10 pop=10 k=JIJIDGIGLJFFGKGEHFHICDEC
+S perm=-1 dir=0 X=8601 Y=46652 form=1 w=10 pop=10 k=RSRSXUSUPRVVUQUWTVTSYXWY
+S perm=-1 dir=0 X=13451 Y=46652 form=0 w=10 pop=10 k=FHKJDGJHLFEGHLCFHFHICDEC
+S perm=-1 dir=0 X=13451 Y=46652 form=1 w=10 pop=10 k=VTQRXURTPVWUTPYVTVTSYXWY
+S perm=-1 dir=0 X=13546 Y=46652 form=2 w=10 pop=10 k=KFIICFIGKKCEGJHEGEGHBCDB
+S perm=-1 dir=0 X=13361 Y=50120 form=0 w=10 pop=10 k=JHKHEHJFLJEGFMGFIHIIFEEN
+S perm=-1 dir=0 X=13361 Y=50120 form=1 w=10 pop=10 k=RTQTWTRVPRWUVOUVSTSSVWWN
+S perm=-1 dir=0 X=32271 Y=19431 form=0 w=10 pop=9 k=KRRRPJNIIKJJIMOOQQKJPRKK
+S perm=-1 dir=0 X=32271 Y=19431 form=1 w=10 pop=9 k=QJJJLRNSSQRRSOMMKKQRLJQQ
+S perm=-1 dir=0 X=34746 Y=56251 form=0 w=10 pop=10 k=DJJKIEGFMDKIFHEIKLHMIIKL
+S perm=-1 dir=0 X=34746 Y=56251 form=1 w=10 pop=10 k=XRRQSWUVOXQSVTWSQPTOSSQP
+S perm=-1 dir=0 X=44326 Y=24796 form=0 w=10 pop=10 k=XQSVXXRRRXYURQSTQUVWWYTP
+S perm=-1 dir=0 X=44326 Y=24796 form=1 w=10 pop=10 k=DKIFDDJJJDCGJKIHKGFEECHL
+S perm=-1 dir=0 X=51116 Y=69302 form=0 w=10 pop=8 k=NMKKMNKFMNKJFNMMIIOGFMKO
+S perm=-1 dir=0 X=51116 Y=69302 form=1 w=10 pop=8 k=NOQQONQVONQRVNOOSSMUVOQM
+S perm=-1 dir=0 X=51121 Y=69302 form=2 w=10 pop=9 k=MLJJKLJEKMJIELLLGGMFDKJM
+S perm=-1 dir=0 X=75626 Y=46652 form=0 w=10 pop=10 k=JIJKDGIILJFFIKGEHFHICDEC
+S perm=-1 dir=0 X=75626 Y=46652 form=1 w=10 pop=10 k=RSRQXUSSPRVVSQUWTVTSYXWY
+S perm=-1 dir=0 X=75516 Y=46652 form=0 w=10 pop=10 k=JIKKEHIIMJFGILGEIGIIDEED
+S perm=-1 dir=0 X=75516 Y=46652 form=1 w=10 pop=10 k=RSQQWTSSORVUSPUWSUSSXWWX
+S perm=-1 dir=0 X=78936 Y=56251 form=0 w=9 pop=9 k=FJLMJGFHGFKKHMGHMNIHKKFF
+S perm=-1 dir=0 X=78936 Y=56251 form=1 w=9 pop=9 k=VRPORUVTUVQQTOUTONSTQQVV
+S perm=-1 dir=0 X=79821 Y=65648 form=2 w=10 pop=9 k=MDEDGHJLFMIDLDEDLFIDEMEH
+S perm=-1 dir=0 X=82591 Y=56251 form=0 w=8 pop=8 k=GJMNMJJIHGKLINHLJLLIHNGL
+S perm=-1 dir=0 X=82591 Y=56251 form=1 w=8 pop=8 k=URONORRSTUQPSNTPRPPSTNUP
+S perm=-1 dir=0 X=84956 Y=35588 form=2 w=10 pop=8 k=EDDFEEEZIEIAZAFZZGBABADZ
+S perm=-1 dir=0 X=86101 Y=69302 form=0 w=10 pop=9 k=NMILLMHGLNKHGMMJHHNEELIN
+S perm=-1 dir=0 X=86101 Y=69302 form=1 w=10 pop=9 k=NOSPPOTUPNQTUOORTTNWWPSN
+S perm=-1 dir=0 X=85846 Y=56251 form=0 w=10 pop=9 k=HNKMLIJHQHOJHNILLLKOJMMO
+S perm=-1 dir=0 X=85846 Y=56251 form=1 w=10 pop=9 k=TNQOPSRTKTMRTNSPPPQMROOM
+S perm=-1 dir=0 X=85906 Y=20845 form=0 w=10 pop=10 k=IRNNLMRJPIJLJPOIJNOQKPIO
+S perm=-1 dir=0 X=85906 Y=20845 form=1 w=10 pop=10 k=SJNNPOJRLSRPRLMSRNMKQLSM
+T rows=1 dirs=1 pairforms=4513307778 survivors=37
+### replica/null2_all.txt
+S perm=95862 dir=1 X=105 Y=83 form=0 w=10 pop=10 k=JEFDEDGHDLLKDMFKJHGILLKK
+S perm=95862 dir=1 X=105 Y=83 form=1 w=10 pop=10 k=RWVXWXUTXPPQXOVQRTUSPPQQ
+S perm=151502 dir=1 X=129 Y=53 form=0 w=10 pop=9 k=LJKFOLMHJFHJOFLKHGGIMHGJ
+S perm=151502 dir=1 X=129 Y=53 form=1 w=10 pop=9 k=PRQVMPOTRVTRMVPQTUUSOTUR
+T rows=8289 dirs=2 pairforms=1031284224 survivors=4
+### replica/null2_bank.txt
+S perm=10722 dir=0 X=48 Y=137 form=2 w=10 pop=9 k=MRJKRKLROKQKQJRNRKMQKMIN
+T rows=8254 dirs=2 pairforms=1026929664 survivors=1
+### replica/null2_direct.txt
+S perm=-1 dir=0 X=2127 Y=49275 form=2 w=10 pop=10 k=URMQPPMTNLNUSNMTOSQPPUOQ
+S perm=-1 dir=0 X=2127 Y=49277 form=0 w=10 pop=10 k=FINJKKNGMOMFHMNGLHJKKFLJ
+S perm=-1 dir=0 X=2127 Y=49277 form=1 w=10 pop=10 k=VSNRQQNUOMOVTONUPTRQQVPR
+S perm=-1 dir=0 X=2127 Y=73471 form=2 w=10 pop=8 k=XUPWOPPUQRQXROPTRTRTPTRR
+S perm=-1 dir=0 X=2127 Y=73472 form=0 w=10 pop=8 k=CFKDLKKFJIJCILKGIGIGKGII
+S perm=-1 dir=0 X=2127 Y=73472 form=1 w=10 pop=8 k=YVQXPQQVRSRYSPQUSUSUQUSS
+S perm=-1 dir=0 X=2127 Y=80442 form=2 w=10 pop=10 k=WTOUNPOVPQPWQNOTQTSSOSQR
+S perm=-1 dir=0 X=2127 Y=80443 form=0 w=10 pop=10 k=DGLFMKLEKJKDJMLGJGHHLHJI
+S perm=-1 dir=0 X=2127 Y=80443 form=1 w=10 pop=10 k=XUPVOQPWQRQXROPURUTTPTRS
+S perm=-1 dir=0 X=52872 Y=47747 form=2 w=10 pop=9 k=STAYAVVWSBSVVTTSXZBASZTT
+S perm=-1 dir=0 X=76492 Y=13512 form=2 w=10 pop=9 k=HNFIFEINEEMMLMIFJLHHKIIM
+S perm=-1 dir=0 X=82032 Y=76628 form=0 w=10 pop=10 k=MHEGDFEHGKEKFFLLIJFHEJGG
+S perm=-1 dir=0 X=82032 Y=76628 form=1 w=10 pop=10 k=OTWUXVWTUQWQVVPPSRVTWRUU
+S perm=-1 dir=0 X=82032 Y=76629 form=2 w=10 pop=10 k=NSVTWUVSTPVPUUOORQUSVQTT
+T rows=1 dirs=1 pairforms=4513307778 survivors=14
+### replica/null3_all.txt
+T rows=8289 dirs=2 pairforms=1031284224 survivors=0
+### replica/null3_bank.txt
+S perm=72123 dir=0 X=139 Y=70 form=0 w=10 pop=10 k=SLUSONNQLTQLOTMTUOPLTRPN
+S perm=72123 dir=0 X=139 Y=70 form=1 w=10 pop=10 k=IPGIMNNKPHKPMHOHGMLPHJLN
+S perm=152503 dir=1 X=124 Y=54 form=2 w=10 pop=10 k=ZUTXBSBYBYUVTWWABTZVWUBZ
+T rows=8254 dirs=2 pairforms=1026929664 survivors=3
+### replica/null3_direct.txt
+T rows=1 dirs=1 pairforms=4513307778 survivors=0
+### replica/null4_all.txt
+S perm=52144 dir=1 X=38 Y=105 form=0 w=10 pop=10 k=AZDWCUBAZWVWCADAXXYCZBBV
+S perm=52144 dir=1 X=38 Y=105 form=1 w=10 pop=10 k=ABXEYGZABEFEYAXADDCYBZZF
+S perm=141244 dir=1 X=88 Y=103 form=0 w=10 pop=9 k=BYZVBBYWZTTTTZXCYUZYCYUY
+S perm=141244 dir=1 X=88 Y=103 form=1 w=10 pop=9 k=ZCBFZZCEBHHHHBDYCGBCYCGC
+T rows=8289 dirs=2 pairforms=1031284224 survivors=4
+### replica/null4_bank.txt
+S perm=24924 dir=0 X=114 Y=117 form=2 w=10 pop=9 k=VUOTOQXOTTTOSRWWTWVQOTRV
+S perm=137424 dir=0 X=3 Y=72 form=2 w=10 pop=10 k=HBKJKFJKCIFECFCEEJKHDKGK
+T rows=8254 dirs=2 pairforms=1026929664 survivors=2
+### replica/null4_direct.txt
+T rows=1 dirs=1 pairforms=4513307778 survivors=0
+### replica/null5_all.txt
+S perm=19925 dir=1 X=4 Y=104 form=0 w=10 pop=9 k=JEDCKBGJJGFFJHKFCGHGFFKH
+S perm=19925 dir=1 X=4 Y=104 form=1 w=10 pop=9 k=RWXYQZURRUVVRTQVYUTUVVQT
+S perm=117025 dir=1 X=70 Y=72 form=0 w=10 pop=10 k=BAUAXZYAYVYWUDYZZWYYYYDC
+S perm=117025 dir=1 X=70 Y=72 form=1 w=10 pop=10 k=ZAGADBCACFCEGXCBBECCCCXY
+T rows=8289 dirs=2 pairforms=1031284224 survivors=4
+### replica/null5_bank.txt
+T rows=8253 dirs=2 pairforms=1026805248 survivors=0
+### replica/null5_direct.txt
+S perm=-1 dir=0 X=2280 Y=4311 form=0 w=10 pop=9 k=LQPMLUSOTUSTLPQOQUPRPRPM
+S perm=-1 dir=0 X=2280 Y=4311 form=1 w=10 pop=9 k=PKLOPGIMHGIHPLKMKGLJLJLO
+S perm=-1 dir=0 X=2280 Y=4313 form=2 w=10 pop=9 k=OJKNOFHLGFHGOKJLJFKIKIKN
+S perm=-1 dir=0 X=2280 Y=4314 form=0 w=10 pop=9 k=LQPMLUSPTUSTLPQOQUPRPRPM
+S perm=-1 dir=0 X=2280 Y=4314 form=1 w=10 pop=9 k=PKLOPGILHGIHPLKMKGLJLJLO
+S perm=-1 dir=0 X=2280 Y=4316 form=2 w=10 pop=9 k=OJKNOFHKGFHGOKJLJFKIKIKN
+S perm=-1 dir=0 X=2280 Y=64137 form=0 w=10 pop=9 k=MRQNMSTPUUTUMQRPRVPSQVTN
+S perm=-1 dir=0 X=2280 Y=64137 form=1 w=10 pop=9 k=OJKNOIHLGGHGOKJLJFLIKFHN
+S perm=-1 dir=0 X=2280 Y=64139 form=2 w=10 pop=9 k=NIJMNHGKFFGFNJIKIEKHJEGM
+T rows=1 dirs=1 pairforms=4513307778 survivors=9
+### replica/null6_all.txt
+S perm=95546 dir=0 X=51 Y=11 form=0 w=9 pop=9 k=WASXVAASVUTUSUAYSWZSSZSU
+S perm=95546 dir=0 X=51 Y=11 form=1 w=9 pop=9 k=EAIDFAAIFGHGIGACIEBIIBIG
+S perm=95546 dir=0 X=70 Y=23 form=2 w=10 pop=9 k=DBAZBWYWXBAZWZEWXWFEXZEY
+S perm=95546 dir=0 X=18 Y=50 form=0 w=9 pop=7 k=ADVAWDDVAVCXVABBXXCVXCVV
+S perm=95546 dir=0 X=18 Y=50 form=1 w=9 pop=7 k=AXFAEXXFAFYDFAZZDDYFDYFF
+S perm=137786 dir=1 X=59 Y=3 form=0 w=10 pop=10 k=TLRKPNOLOQMNSMLLORKQPMRK
+S perm=137786 dir=1 X=59 Y=3 form=1 w=10 pop=10 k=HPJQLNMPMKONIOPPMJQKLOJQ
+T rows=8289 dirs=2 pairforms=1031284224 survivors=7
+### replica/null6_bank.txt
+S perm=26846 dir=1 X=78 Y=46 form=2 w=10 pop=9 k=FXCZZAWXXDYDXWZWXAFEACZF
+S perm=33806 dir=1 X=78 Y=46 form=2 w=10 pop=9 k=DXEZZAWXXDYDXWZWXAFEACZF
+S perm=36926 dir=1 X=78 Y=46 form=2 w=10 pop=9 k=FXCZZAWXXDYDXWZWXAFEACZF
+S perm=54206 dir=1 X=78 Y=46 form=2 w=10 pop=9 k=DXEZZAWXXDYDXWZWXAFEACZF
+S perm=64286 dir=1 X=78 Y=46 form=2 w=10 pop=9 k=DXEZZAWXXDYDXWZWXAFEACZF
+S perm=68846 dir=1 X=78 Y=46 form=2 w=10 pop=9 k=FXCZZAWXXDYDXWZWXAFEACZF
+S perm=84386 dir=1 X=78 Y=46 form=2 w=10 pop=9 k=DXEZZAWXXDYDXWZWXAFEACZF
+S perm=88946 dir=1 X=78 Y=46 form=2 w=10 pop=9 k=FXCZZAWXXDYDXWZWXAFEACZF
+S perm=129546 dir=0 X=66 Y=104 form=2 w=20 pop=6 k=ZZTZZZCCZCTFQTFFFFCJQCQZ
+T rows=8253 dirs=2 pairforms=1026805248 survivors=9
+### replica/null6_direct.txt
+S perm=-1 dir=0 X=39666 Y=37981 form=0 w=10 pop=10 k=TXQSTXPWVTTRRUYTPTYRYQSX
+S perm=-1 dir=0 X=39666 Y=37981 form=1 w=10 pop=10 k=HDKIHDLEFHHJJGCHLHCJCKID
+S perm=-1 dir=0 X=39666 Y=39357 form=0 w=10 pop=10 k=TXQSTXPWVTTRRUYTPTYRYQSX
+S perm=-1 dir=0 X=39666 Y=39357 form=1 w=10 pop=10 k=HDKIHDLEFHHJJGCHLHCJCKID
+S perm=-1 dir=0 X=44011 Y=26410 form=0 w=10 pop=9 k=SVZSRTWRXSXTZSYVAVYRTSWS
+S perm=-1 dir=0 X=44011 Y=26410 form=1 w=10 pop=9 k=IFBIJHEJDIDHBICFAFCJHIEI
+S perm=-1 dir=0 X=44011 Y=26412 form=2 w=10 pop=9 k=HEAHIGDICHCGAHBEZEBIGHDH
+S perm=-1 dir=0 X=51706 Y=34547 form=0 w=10 pop=10 k=GMOJIOILGGGGNNOKNFOMJHJL
+S perm=-1 dir=0 X=51706 Y=34547 form=1 w=10 pop=10 k=UOMRSMSPUUUUNNMQNVMORTRP
+S perm=-1 dir=0 X=61311 Y=26410 form=0 w=9 pop=8 k=SWZTSAWSXSYTATYVAAZSTZXS
+S perm=-1 dir=0 X=61311 Y=26410 form=1 w=9 pop=8 k=IEBHIAEIDICHAHCFAABIHBDI
+S perm=-1 dir=0 X=61311 Y=26412 form=2 w=9 pop=8 k=HDAGHZDHCHBGZGBEZZAHGACH
+S perm=-1 dir=0 X=83791 Y=27994 form=0 w=10 pop=9 k=OSORRVTVTOOPQRTXPVWPSOQP
+S perm=-1 dir=0 X=83791 Y=27994 form=1 w=10 pop=9 k=MIMJJFHFHMMLKJHDLFELIMKL
+T rows=1 dirs=1 pairforms=4513047585 survivors=14
+### replica/null7_all.txt
+S perm=100947 dir=1 X=41 Y=140 form=2 w=10 pop=9 k=MGJMLEFNJLFJFFNNJHGMHKMK
+T rows=8289 dirs=2 pairforms=1031284224 survivors=1
+### replica/null7_bank.txt
+S perm=14547 dir=1 X=126 Y=140 form=0 w=10 pop=9 k=WZZWWZVCXVZTWAWBZTYTXCZB
+S perm=14547 dir=1 X=126 Y=140 form=1 w=10 pop=9 k=EBBEEBFYDFBHEAEZBHCHDYBZ
+S perm=17487 dir=1 X=97 Y=82 form=0 w=10 pop=10 k=AAAGDFCEFZCGGCYDZEGFFGBX
+S perm=17487 dir=1 X=97 Y=82 form=1 w=10 pop=10 k=AAAUXVYWVBYUUYCXBWUVVUZD
+S perm=17487 dir=1 X=98 Y=82 form=0 w=10 pop=10 k=ZZZFCEBDEYBFFBXCYDFEEFAW
+S perm=17487 dir=1 X=98 Y=82 form=1 w=10 pop=10 k=BBBVYWZXWCZVVZDYCXVWWVAE
+S perm=107867 dir=0 X=39 Y=81 form=0 w=10 pop=10 k=USOQLNRUURQQONRTSMTUMMPP
+S perm=107867 dir=0 X=39 Y=81 form=1 w=10 pop=10 k=GIMKPNJGGJKKMNJHIOHGOOLL
+T rows=8253 dirs=2 pairforms=1026805248 survivors=8
+### replica/null7_direct.txt
+T rows=1 dirs=1 pairforms=4513047585 survivors=0
+### replica/null8_all.txt
+S perm=153308 dir=1 X=88 Y=109 form=2 w=10 pop=9 k=NOMJQSSROOJSQQSLPSJPMRRS
+T rows=8289 dirs=2 pairforms=1031284224 survivors=1
+### replica/null8_bank.txt
+S perm=154588 dir=0 X=143 Y=6 form=2 w=10 pop=10 k=RYRYTVQSWUQXSTTUUTSTSXZS
+T rows=8253 dirs=2 pairforms=1026805248 survivors=1
+### replica/null9_all.txt
+T rows=8289 dirs=2 pairforms=1031284224 survivors=0
+### replica/null9_bank.txt
+T rows=8253 dirs=2 pairforms=1026805248 survivors=0
+### replica/null10_all.txt
+S perm=108970 dir=1 X=23 Y=49 form=0 w=10 pop=10 k=FABZACDEFYEGXGCGFXXXZCYG
+S perm=108970 dir=1 X=23 Y=49 form=1 w=10 pop=10 k=VAZBAYXWVCWUDUYUVDDDBYCU
+T rows=8289 dirs=2 pairforms=1031284224 survivors=2
+### replica/null10_bank.txt
+S perm=22250 dir=1 X=68 Y=102 form=0 w=10 pop=9 k=XTTUBUWBWSYASZWXTUWAYSSY
+S perm=22250 dir=1 X=68 Y=102 form=1 w=10 pop=9 k=DHHGZGEZEICAIBEDHGEACIIC
+S perm=32330 dir=1 X=68 Y=102 form=0 w=10 pop=9 k=XTTUBUWBWSYASZWXTUWAYSSY
+S perm=32330 dir=1 X=68 Y=102 form=1 w=10 pop=9 k=DHHGZGEZEICAIBEDHGEACIIC
+S perm=47050 dir=0 X=59 Y=63 form=0 w=10 pop=10 k=ROKRNOTLSQQQSPMMTLLOQNRL
+S perm=47050 dir=0 X=59 Y=63 form=1 w=10 pop=10 k=JMQJNMHPIKKKILOOHPPMKNJP
+S perm=160030 dir=1 X=67 Y=124 form=0 w=10 pop=9 k=LLOGKFGFOMNJKONIGNKINJGO
+S perm=160030 dir=1 X=67 Y=124 form=1 w=10 pop=9 k=PPMUQVUVMONRQMNSUNQSNRUM
+T rows=8253 dirs=2 pairforms=1026805248 survivors=8
+### replica/null11_all.txt
+S perm=19171 dir=1 X=29 Y=93 form=2 w=10 pop=9 k=NTOSKSNQTKLOSOQQLOLMNKRT
+S perm=27671 dir=1 X=88 Y=105 form=2 w=10 pop=9 k=QQNOVVTUSSUVNWUNPPQTSNWT
+S perm=86851 dir=1 X=127 Y=82 form=2 w=10 pop=10 k=KOKQSNLMJOORPLJNKNQQMJMS
+S perm=124631 dir=1 X=55 Y=39 form=2 w=9 pop=9 k=DYAWBBXYZZYEAAZYYCWYZCEB
+T rows=8289 dirs=2 pairforms=1031284224 survivors=4
+### replica/null11_bank.txt
+T rows=8253 dirs=2 pairforms=1026805248 survivors=0
+### replica/null12_all.txt
+S perm=9552 dir=1 X=35 Y=12 form=0 w=10 pop=10 k=EEGCHDEGDDIFJKIIEIBHDGJF
+S perm=9552 dir=1 X=35 Y=12 form=1 w=10 pop=10 k=WWUYTXWUXXSVRQSSWSZTXURV
+S perm=15912 dir=0 X=117 Y=15 form=2 w=10 pop=9 k=ZDZWEWABZDZDDDYAZWFZCDED
+S perm=33752 dir=0 X=11 Y=20 form=2 w=10 pop=8 k=AUCAYTWTYZWZCYXAWAUCCTWX
+T rows=8289 dirs=2 pairforms=1031284224 survivors=4
+### replica/null12_bank.txt
+T rows=8253 dirs=2 pairforms=1026805248 survivors=0
+### replica/null13_all.txt
+S perm=1553 dir=0 X=44 Y=12 form=0 w=9 pop=9 k=GHJIFLIJJKMMILEFFMFIHHEI
+S perm=1553 dir=0 X=44 Y=12 form=1 w=9 pop=9 k=UTRSVPSRRQOOSPWVVOVSTTWS
+T rows=8289 dirs=2 pairforms=1031284224 survivors=2
+### replica/null13_bank.txt
+T rows=8253 dirs=2 pairforms=1026805248 survivors=0
+### replica/null14_all.txt
+S perm=116634 dir=0 X=109 Y=75 form=0 w=10 pop=9 k=JIFKEEDEKEDDJGMMMGGMDLFD
+S perm=116634 dir=0 X=109 Y=75 form=1 w=10 pop=9 k=RSVQWWXWQWXXRUOOOUUOXPVX
+T rows=8289 dirs=2 pairforms=1031284224 survivors=2
+### replica/null14_bank.txt
+T rows=8253 dirs=2 pairforms=1026805248 survivors=0
+### replica/null15_all.txt
+S perm=149715 dir=0 X=103 Y=121 form=2 w=10 pop=10 k=OHLOPNINJHOIQQNKNJKMPNPI
+T rows=8289 dirs=2 pairforms=1031284224 survivors=1
+### replica/null15_bank.txt
+T rows=8253 dirs=2 pairforms=1026805248 survivors=0
+### replica/null16_all.txt
+T rows=8289 dirs=2 pairforms=1031284224 survivors=0
+### replica/null16_bank.txt
+S perm=47576 dir=0 X=64 Y=79 form=2 w=10 pop=10 k=EEAXEXBXZZBBFDZCXDZGECYE
+S perm=83016 dir=0 X=132 Y=141 form=2 w=10 pop=10 k=NULQQRRTORMSOTNRQRRPQPLU
+S perm=85396 dir=0 X=19 Y=128 form=0 w=10 pop=8 k=BJGCEGICJFGKKGKJKCCEGBKF
+S perm=85396 dir=0 X=19 Y=128 form=1 w=10 pop=8 k=ZRUYWUSYRVUQQUQRQYYWUZQV
+S perm=93716 dir=0 X=95 Y=61 form=2 w=10 pop=10 k=PPLMLKHOIPIPHHINOHGKGJLK
+S perm=129756 dir=1 X=58 Y=135 form=0 w=10 pop=9 k=DXWZDXYXEEAVEZWZXVECWAAW
+S perm=129756 dir=1 X=58 Y=135 form=1 w=10 pop=9 k=XDEBXDCDWWAFWBEBDFWYEAAE
+S perm=147096 dir=0 X=17 Y=18 form=2 w=10 pop=9 k=ZTYTSWZVUWZBVATAUSBVUSVU
+T rows=8253 dirs=2 pairforms=1026805248 survivors=8
+### replica/null17_all.txt
+S perm=3677 dir=1 X=82 Y=61 form=0 w=18 pop=6 k=BGBBBGXGABTTTGTGXTBTGKBA
+S perm=3677 dir=1 X=82 Y=61 form=1 w=18 pop=6 k=ZUZZZUDUAZHHHUHUDHZHUQZA
+S perm=72677 dir=1 X=52 Y=109 form=2 w=10 pop=9 k=PYXQVQVYUSPPQPUQURPUUPTX
+S perm=106757 dir=1 X=124 Y=65 form=0 w=10 pop=10 k=AADBGICHGBJFFBICEEBIHHGD
+S perm=106757 dir=1 X=124 Y=65 form=1 w=10 pop=10 k=AAXZUSYTUZRVVZSYWWZSTTUX
+T rows=8289 dirs=2 pairforms=1031284224 survivors=5
+### replica/null17_bank.txt
+S perm=32037 dir=0 X=46 Y=68 form=2 w=10 pop=10 k=EBAYVDCEVVAXEZVDDWDCZDAW
+S perm=42117 dir=0 X=46 Y=68 form=2 w=10 pop=10 k=EBAYVDCEVVAXEZVDDWDCZDAW
+S perm=52197 dir=0 X=46 Y=68 form=2 w=10 pop=10 k=EBAYVDCEVVAXEZVDDWDCZDAW
+S perm=76577 dir=1 X=51 Y=86 form=0 w=10 pop=9 k=ONOTPVSMVSNUNRVPNPTNOMNO
+S perm=76577 dir=1 X=51 Y=86 form=1 w=10 pop=9 k=MNMHLFIOFINGNJFLNLHNMONM
+S perm=94837 dir=0 X=131 Y=93 form=0 w=10 pop=10 k=XTYZVRZRRVZUYSRXXQWYURWW
+S perm=94837 dir=0 X=131 Y=93 form=1 w=10 pop=10 k=DHCBFJBJJFBGCIJDDKECGJEE
+S perm=116177 dir=1 X=39 Y=94 form=0 w=10 pop=10 k=MEDLEMDJDHIHKEDGIKGIDGFJ
+S perm=116177 dir=1 X=39 Y=94 form=1 w=10 pop=10 k=OWXPWOXRXTSTQWXUSQUSXUVR
+T rows=8253 dirs=2 pairforms=1026805248 survivors=9
+### replica/null18_all.txt
+S perm=12758 dir=0 X=69 Y=36 form=0 w=10 pop=9 k=VXAVDEBDDEAWBWDEYWXXCADY
+S perm=12758 dir=0 X=69 Y=36 form=1 w=10 pop=9 k=FDAFXWZXXWAEZEXWCEDDYAXC
+S perm=57618 dir=0 X=59 Y=71 form=0 w=10 pop=9 k=KLQKOQQSRTOSLLKPKRROPMKM
+S perm=57618 dir=0 X=59 Y=71 form=1 w=10 pop=9 k=QPKQMKKIJHMIPPQLQJJMLOQO
+S perm=107118 dir=1 X=112 Y=74 form=2 w=10 pop=10 k=IJROKIKNINJKQPJPMIONLRKO
+S perm=112958 dir=0 X=134 Y=7 form=0 w=10 pop=7 k=KNKGEGKKMGIEIHEMIHHEMKHH
+S perm=112958 dir=0 X=134 Y=7 form=1 w=10 pop=7 k=QNQUWUQQOUSWSTWOSTTWOQTT
+T rows=8289 dirs=2 pairforms=1031284224 survivors=7
+### replica/null18_bank.txt
+S perm=78718 dir=0 X=94 Y=69 form=0 w=10 pop=10 k=GGHIHDIHBHEBAFFCJJCBJHAF
+S perm=78718 dir=0 X=94 Y=69 form=1 w=10 pop=10 k=UUTSTXSTZTWZAVVYRRYZRTAV
+S perm=107038 dir=0 X=72 Y=82 form=0 w=10 pop=8 k=ABCFIECBAHBHEEEJJFCEAIBI
+S perm=107038 dir=0 X=72 Y=82 form=1 w=10 pop=8 k=AZYVSWYZATZTWWWRRVYWASZS
+S perm=128798 dir=1 X=0 Y=7 form=0 w=10 pop=10 k=YRSTTYZYQZUXUQVRRVWSVXQQ
+S perm=128798 dir=1 X=0 Y=7 form=1 w=10 pop=10 k=CJIHHCBCKBGDGKFJJFEIFDKK
+T rows=8253 dirs=2 pairforms=1026805248 survivors=6
+### replica/null19_all.txt
+T rows=8289 dirs=2 pairforms=1031284224 survivors=0
+### replica/null19_bank.txt
+S perm=47719 dir=1 X=18 Y=99 form=2 w=10 pop=8 k=MPKPKIIJMLKJRRQQKPKPIMIK
+S perm=134159 dir=0 X=109 Y=122 form=0 w=10 pop=10 k=BECGCGZABHCDEAFCEHEHGYHH
+S perm=134159 dir=0 X=109 Y=122 form=1 w=10 pop=10 k=ZWYUYUBAZTYXWAVYWTWTUCTT
+S perm=149499 dir=1 X=134 Y=72 form=0 w=10 pop=9 k=VWDBZYBZYYWAZCWUZBZWVCDB
+S perm=149499 dir=1 X=134 Y=72 form=1 w=10 pop=9 k=FEXZBCZBCCEABYEGBZBEFYXZ
+T rows=8253 dirs=2 pairforms=1026805248 survivors=5
