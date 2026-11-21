@@ -1,0 +1,7 @@
+G-INV {'M': 0.02404522912736376, 'null_sd': 0.0003265979017272304, 'share_null_equal_obs': 0.0, 'multiset_exact': True, 'blocks_intact': True, 'moved_at_most_one_slot': True, 'relabel_delta': 0.0, 'share_pages_ge2_blocks': 0.8354430379746836, 'preservation_by_position_class': {'first_boundary': 0.5390303030303031, 'internal_boundary': 0.3755431893687708, 'last_boundary': 0.49976785714285715, 'block0_stays_first': 0.7493560606060606, 'last_stays_last': 0.7493257575757576}, 'n_pairs_A_int_stand_in': 51211, 'pass': True} [3.3s]
+EXIT 124
+Sat Nov 21 12:41:47 MST 2026
+--- part 2 Sat Nov 21 12:41:59 MST 2026
+G-INV {'M': 0.02404522912736376, 'null_sd': 0.0003265979017272304, 'share_null_equal_obs': 0.0, 'multiset_exact': True, 'blocks_intact': True, 'moved_at_most_one_slot': True, 'relabel_delta': 0.0, 'share_pages_ge2_blocks': 0.8354430379746836, 'preservation_by_position_class': {'first_boundary': 0.5390303030303031, 'internal_boundary': 0.3755431893687708, 'last_boundary': 0.49976785714285715, 'block0_stays_first': 0.7493560606060606, 'last_stays_last': 0.7493257575757576}, 'n_pairs_A_int_stand_in': 51211, 'pass': True} [0.3s]
+EXIT 124
+Sat Nov 21 12:49:49 MST 2026
