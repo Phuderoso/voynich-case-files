@@ -1,0 +1,18 @@
+# Frozen inputs for the ZL3b vs IT2a joint word-division audit
+# Written 2026-11-21 (America/Dawson_Creek, MST) from Phuderoso/voynich-case-files main 1e6fc93abce72309bb972d9e3902f4dac35172b7.
+# These are the exact transcription files used in C120-C124 (tools/c070_word2_sh.py FILES = (('IT2a','data/IT2a-n.txt'),('ZL3b','data/ZL3b-n.txt'))).
+# No count of any kind (alignment, divisions, tokens) has been computed on them for this audit.
+
+sha256  bf5b6d4ac1e3a51b1847a9c388318d609020441ccd56984c901c32b09beccafc  data/ZL3b-n.txt
+sha256  7f27a8b0feed8f6de0a99900df6bf912dd1d295c38e5f830bac8b41c3f536fb5  data/IT2a-n.txt
+
+size    411671 bytes  data/ZL3b-n.txt   header: "#=IVTFF Eva- 2.0 M 5"  "Version 3b of 13/05/2025"  (https://www.voynich.nu/data/ZL3b-n.txt, retrieved 2026-11-04)
+size    342104 bytes  data/IT2a-n.txt   header: "#=IVTFF EvaT 2.0 M 3"  "Version 2a of 02/02/2023 modified 25/06/2025"  (Takahashi transcription, IVTFF conversion by R. Zandbergen; https://www.voynich.nu/data/IT2a-n.txt, retrieved 2026-11-05)
+
+# Code that defines the retained lines, paragraph ids and strata (as used in C121-C124); the alignment audit reuses its parsing only:
+sha256  0239d97f792fe1a33605a893da468f3b0db8c3697d114433a25200fc54292efe  tools/c070_word2_sh.py        (parse: retention filter; FILES)
+sha256  7954d7dc3ac96652e1cebbf86126e784dc8144bba1366d1dfd160ca5ac9ff8c6  tools/c123_mi_para_block.py   (parse_para, pages_of, ZMAP section map)
+sha256  3fe6014a871e39f45b6d064fda17a3e81637e3eb14ec299021ee1ba276f807da  tools/c120_mi_distance.py
+sha256  233ac24b408098605087eb949aef27364c81ba965a8dd3758bc38cddd08c7a88  tools/c003_position_rigidity.py   (units)
+sha256  7057ee7720d1c354492b773fa9caf313b1bb65cfc17906ca0bd008d4c77267ff  data/MANIFEST.md
+sha256  25b5bcac539b29bb90439412807fe6f176bdbc069fb148a1cc06a4ff15c227bc  tools/c124_mi_flip.py   (C124 revision 2, for reference; not used here)
