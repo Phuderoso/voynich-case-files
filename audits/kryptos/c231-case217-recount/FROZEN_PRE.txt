@@ -1,0 +1,3 @@
+FROZEN_PRE 2026-11-21 14:04:17 MST (America/Dawson_Creek)
+RULE.md, recount231.py, plants_recount.py, run_mine.sh and the null files are frozen NOW, before any fresh-null / replica scan of bsk230 and before opening data/cycle231/R/*, R_run.log, an231.*, pool231.*, the journal, README/IDEAS of 36b2871, or her check scripts.
+Done before this freeze (disclosed): built bsk230 (52c8d591 reproduced); regenerated nulls (byte-identical to nulls231.txt); smoke-tested recount231.py on fake data made from my c230 files (not on c231 data); ran the 20 plants (gate P, from her plants231.tsv) once in /tmp as a smoke test of plants_recount.py (20/20 strict, 20/20 loose) - the formal run is repeated by run_mine.sh; calibrated the I-291R reconstruction on c230 numbers.
