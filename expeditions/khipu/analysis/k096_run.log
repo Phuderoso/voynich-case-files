@@ -1,0 +1,3 @@
+KFG N 496 family F_DB 59406 F_x 118849 DB khipus 147 Berlin 126 Dallas 21 R5 masked 2588 weights 23991 1676 lead idx {'L1': 21240, 'L2': 24423, 'L3': 46786} diag idx None 0.3
+reference done 2000 0.5
+wrote analysis/k096_results.json gates True 0.6
