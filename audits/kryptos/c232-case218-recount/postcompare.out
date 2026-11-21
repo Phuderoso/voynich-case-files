@@ -1,0 +1,6 @@
+K4 units over fit+k05: 3 of 52 [(16, 1637, -6.21), (28, 8245, -6.349), (55, 24177, -6.685)]
+calibration per-text units over fit+k05: [np.int64(3), np.int64(4), np.int64(0), np.int64(4), np.int64(4), np.int64(1), np.int64(2), np.int64(4), np.int64(1), np.int64(5), np.int64(0), np.int64(6), np.int64(4), np.int64(2), np.int64(1), np.int64(5), np.int64(1), np.int64(2), np.int64(2), np.int64(1)] mean 2.60
+closest K4 unit nq 55 N 24177: bar -6.199
+most lenient bar in domain (N 10, nq 64): -7.010
+case 213 null 209425 (-5.292, nq 10): bar at N 17 -5.930; N where bar = -5.292: 39712
+0/28 Wilson hi 0.1206; one-error 11/12 Wilson 0.646-0.985; 0/73 hi 0.0500, 0/72 hi 0.0507
