@@ -1,0 +1,29 @@
+# FROZEN before opening reread228.json / reread228.log / analyze228.log / summary228.json / cycle 228 results / nc228.py / reread228.py
+frozen_at: 2026-11-21 04:46:08 MST (America/Dawson_Creek)
+repo: Phuderoso/kryptos-case-files @ 01e823035e4b581fafd599534b08fcac6c910084 (sparse: data/cycle219, 220, 225, tools/cycle228/PREREG228.md); cycle SHA256SUMS verified OK.
+hits read 4052 (K4 728, nulls 3324 raw); excess recomputed == stamped on every hit; H-line counts per (text, p) == stamped strict + one-error counts, 544 rows, 0 mismatches
+(case 205 p 19-22: strict hits only, as stamped; "one-error" in the stamp = excess exactly 1).
+Quagmire orientation fixed by excess match (al2 = plain KRYPTOS / cipher A-Z, al3 = plain A-Z / cipher KRYPTOS).
+
+HEADLINE (maxNC over pass-eligible hits, known>=49 and n>=10; every hit in all three cases is eligible; U2 = D2 cells of PREREG228; passes at NC>=-6.0):
+ K4  : cells (U2) 250 = 244 (205) + 0 (206) + 6 (211); passes 0/250 under both tie rules; max NC -7.3023 (case 205, p 22, both rules).
+       per case: 205 -7.3023 (p 22; p 18: tie=? -7.9737, first-vote -8.1002); 206 no K4 hit; 211 tie=? -7.7874, first-vote -7.8382 (p 18).
+ nulls: cells (U2) 838 = 664 (205) + 132 (206) + 42 (211); passes 0/838 under both rules (0 distinct texts); max NC -7.1407 (case 205, null209239, p 22, both rules).
+       per case: 205 -7.1407 (both); 206 tie=? -7.4943, first-vote -7.5922; 211 tie=? -7.6435, first-vote -7.7403.
+ raw hits (U1): K4 728, nulls 3324; same maxima and 0 passes. U3 (D2 as my case 209) same maxima.
+ tie rule only changes the maximum in cases 206 and 211 (never above -7.4); in 205 the maximum is identical (-7.3023 K4, -7.1407 nulls).
+ K4 max is 0.16 below the null max over all three cases (-7.3023 vs -7.1407), per case K4 is below the null max in each case where K4 has hits.
+
+---
+7a90300ead8032a966580ed43f39544ecc7fabbce7c217ca0bb92886b7df65b6  RULE.md
+140d5cfec2e2d5ba5e3450f7381caf6c674ddc99f25a49c680dc3e4c9f4eaa1b  LEAKS.md
+f7bcc575141c4ae398db5f01246d4d6830901debac19ac6f8eb5d965a2826a78  nc_maxima.py
+a9a1a714fe422865f9ff1582922791b7b6464d2c231380540e9ab4fbcc23bf5a  conv_check.py
+3bd7a319070dfef3117ca7bc286f1da890ec41fa359cea73a04efdf245cb3d8e  counts_case.tsv
+5c6c1b22f94513b0680a91cc87b4a9fb912e4398af9938435589ee728397cb6f  counts_case_p.tsv
+cb8b232b47c90862d77975a453ea5f244c72de298f3768830f6d4330dbbe1aff  counts_text.tsv
+0cacdaa0fcc58b7afe960a086301a2720a25f7fd4af16d642c016fc189066e91  input_delta.tsv
+f4f6be14b6927da4bf40840e077e1623fbd9427a2a5a1dab2cbdd40fb9e73e74  summary_nc_maxima.txt
+4a02ba4eca0b6840a3a5eafe00678e854b25703c36b99e9e26a7697d4ed89f69  qg.bin
+437fe9974132b6602b15dd2d66d5f522cc9ec571e2ff48e4c46f92d6058a0c54  kryptos-main/tools/cycle228/PREREG228.md
+qg.bin vs PREREG228 (4a02ba4e...9f69): matches.
