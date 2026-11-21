@@ -1,0 +1,38 @@
+# FROZEN before opening summary227.json or any cycle 227 analysis script
+frozen_at: 2026-11-20 22:01:28 MST (America/Dawson_Creek)
+repo state used for inputs: /workspace/k227-nquad-recount/kryptos-main = Phuderoso/kryptos-case-files @ c2af592906d5fb20272ac60d15995e32c5c06b58 (origin/main). Sparse checkout: tools/cycle227/PREREG227.md + data/cycle227/** except summary227.json (not present in the work tree). Never used /workspace/k4c216/repo.
+
+PRIMARY (unique B/C null hits, P lines excluded as duplicates; every such hit has known>=49 and n>=1):
+  unique hits 6120 (raw B=2263 C=4343; 168 null R files); house-bar eligible (n>=10) 5678;
+  PASSES: 4 unique hits / 1 after collapse on (null, perm, model, p, pt);
+  all four are null 209425, Q, p=24, perm=78680, dir=1, ix=1, n=10, known=77, NC -5.2916
+  (X/Y/form = 1/6/2, 5/6/2, 16/6/0, 16/6/1; file null209425_allVQ_a_r10.txt);
+  overall max NC -5.2916; q95 (all 6120) -6.8392; q95 among n>=10 -6.8324.
+  Collapsed (5480 rows): max -5.2916, q95 -6.9029, passes 1.
+
+PER n (unique hits; known>=49 columns identical because every B/C hit has known>=49):
+  see counts_by_n.tsv. The only pass_hits > 0 is n=10 (225 hits, max NC -5.2916, q95 -7.0716, 4 passes).
+  For every n>=11, max NC is below -6.0 (closest: n=14 -6.1111, n=23 -6.1467, n=25 -6.1380).
+  n=8 max is -6.0052 (below the bar, and n<10 anyway).
+  max_NC(n) and q95(n) are NOT monotone nonincreasing (28 and 30 rises). A least-squares
+  q95(n) ≈ a + b/sqrt(n) on n with >=5 hits (N=56) gives a=-6.5797, b=-1.7548, R^2=0.256
+  (weak). The flat house bar NC>=-6.0 is well above q95 at every n; the only breach is the
+  n=10 four-hit cluster at -5.2916 (3 of those 10 windows are the table floor -8.469).
+
+GATE P, floor 20 (16 V/Q plants scored from pt=; 4 G rows have no pt):
+  16/16 pass the published bar (n>=10, known>=49, NC>=-6.0);
+  15/16 would still pass at a floor of 20 scorable quadgrams;
+  LOST: plant 13, Q, p=17, known=74, n=11, NC -3.8307.
+  Next-smallest plant n is 26 (plant 11). Plants 4,6,7,8,10,14,15,17 have n=64.
+
+43c87b3d8207c167911d26f3d69322ddddb92438a6b31a17114b63a96c859c71  RULE.md
+5ab17da13140e3d775b931ae3db653172f0f21aae3ec107d17c2405d64837d24  LEAKS.md
+3d31143afeb6abb0ec716714af4546e897f13a6e7e5018cb2d363bdd0ccc97ce  nquad_recount.py
+acfd05397e709c83a936c2e0b3811005c3d3dd46e2ad2de5f32817a4330a53d1  counts_by_n.tsv
+e344cf2b1fedf463ea704c16b1c9f955c7b3e9964a2227e140c6be91a5524a62  plants_floor20.tsv
+eace61ac9090eeffbca1903642941ace087aefc2bd7512fdb3f38e3c7ac99a9f  summary_nquad.txt
+4a02ba4eca0b6840a3a5eafe00678e854b25703c36b99e9e26a7697d4ed89f69  qg.bin
+f51d064ba39bf974883533410f338e96b00be1726b38f450b60908ccef0d263c  kryptos-main/tools/cycle227/PREREG227.md
+b6406fbe3e7b881abbf6f65839ba437d75722aa68374940c3062818ad834709c  kryptos-main/data/cycle227/gateP227.tsv  (matches her data/cycle227/SHA256SUMS)
+2e7b466846d11dec7b5f3a51a063cfd36bd6708f1328b852e558b01186aa4f07  concatenated sha256 of the 168 null R files (paths sorted)
+qg.bin vs PREREG227: 4a02ba4e... = hash declared (matches).
