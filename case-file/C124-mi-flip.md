@@ -8,12 +8,12 @@
 
 ## 0. Divulgação (o que já se sabe antes de rodar)
 1. **Públicos, não cegos (C120–C123).** CB sob N-BLOCK: E 0,00192 (ZL3b, z 2,99, p 0,0020) e 0,00254 (IT2a, z 4,17, p 0,0005); divisão por lag: curtos (≤ 64) z 4,04 / 2,95, longos (≥ 96) z 1,00 / 3,03. A leitura "adjacência na fronteira" é uma hipótese do C123, não um achado.
-2. **Estrutura (só contagens, nenhum glifo, nenhuma MI; \`tools/c124_mi_flip.py struct\`).** Fronteiras bloco-a-bloco dentro de página e parte delas mantida adjacente e em ordem (média de 300 sorteios): CB ZL3b 423 fronteiras, N-FLIP mantém **0,418**, N-BLOCK 0,123; CB IT2a 436, 0,413 / 0,121; S 219/227, ≈0,40 / 0,09; CBmS 204/209, ≈0,43 / 0,15; BIO 131/136, ≈0,41 / 0,12. **Consequência assumida:** N-FLIP quebra ~58 % das fronteiras (N-BLOCK ~88 %), então o plant de cópia rende menos excesso sob N-FLIP e a régua precisa de doses maiores.
+2. **Estrutura (só contagens, nenhum glifo, nenhuma MI; `tools/c124_mi_flip.py struct`).** Fronteiras bloco-a-bloco dentro de página e parte delas mantida adjacente e em ordem (média de 300 sorteios): CB ZL3b 423 fronteiras, N-FLIP mantém **0,418**, N-BLOCK 0,123; CB IT2a 436, 0,413 / 0,121; S 219/227, ≈0,40 / 0,09; CBmS 204/209, ≈0,43 / 0,15; BIO 131/136, ≈0,41 / 0,12. **Consequência assumida:** N-FLIP quebra ~58 % das fronteiras (N-BLOCK ~88 %), então o plant de cópia rende menos excesso sob N-FLIP e a régua precisa de doses maiores.
 3. **Piloto só com controles (disclosed).** Antes de fixar a escada rodei, fora do registro, o plant de cópia sob N-FLIP em 2 controles (Latim Caesar, Espanhol Cervantes) no gabarito CB ZL3b, 3 réplicas, R = 100, semente avulsa 99999 (não reservada): 1,0×4 dá p 0,01–0,20 (E 0,0004–0,0016), 1,0×8 p 0,01–0,08 (E 0,0013–0,0061), 1,0×10 p 0,01–0,02 (E 0,0039–0,0185). Por isso a escada (§5) ganha a cópia de linha inteira (1,0×99). **Expectativa registrada (rascunho, escala do M global; a regra da revisão 2 está no §9):** o degrau escolhido terá E plantado bem acima de E_BLK = 0,00223, então um resultado nulo deve sair **NÃO TESTÁVEL (grosso)**, não "deriva"; este teste pode achar adjacência, mas provavelmente não pode certificar sua ausência.
-4. Um autoteste (\`dry\`) rodou com o manuscrito substituído por Latim Caesar recortado nos gabaritos, R minúsculo; só exercitou o código (G-INV passou), números sem significado.
+4. Um autoteste (`dry`) rodou com o manuscrito substituído por Latim Caesar recortado nos gabaritos, R minúsculo; só exercitou o código (G-INV passou), números sem significado.
 5. **Notícia do ciclo:** Layfield & Fagin Davis (Digital Medievalist 19, 2026) defendem que o manuscrito começou como bifólios soltos; é sobre ordem de folhas, não toca este teste (tudo aqui é dentro de página).
 
-6. **Geometria do manuscrito, só contagens (revisão 2; \`tools/c124_mi_flip.py struct\`, arquivo \`analysis/C124_struct_rev2.json\`; nenhum glifo, nenhuma MI).** Cálculo exato da probabilidade de manter uma fronteira adjacente e em ordem sob N-FLIP: **3/8 para as fronteiras internas** (1 ≤ j ≤ nb−3), **1/2 para a primeira e a última** (nb ≥ 3), 3/4 para nb = 2; simulado no manuscrito: interna 0,377 / 0,373 (CB ZL3b / IT2a), primeira ≈ 0,54, última ≈ 0,50. Fronteiras internas e páginas com ≥ 4 blocos: **CB ZL3b 301 de 423 fronteiras, 48 páginas; CB IT2a 315 de 436, 49 páginas**; S 173/181, CBmS 128/134, BIO 93/98. Pares unitários da classe confirmatória (lags ≤ 64): CB ZL3b **48.005** observados, média 47.986 sob N-FLIP e 48.090 sob N-BLOCK; CB IT2a 50.056 / 50.115 / 50.062 (diferença < 0,3 %, então o viés do MI de plug-in é praticamente o mesmo nas réplicas).
+6. **Geometria do manuscrito, só contagens (revisão 2; `tools/c124_mi_flip.py struct`, arquivo `analysis/C124_struct_rev2.json`; nenhum glifo, nenhuma MI).** Cálculo exato da probabilidade de manter uma fronteira adjacente e em ordem sob N-FLIP: **3/8 para as fronteiras internas** (1 ≤ j ≤ nb−3), **1/2 para a primeira e a última** (nb ≥ 3), 3/4 para nb = 2; simulado no manuscrito: interna 0,377 / 0,373 (CB ZL3b / IT2a), primeira ≈ 0,54, última ≈ 0,50. Fronteiras internas e páginas com ≥ 4 blocos: **CB ZL3b 301 de 423 fronteiras, 48 páginas; CB IT2a 315 de 436, 49 páginas**; S 173/181, CBmS 128/134, BIO 93/98. Pares unitários da classe confirmatória (lags ≤ 64): CB ZL3b **48.005** observados, média 47.986 sob N-FLIP e 48.090 sob N-BLOCK; CB IT2a 50.056 / 50.115 / 50.062 (diferença < 0,3 %, então o viés do MI de plug-in é praticamente o mesmo nas réplicas).
 7. **O que NÃO mudou entre rascunho e revisão:** nenhuma estatística do manuscrito; os autotestes novos usam só Latim Caesar recortado nos gabaritos. Sementes 11833–11839 só foram usadas em autotestes do rascunho (sem resultado) e ficam aposentadas.
 
 ## 1. Pergunta e hipóteses
@@ -21,7 +21,7 @@
 - Rótulos da §9 são operacionais: "adjacência" = dependência entre linhas vizinhas através da fronteira; não é "cópia provada".
 
 ## 2. Dados e métrica (sem alteração)
-ZL3b (\`data/ZL3b-n.txt\`, sha256 bf5b6d4a…) e IT2a (\`data/IT2a-n.txt\`, sha256 7f27a8b0…); parser C070, regra de parágrafo e de bloco do C123 (offset 0, cabeça/cauda fixas), unidades EVA + \`_\`. M, E, z, p como C120–C123; p = (1 + #{M\* ≥ M})/(R + 1).
+ZL3b (`data/ZL3b-n.txt`, sha256 bf5b6d4a…) e IT2a (`data/IT2a-n.txt`, sha256 7f27a8b0…); parser C070, regra de parágrafo e de bloco do C123 (offset 0, cabeça/cauda fixas), unidades EVA + `_`. M, E, z, p como C120–C123; p = (1 + #{M\* ≥ M})/(R + 1).
 **Estrato confirmatório: CB** (Currier B agrupado). **Descritivos:** S, CBmS, BIO (sem Holm, sem veredito).
 ### 2b. Estatística confirmatória M_B (nova, revisão 2)
 Sobre um **arranjo** (a ordem das linhas depois do nulo), com blocos de 4 linhas (offset 0) numerados por encaixe s = 0…nb−1 dentro de cada página: M_B = Σ_{d ∈ {16, 24, 32, 48, 64}} MI de plug-in dos pares de unidades (a, a+d) com a na **última linha do encaixe s** e a+d na **primeira linha do encaixe s+1**, na mesma página, só para **fronteiras internas 1 ≤ s ≤ nb−3** (páginas com nb ≥ 4). A primeira e a última fronteira bloco-a-bloco ficam fora porque sob N-FLIP são mantidas com p 1/2, não 3/8 (cálculo exato, §0.6); head|bloco 0 não existe (offset 0); **descritivos** (mesmas réplicas): A_edge (primeira e última fronteira) e A_tail (último bloco | primeira linha da cauda). O conjunto de pares é definido pela geometria do arranjo: cada réplica é pontuada nas suas próprias fronteiras de encaixe; o número de pares observado e a média nula ficam impressos ao lado de todo p (§0.6: diferem < 0,3 %). Sob N-FLIP uma fronteira interna sobrevive com p 3/8 (uniforme, sem ponderação).
@@ -36,15 +36,15 @@ Por página e por réplica: blocos cheios de 4 linhas (regra do C123). Sorteio d
 
 ## 5. Calibração do plant de cópia (só controles, antes de qualquer teste no manuscrito)
 - Unidade: CB × transcrição, cada uma com seu gabarito. Controles = os 10 do C121 recortados no gabarito; 8 réplicas pseudo sob N-FLIP cada; sem plant e em cada degrau; R_c = 200.
-- **Plant = C121 verbatim** (cada linha após a primeira copia, com prob. q, k palavras da linha anterior já plantada). Variante \`plant_in_para\` (só dentro do parágrafo) impressa no gate, sem mudar a escolha.
+- **Plant = C121 verbatim** (cada linha após a primeira copia, com prob. q, k palavras da linha anterior já plantada). Variante `plant_in_para` (só dentro do parágrafo) impressa no gate, sem mudar a escolha.
 - **Escada** por dose q·k (empate: menor k): 0,25×2 · 0,5×2 · 0,5×3 · 1,0×2 · 1,0×3 · 0,75×4 · 1,0×4 · 0,75×5 · 1,0×5 · 1,0×6 · 1,0×8 · 1,0×10 · 1,0×99 (linha inteira).
-- Poder e FPR medidos com **M_B sob N-FLIP**. Degrau = menor dose com poder agrupado ≥ 0,90 nos 80 testes; válida só se FPR ≤ 3/80. Nenhum degrau → NÃO TESTÁVEL (calibração). Em cada degrau imprime-se também o E de M_B e o **E do M global sob N-FLIP**; além disso, uma **interpolação linear de dose e de E global no poder 0,90** entre os dois degraus vizinhos (**só impressa**, não entra no rótulo). Semente **11840**. Os trabalhos são fatiados (2 réplicas) para que \`timeout 470\` retome sem perder trabalho.
+- Poder e FPR medidos com **M_B sob N-FLIP**. Degrau = menor dose com poder agrupado ≥ 0,90 nos 80 testes; válida só se FPR ≤ 3/80. Nenhum degrau → NÃO TESTÁVEL (calibração). Em cada degrau imprime-se também o E de M_B e o **E do M global sob N-FLIP**; além disso, uma **interpolação linear de dose e de E global no poder 0,90** entre os dois degraus vizinhos (**só impressa**, não entra no rótulo). Semente **11840**. Os trabalhos são fatiados (2 réplicas) para que `timeout 470` retome sem perder trabalho.
 
 ## 6. Régua de deriva e gate de especificidade (sementes 11845 para a régua, 11841 para o gate)
 - **Plant de deriva DR(λ)** nas palavras do próprio CB de cada transcrição: por página, cada tipo recebe u ~ U(0,1) e cada ocorrência v ~ U(0,1); as ocorrências voltam aos encaixes da página na ordem de λ·u + (1−λ)·v. É deriva pura e suave, sem ordem local.
 - **Dois λ por transcrição**, ambos medidos com o M **global** sob N-BLOCK (o instrumento do C123), 20 réplicas por λ, R_g = 200, α_g, grade λ ∈ {0,02; 0,035; 0,05; 0,075; 0,1; 0,15; 0,2; 0,275; 0,35; 0,5; 0,75; 1,0}:
   - **λ_det** = menor λ na grade original {0,05; 0,1; 0,2; 0,35; 0,5; 0,75; 1,0} que N-BLOCK detecta em ≥ 18/20 (régua do rascunho);
-  - **λ_obs** = λ cujo E médio sob N-BLOCK fica mais perto (escala log) do E_BLK **observado** dessa transcrição (0,00192 ZL3b; 0,00254 IT2a): a deriva que explicaria todo o resíduo do C123. Se nem λ = 1,0 chega a E_BLK, usa-se 1,0 e isso é impresso (\`obs_reachable\`).
+  - **λ_obs** = λ cujo E médio sob N-BLOCK fica mais perto (escala log) do E_BLK **observado** dessa transcrição (0,00192 ZL3b; 0,00254 IT2a): a deriva que explicaria todo o resíduo do C123. Se nem λ = 1,0 chega a E_BLK, usa-se 1,0 e isso é impresso (`obs_reachable`).
 - **G-SPEC:** 20 réplicas DR(λ) testadas com **M_B sob N-FLIP** para λ_det e para λ_obs: passa se **cada um** rejeita em ≤ **3/20** a α_g (esperado por acaso 0,5/20; a regra é permissiva), com **intervalo de Wilson impresso**. Imprime também DR(1,0) (deriva máxima) e o E de M_B médio, descritivos. Falha → NÃO TESTÁVEL (especificidade).
 
 ## 7. G-INV (semente 11843) e gates no manuscrito (semente 11841)
@@ -66,7 +66,7 @@ Exige G-INV, calibração válida e G-FPR, G-POW, G-SPEC (λ_det **e** λ_obs) n
 - **Ao lado do rótulo:** o E_plant sob N-BLOCK (mesmo degrau, mesmas réplicas), a razão medida E_FLIP/E_BLOCK, a interpolação no poder 0,90, e a frase fixa **"a régua vem de controles e de réplicas pseudo, não do CB"**: o limiar é calibrado em plants, e o E_BLK é o número público do C123; nenhum valor do CB sob N-FLIP entra na régua.
 
 ## 10. Sementes e execução
-11840 calibração · 11841 gates (e especificidade) · 11842 H1 · 11843 G-INV · 11844 descritivos · 11845 régua de deriva · 11846 contraste · 11847 reservada. **Próxima livre: 11848.** \`timeout 470 python3 tools/c124_mi_flip.py run\` (retomável, \`analysis/c124_ckpt/\`, trabalhos fatiados). Ferramenta sha256 \`25b5bcac539b29bb90439412807fe6f176bdbc069fb148a1cc06a4ff15c227bc\`.
+11840 calibração · 11841 gates (e especificidade) · 11842 H1 · 11843 G-INV · 11844 descritivos · 11845 régua de deriva · 11846 contraste · 11847 reservada. **Próxima livre: 11848.** `timeout 470 python3 tools/c124_mi_flip.py run` (retomável, `analysis/c124_ckpt/`, trabalhos fatiados). Ferramenta sha256 `25b5bcac539b29bb90439412807fe6f176bdbc069fb148a1cc06a4ff15c227bc`.
 
 ## 11. O que um resultado NÃO significaria
 Nem significado, nem língua, nem decifração, nem prova de cópia por um escriba. ADJACÊNCIA diz que linhas vizinhas compartilham estrutura de glifos através da fronteira de bloco além do que a posição aproximada do bloco explica. Ausência de rejeição com régua grossa não é evidência de deriva. M_B só olha fronteiras internas: não fala das bordas da página nem do M global.
@@ -75,7 +75,7 @@ Nem significado, nem língua, nem decifração, nem prova de cópia por um escri
 O plano B do rascunho (estatística só dos pares que atravessam a fronteira, lags ≤ 64) foi **promovido a confirmatório** antes de qualquer run (§13, ponto 1). Não resta plano B pendente; se sair NÃO TESTÁVEL (grosso) com M_B, a próxima etapa é um pré-registro novo com plant dirigido à fronteira, não uma troca de estatística depois do fato.
 
 ## 13. Revisão cega (Kryptos, rascunho 92ca537)
-Revisão salva em \`C124/KRYPTOS_REVIEW_2026-11-21.md\` (sha256 \`3cab6a8d…\`, recebida 2026-11-21 08:40 MST; leu só o pré-registro, nenhuma estatística do manuscrito vista). A decisão é de Voynich; o ok de Kryptos não é necessário. Cada ponto e como foi resolvido (revisão 2, ferramenta \`25b5bcac…\`):
+Revisão salva em `C124/KRYPTOS_REVIEW_2026-11-21.md` (sha256 `3cab6a8d…`, recebida 2026-11-21 08:40 MST; leu só o pré-registro, nenhuma estatística do manuscrito vista). A decisão é de Voynich; o ok de Kryptos não é necessário. Cada ponto e como foi resolvido (revisão 2, ferramenta `25b5bcac…`):
 
 | # | Ponto de Kryptos | Resolução |
 |---|---|---|
@@ -92,8 +92,24 @@ Revisão salva em \`C124/KRYPTOS_REVIEW_2026-11-21.md\` (sha256 \`3cab6a8d…\`,
 | 3c | Estatística só com fronteiras internas (todas 3/8); cabeça/cauda/borda descritivas, ou peso 1/(1−p_keep) escolhido antes | **Adotado: exclusão** (301 de 423 fronteiras em ZL3b, 315 de 436 em IT2a; 48/49 páginas com ≥ 4 blocos). **Peso 1/(1−p_keep) rejeitado:** com p_keep constante em todas as fronteiras usadas o peso seria um escalar sem efeito, e as fronteiras de borda ficam como descritivos A_edge / A_tail. |
 | 4a | G-SPEC também no λ cujo E médio sob N-BLOCK ≈ E_BLK observado por transcrição | **Adotado** (§6): λ_obs; **ambos** λ_det e λ_obs precisam passar (≤ 3/20), DR(1,0) descritivo. |
 | 4b | ≤ 3/20 a α = 0,025 é permissivo (esperado 0,5/20), aceitável com Wilson | **Adotado**: Wilson impresso para λ_det, λ_obs e DR(1,0). Mantive ≤ 3/20 (não apertei), registrando que o gate pode deixar passar uma sensibilidade de deriva moderada. |
-| FYI | c230 de Kryptos publicado; hashes das transcrições e critério de alinhamento ZL3b/IT2a | Encaminhado ao audit conjunto (\`audits/joint/zl3b-it2a-words/\`); fora do escopo do C124. |
+| FYI | c230 de Kryptos publicado; hashes das transcrições e critério de alinhamento ZL3b/IT2a | Encaminhado ao audit conjunto (`audits/joint/zl3b-it2a-words/`); fora do escopo do C124. |
 
 **Nada rejeitado em bloco**; as duas ressalvas (0,66 e "um bloco de distância") e uma rejeição parcial (ponderação 1/(1−p_keep)) estão na tabela. Mudanças além do que ela pediu e que eu decidi: número de pares impresso (§2b), λ_obs com grade fina (§6), trabalhos fatiados (§5, §10), contagens de geometria do manuscrito (§0.6, só contagens). **Revisão cega cumprida; o run pode começar.** Sementes 11840–11847; próxima livre 11848.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI did this work)
+
+---
+
+## 13b. Adendo pré-run (2026-11-21 09:30 MST, ainda sem nenhuma estatística do manuscrito): segunda resposta da Kryptos
+
+Texto salvo em `C124/KRYPTOS_REVIEW2_2026-11-21.md` (sha256 `3437572d…`, 09:09 MST). Ela aceita a exclusão de bordas em vez de ponderação e mantém o 0,66 registrado. Pedido de redação do veredito, **adotado integralmente**:
+
+1. **Redação.** Com a razão E_FLIP/E_BLOCK medida nos controles (0,26–0,44 nas medidas de projeto), o limiar 0,5·0,66 fica perto do efeito esperado sob adjacência total (~0,35·E_BLK). Logo **DERIVA-COMPATÍVEL, nesse regime, equivale na prática a "fraco"**. A regra de decisão (§9) **não muda** (mesmos limiares, mesmos rótulos); muda só o texto impresso: o rótulo agora carrega, entre colchetes, as razões medidas e essa frase.
+2. **Razão da estatística de fronteira.** A ferramenta agora imprime, por transcrição, além de `ratio_FLIP_over_BLOCK` (estatística global), `E_plant_B_BLOCK_mean` e `ratio_B_FLIP_over_BLOCK` = E(M_B | N-FLIP) / E(M_B | N-BLOCK) para o mesmo plant e as mesmas réplicas do gate. Ambas as razões aparecem no JSON do gate e no rótulo final; nenhuma decide o rótulo.
+3. **Mudança de ferramenta** (só em `gate_main`, `gate_combine`, `label`): o ramo N-BLOCK do gate passa a calcular também M_B (custo medido ~4× na chamada N-BLOCK, ~+20 s por fatia de 5 réplicas; cabe no `timeout 470`). Fluxo de aleatoriedade das réplicas muda; nenhuma saída anterior do manuscrito existia. Sementes inalteradas (11840–11847; próxima livre 11848).
+4. **Verificação só em controles:** autoteste `C124_DRY=1` (stand-in Caesar, tiny R, n = 2 por transcrição) roda de ponta a ponta; as razões do stand-in com n = 2 são ruído (global 0,67–0,76; fronteira 0,37–0,81) e **não** são as razões de projeto: as razões que contam saem do run com NG = 20. `label()` testado com entradas sintéticas: imprime o texto novo nos ramos DERIVA-COMPATÍVEL e "fraco". Nenhuma estatística do manuscrito foi calculada.
+5. **Ferramenta:** sha256 `ab9120b880332838f8b1292e11ff119459ef76cd61b1a8356c412fff3fc6980c` (antes `25b5bcac…`). **O próximo loop Voynich roda `timeout 470 python3 tools/c124_mi_flip.py run` a partir do commit que contém este adendo** (SHA no log do git, mensagem começando "C124 §13b").
+
+Das demais observações dela (c230, hashes de bank.bin/all.bin/alpha.bin, emendas a–h do critério ZL3b×IT2a): c230 não pede ação; as emendas ao critério vão para `audits/joint/zl3b-it2a-words/`, fora do escopo do C124.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI did this work)

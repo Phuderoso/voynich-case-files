@@ -296,13 +296,14 @@ def gate_main(a):
     f = ck(f'gateM_CB_FLIP_{t}_{sl}')
     if os.path.exists(f): return json.load(open(f))
     rng = np.random.default_rng([GSEED, gi, sl]); pages, pids = C3.split_pp(pp); q, k = rung.split('x'); q, k = float(q), int(float(k))
-    r = dict(t=t, fp=0, pw=0, pv=0, n=0, Ep=[], E0=[], EpG=[], EpB=[], npairs=[])
+    r = dict(t=t, fp=0, pw=0, pv=0, n=0, Ep=[], E0=[], EpG=[], EpB=[], EpBB=[], npairs=[])
     for _ in range(min(GSL, NG - sl * GSL)):
         ps = pseudo_flip(pages, rng)
         t0 = FStream(ps, pids).ntest2('FLIP', rng, RG)['B']; r['fp'] += int(t0['p'] <= AG); r['E0'].append(t0['E'])
         S = FStream(plant(ps, rng, q, k), pids); tp = S.ntest2('FLIP', rng, RG); r['pw'] += int(tp['B']['p'] <= AG)
         r['Ep'].append(tp['B']['E']); r['EpG'].append(tp['G']['E'])
-        r['EpB'].append(S.ntest2('BLOCK', rng, RG, classes=())['G']['E'])      # same plant under N-BLOCK, global statistic (C123 units)
+        tb = S.ntest2('BLOCK', rng, RG)      # same plant under N-BLOCK: global statistic (C123 units) and the boundary statistic M_B
+        r['EpB'].append(tb['G']['E']); r['EpBB'].append(tb['B']['E'])
         r['pv'] += int(FStream(C3.plant_in_para(ps, pids, rng, q, k), pids).ntest2('FLIP', rng, RG)['B']['p'] <= AG); r['n'] += 1
     json.dump(r, open(f, 'w')); return r
 
@@ -326,10 +327,10 @@ def gate_combine(t, rung, lam_det, lam_obs, M, S_):
         rj = sum(x['rej'] for x in rows); nn = sum(x['n'] for x in rows)
         spec[nm] = dict(lam=float(lam), rejections=int(rj), NG=nn, wilson=wilson(int(rj), nn), E_B_mean=float(np.mean([e for x in rows for e in x['Ed']])))
     ok = lambda s: bool(s is not None and s['rejections'] <= round(3 / 20 * NG))
-    eg, eb = float(np.mean(cat('EpG'))), float(np.mean(cat('EpB')))
+    eg, eb = float(np.mean(cat('EpG'))), float(np.mean(cat('EpB'))); ebb = float(np.mean(cat('EpBB'))); epb = float(np.mean(cat('Ep')))
     return dict(key=f'CB_FLIP_{t}', rung=rung, fpr=int(fp), power=int(pw), power_inpara_plant_variant=int(pv), NG=n,
                 E_plant_B_mean=float(np.mean(cat('Ep'))), E_plant_FLIP_global=eg, E_plant_BLOCK_global=eb,
-                ratio_FLIP_over_BLOCK=eg / eb if eb else None, E_unplanted_B_mean=float(np.mean(cat('E0'))),
+                ratio_FLIP_over_BLOCK=eg / eb if eb else None, E_plant_B_BLOCK_mean=ebb, ratio_B_FLIP_over_BLOCK=epb / ebb if ebb else None, E_unplanted_B_mean=float(np.mean(cat('E0'))),
                 g_fpr=bool(fp <= round(2 / 20 * NG)), g_pow=bool(pw >= round(16 / 20 * NG)), spec=spec,
                 g_spec=bool(ok(spec['det']) and ok(spec['obs'])), thr_E_BLK_scaled=SCALE * EBLK[t])
 
@@ -397,6 +398,10 @@ def label(res):
     if n == 2: return 'ADJACENCIA-NA-FRONTEIRA'
     if n == 1: return 'PARCIAL'
     ep = {t: G[f'CB_FLIP_{t}']['E_plant_FLIP_global'] for t in TRANS}; thr = {t: SCALE * EBLK[t] for t in TRANS}
+    rg = {t: G[f'CB_FLIP_{t}']['ratio_FLIP_over_BLOCK'] for t in TRANS}; rb = {t: G[f'CB_FLIP_{t}']['ratio_B_FLIP_over_BLOCK'] for t in TRANS}
+    f_ = lambda v: 'na' if v is None else f'{v:.2f}'
+    note += (' [medido E_FLIP/E_BLOCK (plant): global ' + ', '.join(f'{t} {f_(rg[t])}' for t in TRANS) + '; estatistica de fronteira M_B ' + ', '.join(f'{t} {f_(rb[t])}' for t in TRANS)
+             + '. O limiar 0,5x0,66 fica perto do efeito esperado de adjacencia total (~razao x E_BLK): com razao medida < ~0,5, DERIVA-COMPATIVEL equivale na pratica a "fraco"]')
     if all(ep[t] <= 0.5 * thr[t] for t in TRANS): return 'DERIVA-COMPATIVEL' + note
     if all(ep[t] <= thr[t] for t in TRANS): return 'DERIVA-COMPATIVEL (fraco)' + note
     return 'NAO TESTAVEL (grosso)' + note
