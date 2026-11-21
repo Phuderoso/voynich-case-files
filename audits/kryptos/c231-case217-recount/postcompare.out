@@ -1,0 +1,8 @@
+survivor files identical (S sets and T lines): 48; different: 0
+SHA256SUMS_R.txt: 49/49 OK
+direct W<=9: her per-null raw == mine True; her clusters == my I-291R True; == my house cells True
+direct W<=10: her per-null raw == mine True; her clusters == my I-291R True; == my house cells True
+bank W<=9: her per-null raw == mine True; her clusters == my I-291R True; == my house cells True
+bank W<=10: her per-null raw == mine True; her clusters == my I-291R True; == my house cells False
+all W<=9: her per-null raw == mine True; her clusters == my I-291R True; == my house cells True
+all W<=10: her per-null raw == mine True; her clusters == my I-291R True; == my house cells True
