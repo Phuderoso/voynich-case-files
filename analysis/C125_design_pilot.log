@@ -1,0 +1,14 @@
+controls ['Latin Caesar', 'Spanish Cervantes']
+Latin Caesar | none | Df obs -2.0096 E 0.0281 rej 0/6 | Di obs -1.8908 | DiD obs -0.1188 sd 0.2369 E 0.0623 rej 0/6 | n {'F1': 68420, 'F2': 30897, 'I1': 70568, 'I2': 30674}
+Latin Caesar | DR0.35 | Df obs -1.5988 E -0.0517 rej 0/6 | Di obs -1.7206 | DiD obs 0.1218 sd 1.3473 E -0.0585 rej 0/6 | n {'F1': 68249, 'F2': 30522, 'I1': 70500, 'I2': 30436}
+Latin Caesar | DR0.75 | Df obs -2.4330 E 0.0724 rej 0/6 | Di obs -2.1875 | DiD obs -0.2455 sd 1.9669 E 0.1104 rej 0/6 | n {'F1': 68586, 'F2': 30376, 'I1': 69837, 'I2': 30753}
+Latin Caesar | DR1.0 | Df obs -2.1391 E 0.2351 rej 0/6 | Di obs -2.7158 | DiD obs 0.5767 sd 0.9455 E 0.2425 rej 0/6 | n {'F1': 68585, 'F2': 29481, 'I1': 70513, 'I2': 31277}
+Latin Caesar | copy1.0x4 | Df obs -1.2849 E 0.1824 rej 0/6 | Di obs -1.9020 | DiD obs 0.6171 sd 1.9702 E 0.2189 rej 0/6 | n {'F1': 68744, 'F2': 30552, 'I1': 70640, 'I2': 30719}
+Latin Caesar | copy1.0x99 | Df obs 0.6429 E 0.0409 rej 0/6 | Di obs 0.3077 | DiD obs 0.3352 sd 0.4363 E 0.0548 rej 0/6 | n {'F1': 67318, 'F2': 30446, 'I1': 69602, 'I2': 30276}
+Spanish Cervantes | none | Df obs -2.4217 E 0.1146 rej 0/6 | Di obs -3.3266 | DiD obs 0.9049 sd 0.9324 E 0.1305 rej 0/6 | n {'F1': 49742, 'F2': 23984, 'I1': 50886, 'I2': 24581}
+Spanish Cervantes | DR0.35 | Df obs -3.9325 E 0.0259 rej 0/6 | Di obs -3.6813 | DiD obs -0.2512 sd 0.8719 E 0.0308 rej 0/6 | n {'F1': 49210, 'F2': 24323, 'I1': 50216, 'I2': 24190}
+Spanish Cervantes | DR0.75 | Df obs -2.8671 E 0.4731 rej 0/6 | Di obs -3.4296 | DiD obs 0.5626 sd 1.5571 E 0.5311 rej 0/6 | n {'F1': 49392, 'F2': 23885, 'I1': 50627, 'I2': 24020}
+Spanish Cervantes | DR1.0 | Df obs -3.0636 E 0.6425 rej 1/6 | Di obs -2.5008 | DiD obs -0.5628 sd 0.6080 E 0.5922 rej 1/6 | n {'F1': 49220, 'F2': 23121, 'I1': 49961, 'I2': 23774}
+Spanish Cervantes | copy1.0x4 | Df obs -4.0137 E 0.0239 rej 0/6 | Di obs -4.2522 | DiD obs 0.2385 sd 1.5749 E 0.2370 rej 0/6 | n {'F1': 49013, 'F2': 23632, 'I1': 50492, 'I2': 24284}
+Spanish Cervantes | copy1.0x99 | Df obs -1.1473 E 0.3068 rej 0/6 | Di obs -1.8469 | DiD obs 0.6995 sd 0.4633 E 0.3171 rej 0/6 | n {'F1': 47393, 'F2': 22750, 'I1': 49155, 'I2': 22995}
+done 54.9s

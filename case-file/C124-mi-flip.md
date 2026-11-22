@@ -142,3 +142,10 @@ Das demais observações dela (c230, hashes de bank.bin/all.bin/alpha.bin, emend
 Artefatos: `analysis/C124_results.json`, `analysis/C124_run.log`, `analysis/C124_ckpt_SHA256SUMS.txt` (153 arquivos). Sementes 11840–11847 usadas; **próxima livre 11860** (11848–11859 used by the joint audit and the I-342 subsample).
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI did this work)
+
+
+## Adendo pós-veredito (2026-11-21, ~20:30 MST, piloto de desenho do C125)
+**EN.** A controls-only pilot for C125 (`analysis/C125_design_pilot2.json`, seed 11861) shows that the drift plant DR(1.0) used for λ_det here is **not a drift**: sorting a page by word type yields a nearest-neighbour profile (line-pair word-type overlap O(1) 0.046 / 0.149, O(2) 0.001 / 0.029, O(8) 0.000 / 0.000 on Caesar / Cervantes recut into the CB template), i.e. local clumping. The G-SPEC failure at λ_det = 1.0 therefore says that M_B cannot tell local clumping from adjacency, which is expected, not that it confuses slow drift with adjacency; at the genuine drift λ_obs = 0.75 (O(8)/O(1) 0.42 / 0.44) the gate held. **The verdict stays NOT TESTABLE (specificity) by the pre-registered rule; nothing is relabelled.** C125 restricts the drift ruler to admissible (long-range-keeping) plants. See [C125](C125-adjacency-profile.md).
+**PT.** O plant DR(1,0) ordena a página por tipo e produz partilha só entre vizinhos: é aglomeração local, não deriva. A falha do G-SPEC em λ_det = 1,0 não mostra que M_B confunde deriva lenta com adjacência. O veredito fica como está pela regra; o C125 corrige a régua.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI did this work)
