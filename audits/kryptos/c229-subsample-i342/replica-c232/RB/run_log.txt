@@ -1,0 +1,87 @@
+[adapter] set RB nulls 209625-209640 seeds {'primary': 11865, 'fresh': 11866, 'halfA': 11867, 'halfB': 11868, 'gate_P0': 11872, 'gate_P1': 11873, 'gate_THIN': 11874} tool sha 5185d776
+[primary] seed 11865 B 1000  76s  th [0.1925 0.0186 0.0103 0.0024]  p [0.002  0.002  0.1379 0.7872]
+[fresh] seed 11866 B 1000  80s  th [0.1923 0.0186 0.0118 0.0026]  p [0.002  0.002  0.1499 0.8172]
+[halfA] seed 11867 B 500  28s  th [0.1987 0.0181 0.0092 0.0022]  p [0.004  0.004  0.2156 0.7186]
+[halfB] seed 11868 B 500  28s  th [0.1853 0.0189 0.0128 0.0029]  p [0.004  0.004  0.1198 0.2475]
+[
+ {
+  "test": "T1 search-size slope b_A (STRAT) vs delta_b",
+  "theta": 0.1924951406532846,
+  "threshold": 0.02171472409516259,
+  "ci95": [
+   0.18558036707128456,
+   0.19810239413951283
+  ],
+  "p": 0.001998001998001998,
+  "holm_threshold": 0.0125,
+  "reject": true,
+  "distance": 6.2562500000000005,
+  "sides_primary_fresh_halfA_halfB": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "label": "robusto"
+ },
+ {
+  "test": "T2 length slope -c_B (STRAT) vs delta_c",
+  "theta": 0.01862065730334174,
+  "threshold": 0.01,
+  "ci95": [
+   0.01664400328251561,
+   0.019909268080508066
+  ],
+  "p": 0.001998001998001998,
+  "holm_threshold": 0.016666666666666666,
+  "reject": true,
+  "distance": 8.341666666666667,
+  "sides_primary_fresh_halfA_halfB": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "label": "robusto"
+ },
+ {
+  "test": "T3 composition effect on b: |b_A(POOL)-b_A(STRAT)| vs margin m_b",
+  "theta": 0.010337930826393393,
+  "threshold": 0.005428681023790648,
+  "ci95": [
+   0.004079900087665902,
+   0.018005986101449767
+  ],
+  "p": 0.13786213786213786,
+  "holm_threshold": 0.025,
+  "reject": false,
+  "distance": 5.514485514485514,
+  "sides_primary_fresh_halfA_halfB": [
+   1,
+   1,
+   1,
+   1
+  ],
+  "label": "robusto"
+ },
+ {
+  "test": "T4 composition effect on c: |c_B(POOL)-c_B(STRAT)| vs margin m_c",
+  "theta": 0.002449248880020252,
+  "threshold": 0.0025,
+  "ci95": [
+   0.0014263462760043424,
+   0.003916060889502677
+  ],
+  "p": 0.7872127872127872,
+  "holm_threshold": 0.05,
+  "reject": false,
+  "distance": 15.744255744255744,
+  "sides_primary_fresh_halfA_halfB": [
+   -1,
+   1,
+   -1,
+   1
+  ],
+  "label": "FRONTEIRA"
+ }
+]
