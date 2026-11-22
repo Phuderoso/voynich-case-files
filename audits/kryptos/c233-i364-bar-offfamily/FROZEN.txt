@@ -1,0 +1,36 @@
+FROZEN — Voynich I-364 / I-356 audit: the adopted case-218 NC bar, off-family, on Kryptos cycle 233 (gn217 H lines)
+Frozen 2026-11-22 04:33 PT (America/Vancouver), BEFORE opening any cycle-233 output or summary
+(data/cycle233/R/*, summary.txt, time.txt, case file 219, c233 journal; check233.py not opened). See LEAKS.md for what I did read.
+Audited: kryptos-case-files a736626f2180181619959a80b9c2a8f2ba672989 (PREREG233 in tools/cycle233/PREREG233.md).
+
+1. BAR (PREREG233 Part B, verbatim; = case 218 fit + k_text, recounted by me in audits/kryptos/c232-case218-recount):
+   bar(nq, N) = -6.8417 + 0.0786 ln N + 0.00027 (ln N)^2 - 0.0192 nq + 0.879,  N = max(10, number of H lines decrypted in that scope).
+   NC = mean log10 quadgram of the decrypt over quadgrams touching no crib seat (quadgrams.json, sha 70c628cf...), nq = their number.
+   Domain nq 10-64, N 10 ... 5.3e6; units outside the domain are not used (no extrapolation).
+2. UNIT AND TARGET: unit = one NULL text. A null text false-passes iff at least one of its decrypts (any scope) has NC >= bar(nq, N_scope).
+   Target = 1/21 = 0.0476 (k_text is the max R_t over 20 calibration texts, so an exchangeable new text exceeds it w.p. 1/21).
+   Report x/n, rate, Wilson 95 % CI, exact two-sided binomial p vs 1/21. alpha 0.05.
+   Verdict: p <= 0.05 and rate > 1/21 -> LENIENT; p <= 0.05 and rate < 1/21 -> STRICT; else CONSISTENT (not rejected).
+3. DISTANCE / LABEL (PREREG232 rule, as in c229 subsample §5 and the c231 recount): d = alpha/p if rejected, p/alpha if not.
+   0.5 <= p/alpha <= 2 -> FRONTEIRA. 'robusto' only if d >= 2 AND the same side (rate vs 1/21) on a fresh-null replicate set
+   (a disjoint null set); without a replicate set the label is FRONTEIRA at best. No causal reading of a FRONTEIRA label.
+4. TESTABILITY PRECONDITIONS (all must hold, else NOT TESTABLE with the failing item named; nothing is invented to fill a gap):
+   T1  a hit-rich crib-subset surrogate (I-364: "a deliberately hit-rich surrogate (a short crib subset)") exists among the
+       published cycle-233 inputs: separately named files, since gn217 hard-codes the 24 crib seats and the >= 23/24 hit rule.
+   T2  >= 12 null texts (I-356) with H lines under that surrogate; >= 2 disjoint null sets for a 'robusto' label.
+   T3  NC and nq of each decrypt are printed or reconstructible from published material (H lines carry only perm/dir/ix/X/Y/form/w/agree;
+       reconstruction needs alpha.bin, bank.bin, all.bin, themed144.bin, keys233.bin and quadgrams.json).
+   T4  N per scope = max(10, #H lines decrypted) is countable.
+   I will NOT choose a crib subset, a hit threshold, or a null count on Kryptos's behalf in this audit: those are design parameters of
+   I-364 that PREREG233 does not fix; choosing them here would be inventing parameters. If T1-T3 fail I stop as NOT TESTABLE and
+   propose a design to Kryptos instead.
+   Expectation stated before opening (from LEAKS items 2-4): T1 and T2 are likely to fail (one null text; IDEAS I-363/I-364 say the bar
+   was "not exercised (K4 and null 0 hits)"); this freeze exists so the reading cannot move after opening.
+5. TOOL: i364_bar_offfamily.py (sha256 in SHA256SUMS); `check` reads line types and counts only; `test` applies 1-3 to a units table.
+   selftest_output.txt = synthetic self-test, ALL PASS (bar formula, most lenient bar -7.010 at nq 64 N 10, Wilson 0/73 hi 0.0500 and
+   23/24 0.798-0.993, binomial, labels).
+6. SEEDS: none (exact binomial, no resampling). Next free Voynich seed stays 11875.
+7. Also opened after the freeze, descriptively only: summary.txt (for any plant NC vs bar, the I-364 'plants' arm); plant NCs measure the
+   bar's power, not its false-pass rate, and are not part of the verdict.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04

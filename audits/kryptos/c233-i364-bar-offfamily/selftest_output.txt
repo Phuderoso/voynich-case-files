@@ -1,0 +1,11 @@
+PASS bar formula verbatim
+PASS most lenient bar at (nq 64, N 10) = -7.010 (case 218 recount)
+PASS N floor 10
+PASS Wilson hi(0/73) = 0.0500
+PASS Wilson 23/24 = 0.798-0.993
+PASS binom 1/21 at target -> p 1
+PASS binom 10/21 rejects
+PASS p/alpha 1.6 -> FRONTEIRA
+PASS robusto needs same side on replicate
+PASS no replicate -> never robusto
+SELFTEST ALL PASS
