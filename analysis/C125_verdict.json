@@ -1,0 +1,72 @@
+{
+ "gates": {
+  "G-FPR": {
+   "rej": 2,
+   "n": 20,
+   "ok": true
+  },
+  "G-SPEC": {
+   "per_tau": {
+    "2": {
+     "admissible": [
+      "DX tau=2 lam=0.75"
+     ],
+     "ok": false
+    },
+    "4": {
+     "admissible": [
+      "DX tau=4 lam=0.35",
+      "DX tau=4 lam=0.5",
+      "DX tau=4 lam=0.75"
+     ],
+     "ok": false
+    },
+    "8": {
+     "admissible": [
+      "DX tau=8 lam=0.35",
+      "DX tau=8 lam=0.5",
+      "DX tau=8 lam=0.75"
+     ],
+     "ok": true
+    }
+   },
+   "DR_admissible": [
+    "DR tau=None lam=0.35",
+    "DR tau=None lam=0.5",
+    "DR tau=None lam=0.75"
+   ],
+   "DR_ok": false,
+   "ok": false
+  },
+  "G-POW": {
+   "step": "0.25x2",
+   "ok": true
+  }
+ },
+ "gates_pass": false,
+ "per_transcription": {
+  "ZL3b": {
+   "p_LL": 0.7226386806596702,
+   "p_LIN": 0.9265367316341829,
+   "level": 0.025,
+   "reject": false,
+   "reject_LIN": false,
+   "FRONTEIRA": false,
+   "robusto": true,
+   "p_LL_fresh": 0.7211394302848576,
+   "p_LL_W4": 0.671664167916042
+  },
+  "IT2a": {
+   "p_LL": 0.960519740129935,
+   "p_LIN": 0.9950024987506247,
+   "level": 0.025,
+   "reject": false,
+   "reject_LIN": false,
+   "FRONTEIRA": false,
+   "robusto": true,
+   "p_LL_fresh": 0.9610194902548725,
+   "p_LL_W4": 0.9435282358820589
+  }
+ },
+ "verdict": "NOT TESTABLE (gates)"
+}

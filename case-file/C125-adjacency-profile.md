@@ -90,3 +90,42 @@ Nem significado, nem língua, nem cópia provada por um escriba. Rejeitar diz qu
 **Ordem de execução (compromisso):** este commit → `gates` → `ms` → `verdict`, sem alterar a ferramenta; qualquer desvio vira adendo público.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI did this work)
+
+
+---
+
+## Resultados — execução 2026-11-22, 12:24–12:29 PT (America/Vancouver) · *Results*
+*EN: one run of the frozen tool (sha256 066ada50…, unchanged since prereg 393754b), order gates → ms → verdict as committed. **Verdict: NOT TESTABLE (gates) — G-SPEC fails.** Strong exponential drift at τ = 2 and τ = 4 lines (λ = 0.75) and the C124 linear drift DR(0.75) are read as adjacency by A_LL under N-WIN3 in 8/20, 8/20 and 7/20 control texts (gate ≤ 3/20). G-FPR passed at its edge (2/20) and G-POW passed (smallest copy rung 0.25×2 already 20/20). The manuscript numbers below were computed by the committed order but carry no confirmatory weight.*
+
+**Correção de carimbo:** o cabeçalho da revisão 1 diz "~12:45 PT"; o commit 393754b é de **12:24:09 PT** e os gates rodaram depois dele (12:24–12:26). Só o carimbo estava errado.
+
+**Mistura do N-WIN3 (gabarito CB ZL3b, só posições).** Dos pares nulos à distância 1, 49,5 % eram originalmente d = 1, 29,5 % d = 2, 11,1 % d = 3, 6,8 % d = 4; à distância 2: 30,6 / 26,5 / 22,2 / 14,0 % (d′ = 1..4); à distância 3: 11,9 / 23,2 / 33,3 / 21,4 %. O N-WIN3 preserva só cerca de um quarto de O(2) e um terço de O(3) — ponto 2 da Kryptos medido. N-WIN4 em `analysis/C125_gates.json`.
+
+| gate | resultado | regra | |
+|---|---|---|---|
+| G-FPR (controles sem plant) | 2/20 (Hebraico/IT2a p 0,0010; TS 11813/IT2a p 0,0120) | ≤ 2/20 | passa (na borda) |
+| G-SPEC τ = 2 | admissível só λ 0,75: **8/20** (Wilson 0,22–0,61) | ≤ 3/20 | **falha** |
+| G-SPEC τ = 4 | λ 0,35: 0/20 · λ 0,5: 1/20 · λ 0,75: **8/20** | ≤ 3/20 | **falha** |
+| G-SPEC τ = 8 | λ 0,35: 1/20 · 0,5: 3/20 · 0,75: 1/20 | ≤ 3/20 | passa |
+| G-SPEC DR | λ 0,35: 2/20 · 0,5: 3/20 · 0,75: **7/20** | ≤ 3/20 | **falha** |
+| G-POW (escada de cópia) | 0,25×2 (O(1)−O(2) plantado +0,048): 20/20; todos os degraus até 1,0×10: 20/20; 1,0×99: 20/20 (A_LIN 0/20) | degrau ≥ 18/20 | passa, degrau 0,25×2 |
+
+Especificidade por célula (A_LL / A_LIN / A_LL com N-WIN4, rejeições em 20; razão média O(8)/O(1); O(1)−O(2) do plant): DX τ2 λ.35 0/0/0, 0,93, +0,0017 (não admissível) · DX τ2 λ.5 1/1/2, 0,88, +0,0034 (não admissível) · DX τ2 λ.75 8/5/10, 0,77, +0,0081 · DX τ4 λ.35 0/0/0, 0,92 · DX τ4 λ.5 1/1/1, 0,84 · DX τ4 λ.75 8/4/9, 0,71, +0,0085 · DX τ8 λ.35 1/1/1, 0,92 · DX τ8 λ.5 3/2/3, 0,85 · DX τ8 λ.75 1/1/1, 0,69 · DR .35 2/1/2, 0,82 · DR .5 3/1/2, 0,73 · DR .75 7/3/3, 0,43, +0,0150. Nenhuma célula ficou abaixo de 0,25, então a leitura por faixas {0,10; 0,25; 0,50} só tem dados em ≥ 0,25 (DR 0,75 é a única entre 0,25 e 0,50, e falha).
+
+**Lições de método (não mudam o veredito).**
+1. O defeito é de **excesso de rejeição sob deriva forte e curta**: com τ ≤ 4 e λ 0,75 o perfil é curvo dentro da janela de 3 linhas, e o N-WIN3, que mistura d = 1 com d = 2..4 (tabela acima), cria um A_LL nulo menor que o observado. O nulo de janela não é "neutro à deriva" quando a deriva tem escala comparável à janela.
+2. Contra a expectativa (ponto 1 da Kryptos), **A_LIN foi mais específica que A_LL** nas três células que falharam (5, 4, 3 contra 8, 8, 7). O ajuste log-linear em d = 2..4 extrapola com o ruído das três distâncias; a correção do viés convexo não compensou a variância. Fica registrado, sem trocar a estatística primária depois de ver os dados.
+3. A regra de admissão "não crescente com tolerância 0,002" foi decidida pelo ruído nas células fracas (DX τ2 λ.35 e λ.5 têm razão 0,93/0,88, mas foram declaradas não admissíveis por pequenos dentes no perfil). Não muda o veredito (as células admissíveis com λ 0,75 falham), mas um ciclo futuro deve admitir por ajuste monotônico, não por diferenças brutas.
+
+**Números do manuscrito (descritivos, sem peso confirmatório).** CB, 73 páginas; ZL3b 2.099 linhas, pares n_d 2.026/1.953/1.881/1.810 (d = 1..4); IT2a 2.129 linhas, 2.056/1.983/1.910/1.839.
+
+| transcrição | O(1) | O(2) | O(3) | O(4) | A_LL (nulo: média ± sd) | p A_LL | A_LIN | p A_LIN | p N-WIN4 | p réplica fresca |
+|---|---|---|---|---|---|---|---|---|---|---|
+| ZL3b | 0,0662 | 0,0647 | 0,0576 | 0,0573 | −0,0013 (+0,0004 ± 0,0028) | 0,723 | −0,0055 | 0,927 | 0,672 | 0,721 |
+| IT2a | 0,0655 | 0,0658 | 0,0567 | 0,0556 | −0,0047 (+0,0005 ± 0,0029) | 0,961 | −0,0094 | 0,995 | 0,944 | 0,961 |
+
+Leitura honesta e limitada: o teste falho erra para o lado de **rejeitar demais**, e mesmo assim não rejeita no manuscrito; O(1) − O(2) é +0,0015 (ZL3b) e −0,0003 (IT2a), abaixo do +0,004 médio dos controles sem plant (texto corrido) e muito abaixo do menor degrau de cópia calibrado (+0,048, poder 20/20). Isso é **descritivo**: pela regra congelada o veredito é NÃO TESTÁVEL e não "DERIVA-COMPATÍVEL". Nenhum O(d) com d ≥ 5 é usado; ficam no JSON. Nada aqui é sobre significado, língua ou escribas.
+
+**Artefatos.** `analysis/C125_gates.json`/`.log`, `analysis/C125_ms.json`/`.log`, `analysis/C125_verdict.json`/`.log`, `analysis/C125_SHA256SUMS`. Sementes usadas 11875–11878; 11879–11882 ficam reservadas e não usadas; **próxima livre 11883**.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI did this work)
