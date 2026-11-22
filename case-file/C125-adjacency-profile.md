@@ -56,6 +56,37 @@ Por página e réplica: janelas consecutivas de 3 linhas com fase aleatória φ 
 Nem significado, nem língua, nem cópia provada por um escriba. Rejeitar diz que linhas vizinhas partilham palavras além da extrapolação suave do perfil; não rejeitar com régua grossa não é evidência de deriva.
 
 ## 8. Estado
-Rascunho enviado à Kryptos para revisão cega. A ferramenta confirmatória (`tools/c125_profile.py`) só será escrita e congelada (sha256 publicado) depois da revisão; nenhum número do manuscrito antes disso.
+(rev 0) Rascunho enviado à Kryptos para revisão cega; revisão recebida e incorporada na revisão 1 abaixo, que substitui as seções 3–6 onde divergem. A ferramenta confirmatória (`tools/c125_profile.py`) só será escrita e congelada (sha256 publicado) depois da revisão; nenhum número do manuscrito antes disso.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI did this work)
+
+
+---
+
+## Revisão 1 — PRÉ-REGISTRO CONGELADO (2026-11-22, ~12:45 PT), com a revisão cega da Kryptos (20:26 PT de 21/11) incorporada
+*EN: rev 1 freezes tool `tools/c125_profile.py` (sha256 066ada50b324ace05aaf2c9a2bae2fd9cf3c815c355aadc2ee176ecac9285d01, selftest ALL PASS) BEFORE any gate or manuscript number. Kryptos's four points are built in as listed below. No C125 statistic of the manuscript or of any gate has been computed at the time of this commit.*
+
+**Revisão da Kryptos → mudanças.**
+1. *Extrapolação:* deriva convexa (O(d) ∝ e^(−d/τ)) faz 2·O(2)−O(3) subestimar O(1), logo A* > 0 sob deriva pura (o selftest confirma: perfil exponencial exato dá A_LIN = +0,0115 e A_LL = 0). **Primária: A_LL** = O(1) − exp(â + b̂), ajuste log-linear de O(d) em d = 2, 3, 4 ponderado pelo número de pares n_d, extrapolado a d = 1. **Sensibilidade: A_LIN** = O(1) − [2·O(2) − O(3)]. Se A_LL e A_LIN discordam do lado (rejeita/não rejeita ao mesmo nível) → FRONTEIRA.
+2. *Janela:* **N-WIN3 primária**, **N-WIN4 sensibilidade** (descritiva), janela 2 descartada. O quanto N-WIN3/N-WIN4 preserva de O(2) e O(3) é impresso como matriz de mistura (fração dos pares nulos à distância d que eram originalmente à distância d′, d = 1..3, d′ = 1..5) nos gabaritos CB, só posições.
+3. *Admissão 0,25:* plant de deriva é admissível se o perfil médio é não crescente (tolerância 0,002) e O(8)/O(1) ≥ 0,25 em ≥ 10/20 dos textos do plant. Justificativa só em controles. Imprimo a razão média O(8)/O(1) de cada célula e a especificidade de todas as células; as células abaixo de 0,25 ficam descritivas (estresse) e a leitura por faixas {0,10; 0,25; 0,50} é feita a partir dessa tabela.
+4. *DR(1,0)* é ordenação por tipo, não deriva (adendo do C124 mantido); DR fica só em λ ∈ {0,35; 0,5; 0,75}.
+
+**Plants de deriva.** (a) **DX(τ, λ)**, decaimento exponencial: por página, latente AR(1) por linha com ρ = e^(−1/τ), τ ∈ {2, 4, 8} linhas; cada tipo recebe u ~ N(0,1), cada ocorrência a chave λ·u + √(1−λ²)·ruído, λ ∈ {0,35; 0,5; 0,75}; as linhas, em ordem do latente, são preenchidas com as ocorrências em ordem da chave, mantendo os comprimentos. (b) **DR(λ)** do C124, λ ∈ {0,35; 0,5; 0,75}.
+
+**Textos dos gates.** Os 10 controles do C121 (naturais + Hebraico + 2 geradores TS) recortados nos gabaritos CB de ZL3b e IT2a (só contagens de palavras por linha): 20 textos por célula.
+
+**Gates (todos com A_LL, N-WIN3, R = 1.000, α_g = 0,025).**
+- **G-FPR:** controles sem plant (deriva natural do texto corrido): ≤ 2/20 rejeições.
+- **G-SPEC:** para **cada** τ ∈ {2, 4, 8} tem de existir ≥ 1 célula DX admissível, e **toda** célula DX admissível ≤ 3/20 rejeições; todas as DR admissíveis ≤ 3/20. Se algum τ não tem célula admissível, G-SPEC não fica certificado (falha). Wilson 95 % impresso; A_LIN e N-WIN4 impressos ao lado, descritivos.
+- **G-POW:** escada de cópia C121/C124; degrau = menor dose com ≥ 18/20; tem de existir. Impressos para cada degrau: poder (A_LL e A_LIN) e O(1)−O(2) plantado médio, para ler o poder de efeito pequeno (ponto 3 da Kryptos no C106).
+
+**Teste do manuscrito.** CB de ZL3b (`data/ZL3b-n.txt` sha256 bf5b6d4a…) e IT2a (`data/IT2a-n.txt` sha256 7f27a8b0…), parser/página do C123; 2 testes, Holm 0,05 (α/2 no menor p, α no outro só se o primeiro rejeitar), R = 2.000, p = (1 + #{nulo ≥ obs})/(R + 1) unilateral. Por transcrição: **FRONTEIRA** se 0,5 ≤ p/nível ≤ 2 (faixa do PREREG232) ou se A_LL e A_LIN discordam; **robusto** só se fora da faixa e com o mesmo lado e fora da faixa numa réplica de nulo fresca (semente 11878).
+
+**Veredito (mecânico, `python3 tools/c125_profile.py verdict`).** Qualquer gate falha → **NÃO TESTÁVEL (gates)**. Senão: 2 rejeições não-FRONTEIRA → **ADJACÊNCIA**; 1 → **PARCIAL**; 0 e alguma FRONTEIRA → **FRONTEIRA**; 0 e nenhuma → **DERIVA-COMPATÍVEL** se o O(1)−O(2) plantado do degrau ≤ 2× o de DR(0,75), senão **NÃO TESTÁVEL (régua grossa)**.
+
+**Sementes.** 11875 gates; 11876 manuscrito N-WIN3; 11877 manuscrito N-WIN4; 11878 réplica fresca N-WIN3. Reservadas 11875–11882; **próxima livre 11883**. A reserva 11862–11869 da rev 0 é anulada (sobrepunha sementes já gastas pelo réplica do I-342).
+
+**Ordem de execução (compromisso):** este commit → `gates` → `ms` → `verdict`, sem alterar a ferramenta; qualquer desvio vira adendo público.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI did this work)
