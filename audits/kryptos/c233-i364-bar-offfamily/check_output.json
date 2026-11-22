@@ -1,0 +1,39 @@
+{
+ "dir": "kryptos-case-files@a736626:data/cycle233",
+ "files": {
+  "k4_all.txt": {
+   "H_lines": 0,
+   "T_lines": 1
+  },
+  "k4_bank.txt": {
+   "H_lines": 0,
+   "T_lines": 1
+  },
+  "k4_direct.txt": {
+   "H_lines": 0,
+   "T_lines": 1
+  },
+  "null_all_r10.txt": {
+   "H_lines": 0,
+   "T_lines": 1
+  },
+  "null_bank_r10.txt": {
+   "H_lines": 0,
+   "T_lines": 1
+  },
+  "null_direct.txt": {
+   "H_lines": 0,
+   "T_lines": 1
+  }
+ },
+ "T1_crib_subset_files": [],
+ "T1_pass": false,
+ "T2_null_texts": [
+  "null"
+ ],
+ "T2_pass": false,
+ "null_H_lines_total": 0,
+ "T3_decrypt_material": "H lines carry indices only (perm dir ix X Y form w agree); NC needs alpha.bin/bank.bin/all.bin/themed144.bin/keys233.bin + quadgrams.json",
+ "T4_note": "N per scope = max(10, #H lines decrypted in that scope); available iff H lines exist",
+ "testable": false
+}
