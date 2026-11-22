@@ -1,0 +1,9 @@
+{
+ "G0_equal": true,
+ "gates_equal": true,
+ "rows_equal": true,
+ "summary_equal": true,
+ "db_equal": true,
+ "pass": true,
+ "seconds": 101.6
+}
