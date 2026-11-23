@@ -1,0 +1,25 @@
+n=5 lam=1.0 cos ref=caesar    eval=cervantes | G_std mean NEST -1.08 SHUF +2.81 SING +3.64 | SING->SUP 2/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 15/20 SHUF->EXC 2/20 | true-rank 0.221
+n=5 lam=1.0 cos ref=cervantes eval=caesar    | G_std mean NEST -0.81 SHUF +2.79 SING +4.39 | SING->SUP 2/20 NEST->SUP 0/20 SHUF->SUP 1/20 NEST->EXC 14/20 SHUF->EXC 2/20 | true-rank 0.248
+n=5 lam=1.0 jac ref=caesar    eval=cervantes | G_std mean NEST -4.76 SHUF +2.47 SING +5.52 | SING->SUP 0/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 20/20 SHUF->EXC 9/20 | true-rank 0.08
+n=5 lam=1.0 jac ref=cervantes eval=caesar    | G_std mean NEST -2.86 SHUF +2.54 SING +4.67 | SING->SUP 1/20 NEST->SUP 0/20 SHUF->SUP 1/20 NEST->EXC 19/20 SHUF->EXC 3/20 | true-rank 0.111
+n=5 lam=0.5 cos ref=caesar    eval=cervantes | G_std mean NEST +0.99 SHUF +2.15 SING +3.47 | SING->SUP 0/20 NEST->SUP 0/20 SHUF->SUP 1/20 NEST->EXC 5/20 SHUF->EXC 1/20 | true-rank 0.473
+n=5 lam=0.5 cos ref=cervantes eval=caesar    | G_std mean NEST +1.28 SHUF +2.87 SING +2.95 | SING->SUP 1/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 0/20 SHUF->EXC 0/20 | true-rank 0.411
+n=5 lam=0.5 jac ref=caesar    eval=cervantes | G_std mean NEST +0.84 SHUF +2.21 SING +3.19 | SING->SUP 1/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 8/20 SHUF->EXC 1/20 | true-rank 0.281
+n=5 lam=0.5 jac ref=cervantes eval=caesar    | G_std mean NEST +0.89 SHUF +2.43 SING +2.66 | SING->SUP 0/20 NEST->SUP 0/20 SHUF->SUP 2/20 NEST->EXC 9/20 SHUF->EXC 1/20 | true-rank 0.413
+n=5 lam=0.25 cos ref=caesar    eval=cervantes | G_std mean NEST +2.73 SHUF +2.02 SING +2.69 | SING->SUP 0/20 NEST->SUP 1/20 SHUF->SUP 0/20 NEST->EXC 0/20 SHUF->EXC 0/20 | true-rank 0.476
+n=5 lam=0.25 cos ref=cervantes eval=caesar    | G_std mean NEST +2.50 SHUF +2.33 SING +3.01 | SING->SUP 1/20 NEST->SUP 1/20 SHUF->SUP 0/20 NEST->EXC 0/20 SHUF->EXC 0/20 | true-rank 0.543
+n=5 lam=0.25 jac ref=caesar    eval=cervantes | G_std mean NEST +2.13 SHUF +2.19 SING +2.61 | SING->SUP 2/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 2/20 SHUF->EXC 1/20 | true-rank 0.314
+n=5 lam=0.25 jac ref=cervantes eval=caesar    | G_std mean NEST +2.35 SHUF +2.64 SING +2.68 | SING->SUP 0/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 1/20 SHUF->EXC 0/20 | true-rank 0.395
+n=6 lam=1.0 cos ref=caesar    eval=cervantes | G_std mean NEST +0.21 SHUF +2.74 SING +5.18 | SING->SUP 5/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 13/20 SHUF->EXC 5/20 | true-rank 0.134
+n=6 lam=1.0 cos ref=cervantes eval=caesar    | G_std mean NEST -1.38 SHUF +1.27 SING +4.30 | SING->SUP 1/20 NEST->SUP 0/20 SHUF->SUP 1/20 NEST->EXC 16/20 SHUF->EXC 7/20 | true-rank 0.108
+n=6 lam=1.0 jac ref=caesar    eval=cervantes | G_std mean NEST -3.79 SHUF +3.47 SING +6.22 | SING->SUP 0/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 20/20 SHUF->EXC 7/20 | true-rank 0.068
+n=6 lam=1.0 jac ref=cervantes eval=caesar    | G_std mean NEST -4.18 SHUF +3.36 SING +6.18 | SING->SUP 7/20 NEST->SUP 0/20 SHUF->SUP 1/20 NEST->EXC 20/20 SHUF->EXC 3/20 | true-rank 0.059
+n=6 lam=0.5 cos ref=caesar    eval=cervantes | G_std mean NEST +2.16 SHUF +2.21 SING +2.90 | SING->SUP 1/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 1/20 SHUF->EXC 0/20 | true-rank 0.391
+n=6 lam=0.5 cos ref=cervantes eval=caesar    | G_std mean NEST +0.89 SHUF +3.10 SING +3.57 | SING->SUP 0/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 3/20 SHUF->EXC 0/20 | true-rank 0.388
+n=6 lam=0.5 jac ref=caesar    eval=cervantes | G_std mean NEST -0.00 SHUF +2.27 SING +3.08 | SING->SUP 0/20 NEST->SUP 0/20 SHUF->SUP 1/20 NEST->EXC 12/20 SHUF->EXC 3/20 | true-rank 0.285
+n=6 lam=0.5 jac ref=cervantes eval=caesar    | G_std mean NEST +1.18 SHUF +3.02 SING +3.48 | SING->SUP 0/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 5/20 SHUF->EXC 2/20 | true-rank 0.319
+n=6 lam=0.25 cos ref=caesar    eval=cervantes | G_std mean NEST +2.66 SHUF +2.67 SING +3.73 | SING->SUP 1/20 NEST->SUP 1/20 SHUF->SUP 1/20 NEST->EXC 0/20 SHUF->EXC 0/20 | true-rank 0.343
+n=6 lam=0.25 cos ref=cervantes eval=caesar    | G_std mean NEST +3.18 SHUF +2.15 SING +2.53 | SING->SUP 1/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 1/20 SHUF->EXC 0/20 | true-rank 0.45
+n=6 lam=0.25 jac ref=caesar    eval=cervantes | G_std mean NEST +2.46 SHUF +2.14 SING +3.08 | SING->SUP 0/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 1/20 SHUF->EXC 2/20 | true-rank 0.409
+n=6 lam=0.25 jac ref=cervantes eval=caesar    | G_std mean NEST +2.18 SHUF +2.77 SING +3.37 | SING->SUP 0/20 NEST->SUP 0/20 SHUF->SUP 0/20 NEST->EXC 0/20 SHUF->EXC 1/20 | true-rank 0.406
+elapsed 50.9 s
