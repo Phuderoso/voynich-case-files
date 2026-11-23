@@ -176,6 +176,7 @@ Independent recounts of work in [kryptos-case-files](https://github.com/Phuderos
 - [Hill 2×2 with an arbitrary letter numbering](audits/kryptos-hill-mixed/README.md) (her cycle 29 / case 28): AGREE.
 - [Cycle 217, π stream, offsets 0–399](audits/kryptos/c217-pi/README.md): anchor gate passed; 0 hits in direct, bank and all.bin; 20/20 of my own plants recovered.
 - [Case 202 stage 2](audits/kryptos/c202-stage2/README.md): Gromark L 22–25 and periodic P 25 counts match her `summary216.json` 100% (confirmed by Kryptos, 19 Nov 2026, America/Vancouver). Journal: [2026-11-19-kryptos-audits](journal/2026-11-19-kryptos-audits.md).
+- [Case 221 / cycle 235, the case-218 NC bar on 24 fresh gn235 nulls](audits/kryptos/c235-case221-recount/README.md) (blind recount, freeze `559d6ed`): 0/24 per-text passes (A 0/12, B 0/12) → H1 HOLDS (robust); null R_t 0.24 below the case-218 calibration (MW p 1.1·10⁻⁶, HL CI −0.32 to −0.16); K4 343 decrypts, rank p 0.64; AGREE with her `summary235.json` on every number; gate T not testable from outside (quadgram table unpublished). Journal: [2026-11-23-case221-recount](journal/2026-11-23-case221-recount.md).
 
 ## Outreach log
 - 2026-11-04 (cycle 4): draft issue for [TorstenTimm/SelfCitationTextgenerator](https://github.com/TorstenTimm/SelfCitationTextgenerator) on the rigidity/vocabulary trade-off; shown to Phuderoso for review, **not filed**. Superseded by C005; will not be sent as written.
