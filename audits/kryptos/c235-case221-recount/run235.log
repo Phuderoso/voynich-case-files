@@ -1,0 +1,162 @@
+# run 2026-11-23 04:31:59 MST python Python 3.13.5 script sha 311083f2d4dc80ab
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/k4_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/k4_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/k4_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209647_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209647_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209647_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209648_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209648_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209648_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209649_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209649_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209649_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209650_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209650_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209650_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209651_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209651_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209651_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209652_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209652_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209652_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209653_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209653_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209653_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209654_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209654_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209654_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209655_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209655_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209655_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209656_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209656_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209656_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209657_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209657_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209657_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209658_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209658_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209658_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209659_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209659_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209659_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209660_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209660_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209660_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209661_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209661_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209661_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209662_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209662_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209662_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209663_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209663_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209663_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209664_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209664_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209664_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209665_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209665_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209665_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209666_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209666_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209666_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209667_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209667_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209667_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209668_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209668_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209668_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209669_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209669_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209669_all_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209670_direct.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209670_bank_r10.txt: args scope/stride/windows/table
+CHECK FAIL /workspace/voynich/kcf-read/data/cycle235/R/null209670_all_r10.txt: args scope/stride/windows/table
+{
+ "H1": {
+  "passes": 0,
+  "of": 24,
+  "setA": 0,
+  "setB": 0,
+  "wilson95": [
+   1.3877787807814457e-17,
+   0.13797620467498017
+  ],
+  "verdict": "HOLDS",
+  "passes_rounded": 0,
+  "max_margin": -0.46227419217580223
+ },
+ "H2": {
+  "null_R_median": 0.1666989433346786,
+  "cal_R_median": 0.38311006710006135,
+  "U": 33.0,
+  "n_null": 24,
+  "n_cal": 20,
+  "mw_p_exact": 6.00622581180799e-08,
+  "mw_p_normal_cc": 1.1316088337189428e-06,
+  "HL_shift": -0.23881117221901338,
+  "boot_ci95": [
+   -0.3178182999300052,
+   -0.16351885374952513
+  ],
+  "boot_seed": 11899,
+  "nboot": 10000,
+  "scipy_crosscheck": {
+   "version": "1.18.1",
+   "p_exact": 6.006225811807988e-08,
+   "p_asym": 1.1316088337189396e-06
+  },
+  "reading": "p<0.05 with negative shift => bar conservative in this family by |shift| (power note)"
+ },
+ "K4": {
+  "N": 343,
+  "per_scope": {
+   "direct": 180,
+   "bank_r10": 74,
+   "all_r10": 89
+  },
+  "max": -7.487,
+  "bar": -6.724569136631808,
+  "R": 0.11646547959497955,
+  "passes": false,
+  "rank_p": 0.64
+ }
+}
+checks 78396 failed 75 tool_shas ['4ca8d7d83b8c8297ae4ba93a8c5628d44b857080e7d89b1df5b08a2b7fbc142c']
+K4 {'direct': 180, 'bank_r10': 74, 'all_r10': 89} 343 -7.487 -6.7246 0.1165 False
+null209647 {'direct': 273, 'bank_r10': 74, 'all_r10': 79} 426 -7.4979 -6.7068 0.0878 False
+null209648 {'direct': 349, 'bank_r10': 72, 'all_r10': 65} 486 -7.3137 -6.696 0.2612 False
+null209649 {'direct': 1024, 'bank_r10': 63, 'all_r10': 69} 1156 -7.3386 -6.6248 0.1651 False
+null209650 {'direct': 330, 'bank_r10': 96, 'all_r10': 87} 513 -7.2649 -6.6916 0.3056 False
+null209651 {'direct': 316, 'bank_r10': 47, 'all_r10': 90} 453 -7.4744 -6.7018 0.1063 False
+null209652 {'direct': 397, 'bank_r10': 94, 'all_r10': 64} 555 -7.4361 -6.6851 0.1279 False
+null209653 {'direct': 307, 'bank_r10': 91, 'all_r10': 89} 487 -7.2813 -6.6959 0.2935 False
+null209654 {'direct': 351, 'bank_r10': 93, 'all_r10': 78} 522 -7.3234 -6.6902 0.2457 False
+null209655 {'direct': 374, 'bank_r10': 70, 'all_r10': 72} 516 -7.3779 -6.6911 0.1921 False
+null209656 {'direct': 183, 'bank_r10': 53, 'all_r10': 60} 296 -7.4472 -6.7366 0.1683 False
+null209657 {'direct': 259, 'bank_r10': 92, 'all_r10': 86} 437 -7.5354 -6.7047 0.0482 False
+null209658 {'direct': 244, 'bank_r10': 69, 'all_r10': 81} 394 -7.1755 -6.7132 0.4166 False
+null209659 {'direct': 278, 'bank_r10': 65, 'all_r10': 98} 441 -7.4828 -6.704 0.1001 False
+null209660 {'direct': 863, 'bank_r10': 44, 'all_r10': 81} 988 -7.4284 -6.6377 0.0882 False
+null209661 {'direct': 435, 'bank_r10': 60, 'all_r10': 82} 577 -7.3544 -6.682 0.2065 False
+null209662 {'direct': 350, 'bank_r10': 100, 'all_r10': 77} 527 -7.5716 -6.6894 -0.0033 False
+null209663 {'direct': 482, 'bank_r10': 48, 'all_r10': 92} 622 -7.4746 -6.6758 0.0801 False
+null209664 {'direct': 364, 'bank_r10': 103, 'all_r10': 91} 558 -7.4692 -6.6847 0.0944 False
+null209665 {'direct': 405, 'bank_r10': 66, 'all_r10': 85} 556 -7.4546 -6.685 0.1093 False
+null209666 {'direct': 173, 'bank_r10': 63, 'all_r10': 78} 314 -7.4704 -6.7318 0.1403 False
+null209667 {'direct': 156, 'bank_r10': 97, 'all_r10': 87} 340 -7.3432 -6.7253 0.261 False
+null209668 {'direct': 312, 'bank_r10': 51, 'all_r10': 64} 427 -7.2437 -6.7066 0.3418 False
+null209669 {'direct': 315, 'bank_r10': 81, 'all_r10': 60} 456 -7.2831 -6.7013 0.2971 False
+null209670 {'direct': 392, 'bank_r10': 54, 'all_r10': 80} 526 -7.3417 -6.6895 0.2267 False
+exit 0
+
+# POST-RUN NOTE (added after the run, before unblinding, 04:34 PT): the 75 "args scope/stride/windows/table" failures
+# (one per file) are a bug in my frozen check, not a data defect: I indexed the args list off by one and expected
+# the direct scope to name alpha.bin first, while the direct files print "x alpha.bin alpha.bin" (no permutation file, perm=-1).
+# Corrected post-hoc tally of the args tails over all 75 files (shell: grep '^# seed' | sed | sort | uniq -c):
+#   25  all.bin  themed144.bin themed144.bin keys233.bin 10 0 qg.bin 1000000
+#   25  bank.bin themed144.bin themed144.bin keys233.bin 10 0 qg.bin 1000000
+#   25  x alpha.bin alpha.bin keys233.bin 1 0 qg.bin 1000000
+# i.e. scope / stride 10 vs 1 / keys233.bin / qg.bin are consistent with PREREG235 in every file. All other 78,321 checks passed.
