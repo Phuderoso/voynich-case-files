@@ -1,0 +1,105 @@
+FROZEN — Voynich blind recount of Kryptos case 221 (cycle 235, I-377)
+Frozen 2026-11-23 04:32 PT, BEFORE any statistic was computed by this audit.
+Source: github.com/Phuderoso/kryptos-case-files origin/main 20f9948 (read-only clone).
+Script: recount235.py sha256 311083f2d4dc80ab729d5953a8c81a00bf23b2207eda35b6312e99581a167778 (stdlib; scipy 1.18.1 is installed and is used only as a cross-check of the MW p).
+
+RULE (my reading of PREREG235, fixed here):
+- Unit = text (K4 or null seed), pooled over scopes direct, bank_r10, all_r10: N = number of H lines, max = best nc.
+- fit(nq,N) = b0 + b1 lnN + b2 (lnN)^2 + c nq with the full-precision beta of summary232.json["fit"]["beta"];
+  bar = fit + k_text, k_text = summary232.json["bar"]["k_text"] (0.87890) = max of the 20 calibration R_t (PREREG232 l.38).
+  Sensitivity: bar with the rounded constants (-6.8417, 0.0786, 0.00027, -0.0192, +0.879) printed beside.
+- Per-text pass iff N >= 10 and max >= bar(64,N). H1 HOLDS iff <= 3/24 passes and sets A (209647-209658) and B (209659-209670)
+  each <= 2/12; FAILS (too permissive) iff >= 4/24; else FRONTEIRA. Wilson 95% (z 1.95996).
+- H2: null R_t = max - fit(64,N) (fit WITHOUT +k_text, as PREREG232 defines R_t = max_U - fit) vs the 20 summary232 bar.Rcal values:
+  two-sided Mann-Whitney (exact DP + normal with continuity correction), Hodges-Lehmann shift = median of (null - cal) pairwise
+  differences, percentile bootstrap 95% CI, 10,000 resamples of both groups, random.Random(11899).
+  Caveat: case 218 R_t is max over single-text units; here the unit pools 3 scope files (as PREREG235 says).
+- K4 arm: N, max, R, pass, rank p = (1 + #nulls with R_t >= R_K4)/25.
+- Internal checks per file: scope/text/tool/seed/args header; input sha256 recomputed from data/k4.txt (newline stripped) and
+  random.Random(seed).shuffle(list(K4)); every H line agree8=8, pt length 97, EAST at 21-24 and BERL at 63-66, 8/8 seats recount,
+  agree24 recount against EASTNORTHEAST@21-33 + BERLINCLOCK@63-73; Y nq=64, Y n == #H, Y max == max nc; T hits8 == #H,
+  hits24ge23 == 0, windows=4172. All 76 R files were also checked against her data/cycle235/SHA256SUMS: 76/76 match.
+- Gate T: NOT TESTABLE (qg.bin / quadgrams.json unpublished); nc taken as printed.
+
+INPUTS (sha256, paths relative to the kryptos-case-files root):
+7c9b8ff3f9ae202dae2a90eae5074b12700a98ad4dd1ce61b28d8f0578197ad3  tools/cycle235/PREREG235.md
+e2255c6ca48f69327a07b0b6aecc0ddac74882c576d2225ef9b7931fdc1439a4  data/cycle232/summary232.json
+2797de1451ab97118211735dcef370fc5acd70829f164aa043c47cbf40f0a5a3  data/k4.txt
+7752737d570f1f6fdca1e44987d35850f9372dde4e0782a09b6ab5df3317a499  data/cycle235/R/k4_all_r10.txt
+f1e5c28d497f32a8ab363052a8d185c2a34a599bf708886ac05b4106add3a548  data/cycle235/R/k4_bank_r10.txt
+2f8aefb886d2903a8fc4c862daed3dbfcb03d30ed51a0fcbda5279a1f24e4694  data/cycle235/R/k4_direct.txt
+739db3acefcd3752942d11173db6f649d84e13ebaffee6d5ad04936f09827551  data/cycle235/R/null209647_all_r10.txt
+816cd92d88ab2862ce626d48acfcbfd6c81b287f6cb6b9dc5af36490cf862180  data/cycle235/R/null209647_bank_r10.txt
+804213f20a086ec4479dc23431278eb5c4df4ee37a5f04b9f1bc8949b7adfacc  data/cycle235/R/null209647_direct.txt
+719cc1b710dec49df0b18236ce0f0b51bb60c5e3c6f170fb12dc7b8bcdfdd258  data/cycle235/R/null209648_all_r10.txt
+7f2a30776e092769eb0daada4e33f8f784485bafcd39a10484bb33064f190020  data/cycle235/R/null209648_bank_r10.txt
+f58cb72b38dee4538f9f140c8f3222542ea0ac0268ff3242d8f49c7b9394c6f7  data/cycle235/R/null209648_direct.txt
+5b168c640ec7d977bcfd3d7e554555584c833918cb6436616027499f391e601f  data/cycle235/R/null209649_all_r10.txt
+01b932e5ca96d8c7a3f02028c5a8153b4b89da7adc15921b15dfa56885880d33  data/cycle235/R/null209649_bank_r10.txt
+961d5308ba240b88bc0134964018cd8eff375e1bab0c677994a115d061332899  data/cycle235/R/null209649_direct.txt
+781ac2c0838d7386a23d8bd47ad162300065a04d85905847bff7b23b0617e755  data/cycle235/R/null209650_all_r10.txt
+1c7c70badf4583c44d91a5ec091655dced32d419fe3dfd1b2d7ae8c6098d24ed  data/cycle235/R/null209650_bank_r10.txt
+ae7bb01ea044a5ed1269d2ca5fdde76b4e9c3588f2f1cfbd3a4ee53f6eb7d002  data/cycle235/R/null209650_direct.txt
+c6ad0aa59f7e5ba7c597c7f2251cf7da45c936ac49367f564147514591910cb5  data/cycle235/R/null209651_all_r10.txt
+cd9dc5449512e96a98b129c618c8f7661cb194c7f8aed3fbf0d7a0220ebb6fc0  data/cycle235/R/null209651_bank_r10.txt
+f962d54be06165bc990c81370a6365f31ccfc37f46e89f3b2129c5f8a3086be4  data/cycle235/R/null209651_direct.txt
+f01ee5d5ef9548d7d301e4115480169351a0346732682de00368ef580608024d  data/cycle235/R/null209652_all_r10.txt
+ad5a68181fa9953efc38c5d95d475d725387b5af73b439f8cd9638d4b009ba84  data/cycle235/R/null209652_bank_r10.txt
+34ee6c82315bc179c2634be537b496b3c4f56b87d8633cbd7a610cf54d573b30  data/cycle235/R/null209652_direct.txt
+c4f2b5cbe5285d176bb5ce1832067e6afcd1c137939e5e8d218d23fb11a24482  data/cycle235/R/null209653_all_r10.txt
+9f074a4bd18f3b8ad9f0df5cdfd521d16c01b81b0af06ee0899a61687d812209  data/cycle235/R/null209653_bank_r10.txt
+663d5afd684dc27926ea882c820ae2eb7bdc5ea3c3ea56538f53d207cdb78b00  data/cycle235/R/null209653_direct.txt
+4cce34c9af279b4210d5f92de3f74ac6dd2873c8ee94401ae78072d7289c097e  data/cycle235/R/null209654_all_r10.txt
+3f3bc27fbfe93c7f3bcad3f3bba374882738075edb3a19796a7d0ea323f075bc  data/cycle235/R/null209654_bank_r10.txt
+6f84bbc2f294ca613c40f2a456f5e6727463a58c00fcb7d2a3c9f08d0ccd2f14  data/cycle235/R/null209654_direct.txt
+17b4d270971450fd90de4971dca66aabf920bc289104a5f6fcd3716fb22e4422  data/cycle235/R/null209655_all_r10.txt
+77994e1f7a0f5b77d873fe40e1f3f6902b2d89f886ce3b3d44ef8831cef7cdf7  data/cycle235/R/null209655_bank_r10.txt
+428cd5419d40fd83d494558c28c37e5d7fcbff28ea8657f1810459986b4f381b  data/cycle235/R/null209655_direct.txt
+bb705e719cd86d5876440b1eb8b34fc246881c456c4bfaa6485edb4efa5a8c23  data/cycle235/R/null209656_all_r10.txt
+9d4874465e8c67129bb383ee70c539972001b71779698c74e4626137719a0f2f  data/cycle235/R/null209656_bank_r10.txt
+3be368b7547e4a1f5abe974c777d382616f7a70258e2daaa853ff625bb9c0160  data/cycle235/R/null209656_direct.txt
+c4e4a36cf3ad685ebcab11483151bc4fb60c230d5ab7817f9006afdd235b90ba  data/cycle235/R/null209657_all_r10.txt
+952e9c27917e332fa051b7749d1f0518332614d9a761b89d8cd8beab7d883b88  data/cycle235/R/null209657_bank_r10.txt
+6c18ccc23873812140a19f59b98bbbe03edf9d3e4478601b3febf22155966ba4  data/cycle235/R/null209657_direct.txt
+94666b909c81b79b0073a83a676fe6605db21e731c2e2fea6b564a6d0003a2be  data/cycle235/R/null209658_all_r10.txt
+1a861012db392c9c12e2f0d32e01ca3baf64c4bf74f622435fc73c35047df8f3  data/cycle235/R/null209658_bank_r10.txt
+0728c06db37ab2d79f4af7caeb38dea353bc0e7455adeb6e3b2d21a5074e4a10  data/cycle235/R/null209658_direct.txt
+a75fe69b0dd87b857fc5a0cd1b1497ac9ce31e29a57fbc951137d7c90b5871b9  data/cycle235/R/null209659_all_r10.txt
+241f6e167fa26553d6cae122e9835b049e4773c82d86f614926d2558e45064df  data/cycle235/R/null209659_bank_r10.txt
+2a7fc069d9b0e3a7268c9c0ed9b243c47ae2f743a3d96bbaa845b4d3d3f2a636  data/cycle235/R/null209659_direct.txt
+ea801ca5eec1d257046bdf4758877d91d3e0734762439ffe86cb50dac25b03ff  data/cycle235/R/null209660_all_r10.txt
+0ac5423ee8e6f55c765f54b1b026b9ddca82eacdd4eb1133405a7fa6d0ba5059  data/cycle235/R/null209660_bank_r10.txt
+5ce30f7e63686b3b9e8467e70a04461e2d766b0e382b265cece5753285345fa2  data/cycle235/R/null209660_direct.txt
+b7190510e6d6a745b5239b905269ca38bee68aff3f6d01d59dd11d1fb1126e50  data/cycle235/R/null209661_all_r10.txt
+51f0bd05cf432255003885db83cfd6f2bee1736152645f468d9394c86b9cece8  data/cycle235/R/null209661_bank_r10.txt
+4a881a8590f89a85ae8e1755c6888b7ecbe13343aff5134f3006f9765dd9688b  data/cycle235/R/null209661_direct.txt
+2adbadc7a8b215fe9c1bbccde4c75beda2b59d3fe24ad36dbd093c581cf8ad5e  data/cycle235/R/null209662_all_r10.txt
+df5fabf793bb0d7555de1020d74137a8bff758e10c31a01fdddcca80cf5b4120  data/cycle235/R/null209662_bank_r10.txt
+9a11da08fb4a5e2b9c1f3c0418cb4da1303b6bcb30b448edf1cda55383a7e808  data/cycle235/R/null209662_direct.txt
+9ea2042400abc09fd786525e08b378edd43ee65f7b0385d8a8c0d235cf62b739  data/cycle235/R/null209663_all_r10.txt
+7437ec4170c0a32e50ad83ad4e5c1adb21b663875d52b04b11746a462fb6e0b2  data/cycle235/R/null209663_bank_r10.txt
+f45ac667ac768ce249ac068f96cd65d4869421588f3378c23a3c22828018ad89  data/cycle235/R/null209663_direct.txt
+add639f8fd140af3eb5896a0040454104dc0054b35bcbcc7bf641055f73f4dc3  data/cycle235/R/null209664_all_r10.txt
+4805fbbfa6d1cbf381c2ac50b0c1ce9b0c5286c80820abf16cd62c5687a9ce9a  data/cycle235/R/null209664_bank_r10.txt
+1acd51f43352bcb36a656fdf52c3f197d6144715baf4d7831c9c8408821dcce7  data/cycle235/R/null209664_direct.txt
+63dad8e45afbe3a5dc1777a9e962fe7ea78e7acdd8d158025f2349802f9c96c8  data/cycle235/R/null209665_all_r10.txt
+7d6b1ba1dadaee28cb951d2086662e4784a7bc83947ada4d21e5e1754c79ba30  data/cycle235/R/null209665_bank_r10.txt
+e8b25dda9a9a7e02c42aa849fdb3bc9d4e8d728dc94a6f117ecc807f2a133848  data/cycle235/R/null209665_direct.txt
+87c6c702873a357fef96ce248af6e0a6bbec5d7200c413a291c3caeeee28af90  data/cycle235/R/null209666_all_r10.txt
+c17ba1499e7e9cca870bbe3c481ebc51dca902eb537aaf63b4ed1182ed1a292d  data/cycle235/R/null209666_bank_r10.txt
+adc4856eed8f118cad90f429b666bd47875917a5a8c5f5b0a77ef5edf7229824  data/cycle235/R/null209666_direct.txt
+9251d3589d53eaebc8ac6bc8d29dff2ed9c1dc85251ff4fccec1531a182f5cae  data/cycle235/R/null209667_all_r10.txt
+de658dff1d421ab58fd652432a3f50d9b20659c02534c0e6258ba4a92905f111  data/cycle235/R/null209667_bank_r10.txt
+53b0ae4627ed0ef6f8bbb9061a5aff6353ed8c7a0486870b90cd484236d31d6a  data/cycle235/R/null209667_direct.txt
+fc5991fc0d07ec439527cd7e9f25760b389dca70d48a2cd6adb779fca604b446  data/cycle235/R/null209668_all_r10.txt
+c27c6ba05c6f5a2dc28b1bed14619616d328dc318c0650681e9c313ec2bb9993  data/cycle235/R/null209668_bank_r10.txt
+0a34b54b1ade3beb85b32011344a0f0e9d62047c0626a03bff1c08688991e8fd  data/cycle235/R/null209668_direct.txt
+b527c61330d9274bdb393ea3c79b68f9cf014ce66ec57ee777ec508af7b4055f  data/cycle235/R/null209669_all_r10.txt
+69eafa2514ac1c5433a964ed4c8f96741573ccece7eb9d07c21c11c2a3ca5d70  data/cycle235/R/null209669_bank_r10.txt
+fd786078c76171559f8dfc1a3fcbd82dbdf8674142338e423e6b4fd9026712b1  data/cycle235/R/null209669_direct.txt
+5730582c653f9924c11ecbc56428f94de9ab9f73aaa7c8983e8d3543d1bc413b  data/cycle235/R/null209670_all_r10.txt
+bd45deb516633e9be9ecd15fcd410727f2a28de779d5dbf4b5b488856ad71124  data/cycle235/R/null209670_bank_r10.txt
+dc6302397796a7deb45b246667eb922e1624daeb24ad81c7cc4b50c1a21a3054  data/cycle235/R/null209670_direct.txt
+8188673aac3174744d2af3117c9e78d29a3cde7279d6fd90e7412c4ef23e4dad  data/cycle235/R/time.txt
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
