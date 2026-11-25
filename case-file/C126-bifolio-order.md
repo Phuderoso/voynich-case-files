@@ -81,7 +81,7 @@ Reservadas **11883–11898**. Usada no piloto: **11883**. Rev 1 usará 11884–1
 Nem leitura, nem significado, nem ordem "correta" provada. SUPPORTED diria só que a similaridade de vocabulário entre páginas de Q13/Q20 tem estrutura de ordem maior que a da seleção do máximo e maior que a de um aninhamento verdadeiro; pode refletir proximidade de produção, não continuidade de leitura (ponto da revisão da Academia). EXCLUDED não diria que a encadernação atual é a original.
 
 ## 9. Estado
-(rev 0) Rascunho para a revisão cega da Kryptos. **(rev 1, 2026-11-24) ver §10: o gate de seleção cruzada falha nos controles; proposto NOT TESTABLE por desenho, aguardando a 2ª revisão da Kryptos.** Nenhuma similaridade, contagem ou estatística do manuscrito calculada. A ferramenta confirmatória só será congelada (sha256 publicado) depois da revisão.
+(rev 0) Rascunho para a revisão cega da Kryptos. **(rev 1, 2026-11-24) ver §10: o gate de seleção cruzada falha nos controles. (2026-11-25) FECHADO — ver §11: NOT TESTABLE por desenho, decidido com a Kryptos.** Nenhuma similaridade, contagem ou estatística do manuscrito calculada. A ferramenta confirmatória só será congelada (sha256 publicado) depois da revisão.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (uma IA fez este trabalho)
 
@@ -127,5 +127,23 @@ dd6db74086d662324ec0a930f01bca945caffb385a38a3d30991a8d56ba086ba  analysis/C126_
 ```
 
 **Sementes:** usadas 11883 (rev 0), **11884, 11885** (rev 1); reservadas e livres 11886–11898; próxima livre fora da reserva **11900**.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (uma IA fez este trabalho)
+
+## 11. Veredito de fechamento (2026-11-25, ~04:30 PT) — **NOT TESTABLE por desenho** · *Closing verdict: NOT TESTABLE by design*
+**Decisão conjunta** com a Kryptos (2ª revisão, 2026-11-24 ~20:35 PT): o passo 1 do F-ORDER fecha aqui, **sem nenhum número do manuscrito** — nenhuma similaridade, contagem, ordem ou estatística de Q13/Q20 foi calculada em nenhuma revisão.
+
+**Fundamento (só controles, §5 e §10):**
+- rev 0: maximizar sobre n! ordens dá G_std ≈ 2–3,5 já em páginas sem continuidade; G-POW falha em todas as células (SUPPORTED 0–7/20).
+- rev 1: a seleção cruzada por metades corrige a média (X ≈ 0,1–1,3), mas o nulo de re-rotulação dos bifólios dispara em controles sem continuidade (SHUF) 33/320 (W 200) e 71/320 (W 400) a α 0,05, contra o gate ≤ 1/20; poder com continuidade plena SING(1,0) ≤ 57/320 (≤ 18 %), contra ≥ 80 %.
+- Nenhuma das duas rotas é ao mesmo tempo calibrada e com poder; aumentar W sobe FPR e poder juntos.
+
+**Lição registrada (para o caderno e para quem usa similaridade de vocabulário para reordenar folhas):** *a agulha aponta para o capítulo, não para a página seguinte.* Em prosa de controle, páginas vizinhas quase não partilham mais vocabulário que páginas do mesmo trecho; o que uma ordem "ótima" captura é agrupamento temático (mais o ganho por construção de escolher o máximo). Isso não diz que a reordenação de Layfield & Fagin Davis está errada; diz que **similaridade de vocabulário não é instrumento capaz de testá-la** nesta resolução (5–6 bifólios, metade de página = 100–200 palavras). O ponto vale também para a fala anunciada no programa do congresso de Malta (9/12/2026) sobre singuliões a partir de seriação — não li o resumo e não o avalio.
+
+**Condição para reabrir o F-ORDER:** uma estatística de continuidade **local** que não seja vocabulário (palavras e desenhos que cruzam a dobra/página, continuação de linha, tinta/mão), com poder ≥ 80 % e FPR ≤ 1/20 medidos **em controles antes de qualquer nulo do manuscrito**; ou um nulo que preserve o agrupamento temático, com FPR medida de novo.
+
+**Não significa:** nem que a encadernação atual é a original, nem que a proposta de L&FD está excluída. *Not testable* ≠ *excluded*.
+
+**Sementes:** usadas 11883, 11884, 11885; a reserva 11886–11898 é **liberada sem uso** (nenhuma semente ali foi consumida); próxima livre **11900** (11899 usada no recount do caso 221). Nenhum arquivo, ferramenta ou artefato anterior foi alterado; este fechamento é só texto.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (uma IA fez este trabalho)
