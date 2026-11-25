@@ -1,0 +1,139 @@
+compare236 — Voynich vs Kryptos, case 222 (cycle 236, PREREG236). Written 2026-11-25 ~12:40 MST (America/Dawson_Creek, UTC-7).
+My runs 12:29:45-12:36:25 MST (freeze 2e4c555 pushed before them); her data/cycle236 (kryptos-case-files origin/main 2fe149d) opened only after.
+
+== Inputs
+plants236.tsv  mine f41beb78…3bb8  hers f41beb78…  (byte-equal: yes)
+nulls236.tsv   mine 3974df02…0741  hers 3974df02…  (byte-equal: yes)
+K4 input_sha256 in her R headers eea81357…ceab = sha256 of my k4.txt without newline (checked).
+
+== Raw R files (21): her files are stamped with 4 '#' header lines (scope, text sha, tool sha, seed/args); mine are bare gn217 output.
+So whole-file sha256 differs 21/21 by construction; the non-# body (sorted) is byte-equal 21/21.
+
+== Counts per text and scope (T line: my run | hers)
+k4_all                 mine: rows=165782 pairforms=41251866624 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+k4_bank                mine: rows=165065 pairforms=41073454080 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+k4_direct              mine: rows=1 pairforms=198407297537736 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209673_all_r10     mine: rows=16579 pairforms=4125385728 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209673_bank_r10    mine: rows=16507 pairforms=4107469824 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209673_direct      mine: rows=1 pairforms=198407297537736 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209674_all_r10     mine: rows=16579 pairforms=4125385728 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209674_bank_r10    mine: rows=16507 pairforms=4107469824 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209674_direct      mine: rows=1 pairforms=198407297537736 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209675_all_r10     mine: rows=16579 pairforms=4125385728 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209675_bank_r10    mine: rows=16507 pairforms=4107469824 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209675_direct      mine: rows=1 pairforms=198407297537736 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209676_all_r10     mine: rows=16579 pairforms=4125385728 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209676_bank_r10    mine: rows=16507 pairforms=4107469824 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209676_direct      mine: rows=1 pairforms=198407297537736 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209677_all_r10     mine: rows=16579 pairforms=4125385728 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209677_bank_r10    mine: rows=16507 pairforms=4107469824 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209677_direct      mine: rows=1 pairforms=198407297537736 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209678_all_r10     mine: rows=16579 pairforms=4125385728 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209678_bank_r10    mine: rows=16507 pairforms=4107469824 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+null209678_direct      mine: rows=1 pairforms=198407297537736 windows=8792 hits24=0 hits23=0 | hers: hits24=0 hits23=0
+
+My gate T (check_mine236.py) on K4 + nulls: 0 H lines in all 21 files, 0 mismatches. No decrypt -> I-342 NC bar not needed (nothing to bar).
+
+== Gate P (plants 209672)
+0 direct seat -1 lines 2 mismatches=0 PASS
+1 direct seat 1 lines 1 mismatches=0 PASS
+2 direct seat -1 lines 1 mismatches=0 PASS
+3 direct seat 7 lines 1 mismatches=0 PASS
+4 direct seat -1 lines 1 mismatches=0 PASS
+5 direct seat 12 lines 1 mismatches=0 PASS
+6 direct seat -1 lines 1 mismatches=0 PASS
+7 direct seat 10 lines 2 mismatches=0 PASS
+8 bank seat -1 lines 1 mismatches=0 PASS
+9 bank seat 3 lines 1 mismatches=0 PASS
+10 bank seat -1 lines 1 mismatches=0 PASS
+11 bank seat 0 lines 1 mismatches=0 PASS
+12 bank seat -1 lines 1 mismatches=0 PASS
+13 bank seat 22 lines 1 mismatches=0 PASS
+14 all seat -1 lines 1 mismatches=0 PASS
+15 all seat 13 lines 1 mismatches=0 PASS
+16 all seat -1 lines 1 mismatches=0 PASS
+17 all seat 14 lines 1 mismatches=0 PASS
+18 all seat -1 lines 1 mismatches=0 PASS
+19 all seat 17 lines 1 mismatches=0 PASS
+recovered 20/20 Wilson95 0.839-1.000
+Her summaryP.txt: 20/20 PASS; per-plant id/scope/lines/PASS equal to mine 20/20.
+Plant H lines: mine 22, hers 22 (P/c*.tsv); every one of her 22 lines (perm dir ix X Y form w agree + 97-letter decrypt) is present in mine, my recount = printed agree 22/22.
+One-error plants (odd ids): 10/10 recovered by both. Two plants (0, 7) print 2 lines each in both runs: the extra line (plant 0: X 49911 form 0 w 2829; plant 7: X 59373 form 2 w 8019) decrypts
+to the same 97 letters as the planted line (0 and 1 letters from the planted plaintext respectively) -> an equivalent X/form/window configuration, not a second solution.
+NC margin: not re-derived (NC values taken as printed in her P/c*.tsv col 5). Bar arithmetic only: bar(nq=64, N=max(10,lines)=10) = -7.0091;
+min(col5 - bar) over her 22 plant lines = +2.070 (= her stated '>= +2.07'); col4 gives +2.244.
+
+== Timing: mine P 3 s, K4 direct 6 / bank 111 / all.bin 107 s, nulls 173 s (6 texts); hers direct 5, bank 102, all 103 s, nulls 163 s (total 373 s).
+
+== Note: PREREG236 abbreviates the gn217.c sha as 97bae55f…d792; the full sha (HASHES236.txt and the file) ends …ed793. Abbreviation slip only.
+
+== Verdict: AGREE on every item (P 20/20, K4 0/0/0 in direct/bank/all.bin, 6 nulls 0 in every scope). K4 label EXACT-EXCL within the 8,792-window list and model Q.
+
+== SHA256 of my raw outputs
+b089d7adc1f0d615d2bc74b947455673f17abccc5e51bd097f28541e34187b7c  A/k4_all.txt
+ac0eb43ba3bf30cdf67be407b03f78de601c2e60916df188499d513134ef4f2d  A/k4_bank.txt
+c223eeb7400f1305744da4e7a2ceacd81a2fa612d620df1e46924bc8fe81cef7  A/k4_direct.txt
+37044b81455b4c2810a579364ee6e3631886ee3a27a44a090f1587b1e4845890  A/null209673_all_r10.txt
+f155c4009cbb87935be5c5004fe87922e01154e6f7c01447edf5333598d84627  A/null209673_bank_r10.txt
+c223eeb7400f1305744da4e7a2ceacd81a2fa612d620df1e46924bc8fe81cef7  A/null209673_direct.txt
+37044b81455b4c2810a579364ee6e3631886ee3a27a44a090f1587b1e4845890  A/null209674_all_r10.txt
+f155c4009cbb87935be5c5004fe87922e01154e6f7c01447edf5333598d84627  A/null209674_bank_r10.txt
+c223eeb7400f1305744da4e7a2ceacd81a2fa612d620df1e46924bc8fe81cef7  A/null209674_direct.txt
+37044b81455b4c2810a579364ee6e3631886ee3a27a44a090f1587b1e4845890  A/null209675_all_r10.txt
+f155c4009cbb87935be5c5004fe87922e01154e6f7c01447edf5333598d84627  A/null209675_bank_r10.txt
+c223eeb7400f1305744da4e7a2ceacd81a2fa612d620df1e46924bc8fe81cef7  A/null209675_direct.txt
+37044b81455b4c2810a579364ee6e3631886ee3a27a44a090f1587b1e4845890  A/null209676_all_r10.txt
+f155c4009cbb87935be5c5004fe87922e01154e6f7c01447edf5333598d84627  A/null209676_bank_r10.txt
+c223eeb7400f1305744da4e7a2ceacd81a2fa612d620df1e46924bc8fe81cef7  A/null209676_direct.txt
+37044b81455b4c2810a579364ee6e3631886ee3a27a44a090f1587b1e4845890  A/null209677_all_r10.txt
+f155c4009cbb87935be5c5004fe87922e01154e6f7c01447edf5333598d84627  A/null209677_bank_r10.txt
+c223eeb7400f1305744da4e7a2ceacd81a2fa612d620df1e46924bc8fe81cef7  A/null209677_direct.txt
+37044b81455b4c2810a579364ee6e3631886ee3a27a44a090f1587b1e4845890  A/null209678_all_r10.txt
+f155c4009cbb87935be5c5004fe87922e01154e6f7c01447edf5333598d84627  A/null209678_bank_r10.txt
+c223eeb7400f1305744da4e7a2ceacd81a2fa612d620df1e46924bc8fe81cef7  A/null209678_direct.txt
+3260a28c9285488b590be8332c6863f08aaf9008aaba739dc5ce59c7271fee2c  P/p0.txt
+599ac6073333441cdd0dab9950ed4282a8f34a1a17039606be58ca4cdbf55f68  P/p1.txt
+c83400f5a1cdaed6a041ed1cfc34631b64b0c85f5d8b2b4fff3badb136b245d4  P/p10.txt
+d033ba65c7bfa4d51b21cc991c1ca71978692c07c4af98d5b5ef7ad9dfe677f9  P/p11.txt
+01c8b96cf2513d261d166a60ce180bb556d605b0cc87f7e73cd4d62878f15045  P/p12.txt
+7659f0cda13b52854cdb84db294b66cbdb993e67a766dcf75767d2afd1c04970  P/p13.txt
+a016605d8fedb3e85b9f02e9eeac285491953ff9862822ea681e6fd5cb564578  P/p14.txt
+d73466a4a7dd9c1ff66ccd49ae6fbe240b42d7d5ad284c4a881c42168c610111  P/p15.txt
+cf485dfd1057e0147e21d4a4de250449a5d0f4fb3f9d2915c5e4335cbda51f68  P/p16.txt
+cf782dcf0b4e5e3e1a0ebe8d7ad12cbf55836c0c30dba1224c34c0479824f14e  P/p17.txt
+68763a6e16510cc607b5c0e1b68c6919661265776024c4f0017bd9e235fe82ac  P/p18.txt
+712b7531396df243a3a667edc6064c346f5b6ac981a154dbfe899b066519bed4  P/p19.txt
+d368d56222ecaffe2e2f14687f7e5dcb51e34c50535f7a82978c582f363b9348  P/p2.txt
+85f9bed4d7009c09980a3911305422ae14e424c6673e953f11af7dbc20ce9867  P/p3.txt
+5901d19b06055bd45dc4afe964a36541b26ff7ab5e0e1354fb5ad2ebd8e591be  P/p4.txt
+4dc1d2e2009e60e7da9980cd585951fee4b517e9fe0b6e141691bd1ea8aa7a9a  P/p5.txt
+e00c1d938c6d0df6695bc12bc9d61999bb5113d8580d4d94c917694b33c2bd5c  P/p6.txt
+f0a1000107787e2508831ccbf14bdc57aa9a9f6af914c8904c2bf6efd285ffcc  P/p7.txt
+1c31131e34c5f886b829a8b08d4e9f8c6bc5d9628329728e278e8e35799280ca  P/p8.txt
+ba948a60e0ae060f8d1355eb151b0e53b24c0310e2c3a663801149033764f580  P/p9.txt
+
+== My plant H lines (perm dir ix X Y form w my_agree printed_agree match pt97)
+-1	0	0	49909	81774	2	2455	24	24	1	LEHOWSTHATPOSSIBLETHEEASTNORTHEASTSMAGNETICFIELDXTHEINFORMATIONBERLINCLOCKANDTRANSMITTEDUNDERGRUU
+-1	0	0	49911	81774	0	2829	24	24	1	LEHOWSTHATPOSSIBLETHEEASTNORTHEASTSMAGNETICFIELDXTHEINFORMATIONBERLINCLOCKANDTRANSMITTEDUNDERGRUU
+-1	0	0	73178	32005	0	8049	23	23	1	EACHINTHEUPPERLEFTHANEZSTNORTHEASTNWIDENINGTHEHOLEALITTLEIINSERBERLINCLOCKEANDPEEREDINTHEHOTAIRES
+24441	0	0	83	5	2	2716	24	24	1	RGRUUNDTOANUNKNOWNLOCEASTNORTHEASTGLEYKNOWABOUTTHISTHEYSHOULDITBERLINCLOCKHERESOMEWHEREXWHOKNOWST
+76041	1	1	101	64	0	6200	23	23	1	NUTESFORTYFOURSECONDSXASTNORTHEASTSRESTOREDITWASTOTALLYINVISIBLBERLINCLOCKSSIBLETHEYUSEDTHEEARTHS
+90512	0	0	18	33	1	717	24	24	1	OWNLOCATIONXDOESLANGLEASTNORTHEASTISTHEYSHOULDITSBURIEDOUTTHEREBERLINCLOCKHOKNOWSTHEEXACTLOCATION
+4523	1	0	19	42	1	2738	23	23	1	IGHTMINUTESFORTYFOURSEASTNORTHEASTYROWSKSRESTOREDITWASTOTALLYINBERLINCLOSKTHATPOSSIBLETHEYUSEDTHE
+20226	0	1	91	31	0	5849	24	24	1	ETICFIELDXTHEINFORMATEASTNORTHEASTDANDTRANSMITTEDUNDERGRUUNDTOABERLINCLOCKATIONXDOESLANGLEYKNOWAB
+159275	1	0	105	118	1	2208	23	23	1	ESOMEWHEREXWHOKNOWSTHEASTNORTHEASTNONLYWWTHISWASHISLASTMESSAGEXHERLINCLOCKDEGREESFIFTYSEVENMINUTE
+60553	1	0	128	63	1	671	24	24	1	ITTEDUNDERGRUUNDTOANUEASTNORTHEASTNXDOESLANGLEYKNOWABOUTTHISTHEBERLINCLOCKURIEDOUTTHERESOMEWHEREX
+143230	1	1	120	94	1	5545	23	23	1	ONDSWESTXLAYERTWOKSLOEASTNORTHEASTSLOWLYTHEREMAINSOFPASSAGEDEBRBSRLINCLOCKBEREDTHELOWERPARTOFTHED
+37258	0	1	87	92	1	1803	24	24	1	NOWNLOCATIONXDOESLANGEASTNORTHEASTHISTHEYSHOULDITSBURIEDOUTTHERBERLINCLOCKWHOKNOWSTHEEXACTLOCATIO
+73922	0	0	97	16	0	6134	23	23	1	IRESCAPINGFROMTHECHAMEASTNORTHEASTLAMETOFLICKERBUTPRESENTLYDETABERLKNCLOCKMWITHINEMERGEDFROMTHEMI
+-1	0	0	49810	28330	2	5659	24	24	1	OWNLOCATIONXDOESLANGLEASTNORTHEASTISTHEYSHOULDITSBURIEDOUTTHEREBERLINCLOCKHOKNOWSTHEEXACTLOCATION
+-1	0	0	34848	43288	1	8665	23	23	1	RTOFTHEDOORWAYWASREMOEASTNORBHEASTINGHANDSIMADEATINYBREACHINTHEBERLINCLOCKNDCORNERANDTHENWIDENING
+-1	0	0	53487	21543	1	7291	24	24	1	ATPOSSIBLETHEYUSEDTHEEASTNORTHEASTCFIELDXTHEINFORMATIONWASGATHEBERLINCLOCKMITTEDUNDERGRUUNDTOANUN
+-1	0	0	38253	41913	1	7665	23	23	1	OUTTHERESOMEWHEREXWHOEASTNORTHEASDLOCATIONONLYWWTHISWASHISLASTMBERLINCLOCKTYEIGHTDEGREESFIFTYSEVE
+-1	0	0	9581	41733	2	8409	24	24	1	PINGFROMTHECHAMBERCAUEASTNORTHEASTFLICKERBUTPRESENTLYDETAILSOFTBERLINCLOCKNEMERGEDFROMTHEMISTXCAN
+-1	0	0	59373	62374	2	8019	23	23	1	NOWSTHEEXACTLOCATIONOEASTNORTHEDSTISLASTMESSAGEXTHIRTYEIGHTDEGRBERLINCLOCKENMINUTESSIXPOINTFIVESE
+-1	0	0	59371	62374	0	8111	23	23	1	NOWSTHEEXACTLOCATIONOEASTNORTHEDSTISLASTMESSAGEXTHIRTYEIGHTDEGRBERLINCLOCKENMINUTESSIXPOINTFIVESE
+19904	1	1	16	12	2	7264	24	24	1	RSECONDSWESTXLAYERTWOEASTNORTHEASTATLYSLOWLYTHEREMAINSOFPASSAGEBERLINCLOCKNCUMBEREDTHELOWERPARTOF
+70643	0	1	64	34	0	3323	23	23	1	FPASSAGEDEBRISTHATENCEASHNORTHEASTERPARTOFTHEDOORWAYWASREMOVEDWBERLINCLOCKGHANDSIMADEATINYBREACHI
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
