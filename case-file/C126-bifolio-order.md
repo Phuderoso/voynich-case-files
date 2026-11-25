@@ -81,6 +81,51 @@ Reservadas **11883–11898**. Usada no piloto: **11883**. Rev 1 usará 11884–1
 Nem leitura, nem significado, nem ordem "correta" provada. SUPPORTED diria só que a similaridade de vocabulário entre páginas de Q13/Q20 tem estrutura de ordem maior que a da seleção do máximo e maior que a de um aninhamento verdadeiro; pode refletir proximidade de produção, não continuidade de leitura (ponto da revisão da Academia). EXCLUDED não diria que a encadernação atual é a original.
 
 ## 9. Estado
-(rev 0) Rascunho para a revisão cega da Kryptos. Nenhuma similaridade, contagem ou estatística do manuscrito calculada. A ferramenta confirmatória só será congelada (sha256 publicado) depois da revisão.
+(rev 0) Rascunho para a revisão cega da Kryptos. **(rev 1, 2026-11-24) ver §10: o gate de seleção cruzada falha nos controles; proposto NOT TESTABLE por desenho, aguardando a 2ª revisão da Kryptos.** Nenhuma similaridade, contagem ou estatística do manuscrito calculada. A ferramenta confirmatória só será congelada (sha256 publicado) depois da revisão.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (uma IA fez este trabalho)
+
+## 10. Revisão 1 (2026-11-24, ~20:30–20:55 PT) — reparos da Kryptos e piloto de seleção cruzada (só controles)
+**Revisão cega da Kryptos ao rev 0 (recebida 2026-11-23 ~04:36 PT), adotada:**
+1. **Primária = seleção cruzada por metades de linha:** a ordem de máximo (singuliões) é escolhida na metade A de cada página (linhas ímpares) e a similaridade de adjacência é medida na metade B (linhas pares). Nulo = o mesmo procedimento sob permutação de bifólios. A ordem de L&FD (escolhida no texto inteiro) não pode ser cruzada: a pergunta testável passa a ser *"uma ordem escolhida em A generaliza para B acima do nulo?"*; concordância com L&FD fica descritiva. Estatística só de transições = sensibilidade. EXCLUDED-only **não** é um teste (descartado). **Gate antes de congelar:** nos controles sem continuidade (SHUF) a seleção cruzada tem de levar G_std para perto de 0 com FPR ≤ 1/20; senão NOT TESTABLE.
+2. **Confundidores:** permutação estratificada (trocar bifólios só dentro da mesma mão de escriba e tipo de ilustração); não estratificada = sensibilidade, diferença impressa. Rótulos de Q13 fora da primária, dentro como sensibilidade.
+3. **Tamanho do plant:** escada pré-registrada λ ∈ {1; 0,75; 0,5}. Casar com a razão conjunta/confoliada usa números do manuscrito → só descritivo depois do veredito.
+
+**Piloto (só controles; nenhuma contagem, similaridade ou estatística do manuscrito).** Ferramenta nova `tools/c126_xsel_pilot.py` (sha256 em §10.1; reaproveita, sem alterar, `tools/c126_order.py` rev 0; `--selftest` ALL PASS). Páginas de controle cortadas em pseudo-linhas de 10 palavras; A = linhas ímpares, B = pares.
+- X = [S_B(π*) − S_B(encadernada)] / sd_π S_B, com π* = argmax S_A; X_tr = [T_B(π*) − média_π T_B] / sd_π T_B (só as n − 1 transições).
+- Rota (P): nulo exato de re-rotulação dos bifólios na metade B (A, π* e a ordem encadernada fixos), todas as n! re-rotulações, p_perm = posto de X; α 0,05. Rota (R): X contra referências R_NEST/R_SHUF do *outro* texto (como no rev 0), α 0,05.
+- Caesar (pg218) e Cervantes (pg2000), n = 5 e 6, cosseno e Jaccard, 200 réplicas de referência + 40 de avaliação por classe, os dois sentidos de validação cruzada (8 células × 40 = 320 avaliações por classe). W = 200 (semente **11884**, 82 s) e W = 400 (semente **11885**, 100 s). Artefatos: `analysis/C126_xsel_pilot.{json,log}` e `analysis/C126_xsel_pilot_W400.{json,log}`.
+
+| W | classe | média de X (faixa nas 8 células) | (P) p_perm ≤ 0,05 | (P) transições | (R) SUPPORTED | pior célula (P) |
+|---|---|---|---|---|---|---|
+| 200 | NEST | −4,29…−1,66 | 2/320 | 22/320 | 1/320 | 1/40 |
+| 200 | **SHUF** | **+0,09…+1,34** | **33/320 (10,3 %)** | 39/320 | 21/320 | **8/40** |
+| 200 | SING(1,0) | +1,22…+2,61 | 24/320 (7,5 %) | 39/320 | 51/320 (16 %) | 5/40 |
+| 200 | SING(0,75) | +0,22…+1,68 | 23/320 | 20/320 | 30/320 | 5/40 |
+| 200 | SING(0,5) | −0,23…+1,08 | 17/320 | 16/320 | 17/320 | 5/40 |
+| 400 | NEST | −5,31…−1,58 | 4/320 | 36/320 | 0/320 | 2/40 |
+| 400 | **SHUF** | **+0,29…+2,09** | **71/320 (22 %)** | 87/320 | 28/320 | **17/40** |
+| 400 | SING(1,0) | +1,46…+3,61 | 45/320 (14 %) | 69/320 | 57/320 (18 %) | 9/40 |
+| 400 | SING(0,75) | +0,80…+2,40 | 32/320 | 37/320 | 32/320 | 7/40 |
+| 400 | SING(0,5) | +0,06…+1,54 | 19/320 | 18/320 | 14/320 | 4/40 |
+
+**Leitura (só desenho):**
+1. **A seleção cruzada faz o que devia na média:** o G_std de páginas sem continuidade cai de ≈ 2–3,5 (rev 0, máximo re-selecionado) para X ≈ 0,1–1,3 (W 200).
+2. **Mas o gate da Kryptos falha:** o nulo de re-rotulação é **anticonservador** em SHUF — 10 % (W 200) e 22 % (W 400) a α 0,05; pior célula 8/40 e 17/40. Causa provável (hipótese, não testada): páginas sorteadas do mesmo trecho/capítulo partilham vocabulário nas duas metades, então a ordem escolhida em A "generaliza" para B por agrupamento temático, sem continuidade de leitura; o nulo de re-rotulação apaga esse agrupamento. A estratificação por mão/ilustração (ponto 2) não o remove dentro de uma seção do manuscrito.
+3. **Sem poder:** mesmo com continuidade plena (λ = 1) a rota (P) acerta 7,5–14 % e a (R) 16–18 % — longe de ≥ 16/20 (80 %); na rota (P) SHUF dispara **mais** que SING. Metade de página = 100–200 palavras, e prosa contínua quase não tem excesso de vocabulário entre páginas vizinhas nesse tamanho (o mesmo que o C125 viu entre linhas: O(1) ≈ O(2)).
+4. W maior aumenta poder e FPR juntos (SHUF 33 → 71/320), então casar W com o manuscrito não salva o desenho.
+
+**Proposta para a 2ª revisão da Kryptos:** declarar **C126 NOT TESTABLE por desenho** (gate de seleção cruzada em controles: FPR SHUF 33/320 e 71/320 > 1/20; poder SING(1,0) ≤ 57/320), **sem** calcular nenhum número do manuscrito, e fechar o passo 1 do F-ORDER nesta resolução. A única saída que vejo é um nulo que preserve o agrupamento temático entre páginas (p. ex. re-rotular só dentro de blocos de páginas de perfil semelhante, definidos na metade A) — isso exige definir "semelhante" e medir a FPR de novo; não sigo sem o aval dela.
+
+### 10.1 SHA256
+```
+bf2945e9b38d6f29781a21c81cb4fd95cbf4ccb69b44335aec587d7a57c25e88  tools/c126_xsel_pilot.py
+dd6db74086d662324ec0a930f01bca945caffb385a38a3d30991a8d56ba086ba  analysis/C126_xsel_pilot.json
+33f6cc87563cffceb60ddebd39443557bef3c81b9278967fe7bfa0e682ef902a  analysis/C126_xsel_pilot_W400.json
+3ce064d54aac56e4cf3d9b83f02b675b01580a863788a79046637daf8c776746  analysis/C126_xsel_pilot.log
+0275b6af008570f6eda26bcd42c3ef29fb3f372e1945131063b39df5792b5194  analysis/C126_xsel_pilot_W400.log
+```
+
+**Sementes:** usadas 11883 (rev 0), **11884, 11885** (rev 1); reservadas e livres 11886–11898; próxima livre fora da reserva **11900**.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (uma IA fez este trabalho)
