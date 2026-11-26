@@ -1,0 +1,13 @@
+TABLE elements parsed: 92 sha256(raw): 7e99db3e23fefb71
+T1 decay identity failures: 0 []
+T2 start term n0 = 8 elements: 2 (lengths match direct strings for n0..45)
+T3 OEIS A005341 terms compared: 3000 mismatches: 0 []
+  S18(10) = 20
+  S18(42) = 107312
+  S18(43) = 139984
+  S18(100) = 511247092564
+  S18(136) = 7137644843537768
+WINDOWS 960 blob sha256: b43e35dbd1d2bf3e6396ef7219901d2c03aa254a277c98dae7a619be59ae414f
+  windows constant on 24 seats: 0 | distinct seat patterns: 960 | distinct windows: 960
+HER keys237.bin size 93120 sha256 b43e35dbd1d2bf3e6396ef7219901d2c03aa254a277c98dae7a619be59ae414f
+COMPARE uint8 960x97 row-major: windows differing: 0 []
