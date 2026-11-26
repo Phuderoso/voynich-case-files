@@ -1,0 +1,737 @@
+{{Short description|Integer sequence}}
+{{Redirect|Look-and-say|the method for learning to read|look-and-say method}}
+[[File:Conway's constant.svg|thumb|300px|The lines show the growth of the numbers of digits in the look-and-say sequences with starting points 23 (red), 1 (blue), 13 (violet), 312 (green). These lines (when represented in a [[logarithmic scale|logarithmic vertical scale]]) tend to straight lines whose slopes coincide with Conway's constant.]]
+
+In [[mathematics]], the '''look-and-say sequence''' is the [[integer sequence|sequence of integers]] beginning as follows:
+
+: 1, 11, 21, 1211, 111221, 312211, 13112221, 1113213211, 31131211131221, ... {{OEIS|id=A005150}}.
+
+To generate a member of the sequence from the previous member, read off the digits of the previous member, counting the number of digits in groups of the same digit.  For example:
+
+* 1 is read off as "one 1" or 11.
+* 11 is read off as "two 1s" or 21.
+* 21 is read off as "one 2, one 1" or 1211.
+* 1211 is read off as "one 1, one 2, two 1s" or 111221.
+* 111221 is read off as "three 1s, two 2s, one 1" or 312211.
+
+The look-and-say sequence was analyzed by [[John Horton Conway|John Conway]]<ref name="Conway-original-article">
+{{cite journal
+|last=Conway
+|first=John H.
+|author-link=John Horton Conway
+|title=The Weird and Wonderful Chemistry of Audioactive Decay
+|journal=Eureka
+|date=January 1986
+|volume=46
+|pages=5–16
+|url=https://sites.math.rutgers.edu/~zeilberg/EM12/ConwayWW.pdf}}
+Reprinted as
+{{cite book
+ |last=Conway
+ |first=J. H.
+ |author-link=John Horton Conway
+ |editor-last=Cover
+ |editor-first=Thomas M.
+ |editor-last2=Gopinath
+ |editor-first2=B.
+ |title=Open Problems in Communication and Computation
+ |publisher=[[Springer-Verlag]]
+ |date=1987
+ |pages=173–188
+ |chapter=The Weird and Wonderful Chemistry of Audioactive Decay
+ |isbn=0-387-96621-8}}
+</ref>
+after he was introduced to it by one of his students at a party.<ref>
+{{Cite book
+  | last = Roberts
+  | first = Siobhan
+  | authorlink = Siobhan Roberts
+  | title = Genius at Play: The Curious Mind of John Horton Conway
+  | publisher = [[Bloomsbury Publishing|Bloomsbury]]
+  | year = 2015
+  | isbn = 978-1-62040-593-2
+}}
+</ref><ref>
+{{YouTube|id=ea7lJkEhytA|title=Look-and-Say Numbers (feat John Conway) - Numberphile}}
+</ref>
+
+The idea of the look-and-say sequence is similar to that of [[run-length encoding]].
+
+If started with any digit ''d'' from 0 to 9 then ''d'' will remain indefinitely as the last digit of the sequence. For any ''d'' other than 1, the sequence starts as follows:
+: ''d'', 1''d'', 111''d'', 311''d'', 13211''d'', 111312211''d'', 31131122211''d'', …
+Ilan Vardi has called this sequence, starting with ''d'' = 3, the '''Conway sequence''' {{OEIS|id=A006715}}. (for ''d'' = 2, see {{oeis|id=A006751}})<ref>[http://mathworld.wolfram.com/ConwaySequence.html Conway Sequence], [[MathWorld]], accessed on line February 4, 2011.</ref>
+
+== Basic properties ==
+[[File:Conway constant.png|frame|Roots of the Conway polynomial plotted in the [[complex plane]]. Conway's constant is marked with the [[Greek alphabet|Greek letter]] [[lambda]] ('''λ''').]]
+
+=== Growth ===
+The sequence grows indefinitely. In fact, any variant defined by starting with a different integer seed number will (eventually) also grow indefinitely, except for the [[degeneracy (mathematics)|degenerate]] sequence: 22, 22, 22, 22, ... which remains the same size.<ref name="Martin2006" />
+
+=== Digits presence limitation ===
+No digits other than 1, 2, and 3 appear in the sequence, unless the seed number contains such a digit or a run of more than three of the same digit.<ref name="Martin2006">
+{{cite journal
+ |title=Look-and-Say Biochemistry: Exponential RNA and Multistranded DNA
+ |first=Oscar
+ |last=Martin
+ |journal=American Mathematical Monthly
+ |year=2006
+ |volume=113
+ |issue=4
+ |pages=289–307	
+ |publisher=Mathematical association of America
+ |issn=0002-9890
+ |url=http://www.uam.es/personal_pdi/ciencias/omartin/Biochem.PDF
+ |archiveurl=https://web.archive.org/web/20061224154744/http://www.uam.es/personal_pdi/ciencias/omartin/Biochem.PDF
+ |archivedate=2006-12-24
+ |accessdate=January 6, 2010
+ |doi=10.2307/27641915
+|jstor=27641915
+ }}</ref>
+
+=== Cosmological decay ===
+Conway's '''cosmological theorem''' asserts that every sequence eventually splits ("decays") into a sequence of "atomic elements", which are finite subsequences that never again interact with their neighbors. There are 92 elements containing the digits 1, 2, and 3 only, which John Conway named after the 92 naturally occurring [[chemical element]]s up to [[uranium]], calling the sequence "audioactive."<ref name=":0">{{Cite book |last=Conway |first=John Horton |title=The book of numbers |last2=Guy |first2=Richard K. |date=2006 |publisher=Copernicus |isbn=978-0-387-97993-9 |edition=Nachdr. |location=New York, NY |pages=208-209}}</ref>  There are also two "[[transuranic]]" elements (Np and Pu) for each digit other than 1, 2, and 3.<ref name="Martin2006" /><ref>Ekhad, Shalosh B.; Zeilberger, Doron: [https://www.ams.org/journals/era/1997-03-11/S1079-6762-97-00026-7/home.html "Proof of Conway's lost cosmological theorem"], ''Electronic Research Announcements of the American Mathematical Society'', August 21, 1997, vol. 5, pp.&nbsp;78–82. Retrieved July 4, 2011.</ref> Below is a table of all such elements:
+{| class="wikitable mw-collapsible mw-collapsed"
+! colspan="5" |All "atomic elements" (Where E<sub>k</sub> is included within the derivate of E<sub>k+1</sub> except Np and Pu)<ref name="Conway-original-article" />
+|-
+!Atomic number (n)
+!Element name (E<sub>k</sub>)
+!Sequence
+!Decays into<ref name="Martin2006" />
+!Abundance
+|-
+|1
+|H
+|22
+|H
+|91790.383216
+|-
+|2
+|He
+|13112221133211322112211213322112
+|Hf.Pa.H.Ca.Li
+|3237.2968588
+|-
+|3
+|Li
+|312211322212221121123222112
+|He
+|4220.0665982
+|-
+|4
+|Be
+|111312211312113221133211322112211213322112
+|Ge.Ca.Li
+|2263.8860325
+|-
+|5
+|B
+|1321132122211322212221121123222112
+|Be
+|2951.1503716
+|-
+|6
+|C
+|3113112211322112211213322112
+|B
+|3847.0525419
+|-
+|7
+|N
+|111312212221121123222112
+|C
+|5014.9302464
+|-
+|8
+|O
+|132112211213322112
+|N
+|6537.3490750
+|-
+|9
+|F
+|31121123222112
+|O
+|8521.9396539
+|-
+|10
+|Ne
+|111213322112
+|F
+|11109.006696
+|-
+|11
+|Na
+|123222112
+|Ne
+|14481.448773
+|-
+|12
+|Mg
+|3113322112
+|Pm.Na
+|18850.441228
+|-
+|13
+|Al
+|1113222112
+|Mg
+|24573.006696
+|-
+|14
+|Si
+|1322112
+|Al
+|32032.812960
+|-
+|15
+|P
+|311311222112
+|Ho.Si
+|14895.886658
+|-
+|16
+|S
+|1113122112
+|P
+|19417.939250
+|-
+|17
+|Cl
+|132112
+|S
+|25312.784218
+|-
+|18
+|Ar
+|3112
+|Cl
+|32997.170122
+|-
+|19
+|K
+|1112
+|Ar
+|43014.360913
+|-
+|20
+|Ca
+|12
+|K
+|56072.543129
+|-
+|21
+|Sc
+|3113112221133112
+|Ho.Pa.H.Ca.Co
+|9302.0974443
+|-
+|22
+|Ti
+|11131221131112
+|Sc
+|12126.002783
+|-
+|23
+|V
+|13211312
+|Ti
+|15807.181592
+|-
+|24
+|Cr
+|31132
+|V
+|20605.882611
+|-
+|25
+|Mn
+|111311222112
+|Cr.Si
+|26861.360180
+|-
+|26
+|Fe
+|13122112
+|Mn
+|35015.858546
+|-
+|27
+|Co
+|32112
+|Fe
+|45645.877256
+|-
+|28
+|Ni
+|11133112
+|Zn.Co
+|13871.123200
+|-
+|29
+|Cu
+|131112
+|Ni
+|18082.082203
+|-
+|30
+|Zn
+|312
+|Cu
+|23571.391336
+|-
+|31
+|Ga
+|13221133122211332
+|Eu.Ca.Ac.H.Ca.Zn
+|1447.8905642
+|-
+|32
+|Ge
+|31131122211311122113222
+|Ho.Ga
+|1887.4372276
+|-
+|33
+|As
+|11131221131211322113322112
+|Ge.Na
+|27.246216076
+|-
+|34
+|Se
+|13211321222113222112
+|As
+|35.517547944
+|-
+|35
+|Br
+|3113112211322112
+|Se
+|46.299868152
+|-
+|36
+|Kr
+|11131221222112
+|Br
+|60.355455682
+|-
+|37
+|Rb
+|1321122112
+|Kr
+|78.678000089
+|-
+|38
+|Sr
+|3112112
+|Rb
+|102.56285249
+|-
+|39
+|Y
+|1112133
+|Sr.U
+|133.69860315
+|-
+|40
+|Zr
+|12322211331222113112211
+|Y.H.Ca.Tc
+|174.28645997
+|-
+|41
+|Nb
+|1113122113322113111221131221
+|Er.Zr
+|227.19586752
+|-
+|42
+|Mo
+|13211322211312113211
+|Nb
+|296.16736852
+|-
+|43
+|Tc
+|311322113212221
+|Mo
+|386.07704943
+|-
+|44
+|Ru
+|132211331222113112211
+|Eu.Ca.Tc
+|328.99480576
+|-
+|45
+|Rh
+|311311222113111221131221
+|Ho.Ru
+|428.87015041
+|-
+|46
+|Pd
+|111312211312113211
+|Rh
+|559.06537946
+|-
+|47
+|Ag
+|132113212221
+|Pd
+|728.78492056
+|-
+|48
+|Cd
+|3113112211
+|Ag
+|950.02745646
+|-
+|49
+|In
+|11131221
+|Cd
+|1238.4341972
+|-
+|50
+|Sn
+|13211
+|In
+|1614.3946687
+|-
+|51
+|Sb
+|3112221
+|Pm.Sn
+|2104.4881933
+|-
+|52
+|Te
+|1322113312211
+|Eu.Ca.Sb
+|2743.3629718
+|-
+|53
+|I
+|311311222113111221
+|Ho.Te
+|3576.1856107
+|-
+|54
+|Xe
+|11131221131211
+|I
+|4661.8342720
+|-
+|55
+|Cs
+|13211321
+|Xe
+|6077.0611889
+|-
+|56
+|Ba
+|311311
+|Cs
+|7921.9188284
+|-
+|57
+|La
+|11131
+|Ba
+|10326.833312
+|-
+|58
+|Ce
+|1321133112
+|La.H.Ca.Co
+|13461.825166
+|-
+|59
+|Pr
+|31131112
+|Ce
+|17548.529287
+|-
+|60
+|Nd
+|111312
+|Pr
+|22875.863883
+|-
+|61
+|Pm
+|132
+|Nd
+|29820.456167
+|-
+|62
+|Sm
+|311332
+|Pm.Ca.Zn
+|15408.115182
+|-
+|63
+|Eu
+|1113222
+|Sm
+|20085.668709
+|-
+|64
+|Gd
+|13221133112
+|Eu.Ca.Co
+|21662.972821
+|-
+|65
+|Tb
+|3113112221131112
+|Ho.Gd
+|28239.358949
+|-
+|66
+|Dy
+|111312211312
+|Tb
+|36812.186418
+|-
+|67
+|Ho
+|1321132
+|Dy
+|47987.529438
+|-
+|68
+|Er
+|311311222
+|Ho.Pm
+|1098.5955997
+|-
+|69
+|Tm
+|11131221133112
+|Er.Ca.Co
+|1204.9083841
+|-
+|70
+|Yb
+|1321131112
+|Tm
+|1570.6911808
+|-
+|71
+|Lu
+|311312
+|Yb
+|2047.5173200
+|-
+|72
+|Hf
+|11132
+|Lu
+|2669.0970363
+|-
+|73
+|Ta
+|13112221133211322112211213322113
+|Hf.Pa.H.Ca.W
+|242.07736666
+|-
+|74
+|W
+|312211322212221121123222113
+|Ta
+|315.56655252
+|-
+|75
+|Re
+|111312211312113221133211322112211213322113
+|Ge.Ca.W
+|169.28801808
+|-
+|76
+|Os
+|1321132122211322212221121123222113
+|Re
+|220.68001229
+|-
+|77
+|Ir
+|3113112211322112211213322113
+|Os
+|287.67344775
+|-
+|78
+|Pt
+|111312212221121123222113
+|Ir
+|375.00456738
+|-
+|79
+|Au
+|132112211213322113
+|Pt
+|488.84742982
+|-
+|80
+|Hg
+|31121123222113
+|Au
+|637.25039755
+|-
+|81
+|Tl
+|111213322113
+|Hg
+|830.70513293
+|-
+|82
+|Pb
+|123222113
+|Tl
+|1082.8883285
+|-
+|83
+|Bi
+|3113322113
+|Pm.Pb
+|1411.6286100
+|-
+|84
+|Po
+|1113222113
+|Bi
+|1840.1669683
+|-
+|85
+|At
+|1322113
+|Po
+|2398.7998311
+|-
+|86
+|Rn
+|311311222113
+|Ho.At
+|3127.0209328
+|-
+|87
+|Fr
+|1113122113
+|Rn
+|4076.3134078
+|-
+|88
+|Ra
+|132113
+|Fr
+|5313.7894999
+|-
+|89
+|Ac
+|3113
+|Ra
+|6926.9352045
+|-
+|90
+|Th
+|1113
+|Ac
+|7581.9047125
+|-
+|91
+|Pa
+|13
+|Th
+|9883.5986392
+|-
+|92
+|U
+|3
+|Pa
+|102.56285249
+|-
+! colspan="5" |Transuranic elements
+|-
+|93
+|Np
+|1311222113321132211221121332211n{{refn|group=note|name=first|n can be any digit 4 or above.}}
+|Hf.Pa.H.Ca.Pu
+|0
+|-
+|94
+|Pu
+|31221132221222112112322211n{{refn|group=note|name=first}}
+|Np
+|0
+|}
+
+=== Growth in length ===
+The terms eventually grow in length by about 30% per generation. In particular, if ''L''<sub>''n''</sub> denotes the number of digits of the ''n''-th member of the sequence, then the [[Limit (mathematics)|limit]] of the ratio <math>\frac{L_{n + 1}}{L_n}</math> exists and is given by
+<math display="block">\lim_{n \to \infty} \frac{L_{n+1}}{L_{n}} = \lambda</math>
+
+where &lambda; = 1.303577269034... {{OEIS|id=A014715}} is an [[algebraic number]] of degree 71.<ref name="Martin2006" /><ref>{{Cite web |last=Weisstein |first=Eric W. |title=Look and Say Sequence |url=https://mathworld.wolfram.com/LookandSaySequence.html |access-date=2026-01-24 |website=mathworld.wolfram.com |language=en}}</ref> This fact was proven by Conway, and the constant &lambda; is known as '''Conway's constant'''.<ref name=":0" /> The same result also holds for every variant of the sequence starting with any seed other than 22.
+
+==== Conway's constant as a polynomial root ====
+Conway's constant is the unique positive [[real root]] of the following [[polynomial]] {{OEIS|id=A137275}}:
+<math display="block">\begin{matrix}
+             &           &\qquad            &           &\qquad            &           &\qquad            &            & +1x^{71}  &           \\
+   -1x^{69}  & -2x^{68}  &   -1x^{67}  & +2x^{66}  &  +2x^{65}  &  +1x^{64} &  -1x^{63}  &  -1x^{62}  & -1x^{61}  & -1x^{60}  \\
+   -1x^{59}  & +2x^{58}  &  +5x^{57}  & +3x^{56}  & -2x^{55}  & -10x^{54} &  -3x^{53}  &  -2x^{52}  & +6x^{51}  & +6x^{50}  \\
+   +1x^{49}  & +9x^{48}  & -3x^{47}  & -7x^{46}  & -8x^{45}  &  -8x^{44} & +10x^{43}  &  +6x^{42}  & +8x^{41}  & -5x^{40}  \\
+  -12x^{39}  & +7x^{38}  & -7x^{37}  & +7x^{36}  & +1x^{35}  &  -3x^{34} & +10x^{33}  &  +1x^{32}  & -6x^{31}  & -2x^{30}  \\
+  -10x^{29}  & -3x^{28}  & +2x^{27}  & +9x^{26}  & -3x^{25}  & +14x^{24} &  -8x^{23}  &            & -7x^{21}  & +9x^{20}  \\
+   +3x^{19}  & -4x^{18}  & -10x^{17}  & -7x^{16}  & +12x^{15}  &  +7x^{14} & +2x^{13}  & -12x^{12}  & -4x^{11}  & -2x^{10}  \\
+   +5x^{9}   &           & +1x^{7}   &  -7x^{6}  &  +7x^{5}   &  -4x^{4}  & +12x^{3}   &  -6x^{2}   &  +3x^{1}  & -6x^{0}  \\
+\end{matrix}
+</math>
+
+This polynomial was correctly given in Conway's original ''Eureka'' article,<ref name="Conway-original-article" />
+but in the reprinted version in the book edited by Cover and Gopinath<ref name="Conway-original-article" /> the term <math>x^{35}</math> was incorrectly printed with a minus sign in front.<ref>
+{{Cite book
+  | last = Vardi
+  | first = Ilan
+  | title = Computational Recreations in Mathematica
+  | publisher = [[Addison-Wesley]]
+  | year = 1991
+  | isbn = 0-201-52989-0
+}}
+</ref>
+
+== Popularization ==
+The look-and-say sequence is also popularly known as the '''Morris Number Sequence''', after cryptographer [[Robert Morris (cryptographer)|Robert Morris]], and the puzzle "What is the next number in the sequence 1, 11, 21, 1211, 111221?" is sometimes referred to as the '''Cuckoo's Egg''', from a description of Morris in [[Clifford Stoll]]'s book ''[[The Cuckoo's Egg]]''.<ref>[http://jamesthornton.com/fun/robert-morris-sequence.html Robert Morris Sequence<!-- Bot generated title -->], ''jamesthornton.com''</ref><ref>[https://web.archive.org/web/20110803133359/http://www.ocf.berkeley.edu/~stoll/number_sequence.html FAQ about Morris Number Sequence<!-- Bot generated title -->], ''ocf.berkeley.edu''</ref>
+
+==Variations==
+There are many possible variations on the rule used to generate the look-and-say sequence. For example, to form the "pea pattern" one reads the previous term and counts all instances of each digit, listed in order of their first appearance, not just those occurring in a consecutive block.<ref name="pea pattern study">{{cite arXiv |last1=Kowacs |first1=André |title=Studies on the Pea Pattern Sequence |date=2017 |class=math.HO |eprint=1708.06452 }}</ref><ref>{{cite journal |last1=Dassow |first1=J. |last2=Marcus |first2=S. |last3=Paun |first3=G. |title=Iterative reading of numbers and "black-holes" |journal=Periodica Mathematica Hungarica |date=1 October 1993 |volume=27 |issue=2 |pages=137–152 |doi=10.1007/BF01876638}}</ref>{{verify source|date=April 2025}} So beginning with the seed 1, the pea pattern proceeds 1, 11 ("one 1"), 21 ("two 1s"), 1211 ("one 2 and one 1"), 3112 ("three 1s and one 2"), 132112 ("one 3, two 1s and one 2"), 311322 ("three 1s, one 3 and two 2s"), etc. This version of the pea pattern eventually forms a cycle with the two "atomic" terms 23322114 and 32232114. Since the sequence is infinite, the length of each element in the sequence is bounded, and there are only finitely many words that are at most a predetermined length, it must eventually repeat, and as a consequence, pea pattern sequences are always eventually [[periodic sequence|periodic]].<ref name="pea pattern study" />
+
+Other versions of the pea pattern are also possible; for example, instead of reading the digits as they first appear, one could read them in ascending order instead {{OEIS|id=A005151}}. In this case, the term following 21 would be 1112 ("one 1, one 2") and the term following 3112 would be 211213 ("two 1s, one 2 and one 3"). This variation ultimately ends up repeating the number 21322314 ("two 1s, three 2s, two 3s and one 4").
+
+These sequences differ in several notable ways from the look-and-say sequence. Notably, unlike the Conway sequences, a given term of the pea pattern does not uniquely define the preceding term. Moreover, for any seed the pea pattern produces terms of bounded length: This bound will not typically exceed {{nobr| 2 × ''[[Radix]]'' + 2  digits}} (22&nbsp;digits for [[decimal]]: {{nobr|radix {{=}} 10}}) and may only exceed {{nobr| 3 × ''[[Radix]]''  digits}} (30&nbsp;digits for decimal radix) in length for long, degenerate, initial seeds (sequence of "100 ones", etc.). For these extreme cases, individual elements of decimal sequences immediately settle into a [[permutation]] of the form {{nobr|{{math| ''a''0 ''b''1 ''c''2 ''d''3 ''e''4 ''f''5 ''g''6 ''h''7 ''i''8 ''j''9 }} }} where here the letters {{math| ''a''–''j'' }} are placeholders for digit counts from the preceding sequence element.
+
+==See also==
+* [[Gijswijt's sequence]]
+* [[Kolakoski sequence]]
+* [[Autogram]]
+
+==Notes==
+{{reflist|group=note}}
+
+==References==
+<references />
+
+== External links ==
+* [https://www.youtube.com/watch?v=ea7lJkEhytA Conway speaking about this sequence] and telling that it took him some explanations to understand the sequence.
+* [https://www.rosettacode.org/wiki/Look-and-say_sequence Implementations in many programming languages] on [[Rosetta Code]]
+* {{MathWorld|urlname=LookandSaySequence|title=Look and Say Sequence}}
+* [http://www.se16.info/js/looknsay.htm Look and Say sequence generator] p
+* {{OEIS el|sequencenumber=A014715|name=Decimal expansion of Conway's constant}}
+* [http://www.nathanieljohnston.com/2010/10/a-derivation-of-conways-degree-71-look-and-say-polynomial/ A Derivation of Conway’s Degree-71 “Look-and-Say” Polynomial]
+
+{{Algebraic numbers}}
+{{Irrational number}}
+
+[[Category:Base-dependent integer sequences]]
+[[Category:Algebraic numbers]]
+[[Category:Irrational numbers]]
+[[Category:Mathematical constants]]
+[[Category:John Horton Conway]]

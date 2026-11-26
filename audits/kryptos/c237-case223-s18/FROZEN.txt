@@ -1,0 +1,24 @@
+# FROZEN — blind check of Kryptos case 223 (cycle 237, I-367): exact look-and-say S18 via Conway's published table
+
+Frozen 2026-11-25 ~20:40 PT (America/Vancouver), **before any run** of `s18_conway.py` and before running any of her cycle-237 code.
+Kryptos base read: kryptos-case-files origin/main `99c4acc`. Voynich base: voynich-case-files origin/main `e6bb466`.
+
+## Question
+Are the 960 frozen windows of case 223 (`keys237.bin`, sha256 b43e35db…e414f) exactly "S18 = length of look-and-say term n (term 1 = `1`), windows fwd k_i = S18(1+o+i)+c / rev k_i = S18(1+o+96−i)+c, o 0–39, c ∈ {0,1}, then k → a·(k mod 26) mod 26, a ∈ {1,3,5,7,9,11}" (PREREG237 lines 13–15), computed **independently** of her atom derivation?
+
+## My independent route (never opened: `las_exact.py`, `keys237.py`, `check237.py`, `plant237.py`)
+`s18_conway.py` (stdlib, sha256 `62b54542…3f592`):
+1. Parses **Conway's 92-element table as published** in the English Wikipedia article "Look-and-say sequence" (raw wikitext pinned here as `wiki_look_and_say_raw.txt`, sha256 `7e99db3e…d047`, fetched 2026-11-25; the table cites Conway 1987 and Martin 2006). Her code *derives* the atoms; mine *reads* the published ones.
+2. T1: checks every element's look-and-say equals the concatenation of its listed decay products (table self-consistency).
+3. T2: decomposes the first term n0 ≥ 8 whose element split reproduces the direct string lengths up to term 45, then evolves element counts (bigints) to n = 3000.
+4. T3: compares S18(1..3000) with the OEIS A005341 b-file **fetched fresh today** (oeis.org, sha256 `8000706b…d417`). Pre-run observation: this is byte-identical to her `data/cycle237/b005341.txt`.
+5. Builds the 960 windows in the order of her published `keys237.tsv` (sha256 `030a8766…6316`, index only: a, name, o, c, dir), prints seat-constancy and distinctness, and compares byte by byte with `keys237.bin` **rebuilt by running her `keys237.py` as a black box** (sha must be b43e35db…e414f).
+   Layout assumption: uint8, 960 × 97, row-major in tsv order. If the size is not 93,120 bytes I will read only her writer's output statement and disclose it.
+
+## Verdict rule (frozen)
+- **AGREE** if T1 has 0 failures, T3 has 0 mismatches on all common n, her rebuilt bin has the published sha, and all 960 windows are byte-equal.
+- **DISAGREE** otherwise; I list every mismatching window/term and which side matches OEIS.
+- **NOT TESTABLE** if her keys237.py cannot rebuild the published sha on the box.
+No seeds used (deterministic). Next free Voynich seed stays **11900**.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04 (an AI did this work)
