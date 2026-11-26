@@ -1,0 +1,108 @@
+== PART 1: case 222 (cycle 236) gate P, gn217 model Q (fixed key window, enumerated X/Y/form/perm) ==
+Constraint multigraph: no unknown is solved from the crib; every seat is a self-check (loop) -> bridges 0, pendant edges 0 by construction.
+Retrieval structure (gn217.c): pass A joins on seats 0-3, pass B on seats 13-16; SINGLE-PATH seat = in A_KEY or B_KEY, else DOUBLE-PATH.
+plant  0 direct seat  -1 agree 24 miss [] passA 1 passB 1 NO-ERROR       recovered True
+plant  1 direct seat   1 agree 23 miss [1] passA 0 passB 1 SINGLE-PATH-A  recovered True
+plant  2 direct seat  -1 agree 24 miss [] passA 1 passB 1 NO-ERROR       recovered True
+plant  3 direct seat   7 agree 23 miss [7] passA 1 passB 1 DOUBLE-PATH    recovered True
+plant  4 direct seat  -1 agree 24 miss [] passA 1 passB 1 NO-ERROR       recovered True
+plant  5 direct seat  12 agree 23 miss [12] passA 1 passB 1 DOUBLE-PATH    recovered True
+plant  6 direct seat  -1 agree 24 miss [] passA 1 passB 1 NO-ERROR       recovered True
+plant  7 direct seat  10 agree 23 miss [10] passA 1 passB 1 DOUBLE-PATH    recovered True
+plant  8 bank   seat  -1 agree 24 miss [] passA 1 passB 1 NO-ERROR       recovered True
+plant  9 bank   seat   3 agree 23 miss [3] passA 0 passB 1 SINGLE-PATH-A  recovered True
+plant 10 bank   seat  -1 agree 24 miss [] passA 1 passB 1 NO-ERROR       recovered True
+plant 11 bank   seat   0 agree 23 miss [0] passA 0 passB 1 SINGLE-PATH-A  recovered True
+plant 12 bank   seat  -1 agree 24 miss [] passA 1 passB 1 NO-ERROR       recovered True
+plant 13 bank   seat  22 agree 23 miss [22] passA 1 passB 1 DOUBLE-PATH    recovered True
+plant 14 all    seat  -1 agree 24 miss [] passA 1 passB 1 NO-ERROR       recovered True
+plant 15 all    seat  13 agree 23 miss [13] passA 1 passB 0 SINGLE-PATH-B  recovered True
+plant 16 all    seat  -1 agree 24 miss [] passA 1 passB 1 NO-ERROR       recovered True
+plant 17 all    seat  14 agree 23 miss [14] passA 1 passB 0 SINGLE-PATH-B  recovered True
+plant 18 all    seat  -1 agree 24 miss [] passA 1 passB 1 NO-ERROR       recovered True
+plant 19 all    seat  17 agree 23 miss [17] passA 1 passB 1 DOUBLE-PATH    recovered True
+G-CONS1 (planted config misses exactly its bad seat, none on clean plants): PASS
+one-error plants: 10; on bridge/pendant edges: 0/10 (structure has none)
+  SINGLE-PATH: 5 plants, recovered 5/5 Wilson95 0.566-1.000
+  DOUBLE-PATH: 5 plants, recovered 5/5 Wilson95 0.566-1.000
+  SINGLE-PATH observed 5/10 vs expected 3.33 under a uniform seat draw (8/24); two-sided exact binomial p 0.3172
+
+== PART 2: case 218 (cycle 232) gate P, kb227/kb229 model Q, periodic key, class r = S[POS[j]] mod p (carved index) ==
+Multigraph H_p: ground node g (alphabets + carved text fixed) + one node per residue class; crib seat j = edge g--r_j.
+Seat category by m = crib seats in its class: PENDANT (m=1: pendant edge = bridge; error invisible, class decrypts wrong),
+TIE (m=2: 2-cycle; error detected, not locatable -> class "?"), MAJ (m>=3: on a >=3-cycle; error outvoted).
+plant  0 bank p 22 bad  -1 m - NO-ERROR seat-shares P/T/M 0.375/0.250/0.375 rec 1 nc -4.172 bar -5.708 pass 1
+plant  1 bank p 23 bad   4 m 2 TIE      seat-shares P/T/M 0.333/0.667/0.000 rec 1 nc -4.092 bar -5.708 pass 1 | at H_p 23: m=2
+plant  2 all  p 18 bad  -1 m - NO-ERROR seat-shares P/T/M 0.167/0.333/0.500 rec 1 nc -4.354 bar -5.7 pass 1
+plant  3 all  p 21 bad   4 m 2 TIE      seat-shares P/T/M 0.375/0.500/0.125 rec 1 nc -4.047 bar -5.7 pass 1 | at H_p 21: m=2
+plant  4 bank p  8 bad  -1 m - NO-ERROR seat-shares P/T/M 0.042/0.000/0.958 rec 1 nc -4.406 bar -5.678 pass 1
+plant  5 bank p 14 bad  19 m 2 TIE      seat-shares P/T/M 0.042/0.667/0.292 rec 1 nc -4.842 bar -5.678 pass 1 | at H_p 14: m=2
+plant  6 all  p 24 bad  -1 m - NO-ERROR seat-shares P/T/M 0.250/0.750/0.000 rec 1 nc -4.232 bar -5.684 pass 1
+plant  7 all  p 21 bad  21 m 2 TIE      seat-shares P/T/M 0.333/0.667/0.000 rec 1 nc -4.004 bar -5.696 pass 1 | at H_p 21: m=2
+plant  8 bank p 23 bad  -1 m - NO-ERROR seat-shares P/T/M 0.125/0.750/0.125 rec 1 nc -4.913 bar -5.672 pass 1
+plant  9 bank p 21 bad   4 m 1 PENDANT  seat-shares P/T/M 0.458/0.417/0.125 rec 1 nc -6.007 bar -5.672 pass 0 | at H_p 21: m=1
+plant 10 all  p 22 bad  -1 m - NO-ERROR seat-shares P/T/M 0.167/0.833/0.000 rec 1 nc -3.984 bar -5.681 pass 1
+plant 11 all  p 23 bad  23 m 2 TIE      seat-shares P/T/M 0.583/0.417/0.000 rec 1 nc -3.773 bar -5.672 pass 1 | at H_p 23: m=2
+plant 12 bank p  9 bad  -1 m - NO-ERROR seat-shares P/T/M 0.000/0.250/0.750 rec 1 nc -5.006 bar -5.736 pass 1
+plant 13 bank p 16 bad   0 m 1 PENDANT  seat-shares P/T/M 0.208/0.667/0.125 rec 1 nc -4.953 bar -5.77 pass 1 | at H_p 16: m=1
+plant 14 all  p 17 bad  -1 m - NO-ERROR seat-shares P/T/M 0.208/0.667/0.125 rec 1 nc -4.133 bar -5.707 pass 1
+plant 15 all  p 14 bad  11 m 3 MAJ      seat-shares P/T/M 0.208/0.250/0.542 rec 1 nc -4.087 bar -5.756 pass 1 | at H_p 14: m=3
+plant 16 bank p 12 bad  -1 m - NO-ERROR seat-shares P/T/M 0.083/0.500/0.417 rec 1 nc -4.443 bar -5.909 pass 1
+plant 17 bank p 17 bad   5 m 2 TIE      seat-shares P/T/M 0.375/0.500/0.125 rec 1 nc -4.418 bar -5.909 pass 1 | at H_p 17: m=2
+plant 18 all  p 18 bad  -1 m - NO-ERROR seat-shares P/T/M 0.375/0.500/0.125 rec 1 nc -4.244 bar -5.787 pass 1
+plant 19 all  p 22 bad   2 m 1 PENDANT  seat-shares P/T/M 0.667/0.333/0.000 rec 1 nc -5.275 bar -5.909 pass 1 | at H_p 22: m=1
+plant 20 bank p  9 bad  -1 m - NO-ERROR seat-shares P/T/M 0.042/0.250/0.708 rec 1 nc -3.958 bar -6.329 pass 1
+plant 21 bank p 14 bad  16 m 1 PENDANT  seat-shares P/T/M 0.333/0.250/0.417 rec 1 nc -5.043 bar -6.329 pass 1 | at H_p 14: m=1
+plant 22 all  p 14 bad  -1 m - NO-ERROR seat-shares P/T/M 0.292/0.333/0.375 rec 1 nc -4.203 bar -6.329 pass 1
+plant 23 all  p 11 bad  16 m 3 MAJ      seat-shares P/T/M 0.042/0.583/0.375 rec 1 nc -3.994 bar -6.329 pass 1 | at H_p 11: m=3
+G-CONS2 (category signature visible in her predicted decrypt): PASS
+  PENDANT : 4/12 plants (expected 3.96, two-sided Poisson-binomial p 1.0000); found 4/4, gate pass 3/4 Wilson95 0.301-0.954
+  TIE     : 6/12 plants (expected 5.92, two-sided Poisson-binomial p 1.0000); found 6/6, gate pass 6/6 Wilson95 0.610-1.000
+  MAJ     : 2/12 plants (expected 2.12, two-sided Poisson-binomial p 1.0000); found 2/2, gate pass 2/2 Wilson95 0.342-1.000
+  ON bridge/pendant: gate pass 3/4 Wilson95 0.301-0.954
+  OFF bridge/pendant: gate pass 8/8 Wilson95 0.676-1.000
+
+== PART 3: case 205 / cycle 219 one-error recount (v1e.c): NO plants exist -> plant counts NOT TESTABLE ==
+Census only (model 0 = plaintext index, class = seat mod p; model 1 depends on the transposition, not censused):
+  p  1: pendant seats  0/24  tie seats  0/24  maj seats 24/24
+  p  2: pendant seats  0/24  tie seats  0/24  maj seats 24/24
+  p  3: pendant seats  0/24  tie seats  0/24  maj seats 24/24
+  p  4: pendant seats  0/24  tie seats  0/24  maj seats 24/24
+  p  5: pendant seats  0/24  tie seats  0/24  maj seats 24/24
+  p  6: pendant seats  0/24  tie seats  0/24  maj seats 24/24
+  p  7: pendant seats  0/24  tie seats  2/24  maj seats 22/24
+  p  8: pendant seats  0/24  tie seats  6/24  maj seats 18/24
+  p  9: pendant seats  0/24  tie seats  6/24  maj seats 18/24
+  p 10: pendant seats  0/24  tie seats 14/24  maj seats 10/24
+  p 11: pendant seats  0/24  tie seats 18/24  maj seats  6/24
+  p 12: pendant seats  1/24  tie seats 20/24  maj seats  3/24
+  p 13: pendant seats  2/24  tie seats 22/24  maj seats  0/24
+  p 14: pendant seats  2/24  tie seats 22/24  maj seats  0/24
+  p 15: pendant seats  6/24  tie seats 18/24  maj seats  0/24
+  p 16: pendant seats  8/24  tie seats 16/24  maj seats  0/24
+  p 17: pendant seats 10/24  tie seats 14/24  maj seats  0/24
+  p 18: pendant seats 10/24  tie seats 14/24  maj seats  0/24
+  p 19: pendant seats  6/24  tie seats 18/24  maj seats  0/24
+  p 20: pendant seats  2/24  tie seats 22/24  maj seats  0/24
+  p 21: pendant seats  2/24  tie seats 22/24  maj seats  0/24
+  p 22: pendant seats  6/24  tie seats 18/24  maj seats  0/24
+
+== PART 4: floor p of the two-batch gate (C095 / C097 / C098; tools/c093_edit_graph.py pt(): two-sided predictive t, df n-1) ==
+predictive-t p is continuous in x: no positive attainable floor (smallest positive double 4.94e-324; stats.t.sf(1e6, 19)*2 = 2.54e-103).
+rank-scale counterpart (descriptive "above all n"): floor 1/(n+1) = 0.0476 per batch of 20; Holm x2 -> 0.0952, x4 -> 0.1905; pooled 40 -> 0.0244
+count gates per batch (n 20): G1 <= 1/20 false calls -> Wilson95 upper 0.236 (0/20: 0.161); G2 >= 19/20 -> Wilson95 lower 0.764
+C095: 8 reported test p values; min raw p 2.9671187944193253e-05; any p == 0: False
+   C095/tests/N1[2]:p: p 0.000124 holm 0.00037 above_all True below_all False
+   C095/tests/N1[3]:p: p 0.000561 holm 0.00056 above_all True below_all False
+   C095/tests/N1[4]:p: p 2.97e-05 holm 0.00012 above_all True below_all False
+   C095/tests/N1[5]:p: p 0.000237 holm 0.00047 above_all True below_all False
+   C095/tests/N2[2]:p: p 0.00359 holm 0.01077 above_all True below_all False
+   C095/tests/N2[3]:p: p 0.0101 holm 0.01125 above_all True below_all False
+   C095/tests/N2[4]:p: p 0.0013 holm 0.00518 above_all True below_all False
+   C095/tests/N2[5]:p: p 0.00562 holm 0.01125 above_all True below_all False
+C097: 0 reported test p values; min raw p none; any p == 0: False
+C098: 4 reported test p values; min raw p 0.0687900864719481; any p == 0: False
+   C098/descriptive/N3/ZL3b:p_diff: p 0.222 holm None above_all None below_all None
+   C098/descriptive/N3/IT2a:p_diff: p 0.0688 holm None above_all None below_all None
+   C098/descriptive/N4/ZL3b:p_diff: p 0.447 holm None above_all None below_all None
+   C098/descriptive/N4/IT2a:p_diff: p 0.235 holm None above_all None below_all None
