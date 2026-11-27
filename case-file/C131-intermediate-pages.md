@@ -68,3 +68,55 @@ A: 65 informative / 103; B: 69 / 79. Retained tokens A 6,595, B 20,482, V 5,730.
 Mixed pages would not prove a third dialect, a scribe switch, or any reading. "No excess" would not mean A and B are two pure languages: within-stratum drift is absorbed by N-RUN, and a page one quarter foreign is below the reliable resolution. Nothing here is a decipherment.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (run 2026-11-26, 20:38:40–20:39:01 PT, America/Vancouver; tool sha256 `259472b3…f1d3ea`, unchanged since the pushed pre-registration 9b4f5af)
+Raw output `analysis/C131_results.json`, log `analysis/C131_run_log.txt`, hashes `analysis/C131_SHA256SUMS`. One run, no re-runs.
+
+### Gates
+| gate | result |
+|---|---|
+| G-FPR Latin Caesar/Descartes | 9/134 = 0.067 (Wilson 0.036–0.123) ≤ 0.10 **pass** |
+| G-FPR Italian Machiavelli/Dante | 8/134 = 0.060 (0.031–0.113) **pass** |
+| G-FPR Hebrew Exodus/Genesis | 5/134 = 0.037 (0.016–0.084) **pass** |
+| G-POW ZL3b A, f 0.5 | 1,243/1,300 = 0.956 (62/65 pages ≥ 16/20) **pass** |
+| G-POW ZL3b B, f 0.5 | 1,185/1,380 = 0.859 (55/69 pages ≥ 16/20) **pass** |
+| f 0.25 (descriptive) | A 0.761 (44/65 pages ≥ 16/20), B 0.568 (37/69) |
+| controls f 0.5 (descriptive) | Latin A 0.98 / B 0.88; Italian A 0.69 / B 0.96; Hebrew A 0.45 / B 0.54 |
+
+### Confirmatory (ZL3b)
+| L | informative | T | null T mean (sd, max) | rank p | normal p | Holm (rank) | verdict |
+|---|---|---|---|---|---|---|---|
+| A | 65 | 4 | 2.72 (1.54, 8) | 0.299 | 0.202 | 0.299 | **NO EXCESS** |
+| B | 69 | 6 | 2.88 (1.50, 8) | 0.065 | 0.018 | 0.129 | **NO EXCESS** |
+
+IT2a (replication, descriptive): A 62 informative, T 3, null 2.58 (1.50), rank p 0.483 / normal 0.390; B 68, T 5, null 2.62 (1.57), rank p 0.129 / normal 0.064. Same direction, nothing passes.
+
+Controls under the same instrument (no mixture exists by construction): Latin B T 6, rank p 0.090, **normal p 0.037**; Italian B T 5, rank 0.154 / normal 0.081; all control A counts rank p ≥ 0.58.
+
+**Verdict C131: NO EXCESS of mixed Currier A/B pages in either language (ZL3b; IT2a agrees).** At the resolution where a half-foreign page is caught (0.96 A, 0.86 B), the manuscript has no more pages far from their own pole than contiguous stretches of their own language × section stratum produce. **113 labelled pages** (of 182 in ZL3b, 178 in IT2a) get the EXCLUDED-AS-MIXTURE label (but see defect 1).
+
+### Rank p vs normal p (C130 lesson, borne out)
+For Currier B the normal approximation gives 0.018 (Holm 0.037: it would have called EXCESS), while the rank p is 0.065. The discrete Latin control, where no page is mixed, shows the same gap (normal 0.037 vs rank 0.090). A count with null mean ≈ 3 is right-skewed, so the normal tail is anti-conservative. The rank p decides, as registered.
+
+### Page level (secondary; BH q 0.10 within language)
+ZL3b gives 4 BH candidates, all in B, all at the rank floor p = 1/201: **f57r** (herbal B, 47 tokens, λ̂ 0.02: its retained text scores as **A**), **f66r** (B text page, 291 tokens, λ̂ 0.69), **f113r** (stars, 522 tokens, λ̂ 0.64; null 95% 0.24), **f79r** (biological, λ̂ 0.98, d 0.02; see defect 2). IT2a gives 0 BH candidates, because 3 of 68 B p-values sit at the floor and BH needs 0.10·3/68 = 0.0044 < 1/201. The pages at the floor in **both** transcriptions are f57r, f66r and f113r (B) and **f88v** (pharma A, λ̂ 0.33 / 0.31). Descriptive, post hoc: in the ZL3b headers f57r and f66r are both quire H, hand `$H=5`.
+
+Pages nominal p ≤ 0.05 in ZL3b: A f24r, f45r, f54v (λ̂ 0.05–0.08, tiny), f88v; B f57r, f66r, f66v (λ̂ 0.48), f79r, f105v (0.73), f113r.
+
+### Defects found in the registered rule (disclosed; verdict unchanged, because the confirmatory test is the global count)
+1. **The EXCLUDED label is too generous.** The rule labels a page EXCLUDED-AS-MIXTURE when it is not a BH candidate and its f 0.5 plants are recovered. Pages with nominal p ≤ 0.05 that BH did not pick (e.g. f88v, p 0.005, λ̂ 0.33) therefore get EXCLUDED. Read the class as "a half-foreign page would have been caught here", not "this page is pure". The fix (from C132): EXCLUDED also needs p_i > 0.05 and an upper plant-calibrated bound below f 0.5.
+2. **Floor artifact at the pole.** In B-B the null d is exactly 0 in all 200 replicates, so f79r's d = 0.02 (λ̂ 0.98) reaches the floor p. A 2 % shift is not a mixture. The fix: an effect-size floor (d ≥ 0.10) for page candidates.
+3. **BH at the rank floor is binary.** With R = 200, a page is a candidate only if its p sits at 1/201 and enough other pages sit there too, which is why ZL3b gives 4 candidates and IT2a gives 0. Page-level confirmation needs R ≥ 2,000.
+
+### Descriptive
+Share of informative pages with λ̂ in [0.25, 0.75]: A 0.015 (ZL3b) / 0.032 (IT2a); B 0.188 / 0.206. Mean d real vs null: A 0.023 vs 0.031; B 0.142 vs 0.138. B pages sit further from their pole than A pages. N-RUN reproduces this, so it reads as B's heterogeneity across sections (a herbal-B page against a profile dominated by biological and stars text), not as mixing.
+
+### Seeds
+11900–11903 used as registered (pilot 11904–11905 disclosed); 11906–11909 reserved, unused. **Next free seed 11910.**
+
+### What this does NOT say
+It is not a decipherment and says nothing about meaning. "No excess" does not mean A and B are pure languages: quarter-foreign pages are below reliable resolution in B (0.57), and drift within a stratum is absorbed by N-RUN. The candidate pages are leads, not findings.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
