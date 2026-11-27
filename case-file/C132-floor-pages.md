@@ -65,4 +65,56 @@ In this order:
 ## 8. What a result would NOT mean
 A confirmed page would not prove a third dialect, a scribe switch, a misfiled Currier label or any reading. It would say that this page's words sit further from its own language profile than any comparable stretch of its own stratum. Because of the selection in §0, it is a lead for a section- or hand-level question, not a discovery. An EXCLUDED page would not be "pure". It would mean only that a half-foreign version of it would have been seen. Nothing here is a decipherment.
 
+---
+
+## Results (run 2026-11-27, 12:36:35–12:38:18 PT, America/Vancouver; 103 s; tool sha256 `856bd2f7…e27278`, unchanged since the pushed pre-registration c49660a)
+Raw output `analysis/C132_results.json`, log `analysis/C132_run_log.txt`, hashes `analysis/C132_SHA256SUMS`. One run, no re-runs.
+
+### Gates
+| gate | result |
+|---|---|
+| G-FPR Latin Caesar/Descartes (R 2,000) | 9/134 = 0.067 (Wilson 0.036–0.123) ≤ 0.10 **pass**; full page rule 7/134 = 0.052; p ≤ 0.0125: 5 |
+| G-FPR Italian Machiavelli/Dante | 7/134 = 0.052 (0.026–0.104) **pass**; full rule 6; p ≤ 0.0125: 5 |
+| G-FPR Hebrew Exodus/Genesis | 6/134 = 0.045 (0.021–0.094) **pass**; full rule 6; p ≤ 0.0125: 3 |
+| G-POW f57r (ZL3b) | f_match 1.0 (mean planted d 0.99 vs observed 0.98); caught 40/40 = 1.00 **pass** |
+| G-POW f66r | f_match 0.3 (mean d 0.348 vs 0.31); caught 26/40 = **0.65 FAIL** |
+| G-POW f113r | f_match 0.4 (mean d 0.407 vs 0.36); caught 37/40 = 0.925 **pass** |
+| G-POW f88v | f_match 0.4 (mean d 0.380 vs 0.33); caught 38/40 = 0.95 **pass** |
+| EXCLUDED bound (own-page f 0.5, 50 plants) | 50/50 caught on all four pages (not used: no page has p > 0.05) |
+| Artifact check f79r | d 0.02, raw p 1/2001, **96.4 % of the null at the pole → flagged NOT TESTABLE (pole-degenerate null)**, as it should be |
+
+### Pages (ZL3b primary; floor 1/2001 = 0.0005; Holm over the 4)
+| page | L-I, hand `$H` | tokens (lines) | λ̂ | d | null mean / q95 / max | # null ≥ d | p | Holm | p × 134 (descr.) | IT2a d, p | **verdict** |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| f57r | B-H, 5 | 47 (5) | 0.02 | 0.98 | 0.276 / 0.62 / 0.77 | 0 | 0.0005 | 0.0020 | 0.067 | 1.00, 0.0005 | **CONFIRMED MIXED-PROFILE (IT2a concordant)** |
+| f66r | B-T, 5 | 291 (31) | 0.69 | 0.31 | 0.120 / 0.24 / 0.27 | 0 | 0.0005 | 0.0020 | 0.067 | 0.33, 0.0005 | **NOT TESTABLE (matched-size power 0.65 < 0.80)** |
+| f113r | B-S, 3 | 522 (49) | 0.64 | 0.36 | 0.100 / 0.24 / 0.29 | 0 | 0.0005 | 0.0020 | 0.067 | 0.37, 0.0005 | **CONFIRMED MIXED-PROFILE (IT2a concordant)** |
+| f88v | A-P, 1 | 115 (14) | 0.33 | 0.33 | 0.081 / 0.19 / 0.21 | 0 | 0.0005 | 0.0020 | 0.067 | 0.31, 0.0005 | **CONFIRMED MIXED-PROFILE (IT2a concordant)** |
+
+No null replicate reached the observed d on any of the four pages, in either transcription. Pole share of the null: 0.04 / 0.21 / 0.19 / 0.21, so none is degenerate.
+
+**Verdict C132: 3 of 4 C131 floor pages CONFIRMED as mixed-profile pages under the registered rule (f57r, f113r, f88v; IT2a concordant on all three); f66r NOT TESTABLE (matched-size power); none EXCLUDED.** Read every "confirmed" as **conditional on the C131 selection** (§0): the data are the ones that picked these pages. The selection-aware descriptive p × 134 is 0.067 for every page, the floor that R 2,000 allows, so **no page survives a correction over all 134 pages C131 scanned**, as stated in advance. These are now registered page-level facts about where these pages sit on the A–B axis. They are not a discovery of a third dialect.
+
+### Defects and caveats (disclosed)
+1. **f66r fails by the gate's grain, not by its p.** Its d (0.31) lies above every one of 2,000 null replicates (null max 0.27), but the f grid jumps from 0.2 (mean d 0.23) to 0.3 (0.35), and the gate demands p ≤ 0.0125 *and* d ≥ 0.10 at f_match. Plants of about f 0.3 are caught only 65 % of the time. By the frozen rule, f66r stays NOT TESTABLE. A finer f grid is a C133 option, not a re-run here.
+2. **IT2a gate margins (descriptive, not deciding).** Under IT2a, the matched gate would have given f113r 0.80 (exactly on the bar) and f88v 0.725 (a fail at f 0.3). The ZL3b confirmations of f113r and f88v therefore sit on a thinner power margin in Takahashi.
+3. **f57r depends partly on the parser.** C070 keeps 5 of its 11 lines (lines 1–4 and 6, 47 tokens), so C131/C132 score mostly the first paragraph. **f57r-full** (all 11 lines, `<->` splits joined, 87 tokens; descriptive): λ̂ 0.38, **d 0.62**, p 1/2001 (null mean 0.27, q95 0.50). The page is still far from its B pole, but much less "pure A" than the retained lines suggest: the second paragraph (lines 7–11, `sheedy`, `qokeedy`, `chedy`, `shedy`) reads more like B. So "f57r scores as A" in C131 described paragraph 1, not the page.
+4. **f57r's label.** ZL3b and IT2a both carry `$L=B` (comment: "Currier's language B, hand 2"); Fagin Davis hand `$H=5`. I viewed the Yale scan (§0.3). A scan cannot show a Currier label, so the label is **not checked against the image**. The scan confirms only the line structure (11 lines, drawing splits on 7–10).
+5. **47 tokens.** f57r is just above the 40-token floor. Its null is wide (q95 0.62), and the result rests on λ̂ hitting the A end, not on many tokens.
+6. **Pole-degenerate rule works on the known artifact.** f79r is flagged (96.4 % of the null at 0) despite raw p 1/2001; under IT2a, f79r has d 0, p 1.
+
+### Hand `$H` (descriptive, post hoc, from the published C131 R 200 pages; no new test)
+| L, hand | informative | nominal p ≤ 0.05 | mean d |
+|---|---|---|---|
+| A, 1 | 65 | 4 | 0.023 |
+| B, 2 | 38 | 1 | 0.108 |
+| B, 3 | 26 | 2 | 0.122 |
+| **B, 5** | **4** | **3** (f57r, f66r, f66v) | **0.565** (f48r 0.45, f57r 0.98, f66r 0.31, f66v 0.52) |
+| B, @ | 1 | 0 | 0.240 |
+
+IT2a: B-H5 4 informative, 3 nominal (same pages), mean d 0.603. Hand 5 is the outlier: all four of its informative B pages sit far from the B pole. But it has only 4 pages, and the N-RUN null is stratified by section, not by hand, so hand-5 pages are compared with stretches written by hands 2 and 3. This is the C133 question; nothing here tests it. Floor-page hands: f57r 5, f66r 5, f113r 3, f88v 1.
+
+### Seeds
+11910 (manuscript null), 11911 (matched plants), 11912 (own-page plants), 11913 (control nulls), 11914 (f57r-full). **Next free: 11915.**
+
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
