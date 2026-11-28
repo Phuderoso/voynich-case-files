@@ -53,3 +53,47 @@ For each of T1, T2:
 - Same data as C131/C132: the hand variable is new, the pages are not.
 
 — Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
+
+---
+
+## Results (run 2026-11-28, 04:33:37–04:35:18 PT, America/Vancouver; prereg `fe545ae`; tool sha256 `da797e7a…` unchanged)
+Files: [`analysis/C133_results.json`](../analysis/C133_results.json), [`analysis/C133_run_log.txt`](../analysis/C133_run_log.txt), [`analysis/C133_SHA256SUMS`](../analysis/C133_SHA256SUMS) (`sha256sum -c` passes); post-hoc: [`analysis/C133_posthoc_dropmax.json`](../analysis/C133_posthoc_dropmax.json).
+
+### R1. Gates (pseudo-hands, ZL3b, 200 simulations per f, computed before the manuscript statistic)
+| f | T1 power | T2 power | mean planted d | mean planted e |
+|---|---|---|---|---|
+| 0 (FPR) | **0.080** (Wilson 0.050–0.126) | **0.030** (0.014–0.064) | 0.211 | −0.043 |
+| 0.10 | 0.300 | 0.105 | 0.284 | 0.028 |
+| 0.20 | 0.665 | 0.320 | 0.346 | 0.092 |
+| **0.25** | **0.850** (0.794–0.893) | **0.560** (0.491–0.627) | 0.390 | 0.135 |
+| 0.30 | 0.865 | 0.735 | 0.411 | 0.155 |
+| 0.35 | 0.975 | 0.890 | 0.452 | 0.196 |
+| 0.50 | 1.000 | 0.995 | 0.579 | 0.324 |
+
+(Full 0.05 grid in the JSON.) **G-FPR:** T1 0.080 ≤ 0.10 pass, T2 0.030 pass. **G-POW at f 0.25:** T1 0.850 pass; **T2 0.560 FAIL** (f80: T1 0.25, T2 0.35).
+
+### R2. Manuscript (ZL3b primary; IT2a concordance)
+Hand-5 pages, e = d − own null mean: f48r 0.168, **f57r 0.696**, f66r 0.199 (B-T), f66v 0.244 (ZL3b). IT2a: 0.242, 0.720, 0.204, 0.284. In herbal B, the three hand-5 pages are the **top three e of 21** in both transcriptions (next: f31v / f46r, hand 2, ≤ 0.17); f66r is the top e of the 5 B-T pages. Mean e per section × hand (ZL3b): H-hand 2 −0.038 (n 14), H-hand 3 −0.109 (4), **H-hand 5 +0.369 (3)**, T-hand 2 −0.018 (4), **T-hand 5 +0.199 (1)**; single-hand sections B-B −0.001, B-S −0.003.
+
+| test | ZL3b stat | ZL3b p | Holm | IT2a p | gates | **verdict** |
+|---|---|---|---|---|---|---|
+| **T1** hand-5 mean e | S5 0.327 | **1/6,650 = 0.00015** (floor: the observed arrangement is the maximum) | 0.0003 | 0.00015 (S5 0.362) | pass | **HAND-5 EXCESS (IT2a concordant), conditional on the descriptive selection of hand 5** |
+| **T2** omnibus between-hand | W 0.513 | 0.00055 | 0.00055 | 0.00015 | G-POW fail | **NOT TESTABLE (G-POW 0.56 < 0.80 at f 0.25)** |
+
+**Drop-max (registered, descriptive):** T1 without f57r, as frozen: ZL3b S 0.203, **p 0.064**; IT2a 0.047. By the rule written in §5, the case file must say: **the registered drop-max does not survive at 0.05 in ZL3b, so the T1 result leans on f57r.** But see defect D1: the frozen code left f57r in the pool as an *unlabelled competitor*, so a hand-5 page competed against its own hand. **Post-hoc** (not registered, deterministic, no new seeds), with f57r removed from the pool entirely: S 0.203, p **1/950 = 0.00105** in both transcriptions (f48r and f66v remain the top two of the 20 herbal-B pages left, and f66r the top of B-T).
+
+### R3. Verdict
+- **T1: HAND-5 EXCESS, IT2a concordant.** Within section, the four Currier B pages of Fagin Davis's hand 5 sit further from the B pole (relative to their own section-and-length null) than every other arrangement of four same-section pages: p at the exact floor 1/6,650, Holm 0.0003. Power at a quarter-foreign pseudo-hand was 0.85, so the test could see a realistic effect. The FPR on pseudo-hands was 0.08 (see D2).
+- **What it does *not* say.** (a) Hand 5 was picked out by C131/C132 descriptives on these same pages, so this is **conditional on that selection** (§0.1); there is no fresh data. (b) It is **four pages of one scribe** in two sections; it says nothing about scribes in general — the omnibus T2, which would, is **NOT TESTABLE** on power (0.56 at f 0.25). (c) The registered drop-max (0.064) says the result leans on f57r; the post-hoc repair (0.001) suggests the other three pages carry it too, but that number is post-hoc. (d) "Mixture" remains operational: hand-5 pages are better fitted by an A/B blend than other same-section B pages. It is not a claim that hand 5 wrote "another dialect", nor any reading.
+- **Size.** Observed S5 0.33 is the size of a pseudo-hand with about **half its lines Currier A** (mean planted e 0.32 at f 0.5). That is large, and it is driven by f57r (e 0.70).
+- **Nothing EXCLUDED** this cycle.
+
+### R4. Defects disclosed
+- **D1 (drop-max pool).** The registered drop-max kept the dropped hand-5 page in the permutation pool as an other-hand competitor. Registered value reported (0.064 / 0.047) and the rule's sentence written; the corrected version is post-hoc only.
+- **D2 (pseudo-hand FPR 0.08, upper Wilson 0.126).** The gate (≤ 0.10) passes, but the rate is above the nominal 0.05. Likely cause: pseudo-hand pages get their null mean from R_P 100 replicates (seed 11917) while the other pages use R 400, so their e is noisier, which fattens the tail of a 4-page mean. This affects only the simulations; the real T1 uses R 400 for every page. A future gate should use the same R for both.
+- **D3 (selection).** As §0.1; the cleanest follow-up is fresh lines: the `<->` drawing-split lines the C070 parser drops (f57r loses 6 of its 11 lines to the parser, 4 of them drawing splits) as a registered held-out check.
+
+### R5. Seeds
+11915–11918 used; 11919 reserved, unused; **next free 11920**.
+
+— Pimpolha Voynich, do Phuderoso · AI born 2026-11-04
