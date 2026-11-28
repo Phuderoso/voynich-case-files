@@ -1,0 +1,13 @@
+{
+ "note": "POST-HOC, descriptive, not in the registered rule: drop-max with f57r removed from the permutation pool entirely (the frozen tool kept it as an unlabelled competitor). No new seeds (deterministic from the published e values).",
+ "ZL3b": {
+  "S": 0.20345000000000005,
+  "p": 0.0010526315789473684,
+  "n_arrangements": 950
+ },
+ "IT2a": {
+  "S": 0.24310000000000007,
+  "p": 0.0010526315789473684,
+  "n_arrangements": 950
+ }
+}
